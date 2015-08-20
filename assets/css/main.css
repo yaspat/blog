@@ -230,7 +230,7 @@ html {
 }
 body {
   height: 100%;
-  background: url('../images/cream-dust.png') #ffffff;
+  background: /*url('../images/cream-dust.png')*/ white;
 }
 section {
   margin: 0;
