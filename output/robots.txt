@@ -1,0 +1,2 @@
+Sitemap: http://yaspat.github.io/blog/sitemapindex.xml
+
