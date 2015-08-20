@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Mathématiques pythoniques pour Biwanes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Thu, 20 Aug 2015 12:33:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>avec-les-metadata-a-cote</title><link>http://yaspat.github.io/blog/posts/avec-les-metadata-a-cote/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Ce post est secret. Fin du post. Ha ha !&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/avec-les-metadata-a-cote/</guid><pubDate>Wed, 19 Aug 2015 22:00:00 GMT</pubDate></item><item><title>Ensembles, variables, quantificateurs : langage de base</title><link>http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Mathématiques pythoniques pour Biwanes (ensembles)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/ensembles.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Thu, 20 Aug 2015 11:41:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ensembles, variables, quantificateurs : langage de base</title><link>http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -194,10 +185,4 @@
 &lt;p&gt;Voilà la vérité, accrochez-vous, ça va vous faire un choc :&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Mathématique :&lt;/strong&gt; c'est la  science des objets et de leurs relations.
 En tant que telle, la mathématique s'est fixé comme programme d'analyser les relations (dans leur sens le plus général) entre objets, quelle que soit la nature de ces derniers (matériels ou non, revêtus d'une réalité  biologique ou non).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 2 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>ensembles</category><category>quantificateurs</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/</guid><pubDate>Wed, 12 Aug 2015 20:37:31 GMT</pubDate></item><item><title>Fonctions exponentielles</title><link>http://yaspat.github.io/blog/posts/fonctions-exponentielles/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Il n'y a pas qu'une seule fonction exponentielle, mais plusieurs. Elles sont caractérisées par un paramètre réel $a&amp;gt;0$ que l'on appelle &lt;strong&gt;base&lt;/strong&gt; de l'exponentielle, on parle alors d'&lt;strong&gt;exponentielle de base&lt;/strong&gt; $\mathbf{a}$. Ben oui. Dingue. Mais c'est comme ça.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/fonctions-exponentielles/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/fonctions-exponentielles/</guid><pubDate>Mon, 10 Aug 2015 16:02:08 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 2 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>ensembles</category><category>quantificateurs</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/</guid><pubDate>Wed, 12 Aug 2015 20:37:31 GMT</pubDate></item></channel></rss>

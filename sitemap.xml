@@ -7,54 +7,90 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2015-08-20T06:36:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
-  <lastmod>2015-08-20T06:34:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2015-08-20T10:50:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-08-20T06:11:00Z</lastmod>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/ensembles/</loc>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/quantificateurs/</loc>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/variables/</loc>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/</loc>
-  <lastmod>2015-08-20T05:52:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/demo/</loc>
-  <lastmod>2015-08-20T05:52:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
-  <lastmod>2015-08-20T05:52:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2015-08-20T10:50:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/avec-les-metadata-a-cote/</loc>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/ensembles-variables-quantificateurs-langage-de-base/</loc>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/fonctions-exponentielles/</loc>
+  <lastmod>2015-08-20T11:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/ipynb/</loc>
-  <lastmod>2015-08-20T06:36:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/a-study-in-scarlet/</loc>
-  <lastmod>2015-08-20T05:52:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/about-me/</loc>
-  <lastmod>2015-08-20T06:05:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/stories/documents-de-travail/</loc>
+  <lastmod>2015-08-20T11:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/extending/</loc>
-  <lastmod>2015-08-20T05:52:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/stories/informatique/</loc>
+  <lastmod>2015-08-20T11:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/stories/livre-dor/</loc>
+  <lastmod>2015-08-20T11:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/quickstart/</loc>
-  <lastmod>2015-08-20T05:52:00Z</lastmod>
+  <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
 </urlset>
