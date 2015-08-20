@@ -37,15 +37,15 @@ aux grandes écoles (les CPGE) scientifiques qui se caractérise dans ses volume
 Mathématiques 
 --------------
 
-Ce blog est avant tout un blog de **mathématiques**\. Les mathématiques ont la réputation  de cumuler  assez injustement les qualités exceptionnelles suivantes \:
+Ce blog est avant tout un blog de **mathématiques**\. Les mathématiques ont la réputation  de cumuler  assez injustement les qualités extraordinaires suivantes \:
 
    #. Elles sont abstraites.
 
    #. Elles sont ardues.
    #. Elles sont ennuyeuses.
-   #. (pour les biwanes)  : elles sont obligatoires.
+   #. (pour les biwanes)  Elles sont obligatoires.
 
-On aimerait bien démontrer que 1.,2.,3 ne sont pas si méritées que cela. 
+On aimerait bien établir  que les assertions  1.,2.,3 ne sont pas si méritées que cela. 
 
 
 
@@ -59,7 +59,7 @@ Ce blog est pythonique [#]_ à deux niveaux :
 
       a. Because : c'est le langage  au programme officiel des classes de BCPST.  
       b. aussi parce que l'informatique peut aider à rendre les objets mathématiques plus concrets, et donc  manipulables.  On aimerait bien  dans ce but d'essayer d'inclure l'utilisation (intensive ?) de  ``python`` dans le cours de mathématiques (histoire de toucher du doigt les concepts), d'autant que l'épreuve de mathématiques à l'oral du concours contient une partie informatique. Alors comme ça on fait d'une pierre deux coups.
-   #. Il (ce blog) est généré par le merveilleux `Nikola <http://getnikola.org>`_. Nikola est un générateur de blog/site codé en `Python <http://www.python.org/>`_. Eh oui, en  Python, on peut faire des programmes qui construisent des blogs. Dingue ça.  Autre avantage de taille  (et c'est pourquoi je me suis tourné vers Nikola) : on peut composer les billets depuis le fabuleux *ipython notebook* (rebatisé `Jupyter  <http://www.jupyter.org>`_ dans sa nouvelle mouture).  
+   #. Il (ce blog) est généré par le merveilleux `Nikola <http://getnikola.org>`_. Nikola est un générateur de blog/site codé en `Python <http://www.python.org/>`_. Eh oui, en  Python, on peut faire des programmes qui construisent des blogs. Dingue ça.  Autre avantage de taille  (et c'est pourquoi je me suis tourné vers Nikola) : on peut composer les billets depuis le fabuleux *ipython notebook* (rebaptisé `Jupyter  <http://www.jupyter.org>`_ dans sa nouvelle mouture).  
 
 .. [#] Prononcez à l'anglaise et vous comprendrez ;-)
 .. [#] Néologisme dérivé du substantif `Python <http://www.python.org/>`_, en référence au langage de programmation éponyme.

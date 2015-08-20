@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2015-08-20T14:15:00Z</lastmod>
+  <lastmod>2015-08-20T17:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2015-08-20T14:15:00Z</lastmod>
+  <lastmod>2015-08-20T17:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/avec-les-metadata-a-cote/</loc>
@@ -62,6 +62,10 @@
   <lastmod>2015-08-20T11:41:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/programmes-de-colles/</loc>
+  <lastmod>2015-08-20T17:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/stories/about-me/</loc>
   <lastmod>2015-08-20T11:26:00Z</lastmod>
  </url>
@@ -70,11 +74,23 @@
   <lastmod>2015-08-20T11:38:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/stories/exercices/</loc>
+  <lastmod>2015-08-20T17:16:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/stories/informatique/</loc>
   <lastmod>2015-08-20T11:38:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/livre-dor/</loc>
   <lastmod>2015-08-20T11:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/stories/programmes-de-colles/</loc>
+  <lastmod>2015-08-20T17:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/stories/sujets-de-dmds/</loc>
+  <lastmod>2015-08-20T17:20:00Z</lastmod>
  </url>
 </urlset>
