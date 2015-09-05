@@ -19,20 +19,6 @@ Programmes de colles
 ====================
 
 #. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
-#. `Programme de la quinzaine 1 <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_
 
 
 
