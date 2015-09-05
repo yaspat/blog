@@ -8,8 +8,8 @@
 .. type: text
 
 
-Installation de Python sur vos machines
----------------------------------------
+Voici des instructions utiles pour installer  Python sur vos machines.
+
 
 Sur windows
 -----------
@@ -22,7 +22,7 @@ livrés avec `Python`. On travaillera avec la version `2.7` de `Python`.
 
    a. `Python(x,y) <http://python-xy.github.io/downloads.html>`_  (c'est celle qui est installée au lycée, prendre le fichier `.exe`). Le fichier est lourd, donc soyez patients.
 
-   b. `Anaconda <http:///continuum.io/downloads>`_ 
+   b. `Anaconda <http:///continuum.io/downloads>`_ . Même remarque sur le temps de l'installation.
 
 Avec ces distributions, vous aurez l'environnement de développment `Syder` disponible ainsi que `Jupyter`
   
