@@ -24,6 +24,7 @@ Objet de cette introduction :
    2. Les chaînes de caractères
 
 2. Quelques manipulations simples sur les chaînes de caractères.
+3. Les variables
 
 .. raw:: html
 
