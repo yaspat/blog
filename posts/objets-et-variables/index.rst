@@ -322,7 +322,7 @@ généré une chaîne de caractères.
     'l'arbre' 
 
 
-.. code-block::
+.. parsed-literal::
 
 
       File "<ipython-input-4-b647b3b75403>", line 1
