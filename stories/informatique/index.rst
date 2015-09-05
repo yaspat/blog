@@ -18,7 +18,7 @@ Sur windows
 de `Python` : c'est-à-dire un ensemble d'applications et de services
 livrés avec `Python`. On travaillera avec la version `2.7` de `Python`.
 
-2. Vous pouvez au choix installer la distribution `Python(x,y)-2.7.10.0` ou la distribution `anaconda` :
+2. Vous pouvez au choix installer la distribution `Python(x,y)-2.7.10.0` ou la distribution `Anaconda` :
 
    a. `Python(x,y) <http://python-xy.github.io/downloads.html>`_  (c'est celle qui est installée au lycée, prendre le fichier `.exe`). Le fichier est lourd, donc soyez patients.
 
