@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Cours de maths pour la classe de BCPST1-A de Rennes">
 <meta name="viewport" content="width=device-width">
-<title>Mathématiques pythoniques pour Biwanes | Mathématiques pythoniques pour Biwanes</title>
+<title>Maths-info en BCPST1-A Rennes | Maths-info en BCPST1-A Rennes</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/">
@@ -49,47 +49,21 @@ article: http://ogp.me/ns/article#
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
-            <h1 class="title"><a href="posts/avec-les-metadata-a-cote/">avec-les-metadata-a-cote</a></h1>
+            <h1 class="title"><a href="posts/objets-et-variables/">Leçon 1 : Objets principaux et variables</a></h1>
             <div class="meta">
                 <div class="authordate">
-                    <time class="timeago" datetime="2015-08-20T00:00:00+02:00">2015-08-20 00:00</time>
+                    <time class="timeago" datetime="2015-08-20T13:39:19+02:00">2015-08-20 13:39</time>
 </div>
                 <div class="stats">
-                                <a href="posts/avec-les-metadata-a-cote/#disqus_thread" data-disqus-identifier="cache/posts/avec-les-metadata-a-cote.html">Comments</a>
-
-
-                </div>
-                
-            </div>
-            <div class="body">
-                <div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ce post est secret. Fin du post. Ha ha !</p>
-
-</div>
-</div>
-</div>
-            </div>
-        </div>
-        <div class="post">
-            <h1 class="title"><a href="posts/ensembles-variables-quantificateurs-langage-de-base/">Ensembles, variables, quantificateurs : langage de base</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2015-08-12T22:37:31+02:00">2015-08-12 22:37</time>
-</div>
-                <div class="stats">
-                                <a href="posts/ensembles-variables-quantificateurs-langage-de-base/#disqus_thread" data-disqus-identifier="cache/posts/ensembles-variables-quantificateurs-langage-de-base.html">Comments</a>
+                                <a href="posts/objets-et-variables/#disqus_thread" data-disqus-identifier="cache/posts/objets-et-variables.html">Comments</a>
 
 
                 </div>
                         <div itemprop="keywords" class="tags">
         <ul>
         Étiquettes : 
-           <li><a class="tag p-category" href="categories/ensembles/" rel="tag">ensembles</a></li>
-           <li><a class="tag p-category" href="categories/quantificateurs/" rel="tag">quantificateurs</a></li>
+           <li><a class="tag p-category" href="categories/objets/" rel="tag">objets</a></li>
+           <li><a class="tag p-category" href="categories/python/" rel="tag">python</a></li>
            <li><a class="tag p-category" href="categories/variables/" rel="tag">variables</a></li>
         </ul>
 </div>
@@ -97,226 +71,46 @@ article: http://ogp.me/ns/article#
             </div>
             <div class="body">
                 <div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href="posts/objets-et-variables/#les-nombres" id="id1">Les nombres</a><ul>
+<li><a class="reference internal" href="posts/objets-et-variables/#les-entiers" id="id2">Les entiers</a></li>
+<li><a class="reference internal" href="posts/objets-et-variables/#les-flottants" id="id3">Les flottants</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href="posts/objets-et-variables/#les-caracteres-et-chaines-de-caracteres" id="id4">Les caractères et chaînes de caractères</a><ul>
+<li><a class="reference internal" href="posts/objets-et-variables/#definitions" id="id5">Définitions</a></li>
+<li>
+<a class="reference internal" href="posts/objets-et-variables/#operations-sur-les-chaines-de-caracteres" id="id6">Opérations sur les chaînes de caractères</a><ul>
+<li><a class="reference internal" href="posts/objets-et-variables/#accession-a-un-caractere-ou-une-sous-chaine" id="id7">Accession à un caractère ou une sous-chaîne</a></li>
+<li><a class="reference internal" href="posts/objets-et-variables/#concatenation-de-chaines" id="id8">Concaténation de chaînes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href="posts/objets-et-variables/#variables" id="id9">Variables</a><ul>
+<li><a class="reference internal" href="posts/objets-et-variables/#operations-sur-les-variables" id="id10">Opérations sur les variables</a></li>
+<li><a class="reference internal" href="posts/objets-et-variables/#creation-de-variable" id="id11">Création de variable</a></li>
+<li><a class="reference internal" href="posts/objets-et-variables/#affectation" id="id12">affectation</a></li>
+<li><a class="reference internal" href="posts/objets-et-variables/#appel" id="id13">Appel</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="C'est-quoi-les-maths-?">C'est quoi les maths ?<a class="anchor-link" href="posts/ensembles-variables-quantificateurs-langage-de-base/#C'est-quoi-les-maths-?">¶</a>
-</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">6</span> 
-<span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">x</span><span class="o">&gt;</span><span class="mi">4</span> <span class="p">:</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
-        <span class="k">print</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper output_hidden">
-<div class="output">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="input_area">
-
-<div class="output_area">
-<div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1
-0
-1
-4
-9
-16
-25
-36
-49
-64
-81
-100
-</pre>
-</div>
-</div>
-
-<div class=" highlight hl-ipython3"><pre> 
-</pre></div>
-
-<div class=" highlight hl-ipython3"><pre> 
-</pre></div>
-
- <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
-  /   <i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px">     [code python] </i>
-</i>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="mi">0</span><span class="o">/</span><span class="mf">0.1</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper output_hidden">
-<div class="output">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="input_area">
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0.0</pre>
-</div>
-
-</div>
-
-<div class=" highlight hl-ipython3"><pre> 
-</pre></div>
-
-<div class=" highlight hl-ipython3"><pre> 
-</pre></div>
-
- <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
-  /   <i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px">     [code python] </i>
-</i>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper output_hidden">
-<div class="output">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="input_area">
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[1]:</div>
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
-</div>
-
-</div>
-
-<div class=" highlight hl-ipython3"><pre> 
-</pre></div>
-
-<div class=" highlight hl-ipython3"><pre> 
-</pre></div>
-
- <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
-  /   <i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px">     [code python] </i>
-</i>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Voilà la vérité, accrochez-vous, ça va vous faire un choc :</p>
-<p><strong>Mathématique :</strong> c'est la  science des objets et de leurs relations.
-En tant que telle, la mathématique s'est fixé comme programme d'analyser les relations (dans leur sens le plus général) entre objets, quelle que soit la nature de ces derniers (matériels ou non, revêtus d'une réalité  biologique ou non).</p>
-<p class="more"><a href="posts/ensembles-variables-quantificateurs-langage-de-base/">Lire la suite…</a></p>
-</div>
-</div>
-</div>
-</div>
-            </div>
-        </div>
-        <div class="post">
-            <h1 class="title"><a href="posts/fonctions-exponentielles/">Fonctions exponentielles</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2015-08-10T18:02:08+02:00">2015-08-10 18:02</time>
-</div>
-                <div class="stats">
-                                <a href="posts/fonctions-exponentielles/#disqus_thread" data-disqus-identifier="cache/posts/fonctions-exponentielles.html">Comments</a>
-
-
-                </div>
-                
-            </div>
-            <div class="body">
-                <div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Il n'y a pas qu'une seule fonction exponentielle, mais plusieurs. Elles sont caractérisées par un paramètre réel $a&gt;0$ que l'on appelle <strong>base</strong> de l'exponentielle, on parle alors d'<strong>exponentielle de base</strong> $\mathbf{a}$. Ben oui. Dingue. Mais c'est comme ça.</p>
-<p class="more"><a href="posts/fonctions-exponentielles/">Lire la suite…</a></p>
-</div>
-</div>
+<p>Objet de cette introduction :</p>
+<ol class="arabic simple">
+<li>Prendre connaissances de quelques objets manipulables en <tt class="docutils literal">Python</tt><ol class="arabic">
+<li>Quelques types de nombres</li>
+<li>Les chaînes de caractères</li>
+</ol>
+</li>
+<li>Quelques manipulations simples sur les chaînes de caractères.</li>
+</ol>
+<p class="more"><a href="posts/objets-et-variables/">Lire la suite…</a></p>
 </div>
             </div>
         </div>

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Leçon 1 : Objets principaux et variables | Maths-info en BCPST1-A Rennes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/objets-et-variables/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../icon_128x128.png" sizes="128x128">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'left', // Change this to 'center' to center equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
+<meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
+<meta property="og:title" content="Leçon 1 : Objets principaux et variables">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/objets-et-variables/">
+<meta property="og:description" content="Contents
+
+Les nombres
+Les entiers
+Les flottants
+
+
+Les caractères et chaînes de caractères
+Définitions
+Opérations sur les chaînes de caractères
+Accession à un caractère ou une sous-chaîne
+Concaténation">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-20T13:39:19+02:00">
+<meta property="article:tag" content="objets">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="variables">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Départ"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/documents-de-travail" title="Documents"><i class="icon-file-text"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Leçon 1 : Objets principaux et variables</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-08-20T13:39:19+02:00">2015-08-20 13:39</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/objets/" rel="tag">objets</a></li>
+           <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../../categories/variables/" rel="tag">variables</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#les-nombres" id="id1">Les nombres</a><ul>
+<li><a class="reference internal" href=".#les-entiers" id="id2">Les entiers</a></li>
+<li><a class="reference internal" href=".#les-flottants" id="id3">Les flottants</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#les-caracteres-et-chaines-de-caracteres" id="id4">Les caractères et chaînes de caractères</a><ul>
+<li><a class="reference internal" href=".#definitions" id="id5">Définitions</a></li>
+<li>
+<a class="reference internal" href=".#operations-sur-les-chaines-de-caracteres" id="id6">Opérations sur les chaînes de caractères</a><ul>
+<li><a class="reference internal" href=".#accession-a-un-caractere-ou-une-sous-chaine" id="id7">Accession à un caractère ou une sous-chaîne</a></li>
+<li><a class="reference internal" href=".#concatenation-de-chaines" id="id8">Concaténation de chaînes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#variables" id="id9">Variables</a><ul>
+<li><a class="reference internal" href=".#operations-sur-les-variables" id="id10">Opérations sur les variables</a></li>
+<li><a class="reference internal" href=".#creation-de-variable" id="id11">Création de variable</a></li>
+<li><a class="reference internal" href=".#affectation" id="id12">affectation</a></li>
+<li><a class="reference internal" href=".#appel" id="id13">Appel</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Objet de cette introduction :</p>
+<ol class="arabic simple">
+<li>Prendre connaissances de quelques objets manipulables en <tt class="docutils literal">Python</tt><ol class="arabic">
+<li>Quelques types de nombres</li>
+<li>Les chaînes de caractères</li>
+</ol>
+</li>
+<li>Quelques manipulations simples sur les chaînes de caractères.</li>
+</ol>
+<!-- TEASER_END --><div class="section" id="les-nombres">
+<h2><a class="toc-backref" href=".#id1">Les nombres</a></h2>
+<div class="section" id="les-entiers">
+<h3><a class="toc-backref" href=".#id2">Les entiers</a></h3>
+<p>Ce sont les éléments de l'ensemble <span class="math">\(\mathbf{N}\)</span> que vous
+connaissez. Les opérations arithmétiques de base sont disponibles.
+Faites simplement attention au fait que la puissance se code <tt class="docutils literal">**</tt></p>
+<pre class="code python"><a name="rest_code_5ac36c46af5f45ed97575cac53406ab4-1"></a><span class="mi">1</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<pre class="code python"><a name="rest_code_0ad39d3276fc4b5f98ea891866d0c371-1"></a><span class="mi">1</span><span class="o">+</span><span class="mi">2</span>
+</pre>
+<pre class="literal-block">
+3
+</pre>
+<pre class="code python"><a name="rest_code_c147ba119fb84d828794e1108e74ed68-1"></a><span class="mi">2</span><span class="o">**</span><span class="mi">5</span> <span class="c"># 2 puissance 5. Rem : On peut saisir des commentaires dans la console en les précédant d'un dièse #.</span>
+</pre>
+<pre class="literal-block">
+32
+</pre>
+<p>La commande <tt class="docutils literal">type</tt> permet de connaître le type d'un objet dans la
+machine</p>
+<pre class="code python"><a name="rest_code_5ff6fdc95c5f4b25b19fe4c3d31149b9-1"></a><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+int
+</pre>
+<p>Python répond <tt class="docutils literal">int</tt> : entier</p>
+<p>Vous pouvez effectuer les opérations arithmétiques usuelles sur les
+entiers. Attention, la division se fait alors en nombres entiers :</p>
+<pre class="code python"><a name="rest_code_087311f1686c489c9325e2be70b8658f-1"></a><span class="mi">2</span><span class="o">/</span><span class="mi">3</span> <span class="c"># je calcule.</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<p>C'est normal : on obtient le quotient de la division entière
+(euclidienne)</p>
+</div>
+<div class="section" id="les-flottants">
+<h3><a class="toc-backref" href=".#id3">Les flottants</a></h3>
+<p>Ce sont les approximations des nombres réels (et pas les réels eux-mêmes
+!). La plupart des réels ont en effet un développement décimal illimité.
+Il est donc impossible de stocker toutes ces décimales dans la mémoire
+de la machine, qui elle, est limitée. Ce qui pose intrinsèquement le
+problème de la précision des calculs.</p>
+<pre class="code python"><a name="rest_code_bb74f1ae158b47cfb57f9364a7fd6bff-1"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span> <span class="c"># Je demande à Python de charger la fonction sinus</span>
+<a name="rest_code_bb74f1ae158b47cfb57f9364a7fd6bff-2"></a>                          <span class="c"># et la constante pi</span>
+</pre>
+<pre class="code python"><a name="rest_code_b35036edb8dd4890a091ff043b556ada-1"></a><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+0.7071067811865475
+</pre>
+<p>Le développement décimal de <span class="math">\(\sqrt{2}\)</span> est illimité alors que le
+résultat affiché est donné avec troncature. Le calcul qui suit est
+instructif, puisqu'il nous dit que <span class="math">\(\sin(\pi)\)</span> n'est pas nul (!) :</p>
+<pre class="code python"><a name="rest_code_0a376d199f594776a3fae06a52cac623-1"></a><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1.2246467991473532e-16
+</pre>
+<p><strong>Morale.</strong> soyez critiques sur les résultats numériques que vous
+obtenez. La précision par défaut de <tt class="docutils literal">Python</tt> est de l'orde de
+<span class="math">\(10^{-16}\)</span>. En <tt class="docutils literal">Python</tt>, <tt class="docutils literal"><span class="pre">e-16</span></tt> siginifie : <span class="math">\(10^{-16}\)</span></p>
+<pre class="code python"><a name="rest_code_5f02e44694cb4dac9d4184d67d7df08a-1"></a><span class="mi">2</span> <span class="o">+</span> <span class="mf">1e-16</span> <span class="c"># Combien ça fait pour Python ?</span>
+</pre>
+<pre class="literal-block">
+2.0
+</pre>
+<p>On constate qu'à <span class="math">\(10^{-16}\)</span> prés, <tt class="docutils literal">Python</tt> ne fait pas la
+différence.</p>
+<p><strong>Question :</strong> le nombre <span class="math">\(2\)</span> est un entier ou un flottant ?
+Utilisons la commande <tt class="docutils literal">type</tt></p>
+<pre class="code python"><a name="rest_code_02814b306c82483d9b6b4b091ea9218c-1"></a><span class="nb">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+int
+</pre>
+<p><strong>Question :</strong> Mais si je veux travailler avec le nombre
+<span class="math">\(2\in\mathbf{R}\)</span> et non pas l'entier <span class="math">\(2\in \mathbf{N}\)</span> ?</p>
+<p><strong>Réponse :</strong> placer de force le point décimal ( rappel : dans les pays
+anglo-saxons, le séparateur décimal est le point <tt class="docutils literal">.</tt>, et non pas la
+virgue <tt class="docutils literal">,</tt> . <tt class="docutils literal">Python</tt> comprendra que le nombre <span class="math">\(2\)</span> est vu
+comme un flottant.</p>
+<pre class="code python"><a name="rest_code_f0a9e31a5ae44abfbbee639b214588f0-1"></a><span class="nb">type</span><span class="p">(</span><span class="mf">2.</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+float
+</pre>
+<p><tt class="docutils literal">float</tt> signifie : flottant. Voyons ce que donne la division entre
+flottants :</p>
+<pre class="code python"><a name="rest_code_c8596ad0018e44148ee9e802006d0739-1"></a><span class="mf">2.</span><span class="o">/</span><span class="mf">3.</span>
+</pre>
+<pre class="literal-block">
+0.6666666666666666
+</pre>
+<p>En précisant que l'on effectue la division entre flottants, <tt class="docutils literal">Python</tt>
+comprend que le résultat de cette dernière doit être donné en type
+<tt class="docutils literal">float</tt>.</p>
+<p>** Remarque. ** En <tt class="docutils literal">Python 3.</tt>, la division est <em>toujours</em>
+considérée comme divisione de flottants.</p>
+</div>
+</div>
+<div class="section" id="les-caracteres-et-chaines-de-caracteres">
+<h2><a class="toc-backref" href=".#id4">Les caractères et chaînes de caractères</a></h2>
+<div class="section" id="definitions">
+<h3><a class="toc-backref" href=".#id5">Définitions</a></h3>
+<ol class="arabic simple">
+<li>Un <em>caractère</em> est en gros n'importe quel symbole accessible par une
+(ou des combinaisons) de touches du clavier.</li>
+<li>Une <em>chaîne de caractères</em> est la concaténation (juxtaposition, ou
+assemblage) de caractères.</li>
+<li>Un caractère est aussi une chaîne de caractères.</li>
+<li>Pour que <tt class="docutils literal">Python</tt> identifie une chaîne de caractères, on les
+entoure d'un délimiteur, qui est au besoin l'apostrophe <tt class="docutils literal">'</tt> ou les
+guillemets <tt class="docutils literal">"</tt> .</li>
+</ol>
+<p><strong>Exemple.</strong></p>
+<pre class="code python"><a name="rest_code_44ab7b6b86d343db99910f77573fe346-1"></a><span class="n">bonjour</span> <span class="c"># Ce n'est pas une chaîne de caractères : pas de délimiteurs.</span>
+</pre>
+<pre class="literal-block">
+---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-15-dafbe8cf1de0&gt; in &lt;module&gt;()
+----&gt; 1 bonjour # Ce n'est pas une chaîne de caractères : pas de délimiteurs.
+
+
+NameError: name 'bonjour' is not defined
+</pre>
+<p>On obtient un message d'erreur. En effet, <tt class="docutils literal">Python</tt> interprète ce mot
+comme un nom de variable, on n'a pas créé de variable. d'où l'erreur.
+Ajoutons alors les délimiteurs comme dit précédemment :</p>
+<pre class="code python"><a name="rest_code_580c77fb0bc34326a66542b98374ff74-1"></a><span class="s">'bonjour'</span>
+</pre>
+<pre class="literal-block">
+'bonjour'
+</pre>
+<p>Cette fois, pas d'erreur. Je vais vérifier que c'est bien une chaîne de
+caractères :</p>
+<pre class="code python"><a name="rest_code_d63af583a4914e0bafb42678d22fdd2b-1"></a><span class="nb">type</span><span class="p">(</span><span class="s">'bonjour'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+str
+</pre>
+<p>Le mot <tt class="docutils literal">str</tt> est l'abréviation de <tt class="docutils literal">string</tt> (chaîne en anglais). On a
+généré une chaîne de caractères.</p>
+<p><strong>Question :</strong> Comment je fais si je veux des apostrophes dans ma chaîne
+? Si je tape par exemple :</p>
+<pre class="code python"><a name="rest_code_5f2cf832e8fc434aac55e113f88ef66b-1"></a><span class="s">'l'</span><span class="n">arbre</span><span class="s">'</span>
+</pre>
+<pre class="code text"><a name="rest_code_41e42028295c468c950b07b81aaa5965-1"></a>  File "&lt;ipython-input-4-b647b3b75403&gt;", line 1
+<a name="rest_code_41e42028295c468c950b07b81aaa5965-2"></a>    'l'arbre'
+<a name="rest_code_41e42028295c468c950b07b81aaa5965-3"></a>           ^
+<a name="rest_code_41e42028295c468c950b07b81aaa5965-4"></a>SyntaxError: invalid syntax
+</pre>
+<p>Il y a un problème de <em>syntaxe</em> : <tt class="docutils literal">Python comprend</tt> : la chaîne <cite>'l'</cite>,
+puis des caractères. Il ne sait pas quoi faire de ces derniers. Le mieux
+dans ce cas est d'utiliser des guillemets :</p>
+<pre class="code python"><a name="rest_code_60cea0304381448b8f9e7cd8eb607b3a-1"></a><span class="s">"l'arbre"</span>
+</pre>
+<pre class="literal-block">
+"l'arbre"
+</pre>
+<p><strong>Question :</strong> Mais comment je fais si j'ai à la fois des guillemets
+et des apostrophes ? Par exemple, une chaîne de caractères comme :
+'il a dit : "je t'aime"' ?</p>
+<p><strong>Réponse :</strong> Il faut faire jouer aux caractères <tt class="docutils literal">'</tt> et <tt class="docutils literal">"</tt> leur
+rôle naturel. Pour cela, on introduit une <em>séquence d'échappement</em> : le
+caractère s'échappe ainsi de son rôle de délimiteur. En <tt class="docutils literal">Python</tt>, on
+échappe un caractère en le faisant précéder d'un <tt class="docutils literal">backslash</tt> : <tt class="docutils literal">\</tt>
+(touches <tt class="docutils literal">alt Gr</tt> + <tt class="docutils literal">8</tt> sur les claviers français).</p>
+<pre class="code python"><a name="rest_code_2851ba3f13c7469dbf87af4fb50a16a7-1"></a><span class="k">print</span><span class="p">(</span><span class="s">'il a dit : "je t</span><span class="se">\'</span><span class="s">aime"'</span><span class="p">)</span> <span class="c"># Pas besoin d'échapper les guillemets :</span>
+<a name="rest_code_2851ba3f13c7469dbf87af4fb50a16a7-2"></a>                                 <span class="c"># le délimiteur est l'apostrophe ici.</span>
+<a name="rest_code_2851ba3f13c7469dbf87af4fb50a16a7-3"></a>                                 <span class="c"># la fonction print sert à l'affichage.</span>
+</pre>
+<pre class="literal-block">
+il a dit : "je t'aime"
+</pre>
+<p><strong>Remarques :</strong></p>
+<blockquote>
+<ol class="arabic simple">
+<li>L'espace est elle-même un caractère (en imprimerie, espace est féminin !)</li>
+<li>La chaîne de caractères vide est : ""</li>
+</ol>
+</blockquote>
+<pre class="code python"><a name="rest_code_0f8d9c6aea654bdb86303510ec52068a-1"></a><span class="c">#je demande à Python si les chaînes '' et ' ' sont égales</span>
+<a name="rest_code_0f8d9c6aea654bdb86303510ec52068a-2"></a><span class="s">''</span> <span class="o">==</span> <span class="s">' '</span> <span class="c"># le test d'égalité est codé par ==</span>
+</pre>
+<pre class="literal-block">
+False
+</pre>
+<p><tt class="docutils literal">Python</tt> a répondu faux : ces deux chaînes sont bien distinctes.</p>
+</div>
+<div class="section" id="operations-sur-les-chaines-de-caracteres">
+<h3><a class="toc-backref" href=".#id6">Opérations sur les chaînes de caractères</a></h3>
+<p>Je vais considérer la chaîne de caractères suivante :</p>
+<pre class="code python"><a name="rest_code_ca7455acef3e45d7a34d191ffaea95ec-1"></a><span class="s">'anticonstitutionnellement'</span>
+</pre>
+<pre class="literal-block">
+'anticonstitutionnellement'
+</pre>
+<p>Comme cette chaîne est longue à saisir, je vais la manipuler en la
+stockant dans une variable que j'appelle <tt class="docutils literal">mot</tt> (voir plus tard pour
+les variables):</p>
+<pre class="code python"><a name="rest_code_688a2679fe5d48bda9c8f2da6d070f5a-1"></a><span class="n">mot</span> <span class="o">=</span> <span class="s">'anticonstitutionnellement'</span>
+</pre>
+<pre class="code python"><a name="rest_code_7f96239484d640b08e93d77908272d38-1"></a><span class="k">print</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+anticonstitutionnellement
+</pre>
+<pre class="code python"><a name="rest_code_1a0de5bc118a4a1bb68d5ceda6b66831-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+str
+</pre>
+<div class="section" id="accession-a-un-caractere-ou-une-sous-chaine">
+<h4><a class="toc-backref" href=".#id7">Accession à un caractère ou une sous-chaîne</a></h4>
+<p>Les caractères dans une chaîne sont numérotés à partir de <tt class="docutils literal">0</tt></p>
+<pre class="code python"><a name="rest_code_70f269db64684837be5a3915d29c8921-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># Python le premier caractère de la chaîne</span>
+</pre>
+<pre class="literal-block">
+'a'
+</pre>
+<pre class="code python"><a name="rest_code_590d379c05974e44a052535315baaa24-1"></a><span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># Le dernier caractère</span>
+</pre>
+<pre class="literal-block">
+'t'
+</pre>
+<pre class="code python"><a name="rest_code_4be14ad89f8c49f0b075c153a568f50e-1"></a><span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c"># Le deuxième caractère en partant de la fin</span>
+</pre>
+<pre class="literal-block">
+'n'
+</pre>
+<pre class="code python"><a name="rest_code_6e94751960de42c08157d4a2a7e63fda-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="c"># les cinq premiers caractères</span>
+</pre>
+<pre class="literal-block">
+'antic'
+</pre>
+<pre class="code python"><a name="rest_code_e1832bae3aab482396ac1f759cec5cb2-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span> <span class="c"># Je veux la sous-chaîne des caractères numéro 3,4,5,6 et 7</span>
+</pre>
+<pre class="literal-block">
+'icons'
+</pre>
+<p><strong>Règle.</strong> Dans <tt class="docutils literal">mot[a:b]</tt>, il y a <tt class="docutils literal"><span class="pre">b-a</span></tt> caractères.</p>
+<p>Combien y a-t-il de lettres dans <tt class="docutils literal">anticonstitutionnellement</tt> ?</p>
+<pre class="code python"><a name="rest_code_b4e1b9b219e74c498af427aacbdd699e-1"></a><span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="c"># len est l'abréviation de length (longueur)</span>
+</pre>
+<pre class="literal-block">
+25
+</pre>
+<p>J'extrais de ce mot le mot 'constitution'</p>
+<pre class="code python"><a name="rest_code_8aee546417304132b4c9a5afa2146d61-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span>
+</pre>
+<pre class="literal-block">
+'constitution'
+</pre>
+<p>Je demande si deux <tt class="docutils literal">l</tt> se suivent :</p>
+<pre class="code python"><a name="rest_code_7ec04eb8aa6a48dbaeaaa53b7caee91b-1"></a><span class="s">'ll'</span> <span class="ow">in</span> <span class="n">mot</span>  <span class="c"># Est-ce que la chaîne `ll` se trouve dans le mot ?</span>
+</pre>
+<pre class="literal-block">
+True
+</pre>
+<pre class="code python"><a name="rest_code_4280c9efac7d4c9f96d098d6e5b11a82-1"></a><span class="s">'oui'</span> <span class="ow">in</span> <span class="n">mot</span> <span class="c"># on ne trouve pas 'oui' dans le mot.</span>
+</pre>
+<pre class="literal-block">
+False
+</pre>
+</div>
+<div class="section" id="concatenation-de-chaines">
+<h4><a class="toc-backref" href=".#id8">Concaténation de chaînes</a></h4>
+<p>On utilise pour cela le <tt class="docutils literal">+</tt></p>
+<pre class="code python"><a name="rest_code_1bdaeb8f47694ee7b1291dd8e21e77d5-1"></a><span class="s">'bonjour'</span><span class="o">+</span><span class="s">' Monsieur'</span> <span class="c"># Noter l'espace avant le M de Monsieur</span>
+</pre>
+<pre class="literal-block">
+'bonjour Monsieur'
+</pre>
+<pre class="code python"><a name="rest_code_dc04286bda604475b4dd4249085434a1-1"></a><span class="s">'bonjour'</span><span class="o">+</span><span class="s">'Monsieur'</span>
+</pre>
+<pre class="literal-block">
+'bonjourMonsieur'
+</pre>
+<p>On peut aussi utiliser le <tt class="docutils literal">*&lt;n&gt;</tt> pour répliquer <tt class="docutils literal">&lt;n&gt;</tt> fois la
+chaîne, <tt class="docutils literal">&lt;n&gt;</tt> étant un entier. Par exemple, si je veux écrire 60 fois
+<tt class="docutils literal">tictac</tt> :</p>
+<pre class="code python"><a name="rest_code_9df246fab1a64461935b7c403b5c5dbf-1"></a><span class="s">'tictac '</span><span class="o">*</span><span class="mi">60</span>
+</pre>
+<pre class="literal-block">
+'tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac '
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="variables">
+<h2><a class="toc-backref" href=".#id9">Variables</a></h2>
+<p>Les variables servent à manipuler plus aisément les objets de la
+machine.</p>
+<ol class="arabic simple">
+<li>(définition informelle) : une variable est l'association d'un nom et
+d'un objet. Ce dernier est stocké dans une région localisée de
+l'espace mémoire de la machine.</li>
+<li>L'objet associé à la variable s'appelle la <em>valeur courante</em> de la
+variable.</li>
+</ol>
+<div class="section" id="operations-sur-les-variables">
+<h3><a class="toc-backref" href=".#id10">Opérations sur les variables</a></h3>
+<p>On peut :</p>
+<ol class="arabic simple">
+<li>Créer une variable (opération de création ou initialisation d'une
+variable)</li>
+<li>Modifier le contenu d'une variable (c'est-à-dire sa valeur courante).
+Cette opération s'appelle <em>affectation</em> ou <em>mise à jour</em> de la
+variable.</li>
+<li>Utiliser le contenu d'une variable (opération nommée : <em>appel</em> de la
+variable)</li>
+<li>Supprimer une variable.</li>
+</ol>
+<p><strong>Remarque.</strong> En dehors du <tt class="docutils literal">_</tt> (le "tiret du 8"), ou du point <tt class="docutils literal">.</tt>,
+les caractères spéciaux (lettres accentuées, espaces) sont interdits.
+Les noms de variables constitués uniquement de chiffres sont interdits
+pour des raisons évidentes.</p>
+</div>
+<div class="section" id="creation-de-variable">
+<h3><a class="toc-backref" href=".#id11">Création de variable</a></h3>
+<pre class="code python"><a name="rest_code_1b28e0fb9f584ed3965627ab380b4059-1"></a><span class="n">toto</span> <span class="c"># Pour l'instant, la variable appelée toto n'existe pas. Pour preuve :</span>
+</pre>
+<pre class="literal-block">
+---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-47-11a3e2290843&gt; in &lt;module&gt;()
+----&gt; 1 toto
+
+
+NameError: name 'toto' is not defined
+</pre>
+<pre class="code python"><a name="rest_code_b6c8f3e05ee241cbb3461ec0067a99f2-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="s">' bonjour '</span> <span class="c"># la valeur courante est la chaîne de caractères ' bonjour '</span>
+</pre>
+<pre class="code python"><a name="rest_code_9b4d8d8f406948b581d6de6923746601-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+str
+</pre>
+</div>
+<div class="section" id="affectation">
+<h3><a class="toc-backref" href=".#id12">affectation</a></h3>
+<p>Pour stocker l'entier <span class="math">\(2\)</span> dans une variable qu'on appelle
+<tt class="docutils literal">toto</tt>, on tape :</p>
+<pre class="code python"><a name="rest_code_d750b15c1d574f259e560d57847f367a-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="mi">2</span>
+</pre>
+<p>** Attention : ** Le nom de la variable est à gauche du symbole
+<tt class="docutils literal">=</tt> et à droite, l'objet.</p>
+<pre class="code python"><a name="rest_code_4aa2fa629a9043c6bbbbb62119e6506b-1"></a><span class="k">print</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+2
+</pre>
+<p>La nouvelle valeur courante affectée écrase donc l'ancienne.</p>
+</div>
+<div class="section" id="appel">
+<h3><a class="toc-backref" href=".#id13">Appel</a></h3>
+<p>On récupère le contenu d'une variable en l'appelant par son nom.</p>
+<pre class="code python"><a name="rest_code_8867336be106449ab9bb7838a95e6831-1"></a><span class="mi">3</span> <span class="o">+</span> <span class="n">toto</span> <span class="c"># Qu'y avait-il dans toto ? L'appel se fait simplement en utilisant le nom de la variable</span>
+</pre>
+<pre class="literal-block">
+5
+</pre>
+<pre class="code python"><a name="rest_code_7de0925c461b4d9887b1383d1da56be0-1"></a><span class="s">'3'</span> <span class="o">+</span> <span class="n">toto</span> <span class="c"># Soyez rigoureux et analysez la syntaxe</span>
+</pre>
+<pre class="literal-block">
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&lt;ipython-input-24-dc348e9b8641&gt; in &lt;module&gt;()
+----&gt; 1 '3' + toto # Soyez rigoureux et analysez la syntaxe
+
+
+TypeError: cannot concatenate 'str' and 'int' objects
+</pre>
+<p><strong>Explication</strong> (bien comprendre). <tt class="docutils literal">Python</tt> analyse ainsi
+l'instuction:</p>
+<ol class="arabic simple">
+<li>Il commence par voir <tt class="docutils literal">3</tt>. Grâce aux apostrophes, il sait que c'est
+une chaîne de caractères.</li>
+<li>Ensuite, il voit un <tt class="docutils literal">+</tt> : comme il avait juste avant une chaîne de
+caractères, il comprend que ce <tt class="docutils literal">+</tt> désigne la concaténation de
+chaînes et pas l'addition des entiers (ou des flottants ou autre).</li>
+<li>Après ce <tt class="docutils literal">+</tt>, Python s'attend à trouver une chaîne de caractères.
+Or il trouve <tt class="docutils literal">toto</tt>. Comme il n'y a pas délimiteurs autour, il
+comprend que c'est un <em>appel</em> de variable.</li>
+<li>Comme <tt class="docutils literal">toto</tt> contient un entier, <tt class="docutils literal">Python</tt> ne peut rien
+concaténer.</li>
+</ol>
+<p>Le message d'erreur dit bien : tu ne peux pas concaténer chaîne et
+entier. Il faut donc convertir l'entier <tt class="docutils literal">toto</tt> en chaîne. La commande
+<tt class="docutils literal">str(objet)</tt> converit l'objet <tt class="docutils literal">objet</tt> en chaîne de caractères.</p>
+<pre class="code python"><a name="rest_code_3dde1e3957c545769adfd2c741e4d1f4-1"></a><span class="s">'3'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+'32'
+</pre>
+<pre class="code python"><a name="rest_code_d3729b0c7fa6453bb369da47d6a9ed1f-1"></a><span class="s">'3'</span><span class="o">+</span><span class="s">'toto'</span> <span class="c"># Ce n'est pas la même chose que ce qui précède</span>
+</pre>
+<pre class="literal-block">
+'3toto'
+</pre>
+<p><strong>Ce qui suit est à bien comprendre aussi.</strong></p>
+<pre class="code python"><a name="rest_code_13594501820d476aa9515905d1cc3748-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c">#1</span>
+<a name="rest_code_13594501820d476aa9515905d1cc3748-2"></a><span class="n">toto</span> <span class="o">=</span> <span class="n">toto</span> <span class="o">+</span> <span class="mi">8</span> <span class="c">#1</span>
+</pre>
+<p><strong>Explication.</strong></p>
+<ol class="arabic">
+<li>
+<p class="first">Dans <tt class="docutils literal">#1</tt> on a effectué une actualisation de variable : <tt class="docutils literal">toto</tt>
+contient l'entier <span class="math">\(2\)</span>.</p>
+</li>
+<li>
+<p class="first">Dans <tt class="docutils literal">#2</tt>, c'est encore une actualisation de la variable toto
+puisque l'instruction commence par <tt class="docutils literal">toto =</tt></p>
+</li>
+<li>
+<p class="first">Le membre de droite contient :</p>
+<blockquote>
+<ol class="upperalpha simple">
+<li>Un appel de la variable <tt class="docutils literal">toto</tt> : son contenu est <span class="math">\(2\)</span> d'après <tt class="docutils literal">#1</tt>
+</li>
+<li>Une addition d'entiers (puisque le <tt class="docutils literal">+</tt> est coordonné à l'entier <tt class="docutils literal">toto</tt>)</li>
+<li>cette addition se fait entre <span class="math">\(2\)</span> et <span class="math">\(8\)</span>.</li>
+</ol>
+</blockquote>
+</li>
+<li>
+<p class="first">À la fin, on <tt class="docutils literal">toto</tt> devrait donc être actualisé à la valeur
+<span class="math">\(10\)</span>. Vérifions :</p>
+</li>
+</ol>
+<pre class="code python"><a name="rest_code_9bd308f735e04e57b2a998badd890ab4-1"></a><span class="k">print</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+10
+</pre>
+</div>
+</div>
+</div>
+        </div>
+        
+                            <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/objets-et-variables/",
+        disqus_title="Le\u00e7on 1 : Objets principaux et variables",
+        disqus_identifier="cache/posts/objets-et-variables.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2015  <a href="mailto:patel.bcpst@gmail.com">M. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/documents-de-travail"> <i class="icon-file-text"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>
