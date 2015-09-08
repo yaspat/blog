@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (python)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 08 Sep 2015 07:14:51 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leçon 1 : Objets principaux et variables</title><link>http://yaspat.github.io/blog/posts/objets-et-variables/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (python)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 08 Sep 2015 20:52:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Leçon 1 : Objets principaux et variables</title><link>http://yaspat.github.io/blog/posts/objets-et-variables/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#les-nombres" id="id1"&gt;Les nombres&lt;/a&gt;&lt;ul&gt;
@@ -35,4 +35,11 @@
 &lt;li&gt;Quelques manipulations simples sur les chaînes de caractères.&lt;/li&gt;
 &lt;li&gt;Les variables&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/objets-et-variables/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>objets</category><category>python</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/objets-et-variables/</guid><pubDate>Fri, 04 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>
+&lt;div class="section" id="les-nombres"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/objets-et-variables/#id1"&gt;Les nombres&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="les-entiers"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/objets-et-variables/#id2"&gt;Les entiers&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Ce sont les éléments de l'ensemble &lt;span class="math"&gt;\(\mathbf{N}\)&lt;/span&gt; que vous
+connaissez. Les opérations arithmétiques de base sont disponibles.
+Faites simplement attention au fait que la puissance se code &lt;tt class="docutils literal"&gt;**&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/objets-et-variables/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>objets</category><category>python</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/objets-et-variables/</guid><pubDate>Fri, 04 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>

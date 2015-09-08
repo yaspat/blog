@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (fonctions)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/fonctions.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 08 Sep 2015 20:46:29 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Transformations élémentaires sur les fonctions</title><link>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Allez voir tout simplement en cliquant sur l'image ci-desous :&lt;/p&gt;
+&lt;p&gt;&lt;a title="Vers l'animation" href="https://www.desmos.com/calculator/c87ofjpgin"&gt;  &lt;img src="https://s3.amazonaws.com/calc_thumbs/production/c87ofjpgin.png" width="200px" height="200px" style="border:1px solid #ccc; border-radius:5px"&gt;&lt;/a&gt;`&lt;/p&gt;
+&lt;p&gt;C'est tout pour ce billet !&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description><category>déphasage</category><category>fonctions</category><category>réflexion</category><category>translation</category><guid>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</guid><pubDate>Thu, 20 Aug 2015 11:39:19 GMT</pubDate></item></channel></rss>

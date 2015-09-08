@@ -26,10 +26,9 @@ Objet de cette introduction :
 2. Quelques manipulations simples sur les chaînes de caractères.
 3. Les variables
 
-.. raw:: html
 
-   <!-- TEASER_END -->
 
+   
 Les nombres
 -----------
 
@@ -39,6 +38,11 @@ Les entiers
 Ce sont les éléments de l'ensemble :math:`\mathbf{N}` que vous
 connaissez. Les opérations arithmétiques de base sont disponibles.
 Faites simplement attention au fait que la puissance se code ``**``
+
+.. raw:: html
+
+	 <!-- TEASER_END -->
+
 
 .. code:: python
 
@@ -182,7 +186,7 @@ obtenez. La précision par défaut de ``Python`` est de l'orde de
 On constate qu'à :math:`10^{-16}` prés, ``Python`` ne fait pas la
 différence.
 
-**Question :** le nombre :math:`2` est un entier ou un flottant ?
+**Question :**  On sait que le nombre :math:`2` est un entier :
 Utilisons la commande ``type``
 
 .. code:: python
@@ -198,8 +202,7 @@ Utilisons la commande ``type``
 
 
 
-**Question :** Mais si je veux travailler avec le nombre
-:math:`2\in\mathbf{R}` et non pas l'entier :math:`2\in \mathbf{N}` ?
+Mais si je veux travailler avec le nombre :math:`2\in\mathbf{R}` et non pas l'entier :math:`2\in \mathbf{N}` ?
 
 **Réponse :** placer de force le point décimal ( rappel : dans les pays
 anglo-saxons, le séparateur décimal est le point ``.``, et non pas la
@@ -239,7 +242,7 @@ En précisant que l'on effectue la division entre flottants, ``Python``
 comprend que le résultat de cette dernière doit être donné en type
 ``float``.
 
-\*\* Remarque. \*\* En ``Python 3.``, la division est *toujours*
+**Remarque.** En ``Python 3.``, la division est *toujours*
 considérée comme divisione de flottants.
 
 Les caractères et chaînes de caractères
@@ -351,8 +354,9 @@ dans ce cas est d'utiliser des guillemets :
 
 
 **Question \:** Mais comment je fais si j'ai à la fois des guillemets
-et des apostrophes ? Par exemple, une chaîne de caractères comme \:
-'il a dit : "je t'aime"' ?
+et des apostrophes ? Par exemple, comment faire pour travailler avec 
+une chaîne de caractères comme \:
+' il a dit : "je t'aime" ' ?
 
 
 
@@ -417,7 +421,7 @@ Je vais considérer la chaîne de caractères suivante :
 
 
 Comme cette chaîne est longue à saisir, je vais la manipuler en la
-stockant dans une variable que j'appelle ``mot`` (voir plus tard pour
+stockant dans une variable que j'appelle ``mot`` (voir `plus tard`_  pour
 les variables):
 
 .. code:: python
@@ -623,10 +627,13 @@ chaîne, ``<n>`` étant un entier. Par exemple, si je veux écrire 60 fois
 
     'tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac '
 
+.. _`plus tard`:  
 
 
 Variables
 ---------
+
+
 
 Les variables servent à manipuler plus aisément les objets de la
 machine.
@@ -651,7 +658,7 @@ On peut :
    variable)
 4. Supprimer une variable.
 
-**Remarque.** En dehors du caractère *undersecore* :  ``_`` (le "tiret du 8"),
+**Remarque.** En dehors du caractère *underscore* :  ``_`` (le "tiret du 8"),
 les caractères spéciaux (lettres accentuées, espaces, ponctuation) sont interdits.
 Les noms de variables constitués uniquement de chiffres sont interdits
 pour des raisons évidentes.
