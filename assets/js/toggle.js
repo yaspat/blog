@@ -1,5 +1,5 @@
 /*
-   Little snippet to make IPython notebook output cells alternate
+   Little snippet to make IPython notebook output/input  cells alternate
    between hidden and visible states.
 */  
 

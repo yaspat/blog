@@ -230,7 +230,7 @@ html {
 }
 body {
   height: 100%;
-  /*background: url('../images/cream-dust.png') #ffffff;*/
+  background: url('../images/cream-dust.png') #ffffff;
 }
 section {
   margin: 0;
@@ -239,7 +239,7 @@ section {
 .social {
   float: left;
   min-height: 100%;
-  background: url('../images/fond-bleu-nikola.jpg') #192029;
+  background: url('../images/blue-mocha-grunge.jpg') #192029;
   position: absolute;
   top: 0;
   bottom: 0;

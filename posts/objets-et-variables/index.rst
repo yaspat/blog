@@ -1,6 +1,6 @@
 ..title: Objets et variables en Python
 ..slug: objets-et-variables
-.. date: 2015-08-20 13:39:19 UTC+02:00
+.. date: 2015-09-04 13:39:19 UTC+02:00
 .. tags: python, objets, variables
 .. category: 
 .. link: 
@@ -651,8 +651,8 @@ On peut :
    variable)
 4. Supprimer une variable.
 
-**Remarque.** En dehors du ``_`` (le "tiret du 8"), ou du point ``.``,
-les caractères spéciaux (lettres accentuées, espaces) sont interdits.
+**Remarque.** En dehors du caractère *undersecore* :  ``_`` (le "tiret du 8"),
+les caractères spéciaux (lettres accentuées, espaces, ponctuation) sont interdits.
 Les noms de variables constitués uniquement de chiffres sont interdits
 pour des raisons évidentes.
 
@@ -790,7 +790,7 @@ entier. Il faut donc convertir l'entier ``toto`` en chaîne. La commande
 
 .. code:: python
 
-    '3'+'toto' # Ce n'est pas la même chose que ce qui précède
+    '3' + 'toto' # Ce n'est pas la même chose que ce qui précède
 
 
 

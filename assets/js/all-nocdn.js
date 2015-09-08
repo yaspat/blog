@@ -200,7 +200,7 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
 }));
 
 /*
-   Little snippet to make IPython notebook output cells alternate
+   Little snippet to make IPython notebook output/input  cells alternate
    between hidden and visible states.
 */  
 
