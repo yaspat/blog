@@ -36,10 +36,9 @@ Avec ces distributions, vous aurez l'environnement de développment `Syder` disp
 Sous Mac OS X
 ~~~~~~~~~~~~~~
 
-1. Python est installé en natif, il vous  suffit d'installer `Spyder <https://bitbucket.org/spyder-ide/spyderlib/downloads>`_ . Veillez bien à choisir la version suffixée par `py2.7.dmg`. En l'état, vous n'aurez pas accés à `Jupyter`.
-2. Si vous souhaitez passer par `Macports`, venez me voir.
-3. Vous pouvez installer  `Anaconda <http:///continuum.io/downloads>`_ , je n'ai pas essayé. Ceux qui ont fait le test peuvent me montrer.
-
+#. Python est installé en natif, il vous  suffit d'installer `Spyder <https://bitbucket.org/spyder-ide/spyderlib/downloads>`_ . Veillez bien à choisir la version suffixée par `py2.7.dmg`. En l'état, vous n'aurez pas accés à `Jupyter`.
+#. Vous pouvez installer  `Anaconda <http:///continuum.io/downloads>`_ , je n'ai pas essayé, mais  apparemment cela marche très bien de ce que j'ai vu chez certains biwanes. En plus,  vous avez accès à `Jupyter` :  super !
+#. Si vous souhaitez passer par `Macports`, venez me voir, mais ce n'est pas la solution la plus simple, à moins que vous vous sentiez geek au fond de vous et rêvez de la ligne de commandes.
 
 Sous Linux
 ~~~~~~~~~~~
