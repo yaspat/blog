@@ -29,9 +29,9 @@ livrés avec `Python`. On travaillera avec la version `2.7` de `Python`.
 
    a. `Python(x,y) <http://python-xy.github.io/downloads.html>`_  (c'est celle qui est installée au lycée, prendre le fichier `.exe`). Le fichier est lourd, donc soyez patients.
 
-   b. `Anaconda <http:///continuum.io/downloads>`_ . Même remarque sur le temps de l'installation.
+   b. `Anaconda <http:///continuum.io/downloads>`_ . Même remarque que pour Python(x,y) sur le temps de l'installation. Cliquez sur installer, le site reconnaît votre OS, donc le bon fichier sera téléchargé.
 
-Avec ces distributions, vous aurez l'environnement de développment `Syder` disponible ainsi que `Jupyter`
+Avec ces distributions, vous aurez l'environnement de développment `Syder` disponible ainsi que `Jupyter`.
   
 Sous Mac OS X
 ~~~~~~~~~~~~~~
