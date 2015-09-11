@@ -14,6 +14,12 @@
 Sujets de DM
 ==============
 
+
+#. DM 1
+
+   a. `Sujet du DM1 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1.pdf>`_
+   b. `Corrigé du DM1  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
+
 Sujets de DS
 ====================
 
