@@ -22,10 +22,15 @@ Sujets de DM
 
 
 #. DM 2 : Étude de fonction. Implémentation d'une fonction en Python *À rendre le 18/09/15*
+
    a. `Sujet  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM2.pdf>`_
    b. `Corrigé   <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
+
+
 Sujets de DS
 ============
+
+
 
 
 Corrigés des DS
