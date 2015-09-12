@@ -17,14 +17,14 @@ Sujets de DM
 
 #. DM 1 :  Étude d'une fonction périodique. *À rendre le 11/09/15*
 
-   a. `Sujet  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1.pdf>`_
-   b. `Corrigé   <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
+   a. `Sujet du DM1 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1.pdf>`_
+   b. `Corrigé du DM1  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
 
 
 #. DM 2 : Étude de fonction. Implémentation d'une fonction en Python *À rendre le 18/09/15*
 
-   a. `Sujet  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM2.pdf>`_
-   b. `Corrigé   <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
+   a. `Sujet  du DM2 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM2.pdf>`_
+   b. Corrigé du DM2 
 
 
 Sujets de DS
