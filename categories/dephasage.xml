@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (déphasage)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/dephasage.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 09 Sep 2015 14:32:56 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Transformations élémentaires sur les fonctions</title><link>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (déphasage)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/dephasage.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sat, 12 Sep 2015 05:06:21 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Transformations élémentaires sur les fonctions</title><link>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Rappel : étant donnée une fonction $f$ définie sur son domaine de définition $D_f$, on a vu  les opérations suivantes :&lt;/p&gt;
-&lt;blockquote&gt;&lt;ol&gt;
-&lt;li&gt;Dépahsage de $x_0$  : c'est la fonction $g$ définie par $g(x) = f(x-x_0)$ et vous devez savoir préciser le domaine de $g$ en fonction de celui de $f$.&lt;/li&gt;
-&lt;li&gt;Translation de $y_0$ : c'est la fonction $h$ définie par $h(x) = f(x) +y_0$ qui a le même domaine que $f$.&lt;/li&gt;
-&lt;li&gt;Réflexion suivant les entrées : c'est la fonction $j$ définie par $j(x) = f(-x)$ et vous devez savoir préciser son domaine en fonction de celui de $f$.&lt;/li&gt;
-&lt;li&gt;Réflexion suivant les sorties : c'est la fonction $k$ définie par $k(x) = -f(x)$ et
-son domaine est le même que celui de $f$.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Vous devez savoir déduire de la courbe de $f$ les courbes des fonctions $g,h,j,k$&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Cliquez sur l'image ci-desous pour voir les courbes :
-&lt;a title="View with the Desmos Graphing Calculator" href="https://www.desmos.com/calculator/drdgxlklhu"&gt;  &lt;img src="https://s3.amazonaws.com/calc_thumbs/production/drdgxlklhu.png" width="200px" height="200px" style="border:1px solid #ccc; border-radius:5px"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;C'est tout pour ce billet !&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>déphasage</category><category>fonctions</category><category>réflexion</category><category>translation</category><guid>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</guid><pubDate>Tue, 08 Sep 2015 10:21:34 GMT</pubDate></item></channel></rss>
+&lt;p&gt;Rappel : étant donnée une fonction $f$ définie sur son domaine de définition $D_f$, on a vu  les opérations suivantes :   &lt;/p&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/transfo-elem-fonctions/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>déphasage</category><category>fonctions</category><category>réflexion</category><category>translation</category><guid>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</guid><pubDate>Tue, 08 Sep 2015 10:21:34 GMT</pubDate></item></channel></rss>

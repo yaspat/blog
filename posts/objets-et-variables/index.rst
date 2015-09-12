@@ -8,8 +8,8 @@
 .. type: text
 
 
-Leçon 1 : Objets principaux et variables
-========================================
+Python. Leçon 1 : Objets principaux et variables
+=================================================
 
 .. class:: alert alert-info pull-right
 
@@ -20,15 +20,23 @@ Objet de cette introduction :
 
 1. Prendre connaissances de quelques objets manipulables en ``Python``
 
-   1. Quelques types de nombres
-   2. Les chaînes de caractères
+   a. Quelques types de nombres 
+
+.. raw:: html     
+
+	 <!-- TEASER_END -->
+   
+   b. Les chaînes de caractères
 
 2. Quelques manipulations simples sur les chaînes de caractères.
 3. Les variables
 
 
 
+
+
    
+
 Les nombres
 -----------
 
@@ -37,11 +45,11 @@ Les entiers
 
 Ce sont les éléments de l'ensemble :math:`\mathbf{N}` que vous
 connaissez. Les opérations arithmétiques de base sont disponibles.
-Faites simplement attention au fait que la puissance se code ``**``
+Faites simplement attention au fait que la puissance se code avec deux étoiles : ``**``
 
-.. raw:: html
 
-	 <!-- TEASER_END -->
+
+	 
 
 
 .. code:: python
