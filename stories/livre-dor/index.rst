@@ -8,9 +8,11 @@
 .. type: text
 
 
-En BCPST, on se marre \: il n'y a pas que les élèves qui sont fous. Les biwanes consignent dans un livre qu'ils conservent précieusement les saillies  de leur professeur de maths (entre autres). On se demande si on devrait  en faire (des maths) en BCPST :
+En BCPST, on se marre \: il n'y a pas que les élèves qui sont fous. Les biwanes consignent dans un livre qu'ils conservent précieusement les saillies  de leur professeur de maths (entre autres). On se demande si on devrait  en faire (des maths) en BCPST.
 
- #. On l'appelle argument principal par ce l'appeler "argument le plus joli" ça fait pas sérieux. Mais c'est quand même le plus joli.
+Il paraît que j'aurais dit :
+
+ #. On l'appelle argument principal parce que l'appeler "argument le plus joli" ça fait pas sérieux. Mais c'est quand même le plus joli.
  #. (*au tableau\:* :math:`e^{i\pi}+1=0`). Vous savez, cette formule a mis en transe les mathématiciens, les cinq piliers de mathématiques réunis en une formule simple. 
  #. C'est ce qu'on appelle une fonction BCBG : une fonction bien continue bien gentille.
  #. (*casse une craie*) 
