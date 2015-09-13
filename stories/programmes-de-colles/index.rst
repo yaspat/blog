@@ -56,3 +56,12 @@ Les programmes de colles de maths
 
 
 
+Les salles de colles de mathématiques
+=====================================
+
+#. M. Alaoui : UM14
+#. M. Duchene : B010 bis
+#. M. Essaifi : UM15
+#. M. Faure : B005
+#. M. Patel : UM16
+#. M. Riou : UM12
