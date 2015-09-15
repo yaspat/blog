@@ -10,6 +10,10 @@
   <lastmod>2015-09-12T05:11:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/croissances-comparees.xml</loc>
+  <lastmod>2015-09-15T20:45:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/dephasage.xml</loc>
   <lastmod>2015-09-12T05:06:00Z</lastmod>
  </sitemap>
@@ -38,6 +42,18 @@
   <lastmod>2015-09-12T05:06:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/tag1.xml</loc>
+  <lastmod>2015-09-15T20:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/tag2.xml</loc>
+  <lastmod>2015-09-15T20:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/tag3.xml</loc>
+  <lastmod>2015-09-15T20:43:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
   <lastmod>2015-09-12T05:06:00Z</lastmod>
  </sitemap>
@@ -55,10 +71,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-09-12T05:11:00Z</lastmod>
+  <lastmod>2015-09-15T20:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-09-12T05:23:00Z</lastmod>
+  <lastmod>2015-09-15T20:46:00Z</lastmod>
  </sitemap>
 </sitemapindex>
