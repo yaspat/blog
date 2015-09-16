@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 15 Sep 2015 21:38:33 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Croissances comparées pour de vrai</title><link>http://yaspat.github.io/blog/posts/croissances-comparees/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 16 Sep 2015 20:27:41 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 2</title><link>http://yaspat.github.io/blog/posts/entrees-sorties/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/entrees-sorties/#sorties" id="id1"&gt;Sorties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/entrees-sorties/#entrees" id="id2"&gt;Entrées&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Objet de cette leçon :&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Connaître les actions d'échange utilisateur-machine.&lt;ol class="loweralpha"&gt;
+&lt;li&gt;Les sorties&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+      &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/entrees-sorties/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>entrées</category><category>leçon</category><category>python</category><category>sorties</category><guid>http://yaspat.github.io/blog/posts/entrees-sorties/</guid><pubDate>Wed, 16 Sep 2015 11:39:19 GMT</pubDate></item><item><title>Croissances comparées pour de vrai</title><link>http://yaspat.github.io/blog/posts/croissances-comparees/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -17,7 +31,7 @@
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Rappel : étant donnée une fonction $f$ définie sur son domaine de définition $D_f$, on a vu  les opérations suivantes :   &lt;/p&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/transfo-elem-fonctions/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>déphasage</category><category>fonctions</category><category>réflexion</category><category>translation</category><guid>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</guid><pubDate>Tue, 08 Sep 2015 10:21:34 GMT</pubDate></item><item><title>Python. Leçon 1 : Objets principaux et variables</title><link>http://yaspat.github.io/blog/posts/objets-et-variables/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;Rappel : étant donnée une fonction $f$ définie sur son domaine de définition $D_f$, on a vu  les opérations suivantes :   &lt;/p&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/transfo-elem-fonctions/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>déphasage</category><category>fonctions</category><category>réflexion</category><category>translation</category><guid>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</guid><pubDate>Tue, 08 Sep 2015 10:21:34 GMT</pubDate></item><item><title>Informatique : Leçon 1</title><link>http://yaspat.github.io/blog/posts/objets-et-variables/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#les-nombres" id="id1"&gt;Les nombres&lt;/a&gt;&lt;ul&gt;
@@ -50,4 +64,4 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-      &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/objets-et-variables/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>objets</category><category>python</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/objets-et-variables/</guid><pubDate>Fri, 04 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>
+      &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/objets-et-variables/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>leçon</category><category>objets</category><category>python</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/objets-et-variables/</guid><pubDate>Fri, 04 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>

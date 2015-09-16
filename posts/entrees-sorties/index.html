@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Informatique : Leçon 2 | Maths-info en BCPST1-A Rennes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/entrees-sorties/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../icon_128x128.png" sizes="128x128">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
+<meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
+<meta property="og:title" content="Informatique : Leçon 2">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/entrees-sorties/">
+<meta property="og:description" content="Contents
+
+Sorties
+Entrées
+
+
+Objet de cette leçon :
+
+Connaître les actions d'échange utilisateur-machine.
+Les sorties
+
+
+
+      
+
+
+b. Les entrées de caractères
+Utiliser les notions de la leçon 1.
+
+
+Sort">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-09-16T13:39:19+02:00">
+<meta property="article:tag" content="entrées">
+<meta property="article:tag" content="leçon">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="sorties">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/documents-de-travail" title="Documents"><i class="icon-file-text"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Informatique : Leçon 2</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-09-16T13:39:19+02:00">2015-09-16 13:39</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/entrees/" rel="tag">entrées</a></li>
+           <li><a class="tag p-category" href="../../categories/lecon/" rel="tag">leçon</a></li>
+           <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../../categories/sorties/" rel="tag">sorties</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#sorties" id="id1">Sorties</a></li>
+<li><a class="reference internal" href=".#entrees" id="id2">Entrées</a></li>
+</ul>
+</div>
+<p>Objet de cette leçon :</p>
+<ol class="arabic simple">
+<li>Connaître les actions d'échange utilisateur-machine.<ol class="loweralpha">
+<li>Les sorties</li>
+</ol>
+</li>
+</ol>
+<!-- TEASER_END -->
+
+
+b. Les entrées de caractères<ol class="arabic simple" start="2">
+<li>Utiliser les notions de la leçon 1.</li>
+</ol>
+<div class="section" id="sorties">
+<h2><a class="toc-backref" href=".#id1">Sorties</a></h2>
+<p>La commande <tt class="docutils literal">print(y)</tt> affiche l'objet <tt class="docutils literal">y</tt> à l'écran :</p>
+<pre class="code python"><a name="rest_code_1c4daa2c1523470dbea66e876b979bdb-1"></a><span class="k">print</span><span class="p">(</span><span class="mi">256</span><span class="p">)</span> <span class="c"># un nombre</span>
+</pre>
+<pre class="literal-block">
+256
+</pre>
+<pre class="code python"><a name="rest_code_6cf3881ff7f4465e80adc34c7507af85-1"></a><span class="k">print</span><span class="p">(</span><span class="s">'yoyo'</span><span class="p">)</span> <span class="c"># une chaîne de caractères</span>
+</pre>
+<pre class="literal-block">
+yoyo
+</pre>
+<pre class="code python"><a name="rest_code_188399a1aa4941cfa73592e1cd89aad0-1"></a><span class="k">print</span><span class="p">(</span><span class="n">ma_variable</span><span class="p">)</span> <span class="c"># cette variable n'existe pas</span>
+</pre>
+<pre class="literal-block">
+---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-3-c53d5fc5091d&gt; in &lt;module&gt;()
+----&gt; 1 print(ma_variable) # cette variable n'existe pas
+
+
+NameError: name 'ma_variable' is not defined
+</pre>
+<p>On récolte donc, c'était prévisible, un message d'erreur.</p>
+</div>
+<div class="section" id="entrees">
+<h2><a class="toc-backref" href=".#id2">Entrées</a></h2>
+<p>La commande <tt class="docutils literal">x = <span class="pre">input('un</span> texte')</tt> a pour effet :</p>
+<ol class="arabic simple">
+<li>D'afficher à l'écran la chaîne de caractères <tt class="docutils literal">un texte</tt>
+</li>
+<li>De bloquer le prompt de <tt class="docutils literal">Python</tt> (il est en suspens) : ce dernier
+attend que vous saisissiez une instruction.</li>
+<li>Stocke votre instruction dans la variable <tt class="docutils literal">x</tt>.</li>
+</ol>
+<p><strong>Remarque.</strong> La variable <tt class="docutils literal">x</tt> est donc, avec une telle instruction :</p>
+<ol class="arabic simple">
+<li>Soit actualisée si elle existait auparavant.</li>
+<li>Soit initialisée si elle n'existait pas avant.</li>
+</ol>
+<p><strong>Question.</strong> mais dans ce cas, quel est le type de l'objet contenu dans
+<tt class="docutils literal">x</tt> ?</p>
+<p><strong>Réponse.</strong> Essayons. Tapez ce qui suit dans la console et répondez ce
+que vous voulez :</p>
+<pre class="code python"><a name="rest_code_86c047e3ebb44523be21d43a30434d9b-1"></a><span class="n">prenom</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Comment t'appelles-tu ?"</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Comment t'appelles-tu ?58
+</pre>
+<p><strong>Remarque.</strong> Si des points de supension <tt class="docutils literal">...</tt> s'affichent, c'est que
+vous avez ouvert un délimiteur sans le fermer. Typiquement : <tt class="docutils literal">(</tt> ou
+<tt class="docutils literal">[</tt>. Vous ne pouvez pas répondre à la requête et récupérer la main
+tant que vous n'avez pas fermé votre délimiteur. Fermez une parenthése
+pour reprendre la main et ressaisissez votre instruction.</p>
+<p>Vous pouvez constater que j'ai saisi un objet de type entier. Voyons
+comment <tt class="docutils literal">Python</tt> le considère :</p>
+<pre class="code python"><a name="rest_code_43bea8884a174aff9079737d7832390a-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">prenom</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+int
+</pre>
+<p>Il semble que Python considère le type de l'objet entré en réponse.
+Vérifions :</p>
+<pre class="code python"><a name="rest_code_b0557b913a9f4199bbfc1d11f01a525e-1"></a><span class="n">prenom</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Comment t'appelles-tu ?"</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Comment t'appelles-tu ?'Miguel'
+</pre>
+<pre class="code python"><a name="rest_code_7136aa4acb2842f4894811e24cb5ebb7-1"></a><span class="nb">type</span><span class="p">(</span><span class="s">'prenom'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+str
+</pre>
+<p>Dernier essai :</p>
+<pre class="code python"><a name="rest_code_9c3d8b61f55749429214ab6407170d51-1"></a><span class="n">prenom</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Comment t'appelles-tu ?"</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Comment t'appelles-tu ?Miguel
+</pre>
+<pre class="literal-block">
+---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-9-8ccfe9f58e52&gt; in &lt;module&gt;()
+----&gt; 1 prenom = input("Comment t'appelles-tu ?")
+
+
+/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/IPython/kernel/zmq/ipkernel.pyc in &lt;lambda&gt;(prompt)
+    145             self._sys_eval_input = builtin_mod.input
+    146             builtin_mod.raw_input = self.raw_input
+--&gt; 147             builtin_mod.input = lambda prompt='': eval(self.raw_input(prompt))
+    148         self._save_getpass = getpass.getpass
+    149         getpass.getpass = self.getpass
+
+
+/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/IPython/kernel/zmq/ipkernel.pyc in &lt;module&gt;()
+
+
+NameError: name 'Miguel' is not defined
+</pre>
+<p>Le message d'erreur est :<tt class="docutils literal">name 'Miguel' is not defined</tt>. Python
+considère que Miguel est le nom d'une variable. Or, elle n'a jamais été
+initialisée.</p>
+<p><strong>Exercice</strong> Dans l'éditeur de Spyder (et pas la console !) écrire
+un Dialogue dans un fichier que vous nommerez <tt class="docutils literal">myfirst.py</tt> et que vous
+sauvegarderez dans un dossier nommé <tt class="docutils literal">TP01</tt> que vous placerez dans
+votre dossier <tt class="docutils literal">Python</tt> (ce dernier dossier est créé par défaut et se
+trouve dans trouve dans votre dossier <tt class="docutils literal">Mes Documents</tt>).</p>
+<p>On veut un dialogue avec Python qui :</p>
+<ol class="arabic simple">
+<li>Vous dit <tt class="docutils literal">"Bonjour Biwane, quel est ton nom <span class="pre">?"</span></tt>
+</li>
+<li>Enregistre votre réponse dans une variable nommée <tt class="docutils literal">prenom</tt>.</li>
+<li>Vous dit ensuite : <tt class="docutils literal">" Quel âge <span class="pre">as-tu</span> <span class="pre">?"</span></tt>
+</li>
+<li>Enregistre votre réponse dans une variable nommée <tt class="docutils literal">age</tt>.</li>
+<li>Répond : <tt class="docutils literal">" [prenom], tu es né en [votre année de <span class="pre">naissance]".</span></tt>
+</li>
+</ol>
+<p>Voici la solution :</p>
+<pre class="code python"><a name="rest_code_320be49f0cb94d7cb96c8f10f2cc4e71-1"></a><span class="n">prenom</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">u'Bonjour Biwane, quel est ton prénom ?'</span><span class="p">)</span>
+<a name="rest_code_320be49f0cb94d7cb96c8f10f2cc4e71-2"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">u'Quel est ton âge ?'</span><span class="p">)</span>
+<a name="rest_code_320be49f0cb94d7cb96c8f10f2cc4e71-3"></a><span class="k">print</span><span class="p">(</span><span class="n">prenom</span>  <span class="o">+</span> <span class="s">u' tu es né(e) en '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2015</span><span class="o">-</span><span class="n">age</span><span class="p">)</span><span class="o">+</span> <span class="s">'!'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Bonjour Biwane, quel est ton prénom ?'Toto'
+Quel est ton âge ?18
+Toto tu es né(e) en 1997!
+</pre>
+<p><strong>Commentaires</strong></p>
+<ol class="arabic simple" start="0">
+<li>Si votre console est bloquée, cliquer sur la petite icône en haut à
+droite sur la console et redémarrez lz noyau. Réexécutez avec la
+touche <tt class="docutils literal">F5</tt>
+</li>
+<li>félicitations, vous avez créé votre premier script.</li>
+<li>Ce script comporte plusieurs défauts ou limitations.<ol class="loweralpha">
+<li>Quand vous entrez votre prénom, vous êtes obligé de taper les
+guillemets pour faire savoir à Python que vous entrez une chaîne
+de caractères.</li>
+<li>Les caractères accentués s'affichent mal.</li>
+<li>Quand la question de l'âge est posée, on a envie de répondre p. ex
+18 ans, et pas 18.</li>
+</ol>
+</li>
+</ol>
+<p><strong>Solutions proposées</strong></p>
+<p><strong>Réponse à 3. a)</strong> La commande <tt class="docutils literal">raw_input</tt> fait comme <tt class="docutils literal">input</tt> à la
+différence que l'entrée est <em>toujours</em> considérée comme une chaîne de
+caractères :</p>
+<pre class="literal-block">
+i. Avantage : vous n'avez plus à saisir les guillemets si vous entrez une chaîne de caractères.
+
+ii. Inconvénient : même un entier est considéré comme une chaine de caractères.
+</pre>
+<p><strong>Réponse à 3. b)</strong> C'est un problème d'encodage de caractères : le plus
+simple est de préfixer votre chaîne par la lettre <tt class="docutils literal">u</tt> (pour encodage
+unicode). Tapez <tt class="docutils literal">input(u'Quel est ton âge <span class="pre">?')</span></tt> au lieu
+<tt class="docutils literal">input(u'Quel est ton âge <span class="pre">?')</span></tt></p>
+<p><strong>Question.</strong> Améliorez votre programme pour que <tt class="docutils literal">Python</tt> extraie
+d'une réponse comme <tt class="docutils literal">18 ans</tt> la sous-chaîne <tt class="docutils literal">18</tt> et réponde
+correctement enfin.</p>
+<p><strong>Solution</strong> :</p>
+<pre class="code python"><a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-1"></a><span class="n">prenom</span> <span class="o">=</span><span class="nb">raw_input</span><span class="p">(</span><span class="s">'Bonjour Biwane, quel est ton prenom ?'</span><span class="p">)</span>
+<a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-2"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">u'Quel est ton âge ?'</span><span class="p">)</span>
+<a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-3"></a>
+<a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-4"></a><span class="n">agenum</span> <span class="o">=</span> <span class="n">age</span><span class="p">[:</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="c"># J'enlève les 4 derniers caractères</span>
+<a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-5"></a><span class="n">agenum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">agenum</span><span class="p">)</span> <span class="c"># Je convertis la chaîne en nombre entier</span>
+<a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-6"></a>
+<a name="rest_code_beaa981e6852414abdc4bc4c06bc1b07-7"></a><span class="k">print</span><span class="p">(</span><span class="n">prenom</span>  <span class="o">+</span> <span class="s">' tu es né(e) en '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">2015</span><span class="o">-</span><span class="n">agenum</span><span class="p">)</span><span class="o">+</span> <span class="s">' !'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Bonjour Biwane, quel est ton prenom ?Chuck
+Quel est ton âge ?56 ans
+Chuck tu es né(e) en 1959 !
+</pre>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../croissances-comparees/" rel="prev" title="Croissances comparées pour de vrai">Article précédent</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/entrees-sorties/",
+        disqus_title="Informatique : Le\u00e7on 2",
+        disqus_identifier="cache/posts/Lecon2. Entrees-Sorties.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2015  <a href="mailto:patel.bcpst@gmail.com">M. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/documents-de-travail"> <i class="icon-file-text"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

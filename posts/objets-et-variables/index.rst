@@ -1,15 +1,15 @@
-..title: Objets et variables en Python
-..slug: objets-et-variables
+.. title: Informatique : Leçon 1
+.. slug: objets-et-variables
 .. date: 2015-09-04 13:39:19 UTC+02:00
-.. tags: python, objets, variables
+.. tags: python, objets, variables, leçon
 .. category: 
 .. link: 
 .. description: 
 .. type: text
 
 
-Python. Leçon 1 : Objets principaux et variables
-=================================================
+Python :  Leçon 1 
+=================
 
 .. class:: alert alert-info pull-right
 
