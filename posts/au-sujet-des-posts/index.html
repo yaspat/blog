@@ -6,10 +6,10 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Fonction du DM2 | Maths-info en BCPST1-A Rennes</title>
+<title>Au sujet des posts | Maths-info en BCPST1-A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://yaspat.github.io/blog/posts/fonction-du-dm-2/">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/au-sujet-des-posts/">
 <link rel="icon" href="../../favicon.ico" sizes="16x16">
 <link rel="icon" href="../../icon_128x128.png" sizes="128x128">
 <script type="text/x-mathjax-config">
@@ -26,15 +26,12 @@ article: http://ogp.me/ns/article#
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
 <meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
-<meta property="og:title" content="Fonction du DM2">
-<meta property="og:url" content="http://yaspat.github.io/blog/posts/fonction-du-dm-2/">
-<meta property="og:description" content="Voici un exemple de script de fonction (c'est celle du DM2, à savoir, celle définie par \(f(x)= \ln\left(\frac{e^{x}}{x} -1\right)\)).
-Vous pouvez télécharger le script de la fonction ici.
-# -*- codin">
+<meta property="og:title" content="Au sujet des posts">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/au-sujet-des-posts/">
+<meta property="og:description" content="Juste pour info  : les posts qui présentent des fenêtres cliquables pour monter/cacher le code Python sont eux-mêmes des notebook Ipython (par exemple,  le billet sur les croissances comparées). Ainsi">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2015-09-20T19:20:34+02:00">
-<meta property="article:tag" content="fonction">
-<meta property="article:tag" content="python">
+<meta property="article:published_time" content="2015-09-21T12:24:40+02:00">
+<meta property="article:tag" content="ipython notebook">
 </head>
 <body>
     <section class="social"><ul>
@@ -54,11 +51,11 @@ Vous pouvez télécharger le script de la fonction ici.
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Fonction du DM2</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Au sujet des posts</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2015-09-20T19:20:34+02:00">2015-09-20 19:20</time>
+                <time class="timeago" datetime="2015-09-21T12:24:40+02:00">2015-09-21 12:24</time>
             
                       |  
         <a href="index.rst" id="sourcelink">Source</a>
@@ -67,54 +64,25 @@ Vous pouvez télécharger le script de la fonction ici.
                     <div itemprop="keywords" class="tags">
         <ul>
         Étiquettes : 
-           <li><a class="tag p-category" href="../../categories/fonction/" rel="tag">fonction</a></li>
-           <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../../categories/ipython-notebook/" rel="tag">ipython notebook</a></li>
         </ul>
 </div>
 
         </div>
         <div class="body">
-            <div>
-<p>Voici un exemple de script de fonction (c'est celle du DM2, à savoir, celle définie par <span class="math">\(f(x)= \ln\left(\frac{e^{x}}{x} -1\right)\)</span>).</p>
-<!-- TEASER_END --><p>Vous pouvez télécharger le script de la fonction <a class="reference external" href="https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/Scripts_Python/scriptExo2.py">ici</a>.</p>
-<pre class="code python"><a name="rest_code_1b02a3d3819149ca8f6a28972c317000-1"></a><span class="c"># -*- coding: utf-8 -*-</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-2"></a><span class="sd">"""</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-3"></a><span class="sd">Created on Sat Sep 12 07:40:45 2015</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-4"></a>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-5"></a><span class="sd">@author: Yas</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-6"></a><span class="sd">"""</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-7"></a><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-8"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span><span class="n">exp</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-9"></a>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-10"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-11"></a>    <span class="sd">"""fonction f de l'exercice 1 du DM2"""</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-12"></a>    <span class="n">y</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">x</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<a name="rest_code_1b02a3d3819149ca8f6a28972c317000-13"></a>    <span class="k">return</span> <span class="n">y</span>
-</pre>
-<p>Et pour voir le code en action : depuis l'éditeur : appuyez sur la touche F5 (après avoir sauvegardé votre script). Les Mac users, vous penserez à appuyer simultanément sur la touche fn en bas à gauche de votre clavier pour échapper ladite touche F5.  Vous verrez alors dans la console :</p>
-<pre class="code python"><a name="rest_code_4796393785794ca680ce1b33f27bad6d-1"></a><span class="n">runfile</span><span class="p">(</span><span class="s">r"le chemin d'accès jusqu' à votre fichier"</span><span class="p">,</span> <span class="n">wdir</span><span class="o">=</span><span class="s">r"le chemin d'accès à votre répertoire de travail"</span><span class="p">)</span>
-</pre>
-<p>Ce qui signifie : votre fichier a été exécuté (sans avoir trouvé d'erreurs normalement !). Enfin, dans la console, tapez :</p>
-<pre class="code python"><a name="rest_code_8695f520d32e49b8a5a29d174e69e000-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="rest_code_8695f520d32e49b8a5a29d174e69e000-2"></a><span class="mf">0.8317965657511863</span>
-</pre>
-<p>C'est tout.</p>
-</div>
+            <p>Juste pour info  : les posts qui présentent des fenêtres cliquables pour monter/cacher le code Python sont eux-mêmes des notebook Ipython (par exemple,  <a class="reference external" href="http://yaspat.github.io/blog/posts/croissances-comparees/">le billet sur les croissances comparées</a>). Ainsi, pour ceux qui ont installé Ipython notebook avec leur distribution Python, ils peuvent cliquer en haut à gauche du billet qui les intéresse sur "source" afin de télécharger le notebook et jouer avec !</p>
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../entrees-sorties/" rel="prev" title="Informatique : Leçon 2">Article précédent</a>
-            </li>
-            <li class="next">
-                <a href="../au-sujet-des-posts/" rel="next" title="Au sujet des posts">Article suivant</a>
+                <a href="../fonction-du-dm-2/" rel="prev" title="Fonction du DM2">Article précédent</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="yaspat",
-            disqus_url="http://yaspat.github.io/blog/posts/fonction-du-dm-2/",
-        disqus_title="Fonction du DM2",
-        disqus_identifier="cache/posts/exemple-fonction.html",
+            disqus_url="http://yaspat.github.io/blog/posts/au-sujet-des-posts/",
+        disqus_title="Au sujet des posts",
+        disqus_identifier="cache/posts/au-sujet-des-posts.html",
         disqus_config = function () {
             this.language = "fr";
         };

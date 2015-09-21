@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-09-20T23:23:00Z</lastmod>
+  <lastmod>2015-09-21T10:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique/</loc>
@@ -54,16 +54,16 @@
   <lastmod>2015-09-09T14:09:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/ipython-notebook/</loc>
+  <lastmod>2015-09-21T10:28:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/lecon/</loc>
   <lastmod>2015-09-16T20:21:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/objets/</loc>
   <lastmod>2015-09-05T09:59:00Z</lastmod>
- </url>
- <url>
-  <loc>http://yaspat.github.io/blog/categories/python-fonction/</loc>
-  <lastmod>2015-09-20T23:21:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/python/</loc>
@@ -100,6 +100,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
   <lastmod>2015-09-12T05:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/au-sujet-des-posts/</loc>
+  <lastmod>2015-09-21T10:28:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/croissances-comparees/</loc>
