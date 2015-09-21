@@ -7,4 +7,4 @@
 .. description: 
 .. type: text
 
-Juste pour info  : les posts qui présentent des fenêtres cliquables pour monter/cacher le code Python sont eux-mêmes des notebook Ipython (par exemple,  `le billet sur les croissances comparées <http://yaspat.github.io/blog/posts/croissances-comparees/>`_). Ainsi, pour ceux qui ont installé Ipython notebook avec leur distribution Python, ils peuvent cliquer en haut à gauche du billet qui les intéresse sur "source" afin de télécharger le notebook et jouer avec !
+Juste pour info  : les posts qui présentent des fenêtres cliquables pour montrer/cacher le code Python sont eux-mêmes des notebooks Ipython (par exemple,  `le billet sur les croissances comparées <http://yaspat.github.io/blog/posts/croissances-comparees/>`_). Ainsi, ceux qui ont installé Ipython notebook avec leur distribution Python  peuvent cliquer en haut à gauche du billet qui les intéresse sur "source" afin de télécharger le notebook et jouer avec !
