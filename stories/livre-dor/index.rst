@@ -17,9 +17,9 @@ Il paraît que j'aurais dit :
  #. C'est ce qu'on appelle une fonction BCBG : une fonction bien continue bien gentille.
  #. (*casse une craie*) 
 
-            *- prof \:* Je ne contrôle pas ma force ! (...) Qu'est-ce qu'il y a de drôle ?
+            *\_\_ prof \:* Je ne contrôle pas ma force ! (...) Qu'est-ce qu'il y a de drôle ?
     
-            *- élève\:* Non, on vous imagine en train de déchirer votre chemise et devenir tout vert !
+            *\_\_ élève\:* Non, on vous imagine en train de déchirer votre chemise et devenir tout vert !
 
  #. Je suis sûr qu'au lycée on vous faisait dire : " la fonction est dérivable donc continue. Bien à toi."
  #. On ne vous apprend pas des choses fausses, vous êtes suffisamment bons pour écrire des choses fausses tout seuls.
@@ -33,22 +33,25 @@ Il paraît que j'aurais dit :
  
  #. (*après avoir encore tapé sur la tête du  programme*)   
       
-      *- élève \:* Monsieur, les élections, c'est bientôt, vous devriez vous présenter ! 
+      *\_\_ élève \:* Monsieur, les élections, c'est bientôt, vous devriez vous présenter ! 
 
-      *- prof \:* Je me verrais bien en dictateur.
+      *\_\_ prof \:* Je me verrais bien en dictateur.
    
  #. 
-     *- prof \:* Vous avez vu tout ce que vous avez appris en deux semaines ?
+     *\_\_ prof \:* Vous avez vu tout ce que vous avez appris en deux semaines ?
 
      
-     *- élève \:* Le désespoir, le chagrin ...
+     *\_\_ élève \:* Le désespoir, le chagrin ...
  #. Pour une fois que je fais un calcul et que j'ai bon, je suis super content !
- #. C'est la fonction exponentielle au bal des fonctions. Toutes les fonctions sont là, et elles  s'amusent comme des folles. Sauf l'exponentielle qui reste toute seule dans son coin. Alors le logarithme, sa réciproque, lui dit : 
+ #. C'est la fonction exponentielle au bal des fonctions. Toutes les fonctions sont là, et elles  s'amusent comme des folles. Sauf l'exponentielle qui reste toute seule dans son coin. Alors le logarithme, sa réciproque, lui dit \: 
 
-         -- " pourquoi tu restes seule ? " 
-         -- " bein, je sais pas, j'arrive pas à aller avec les autres ... "
-         -- " allez, fais un effort, essaie de t'intégrer ! "
-         -- "... ça changera rien ! "
+    \_\_ pourquoi tu restes seule ?  
+
+    \_\_ ben, je sais pas, j'arrive pas à aller avec les autres ... 
+
+    \_\_ allez, fais un effort, essaie de t'intégrer ! 
+
+    \_\_ ... ça changera rien ! 
 
  #. $f$(Alice) $=$ garçon.
 
