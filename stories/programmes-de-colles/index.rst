@@ -52,9 +52,9 @@ vous découvrez quelles colles vous attendent.
 Les programmes de colles de maths
 ==================================
 
-#. `Programme de la quinzaine 1 (14-25 sept) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_ Thème : notions élémentaires sur les fonctions. Premiers pas avec Python.
+#. `Programme de la quinzaine 1 (14-25 sept) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_. Thème : notions élémentaires sur les fonctions. Premiers pas avec Python.
 
-
+#. `Programme de la quinzaine 2 (28 sept - 9 oct) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/02-Derivees-Primitives.pdf>`_. Thème : dérivation, primitivation.
 
 Les salles de colles de mathématiques
 =====================================

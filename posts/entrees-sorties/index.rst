@@ -19,17 +19,17 @@ Objet de cette leçon :
 
 1. Connaître les actions d'échange utilisateur-machine.
 
-   a. Les sorties
+     a. Les sorties
+   
+     b. Les entrées de caractères
+
+2. Utiliser les notions de la leçon 1.
+
 
 .. raw:: html     
 
 	 <!-- TEASER_END -->
    
-   
-   b. Les entrées de caractères
-
-2. Utiliser les notions de la leçon 1.
-
 
 
 Sorties
@@ -252,8 +252,6 @@ Voici la solution :
 différence que l'entrée est *toujours* considérée comme une chaîne de
 caractères :
 
-::
-
        i. Avantage : vous n'avez plus à saisir les guillemets si vous entrez une chaîne de caractères.
        
        ii. Inconvénient : même un entier est considéré comme une chaine de caractères. 
@@ -261,18 +259,18 @@ caractères :
 
 **Réponse à 3. b)** C'est un problème d'encodage de caractères : le plus
 simple est de préfixer votre chaîne par la lettre ``u`` (pour encodage
-unicode). Tapez ``input(u'Quel est ton âge ?')`` au lieu
+unicode). Tapez ``input(u'Quel est ton âge ?')`` au lieu de
 ``input(u'Quel est ton âge ?')``
 
 **Question.** Améliorez votre programme pour que ``Python`` extraie
-d'une réponse comme ``18 ans`` la sous-chaîne ``18`` et réponde
+d'une réponse comme ``'18 ans'`` la sous-chaîne ``'18'`` et réponde
 correctement enfin.
 
 **Solution** :
 
 .. code:: python
 
-    prenom =raw_input('Bonjour Biwane, quel est ton prenom ?')
+    prenom = raw_input('Bonjour Biwane, quel est ton prenom ?')
     age = raw_input(u'Quel est ton âge ?')
     
     agenum = age[:-4] # J'enlève les 4 derniers caractères
