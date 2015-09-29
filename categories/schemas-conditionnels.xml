@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (schémas conditionnels)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/schemas-conditionnels.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 29 Sep 2015 19:43:43 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 3</title><link>http://yaspat.github.io/blog/posts/schema-conditionnels/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="section" id="python-lecon-3"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#id1"&gt;Python :  Leçon 3&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#python-lecon-3" id="id1"&gt;Python :  Leçon 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#schema-conditionnel-compose" id="id2"&gt;Schéma conditionnel composé&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#version-script-d-algorithme" id="id3"&gt;Version script d'algorithme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#version-fonction" id="id4"&gt;Version fonction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#conclusion-de-cela" id="id5"&gt;Conclusion de cela&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Objet de cette leçon :&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Donner des exemples de schéma conditionnel&lt;/li&gt;
+&lt;li&gt;Sur un problème simple, on montre deux façons différentes d' implémenter l'algorithme : sous forme de simple script ou sous forme de fonction.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3.  Montrer un exemple de schéma conditionnel en cascade : celui de la résolution
+de l'équation du second degré.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/schema-conditionnels/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>leçon</category><category>python</category><category>schémas conditionnels</category><guid>http://yaspat.github.io/blog/posts/schema-conditionnels/</guid><pubDate>Tue, 29 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>

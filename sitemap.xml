@@ -19,7 +19,11 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-09-21T10:28:00Z</lastmod>
+  <lastmod>2015-09-29T20:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
+  <lastmod>2015-09-29T20:07:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique/</loc>
@@ -66,6 +70,10 @@
   <lastmod>2015-09-05T09:59:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/primitives/</loc>
+  <lastmod>2015-09-29T20:07:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/python/</loc>
   <lastmod>2015-09-04T16:51:00Z</lastmod>
  </url>
@@ -74,8 +82,24 @@
   <lastmod>2015-09-08T20:46:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/schemas-conditionnels/</loc>
+  <lastmod>2015-09-29T19:42:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/sorties/</loc>
   <lastmod>2015-09-16T20:21:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/tag1/</loc>
+  <lastmod>2015-09-29T20:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/tag2/</loc>
+  <lastmod>2015-09-29T20:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/tag3/</loc>
+  <lastmod>2015-09-29T20:06:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/translation/</loc>
@@ -106,6 +130,18 @@
   <lastmod>2015-09-21T10:28:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/calcul-de-primitives-avec-python/</loc>
+  <lastmod>2015-09-29T19:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</loc>
+  <lastmod>2015-09-29T20:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/calcul-primitives-en-python/</loc>
+  <lastmod>2015-09-29T20:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/posts/croissances-comparees/</loc>
   <lastmod>2015-09-15T20:46:00Z</lastmod>
  </url>
@@ -122,12 +158,28 @@
   <lastmod>2015-09-20T23:10:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/mettre-le-titre/</loc>
+  <lastmod>2015-09-29T20:06:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/posts/objets-et-variables/</loc>
   <lastmod>2015-09-05T10:58:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/schema-conditionnels/</loc>
+  <lastmod>2015-09-29T19:22:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</loc>
   <lastmod>2015-09-08T20:46:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/untitled/</loc>
+  <lastmod>2015-09-29T19:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/utiliser-des-variables-python-dans-des-expression-latex/</loc>
+  <lastmod>2015-09-29T19:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/about-me/</loc>

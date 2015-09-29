@@ -26,6 +26,11 @@ Sujets de DM
    a. `Sujet  du DM2 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM2.pdf>`_
    b. `Corrigé du DM2 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM02-Correction.pdf>`_
 
+#. DM 3 : Étude de fonction.  Entrées-sorties, fonction en Python *À rendre le 18/09/15*
+
+   a. `Sujet  du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03.pdf>`_
+   b. Corrigé du DM3 
+
 
 Sujets de DS
 ============
