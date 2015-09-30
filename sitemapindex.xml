@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/analyse.xml</loc>
-  <lastmod>2015-09-29T20:07:00Z</lastmod>
+  <lastmod>2015-09-30T19:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique.xml</loc>
@@ -55,11 +55,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/primitives.xml</loc>
-  <lastmod>2015-09-29T20:07:00Z</lastmod>
+  <lastmod>2015-09-30T19:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2015-09-29T20:07:00Z</lastmod>
+  <lastmod>2015-09-30T19:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -72,18 +72,6 @@
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/sorties.xml</loc>
   <lastmod>2015-09-22T20:59:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://yaspat.github.io/blog/categories/tag1.xml</loc>
-  <lastmod>2015-09-29T20:06:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://yaspat.github.io/blog/categories/tag2.xml</loc>
-  <lastmod>2015-09-29T20:06:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://yaspat.github.io/blog/categories/tag3.xml</loc>
-  <lastmod>2015-09-29T20:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
@@ -103,10 +91,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-09-29T20:07:00Z</lastmod>
+  <lastmod>2015-09-30T19:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-09-29T20:07:00Z</lastmod>
+  <lastmod>2015-09-30T19:48:00Z</lastmod>
  </sitemap>
 </sitemapindex>
