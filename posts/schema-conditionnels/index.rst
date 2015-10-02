@@ -15,7 +15,7 @@ Python :  Leçon 3
 .. contents::
 
 
-Objet de cette leçon :
+Objet de cette courte leçon :
 
 1. Donner des exemples de schéma conditionnel
      
@@ -35,7 +35,7 @@ de l'équation du second degré.
 Schéma conditionnel composé
 ===========================
 
-Le but de cette courte leçon est de 
+
 
 
 

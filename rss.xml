@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 30 Sep 2015 19:48:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Calcul de primitives en Python !</title><link>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 02 Oct 2015 04:59:58 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>essai</title><link>http://yaspat.github.io/blog/posts/essai/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><category>tag1</category><category>tag2</category><category>tagoule</category><guid>http://yaspat.github.io/blog/posts/essai/</guid><pubDate>Thu, 01 Oct 2015 19:39:15 GMT</pubDate></item><item><title>Calcul de primitives en Python !</title><link>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -20,7 +20,7 @@
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#conclusion-de-cela" id="id5"&gt;Conclusion de cela&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;Objet de cette leçon :&lt;/p&gt;
+&lt;p&gt;Objet de cette courte leçon :&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
 &lt;li&gt;Donner des exemples de schéma conditionnel&lt;/li&gt;
 &lt;li&gt;Sur un problème simple, on montre deux façons différentes d' implémenter l'algorithme : sous forme de simple script ou sous forme de fonction.&lt;/li&gt;

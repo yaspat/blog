@@ -41,9 +41,9 @@ Version fonction
 Conclusion de cela
 
 
-Objet de cette leçon :
+Objet de cette courte leçon :
 
-Donner des exemples de schéma con">
+Donner des exemples de sch">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-09-29T13:39:19+02:00">
 <meta property="article:tag" content="leçon">
@@ -105,7 +105,7 @@ Donner des exemples de schéma con">
 <li><a class="reference internal" href=".#conclusion-de-cela" id="id5">Conclusion de cela</a></li>
 </ul>
 </div>
-<p>Objet de cette leçon :</p>
+<p>Objet de cette courte leçon :</p>
 <ol class="arabic simple">
 <li>Donner des exemples de schéma conditionnel</li>
 <li>Sur un problème simple, on montre deux façons différentes d' implémenter l'algorithme : sous forme de simple script ou sous forme de fonction.</li>
@@ -116,18 +116,17 @@ de l'équation du second degré.</p>
 </div>
 <div class="section" id="schema-conditionnel-compose">
 <h2><a class="toc-backref" href=".#id2">Schéma conditionnel composé</a></h2>
-<p>Le but de cette courte leçon est de</p>
 <div class="section" id="version-script-d-algorithme">
 <h3><a class="toc-backref" href=".#id3">Version script d'algorithme</a></h3>
 <p>Je crée un script qui demande à l'utilisateur de renter deux réels
 <span class="math">\(x\)</span> et <span class="math">\(y\)</span> et retourne le plus grand des deux.</p>
-<pre class="code python"><a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel x --&gt; '</span><span class="p">)</span>
-<a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel y -- &gt; '</span><span class="p">)</span>
-<a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-3"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
-<a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-4"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
-<a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-5"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-6"></a>    <span class="n">z</span><span class="o">=</span><span class="n">y</span>
-<a name="rest_code_8f77318a66e44d50850bc0b8ffedf0c4-7"></a><span class="k">print</span><span class="p">(</span><span class="s">'le plus grand des deux est '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel x --&gt; '</span><span class="p">)</span>
+<a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel y -- &gt; '</span><span class="p">)</span>
+<a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-3"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+<a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-4"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
+<a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-5"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-6"></a>    <span class="n">z</span><span class="o">=</span><span class="n">y</span>
+<a name="rest_code_ff8bdf0007ec4c3d9a41cf0fe03c55b4-7"></a><span class="k">print</span><span class="p">(</span><span class="s">'le plus grand des deux est '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
 </pre>
 <pre class="literal-block">
 entrer un réel x --&gt; 12
@@ -140,15 +139,15 @@ variable <span class="math">\(z\)</span> dans vos calculs.</p>
 </div>
 <div class="section" id="version-fonction">
 <h3><a class="toc-backref" href=".#id4">Version fonction</a></h3>
-<pre class="code python"><a name="rest_code_1d4f5ff77194442cad03e351dc345892-1"></a><span class="k">def</span> <span class="nf">maxi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-<a name="rest_code_1d4f5ff77194442cad03e351dc345892-2"></a>    <span class="sd">""" fonction qui calcule le plus grand des nombres x et y"""</span>
-<a name="rest_code_1d4f5ff77194442cad03e351dc345892-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span><span class="n">y</span><span class="p">:</span>
-<a name="rest_code_1d4f5ff77194442cad03e351dc345892-4"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
-<a name="rest_code_1d4f5ff77194442cad03e351dc345892-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_1d4f5ff77194442cad03e351dc345892-6"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">y</span>
-<a name="rest_code_1d4f5ff77194442cad03e351dc345892-7"></a>    <span class="k">return</span> <span class="n">z</span>
+<pre class="code python"><a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-1"></a><span class="k">def</span> <span class="nf">maxi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-2"></a>    <span class="sd">""" fonction qui calcule le plus grand des nombres x et y"""</span>
+<a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span><span class="n">y</span><span class="p">:</span>
+<a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-4"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
+<a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-6"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">y</span>
+<a name="rest_code_d77a3ebb2c244ac4b1c459795f8796dd-7"></a>    <span class="k">return</span> <span class="n">z</span>
 </pre>
-<pre class="code python"><a name="rest_code_d476cb02c9c64f158a0fb531f33b8def-1"></a><span class="n">maxi</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_69beb3ae0df54503a8ebf06b56cf0f3b-1"></a><span class="n">maxi</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 15
