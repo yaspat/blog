@@ -29,13 +29,16 @@ Sujets de DM
 #. DM 3 : Étude de fonction.  Entrées-sorties, fonction en Python *À rendre le 18/09/15*
 
    a. `Sujet  du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03.pdf>`_
-   b. Corrigé du DM3 
+   b. `Corrigé du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03-Corrige.pdf>`_
 
+# DM 4 : Alphabétisation mathématique.
+
+   a. `Sujet  du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
 
 Sujets de DS
 ============
 
-
+`Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DM01.pdf>`_
 
 
 Corrigés des DS
