@@ -31,14 +31,14 @@ Sujets de DM
    a. `Sujet  du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03.pdf>`_
    b. `Corrigé du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03-Corrige.pdf>`_
 
-# DM 4 : Alphabétisation mathématique.
+#. DM 4 : Alphabétisation mathématique. *À rendre le 09/10/15*
 
    a. `Sujet  du DM4 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
 
 Sujets de DS
 ============
 
-`Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DM01.pdf>`_
+  a. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DM01.pdf>`_
 
 
 Corrigés des DS
