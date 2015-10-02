@@ -120,13 +120,13 @@ de l'équation du second degré.</p>
 <h3><a class="toc-backref" href=".#id3">Version script d'algorithme</a></h3>
 <p>Je crée un script qui demande à l'utilisateur de renter deux réels
 <span class="math">\(x\)</span> et <span class="math">\(y\)</span> et retourne le plus grand des deux.</p>
-<pre class="code python"><a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel x --&gt; '</span><span class="p">)</span>
-<a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel y -- &gt; '</span><span class="p">)</span>
-<a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-3"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
-<a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-4"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
-<a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-5"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-6"></a>    <span class="n">z</span><span class="o">=</span><span class="n">y</span>
-<a name="rest_code_11adcba2391f43fdb3d3f0d76b0fc753-7"></a><span class="k">print</span><span class="p">(</span><span class="s">'le plus grand des deux est '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_79062e3977e14f54b94f1df740b3a73e-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel x --&gt; '</span><span class="p">)</span>
+<a name="rest_code_79062e3977e14f54b94f1df740b3a73e-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'entrer un réel y -- &gt; '</span><span class="p">)</span>
+<a name="rest_code_79062e3977e14f54b94f1df740b3a73e-3"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+<a name="rest_code_79062e3977e14f54b94f1df740b3a73e-4"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
+<a name="rest_code_79062e3977e14f54b94f1df740b3a73e-5"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_79062e3977e14f54b94f1df740b3a73e-6"></a>    <span class="n">z</span><span class="o">=</span><span class="n">y</span>
+<a name="rest_code_79062e3977e14f54b94f1df740b3a73e-7"></a><span class="k">print</span><span class="p">(</span><span class="s">'le plus grand des deux est '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
 </pre>
 <pre class="literal-block">
 entrer un réel x --&gt; 12
@@ -139,15 +139,15 @@ variable <span class="math">\(z\)</span> dans vos calculs.</p>
 </div>
 <div class="section" id="version-fonction">
 <h3><a class="toc-backref" href=".#id4">Version fonction</a></h3>
-<pre class="code python"><a name="rest_code_43f536a865cb4cbc97238712ef27643f-1"></a><span class="k">def</span> <span class="nf">maxi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-<a name="rest_code_43f536a865cb4cbc97238712ef27643f-2"></a>    <span class="sd">""" fonction qui calcule le plus grand des nombres x et y"""</span>
-<a name="rest_code_43f536a865cb4cbc97238712ef27643f-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span><span class="n">y</span><span class="p">:</span>
-<a name="rest_code_43f536a865cb4cbc97238712ef27643f-4"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
-<a name="rest_code_43f536a865cb4cbc97238712ef27643f-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_43f536a865cb4cbc97238712ef27643f-6"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">y</span>
-<a name="rest_code_43f536a865cb4cbc97238712ef27643f-7"></a>    <span class="k">return</span> <span class="n">z</span>
+<pre class="code python"><a name="rest_code_c87c84365592415198afa847d4da28e8-1"></a><span class="k">def</span> <span class="nf">maxi</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<a name="rest_code_c87c84365592415198afa847d4da28e8-2"></a>    <span class="sd">""" fonction qui calcule le plus grand des nombres x et y"""</span>
+<a name="rest_code_c87c84365592415198afa847d4da28e8-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span><span class="n">y</span><span class="p">:</span>
+<a name="rest_code_c87c84365592415198afa847d4da28e8-4"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">x</span>
+<a name="rest_code_c87c84365592415198afa847d4da28e8-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_c87c84365592415198afa847d4da28e8-6"></a>        <span class="n">z</span> <span class="o">=</span> <span class="n">y</span>
+<a name="rest_code_c87c84365592415198afa847d4da28e8-7"></a>    <span class="k">return</span> <span class="n">z</span>
 </pre>
-<pre class="code python"><a name="rest_code_80d013a9dcfc4afa9b49543d22de2c83-1"></a><span class="n">maxi</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_61edffabe00246b3af256028684533b9-1"></a><span class="n">maxi</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 15
