@@ -1,5 +1,535 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 02 Oct 2015 05:02:25 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>essai</title><link>http://yaspat.github.io/blog/posts/essai/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><category>tag1</category><category>tag2</category><category>tagoule</category><guid>http://yaspat.github.io/blog/posts/essai/</guid><pubDate>Thu, 01 Oct 2015 19:39:15 GMT</pubDate></item><item><title>Calcul de primitives en Python !</title><link>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 02 Oct 2015 13:05:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>essait d'importation d'un ipynb</title><link>http://yaspat.github.io/blog/posts/essait-dimportation-dun-ipynb/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Dropbox&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;IPythonNotebookFiles&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_wrapper output_hidden"&gt;
+&lt;div class="output"&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;/Users/Yas/Dropbox/IPythonNotebookFiles
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;ls&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_wrapper output_hidden"&gt;
+&lt;div class="output"&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;&lt;span class="ansiblue"&gt;EssaiAnimations&lt;/span&gt;/
+Installation diaporama.ipynb
+Methode d'Euler et equations differnetielles.ipynb
+&lt;span class="ansiblue"&gt;Methode d'Euler et equations differnetielles_files&lt;/span&gt;/
+TestLatexizeNotebook.ipynb
+TestLatexizeNotebook.pdf
+TestLatexizeNotebook.slides.html
+TestLatexizeNotebook.tex
+&lt;span class="ansiblue"&gt;TestLatexizeNotebook_files&lt;/span&gt;/
+Untitled0.ipynb
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;IPython.external&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;mathjax&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="n"&gt;mathjax&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;install_mathjax&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_wrapper output_hidden"&gt;
+&lt;div class="output"&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;Downloading mathjax source from https://github.com/mathjax/MathJax/archive/2.4.0.tar.gz
+Extracting to /Users/Yas/.ipython/nbextensions/mathjax
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
+
+
+&lt;div class="output_text output_subarea output_execute_result"&gt;
+&lt;pre&gt;0&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;IPython&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;toolbar&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;add&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_wrapper output_hidden"&gt;
+&lt;div class="output"&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt"&gt;&lt;/div&gt;
+&lt;div class="output_subarea output_text output_error"&gt;
+&lt;pre&gt;
+&lt;span class="ansired"&gt;---------------------------------------------------------------------------&lt;/span&gt;
+&lt;span class="ansired"&gt;NameError&lt;/span&gt;                                 Traceback (most recent call last)
+&lt;span class="ansigreen"&gt;&amp;lt;ipython-input-1-d59461fe5c6e&amp;gt;&lt;/span&gt; in &lt;span class="ansicyan"&gt;&amp;lt;module&amp;gt;&lt;/span&gt;&lt;span class="ansiblue"&gt;()&lt;/span&gt;
+&lt;span class="ansigreen"&gt;----&amp;gt; 1&lt;/span&gt;&lt;span class="ansired"&gt; &lt;/span&gt;IPython&lt;span class="ansiblue"&gt;.&lt;/span&gt;toolbar&lt;span class="ansiblue"&gt;.&lt;/span&gt;add&lt;span class="ansiblue"&gt;&lt;/span&gt;
+
+&lt;span class="ansired"&gt;NameError&lt;/span&gt;: name 'IPython' is not defined&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/essait-dimportation-dun-ipynb/</guid><pubDate>Fri, 02 Oct 2015 12:50:49 GMT</pubDate></item><item><title>Essai d'importation</title><link>http://yaspat.github.io/blog/posts/essai-dimportation/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;dl class="docutils"&gt;
+&lt;dt&gt;{&lt;/dt&gt;
+&lt;dd&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;"metadata": {&lt;/dt&gt;
+&lt;dd&gt;"name": "",
+"signature": "sha256:5febdb3955b8443dea684e88a999dbcc5acde0fb90636e678b0747c31d8985ed"&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 5)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;},
+"nbformat": 3,
+"nbformat_minor": 0,
+"worksheets": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 9)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;{&lt;/dt&gt;
+&lt;dd&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;"cells": [&lt;/dt&gt;
+&lt;dd&gt;&lt;dl class="first docutils"&gt;
+&lt;dt&gt;{&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;"cell_type": "code",
+"collapsed": false,
+"input": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 15)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"cd ~/Dropbox/IPythonNotebookFiles/"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 16)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;],
+"language": "python",
+"metadata": {},
+"outputs": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 20)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;{&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;"output_type": "stream",
+"stream": "stdout",
+"text": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 24)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"/Users/Yas/Dropbox/IPythonNotebookFilesn"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 25)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;]&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 26)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 27)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;],
+"prompt_number": 1&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 29)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;},
+{&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 31)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"cell_type": "code",
+"collapsed": false,
+"input": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 34)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"ls"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 35)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;],
+"language": "python",
+"metadata": {},
+"outputs": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 39)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;{&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;"output_type": "stream",
+"stream": "stdout",
+"text": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 43)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"u001b[34mEssaiAnimationsu001b[mu001b[m/rn",
+"Installation diaporama.ipynbrn",
+"Methode d'Euler et equations differnetielles.ipynbrn",
+"u001b[34mMethode d'Euler et equations differnetielles_filesu001b[mu001b[m/rn",
+"TestLatexizeNotebook.ipynbrn",
+"TestLatexizeNotebook.pdfrn",
+"TestLatexizeNotebook.slides.htmlrn",
+"TestLatexizeNotebook.texrn",
+"u001b[34mTestLatexizeNotebook_filesu001b[mu001b[m/rn",
+"Untitled0.ipynbrn"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 53)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;]&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 54)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 55)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;],
+"prompt_number": 2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 57)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;},
+{&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 59)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"cell_type": "code",
+"collapsed": false,
+"input": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 62)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"from IPython.external import mathjax; mathjax.install_mathjax()"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 63)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;],
+"language": "python",
+"metadata": {},
+"outputs": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 67)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;dl class="docutils"&gt;
+&lt;dt&gt;{&lt;/dt&gt;
+&lt;dd&gt;&lt;p class="first"&gt;"output_type": "stream",
+"stream": "stdout",
+"text": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 71)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"Downloading mathjax source from &lt;a class="reference external" href="https://github.com/mathjax/MathJax/archive/2.4.0.tar.gzn"&gt;https://github.com/mathjax/MathJax/archive/2.4.0.tar.gzn&lt;/a&gt;",
+"Extracting to /Users/Yas/.ipython/nbextensions/mathjax"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 73)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;]&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 74)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;},
+{&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 76)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"output_type": "stream",
+"stream": "stdout",
+"text": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 79)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"n"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 80)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 81)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;},
+{&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 83)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;"metadata": {},
+"output_type": "pyout",
+"prompt_number": 3,
+"text": [&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 87)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"0"&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 88)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 89)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 90)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;],
+"prompt_number": 3&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 92)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;},
+{&lt;/p&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: ERROR/3 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 94)&lt;/p&gt;
+Unexpected indentation.&lt;/div&gt;
+&lt;blockquote&gt;
+"cell_type": "code",
+"collapsed": false,
+"input": [],
+"language": "python",
+"metadata": {},
+"outputs": []&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 100)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;}&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 101)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;],
+"metadata": {}&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 103)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 104)&lt;/p&gt;
+Block quote ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p class="last"&gt;]&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;div class="system-message"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 105)&lt;/p&gt;
+Definition list ends without a blank line; unexpected unindent.&lt;/div&gt;
+&lt;p&gt;}&lt;/p&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/essai-dimportation/</guid><pubDate>Fri, 02 Oct 2015 12:48:47 GMT</pubDate></item><item><title>essai</title><link>http://yaspat.github.io/blog/posts/essai/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Write your post here.&lt;/p&gt;</description><category>tag1</category><category>tag2</category><category>tagoule</category><guid>http://yaspat.github.io/blog/posts/essai/</guid><pubDate>Thu, 01 Oct 2015 19:39:15 GMT</pubDate></item><item><title>Calcul de primitives en Python !</title><link>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -61,42 +591,4 @@ de l'équation du second degré.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/ex1-2-du-poly/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>exercices</category><category>informatique</category><category>python</category><guid>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</guid><pubDate>Wed, 09 Sep 2015 08:39:19 GMT</pubDate></item><item><title>Transformations élémentaires sur les fonctions</title><link>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Rappel : étant donnée une fonction $f$ définie sur son domaine de définition $D_f$, on a vu  les opérations suivantes :   &lt;/p&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/transfo-elem-fonctions/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>déphasage</category><category>fonctions</category><category>réflexion</category><category>translation</category><guid>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</guid><pubDate>Tue, 08 Sep 2015 10:21:34 GMT</pubDate></item><item><title>Informatique : Leçon 1</title><link>http://yaspat.github.io/blog/posts/objets-et-variables/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#les-nombres" id="id1"&gt;Les nombres&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#les-entiers" id="id2"&gt;Les entiers&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#les-flottants" id="id3"&gt;Les flottants&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#les-caracteres-et-chaines-de-caracteres" id="id4"&gt;Les caractères et chaînes de caractères&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#definitions" id="id5"&gt;Définitions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#operations-sur-les-chaines-de-caracteres" id="id6"&gt;Opérations sur les chaînes de caractères&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#accession-a-un-caractere-ou-une-sous-chaine" id="id7"&gt;Accession à un caractère ou une sous-chaîne&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#concatenation-de-chaines" id="id8"&gt;Concaténation de chaînes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#variables" id="id9"&gt;Variables&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#operations-sur-les-variables" id="id10"&gt;Opérations sur les variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#creation-de-variable" id="id11"&gt;Création de variable&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#affectation" id="id12"&gt;affectation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/objets-et-variables/#appel" id="id13"&gt;Appel&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Objet de cette introduction :&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Prendre connaissances de quelques objets manipulables en &lt;tt class="docutils literal"&gt;Python&lt;/tt&gt;&lt;ol class="loweralpha"&gt;
-&lt;li&gt;Quelques types de nombres&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-      &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/objets-et-variables/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>leçon</category><category>objets</category><category>python</category><category>variables</category><guid>http://yaspat.github.io/blog/posts/objets-et-variables/</guid><pubDate>Fri, 04 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/ex1-2-du-poly/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>exercices</category><category>informatique</category><category>python</category><guid>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</guid><pubDate>Wed, 09 Sep 2015 08:39:19 GMT</pubDate></item></channel></rss>

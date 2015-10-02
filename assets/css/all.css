@@ -230,7 +230,7 @@ html {
 }
 body {
   height: 100%;
-  background: url('../images/cream-dust.png') #ffffff;
+  background: /*url('../images/cream-dust.png')*/ #ffffff;
 }
 section {
   margin: 0;
@@ -239,7 +239,7 @@ section {
 .social {
   float: left;
   min-height: 100%;
-  background: url('../images/blue-mocha-grunge.jpg') #192029;
+  background: /*url('../images/fond-bleu-nikola.jpg')*/ #3a539b;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2147,12 +2147,23 @@ a:focus {
   }
 }
 .social a .label {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: /*Tahoma, Geneva, Kalimati, sans-serif;*/
+"Trebuchet MS", Arial, Helvetica, sans-serif;
+/*font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;*/
+/*font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;*/
+/*font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;*/
+/* Initial : "Bitter", "Georgia", "Times New Roman"*/
+/* Initial : "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-weight: bold;
   font-size: 26.25px;
 }
 .page-content {
-  font-family: "Bitter", "Georgia", "Times New Roman", serif;
+  font-family: /*Tahoma, Geneva, Kalimati, sans-serif;*/
+"Trebuchet MS", Arial, Helvetica, sans-serif;
+/*font-family: Arial, Helvetica, "Liberation Sans", FreeSans, sans-serif;*/
+/*font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", sans-serif;*/
+/*font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;*/
+/* Initial : "Bitter", "Georgia", "Times New Roman"*/
 }
 .page-content > .content {
   text-rendering: optimizeLegibility;
@@ -3194,8 +3205,8 @@ pre {
 div.prompt {
   padding: 0.6em;
   font-size: 13px;
-  background: url('../images/blue-mocha-grunge-reversed.jpg');
-  margin-right: 1em;
+  background: #ecf0f1; /* url('../images/blue-mocha-grunge-reversed.jpg');*/
+  margin-right: 2em;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -3238,7 +3249,7 @@ div.text_cell_render {
   padding-top: 0.05em;
   padding-bottom: 0.05em;
   margin: 1em 0em;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .page-content > .content p {
