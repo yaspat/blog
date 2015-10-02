@@ -46,12 +46,8 @@
   <lastmod>2015-10-01T19:37:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://yaspat.github.io/blog/categories/jupyter.xml</loc>
-  <lastmod>2015-09-30T20:16:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://yaspat.github.io/blog/categories/lecon.xml</loc>
-  <lastmod>2015-09-29T19:43:00Z</lastmod>
+  <lastmod>2015-10-02T05:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/objets.xml</loc>
@@ -63,7 +59,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2015-09-30T19:48:00Z</lastmod>
+  <lastmod>2015-10-02T05:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -71,7 +67,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/schemas-conditionnels.xml</loc>
-  <lastmod>2015-09-29T19:43:00Z</lastmod>
+  <lastmod>2015-10-02T05:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/sorties.xml</loc>
@@ -107,10 +103,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-10-01T19:43:00Z</lastmod>
+  <lastmod>2015-10-02T05:02:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-10-01T19:43:00Z</lastmod>
+  <lastmod>2015-10-02T05:02:00Z</lastmod>
  </sitemap>
 </sitemapindex>

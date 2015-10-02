@@ -103,6 +103,6 @@ Différence notable avec la version script :
 Conclusion de cela
 ==================
 
-Il vaut mieux concevoir ses algorithmes en fonctions et recourir en
+Il vaut mieux concevoir ses algorithmes en fonctions et recourir aux entrées/sorties en
 dernière phase de réalisation d'un projet complexe.
 
