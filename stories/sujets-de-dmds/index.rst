@@ -33,7 +33,7 @@ Sujets de DM
 
 # DM 4 : Alphabétisation mathématique.
 
-   a. `Sujet  du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
+   a. `Sujet  du DM4 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
 
 Sujets de DS
 ============
