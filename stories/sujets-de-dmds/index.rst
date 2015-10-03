@@ -43,3 +43,8 @@ a. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS
 
 Corrigés des DS
 ===============
+
+
+
+
+.. _github: https:/github.com/yaspat/Biwane15-16/raw/master/
