@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-10-02T13:34:00Z</lastmod>
+  <lastmod>2015-10-03T15:07:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -32,6 +32,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/croissances-comparees/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/darwin/</loc>
+  <lastmod>2015-10-03T15:07:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/dephasage/</loc>
@@ -142,12 +146,20 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/notes-de-darwin/</loc>
+  <lastmod>2015-10-03T15:07:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/posts/objets-et-variables/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/schema-conditionnels/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/sujets-de-dmds/</loc>
+  <lastmod>2015-10-03T15:06:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</loc>

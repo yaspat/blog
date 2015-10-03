@@ -55,7 +55,7 @@ Il paraît que j'aurais dit :
 
  #. $f$(Alice) $=$ garçon.
 
- #. Dans les carnets personnels de Darwin, on a retrouvé que celui-ci, lorsqu'il avait voulu se marier, avait fait deux colonnes pour peser le pour et le contre. Il avait mis comme "plus" qu'une femme tenait compagnie, mais comme "moins" que les chiens faisaient tout aussi bien...
+ #. Dans les `carnets personnels de Darwin <link:///posts/notes-de-darwin/>`_, on a retrouvé que celui-ci, lorsqu'il avait voulu se marier, avait fait deux colonnes pour peser le pour et le contre. Il avait mis comme "plus" qu'une femme tenait compagnie, mais comme "moins" que les chiens faisaient tout aussi bien...
 
  #. Je pense $x$, je dis $y$ et j'écris $z$.
 
