@@ -7,8 +7,7 @@
 .. description: 
 .. type: text
 
-Python :  Leçon 3
-==================
+
 
 .. class:: alert alert-info pull-right
 
