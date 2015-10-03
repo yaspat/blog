@@ -38,7 +38,7 @@ Sujets de DM
 Sujets de DS
 ============
 
-a. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
+1. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
 
 
 Corrigés des DS
