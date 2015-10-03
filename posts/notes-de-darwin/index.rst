@@ -26,5 +26,9 @@ Voici une photo des notes de Darwin dans sa réflexion sur les pros et les cons 
 *Source* : *Pour la science*, série *les génies de la science* (:math:`\textrm{n}^\text{o}~18` , fév-mai 2004), numéro consacré à Darwin. 
 
 
+On peut lire en effet sur la partie entourée en rouge :
+
+  *Better than a dog anyhow*
+
 
 **Remarque.** Darwin s'est finalememt marié en 1839 et a eu 10 enfants dont deux morts en bas âge.
