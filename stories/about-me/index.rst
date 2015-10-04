@@ -16,7 +16,7 @@ Autour de ce blog
 Biwanes ?
 -----------
 
-**Biwane \:** c'est le nom de la classe de Biosup 1-A (BCPST_) du `lycée Chateaubriand <http://www.lycee-chateaubriand.fr>`_ de Rennes (il y a trois biosups : les 1-A, les 1-B, et les ... 1-C :  bravo). En abrégé, la classe s'appelle dans le jargon des élèves  \ :  B1 [#]_ . C'est aussi le nom de tout élève de cette classe de B1.
+**Biwane \:** c'est le nom de la classe de Biosup 1-A (BCPST_) Du `lycée Chateaubriand <http://www.lycee-chateaubriand.fr>`_ de Rennes (il y a trois biosups : les 1-A, les 1-B, et les ... 1-C :  bravo). En abrégé, la classe s'appelle dans le jargon des élèves  \ :  B1 [#]_ . C'est aussi le nom de tout élève de cette classe de B1.
 
 BCPST ?
 -------
