@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Méditations pyhtoniques pour typo-déficients | Maths-info en BCPST1-A Rennes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../favicon.ico" sizes="128x128">
+<link rel="icon" href="../../favicon.ico" sizes="256x256">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
+<meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
+<meta property="og:title" content="Méditations pyhtoniques pour typo-déficients">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
+<meta property="og:description" content="L'image de machine qu'on a donné d'une fonction dans le cours de
+mathématiques se prête aux fonctions en Python.
+En effet,  si ma fonction se présente comme :
+def f(x1,x2,x3):
+    #bla bla
+    #bla bl">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-10-08T23:59:34+02:00">
+<meta property="article:tag" content="fonction">
+<meta property="article:tag" content="type">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/documents-de-travail" title="Documents"><i class="icon-file-text"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Méditations pyhtoniques pour typo-déficients</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-10-08T23:59:34+02:00">2015-10-08 23:59</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/fonction/" rel="tag">fonction</a></li>
+           <li><a class="tag p-category" href="../../categories/type/" rel="tag">type</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<p>L'image de machine qu'on a donné d'une fonction dans le cours de
+mathématiques se prête aux fonctions en <strong>Python</strong>.</p>
+<!-- TEASER_END --><p>En effet,  si ma fonction se présente comme :</p>
+<pre class="code python"><a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
+<a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-2"></a>    <span class="c">#bla bla</span>
+<a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-3"></a>    <span class="c">#bla bla</span>
+<a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
+</pre>
+<p>On comprend que :</p>
+<ol class="arabic simple">
+<li>La machine s'appelle <span class="math">\(f\)</span>.</li>
+<li>Elle a besoin de trois objets <strong>x1</strong>, <strong>x2</strong>,<strong>x3</strong> pour se mettre
+en marche.</li>
+<li>Quand elle a fini de travailler, elle produit deux objets <strong>z1</strong>,
+<strong>z2</strong>.</li>
+</ol>
+<p>Des remarques sur ce code <strong>Python</strong></p>
+<ol class="arabic simple">
+<li>Programmer la fonction consiste à écrire la <em>recette</em> de la fonction.</li>
+<li>Les objets <strong>x1</strong>,<strong>x2</strong>,<strong>x3</strong> sont appelés arguments d'entrée
+de la fonction, il sont supposés connus, donc <strong>inutile de mettre</strong>
+<strong>input(x1)</strong> etc. dans le code.</li>
+<li>Les objets <strong>z1</strong>, <strong>z2</strong> sont produits par la machine donc <strong>inutile
+de les mettre</strong> dans un <strong>print</strong>. Ils sont appelés arguments formels
+de sortie.</li>
+</ol>
+<p>On peut mettre autant d'arguments d'entrée et de sortie à partir de 0.
+Mais alors que se passe-til pour une fonction comme celle-ci :</p>
+<pre class="code python"><a name="rest_code_ffc59aec4e774d6986b67b3bd6290a59-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_ffc59aec4e774d6986b67b3bd6290a59-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+</pre>
+<ol class="arabic simple">
+<li>Cette fonction ne produit aucun objet, puisqu'elle ne contient aucun
+<strong>return</strong>. Elle produit donc du néant,du vent,  du <em>nihil</em>, rien quoi.</li>
+<li>Cette fonction se met en marche sans qu'on lui donne d'objets,
+puisque la paire de parenthèses dans la première ligne ne contient
+rien.</li>
+</ol>
+<p>Cette fonction se contente de faire un simple affichage à l'écran :</p>
+<pre class="code python"><a name="rest_code_b105ace3d0714fa59f8843751d26a9b4-1"></a><span class="n">erreur</span><span class="p">()</span>
+</pre>
+<pre class="literal-block">
+Biwane, tu te trompes !
+</pre>
+<p>Mais alors, cette fonction ne produit pas une chaîne de caractères ?
+Regardons :</p>
+<pre class="code python"><a name="rest_code_31461761ced7443c857755131b720320-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+</pre>
+<pre class="literal-block">
+Biwane, tu te trompes !
+</pre>
+<pre class="code python"><a name="rest_code_89cbb65795d345baa194ba54fb8fe6c8-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+NoneType
+</pre>
+<p>L' objet <strong>a</strong> est un objet de type <strong>sans type</strong>. Ce n'est donc sûrment
+pas une chaîne de caractères.</p>
+<p>En revanche, regarde bien Biwane, si j'avais écrit :</p>
+<pre class="code python"><a name="rest_code_52732c826d7b4fd392332d682004fc74-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_52732c826d7b4fd392332d682004fc74-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+</pre>
+<p>puis :</p>
+<pre class="code python"><a name="rest_code_e294a6c9ca2e4934a2ffabf0c6557428-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+</pre>
+<p>et enfin :</p>
+<pre class="code python"><a name="rest_code_3d33b618c4024a6ba333c86ea550b3a3-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+str
+</pre>
+<p>la variable <strong>a</strong> récupère le produit de la fonction : une chaîne de
+caractères. Là je fais encore plus mon curieux :</p>
+<pre class="code python"><a name="rest_code_5014a3a44cf345efb775dbbc1350a2ec-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
+</pre>
+<pre class="code python"><a name="rest_code_14bff7c7a9d345babff33c2ddc6552d6-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+function
+</pre>
+<p>Est-ce que tu y vois plus clair dans les types maintenant ? Ou, dit autrement, vas-tu confondre encore les types de $f$ et $f(x)$ en maths ?</p>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../notes-de-darwin/" rel="prev" title="Notes de Darwin">Article précédent</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/meditations-typo-deficient/",
+        disqus_title="M\u00e9ditations pyhtoniques pour typo-d\u00e9ficients",
+        disqus_identifier="cache/posts/Mediations-typo-defivcient.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2015  <a href="mailto:patel.bcpst@gmail.com">M. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/documents-de-travail"> <i class="icon-file-text"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script>
+</body>
+</html>

@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2015-10-02T13:34:00Z</lastmod>
+  <lastmod>2015-10-08T21:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-10-03T15:07:00Z</lastmod>
+  <lastmod>2015-10-08T21:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -98,6 +98,10 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/type/</loc>
+  <lastmod>2015-10-08T21:58:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/variables/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
@@ -112,6 +116,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/galleries/photos/</loc>
   <lastmod>2015-10-03T14:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/index-1.html</loc>
+  <lastmod>2015-10-08T21:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -144,6 +152,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</loc>
+  <lastmod>2015-10-08T21:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/notes-de-darwin/</loc>
