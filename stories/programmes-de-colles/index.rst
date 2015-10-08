@@ -56,6 +56,8 @@ Les programmes de colles de maths
 
 #. `Programme de la quinzaine 2 (28 sept - 9 oct) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/02-Derivees-Primitives.pdf>`_. Thème : dérivation, primitivation.
 
+#.  `Programme de la quinzaine 3 (12 oct - 6 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/03-Complexes-Recurrence.pdf>`_. Thème : récurrence - nombres complexes.
+
 Les salles de colles de mathématiques
 =====================================
 
