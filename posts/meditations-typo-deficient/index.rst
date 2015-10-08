@@ -153,3 +153,9 @@ caractères. Là je fais encore plus mon curieux :
 
 
 Est-ce que tu y vois plus clair dans les types maintenant ? Ou, dit autrement, vas-tu confondre encore les types de $f$ et $f(x)$ en maths ?
+
+**Remarque.** Ah oui, comme promis, une photo :
+
+.. thumbnail:: ../../images/yaspat.jpg
+   :align: center
+   :scale: 30 %

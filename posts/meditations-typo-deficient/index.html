@@ -82,10 +82,10 @@ def f(x1,x2,x3):
 <p>L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en <strong>Python</strong>.</p>
 <!-- TEASER_END --><p>En effet,  si ma fonction se présente comme :</p>
-<pre class="code python"><a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
-<a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-2"></a>    <span class="c">#bla bla</span>
-<a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-3"></a>    <span class="c">#bla bla</span>
-<a name="rest_code_6ad7e5c3d23a482c8f7449002773ead4-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
+<pre class="code python"><a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
+<a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-2"></a>    <span class="c">#bla bla</span>
+<a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-3"></a>    <span class="c">#bla bla</span>
+<a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
 </pre>
 <p>On comprend que :</p>
 <ol class="arabic simple">
@@ -107,8 +107,8 @@ de sortie.</li>
 </ol>
 <p>On peut mettre autant d'arguments d'entrée et de sortie à partir de 0.
 Mais alors que se passe-til pour une fonction comme celle-ci :</p>
-<pre class="code python"><a name="rest_code_ffc59aec4e774d6986b67b3bd6290a59-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_ffc59aec4e774d6986b67b3bd6290a59-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_ade3934c0a644d94ab3db620aca0c9b4-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_ade3934c0a644d94ab3db620aca0c9b4-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <ol class="arabic simple">
 <li>Cette fonction ne produit aucun objet, puisqu'elle ne contient aucun
@@ -118,19 +118,19 @@ puisque la paire de parenthèses dans la première ligne ne contient
 rien.</li>
 </ol>
 <p>Cette fonction se contente de faire un simple affichage à l'écran :</p>
-<pre class="code python"><a name="rest_code_b105ace3d0714fa59f8843751d26a9b4-1"></a><span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_752061a279a74af9bb9e7b2d11714693-1"></a><span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
 <p>Mais alors, cette fonction ne produit pas une chaîne de caractères ?
 Regardons :</p>
-<pre class="code python"><a name="rest_code_31461761ced7443c857755131b720320-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_3aaec0c452d643cea30785cf437ff517-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
-<pre class="code python"><a name="rest_code_89cbb65795d345baa194ba54fb8fe6c8-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_ddbf2525b14c4e13b85d9370d8560b17-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 NoneType
@@ -138,28 +138,30 @@ NoneType
 <p>L' objet <strong>a</strong> est un objet de type <strong>sans type</strong>. Ce n'est donc sûrment
 pas une chaîne de caractères.</p>
 <p>En revanche, regarde bien Biwane, si j'avais écrit :</p>
-<pre class="code python"><a name="rest_code_52732c826d7b4fd392332d682004fc74-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_52732c826d7b4fd392332d682004fc74-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_7b4c013f436b4444830f9386bf0ec02a-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_7b4c013f436b4444830f9386bf0ec02a-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <p>puis :</p>
-<pre class="code python"><a name="rest_code_e294a6c9ca2e4934a2ffabf0c6557428-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_a146d394799d4796aa6ff791d7c982b4-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <p>et enfin :</p>
-<pre class="code python"><a name="rest_code_3d33b618c4024a6ba333c86ea550b3a3-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_277bba52727741de8637c60273cbaf73-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
 </pre>
 <p>la variable <strong>a</strong> récupère le produit de la fonction : une chaîne de
 caractères. Là je fais encore plus mon curieux :</p>
-<pre class="code python"><a name="rest_code_5014a3a44cf345efb775dbbc1350a2ec-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
+<pre class="code python"><a name="rest_code_349ddd7b02894189a5f7286f455207e2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
 </pre>
-<pre class="code python"><a name="rest_code_14bff7c7a9d345babff33c2ddc6552d6-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_c898c89ce5524e13b761f8e56c337875-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 function
 </pre>
 <p>Est-ce que tu y vois plus clair dans les types maintenant ? Ou, dit autrement, vas-tu confondre encore les types de $f$ et $f(x)$ en maths ?</p>
+<p><strong>Remarque.</strong> Ah oui, comme promis, une photo :</p>
+<a class="reference external image-reference" href="../../images/yaspat.jpg"><img alt="../../images/yaspat.thumbnail.jpg" class="align-center" src="../../images/yaspat.thumbnail.jpg"></a>
 </div>
         </div>
                 <ul class="pager hidden-print">
