@@ -33,7 +33,15 @@ Sujets de DM
 
 #. DM 4 : Alphabétisation mathématique. *À rendre le 09/10/15*
 
+
+
    a. `Sujet  du DM4 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
+
+#. DM 5 : Récurrence. Nombres complexes.. *À rendre le 09/10/15*
+
+
+   a. `Sujet  du DM5 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/DM05.pdf>`_
+
 
 Sujets de DS
 ============
