@@ -1,4 +1,4 @@
-.. title: Méditations pyhtoniques pour typo-déficients
+.. title: Méditations pythoniques pour typo-déficients
 .. slug: meditations-typo-deficient
 .. date: 2015-10-08 23:59:34 UTC+02:00
 .. tags: type, fonction

@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Méditations pyhtoniques pour typo-déficients | Maths-info en BCPST1-A Rennes</title>
+<title>Méditations pythoniques pour typo-déficients | Maths-info en BCPST1-A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
@@ -27,7 +27,7 @@ article: http://ogp.me/ns/article#
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
 <meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
-<meta property="og:title" content="Méditations pyhtoniques pour typo-déficients">
+<meta property="og:title" content="Méditations pythoniques pour typo-déficients">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
 <meta property="og:description" content="L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en Python.
@@ -58,7 +58,7 @@ def f(x1,x2,x3):
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Méditations pyhtoniques pour typo-déficients</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Méditations pythoniques pour typo-déficients</h1>
 
         <div class="meta">
             <div class="authordate">
@@ -82,10 +82,10 @@ def f(x1,x2,x3):
 <p>L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en <strong>Python</strong>.</p>
 <!-- TEASER_END --><p>En effet,  si ma fonction se présente comme :</p>
-<pre class="code python"><a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
-<a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-2"></a>    <span class="c">#bla bla</span>
-<a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-3"></a>    <span class="c">#bla bla</span>
-<a name="rest_code_45f0d96b9a3d4286b6ddd5eae3999a76-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
+<pre class="code python"><a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
+<a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-2"></a>    <span class="c">#bla bla</span>
+<a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-3"></a>    <span class="c">#bla bla</span>
+<a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
 </pre>
 <p>On comprend que :</p>
 <ol class="arabic simple">
@@ -107,8 +107,8 @@ de sortie.</li>
 </ol>
 <p>On peut mettre autant d'arguments d'entrée et de sortie à partir de 0.
 Mais alors que se passe-til pour une fonction comme celle-ci :</p>
-<pre class="code python"><a name="rest_code_ade3934c0a644d94ab3db620aca0c9b4-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_ade3934c0a644d94ab3db620aca0c9b4-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_9191fb9b34e945f1a454068524bee667-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_9191fb9b34e945f1a454068524bee667-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <ol class="arabic simple">
 <li>Cette fonction ne produit aucun objet, puisqu'elle ne contient aucun
@@ -118,19 +118,19 @@ puisque la paire de parenthèses dans la première ligne ne contient
 rien.</li>
 </ol>
 <p>Cette fonction se contente de faire un simple affichage à l'écran :</p>
-<pre class="code python"><a name="rest_code_752061a279a74af9bb9e7b2d11714693-1"></a><span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_c87e0d380ae144328f0369582df68293-1"></a><span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
 <p>Mais alors, cette fonction ne produit pas une chaîne de caractères ?
 Regardons :</p>
-<pre class="code python"><a name="rest_code_3aaec0c452d643cea30785cf437ff517-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_f59a3e9a3a694ea4a3d8c0647f19579d-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
-<pre class="code python"><a name="rest_code_ddbf2525b14c4e13b85d9370d8560b17-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_82b40fa4476943ee907e4fa35ed32b4c-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 NoneType
@@ -138,23 +138,23 @@ NoneType
 <p>L' objet <strong>a</strong> est un objet de type <strong>sans type</strong>. Ce n'est donc sûrment
 pas une chaîne de caractères.</p>
 <p>En revanche, regarde bien Biwane, si j'avais écrit :</p>
-<pre class="code python"><a name="rest_code_7b4c013f436b4444830f9386bf0ec02a-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_7b4c013f436b4444830f9386bf0ec02a-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_36a8f30f53bb4b8da2bcb222ed36a5b9-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_36a8f30f53bb4b8da2bcb222ed36a5b9-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <p>puis :</p>
-<pre class="code python"><a name="rest_code_a146d394799d4796aa6ff791d7c982b4-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_dad0f9f8938a474b949298d550efaab8-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <p>et enfin :</p>
-<pre class="code python"><a name="rest_code_277bba52727741de8637c60273cbaf73-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_e855727000c3418fb8d9d205cd3bf740-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
 </pre>
 <p>la variable <strong>a</strong> récupère le produit de la fonction : une chaîne de
 caractères. Là je fais encore plus mon curieux :</p>
-<pre class="code python"><a name="rest_code_349ddd7b02894189a5f7286f455207e2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
+<pre class="code python"><a name="rest_code_7449b414cedf46c198f8682def74b2d7-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
 </pre>
-<pre class="code python"><a name="rest_code_c898c89ce5524e13b761f8e56c337875-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_0ff68bc39d4b4d0287b2a316bc486a6c-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 function
@@ -173,7 +173,7 @@ function
         <script>
         var disqus_shortname ="yaspat",
             disqus_url="http://yaspat.github.io/blog/posts/meditations-typo-deficient/",
-        disqus_title="M\u00e9ditations pyhtoniques pour typo-d\u00e9ficients",
+        disqus_title="M\u00e9ditations pythoniques pour typo-d\u00e9ficients",
         disqus_identifier="cache/posts/Mediations-typo-defivcient.html",
         disqus_config = function () {
             this.language = "fr";
