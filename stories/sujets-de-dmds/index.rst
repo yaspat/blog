@@ -42,6 +42,8 @@ Sujets de DM
 
    a. `Sujet  du DM5 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/DM05.pdf>`_
 
+   b. `Corrigé  du DM5 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/Corrige-DM05.pdf>`_
+
 
 Sujets de DS
 ============
