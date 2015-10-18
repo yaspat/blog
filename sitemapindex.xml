@@ -43,7 +43,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fractales.xml</loc>
-  <lastmod>2015-10-18T20:25:00Z</lastmod>
+  <lastmod>2015-10-18T21:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/images.xml</loc>
@@ -94,10 +94,6 @@
   <lastmod>2015-10-18T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://yaspat.github.io/blog/categories/tags-fractales.xml</loc>
-  <lastmod>2015-10-18T21:17:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
@@ -131,6 +127,6 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-10-18T21:17:00Z</lastmod>
+  <lastmod>2015-10-18T21:18:00Z</lastmod>
  </sitemap>
 </sitemapindex>

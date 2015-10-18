@@ -1,3 +1,10 @@
+.. title: Photos de vacances
+.. slug: photos-de-vacances
+.. date: 2015-10-18 22:15:09 UTC+02:00
+.. tags: fractales, mandelbrot, images 
+.. link: 
+.. description: 
+.. type: text
    
 
 Si vous voulez comprendre le propos de ce billet, il faut avoir lu  `le précédent <link:///blog/posts/eq2deg/>`_.
