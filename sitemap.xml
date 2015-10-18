@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-10-13T15:49:00Z</lastmod>
+  <lastmod>2015-10-18T16:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -58,6 +58,10 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/fractales/</loc>
+  <lastmod>2015-10-18T16:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/informatique/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
@@ -68,6 +72,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/lecon/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/mandelbrot/</loc>
+  <lastmod>2015-10-18T16:32:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/objets/</loc>
@@ -94,6 +102,10 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/suites/</loc>
+  <lastmod>2015-10-18T16:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/translation/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
@@ -107,7 +119,11 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/</loc>
-  <lastmod>2015-10-03T14:01:00Z</lastmod>
+  <lastmod>2015-10-18T20:13:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/</loc>
+  <lastmod>2015-10-18T20:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/demo/</loc>
@@ -119,7 +135,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2015-10-13T15:54:00Z</lastmod>
+  <lastmod>2015-10-18T20:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -146,6 +162,10 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/eq2deg/</loc>
+  <lastmod>2015-10-18T16:24:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
@@ -164,6 +184,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/objets-et-variables/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/photos-de-vacances/</loc>
+  <lastmod>2015-10-18T20:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/schema-conditionnels/</loc>

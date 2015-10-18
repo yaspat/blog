@@ -35,11 +35,15 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fonction.xml</loc>
-  <lastmod>2015-10-08T22:28:00Z</lastmod>
+  <lastmod>2015-10-14T16:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fonctions.xml</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/fractales.xml</loc>
+  <lastmod>2015-10-18T16:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/informatique.xml</loc>
@@ -52,6 +56,10 @@
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/lecon.xml</loc>
   <lastmod>2015-10-03T16:22:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
+  <lastmod>2015-10-18T16:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/objets.xml</loc>
@@ -78,16 +86,24 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/suites.xml</loc>
+  <lastmod>2015-10-18T16:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/type.xml</loc>
-  <lastmod>2015-10-08T22:28:00Z</lastmod>
+  <lastmod>2015-10-14T16:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/variables.xml</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/rss.xml</loc>
+  <lastmod>2015-10-18T20:13:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/demo/rss.xml</loc>
@@ -103,10 +119,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-10-09T20:39:00Z</lastmod>
+  <lastmod>2015-10-18T20:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-10-13T15:55:00Z</lastmod>
+  <lastmod>2015-10-18T20:15:00Z</lastmod>
  </sitemap>
 </sitemapindex>
