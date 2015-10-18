@@ -43,7 +43,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fractales.xml</loc>
-  <lastmod>2015-10-18T16:39:00Z</lastmod>
+  <lastmod>2015-10-18T20:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/images.xml</loc>
+  <lastmod>2015-10-18T21:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/informatique.xml</loc>
@@ -59,7 +63,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
-  <lastmod>2015-10-18T16:39:00Z</lastmod>
+  <lastmod>2015-10-18T20:25:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/objets.xml</loc>
@@ -87,7 +91,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/suites.xml</loc>
-  <lastmod>2015-10-18T16:39:00Z</lastmod>
+  <lastmod>2015-10-18T20:25:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/tags-fractales.xml</loc>
+  <lastmod>2015-10-18T21:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
@@ -103,26 +111,26 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/rss.xml</loc>
-  <lastmod>2015-10-18T20:13:00Z</lastmod>
+  <lastmod>2015-10-18T20:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/demo/rss.xml</loc>
-  <lastmod>2015-10-13T15:54:00Z</lastmod>
+  <lastmod>2015-10-18T20:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/photos/rss.xml</loc>
-  <lastmod>2015-10-13T15:54:00Z</lastmod>
+  <lastmod>2015-10-18T20:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/rss.xml</loc>
-  <lastmod>2015-10-13T15:54:00Z</lastmod>
+  <lastmod>2015-10-18T20:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-10-18T20:15:00Z</lastmod>
+  <lastmod>2015-10-18T21:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-10-18T20:15:00Z</lastmod>
+  <lastmod>2015-10-18T21:17:00Z</lastmod>
  </sitemap>
 </sitemapindex>

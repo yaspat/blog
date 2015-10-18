@@ -1,3 +1,5 @@
+   
+
 Si vous voulez comprendre le propos de ce billet, il faut avoir lu  `le précédent <link:///blog/posts/eq2deg/>`_.
 
 Je suis allé me ballader dans la vallée des hippocampes, du coup je vous ai ramené des photos.
