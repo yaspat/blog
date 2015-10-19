@@ -220,9 +220,9 @@ est mon ami. Alors je me suis amusé
 
 1. À calculer l'âge d'un tas de points du plan complexe.
 
-1. À colorier d'une même couleur tous les germes de même âge.
+2. À colorier d'une même couleur tous les germes de même âge.
 
-2. À colorier en noir les germes éternels. Évidemment, je ne peux pas
+3. À colorier en noir les germes éternels. Évidemment, je ne peux pas
    vérifier par le calcul qu'un germe est éternel, mais je pose le
    critère arbitraire suivant : si au bout de 256 termes, aucun terme ne
    vérifie :math:`|z_k|>2`, j'ai de fortes raisons de penser que le
