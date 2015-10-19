@@ -1,4 +1,4 @@
-.. title: L'équation du second degré en vacances
+.. title: Des trinômes et des hippocampes
 .. slug: eq2deg
 .. date: 2015-10-18 13:39:19 UTC+02:00
 .. tags: suites, fractales, mandelbrot
@@ -46,9 +46,9 @@ la fonction trinôme : la fonction
 
 (c'est juste une parabole translatée d'un facteur complexe, mais si
 :math:`z_0` est réel, on retrouve une translation comme vue dans le
-billet ....).
+billet `ici <link:///blog/posts/transfo-elem-fonctions/>`_).
 
-Je commence par définir la fonction :math:`f` :
+Je commence par pythoniser la fonction :math:`f` :
 
 .. code:: python
 
@@ -58,11 +58,11 @@ Je commence par définir la fonction :math:`f` :
 Un premier exemple
 ==================
 
-Par exemple, voici la liste des termes de la suite jusqu'à
+Pour commencer, je prends par exemple :math:`z_0 = 1+i`. Voici la liste des termes de la suite jusqu'à
 :math:`z_{15}` en partant de :math:`z_0 = 1+i`.
 
-Puisque la programmation des suites récurrentes n'a plus de secret pour
-vous, je peux calculer par la boucle suivante mes termes consécutifs :
+La programmation des suites récurrentes n'a en effet plus de secret pour
+vous, je peux calculer par la boucle suivante mes termes consécutifs (notez que comme :math:`f(0)=z_0`, je peux intialiser ma variable **z** dans le script à **z=0**) :
 
 .. code:: python
 
@@ -94,15 +94,15 @@ vous, je peux calculer par la boucle suivante mes termes consécutifs :
     rang 15 : (nan+nanj)
 
 
-Voilà qu'apparaissent des **nan** dans les termes de la suite. Ce n'est
-pas que **Python** vous dit : "nan, je veux pas calculer". En fait, vous
-pouvez remarquer le terme :math:`z_n` devient vite très grand, et pour
-**Python**, un nombre trop grand (qui dépasse sa capacité de calcule)
+Voilà qu'apparaissent des **nan** dans les termes de la suite. Explication : Ce n'est
+pas que **Python** vous dit : "nan, je veux pas calculer". En fait, si vous regardez les termes de près, vous
+pouvez remarquer que :math:`z_n` devient vite très grand, et pour
+**Python**, un nombre trop grand (entendez : qui dépasse sa capacité de calcul)
 est **nan** : **n**\ ot **a** **n**\ umber.
 
 Un peu de vocabulaire : pour cette suite, le premier terme :math:`z_0`
-s'appelle le *germe* de la suite des termes consécutifs s'appelle la
-*trajectoire* ou l'\ *orbite* de :math:`z_0`.
+s'appelle le *germe* de la suite. La suite  des termes consécutifs s'appelle la
+*trajectoire* ou l'\ *orbite* du germe :math:`z_0`.
 
 Un deuxième exemple
 ===================
@@ -139,11 +139,14 @@ Voici la trajectoire du germe :math:`z_0=i` :
     rang 15 : (-1+1j)
 
 
-On constate qu'elle boucle : on a une orbite périodique. ## Un dernier
-exemple Je vais dessiner (le début de) l'orbite d'un :math:`z_0` tel que
-ce soit visible sur le dessin. Je pars de :math:`z_0`, et dans ma
-boucle, je stocke les coordonnées du terme calculé de la suite pour
-enfin relier les points.
+On constate que la trajectoire  boucle sur 3 valeurs distinctes  : on a une orbite périodique. 
+
+Un dernier exemple
+===================
+
+Je vais dessiner (le début de) l'orbite d'un :math:`z_0` tel que ce soit visible sur le dessin. 
+Je reprends mon programme précédent. Je pars de :math:`z_0`, et dans ma boucle, je stocke les coordonnées 
+du terme calculé de la suite pour enfin relier les points.
 
 .. code:: python
 
@@ -187,9 +190,9 @@ Quel âge a ce germe ?
 Ces trois exemples ont montré des situations variées.
 
 1. Les termes de la suite s'éloignent indéfiniment de l'origine (ex :
-   :math:`z_0=1+i` ou le germe que je viens de dessiner).
+   :math:`z_0=1+i` ou le cas du germe que je viens de dessiner).
 
-2. L'orbite boucle (exemple : :math:`z_0=i`) :
+2. L'orbite boucle (exemple : le cas de  :math:`z_0=i`) :
 
 3. (Cas contenant le cas précédent) l'orbite reste dans une région
    bornée : l'orbite est confinée.
@@ -199,21 +202,23 @@ En fait on peut montrer qu'il ne se passe que deux choses :
 1. Soit un des termes de la suite :math:`(z_n)` dépasse en module
    :math:`2` : dans ce cas l'orbite s'éloigne indéfiniment de l'origine.
    Le permier rang à partir duquel un terme :math:`z_k` de la suite
-   vérifie :math:`|z_k|>2` l'âge ou la durée de vie du germe
+   vérifie :math:`|z_k|>2` s'appelle *l'âge* ou *la durée de vie* du germe
    :math:`z_0`. Par exemple, le germe :math:`z_0` a pour durée de vie
    :math:`1` puisque pour cette suite, :math:`|z_1| =\sqrt{5}>2` et
    :math:`|z_0|\le 2`.
 
 2. Soit on est dans le cas contraire du cas 1, et la suite reste bornée.
-   Dans ce cas on dit le germe est éternel. Le germe :math:`i` est
+   Dans ce cas on dit le germe est éternel. Par exemple, le germe :math:`i` est
    éternel.
 
 Colorions les germes de même âge 
 ================================
 
 Déterminer l'âge d'un germe par le calcul est difficile, mais **Python**
-est mon ami. Alors je me suis amusé à calculer l'âge d'un tas de points
-du plan complexe et :
+est mon ami. Alors je me suis amusé 
+
+
+1. À calculer l'âge d'un tas de points du plan complexe.
 
 1. À colorier d'une même couleur tous les germes de même âge.
 
@@ -221,8 +226,8 @@ du plan complexe et :
    vérifier par le calcul qu'un germe est éternel, mais je pose le
    critère arbitraire suivant : si au bout de 256 termes, aucun terme ne
    vérifie :math:`|z_k|>2`, j'ai de fortes raisons de penser que le
-   germe est éternel. Au pire, je mets de l'ombre sur des points qui
-   devraient être coloriés.
+   germe est éternel. Cela me donne donc 256 âges possibles pour mes germes,
+   et au pire, avec mes critères, je mets de l'ombre sur des germes qui devraient être coloriés.
 
 Vous avez dit fractales ?
 ==========================
@@ -253,7 +258,7 @@ complexe (ah ! ah !) que poétique. Regardez (je commente le programme) :
     
     Re = np.dot(U,X)
     Im = np.dot(Y,U.T)
-    Z0 =  Re + 1j*Im
+    Z0 =  Re + 1j*Im        # X,Y,Re,Im,Z0 sont des matrices conteant les germes.          
     
     def f(Z,C):
         W = Z**2+C      
@@ -263,15 +268,14 @@ complexe (ah ! ah !) que poétique. Regardez (je commente le programme) :
 .. code:: python
 
     C = Z0.reshape(resolution**2,) 
-    C = Z0    
     Z = np.zeros(np.shape(C))
-    A = Z                         # A est la future image
+    A = Z                         # A est la future image : matrice colorée
     
     for k in range(0,nombre_Iterations): 
         Z = f(Z,C)
         I,J = np.where(abs(Z) >2) # je cherche les germes de durée de vie k
         Z[I,J] = np.nan           # je les oublie pour la suite
-        A[I,J] = k                # dans ma grille je les colorie en k
+        A[I,J] = k                # dans ma grille je les colorie en couleur k
         
    
 
@@ -287,12 +291,14 @@ complexe (ah ! ah !) que poétique. Regardez (je commente le programme) :
 
 .. image:: ../../images/Eq2deg/output_14_0.png
 
+Sur l'image ci-dessus, le code des couleurs vous dit l'âge de chaque germe.
 
-Le bel ensemble noir qui se distingue est dans son halo de lumière est
+Le bel ensemble noir qui se distingue  dans son halo de lumière est
 l'\ *ensemble de Mandelbrot*. C'est un ensemble fractal : il est
 auto-similaire, c'est-à-dire qu'à toute échelle, vous retrouvez dans
-l'ensemble des répliques de l'ensemble lui-même. Je vous montrerai des
-photos dans un autre billet.
+l'ensemble des répliques de l'ensemble lui-même. En particulier, cela veut dire 
+que si je vous montre une réplique de cette objet dans l'objet, vous ne pouvez pas dire à quelle échelle
+vous êtes en train de faire l'observation. Je vous montrerai des photos de certaines régions dans un autre billet.
 
 
 .. bidon

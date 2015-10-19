@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>L'équation du second degré en vacances | Maths-info en BCPST1-A Rennes</title>
+<title>Des trinômes et des hippocampes | Maths-info en BCPST1-A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/eq2deg/">
@@ -27,13 +27,14 @@ article: http://ogp.me/ns/article#
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
 <meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
-<meta property="og:title" content="L'équation du second degré en vacances">
+<meta property="og:title" content="Des trinômes et des hippocampes">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/eq2deg/">
 <meta property="og:description" content="Contents
 
 Des germes et des trajectoires
 Un premier exemple
 Un deuxième exemple
+Un dernier exemple
 
 
 Quel âge a ce germe ?
@@ -43,7 +44,7 @@ Vous avez dit fractales ?
 
 
 
-Ce qui est vraiment fascinant ave">
+Ce qui est vra">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-10-18T13:39:19+02:00">
 <meta property="article:tag" content="fractales">
@@ -68,7 +69,7 @@ Ce qui est vraiment fascinant ave">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">L'équation du second degré en vacances</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Des trinômes et des hippocampes</h1>
 
         <div class="meta">
             <div class="authordate">
@@ -97,12 +98,13 @@ Ce qui est vraiment fascinant ave">
 <a class="reference internal" href=".#des-germes-et-des-trajectoires" id="id1">Des germes et des trajectoires</a><ul>
 <li><a class="reference internal" href=".#un-premier-exemple" id="id2">Un premier exemple</a></li>
 <li><a class="reference internal" href=".#un-deuxieme-exemple" id="id3">Un deuxième exemple</a></li>
+<li><a class="reference internal" href=".#un-dernier-exemple" id="id4">Un dernier exemple</a></li>
 </ul>
 </li>
 <li>
-<a class="reference internal" href=".#quel-age-a-ce-germe" id="id4">Quel âge a ce germe ?</a><ul>
-<li><a class="reference internal" href=".#colorions-les-germes-de-meme-age" id="id5">Colorions les germes de même âge</a></li>
-<li><a class="reference internal" href=".#vous-avez-dit-fractales" id="id6">Vous avez dit fractales ?</a></li>
+<a class="reference internal" href=".#quel-age-a-ce-germe" id="id5">Quel âge a ce germe ?</a><ul>
+<li><a class="reference internal" href=".#colorions-les-germes-de-meme-age" id="id6">Colorions les germes de même âge</a></li>
+<li><a class="reference internal" href=".#vous-avez-dit-fractales" id="id7">Vous avez dit fractales ?</a></li>
 </ul>
 </li>
 </ul>
@@ -137,23 +139,23 @@ f : x\mapsto x^2 +z_0
 </div>
 <p>(c'est juste une parabole translatée d'un facteur complexe, mais si
 <span class="math">\(z_0\)</span> est réel, on retrouve une translation comme vue dans le
-billet ....).</p>
-<p>Je commence par définir la fonction <span class="math">\(f\)</span> :</p>
-<pre class="code python"><a name="rest_code_19dcb69acb6b4e74a2f5975ea15d2004-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">):</span>
-<a name="rest_code_19dcb69acb6b4e74a2f5975ea15d2004-2"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z0</span>
+billet <a class="reference external" href="/blog/posts/transfo-elem-fonctions/">ici</a>).</p>
+<p>Je commence par pythoniser la fonction <span class="math">\(f\)</span> :</p>
+<pre class="code python"><a name="rest_code_216f6fd5c2ee4e0b9682b8f3e5a31bc2-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">):</span>
+<a name="rest_code_216f6fd5c2ee4e0b9682b8f3e5a31bc2-2"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z0</span>
 </pre>
 <div class="section" id="un-premier-exemple">
 <h3><a class="toc-backref" href=".#id2">Un premier exemple</a></h3>
-<p>Par exemple, voici la liste des termes de la suite jusqu'à
+<p>Pour commencer, je prends par exemple <span class="math">\(z_0 = 1+i\)</span>. Voici la liste des termes de la suite jusqu'à
 <span class="math">\(z_{15}\)</span> en partant de <span class="math">\(z_0 = 1+i\)</span>.</p>
-<p>Puisque la programmation des suites récurrentes n'a plus de secret pour
-vous, je peux calculer par la boucle suivante mes termes consécutifs :</p>
-<pre class="code python"><a name="rest_code_d19c984443054f68ac647acd50eea842-1"></a><span class="n">z0</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1j</span>
-<a name="rest_code_d19c984443054f68ac647acd50eea842-2"></a><span class="n">N</span> <span class="o">=</span> <span class="mi">16</span>
-<a name="rest_code_d19c984443054f68ac647acd50eea842-3"></a><span class="n">z</span><span class="o">=</span><span class="mi">0</span>
-<a name="rest_code_d19c984443054f68ac647acd50eea842-4"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<a name="rest_code_d19c984443054f68ac647acd50eea842-5"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">)</span>
-<a name="rest_code_d19c984443054f68ac647acd50eea842-6"></a>    <span class="k">print</span> <span class="s">'rang'</span><span class="p">,</span><span class="n">n</span><span class="p">,</span> <span class="s">":"</span><span class="p">,</span><span class="n">z</span>
+<p>La programmation des suites récurrentes n'a en effet plus de secret pour
+vous, je peux calculer par la boucle suivante mes termes consécutifs (notez que comme <span class="math">\(f(0)=z_0\)</span>, je peux intialiser ma variable <strong>z</strong> dans le script à <strong>z=0</strong>) :</p>
+<pre class="code python"><a name="rest_code_f5e9dfeae40e4a8ba72f70d33dde708c-1"></a><span class="n">z0</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1j</span>
+<a name="rest_code_f5e9dfeae40e4a8ba72f70d33dde708c-2"></a><span class="n">N</span> <span class="o">=</span> <span class="mi">16</span>
+<a name="rest_code_f5e9dfeae40e4a8ba72f70d33dde708c-3"></a><span class="n">z</span><span class="o">=</span><span class="mi">0</span>
+<a name="rest_code_f5e9dfeae40e4a8ba72f70d33dde708c-4"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<a name="rest_code_f5e9dfeae40e4a8ba72f70d33dde708c-5"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">)</span>
+<a name="rest_code_f5e9dfeae40e4a8ba72f70d33dde708c-6"></a>    <span class="k">print</span> <span class="s">'rang'</span><span class="p">,</span><span class="n">n</span><span class="p">,</span> <span class="s">":"</span><span class="p">,</span><span class="n">z</span>
 </pre>
 <pre class="literal-block">
 rang 0 : (1+1j)
@@ -173,24 +175,24 @@ rang 13 : (nan+nanj)
 rang 14 : (nan+nanj)
 rang 15 : (nan+nanj)
 </pre>
-<p>Voilà qu'apparaissent des <strong>nan</strong> dans les termes de la suite. Ce n'est
-pas que <strong>Python</strong> vous dit : "nan, je veux pas calculer". En fait, vous
-pouvez remarquer le terme <span class="math">\(z_n\)</span> devient vite très grand, et pour
-<strong>Python</strong>, un nombre trop grand (qui dépasse sa capacité de calcule)
+<p>Voilà qu'apparaissent des <strong>nan</strong> dans les termes de la suite. Explication : Ce n'est
+pas que <strong>Python</strong> vous dit : "nan, je veux pas calculer". En fait, si vous regardez les termes de près, vous
+pouvez remarquer que <span class="math">\(z_n\)</span> devient vite très grand, et pour
+<strong>Python</strong>, un nombre trop grand (entendez : qui dépasse sa capacité de calcul)
 est <strong>nan</strong> : <strong>n</strong>ot <strong>a</strong> <strong>n</strong>umber.</p>
 <p>Un peu de vocabulaire : pour cette suite, le premier terme <span class="math">\(z_0\)</span>
-s'appelle le <em>germe</em> de la suite des termes consécutifs s'appelle la
-<em>trajectoire</em> ou l'<em>orbite</em> de <span class="math">\(z_0\)</span>.</p>
+s'appelle le <em>germe</em> de la suite. La suite  des termes consécutifs s'appelle la
+<em>trajectoire</em> ou l'<em>orbite</em> du germe <span class="math">\(z_0\)</span>.</p>
 </div>
 <div class="section" id="un-deuxieme-exemple">
 <h3><a class="toc-backref" href=".#id3">Un deuxième exemple</a></h3>
 <p>Voici la trajectoire du germe <span class="math">\(z_0=i\)</span> :</p>
-<pre class="code python"><a name="rest_code_67e09173a727406ba4849aefb4698889-1"></a><span class="n">z0</span> <span class="o">=</span>  <span class="mi">1j</span>
-<a name="rest_code_67e09173a727406ba4849aefb4698889-2"></a><span class="n">N</span> <span class="o">=</span> <span class="mi">16</span>
-<a name="rest_code_67e09173a727406ba4849aefb4698889-3"></a><span class="n">z</span><span class="o">=</span><span class="mi">0</span>
-<a name="rest_code_67e09173a727406ba4849aefb4698889-4"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<a name="rest_code_67e09173a727406ba4849aefb4698889-5"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">)</span>
-<a name="rest_code_67e09173a727406ba4849aefb4698889-6"></a>    <span class="k">print</span> <span class="s">'rang'</span><span class="p">,</span><span class="n">n</span><span class="p">,</span> <span class="s">":"</span><span class="p">,</span><span class="n">z</span>
+<pre class="code python"><a name="rest_code_725bf88ea0f44868a52055467ec0160c-1"></a><span class="n">z0</span> <span class="o">=</span>  <span class="mi">1j</span>
+<a name="rest_code_725bf88ea0f44868a52055467ec0160c-2"></a><span class="n">N</span> <span class="o">=</span> <span class="mi">16</span>
+<a name="rest_code_725bf88ea0f44868a52055467ec0160c-3"></a><span class="n">z</span><span class="o">=</span><span class="mi">0</span>
+<a name="rest_code_725bf88ea0f44868a52055467ec0160c-4"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<a name="rest_code_725bf88ea0f44868a52055467ec0160c-5"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">)</span>
+<a name="rest_code_725bf88ea0f44868a52055467ec0160c-6"></a>    <span class="k">print</span> <span class="s">'rang'</span><span class="p">,</span><span class="n">n</span><span class="p">,</span> <span class="s">":"</span><span class="p">,</span><span class="n">z</span>
 </pre>
 <pre class="literal-block">
 rang 0 : 1j
@@ -210,48 +212,50 @@ rang 13 : (-1+1j)
 rang 14 : -1j
 rang 15 : (-1+1j)
 </pre>
-<p>On constate qu'elle boucle : on a une orbite périodique. ## Un dernier
-exemple Je vais dessiner (le début de) l'orbite d'un <span class="math">\(z_0\)</span> tel que
-ce soit visible sur le dessin. Je pars de <span class="math">\(z_0\)</span>, et dans ma
-boucle, je stocke les coordonnées du terme calculé de la suite pour
-enfin relier les points.</p>
-<pre class="code python"><a name="rest_code_57a52d7a12c943dfa1a1812dada0ace5-1"></a><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-<a name="rest_code_57a52d7a12c943dfa1a1812dada0ace5-2"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<a name="rest_code_57a52d7a12c943dfa1a1812dada0ace5-3"></a><span class="kn">import</span> <span class="nn">matplotlib.path</span> <span class="kn">as</span> <span class="nn">mpath</span>
-<a name="rest_code_57a52d7a12c943dfa1a1812dada0ace5-4"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<p>On constate que la trajectoire  boucle sur 3 valeurs distinctes  : on a une orbite périodique.</p>
+</div>
+<div class="section" id="un-dernier-exemple">
+<h3><a class="toc-backref" href=".#id4">Un dernier exemple</a></h3>
+<p>Je vais dessiner (le début de) l'orbite d'un <span class="math">\(z_0\)</span> tel que ce soit visible sur le dessin.
+Je reprends mon programme précédent. Je pars de <span class="math">\(z_0\)</span>, et dans ma boucle, je stocke les coordonnées
+du terme calculé de la suite pour enfin relier les points.</p>
+<pre class="code python"><a name="rest_code_32e101cd40804c36948664851731bc7e-1"></a><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<a name="rest_code_32e101cd40804c36948664851731bc7e-2"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<a name="rest_code_32e101cd40804c36948664851731bc7e-3"></a><span class="kn">import</span> <span class="nn">matplotlib.path</span> <span class="kn">as</span> <span class="nn">mpath</span>
+<a name="rest_code_32e101cd40804c36948664851731bc7e-4"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 </pre>
-<pre class="code python"><a name="rest_code_52f415dff91e4d079092a031598db81c-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span> <span class="c"># je crée la fenêtre graphique</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-2"></a><span class="n">Path</span> <span class="o">=</span> <span class="n">mpath</span><span class="o">.</span><span class="n">Path</span>        <span class="c"># j'initialise ma trajectoire</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-3"></a><span class="n">z0</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.2</span><span class="o">+</span><span class="mi">1j</span>             <span class="c"># c'est mon germe</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-4"></a><span class="n">N</span> <span class="o">=</span> <span class="mi">8</span>                    <span class="c"># Pas trop de points</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-5"></a><span class="n">z</span><span class="o">=</span><span class="n">z0</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-6"></a><span class="n">path_data</span><span class="o">=</span><span class="p">[(</span><span class="n">Path</span><span class="o">.</span><span class="n">MOVETO</span><span class="p">,(</span><span class="n">z0</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z0</span><span class="o">.</span><span class="n">imag</span><span class="p">))]</span> <span class="c"># point de départ</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-7"></a>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-8"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-9"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">)</span>    <span class="c"># calcul du point courant sur la ligne</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-10"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span><span class="s">r'$z_{'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="s">'}$'</span><span class="p">)</span> <span class="c"># légende</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-11"></a>    <span class="n">path_data</span> <span class="o">=</span> <span class="n">path_data</span><span class="o">+</span><span class="p">[(</span><span class="n">Path</span><span class="o">.</span><span class="n">LINETO</span><span class="p">,(</span><span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="p">))]</span> <span class="c"># coordonnées</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-12"></a>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-13"></a><span class="c"># Un peu de cosmétique</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-14"></a>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-15"></a><span class="n">codes</span><span class="p">,</span> <span class="n">verts</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">path_data</span><span class="p">);</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-16"></a><span class="n">path</span> <span class="o">=</span> <span class="n">mpath</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">codes</span><span class="p">);</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-17"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">path</span><span class="o">.</span><span class="n">vertices</span><span class="p">);</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-18"></a><span class="n">line</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'go-'</span><span class="p">);</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-19"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">u'Début de la trajectoire du germe '</span><span class="o">+</span><span class="s">r'$z_0=-0.2+i$'</span><span class="p">)</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-20"></a><span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
-<a name="rest_code_52f415dff91e4d079092a031598db81c-21"></a><span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">);</span>
+<pre class="code python"><a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span> <span class="c"># je crée la fenêtre graphique</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-2"></a><span class="n">Path</span> <span class="o">=</span> <span class="n">mpath</span><span class="o">.</span><span class="n">Path</span>        <span class="c"># j'initialise ma trajectoire</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-3"></a><span class="n">z0</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.2</span><span class="o">+</span><span class="mi">1j</span>             <span class="c"># c'est mon germe</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-4"></a><span class="n">N</span> <span class="o">=</span> <span class="mi">8</span>                    <span class="c"># Pas trop de points</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-5"></a><span class="n">z</span><span class="o">=</span><span class="n">z0</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-6"></a><span class="n">path_data</span><span class="o">=</span><span class="p">[(</span><span class="n">Path</span><span class="o">.</span><span class="n">MOVETO</span><span class="p">,(</span><span class="n">z0</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z0</span><span class="o">.</span><span class="n">imag</span><span class="p">))]</span> <span class="c"># point de départ</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-7"></a>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-8"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-9"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">z0</span><span class="p">)</span>    <span class="c"># calcul du point courant sur la ligne</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-10"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span><span class="s">r'$z_{'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="s">'}$'</span><span class="p">)</span> <span class="c"># légende</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-11"></a>    <span class="n">path_data</span> <span class="o">=</span> <span class="n">path_data</span><span class="o">+</span><span class="p">[(</span><span class="n">Path</span><span class="o">.</span><span class="n">LINETO</span><span class="p">,(</span><span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">,</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="p">))]</span> <span class="c"># coordonnées</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-12"></a>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-13"></a><span class="c"># Un peu de cosmétique</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-14"></a>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-15"></a><span class="n">codes</span><span class="p">,</span> <span class="n">verts</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">path_data</span><span class="p">);</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-16"></a><span class="n">path</span> <span class="o">=</span> <span class="n">mpath</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">verts</span><span class="p">,</span> <span class="n">codes</span><span class="p">);</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-17"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">path</span><span class="o">.</span><span class="n">vertices</span><span class="p">);</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-18"></a><span class="n">line</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'go-'</span><span class="p">);</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-19"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">u'Début de la trajectoire du germe '</span><span class="o">+</span><span class="s">r'$z_0=-0.2+i$'</span><span class="p">)</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-20"></a><span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
+<a name="rest_code_bbdc558fcb3442e1ba7522322a93ef8b-21"></a><span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">);</span>
 </pre>
 <img alt="../../images/Eq2deg/output_9_0.png" src="../../images/Eq2deg/output_9_0.png">
 </div>
 </div>
 <div class="section" id="quel-age-a-ce-germe">
-<h2><a class="toc-backref" href=".#id4">Quel âge a ce germe ?</a></h2>
+<h2><a class="toc-backref" href=".#id5">Quel âge a ce germe ?</a></h2>
 <p>Ces trois exemples ont montré des situations variées.</p>
 <ol class="arabic simple">
 <li>Les termes de la suite s'éloignent indéfiniment de l'origine (ex :
-<span class="math">\(z_0=1+i\)</span> ou le germe que je viens de dessiner).</li>
-<li>L'orbite boucle (exemple : <span class="math">\(z_0=i\)</span>) :</li>
+<span class="math">\(z_0=1+i\)</span> ou le cas du germe que je viens de dessiner).</li>
+<li>L'orbite boucle (exemple : le cas de  <span class="math">\(z_0=i\)</span>) :</li>
 <li>(Cas contenant le cas précédent) l'orbite reste dans une région
 bornée : l'orbite est confinée.</li>
 </ol>
@@ -260,78 +264,81 @@ bornée : l'orbite est confinée.</li>
 <li>Soit un des termes de la suite <span class="math">\((z_n)\)</span> dépasse en module
 <span class="math">\(2\)</span> : dans ce cas l'orbite s'éloigne indéfiniment de l'origine.
 Le permier rang à partir duquel un terme <span class="math">\(z_k\)</span> de la suite
-vérifie <span class="math">\(|z_k|&gt;2\)</span> l'âge ou la durée de vie du germe
+vérifie <span class="math">\(|z_k|&gt;2\)</span> s'appelle <em>l'âge</em> ou <em>la durée de vie</em> du germe
 <span class="math">\(z_0\)</span>. Par exemple, le germe <span class="math">\(z_0\)</span> a pour durée de vie
 <span class="math">\(1\)</span> puisque pour cette suite, <span class="math">\(|z_1| =\sqrt{5}&gt;2\)</span> et
 <span class="math">\(|z_0|\le 2\)</span>.</li>
 <li>Soit on est dans le cas contraire du cas 1, et la suite reste bornée.
-Dans ce cas on dit le germe est éternel. Le germe <span class="math">\(i\)</span> est
+Dans ce cas on dit le germe est éternel. Par exemple, le germe <span class="math">\(i\)</span> est
 éternel.</li>
 </ol>
 <div class="section" id="colorions-les-germes-de-meme-age">
-<h3><a class="toc-backref" href=".#id5">Colorions les germes de même âge</a></h3>
+<h3><a class="toc-backref" href=".#id6">Colorions les germes de même âge</a></h3>
 <p>Déterminer l'âge d'un germe par le calcul est difficile, mais <strong>Python</strong>
-est mon ami. Alors je me suis amusé à calculer l'âge d'un tas de points
-du plan complexe et :</p>
+est mon ami. Alors je me suis amusé</p>
+<ol class="arabic simple">
+<li>À calculer l'âge d'un tas de points du plan complexe.</li>
+</ol>
 <ol class="arabic simple">
 <li>À colorier d'une même couleur tous les germes de même âge.</li>
 <li>À colorier en noir les germes éternels. Évidemment, je ne peux pas
 vérifier par le calcul qu'un germe est éternel, mais je pose le
 critère arbitraire suivant : si au bout de 256 termes, aucun terme ne
 vérifie <span class="math">\(|z_k|&gt;2\)</span>, j'ai de fortes raisons de penser que le
-germe est éternel. Au pire, je mets de l'ombre sur des points qui
-devraient être coloriés.</li>
+germe est éternel. Cela me donne donc 256 âges possibles pour mes germes,
+et au pire, avec mes critères, je mets de l'ombre sur des germes qui devraient être coloriés.</li>
 </ol>
 </div>
 <div class="section" id="vous-avez-dit-fractales">
-<h3><a class="toc-backref" href=".#id6">Vous avez dit fractales ?</a></h3>
+<h3><a class="toc-backref" href=".#id7">Vous avez dit fractales ?</a></h3>
 <p>Eh bien figurez-vous qu'en jouant à colorier les germes, cela donne une très belle mosaïque, aussi
 complexe (ah ! ah !) que poétique. Regardez (je commente le programme) :</p>
-<pre class="code python"><a name="rest_code_f5558981aa634451aba6aa7b9d215fbd-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<pre class="code python"><a name="rest_code_fd22df50545546858fe31175f7c89905-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 </pre>
-<pre class="code python"><a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-1"></a><span class="n">x_min</span> <span class="o">=</span>  <span class="o">-</span><span class="mf">1.5</span>  <span class="c"># je vais regarder les germes dans la région -1.5 &lt; Re(z) &lt; 1.5</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-2"></a><span class="n">x_max</span> <span class="o">=</span> <span class="mf">1.5</span>    <span class="c"># et  idem pour la partie imaginaire. Ça me donne un domaine carré</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-3"></a><span class="n">y_min</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.5</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-4"></a><span class="n">y_max</span> <span class="o">=</span> <span class="mf">1.5</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-5"></a>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-6"></a><span class="n">resolution</span> <span class="o">=</span> <span class="mi">1000</span>        <span class="c"># je maille mon domaie en subdivisant en 1000 X 1000</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-7"></a>                         <span class="c"># j'ai donc 1 million de germes</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-8"></a>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-9"></a><span class="n">nombre_Iterations</span> <span class="o">=</span> <span class="mi">256</span>  <span class="c"># je regarde mon orbite sur les 256 premiers termes</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-10"></a>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-11"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span><span class="n">x_max</span><span class="p">,</span><span class="n">resolution</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">resolution</span><span class="p">)</span>      <span class="c"># ce qui suit est là pour rendre</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-12"></a><span class="n">Y</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_max</span><span class="p">,</span><span class="o">-</span><span class="n">y_min</span><span class="p">,</span><span class="n">resolution</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resolution</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>   <span class="c"># mon calcul plus rapide</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-13"></a>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-14"></a><span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">resolution</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-15"></a>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-16"></a><span class="n">Re</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">X</span><span class="p">)</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-17"></a><span class="n">Im</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">U</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-18"></a><span class="n">Z0</span> <span class="o">=</span>  <span class="n">Re</span> <span class="o">+</span> <span class="mi">1j</span><span class="o">*</span><span class="n">Im</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-19"></a>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-20"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="n">C</span><span class="p">):</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-21"></a>    <span class="n">W</span> <span class="o">=</span> <span class="n">Z</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">C</span>
-<a name="rest_code_9c8f9602bd4e4bc7bd2746786ba250bb-22"></a>    <span class="k">return</span> <span class="n">W</span>
+<pre class="code python"><a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-1"></a><span class="n">x_min</span> <span class="o">=</span>  <span class="o">-</span><span class="mf">1.5</span>  <span class="c"># je vais regarder les germes dans la région -1.5 &lt; Re(z) &lt; 1.5</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-2"></a><span class="n">x_max</span> <span class="o">=</span> <span class="mf">1.5</span>    <span class="c"># et  idem pour la partie imaginaire. Ça me donne un domaine carré</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-3"></a><span class="n">y_min</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.5</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-4"></a><span class="n">y_max</span> <span class="o">=</span> <span class="mf">1.5</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-5"></a>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-6"></a><span class="n">resolution</span> <span class="o">=</span> <span class="mi">1000</span>        <span class="c"># je maille mon domaie en subdivisant en 1000 X 1000</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-7"></a>                         <span class="c"># j'ai donc 1 million de germes</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-8"></a>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-9"></a><span class="n">nombre_Iterations</span> <span class="o">=</span> <span class="mi">256</span>  <span class="c"># je regarde mon orbite sur les 256 premiers termes</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-10"></a>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-11"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_min</span><span class="p">,</span><span class="n">x_max</span><span class="p">,</span><span class="n">resolution</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">resolution</span><span class="p">)</span>      <span class="c"># ce qui suit est là pour rendre</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-12"></a><span class="n">Y</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_max</span><span class="p">,</span><span class="o">-</span><span class="n">y_min</span><span class="p">,</span><span class="n">resolution</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resolution</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>   <span class="c"># mon calcul plus rapide</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-13"></a>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-14"></a><span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">resolution</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-15"></a>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-16"></a><span class="n">Re</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">U</span><span class="p">,</span><span class="n">X</span><span class="p">)</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-17"></a><span class="n">Im</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">U</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-18"></a><span class="n">Z0</span> <span class="o">=</span>  <span class="n">Re</span> <span class="o">+</span> <span class="mi">1j</span><span class="o">*</span><span class="n">Im</span>        <span class="c"># X,Y,Re,Im,Z0 sont des matrices conteant les germes.</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-19"></a>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-20"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="n">C</span><span class="p">):</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-21"></a>    <span class="n">W</span> <span class="o">=</span> <span class="n">Z</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">C</span>
+<a name="rest_code_b7e3b66e31b04eb986446c3ec1189d95-22"></a>    <span class="k">return</span> <span class="n">W</span>
 </pre>
-<pre class="code python"><a name="rest_code_11eef520027d4e3380c9c2a340c92484-1"></a><span class="n">C</span> <span class="o">=</span> <span class="n">Z0</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resolution</span><span class="o">**</span><span class="mi">2</span><span class="p">,)</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-2"></a><span class="n">C</span> <span class="o">=</span> <span class="n">Z0</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-3"></a><span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">C</span><span class="p">))</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-4"></a><span class="n">A</span> <span class="o">=</span> <span class="n">Z</span>                         <span class="c"># A est la future image</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-5"></a>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-6"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">nombre_Iterations</span><span class="p">):</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-7"></a>    <span class="n">Z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-8"></a>    <span class="n">I</span><span class="p">,</span><span class="n">J</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span> <span class="o">&gt;</span><span class="mi">2</span><span class="p">)</span> <span class="c"># je cherche les germes de durée de vie k</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-9"></a>    <span class="n">Z</span><span class="p">[</span><span class="n">I</span><span class="p">,</span><span class="n">J</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>           <span class="c"># je les oublie pour la suite</span>
-<a name="rest_code_11eef520027d4e3380c9c2a340c92484-10"></a>    <span class="n">A</span><span class="p">[</span><span class="n">I</span><span class="p">,</span><span class="n">J</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span>                <span class="c"># dans ma grille je les colorie en k</span>
+<pre class="code python"><a name="rest_code_a57bd4e574194642b6b43351d90f4214-1"></a><span class="n">C</span> <span class="o">=</span> <span class="n">Z0</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resolution</span><span class="o">**</span><span class="mi">2</span><span class="p">,)</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-2"></a><span class="n">Z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="n">C</span><span class="p">))</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-3"></a><span class="n">A</span> <span class="o">=</span> <span class="n">Z</span>                         <span class="c"># A est la future image : matrice colorée</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-4"></a>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-5"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">nombre_Iterations</span><span class="p">):</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-6"></a>    <span class="n">Z</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-7"></a>    <span class="n">I</span><span class="p">,</span><span class="n">J</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span> <span class="o">&gt;</span><span class="mi">2</span><span class="p">)</span> <span class="c"># je cherche les germes de durée de vie k</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-8"></a>    <span class="n">Z</span><span class="p">[</span><span class="n">I</span><span class="p">,</span><span class="n">J</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>           <span class="c"># je les oublie pour la suite</span>
+<a name="rest_code_a57bd4e574194642b6b43351d90f4214-9"></a>    <span class="n">A</span><span class="p">[</span><span class="n">I</span><span class="p">,</span><span class="n">J</span><span class="p">]</span> <span class="o">=</span> <span class="n">k</span>                <span class="c"># dans ma grille je les colorie en couleur k</span>
 </pre>
-<pre class="code python"><a name="rest_code_90bd2d311024424b851fec263d0c24ff-1"></a><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resolution</span><span class="p">,</span><span class="n">resolution</span><span class="p">);</span>
-<a name="rest_code_90bd2d311024424b851fec263d0c24ff-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="s">'spectral'</span><span class="p">);</span>
-<a name="rest_code_90bd2d311024424b851fec263d0c24ff-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">();</span>
+<pre class="code python"><a name="rest_code_3312cf4644e040f99f03e0a50e146e17-1"></a><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">resolution</span><span class="p">,</span><span class="n">resolution</span><span class="p">);</span>
+<a name="rest_code_3312cf4644e040f99f03e0a50e146e17-2"></a><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="s">'spectral'</span><span class="p">);</span>
+<a name="rest_code_3312cf4644e040f99f03e0a50e146e17-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">();</span>
 </pre>
-<img alt="../../images/Eq2deg/output_14_0.png" src="../../images/Eq2deg/output_14_0.png"><p>Le bel ensemble noir qui se distingue est dans son halo de lumière est
+<img alt="../../images/Eq2deg/output_14_0.png" src="../../images/Eq2deg/output_14_0.png"><p>Sur l'image ci-dessus, le code des couleurs vous dit l'âge de chaque germe.</p>
+<p>Le bel ensemble noir qui se distingue  dans son halo de lumière est
 l'<em>ensemble de Mandelbrot</em>. C'est un ensemble fractal : il est
 auto-similaire, c'est-à-dire qu'à toute échelle, vous retrouvez dans
-l'ensemble des répliques de l'ensemble lui-même. Je vous montrerai des
-photos dans un autre billet.</p>
+l'ensemble des répliques de l'ensemble lui-même. En particulier, cela veut dire
+que si je vous montre une réplique de cette objet dans l'objet, vous ne pouvez pas dire à quelle échelle
+vous êtes en train de faire l'observation. Je vous montrerai des photos de certaines régions dans un autre billet.</p>
 <!-- bidon
 
 
@@ -359,7 +366,7 @@ y_max = y_centre + delta -->
         <script>
         var disqus_shortname ="yaspat",
             disqus_url="http://yaspat.github.io/blog/posts/eq2deg/",
-        disqus_title="L'\u00e9quation du second degr\u00e9 en vacances",
+        disqus_title="Des trin\u00f4mes et des hippocampes",
         disqus_identifier="cache/posts/Eq2deg.html",
         disqus_config = function () {
             this.language = "fr";
