@@ -15,7 +15,7 @@ Je suis allé me ballader dans la vallée des hippocampes, du coup je vous ai ra
 
 	 <!-- TEASER_END -->
 
-1.  **L'ensemble de Mandelbrot.**  C'est la forme noire baignée dans un halo de lumière et qui se distingue sur l'image. Il est localisé dans la région :math:`\mathfrak{Re}(z)\in[-3/2; 3/2]` et :math:`\mathfrak{Im}(z)\in [-3/2; 3/2]`
+1.  **L'ensemble de Mandelbrot.**  C'est la forme noire baignée dans un halo de lumière et qui se distingue sur l'image. Il est localisé dans la région :math:`\mathfrak{Re}(z)\in[-2; 2]` et :math:`\mathfrak{Im}(z)\in [-2; 2]` (il en manque un petit bout sur la photo).
  
 
     .. thumbnail:: ../../galleries/Mandelbrot/00-Ensemble_Mandelbrot_spectral.jpg
