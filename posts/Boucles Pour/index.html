@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Informatique : Leçon | Maths-info en BCPST1-A Rennes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../favicon.ico" sizes="128x128">
+<link rel="icon" href="../../favicon.ico" sizes="256x256">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
+<meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
+<meta property="og:title" content="Informatique : Leçon">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/Boucles Pour/">
+<meta property="og:description" content="Contents
+
+Exemples de boucles pour
+Exemple 1
+Exemple 2
+Variante de l'exemple 2
+Encore une amélioration supplémentaire
+
+
+Exercice 18 p. 27 du poly
+Exercice 19 p.27
+Exercice 20 p.28 : calcul de \(n!\)
+D">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-11-04T13:39:19+02:00">
+<meta property="article:tag" content="boucles">
+<meta property="article:tag" content="for">
+<meta property="article:tag" content="leçon">
+<meta property="article:tag" content="python">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/documents-de-travail" title="Documents"><i class="icon-file-text"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Informatique : Leçon</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-11-04T13:39:19+02:00">2015-11-04 13:39</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/boucles/" rel="tag">boucles</a></li>
+           <li><a class="tag p-category" href="../../categories/for/" rel="tag">for</a></li>
+           <li><a class="tag p-category" href="../../categories/lecon/" rel="tag">leçon</a></li>
+           <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href="../Boucles%20Pour/#exemples-de-boucles-pour" id="id1">Exemples de boucles pour</a><ul>
+<li><a class="reference internal" href="../Boucles%20Pour/#exemple-1" id="id2">Exemple 1</a></li>
+<li><a class="reference internal" href="../Boucles%20Pour/#exemple-2" id="id3">Exemple 2</a></li>
+<li><a class="reference internal" href="../Boucles%20Pour/#variante-de-l-exemple-2" id="id4">Variante de l'exemple 2</a></li>
+<li><a class="reference internal" href="../Boucles%20Pour/#encore-une-amelioration-supplementaire" id="id5">Encore une amélioration supplémentaire</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="../Boucles%20Pour/#exercice-18-p-27-du-poly" id="id6">Exercice 18 p. 27 du poly</a></li>
+<li><a class="reference internal" href="../Boucles%20Pour/#exercice-19-p-27" id="id7">Exercice 19 p.27</a></li>
+<li><a class="reference internal" href="../Boucles%20Pour/#exercice-20-p-28-calcul-de-n" id="id8">Exercice 20 p.28 : calcul de <span class="math">\(n!\)</span></a></li>
+<li><a class="reference internal" href="../Boucles%20Pour/#dernier-exercice" id="id9">Dernier exercice</a></li>
+</ul>
+</div>
+<p>Les boucles servent à automatiser la répétition de tâches. Il y a
+essentiellement deux types de boucles :</p>
+<ol class="arabic simple">
+<li>Celles pour lesquelles <em>on sait à l'avance</em> le nombre d'itérations
+(ou répétitions) à effectuer : ce sont les boucles <strong>for</strong>. Par
+exemple : calculer les 100 premiers termes d'une suite <span class="math">\((u_n)\)</span>
+donnée.</li>
+<li>Celles pour lesquelles <em>on ne sait pas à l'avance</em> le nombre
+d'itérations à effectuer : ce sont des boucles subordonnées à un
+<em>test d'arrêt</em> : les boucles <strong>tant que</strong>. Par exemple : trouver le
+premier terme d'une suite <span class="math">\((u_n)\)</span> donnée de limite
+<span class="math">\(+\infty\)</span> vérifiant <span class="math">\(u_n &gt; 10000\)</span>.</li>
+</ol>
+<!-- TEASER_END --><div class="section" id="exemples-de-boucles-pour">
+<h2><a class="toc-backref" href="../Boucles%20Pour/#id1">Exemples de boucles pour</a></h2>
+<div class="section" id="exemple-1">
+<h3><a class="toc-backref" href="../Boucles%20Pour/#id2">Exemple 1</a></h3>
+<p>Prenons l'exercice 16 p.25 du poly d'algorithmique : écrire un programme
+demandant à l'utilisateur d'entrer un entier <span class="math">\(N\)</span> et calculant et
+affichant les termes <span class="math">\(r_0, \dots , r_N\)</span> de la suite définie par :</p>
+<div class="math">
+\begin{equation*}
+ \left\{ \begin{array}{rcl}
+r_0 &amp;=&amp; 4 \\
+\forall n \in \mathbf{N} \quad r_{n+1}&amp;=&amp;3r_n
+\end{array}
+\right.
+\end{equation*}
+</div>
+<p>Voici le programme <strong>Python</strong> correspondant obtenu en descendant
+l'algorithme vu en classe et pour lequel j'affiche les 11 premiers
+termes de la suite , c'est-à-dire <span class="math">\(r_0,\)</span> <span class="math">\(r_1\)</span>,
+<span class="math">\(\dots\)</span> <span class="math">\(r_n\)</span>.</p>
+<pre class="code python"><a name="rest_code_643c2760f612469185dfcf5278efae20-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N naturel : '</span><span class="p">)</span>
+<a name="rest_code_643c2760f612469185dfcf5278efae20-2"></a><span class="n">r</span> <span class="o">=</span> <span class="mi">4</span>                   <span class="c"># C'est la valeur de r0</span>
+<a name="rest_code_643c2760f612469185dfcf5278efae20-3"></a><span class="k">print</span> <span class="n">r</span>                <span class="c"># j'affiche r0 comme demandé</span>
+<a name="rest_code_643c2760f612469185dfcf5278efae20-4"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_643c2760f612469185dfcf5278efae20-5"></a>    <span class="n">r</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">r</span>
+<a name="rest_code_643c2760f612469185dfcf5278efae20-6"></a>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Entrez un entier N naturel : 10
+4
+12
+36
+108
+324
+972
+2916
+8748
+26244
+78732
+236196
+</pre>
+<p>Des commentaires sur ce script :</p>
+<ol class="arabic simple">
+<li>la liste des entiers de <span class="math">\(1\)</span> à <span class="math">\(N\)</span> s'obtient avec la
+commande <strong>range(1,N+1)</strong>. Faites bien attention : <strong>range(a,b)</strong>
+prend les entiers de l'intervalle <span class="math">\([a,b[\)</span> : <strong>b</strong> est exclu, si
+bien que dans la liste <strong>range(a,b)</strong>, il y a <strong>b-a</strong> éléments.</li>
+<li>On peut se demander quel est le type de <strong>range(a,b)</strong>. Regardons :</li>
+</ol>
+<pre class="code python"><a name="rest_code_9d575748f762438cb147a71d47294b5e-1"></a><span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+</pre>
+<pre class="literal-block">
+list
+</pre>
+<ol class="arabic simple">
+<li>C'est un objet de type <em>liste</em>, qui correspond en mathématiques au
+type <em>liste</em>, appelé indifféremement <span class="math">\(p\)</span>-liste, ou
+<span class="math">\(p\)</span>-upplet. On a donc ici un nouveau type d'objet <strong>Python</strong>.</li>
+<li>Sous <strong>Python 3</strong>, <strong>range(a,b)</strong> n'est pas de type <em>liste</em>, mais de
+type <em>itérable</em>.</li>
+</ol>
+</div>
+<div class="section" id="exemple-2">
+<h3><a class="toc-backref" href="../Boucles%20Pour/#id3">Exemple 2</a></h3>
+<p>Afficher 25 fois la phrase "Merci vous êtes bien gentil !"</p>
+<pre class="code python"><a name="rest_code_eacc927785e645d9bf87334ed5440d98-1"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">25</span><span class="p">):</span>
+<a name="rest_code_eacc927785e645d9bf87334ed5440d98-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci vous êtes bien gentil'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+Merci vous êtes bien gentil
+</pre>
+</div>
+<div class="section" id="variante-de-l-exemple-2">
+<h3><a class="toc-backref" href="../Boucles%20Pour/#id4">Variante de l'exemple 2</a></h3>
+<p>On voudrait afficher en plus dans la phrase le segment : 'pour la
+<span class="math">\(j\)</span>-ème' fois avec la valeur courante de <span class="math">\(j\)</span>.</p>
+<pre class="code python"><a name="rest_code_9ea83b4ee39d4bf480d9cc6a50f4cf66-1"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
+<a name="rest_code_9ea83b4ee39d4bf480d9cc6a50f4cf66-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci pour la '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span> <span class="s">'eme fois !'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Merci pour la 1eme fois !
+Merci pour la 2eme fois !
+Merci pour la 3eme fois !
+Merci pour la 4eme fois !
+Merci pour la 5eme fois !
+Merci pour la 6eme fois !
+Merci pour la 7eme fois !
+Merci pour la 8eme fois !
+Merci pour la 9eme fois !
+Merci pour la 10eme fois !
+Merci pour la 11eme fois !
+Merci pour la 12eme fois !
+Merci pour la 13eme fois !
+Merci pour la 14eme fois !
+Merci pour la 15eme fois !
+Merci pour la 16eme fois !
+Merci pour la 17eme fois !
+Merci pour la 18eme fois !
+Merci pour la 19eme fois !
+Merci pour la 20eme fois !
+Merci pour la 21eme fois !
+Merci pour la 22eme fois !
+Merci pour la 23eme fois !
+Merci pour la 24eme fois !
+Merci pour la 25eme fois !
+</pre>
+</div>
+<div class="section" id="encore-une-amelioration-supplementaire">
+<h3><a class="toc-backref" href="../Boucles%20Pour/#id5">Encore une amélioration supplémentaire</a></h3>
+<p>On voudrait qu'au premier affichage, <strong>Python</strong> affiche : <em>"pour la 1ère
+fois"</em> et non pas : <em>"pour la 1ème fois"</em>. On pense tout de suite à
+implémenter un <strong>if</strong> pour réaliser cela. Ici, c'est inutile, puisqu'il
+suffit d'écrire :</p>
+<pre class="code python"><a name="rest_code_c5f7ebcbfd094143923abf45f5c3b263-1"></a><span class="k">print</span> <span class="p">(</span><span class="s">'Merci pour la première fois'</span><span class="p">)</span>
+<a name="rest_code_c5f7ebcbfd094143923abf45f5c3b263-2"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
+<a name="rest_code_c5f7ebcbfd094143923abf45f5c3b263-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci pour la '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span> <span class="s">'ème fois !'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Merci pour la première fois
+Merci pour la 2ème fois !
+Merci pour la 3ème fois !
+Merci pour la 4ème fois !
+Merci pour la 5ème fois !
+Merci pour la 6ème fois !
+Merci pour la 7ème fois !
+Merci pour la 8ème fois !
+Merci pour la 9ème fois !
+Merci pour la 10ème fois !
+Merci pour la 11ème fois !
+Merci pour la 12ème fois !
+Merci pour la 13ème fois !
+Merci pour la 14ème fois !
+Merci pour la 15ème fois !
+Merci pour la 16ème fois !
+Merci pour la 17ème fois !
+Merci pour la 18ème fois !
+Merci pour la 19ème fois !
+Merci pour la 20ème fois !
+Merci pour la 21ème fois !
+Merci pour la 22ème fois !
+Merci pour la 23ème fois !
+Merci pour la 24ème fois !
+Merci pour la 25ème fois !
+</pre>
+</div>
+</div>
+<div class="section" id="exercice-18-p-27-du-poly">
+<h2><a class="toc-backref" href="../Boucles%20Pour/#id6">Exercice 18 p. 27 du poly</a></h2>
+<p>Calcul et affichage des termes de la suite <span class="math">\((u_n)\)</span> donnée par
+<span class="math">\(u_n = n^2 + 2^{\cos\left( \dfrac{n\pi}{2}\right)}\)</span> jusqu'à un
+rang <span class="math">\(N\)</span> fixé par l'utilisateur.</p>
+<p>Essayez de présenter l'affichage des termes dans une phrase du style :</p>
+<p><strong>u_## = la valeur du terme courant</strong></p>
+<p>et les <strong>##</strong> sont remplacés par la valeur courante de l'indice.</p>
+<pre class="code python"><a name="rest_code_7adbc15474a84744a0f22d86417fb967-1"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">cos</span><span class="p">,</span><span class="n">pi</span>
+<a name="rest_code_7adbc15474a84744a0f22d86417fb967-2"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_7adbc15474a84744a0f22d86417fb967-3"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_7adbc15474a84744a0f22d86417fb967-4"></a>        <span class="n">a</span> <span class="o">=</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">j</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<a name="rest_code_7adbc15474a84744a0f22d86417fb967-5"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'u_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="s">' = '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre>
+<pre class="literal-block">
+Entrez un entier N : 10
+u_0 = 2.0
+u_1 = 2.0
+u_2 = 4.5
+u_3 = 10.0
+u_4 = 18.0
+u_5 = 26.0
+u_6 = 36.5
+u_7 = 50.0
+u_8 = 66.0
+u_9 = 82.0
+u_10 = 100.5
+</pre>
+</div>
+<div class="section" id="exercice-19-p-27">
+<h2><a class="toc-backref" href="../Boucles%20Pour/#id7">Exercice 19 p.27</a></h2>
+<p>Calcul et affichage des termes de la suite donnée par :</p>
+<div class="math">
+\begin{equation*}
+ \left\{ \begin{array}{rcl}
+u_1 &amp;=&amp; 1 \\
+\forall n \in \mathbf{N}^\star \quad u_{n+1}&amp;=&amp;2n^2 + u_{n} +4
+\end{array}
+\right.
+\end{equation*}
+</div>
+<p>Attention, la suite <span class="math">\((u_n)\)</span> est définie à partir du rang 1.</p>
+<pre class="code python"><a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-2"></a><span class="n">u</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-3"></a><span class="k">print</span><span class="p">(</span><span class="s">'u_1 = 1'</span><span class="p">)</span>
+<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-5"></a>    <span class="n">u</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span> <span class="n">u</span> <span class="o">+</span> <span class="mi">4</span>
+<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'u_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s">' = '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">u</span><span class="p">))</span>
+</pre>
+<pre class="literal-block">
+Entrez un entier N : 10
+u_1 = 1
+u_2 = 7
+u_3 = 19
+u_4 = 41
+u_5 = 77
+u_6 = 131
+u_7 = 207
+u_8 = 309
+u_9 = 441
+u_10 = 607
+</pre>
+<p><strong>Attention.</strong> Ici, la valeur de la variable de boucle est
+importante car elle intervient dans le calcul du terme courant de la
+suite. Il n'est donc pas indifférent d'écrire <strong>range(1,N)</strong> ou
+<strong>range(2,N+1)</strong>, bien que l'on fasse dans les deux cas le bon nombre
+d'itérations.</p>
+<div class="sidebar">
+<p class="first sidebar-title">À retenir</p>
+<p class="last"><strong>À retenir.</strong>  Pour programmer le calcul des termes consécutifs d'une suite récurrente donnée par la règle  <span class="math">\(u_{n+1} = f(u _n)\)</span>,la clé est
+d'initi aliser une variable <span class="math">\(u\)</span> au terme initial de la suite est de
+répéter l' affectation <span class="math">\(\fbox{$u \leftarrow f(u)$}\)</span></p>
+</div>
+</div>
+<div class="section" id="exercice-20-p-28-calcul-de-n">
+<h2><a class="toc-backref" href="../Boucles%20Pour/#id8">Exercice 20 p.28 : calcul de <span class="math">\(n!\)</span></a></h2>
+<pre class="code python"><a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-2"></a><span class="n">F</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-3"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-4"></a>    <span class="n">F</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="n">k</span>
+<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-5"></a><span class="k">print</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Entrez un entier N : 5
+120
+</pre>
+<p><strong>Remarque.</strong></p>
+<ol class="arabic simple">
+<li>En toute rigueur, comme vu dans le cours d'algorithmique, il faudrait
+distinguer les cas <span class="math">\(N=0\)</span> et <span class="math">\(N \neq 0\)</span> par un schéma
+conditionnel.</li>
+<li>Néanmoins, en <strong>Python</strong>, si <span class="math">\(N=0\)</span>, <strong>range(1,N+1)</strong> devient
+<strong>range(1,1)</strong>, qui est vide : <strong>Python</strong> ne rentre donc pas dans la
+boucle. La valeur affichée est bien <strong>F = 1</strong> qui est <span class="math">\(0!\)</span>.</li>
+<li>En conclusion : ce programme calcule donc correctement la valeur de
+<span class="math">\(n!\)</span> dans tous les cas : il est donc inutile d'implémenter un
+<strong>if</strong>.</li>
+</ol>
+</div>
+<div class="section" id="dernier-exercice">
+<h2><a class="toc-backref" href="../Boucles%20Pour/#id9">Dernier exercice</a></h2>
+<p>Dans un script que vous appelerez <strong>binome.py</strong> :</p>
+<ol class="arabic simple">
+<li>Construire une fonction <strong>fact(n)</strong> qui calcule <span class="math">\(n!\)</span>
+</li>
+<li>Compléter le fichier avec un script demandant à l'utilisateur
+d'entrer un entier <span class="math">\(N\)</span>, et qui affiche les coefficients de la
+ligne <span class="math">\(N\)</span> du triangle de Pascal.</li>
+</ol>
+<p>Je rappelle que la ligne <span class="math">\(n\)</span> du triangle de Pascal contient les
+coefficients binomiaux
+<span class="math">\(\left(\begin{array}{c} {n}\\k \end{array}\right)\)</span> pour <span class="math">\(k\)</span>
+allant de <span class="math">\(0\)</span> à <span class="math">\(n\)</span> et que</p>
+<div class="math">
+\begin{equation*}
+\left(\begin{array}{c}
+{n}\\k \end{array}\right) = \dfrac{n!}{k! \times (n-k)!}
+\end{equation*}
+</div>
+<p>Il y a donc <span class="math">\(n+1\)</span> coefficients à afficher.</p>
+<p>Par exemple, la ligne <span class="math">\(n=3\)</span> du triangle est : <span class="math">\(1\)</span> <span class="math">\(3\)</span>
+<span class="math">\(3\)</span> <span class="math">\(1\)</span></p>
+<pre class="code python"><a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-1"></a><span class="c"># 1. Je définis la fonction factorielle :</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-2"></a><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c">#consiste à modifier le script précédent</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-3"></a>    <span class="sd">"""fonction qui calcule la factorielle de n</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-4"></a><span class="sd">    """</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-5"></a>    <span class="n">f</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-6"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-7"></a>        <span class="n">f</span> <span class="o">=</span> <span class="n">f</span> <span class="o">*</span> <span class="n">j</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-8"></a>    <span class="k">return</span> <span class="n">f</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-9"></a>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-10"></a><span class="c"># 2. Interaction avec l'utilisateur :</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-11"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-12"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-13"></a>    <span class="n">k_parmi_n</span> <span class="o">=</span> <span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="n">k</span><span class="p">))</span> <span class="c"># je donne un nom explicite à ma variable</span>
+<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-14"></a>    <span class="k">print</span><span class="p">(</span><span class="n">k_parmi_n</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Entrez un entier N : 6
+1
+6
+15
+20
+15
+6
+1
+</pre>
+<p><strong>Remarques</strong></p>
+<ol class="arabic simple">
+<li>Il est maladroit d'utiliser la fonction factorielle pour calculer les coefficients binomiaux. Cet exercice est purement académique.</li>
+<li>Si vous êtes ambitieux, vous pouvez améliorer ce programme pour qu'il
+produise l'affichage de toutes les lignes du triangle de Pascal
+jusqu'à la ligne <span class="math">\(N\)</span> : il y aura donc deux boucles imbriquées.</li>
+<li>Les plus ambitieux peuvent tenter de réaliser un programme qui, dans
+un premier temps, linéarise <span class="math">\(\cos^{2p}(x)\)</span>, puis
+<span class="math">\(\cos^{p}(x)\)</span>, et enfin <span class="math">\(\sin^q(x)\)</span>.</li>
+</ol>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../photos-de-vacances/" rel="prev" title="Photos de vacances">Article précédent</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/Boucles Pour/",
+        disqus_title="Informatique : Le\u00e7on",
+        disqus_identifier="cache/posts/Boucles.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2015  <a href="mailto:patel.bcpst@gmail.com">M. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/documents-de-travail"> <i class="icon-file-text"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

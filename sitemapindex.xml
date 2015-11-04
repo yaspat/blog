@@ -10,6 +10,10 @@
   <lastmod>2015-10-02T13:59:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/boucles.xml</loc>
+  <lastmod>2015-11-04T12:19:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique.xml</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
@@ -42,12 +46,16 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/for.xml</loc>
+  <lastmod>2015-11-04T12:19:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fractales.xml</loc>
-  <lastmod>2015-10-18T21:17:00Z</lastmod>
+  <lastmod>2015-10-26T21:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/images.xml</loc>
-  <lastmod>2015-10-18T21:17:00Z</lastmod>
+  <lastmod>2015-10-26T21:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/informatique.xml</loc>
@@ -59,11 +67,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/lecon.xml</loc>
-  <lastmod>2015-10-03T16:22:00Z</lastmod>
+  <lastmod>2015-11-04T12:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
-  <lastmod>2015-10-18T20:25:00Z</lastmod>
+  <lastmod>2015-10-26T21:32:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/objets.xml</loc>
@@ -75,7 +83,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2015-10-09T20:39:00Z</lastmod>
+  <lastmod>2015-11-04T12:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -91,7 +99,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/suites.xml</loc>
-  <lastmod>2015-10-18T20:25:00Z</lastmod>
+  <lastmod>2015-10-19T09:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
@@ -114,19 +122,15 @@
   <lastmod>2015-10-18T20:31:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://yaspat.github.io/blog/galleries/photos/rss.xml</loc>
-  <lastmod>2015-10-18T20:31:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/rss.xml</loc>
   <lastmod>2015-10-18T20:31:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-10-18T21:17:00Z</lastmod>
+  <lastmod>2015-11-04T12:19:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-10-18T21:18:00Z</lastmod>
+  <lastmod>2015-11-04T12:19:00Z</lastmod>
  </sitemap>
 </sitemapindex>
