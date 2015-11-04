@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Informatique : Leçon | Maths-info en BCPST1-A Rennes</title>
+<title>Informatique : Leçon 4 | Maths-info en BCPST1-A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/">
@@ -27,7 +27,7 @@ article: http://ogp.me/ns/article#
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
 <meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
-<meta property="og:title" content="Informatique : Leçon">
+<meta property="og:title" content="Informatique : Leçon 4">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/Boucles Pour/">
 <meta property="og:description" content="Contents
 
@@ -67,7 +67,7 @@ D">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Informatique : Leçon</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Informatique : Leçon 4</h1>
 
         <div class="meta">
             <div class="authordate">
@@ -140,12 +140,12 @@ r_0 &amp;=&amp; 4 \\
 l'algorithme vu en classe et pour lequel j'affiche les 11 premiers
 termes de la suite , c'est-à-dire <span class="math">\(r_0,\)</span> <span class="math">\(r_1\)</span>,
 <span class="math">\(\dots\)</span> <span class="math">\(r_n\)</span>.</p>
-<pre class="code python"><a name="rest_code_643c2760f612469185dfcf5278efae20-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N naturel : '</span><span class="p">)</span>
-<a name="rest_code_643c2760f612469185dfcf5278efae20-2"></a><span class="n">r</span> <span class="o">=</span> <span class="mi">4</span>                   <span class="c"># C'est la valeur de r0</span>
-<a name="rest_code_643c2760f612469185dfcf5278efae20-3"></a><span class="k">print</span> <span class="n">r</span>                <span class="c"># j'affiche r0 comme demandé</span>
-<a name="rest_code_643c2760f612469185dfcf5278efae20-4"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_643c2760f612469185dfcf5278efae20-5"></a>    <span class="n">r</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">r</span>
-<a name="rest_code_643c2760f612469185dfcf5278efae20-6"></a>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5372d8175a5144639ce0db7f9c8cb394-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N naturel : '</span><span class="p">)</span>
+<a name="rest_code_5372d8175a5144639ce0db7f9c8cb394-2"></a><span class="n">r</span> <span class="o">=</span> <span class="mi">4</span>                   <span class="c"># C'est la valeur de r0</span>
+<a name="rest_code_5372d8175a5144639ce0db7f9c8cb394-3"></a><span class="k">print</span> <span class="n">r</span>                <span class="c"># j'affiche r0 comme demandé</span>
+<a name="rest_code_5372d8175a5144639ce0db7f9c8cb394-4"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_5372d8175a5144639ce0db7f9c8cb394-5"></a>    <span class="n">r</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">r</span>
+<a name="rest_code_5372d8175a5144639ce0db7f9c8cb394-6"></a>    <span class="k">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Entrez un entier N naturel : 10
@@ -169,7 +169,7 @@ prend les entiers de l'intervalle <span class="math">\([a,b[\)</span> : <strong>
 bien que dans la liste <strong>range(a,b)</strong>, il y a <strong>b-a</strong> éléments.</li>
 <li>On peut se demander quel est le type de <strong>range(a,b)</strong>. Regardons :</li>
 </ol>
-<pre class="code python"><a name="rest_code_9d575748f762438cb147a71d47294b5e-1"></a><span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_285b344227d44de881b52733e95133f9-1"></a><span class="nb">type</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 </pre>
 <pre class="literal-block">
 list
@@ -185,8 +185,8 @@ type <em>itérable</em>.</li>
 <div class="section" id="exemple-2">
 <h3><a class="toc-backref" href="../Boucles%20Pour/#id3">Exemple 2</a></h3>
 <p>Afficher 25 fois la phrase "Merci vous êtes bien gentil !"</p>
-<pre class="code python"><a name="rest_code_eacc927785e645d9bf87334ed5440d98-1"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">25</span><span class="p">):</span>
-<a name="rest_code_eacc927785e645d9bf87334ed5440d98-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci vous êtes bien gentil'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_06407063f1824c45b00892241c1baf3c-1"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">25</span><span class="p">):</span>
+<a name="rest_code_06407063f1824c45b00892241c1baf3c-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci vous êtes bien gentil'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Merci vous êtes bien gentil
@@ -219,8 +219,8 @@ Merci vous êtes bien gentil
 <h3><a class="toc-backref" href="../Boucles%20Pour/#id4">Variante de l'exemple 2</a></h3>
 <p>On voudrait afficher en plus dans la phrase le segment : 'pour la
 <span class="math">\(j\)</span>-ème' fois avec la valeur courante de <span class="math">\(j\)</span>.</p>
-<pre class="code python"><a name="rest_code_9ea83b4ee39d4bf480d9cc6a50f4cf66-1"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
-<a name="rest_code_9ea83b4ee39d4bf480d9cc6a50f4cf66-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci pour la '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span> <span class="s">'eme fois !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_4dd2482314514fe28b3e11d757290f35-1"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
+<a name="rest_code_4dd2482314514fe28b3e11d757290f35-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci pour la '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span> <span class="s">'eme fois !'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Merci pour la 1eme fois !
@@ -256,9 +256,9 @@ Merci pour la 25eme fois !
 fois"</em> et non pas : <em>"pour la 1ème fois"</em>. On pense tout de suite à
 implémenter un <strong>if</strong> pour réaliser cela. Ici, c'est inutile, puisqu'il
 suffit d'écrire :</p>
-<pre class="code python"><a name="rest_code_c5f7ebcbfd094143923abf45f5c3b263-1"></a><span class="k">print</span> <span class="p">(</span><span class="s">'Merci pour la première fois'</span><span class="p">)</span>
-<a name="rest_code_c5f7ebcbfd094143923abf45f5c3b263-2"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
-<a name="rest_code_c5f7ebcbfd094143923abf45f5c3b263-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci pour la '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span> <span class="s">'ème fois !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_29bf802f4d934516803dfeb3f84a6439-1"></a><span class="k">print</span> <span class="p">(</span><span class="s">'Merci pour la première fois'</span><span class="p">)</span>
+<a name="rest_code_29bf802f4d934516803dfeb3f84a6439-2"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">26</span><span class="p">):</span>
+<a name="rest_code_29bf802f4d934516803dfeb3f84a6439-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Merci pour la '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span> <span class="s">'ème fois !'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Merci pour la première fois
@@ -297,11 +297,11 @@ rang <span class="math">\(N\)</span> fixé par l'utilisateur.</p>
 <p>Essayez de présenter l'affichage des termes dans une phrase du style :</p>
 <p><strong>u_## = la valeur du terme courant</strong></p>
 <p>et les <strong>##</strong> sont remplacés par la valeur courante de l'indice.</p>
-<pre class="code python"><a name="rest_code_7adbc15474a84744a0f22d86417fb967-1"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">cos</span><span class="p">,</span><span class="n">pi</span>
-<a name="rest_code_7adbc15474a84744a0f22d86417fb967-2"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
-<a name="rest_code_7adbc15474a84744a0f22d86417fb967-3"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_7adbc15474a84744a0f22d86417fb967-4"></a>        <span class="n">a</span> <span class="o">=</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">j</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-<a name="rest_code_7adbc15474a84744a0f22d86417fb967-5"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'u_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="s">' = '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_1b19024a4822427ba79127fd52b7a8c5-1"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">cos</span><span class="p">,</span><span class="n">pi</span>
+<a name="rest_code_1b19024a4822427ba79127fd52b7a8c5-2"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_1b19024a4822427ba79127fd52b7a8c5-3"></a><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_1b19024a4822427ba79127fd52b7a8c5-4"></a>        <span class="n">a</span> <span class="o">=</span> <span class="n">j</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">**</span><span class="n">cos</span><span class="p">(</span><span class="n">j</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<a name="rest_code_1b19024a4822427ba79127fd52b7a8c5-5"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'u_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="s">' = '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 </pre>
 <pre class="literal-block">
 Entrez un entier N : 10
@@ -331,12 +331,12 @@ u_1 &amp;=&amp; 1 \\
 \end{equation*}
 </div>
 <p>Attention, la suite <span class="math">\((u_n)\)</span> est définie à partir du rang 1.</p>
-<pre class="code python"><a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
-<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-2"></a><span class="n">u</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-3"></a><span class="k">print</span><span class="p">(</span><span class="s">'u_1 = 1'</span><span class="p">)</span>
-<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
-<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-5"></a>    <span class="n">u</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span> <span class="n">u</span> <span class="o">+</span> <span class="mi">4</span>
-<a name="rest_code_58a8ed7769ef45dfb2d15d7e905a3209-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'u_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s">' = '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">u</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_d3b30cdb7e8149c8830cce73ee20fc0b-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_d3b30cdb7e8149c8830cce73ee20fc0b-2"></a><span class="n">u</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_d3b30cdb7e8149c8830cce73ee20fc0b-3"></a><span class="k">print</span><span class="p">(</span><span class="s">'u_1 = 1'</span><span class="p">)</span>
+<a name="rest_code_d3b30cdb7e8149c8830cce73ee20fc0b-4"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">):</span>
+<a name="rest_code_d3b30cdb7e8149c8830cce73ee20fc0b-5"></a>    <span class="n">u</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span> <span class="n">u</span> <span class="o">+</span> <span class="mi">4</span>
+<a name="rest_code_d3b30cdb7e8149c8830cce73ee20fc0b-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'u_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">+</span><span class="s">' = '</span><span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">u</span><span class="p">))</span>
 </pre>
 <pre class="literal-block">
 Entrez un entier N : 10
@@ -365,11 +365,11 @@ répéter l' affectation <span class="math">\(\fbox{$u \leftarrow f(u)$}\)</span
 </div>
 <div class="section" id="exercice-20-p-28-calcul-de-n">
 <h2><a class="toc-backref" href="../Boucles%20Pour/#id8">Exercice 20 p.28 : calcul de <span class="math">\(n!\)</span></a></h2>
-<pre class="code python"><a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
-<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-2"></a><span class="n">F</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-3"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-4"></a>    <span class="n">F</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="n">k</span>
-<a name="rest_code_7fbc3f6c5c0d4c78901e2ef87e823bf3-5"></a><span class="k">print</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_53a0f38818f444078434c64f54a41653-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_53a0f38818f444078434c64f54a41653-2"></a><span class="n">F</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_53a0f38818f444078434c64f54a41653-3"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_53a0f38818f444078434c64f54a41653-4"></a>    <span class="n">F</span> <span class="o">=</span> <span class="n">F</span> <span class="o">*</span> <span class="n">k</span>
+<a name="rest_code_53a0f38818f444078434c64f54a41653-5"></a><span class="k">print</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Entrez un entier N : 5
@@ -411,20 +411,20 @@ allant de <span class="math">\(0\)</span> à <span class="math">\(n\)</span> et 
 <p>Il y a donc <span class="math">\(n+1\)</span> coefficients à afficher.</p>
 <p>Par exemple, la ligne <span class="math">\(n=3\)</span> du triangle est : <span class="math">\(1\)</span> <span class="math">\(3\)</span>
 <span class="math">\(3\)</span> <span class="math">\(1\)</span></p>
-<pre class="code python"><a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-1"></a><span class="c"># 1. Je définis la fonction factorielle :</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-2"></a><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c">#consiste à modifier le script précédent</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-3"></a>    <span class="sd">"""fonction qui calcule la factorielle de n</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-4"></a><span class="sd">    """</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-5"></a>    <span class="n">f</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-6"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-7"></a>        <span class="n">f</span> <span class="o">=</span> <span class="n">f</span> <span class="o">*</span> <span class="n">j</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-8"></a>    <span class="k">return</span> <span class="n">f</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-9"></a>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-10"></a><span class="c"># 2. Interaction avec l'utilisateur :</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-11"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-12"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-13"></a>    <span class="n">k_parmi_n</span> <span class="o">=</span> <span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="n">k</span><span class="p">))</span> <span class="c"># je donne un nom explicite à ma variable</span>
-<a name="rest_code_2ba6af47c4714b968a6aface7a404d3c-14"></a>    <span class="k">print</span><span class="p">(</span><span class="n">k_parmi_n</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_6f198ec04f104f16a5930bc298267fb9-1"></a><span class="c"># 1. Je définis la fonction factorielle :</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-2"></a><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c">#consiste à modifier le script précédent</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-3"></a>    <span class="sd">"""fonction qui calcule la factorielle de n</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-4"></a><span class="sd">    """</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-5"></a>    <span class="n">f</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-6"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-7"></a>        <span class="n">f</span> <span class="o">=</span> <span class="n">f</span> <span class="o">*</span> <span class="n">j</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-8"></a>    <span class="k">return</span> <span class="n">f</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-9"></a>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-10"></a><span class="c"># 2. Interaction avec l'utilisateur :</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-11"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Entrez un entier N : '</span><span class="p">)</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-12"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-13"></a>    <span class="n">k_parmi_n</span> <span class="o">=</span> <span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">fact</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="n">k</span><span class="p">))</span> <span class="c"># je donne un nom explicite à ma variable</span>
+<a name="rest_code_6f198ec04f104f16a5930bc298267fb9-14"></a>    <span class="k">print</span><span class="p">(</span><span class="n">k_parmi_n</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Entrez un entier N : 6
@@ -458,7 +458,7 @@ un premier temps, linéarise <span class="math">\(\cos^{2p}(x)\)</span>, puis
         <script>
         var disqus_shortname ="yaspat",
             disqus_url="http://yaspat.github.io/blog/posts/Boucles Pour/",
-        disqus_title="Informatique : Le\u00e7on",
+        disqus_title="Informatique : Le\u00e7on 4",
         disqus_identifier="cache/posts/Boucles.html",
         disqus_config = function () {
             this.language = "fr";

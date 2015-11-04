@@ -1,4 +1,4 @@
-.. title: Informatique : Leçon 
+.. title: Informatique : Leçon 4
 .. slug: Boucles Pour
 .. date: 2015-11-4 13:39:19 UTC+02:00
 .. tags: python, boucles,for,  leçon 
