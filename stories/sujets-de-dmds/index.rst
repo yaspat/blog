@@ -45,11 +45,16 @@ Sujets de DM
    b. `Corrigé  du DM5 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/Corrige-DM05.pdf>`_
 
 
+#. DM 6 : Produits et intégrales de Wallis. Python.  *À rendre le 13/11/15*
+
+
+   a. `Sujet  du DM6 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM06/DM06.pdf>`_
+
 Sujets de DS
 ============
 
 1. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
-
+2. `Sujet du DS2 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS02/DS02.pdf>`_
 
 Corrigés des DS
 ===============
