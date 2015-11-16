@@ -81,3 +81,64 @@ Il paraît que j'aurais dit :
 
 
  #. Je vais lui donner un numéro, c'est pratique, je vais l'appeler $(H)$.
+
+ #. L'année dernière, j'avais fait un test de rentrée sur les puissances. C'était pas glorieux. J'avais quand même eu un 20/20 (*silence*). Il est parti à la fac.
+
+ #. *(fait grincer la craie)* Désolé pour l'accident de craie !
+    (*fait tomber la brosse aussi)* Désolé pour l'accident de brosse aussi...
+ 
+ #.  (*au tableau*) :math:`\ln\left(\lim_{x\to +\infty} \left(1 + \dfrac{1}{x}\right)^{x}\right)+ \cos^2\theta + \sum_{k=1}^{+\infty}\dfrac{1}{2^k} +\sin^2\theta.` Ça sert à rien d'être impressionné par une grosse formule, autant écrire $3$.
+
+ #. Quand je mets un cœur, ça veut pas dire que j'aime bien. Ça veut dire qu'il faut l'apprendre par cœur !
+
+ #. Avec les barres, soyez généreux, vous pouvez en distribuer à tout le monde (*en parlant de la conjugaison complexe*).
+
+ #. Ce qui est bien avec un réel, c'est que vous pouvez lui mettre un coup de barre sur la tête, il a même pas mal.
+
+ #. Le problème avec  ce symbole, c'est qu'il ne mange que des gens positifs (*en parlant de la racine carrée*).
+
+ #. On est obligé de faire un choix. Et comme tout le monde dans la vie ne fait pas les mêmes choix, on est ... coincés.
+
+ #. Au lycée vous appeliez ça un calcul abominable. Aujourd'hui, j'appelle ça un gros calcul, et à la fin de l'année, vous appellerez ça un calcul bidon.
+
+ #. Au début de l'année, vous êtes arrivés en slip, maintenant, vous êtes un peu plus habillés.
+
+ #. Cette année, je suis plutôt pessim... euh optimiste pour la classe, pardon.
+
+ #. Pour demain, vous ferez l'exercice  $d$ comme demain, et le $e$ comme euh... la semaine prochaine !
+
+ #. Les maths, c'est comme les bébés phacochères. Y a que ceux qui en font qui peuvent les trouver jolies.
+
+ #. C'est nul la démocratie, je préfère l'autoritarisme. Je vais devenir despote !
+
+ #. Tous les autres termes du polynôme sont rentrés dans la poubelle à epsilon.
+
+ #. Alors que Gödel faisait son cours de logique, il expliquait que partant d'une assertion fausse, on arrive forcément à une assertion vraie. Un élève lui objecta : "donc si vous supposez que $1=0$, vous pouvez prouver que vous êtes le pape ?" À quoi Gödel répondit : "Oui, car à ce moment là, $1=2$, et puisque le pape et moi sommes deux, je suis le pape".
+
+ #. Si vous passez cinq colles d'affilée sans tomber sur moi, alors oui, vous pourrez peut-être avoir 15 de moyenne en colles.
+
+ #. En fait, c'est ennuyeux un cours de maths, c'est toujours la même chose.
+
+ #. Après, on a TD à 15 heures du matin : ça va être dur...
+
+ #. Je connaîs un gars qui voulait emballer une nana en  lui parlant de maths. Il était parti à lui parler d'intégrales le long de chemins dans le plan complexe...
+
+ #. Vous avez vu ?! Vous baissiez la tête, et quand vous la relevez, un $3$ est apparu  : je suis mathémagicien.
+
+ #. En fait je suis tout seul à être débile (je vis un grand moment de solitude).
+
+ #. Vous me faites penser à ce gars dans la pub, vous savez, celui qui dit : "c'est trop dur ! on y arrivera jamais !" Eh bien j'ai envie de vous dire : "mange des frosties, et le tigre est en toi".
+
+ #. Vous dites "prof bizarre", mais regardez les élèves.
+
+ #. Même l'exemple du lancer de pièce, on peut pas le faire. On est en slip face à cet exemple.
+
+ #. C'est diviser pour régner, et moi je reste en tyran là-dedans.
+
+ #. (*en parlant des jeux de rôles*) J'étais ado. J'avais de l'acné.
+
+
+ #. J'avais un prof de physique, quand on lui posait une question, il nous engueulait. Alors on n'osait plus rien lui demander.
+
+
+
