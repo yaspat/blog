@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (informatique)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_informatique.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 02 Oct 2015 13:34:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Exercice 1.2 du Poly</title><link>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (informatique)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_informatique.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 16 Nov 2015 14:09:42 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemples-de-boucles-pour" id="id1"&gt;Exemples de boucles pour&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemple-1" id="id2"&gt;Exemple 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemple-2" id="id3"&gt;Exemple 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#variante-de-l-exemple-2" id="id4"&gt;Variante de l'exemple 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#encore-une-amelioration-supplementaire" id="id5"&gt;Encore une amélioration supplémentaire&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exercice-18-p-27-du-poly" id="id6"&gt;Exercice 18 p. 27 du poly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exercice-19-p-27" id="id7"&gt;Exercice 19 p.27&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exercice-20-p-28-calcul-de-n" id="id8"&gt;Exercice 20 p.28 : calcul de &lt;span class="math"&gt;\(n!\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#dernier-exercice" id="id9"&gt;Dernier exercice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Les boucles servent à automatiser la répétition de tâches. Il y a
+essentiellement deux types de boucles :&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Celles pour lesquelles &lt;em&gt;on sait à l'avance&lt;/em&gt; le nombre d'itérations
+(ou répétitions) à effectuer : ce sont les boucles &lt;strong&gt;for&lt;/strong&gt;. Par
+exemple : calculer les 100 premiers termes d'une suite &lt;span class="math"&gt;\((u_n)\)&lt;/span&gt;
+donnée.&lt;/li&gt;
+&lt;li&gt;Celles pour lesquelles &lt;em&gt;on ne sait pas à l'avance&lt;/em&gt; le nombre
+d'itérations à effectuer : ce sont des boucles subordonnées à un
+&lt;em&gt;test d'arrêt&lt;/em&gt; : les boucles &lt;strong&gt;tant que&lt;/strong&gt;. Par exemple : trouver le
+premier terme d'une suite &lt;span class="math"&gt;\((u_n)\)&lt;/span&gt; donnée de limite
+&lt;span class="math"&gt;\(+\infty\)&lt;/span&gt; vérifiant &lt;span class="math"&gt;\(u_n &amp;gt; 10000\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/Boucles%20Pour/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>boucles</category><category>for</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/Boucles Pour/</guid><pubDate>Wed, 04 Nov 2015 11:39:19 GMT</pubDate></item><item><title>Exercice 1.2 du Poly</title><link>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
