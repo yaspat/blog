@@ -321,7 +321,7 @@ d'itérations.
 .. sidebar:: À retenir
 
  Pour programmer le calcul des termes consécutifs d'une suite récurrente donnée par la  règle  :math:`u_{n+1} = f(u _n)`,la clé est 
- d'initialiser une variable :math:`u` au terme initial de la suite est de 
+ d'initialiser une variable :math:`u` au terme initial de la suite puis de 
  répéter l' affectation :math:`\fbox{$u \leftarrow f(u)$}`
 
 
