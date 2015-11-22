@@ -60,7 +60,7 @@ Les programmes de colles de maths
 
 #.  `Programme de la quinzaine 4 (9 nov  - 20 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/04-Sommes.pdf>`_. Thème : Sommes - Suites classiques - Boucles **for**.
 
-#.  `Programme de la quinzaine 5 (23 nov  - 4 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/05-Equadiffs.pdf>`_. Thème : Sommes - Suites classiques - Boucles **for**.
+#.  `Programme de la quinzaine 5 (23 nov  - 4 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/05-Equadiffs.pdf>`_. Thème : Équations différentielles linéaires à coefficients constants.
 
 Les salles de colles de mathématiques
 =====================================
