@@ -58,7 +58,7 @@ Sujets de DM
    a. `Sujet  du DM7 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM07/DM07.pdf>`_
    b. `Corrigé  du DM7 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM07/Corrige-DM07.pdf>`_
 
-#. DM * :   EDLO2 et nombres complexes.  *À rendre le 20/11/15*
+#. DM 8 :   EDLO2 et nombres complexes.  *À rendre le 27/11/15*
 
 
    a. `Sujet  du DM8 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM08/DM08.pdf>`_
