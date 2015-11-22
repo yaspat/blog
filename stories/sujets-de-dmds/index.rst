@@ -49,14 +49,14 @@ Sujets de DM
 
 
    a. `Sujet  du DM6 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM06/DM06.pdf>`_
-   b. `Corrigé  du DM6 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/DM06-Corrige.pdf>`_
+   b. `Corrigé  du DM6 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM06/DM06-corrige.pdf>`_
 
 
 #. DM 7 :  Méthode d'Euler et EDLO1.  *À rendre le 20/11/15*
 
 
    a. `Sujet  du DM7 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM07/DM07.pdf>`_
-   b. `Corrigé  du DM7 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/DM06-Corrige.pdf>`_
+   b. `Corrigé  du DM7 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM07/Corrige-DM07.pdf>`_
 
 Sujets de DS
 ============
