@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 16 Nov 2015 14:09:41 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 24 Nov 2015 23:37:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Géométrie d'une EDL1</title><link>http://yaspat.github.io/blog/posts/euler1/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#une-image-pour-commencer" id="id1"&gt;Une image pour commencer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#une-edl1-c-est-du-vent" id="id2"&gt;Une EDL1, c'est du vent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#trois-resultats-de-maths-a-savoir-avant" id="id3"&gt;Trois résultats de maths à savoir avant&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#mais-revenons-a-l-equation-differentielle" id="id4"&gt;Mais revenons à l'équation différentielle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#au-milieu-d-un-champ-de-fleches" id="id5"&gt;Au milieu d'un champ de flèches&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="une-image-pour-commencer"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/euler1/#id1"&gt;Une image pour commencer&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Je vais partir de l'image suivante : imagine, Biwane, que tu es un grain
+de pollen qui se laisse mouvoir au gré des vents. Pour t'aider, je te
+mets dans le contexte : tu voles au dessus des côtes californiennes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/euler1/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>champ de vecteurs</category><category>équations différentielles</category><guid>http://yaspat.github.io/blog/posts/euler1/</guid><pubDate>Tue, 24 Nov 2015 11:39:19 GMT</pubDate></item><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemples-de-boucles-pour" id="id1"&gt;Exemples de boucles pour&lt;/a&gt;&lt;ul&gt;
@@ -80,24 +95,4 @@ mathématiques se prête aux fonctions en &lt;strong&gt;Python&lt;/strong&gt;.&l
 &lt;p&gt;3.  Montrer un exemple de schéma conditionnel en cascade : celui de la résolution
 de l'équation du second degré.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/schema-conditionnels/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>leçon</category><category>python</category><category>schémas conditionnels</category><guid>http://yaspat.github.io/blog/posts/schema-conditionnels/</guid><pubDate>Tue, 29 Sep 2015 11:39:19 GMT</pubDate></item><item><title>Au sujet des posts</title><link>http://yaspat.github.io/blog/posts/au-sujet-des-posts/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Juste pour info  : les posts qui présentent des fenêtres cliquables pour montrer/cacher le code Python sont eux-mêmes des notebooks Ipython (par exemple,  &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/croissances-comparees/"&gt;le billet sur les croissances comparées&lt;/a&gt;). Ainsi, ceux qui ont installé Ipython notebook avec leur distribution Python  peuvent cliquer en haut à gauche du billet qui les intéresse sur "source" afin de télécharger le notebook et jouer avec !&lt;/p&gt;</description><category>ipython notebook</category><guid>http://yaspat.github.io/blog/posts/au-sujet-des-posts/</guid><pubDate>Mon, 21 Sep 2015 10:24:40 GMT</pubDate></item><item><title>Fonction du DM2</title><link>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Voici un exemple de script de fonction (c'est celle du DM2, à savoir, celle définie par &lt;span class="math"&gt;\(f(x)= \ln\left(\frac{e^{x}}{x} -1\right)\)&lt;/span&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/fonction-du-dm-2/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fonction</category><category>python</category><guid>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</guid><pubDate>Sun, 20 Sep 2015 17:20:34 GMT</pubDate></item><item><title>Informatique : Leçon 2</title><link>http://yaspat.github.io/blog/posts/entrees-sorties/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/entrees-sorties/#sorties" id="id1"&gt;Sorties&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/entrees-sorties/#entrees" id="id2"&gt;Entrées&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Objet de cette leçon :&lt;/p&gt;
-&lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p class="first"&gt;Connaître les actions d'échange utilisateur-machine.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol class="loweralpha simple"&gt;
-&lt;li&gt;Les sorties&lt;/li&gt;
-&lt;li&gt;Les entrées de caractères&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Utiliser les notions de la leçon 1.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/entrees-sorties/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>entrées</category><category>leçon</category><category>python</category><category>sorties</category><guid>http://yaspat.github.io/blog/posts/entrees-sorties/</guid><pubDate>Wed, 16 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/fonction-du-dm-2/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fonction</category><category>python</category><guid>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</guid><pubDate>Sun, 20 Sep 2015 17:20:34 GMT</pubDate></item></channel></rss>

@@ -11,11 +11,15 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/boucles.xml</loc>
-  <lastmod>2015-11-04T12:19:00Z</lastmod>
+  <lastmod>2015-11-16T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique.xml</loc>
-  <lastmod>2015-10-02T13:34:00Z</lastmod>
+  <lastmod>2015-11-16T14:09:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/champ-de-vecteurs.xml</loc>
+  <lastmod>2015-11-24T23:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/croissances-comparees.xml</loc>
@@ -34,6 +38,10 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/equations-differentielles.xml</loc>
+  <lastmod>2015-11-24T23:15:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/exercices.xml</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
@@ -47,7 +55,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/for.xml</loc>
-  <lastmod>2015-11-04T12:19:00Z</lastmod>
+  <lastmod>2015-11-16T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fractales.xml</loc>
@@ -67,7 +75,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/lecon.xml</loc>
-  <lastmod>2015-11-04T12:19:00Z</lastmod>
+  <lastmod>2015-11-16T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
@@ -83,7 +91,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2015-11-04T12:19:00Z</lastmod>
+  <lastmod>2015-11-16T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -127,10 +135,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-11-04T12:19:00Z</lastmod>
+  <lastmod>2015-11-24T23:15:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-11-04T12:19:00Z</lastmod>
+  <lastmod>2015-11-24T23:15:00Z</lastmod>
  </sitemap>
 </sitemapindex>
