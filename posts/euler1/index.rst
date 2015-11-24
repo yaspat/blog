@@ -168,9 +168,9 @@ notations du cours,  :math:`a=1/2` et  :math:`b=2`.
     a,b = 0.5,2
 
 D'après le cours, les solutions de l'équation :math:`(E)`   sont
-données par la formule :
+données par la formule dans laquelle $k$ est un réel quelconque :
 
-.. math:: v(t) = +Ce^{-at}= 4 + Ce^{-t/2} t, C 
+.. math:: v(t) = +Ce^{-at}= 4 + ke^{-t/2} 
 
 Il y a donc une infinité de solutions.
 
