@@ -161,16 +161,18 @@ Mais revenons à l'équation différentielle
 -----------------------------------------
 
 Il s'agit toujours de : :math:`v'+ \dfrac{1}{2}v = 2.` Avec les
-notations du cours, :math:`b=2` et :math:`a=1/2`.
+notations du cours,  :math:`a=1/2` et  :math:`b=2`.
 
 .. code:: python
 
     a,b = 0.5,2
 
-D'après le cours, les solutions de l'équation :math:`(E)` :  sont
-données par (il y en a donc une infinité).
+D'après le cours, les solutions de l'équation :math:`(E)`   sont
+données par la formule :
 
-$ v(t) = +Ce^{-at}= 4 + Ce^{-t/2} t, C .$
+.. math:: v(t) = +Ce^{-at}= 4 + Ce^{-t/2} t, C 
+
+Il y a donc une infinité de solutions.
 
 Si on ajoute la condition initiale en :math:`t=0` par exemple :
 $v(0)=v\_0, on obtient la solution unique donnée par :
