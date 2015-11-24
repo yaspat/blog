@@ -179,7 +179,7 @@ $v(0)=v_0$, on obtient la solution unique donnée par :
 
 .. math::  v(t)=4+\left(v_0-4\right)e^{-t/2}
 
-Je trace quelques unes de ses solutions en faisant varier la condition
+Je trace quelques unes de ces solutions en faisant varier la condition
 initiale :math:`v_0` entre 0 et 8 par exemple :
 
 .. code:: python
@@ -212,11 +212,11 @@ Au milieu d'un champ de flèches
 -------------------------------
 
 Maintenant, considérons une solution :math:`v` de :math:`(E)`. Alors en
-tout point :math:`t`, on a :
+tout point :math:`t`, on a, par définition de solution de :math:`(E)`  :
 
 .. math::  v'(t)=2-\dfrac{1}{2}t \quad (\star)
 
-par définition de solution de :math:`(E)`.
+
 
 Mettons que la courbe de passe par un point de coordonnées
 :math:`(\alpha,\beta)`. Ça veut dire que :math:`t=\alpha,`
@@ -232,7 +232,7 @@ puisque la courbe ressemble à sa tangente localement d'après R4 (Tu es
 toujours là Biwane ?).*
 
 Du coup, j'ai imaginé un réseau de points :math:`(\alpha, \beta)`
-régulièrement répartis sur le dessin. Et pour chacun point, j'ai tracé
+régulièrement répartis sur le dessin. Et pour chaque point, j'ai tracé
 la direction qu'aurait la tangente de la courbe d'une solution passant
 par ce point :
 
