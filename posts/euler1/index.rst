@@ -175,7 +175,7 @@ données par la formule :
 Il y a donc une infinité de solutions.
 
 Si on ajoute la condition initiale en :math:`t=0` par exemple :
-$v(0)=v\_0, on obtient la solution unique donnée par :
+$v(0)=v_0$, on obtient la solution unique donnée par :
 
 .. math::  v(t)=4+\left(v_0-4\right)e^{-t/2}
 
