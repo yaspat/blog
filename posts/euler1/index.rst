@@ -76,9 +76,7 @@ Une EDL1, c'est du vent
 Eh bien, Biwane,  figure-toi qu'une équation différentielle linéaire d'ordre 1 à
 coefficients constants peut se comprendre exactement de la même façon.
 En s'appuyant sur une intuition géométrique, on peut deviner l'allure
-des solutions  partant d'une condition initiale donnée (ou d'un
-point de départ si tu veux, un peu comme toi quand tu étais un grain de
-pollen).
+de la solution  partant d'une condition initiale donnée (ou, comme quand tu étais un grain de pollen, on peut deviner ta trajectoire partant d'un point donné de la carte ai tu  te laisses  pousser par les vents).
 
 Pour illustrer concrètement ceci, je vais, dans toute la suite, prendre
 l'exemple de l'équation différentielle suivante :
@@ -86,7 +84,7 @@ l'exemple de l'équation différentielle suivante :
 .. math::  v'+ \dfrac{1}{2}v = 2 \quad \text{ sur} \quad \mathbf R
 
 L'inconnue est la fonction :math:`v`. Je te l'accorde, on ne voit pas
-trop où sont les flèches du dessin précédent.
+trop où sont les flèches du dessin précédent, donc l'analogie semble pour le moment audacieuse.
 
 Trois résultats de maths à savoir avant
 ---------------------------------------
@@ -96,14 +94,14 @@ Pour débusquer ces flèches, voici mes trois résultats à avoir en tête :
 1. **(R1)** Le premier est le suivant : si une fonction :math:`f` est
    dérivable en un point :math:`x_0` de son domaine, alors : la courbe
    de représentatvie :math:`C_f` de :math:`f` admet au point
-   :math:`(x_0,f(x_0))` une tangente :math:`T`.
+   :math:`A_0(x_0,f(x_0))` une tangente :math:`T`.
 
 2. **(R2)** L'équation de cette tangente :math:`T` est :
 
    .. math:: y = f'(x_0)(x-x_0) +f(x_0)
 
 3. **(R3)** Un vecteur directeur de cette tangente est le vecteur
-   :math:`\vec{u}(1,f'(x_0))`. Voir le dessin
+   :math:`\vec{u}(1,f'(x_0))`. Voir le dessin plus bas.
 
 4. **(R4)** Sur un petit intervalle partant de :math:`x_0`, la courbe
    :math:`C_f` est quasiment confondue avec :math:`(T)`.
