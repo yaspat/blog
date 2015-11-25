@@ -222,7 +222,7 @@ Mettons que la courbe de passe par un point de coordonnées
 
 Or si je regarde la relation :math:`(\star)`, cela signifie que
 :math:`v'(t)=2-\dfrac{1}{2}v(t) = 2-\beta/2`. Ainsi, au point :math:`(\alpha,\beta)` dans le plan, la tangente à la solution passant par ce point est dirigée par le vecteur
-$\vec u(1, 2-\beta/2). En résumé :
+:math:`\vec u(1, 2-\beta/2)`. En résumé :
 
  
  *Si je connaîs un point de la courbe de* :math:`v` *, je sais comment est
