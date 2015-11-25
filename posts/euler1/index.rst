@@ -100,7 +100,7 @@ Pour débusquer ces flèches, voici mes trois résultats à avoir en tête :
 
 2. **(R2)** L'équation de cette tangente :math:`T` est :
 
-   .. math:: y = f(x_0)(x-x_0) +f(x_0)
+   .. math:: y = f'(x_0)(x-x_0) +f(x_0)
 
 3. **(R3)** Un vecteur directeur de cette tangente est le vecteur
    :math:`\vec{u}(1,f'(x_0))`. Voir le dessin
@@ -223,7 +223,7 @@ Mettons que la courbe de passe par un point de coordonnées
 :math:`v(t)=\beta` (tu me suis Biwane ?)
 
 Or si je regarde la relation :math:`(\star)`, cela signifie que
-:math:`v'(t)=2-\dfrac{1}{2}v(t) = 2-\beta/2`. Ainsi, au point $(\alpha,\beta)$ dans le plan, la tangente à la solution passant par ce point est dirigée par le vecteur
+:math:`v'(t)=2-\dfrac{1}{2}v(t) = 2-\beta/2`. Ainsi, au point :math:`(\alpha,\beta)` dans le plan, la tangente à la solution passant par ce point est dirigée par le vecteur
 $\vec u(1, 2-\beta/2). En résumé :
 
  
