@@ -223,13 +223,15 @@ Mettons que la courbe de passe par un point de coordonnées
 :math:`v(t)=\beta` (tu me suis Biwane ?)
 
 Or si je regarde la relation :math:`(\star)`, cela signifie que
-:math:`v'(t)=2-\dfrac{1}{2}t = 2-\alpha/2`. Ainsi :
+:math:`v'(t)=2-\dfrac{1}{2}v(t) = 2-\beta/2`. Ainsi, au point $(\alpha,\beta)$ dans le plan, la tangente à la solution passant par ce point est dirigée par le vecteur
+$\vec u(1, 2-\beta/2). En résumé :
 
-*Si je connaîs un point de la courbe de* :math:`v` *, je sais comment est
-dirigée la tangente à la courbe en ce point d'après (R3). Normalement,
-ça devrait m'aider à tracer cette courbe. Enfin,  au moins sur un petit intervalle,
-puisque la courbe ressemble à sa tangente localement d'après R4 (Tu es
-toujours là Biwane ?).*
+ 
+ *Si je connaîs un point de la courbe de* :math:`v` *, je sais comment est
+ dirigée la tangente à la courbe en ce point d'après (R3). Normalement,
+ ça devrait m'aider à tracer cette courbe. Enfin,  au moins sur un petit intervalle,
+ puisque la courbe ressemble à sa tangente localement d'après R4 (Tu es
+ toujours là Biwane ?).*
 
 Du coup, j'ai imaginé un réseau de points :math:`(\alpha, \beta)`
 régulièrement répartis sur le dessin. Et pour chaque point, j'ai tracé
