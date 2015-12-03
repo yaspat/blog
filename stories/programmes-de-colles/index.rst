@@ -62,6 +62,9 @@ Les programmes de colles de maths
 
 #.  `Programme de la quinzaine 5 (23 nov  - 4 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/05-Equadiffs.pdf>`_. Thème : Équations différentielles linéaires à coefficients constants.
 
+#.  `Programme de la quinzaine 6 (7déc  - 18 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/06-Systemes_Boucles.pdf>`_. Thème : Systèmes linéaires et boucles en Python.
+
+
 Les salles de colles de mathématiques
 =====================================
 

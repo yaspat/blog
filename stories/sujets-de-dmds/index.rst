@@ -63,6 +63,11 @@ Sujets de DM
 
    a. `Sujet  du DM8 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM08/DM08.pdf>`_
 
+#. DM 9 :   Systèmes linéaires et Python (boucles tant que) .  *À rendre le 11/12/15*
+
+
+   a. `Sujet  du DM9 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM09/DM09.pdf>`_
+
 Sujets de DS
 ============
 
