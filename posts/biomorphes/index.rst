@@ -294,7 +294,7 @@ C'est quand même plus propre que mon dessin à la main, mais je ne vais pas m'a
 chemin.
 
 Il peut en faire plus
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Je vais fabriquer une fonction qui prend en entrée :
 
