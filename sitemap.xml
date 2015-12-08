@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2015-11-24T23:07:00Z</lastmod>
+  <lastmod>2015-12-08T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -36,6 +36,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/champ-de-vecteurs/</loc>
   <lastmod>2015-11-24T23:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/complexes/</loc>
+  <lastmod>2015-12-08T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/croissances-comparees/</loc>
@@ -151,7 +155,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2015-11-24T23:15:00Z</lastmod>
+  <lastmod>2015-12-08T22:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -168,6 +172,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/au-sujet-des-posts/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/biomorphes/</loc>
+  <lastmod>2015-12-08T22:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</loc>
