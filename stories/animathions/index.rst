@@ -20,7 +20,7 @@ mettre en  œuvre une méthode de base.
 Animathion #1
 ~~~~~~~~~~~~~
 
-  La lecture de l'équation différentielle permet graphique de deviner l'allure des courbes de ses solutions. Exemple.
+  La lecture de l'équation différentielle permetde deviner l'allure des courbes de ses solutions par la notion de champ de vecteurs associé.
 
 .. youtube:: WbZ21oznRZQ
 
