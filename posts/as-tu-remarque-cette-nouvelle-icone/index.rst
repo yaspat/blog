@@ -1,1 +1,2 @@
-Si tu reagarde dans la barre latérale, tu verras une icône qui te permet d' aller vers des animathions. C'est quoi une animathion ? Va voir : -)
+Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des *animathions*. C'est quoi une 
+*animathion* ? Allez voir ...
