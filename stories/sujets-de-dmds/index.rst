@@ -67,6 +67,7 @@ Sujets de DM
 
 
    a. `Sujet  du DM9 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM09/DM09.pdf>`_
+   b. `Corrigé   du DM9 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM09/DM09-Corrige.pdf>`_
 
 Sujets de DS
 ============
