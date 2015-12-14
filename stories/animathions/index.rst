@@ -11,7 +11,7 @@
 
 
 
-Des courtes videos pour comprendre en images des idées directrices du cours, ou pour
+De courtes videos pour comprendre en images des idées directrices du cours, ou pour
 mettre en  œuvre une méthode de base.
 
 
@@ -20,7 +20,7 @@ mettre en  œuvre une méthode de base.
 Animathion #1
 ~~~~~~~~~~~~~
 
-  La lecture de l'équation différentielle permetde deviner l'allure des courbes de ses solutions par la notion de champ de vecteurs associé.
+  La lecture de l'*équation différentielle* permet  de deviner l'allure des courbes de ses solutions grâce au  *champ de vecteurs* associé.
 
 .. youtube:: rW_fmP_vfSE
 
