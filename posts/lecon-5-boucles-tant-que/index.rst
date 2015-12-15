@@ -226,10 +226,10 @@ Combien de temps dure le vol ?
 
 Construire une fonction ``duree_du_vol(x)`` qui prend un entier ``x`` et
 retourne le premier rang ``n`` pour lequel :math:`u_n=1`. Par exemple,
-``duree_du_vol(7)`` devrait valoir ``16``. Quelle est la durée du vol
-714 ?
+``duree_du_vol(7)`` devrait valoir ``16``. 
 
-.. code:: python
+.. code-block:: python
+  :number-lines:
 
     def duree_du_vol(x):
         """ on considère la suite la suite de Syracuse de premier
@@ -248,6 +248,9 @@ retourne le premier rang ``n`` pour lequel :math:`u_n=1`. Par exemple,
                 u = 3*u+1
         return duree
 
+
+Quelle est la durée du vol 714 ?
+
 .. code:: python
 
     duree_du_vol(714)
@@ -261,7 +264,7 @@ retourne le premier rang ``n`` pour lequel :math:`u_n=1`. Par exemple,
 
 
 
-**Remarque. ** On peut créer une fonction pour éviter de remettre les
+**Remarque.** On peut créer une fonction pour éviter de remettre les
 lignes 12-15 qu'on a tapé bien plus d'une fois (et c'est tout l'intérêt
 des fonctions).
 
@@ -285,6 +288,9 @@ La fonction ``duree_du_vol`` prend alors la forme suivante
             duree += 1
             u = transfo(u)
         return duree
+
+On peut toujours tester cette variante :
+
 
 .. code:: python
 

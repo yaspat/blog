@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 15 Dec 2015 20:58:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Avez-vous remarqué cette nouvelle icône ?</title><link>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des &lt;em&gt;animathions&lt;/em&gt;. C'est quoi une
-&lt;em&gt;animathion&lt;/em&gt; ? Allez voir !&lt;/p&gt;</description><category>animathions</category><category>video</category><guid>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</guid><pubDate>Mon, 14 Dec 2015 11:59:21 GMT</pubDate></item><item><title>Des biomorphes dans le plan complexe</title><link>http://yaspat.github.io/blog/posts/biomorphes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
-&lt;em&gt;Sometimes I consider myself as a fisherman. Computer programs and
-ideas are my hooks, rods and reels. Computer pictures are the
-trophies and delicious meals.&lt;/em&gt;&lt;/blockquote&gt;
-&lt;p&gt;Dans les années 80, par une erreur de programmation, Clifford Pickover,
-ingénieur chez IBM, a découvert accidentellement d'étranges organismes
-habitant le plan complexe.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>complexes</category><category>python</category><guid>http://yaspat.github.io/blog/posts/biomorphes/</guid><pubDate>Tue, 08 Dec 2015 11:39:19 GMT</pubDate></item><item><title>Informatique : Leçon 5. Boucles tant que</title><link>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (boucle)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/boucle.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 15 Dec 2015 20:58:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 5. Boucles tant que</title><link>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#principe-de-la-boucle-tant-que" id="id1"&gt;Principe de la boucle tant que&lt;/a&gt;&lt;/li&gt;
@@ -264,81 +256,4 @@ premier vol dont la durée est &lt;tt class="docutils literal"&gt;t&lt;/tt&gt;.&
 &lt;/pre&gt;
 &lt;p&gt;Ainsi le vol 27 a une durée de 111. Et tous les vols précédents ont une
 durée autre.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>boucle</category><category>informatique</category><category>python</category><category>syracuse</category><category>while</category><guid>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</guid><pubDate>Tue, 01 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Géométrie d'une EDL1</title><link>http://yaspat.github.io/blog/posts/euler1/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#une-image-pour-commencer" id="id1"&gt;Une image pour commencer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#une-edl1-c-est-du-vent" id="id2"&gt;Une EDL1, c'est du vent&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#trois-resultats-de-maths-a-savoir-avant" id="id3"&gt;Trois résultats de maths à savoir avant&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#mais-revenons-a-l-equation-differentielle" id="id4"&gt;Mais revenons à l'équation différentielle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#au-milieu-d-un-champ-de-fleches" id="id5"&gt;Au milieu d'un champ de flèches&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="une-image-pour-commencer"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/euler1/#id1"&gt;Une image pour commencer&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Je vais partir de l'image suivante : imagine, Biwane, que tu es un grain
-de pollen qui se laisse mouvoir au gré des vents. Pour t'aider, je te
-mets dans le contexte : tu voles au dessus des côtes californiennes.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/euler1/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>champ de vecteurs</category><category>équations différentielles</category><guid>http://yaspat.github.io/blog/posts/euler1/</guid><pubDate>Tue, 24 Nov 2015 11:39:19 GMT</pubDate></item><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemples-de-boucles-pour" id="id1"&gt;Exemples de boucles pour&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemple-1" id="id2"&gt;Exemple 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemple-2" id="id3"&gt;Exemple 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#variante-de-l-exemple-2" id="id4"&gt;Variante de l'exemple 2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#encore-une-amelioration-supplementaire" id="id5"&gt;Encore une amélioration supplémentaire&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exercice-18-p-27-du-poly" id="id6"&gt;Exercice 18 p. 27 du poly&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exercice-19-p-27" id="id7"&gt;Exercice 19 p.27&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exercice-20-p-28-calcul-de-n" id="id8"&gt;Exercice 20 p.28 : calcul de &lt;span class="math"&gt;\(n!\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#dernier-exercice" id="id9"&gt;Dernier exercice&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Les boucles servent à automatiser la répétition de tâches. Il y a
-essentiellement deux types de boucles :&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Celles pour lesquelles &lt;em&gt;on sait à l'avance&lt;/em&gt; le nombre d'itérations
-(ou répétitions) à effectuer : ce sont les boucles &lt;strong&gt;for&lt;/strong&gt;. Par
-exemple : calculer les 100 premiers termes d'une suite &lt;span class="math"&gt;\((u_n)\)&lt;/span&gt;
-donnée.&lt;/li&gt;
-&lt;li&gt;Celles pour lesquelles &lt;em&gt;on ne sait pas à l'avance&lt;/em&gt; le nombre
-d'itérations à effectuer : ce sont des boucles subordonnées à un
-&lt;em&gt;test d'arrêt&lt;/em&gt; : les boucles &lt;strong&gt;tant que&lt;/strong&gt;. Par exemple : trouver le
-premier terme d'une suite &lt;span class="math"&gt;\((u_n)\)&lt;/span&gt; donnée de limite
-&lt;span class="math"&gt;\(+\infty\)&lt;/span&gt; vérifiant &lt;span class="math"&gt;\(u_n &amp;gt; 10000\)&lt;/span&gt;.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/Boucles%20Pour/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>boucles</category><category>for</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/Boucles Pour/</guid><pubDate>Wed, 04 Nov 2015 11:39:19 GMT</pubDate></item><item><title>Photos de vacances</title><link>http://yaspat.github.io/blog/posts/photos-de-vacances/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Si vous voulez comprendre le propos de ce billet, il faut avoir lu  &lt;a class="reference external" href="/blog/posts/eq2deg/"&gt;le précédent&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Je suis allé me ballader dans la vallée des hippocampes, du coup je vous ai ramené des photos (cliquez dessus pour les agrandir).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/photos-de-vacances/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fractales</category><category>images</category><category>mandelbrot</category><guid>http://yaspat.github.io/blog/posts/photos-de-vacances/</guid><pubDate>Sun, 18 Oct 2015 20:15:09 GMT</pubDate></item><item><title>Des trinômes et des hippocampes</title><link>http://yaspat.github.io/blog/posts/eq2deg/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#des-germes-et-des-trajectoires" id="id1"&gt;Des germes et des trajectoires&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#un-premier-exemple" id="id2"&gt;Un premier exemple&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#un-deuxieme-exemple" id="id3"&gt;Un deuxième exemple&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#un-dernier-exemple" id="id4"&gt;Un dernier exemple&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#quel-age-a-ce-germe" id="id5"&gt;Quel âge a ce germe ?&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#colorions-les-germes-de-meme-age" id="id6"&gt;Colorions les germes de même âge&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/eq2deg/#vous-avez-dit-fractales" id="id7"&gt;Vous avez dit fractales ?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Ce qui est vraiment fascinant avec les maths, c'est que quand on croit
-qu'on a fait le tour d'une question, on peut toujours lui trouver une
-face par laquelle on ne l'a pas regardée. Et ça peut donner des points
-de vue incroyables. Je vais prendre un exemple qui peut paraître blasant
-: l'équation du second degré.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/eq2deg/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fractales</category><category>mandelbrot</category><category>suites</category><guid>http://yaspat.github.io/blog/posts/eq2deg/</guid><pubDate>Sun, 18 Oct 2015 11:39:19 GMT</pubDate></item><item><title>Méditations pythoniques pour typo-déficients</title><link>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;L'image de machine qu'on a donné d'une fonction dans le cours de
-mathématiques se prête aux fonctions en &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/meditations-typo-deficient/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 2 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fonction</category><category>type</category><guid>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</guid><pubDate>Thu, 08 Oct 2015 21:59:34 GMT</pubDate></item><item><title>Notes de Darwin</title><link>http://yaspat.github.io/blog/posts/notes-de-darwin/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Voici une photo des notes de Darwin dans sa réflexion sur les pros et les cons sur le mariage (&lt;em&gt;cliquer pour agrandir&lt;/em&gt;) :&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/notes-de-darwin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>darwin</category><guid>http://yaspat.github.io/blog/posts/notes-de-darwin/</guid><pubDate>Sat, 03 Oct 2015 09:20:34 GMT</pubDate></item><item><title>Calcul de primitives en Python !</title><link>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Un des points forts de &lt;code&gt;Python&lt;/code&gt; est l'existence de nombreux modules qui permettent de faire à peu près ce qu'on veut. Ce qui veut dire en particulier qu'avant de chercher à programmer le bidule de vos rêves, regardez si quelqu'un ne l'a pas fait avant vous.&lt;/p&gt;
-&lt;p&gt;Par exemple, &lt;code&gt;Python&lt;/code&gt; possède un module permettant de faire du calcul symbolique (c'est-à-dire avec des variables, comme vous le faites à la main!), c'est le module &lt;code&gt;sympy&lt;/code&gt;. Et &lt;code&gt;sympy&lt;/code&gt;, c'est sympa. Vous voulez voir ?&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>analyse</category><category>primitives</category><category>python</category><guid>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</guid><pubDate>Tue, 29 Sep 2015 20:05:19 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><category>boucle</category><category>informatique</category><category>python</category><category>syracuse</category><category>while</category><guid>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</guid><pubDate>Tue, 01 Dec 2015 20:36:59 GMT</pubDate></item></channel></rss>
