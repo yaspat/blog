@@ -1,13 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 14 Dec 2015 13:05:08 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>As-tu remarqué cette nouvelle icône ?</title><link>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des &lt;em&gt;animathions&lt;/em&gt;. C'est quoi une
-&lt;em&gt;animathion&lt;/em&gt; ? Allez voir ...&lt;/p&gt;</description><category>animathions</category><category>video</category><guid>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</guid><pubDate>Mon, 14 Dec 2015 11:59:21 GMT</pubDate></item><item><title>Des biomorphes dans le plan complexe</title><link>http://yaspat.github.io/blog/posts/biomorphes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 15 Dec 2015 20:45:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Avez-vous remarqué cette nouvelle icône ?</title><link>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des &lt;em&gt;animathions&lt;/em&gt;. C'est quoi une
+&lt;em&gt;animathion&lt;/em&gt; ? Allez voir !&lt;/p&gt;</description><category>animathions</category><category>video</category><guid>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</guid><pubDate>Mon, 14 Dec 2015 11:59:21 GMT</pubDate></item><item><title>Des biomorphes dans le plan complexe</title><link>http://yaspat.github.io/blog/posts/biomorphes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
 &lt;em&gt;Sometimes I consider myself as a fisherman. Computer programs and
 ideas are my hooks, rods and reels. Computer pictures are the
 trophies and delicious meals.&lt;/em&gt;&lt;/blockquote&gt;
 &lt;p&gt;Dans les années 80, par une erreur de programmation, Clifford Pickover,
 ingénieur chez IBM, a découvert accidentellement d'étranges organismes
 habitant le plan complexe.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>complexes</category><category>python</category><guid>http://yaspat.github.io/blog/posts/biomorphes/</guid><pubDate>Tue, 08 Dec 2015 11:39:19 GMT</pubDate></item><item><title>Géométrie d'une EDL1</title><link>http://yaspat.github.io/blog/posts/euler1/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>complexes</category><category>python</category><guid>http://yaspat.github.io/blog/posts/biomorphes/</guid><pubDate>Tue, 08 Dec 2015 11:39:19 GMT</pubDate></item><item><title>Informatique : Leçon 5. Boucles tant que</title><link>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#principe-de-la-boucle-tant-que" id="id3"&gt;Principe de la boucle tant que&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#trois-recommandations-pour-la-construction-d-une-boucle-tant-que" id="id4"&gt;Trois recommandations pour la construction d'une boucle tant que&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#premier-exercice-d-apres-poly-exemple-5-p-34" id="id5"&gt;Premier exercice (d'après poly exemple 5 p.34)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#la-fameuse-suite-de-syracuse" id="id6"&gt;La fameuse suite de Syracuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#combien-de-temps-dure-le-vol" id="id7"&gt;Combien de temps dure le vol ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#quel-est-le-premier-vol-dont-la-duree-est-111" id="id8"&gt;Quel est le premier vol dont la durée est 111 ?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="principe-de-la-boucle-tant-que"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id3"&gt;Principe de la boucle tant que&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;les boucles &lt;strong&gt;tant que&lt;/strong&gt; réalisent aussi des processus itératifs.
+Tputefois, à la différence des boucles &lt;strong&gt;pour&lt;/strong&gt;, &lt;em&gt;le nombre d'itérations
+n'est pas connu à l'avance, ce qui fait que la sortie de boucle est
+soumise à un&lt;/em&gt; &lt;strong&gt;test booléen&lt;/strong&gt;. Cette condition constitue le &lt;em&gt;test
+d'arrêt&lt;/em&gt; de la boucle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemple 1.&lt;/strong&gt; Soit &lt;span class="math"&gt;\(M\)&lt;/span&gt; un réel donné, et &lt;span class="math"&gt;\((S_n)\)&lt;/span&gt; une suite
+tendant vers &lt;span class="math"&gt;\(+\infty\)&lt;/span&gt;. Trouver le premier terme parmi
+&lt;span class="math"&gt;\(S_0\)&lt;/span&gt;, ..., &lt;span class="math"&gt;\(S_{500}\)&lt;/span&gt; qui est strictement plus grand que
+&lt;span class="math"&gt;\(M\)&lt;/span&gt; si il existe.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="trois-recommandations-pour-la-construction-d-une-boucle-tant-que"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id4"&gt;Trois recommandations pour la construction d'une boucle tant que&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Il vaut mieux formaliser la condition de sortie de boucle pour ne pas
+se tromper dans la rédaction correcte du test de boucle : on écrit la
+condition de sortie, et sa négation donne la condition de boucle.&lt;/li&gt;
+&lt;li&gt;(&lt;em&gt;obligatoire&lt;/em&gt;)N'oubliez pas d'actualiser les variables apparaissant
+dans le test d'arrêt &lt;strong&gt;avant&lt;/strong&gt; la sortie de la boucle.&lt;/li&gt;
+&lt;li&gt;(optionnel) : stockez vos conditions booléennes dans des variables
+auxquelles vous donnez des noms d'action. N'oubliez dans ce cas
+d'actualiser ces variables booléennes comme le dit 2.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Exemple2.&lt;/strong&gt; Sur l'&lt;strong&gt;exemple 1&lt;/strong&gt; précédent, on sort de la boucle dès
+que :&lt;/p&gt;
+&lt;blockquote&gt;
+le &lt;span class="math"&gt;\(n\)&lt;/span&gt;-ème terme &lt;span class="math"&gt;\(S_n\)&lt;/span&gt; vérifie &lt;span class="math"&gt;\(S_n&amp;gt;M \)&lt;/span&gt; vérifie &lt;span class="math"&gt;\(n&amp;gt;500\)&lt;/span&gt;.&lt;/blockquote&gt;
+&lt;p&gt;Par négation, le test de boucle est donc :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+S_n \le M \quad \textbf{et } \quad n\le 500
+\end{equation*}
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="section" id="premier-exercice-d-apres-poly-exemple-5-p-34"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id5"&gt;Premier exercice (d'après poly exemple 5 p.34)&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Avant tout, créez un dossier &lt;tt class="docutils literal"&gt;TP05&lt;/tt&gt; dans lequel vous stockerez tous
+vos scripts.&lt;/p&gt;
+&lt;p&gt;On considère la suite &lt;span class="math"&gt;\((S_n)_{n\ge 1}\)&lt;/span&gt; donnée par :
+&lt;span class="math"&gt;\(S_n =\displaystyle\sum_{k=1}^n \dfrac{1}{k}\)&lt;/span&gt;. On admet que cette
+suite tend vers &lt;span class="math"&gt;\(+\infty\)&lt;/span&gt;.&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Créer une fonction &lt;tt class="docutils literal"&gt;premier_rang(M)&lt;/tt&gt; qui prend en entrée un
+flottant &lt;tt class="docutils literal"&gt;M&lt;/tt&gt;, et retourne le premier indice &lt;span class="math"&gt;\(n \le500\)&lt;/span&gt; tel
+que &lt;span class="math"&gt;\(S_n&amp;gt;M\)&lt;/span&gt;. Si jamais cet indice n'existe pas (ce qui est le
+cas si &lt;span class="math"&gt;\(S_{500} \le M\)&lt;/span&gt;), &lt;tt class="docutils literal"&gt;premier_rang(M)&lt;/tt&gt; retournera la
+phrase &lt;tt class="docutils literal"&gt;'aucun des 500 premiers termes ne dépasse M.'&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;Vérifier avec ce qui a été fait en classe que &lt;tt class="docutils literal"&gt;premier_rang(2.15)&lt;/tt&gt;
+vaut &lt;tt class="docutils literal"&gt;5&lt;/tt&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;premier_rang&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;"""M : flottant.&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;        calcule le plus petit entier n tel que 1 + 1/2 +...+ 1/n &amp;gt; M&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-4"&gt;&lt;/a&gt;&lt;span class="sd"&gt;        si &amp;lt;n&amp;gt; n'existe pas, la fonction retourne une phrase.&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-5"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    """&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-6"&gt;&lt;/a&gt;    &lt;span class="n"&gt;S&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-7"&gt;&lt;/a&gt;    &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-8"&gt;&lt;/a&gt;    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="mi"&gt;500&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;=&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-9"&gt;&lt;/a&gt;        &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="c"&gt;# je passe à l'entier suivant  (n+=1 signifie : n = n+1)&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-10"&gt;&lt;/a&gt;        &lt;span class="n"&gt;S&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mf"&gt;1.&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="c"&gt;# je n'ai pas envie d'importer la division&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-11"&gt;&lt;/a&gt;    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;S&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;       &lt;span class="c"&gt;# A ce stade, on est sorti de la boucle ...&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-12"&gt;&lt;/a&gt;        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;  &lt;span class="c"&gt;# ... pour une des deux raisons.&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-13"&gt;&lt;/a&gt;    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_bc167eec7f324cb6a095516fa307da76-14"&gt;&lt;/a&gt;        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s"&gt;'les  500 premiers termes sont plus petits que '&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_a5094a6990c048e089020d7f04f01f65-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;premier_rang&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;2.15&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+5
+&lt;/pre&gt;
+&lt;p&gt;** Remarque.** Si la consigne avait demandé seulement d'afficher la
+phrase &lt;tt class="docutils literal"&gt;les  500 premiers termes sont plus petits que M&lt;/tt&gt;, un &lt;strong&gt;print&lt;/strong&gt;
+aurait convenu. Mais dans ce cas, la fonction ne produit aucun objet en
+sortie si tous les termes restent inférieurs à &lt;span class="math"&gt;\(M\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="la-fameuse-suite-de-syracuse"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id6"&gt;La fameuse suite de Syracuse&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Écrire une fonction &lt;tt class="docutils literal"&gt;Syracuse(x,n)&lt;/tt&gt; qui prend en entrée : deux entiers
+&lt;tt class="docutils literal"&gt;x&lt;/tt&gt; et &lt;tt class="docutils literal"&gt;n&lt;/tt&gt;, et calcule et affiche les termes &lt;span class="math"&gt;\(u_0,\dots,u_n\)&lt;/span&gt;
+de la suite dite de Syracuse définie par :&lt;/p&gt;
+&lt;div class="math"&gt;
+\begin{equation*}
+\left\{ \begin{array}{rcl}
+               u_0&amp;amp;=&amp;amp; \texttt{x} \\
+               u_{n+1}&amp;amp;=&amp;amp; \dfrac{u_n}{2}   \text{ si } u_n \text{ est pair}\\
+               &amp;amp;&amp;amp; 3u_n +1 \text{ sinon }
+               \end{array}\right.
+\end{equation*}
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Rappel.&lt;/strong&gt; On peut tester simplement la parité d'un entier &lt;span class="math"&gt;\(p\)&lt;/span&gt; en
+calculant &lt;span class="math"&gt;\((-1)^p\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remarques.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;En &lt;strong&gt;Python&lt;/strong&gt;, le reste de la division euclidienne de &lt;strong&gt;n&lt;/strong&gt; par 2 par
+exemple se calcule avec la commande : &lt;strong&gt;n%2&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;La fonction &lt;strong&gt;syracuse&lt;/strong&gt; ne fait que des affichages. Il n'y aura donc
+pas d'objet généré en sortie (donc pas de &lt;strong&gt;return&lt;/strong&gt; dans la
+fonction).&lt;/li&gt;
+&lt;li&gt;Ici, le nombre d'itérations est connu : il n'y aura pas de tant que !&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;syracuse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;""" calcule et affiche les n premières escales du vol numéro x.&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    Attention : pas d'objet en sortie """&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-4"&gt;&lt;/a&gt;    &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-5"&gt;&lt;/a&gt;    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-6"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt; &lt;span class="c"&gt;#Pas de boucle tant que ici !&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-7"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c"&gt;# on teste la parité de l'entier x_k&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-8"&gt;&lt;/a&gt;            &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-9"&gt;&lt;/a&gt;        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-10"&gt;&lt;/a&gt;            &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_819c99d5bc4c44e0a9a48bbdc20cad2a-11"&gt;&lt;/a&gt;        &lt;span class="k"&gt;print&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_652fc8338138465ea897cc28e942ca4a-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;syracuse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+7
+22
+11
+34
+17
+52
+&lt;/pre&gt;
+&lt;p&gt;Modifier la fonction &lt;tt class="docutils literal"&gt;syracuse&lt;/tt&gt; en une fonction &lt;tt class="docutils literal"&gt;syracuse2&lt;/tt&gt; de sorte
+que cette nouvelle fonction retourne en sortie une chaîne de caractères
+contenant les valeurs de &lt;span class="math"&gt;\(u_0,\dots,u_n\)&lt;/span&gt;&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_214fc315a6514930b88be62673035db9-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;syracuse2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;""" donne la chaine de caractères contenant  les&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;        n premières escales du vol numéro x.&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-4"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    """&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-5"&gt;&lt;/a&gt;    &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;x&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-6"&gt;&lt;/a&gt;    &lt;span class="n"&gt;chaine&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;        &lt;span class="c"&gt;# au début, la chaine contient u_0.&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-7"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;  &lt;span class="c"&gt;#Pas de boucle tant que ici !&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-8"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;  &lt;span class="c"&gt;# On teste la parité de l'entier u_k.&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-9"&gt;&lt;/a&gt;            &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-10"&gt;&lt;/a&gt;        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-11"&gt;&lt;/a&gt;            &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-12"&gt;&lt;/a&gt;        &lt;span class="n"&gt;chaine&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt;&lt;span class="s"&gt;' '&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nb"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c"&gt;# je concatène dans ma chaine ...&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-13"&gt;&lt;/a&gt;                             &lt;span class="c"&gt;# ... le dernier terme calculé.&lt;/span&gt;
+&lt;a name="rest_code_214fc315a6514930b88be62673035db9-14"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;chaine&lt;/span&gt;           &lt;span class="c"&gt;# Ne pas oubler de retourner la chaine&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_c1dc1b865c624e6ea994c9db07c1ef4e-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;syracuse2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+'7 22 11 34 17 52'
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Exercice.&lt;/strong&gt; Faire une fonction &lt;tt class="docutils literal"&gt;affiche_escales(N,k)&lt;/tt&gt; qui affiche
+les &lt;span class="math"&gt;\(k\)&lt;/span&gt; premières escales des vols 1,2,...,&lt;tt class="docutils literal"&gt;N&lt;/tt&gt;, où &lt;tt class="docutils literal"&gt;N&lt;/tt&gt; est
+un entier rentré par l'utilisateur&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_b30faf5dfffb4d56b56778da792f5175-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;affiche_escales&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_b30faf5dfffb4d56b56778da792f5175-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;""" affiche les k premières escales des vols 1 à N"""&lt;/span&gt;
+&lt;a name="rest_code_b30faf5dfffb4d56b56778da792f5175-3"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;j&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;N&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_b30faf5dfffb4d56b56778da792f5175-4"&gt;&lt;/a&gt;        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;syracuse2&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;k&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_db3a203f834844639e0b1700878cdb6c-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;affiche_escales&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2
+2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4
+3 10 5 16 8 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4
+4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1
+5 16 8 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1
+6 3 10 5 16 8 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1
+7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 4 2 1 4
+8 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2
+9 28 14 7 22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1 4
+10 5 16 8 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2
+&lt;/pre&gt;
+&lt;p&gt;On constate que les 10 premiers vols bouclent sur le triangle
+&lt;span class="math"&gt;\(1 \to 4 \to 2\)&lt;/span&gt;. On pense que c'est le cas pour tous les vols,
+mais on ne sait pas le prouver.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="combien-de-temps-dure-le-vol"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id7"&gt;Combien de temps dure le vol ?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Construire une fonction &lt;tt class="docutils literal"&gt;duree_du_vol(x)&lt;/tt&gt; qui prend un entier &lt;tt class="docutils literal"&gt;x&lt;/tt&gt; et
+retourne le premier rang &lt;tt class="docutils literal"&gt;n&lt;/tt&gt; pour lequel &lt;span class="math"&gt;\(u_n=1\)&lt;/span&gt;. Par exemple,
+&lt;tt class="docutils literal"&gt;duree_du_vol(7)&lt;/tt&gt; devrait valoir &lt;tt class="docutils literal"&gt;16&lt;/tt&gt;. Quelle est la durée du vol
+714 ?&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;duree_du_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;""" on considère la suite la suite de Syracuse de premier&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;        terme x. Cette fonction calcule le premier rang n au bout&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-4"&gt;&lt;/a&gt;&lt;span class="sd"&gt;        duquel un terme de la suite vaut 1.&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-5"&gt;&lt;/a&gt;&lt;span class="sd"&gt;        Par exemple  : duree_du_vol(1) vaut 0,&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-6"&gt;&lt;/a&gt;&lt;span class="sd"&gt;                       duree_du_vol(7) vaut 16.&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-7"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    """&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-8"&gt;&lt;/a&gt;    &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-9"&gt;&lt;/a&gt;    &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-10"&gt;&lt;/a&gt;    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-11"&gt;&lt;/a&gt;        &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-12"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c"&gt;# on teste la parité de l'entier x_k&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-13"&gt;&lt;/a&gt;            &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-14"&gt;&lt;/a&gt;        &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-15"&gt;&lt;/a&gt;            &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_c6adde1a42274c9bbb55e5981e6d2c06-16"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;duree&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_9c6b3a7505df415f8ae9f63388a077a1-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;duree_du_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;714&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+33
+&lt;/pre&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id1"&gt;&lt;span class="problematic" id="id2"&gt;**&lt;/span&gt;&lt;/a&gt;Remarque. ** On peut créer une fonction pour éviter de remettre les
+lignes 12-15 qu'on a tapé bien plus d'une fois (et c'est tout l'intérêt
+des fonctions).&lt;/p&gt;
+&lt;div class="system-message" id="id1"&gt;
+&lt;p class="system-message-title"&gt;System Message: WARNING/2 (&lt;tt class="docutils"&gt;&amp;lt;string&amp;gt;&lt;/tt&gt;, line 264); &lt;em&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id2"&gt;backlink&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+Inline strong start-string without end-string.&lt;/div&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_db9f428bcef4485897d6d011476227d1-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;transfo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_db9f428bcef4485897d6d011476227d1-2"&gt;&lt;/a&gt;    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;**&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c"&gt;# on teste la parité de l'entier x_k&lt;/span&gt;
+&lt;a name="rest_code_db9f428bcef4485897d6d011476227d1-3"&gt;&lt;/a&gt;        &lt;span class="k"&gt;return&lt;/span&gt;   &lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;a name="rest_code_db9f428bcef4485897d6d011476227d1-4"&gt;&lt;/a&gt;    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_db9f428bcef4485897d6d011476227d1-5"&gt;&lt;/a&gt;        &lt;span class="k"&gt;return&lt;/span&gt;  &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;z&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;La fonction &lt;tt class="docutils literal"&gt;duree_du_vol&lt;/tt&gt; prend alors la forme suivante&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;duree_du_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-2"&gt;&lt;/a&gt;    &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-3"&gt;&lt;/a&gt;    &lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;
+&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-4"&gt;&lt;/a&gt;    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-5"&gt;&lt;/a&gt;        &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-6"&gt;&lt;/a&gt;        &lt;span class="n"&gt;u&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;transfo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_d893ea9357fb4ae8900aec9963291f73-7"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;duree&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_b2a79519bdb24b6596203f806591f7cd-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;duree_du_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+16
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div class="section" id="quel-est-le-premier-vol-dont-la-duree-est-111"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id8"&gt;Quel est le premier vol dont la durée est 111 ?&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Exercice.&lt;/strong&gt; Créer une fonction &lt;tt class="docutils literal"&gt;premier_vol(t)&lt;/tt&gt; qui détermine le
+premier vol dont la durée est &lt;tt class="docutils literal"&gt;t&lt;/tt&gt;.&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;premier_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-2"&gt;&lt;/a&gt;    &lt;span class="n"&gt;vol&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;                    &lt;span class="c"&gt;# je considère le vol  1&lt;/span&gt;
+&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-3"&gt;&lt;/a&gt;    &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;duree_du_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;vol&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  &lt;span class="c"&gt;# je calcule sa durée&lt;/span&gt;
+&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-4"&gt;&lt;/a&gt;    &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="n"&gt;t&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;          &lt;span class="c"&gt;# Si elle ne vaut pas t&lt;/span&gt;
+&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-5"&gt;&lt;/a&gt;        &lt;span class="n"&gt;vol&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;                 &lt;span class="c"&gt;# je passe au vol suivant&lt;/span&gt;
+&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-6"&gt;&lt;/a&gt;        &lt;span class="n"&gt;duree&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;duree_du_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;vol&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_6320ccc2d503472797a7dfe7a131909b-7"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;vol&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_17b88b890b6043e98032019ee8bcb2c1-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;premier_vol&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;111&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;pre class="literal-block"&gt;
+27
+&lt;/pre&gt;
+&lt;p&gt;Ainsi le vol 27 a une durée de 111. Et tous les vols précédents ont une
+durée autre.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</guid><pubDate>Tue, 01 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Géométrie d'une EDL1</title><link>http://yaspat.github.io/blog/posts/euler1/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/euler1/#une-image-pour-commencer" id="id1"&gt;Une image pour commencer&lt;/a&gt;&lt;/li&gt;
@@ -84,22 +328,4 @@ mathématiques se prête aux fonctions en &lt;strong&gt;Python&lt;/strong&gt;.&l
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Un des points forts de &lt;code&gt;Python&lt;/code&gt; est l'existence de nombreux modules qui permettent de faire à peu près ce qu'on veut. Ce qui veut dire en particulier qu'avant de chercher à programmer le bidule de vos rêves, regardez si quelqu'un ne l'a pas fait avant vous.&lt;/p&gt;
 &lt;p&gt;Par exemple, &lt;code&gt;Python&lt;/code&gt; possède un module permettant de faire du calcul symbolique (c'est-à-dire avec des variables, comme vous le faites à la main!), c'est le module &lt;code&gt;sympy&lt;/code&gt;. Et &lt;code&gt;sympy&lt;/code&gt;, c'est sympa. Vous voulez voir ?&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>analyse</category><category>primitives</category><category>python</category><guid>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</guid><pubDate>Tue, 29 Sep 2015 20:05:19 GMT</pubDate></item><item><title>Informatique : Leçon 3</title><link>http://yaspat.github.io/blog/posts/schema-conditionnels/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#schema-conditionnel-compose" id="id1"&gt;Schéma conditionnel composé&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#version-script-d-algorithme" id="id2"&gt;Version script d'algorithme&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#version-fonction" id="id3"&gt;Version fonction&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/schema-conditionnels/#conclusion-de-cela" id="id4"&gt;Conclusion de cela&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Objet de cette courte leçon :&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Donner des exemples de schéma conditionnel&lt;/li&gt;
-&lt;li&gt;Sur un problème simple, on montre deux façons différentes d' implémenter l'algorithme : sous forme de simple script ou sous forme de fonction.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;3.  Montrer un exemple de schéma conditionnel en cascade : celui de la résolution
-de l'équation du second degré.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/schema-conditionnels/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>leçon</category><category>python</category><category>schémas conditionnels</category><guid>http://yaspat.github.io/blog/posts/schema-conditionnels/</guid><pubDate>Tue, 29 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>analyse</category><category>primitives</category><category>python</category><guid>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</guid><pubDate>Tue, 29 Sep 2015 20:05:19 GMT</pubDate></item></channel></rss>

@@ -12,20 +12,29 @@
 
 
 De courtes videos pour comprendre en images des idées directrices du cours, ou pour
-mettre en  œuvre une méthode de base.
+mettre en  œuvre une méthode de base.  N'hésitez pas à me dire si vous y trouvez un (ou aucun) intérêt.
 
 
 
 
-Animathion #1
-~~~~~~~~~~~~~
+
+Animathion #1 : Champ de vecteurs et équations différentielles
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   La lecture de l'*équation différentielle* permet  de deviner l'allure des courbes de ses solutions grâce au  *champ de vecteurs* associé.
 
-.. youtube:: rW_fmP_vfSE
+
+
++-------------+--------------------------+
+|             | .. youtube:: rW_fmP_vfSE |
++-------------+--------------------------+  
 
 
 
+.. Animathion #2 : Guide de survie en combinatoire
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Les confusions à ne pas faire et les problèmes de base qu'il faut savoir traiter.
 
 
-
+   *patience !*
