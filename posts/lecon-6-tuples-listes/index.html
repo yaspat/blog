@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Informatique : Leçon 6. Tuples  - Listes | Maths-info en BCPST1-A Rennes</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../favicon.ico" sizes="128x128">
+<link rel="icon" href="../../favicon.ico" sizes="256x256">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="M. Patel">
+<meta property="og:site_name" content="Maths-info en BCPST1-A Rennes">
+<meta property="og:title" content="Informatique : Leçon 6. Tuples  - Listes">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/">
+<meta property="og:description" content="Contents
+
+Tuples
+C'est quoi un tuple ?
+Premiers exemples
+Nombre d'items d'un tuple
+Accès aux items d'un tuple
+Une utilisation intéressante des tuples : échange de variables
+Les tuples ne sont pas muta">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-12-17T21:36:59+01:00">
+<meta property="article:tag" content="chaînes de caractères">
+<meta property="article:tag" content="informatique">
+<meta property="article:tag" content="listes">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="tuples">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/animathions" title="Animathions"><i class="icon-youtube-play"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Informatique : Leçon 6. Tuples  - Listes</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2015-12-17T21:36:59+01:00">2015-12-17 21:36</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/chaines-de-caracteres/" rel="tag">chaînes de caractères</a></li>
+           <li><a class="tag p-category" href="../../categories/informatique/" rel="tag">informatique</a></li>
+           <li><a class="tag p-category" href="../../categories/listes/" rel="tag">listes</a></li>
+           <li><a class="tag p-category" href="../../categories/python/" rel="tag">python</a></li>
+           <li><a class="tag p-category" href="../../categories/tuples/" rel="tag">tuples</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#tuples" id="id1">Tuples</a><ul>
+<li><a class="reference internal" href=".#c-est-quoi-un-tuple" id="id2">C'est quoi un tuple ?</a></li>
+<li><a class="reference internal" href=".#premiers-exemples" id="id3">Premiers exemples</a></li>
+<li><a class="reference internal" href=".#nombre-d-items-d-un-tuple" id="id4">Nombre d'items d'un tuple</a></li>
+<li><a class="reference internal" href=".#acces-aux-items-d-un-tuple" id="id5">Accès aux items d'un tuple</a></li>
+<li><a class="reference internal" href=".#une-utilisation-interessante-des-tuples-echange-de-variables" id="id6">Une utilisation intéressante des tuples : échange de variables</a></li>
+<li><a class="reference internal" href=".#les-tuples-ne-sont-pas-mutables" id="id7">Les tuples ne sont pas mutables</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#un-autre-type-voisin-des-tuples-les-listes" id="id8">Un autre type voisin des tuples : les listes.</a></li>
+<li>
+<a class="reference internal" href=".#recherche-dans-les-chaines-de-caracteres" id="id9">Recherche dans les chaînes de caractères</a><ul>
+<li><a class="reference internal" href=".#formulation-du-probleme" id="id10">Formulation du problème</a></li>
+<li><a class="reference internal" href=".#differentes-approches-pour-repondre" id="id11">Différentes approches pour répondre</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="tuples">
+<h2><a class="toc-backref" href=".#id1">Tuples</a></h2>
+<div class="section" id="c-est-quoi-un-tuple">
+<h3><a class="toc-backref" href=".#id2">C'est quoi un tuple ?</a></h3>
+<ol class="arabic simple">
+<li>C'est un nouveau type d'objets. Il correspond en maths, aux
+<span class="math">\(p\)</span>-listes ou <span class="math">\(p\)</span>-upplets : suites ordonnées de <span class="math">\(p\)</span>
+objets.</li>
+<li>En <strong>Python</strong>, les tuples sont délimités, comme en maths, par des
+parenthèses.</li>
+<li>En maths, les éléments d'un <span class="math">\(p\)</span>-upplet s'appellent les
+<em>coordonnées</em> ou les <em>composantes</em> du <span class="math">\(p\)</span>-upplet. En
+<strong>Python</strong>, les éléments d'un tuple sont appelés les <em>items</em> du
+tuple. Ils sont séparés par des virgules, comme en maths.</li>
+</ol>
+<!--TEASER_END --><table border="1" class="docutils">
+<colgroup>
+<col width="52%">
+<col width="48%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head">Maths</th>
+<th class="head">Analogue <strong>Python</strong>
+</th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>
+<span class="math">\(p\)</span>-upplet = <span class="math">\(p\)</span>-liste</td>
+<td>tuple</td>
+</tr>
+<tr>
+<td>coordonnée ou composante</td>
+<td>item</td>
+</tr>
+<tr>
+<td>délimité par des parenthèses</td>
+<td>délimité par des parenthèses</td>
+</tr>
+<tr>
+<td>séparateur : la virgule <span class="math">\(\mathtt{,}\)</span>
+</td>
+<td>
+<em>idem</em> : la virgule <span class="math">\(\mathtt{,}\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="premiers-exemples">
+<h3><a class="toc-backref" href=".#id3">Premiers exemples</a></h3>
+<pre class="code python"><a name="rest_code_8d9b3544352f4a2b81315ee6bf6830d9-1"></a><span class="n">my_first_tuple</span> <span class="o">=</span> <span class="p">(</span> <span class="o">-</span><span class="mi">3</span> <span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a name="rest_code_8d9b3544352f4a2b81315ee6bf6830d9-2"></a><span class="k">print</span> <span class="n">my_first_tuple</span>
+</pre>
+<pre class="literal-block">
+(-3, 2, 0.5, 0)
+</pre>
+<pre class="code python"><a name="rest_code_898d644090554c25937d17000cb3a942-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">my_first_tuple</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+tuple
+</pre>
+<p>Ce tuple possède 4 items qui sont des flottants ou des entiers.</p>
+<p>** Remarque.** Cela veut dire que dans un tuple, on peut mettre des
+items de type divers. En particulier, on peut mêler chaînes de
+caractères et flottants, ou même mettre un tuple dans un tuple.</p>
+<p><strong>Exemple.</strong></p>
+<pre class="code python"><a name="rest_code_1c1f1db724da4cd3a6a2fe83e2d3e7c8-1"></a><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s">'toto'</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mf">2.5</span><span class="p">))</span> <span class="p">;</span> <span class="nb">type</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+tuple
+</pre>
+<p>Le tuple <span class="math">\(\mathtt{t_1}\)</span> est un tuple constitué de trois items qui
+sont, une chaîne de caractères, un entier, et un tuple lui-même
+constitué d'un entier et d'un flottant.</p>
+</div>
+<div class="section" id="nombre-d-items-d-un-tuple">
+<h3><a class="toc-backref" href=".#id4">Nombre d'items d'un tuple</a></h3>
+<p>Comme pour les chaînes de caractères, pour connaître le nombre d'items
+d'un tuple, on utilise la fonction <span class="math">\(\mathtt{len}\)</span> :</p>
+<pre class="code python"><a name="rest_code_057a6da1f66546dd810e2df8af6acd21-1"></a><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s">'toto'</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mf">2.5</span><span class="p">))</span>
+<a name="rest_code_057a6da1f66546dd810e2df8af6acd21-2"></a><span class="nb">len</span><span class="p">(</span><span class="n">t1</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+3
+</pre>
+</div>
+<div class="section" id="acces-aux-items-d-un-tuple">
+<h3><a class="toc-backref" href=".#id5">Accès aux items d'un tuple</a></h3>
+<p>Comme pour les chaînes de caractères, <strong>les éléments d'un tuple sont
+numérotés à partir de 0</strong>, et on peut y faire les mêmes opérations que
+dans les chaînes de caractères.</p>
+<pre class="code python"><a name="rest_code_fd376f7d608a452f9abed4f36e862381-1"></a><span class="n">t1</span> <span class="o">=</span> <span class="p">(</span><span class="s">'toto'</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mf">2.5</span><span class="p">))</span>
+<a name="rest_code_fd376f7d608a452f9abed4f36e862381-2"></a><span class="n">t1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c"># le dernier item</span>
+</pre>
+<pre class="literal-block">
+(1, 2.5)
+</pre>
+<pre class="code python"><a name="rest_code_9a994cb783e7422da7ddc16764101b2f-1"></a><span class="n">t1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># le premier  item</span>
+</pre>
+<pre class="literal-block">
+'toto'
+</pre>
+<p>** Exercice **. Récupérer le <span class="math">\(\mathtt{1}\)</span> dans
+<span class="math">\(\mathtt{t_1}\)</span> en une seule instruction.</p>
+<pre class="code python"><a name="rest_code_09fad4192c4b491ea35742465151d522-1"></a><span class="n">t1</span>
+</pre>
+<pre class="literal-block">
+('toto', 25, (1, 2.5))
+</pre>
+<pre class="code python"><a name="rest_code_bf9d385450ba43fe8ff83d0e4497bc5f-1"></a><span class="n">t1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre>
+<pre class="literal-block">
+(1, 2.5)
+</pre>
+<pre class="code python"><a name="rest_code_ae4f43305e1b42d495020abe44272c88-1"></a><span class="n">t1</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="c"># le premier item  du dernier item de t1 ...</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<p><strong>Remarque</strong>. On a déjà rencontré des tuples, dans la construction des
+fonctions, notamment les fonctions qui retournent plusieurs arguments de
+sortie.</p>
+<pre class="code python"><a name="rest_code_f3b98621ee3a4c6a8519f7b6644b4f22-1"></a><span class="k">def</span> <span class="nf">inutile</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a name="rest_code_f3b98621ee3a4c6a8519f7b6644b4f22-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_f3b98621ee3a4c6a8519f7b6644b4f22-3"></a><span class="sd">    fonction inutile qui prend un réel x et retourne en sortie</span>
+<a name="rest_code_f3b98621ee3a4c6a8519f7b6644b4f22-4"></a><span class="sd">    son carré et son cube</span>
+<a name="rest_code_f3b98621ee3a4c6a8519f7b6644b4f22-5"></a><span class="sd">    """</span>
+<a name="rest_code_f3b98621ee3a4c6a8519f7b6644b4f22-6"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="c"># Deux arguments de sortie x^2 et x^3</span>
+</pre>
+<pre class="code python"><a name="rest_code_9ffd75aa0665456f93b6b5e409f64f4d-1"></a><span class="n">z</span> <span class="o">=</span> <span class="n">inutile</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c"># je calcule inutile(4)</span>
+<a name="rest_code_9ffd75aa0665456f93b6b5e409f64f4d-2"></a><span class="k">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+(16, 64)
+</pre>
+<pre class="code python"><a name="rest_code_9c70b90bde3443b9907d056c03ac052e-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+tuple
+</pre>
+<p><strong>Remarque</strong>. En particulier, les parenthèses sont optionnelles dans un
+tuple : <span class="math">\(\texttt{(x,y)}\)</span> est la même chose que
+<span class="math">\(\texttt{x,y}\)</span>.</p>
+<p><strong>Exercice.</strong> Comment construire un tuple ne possédant qu'un seul item,
+l'entier 3 par exemple ?</p>
+<pre class="code python"><a name="rest_code_bcad359dd7fb485ea5e84878fa441c63-1"></a><span class="n">x</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+int
+</pre>
+<p>Ne marche pas. Essayons avec le séparateur : la virgule.</p>
+<pre class="code python"><a name="rest_code_14ecbde28e3846728878906ca27cb2b5-1"></a><span class="n">x</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,)</span> <span class="c"># grâce à la virgule on sait qu'on a un tuple</span>
+</pre>
+<pre class="code python"><a name="rest_code_bae5d01e89cc4d16bef705f63596faf7-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+tuple
+</pre>
+<p>JE LE REDIS (je ne m'énerve pas, j'explique) : les parenthèses sont
+optionnelles :</p>
+<pre class="code python"><a name="rest_code_bd7eaf2de8474ceebe280633e045adb6-1"></a><span class="n">y</span> <span class="o">=</span>  <span class="mi">3</span><span class="p">,</span>
+<a name="rest_code_bd7eaf2de8474ceebe280633e045adb6-2"></a><span class="nb">type</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+tuple
+</pre>
+<p><strong>Remarque.</strong> Un nombre complexe est aussi un tuple. Mais il constitue
+en <strong>Python</strong> un type d'objets à part entière.</p>
+</div>
+<div class="section" id="une-utilisation-interessante-des-tuples-echange-de-variables">
+<h3><a class="toc-backref" href=".#id6">Une utilisation intéressante des tuples : échange de variables</a></h3>
+<pre class="code python"><a name="rest_code_461498448060403e85da23b73816db5e-1"></a><span class="n">x</span> <span class="o">=</span> <span class="s">'toto'</span>
+<a name="rest_code_461498448060403e85da23b73816db5e-2"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
+</pre>
+<p><strong>Solution.</strong> Si j'échange bêtement, j'écrase le contenu d'une variable
+par celui de l'autre. L'idée est d'introduire une variable tierce qui
+sert de transition :</p>
+<pre class="code python"><a name="rest_code_6d0ca8bc87254af395217a95dd3fe5f5-1"></a><span class="n">t</span> <span class="o">=</span> <span class="n">x</span> <span class="c"># j'envoie x dans la variable tierce</span>
+<a name="rest_code_6d0ca8bc87254af395217a95dd3fe5f5-2"></a><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="c"># je peux sans scrupules écraser le contenu de x</span>
+<a name="rest_code_6d0ca8bc87254af395217a95dd3fe5f5-3"></a><span class="n">y</span> <span class="o">=</span> <span class="n">t</span> <span class="c"># j'envoie dans y le contenu de x.</span>
+<a name="rest_code_6d0ca8bc87254af395217a95dd3fe5f5-4"></a>
+<a name="rest_code_6d0ca8bc87254af395217a95dd3fe5f5-5"></a><span class="n">x</span><span class="p">,</span><span class="n">y</span>
+</pre>
+<pre class="literal-block">
+(2, 'toto')
+</pre>
+<p><strong>Réponse pythonique.</strong> Sous <strong>Python</strong>, les tuples permettent d'éviter
+le passage par une variable intermédiaire :</p>
+<pre class="code python"><a name="rest_code_4b1e0f7f07e1416c91b8c2fd8f06fd5f-1"></a><span class="n">x</span> <span class="o">=</span> <span class="s">'toto'</span>
+<a name="rest_code_4b1e0f7f07e1416c91b8c2fd8f06fd5f-2"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
+<a name="rest_code_4b1e0f7f07e1416c91b8c2fd8f06fd5f-3"></a>
+<a name="rest_code_4b1e0f7f07e1416c91b8c2fd8f06fd5f-4"></a><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">,</span><span class="n">x</span>
+<a name="rest_code_4b1e0f7f07e1416c91b8c2fd8f06fd5f-5"></a><span class="k">print</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span>
+</pre>
+<pre class="literal-block">
+2 toto
+</pre>
+<p><strong>Exercice.</strong> Utilisez cette fonctionnalité pour le problème suivant :</p>
+<p>Soit <span class="math">\(a,b\)</span> deux réels donnés et <span class="math">\((u_n)\)</span> la suite définie par
+:</p>
+<div class="math">
+\begin{equation*}
+\left\{ \begin{array}{rl}
+            u_0,u_1  &amp;\text{donnés} \\
+           \forall n &amp;\in \mathbf{N} \quad  u_{n+2}+au_{n+1}+bu_n=0.
+               \end{array}\right.
+\end{equation*}
+</div>
+<ol class="arabic simple">
+<li>Créez une fonction <span class="math">\(\texttt{def srl2(a,b,u0,u1,n):}\)</span> qui
+retourne en sortie le terme <span class="math">\(u_n\)</span> de la suite précédente.</li>
+<li>Pour vérifier que votre fonction est correctement programée, vérifiez
+que <span class="math">\(\texttt{ srl2(-1,-1,0,1,6)}\)</span> renvoie <span class="math">\(\texttt{8}\)</span>.</li>
+</ol>
+<pre class="code python"><a name="rest_code_b1667259bce24ee8883c849cc10a0437-1"></a><span class="k">def</span> <span class="nf">srl2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">u0</span><span class="p">,</span><span class="n">u1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-2"></a>                           <span class="c"># à chaque étape k :</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-3"></a>    <span class="n">u</span> <span class="o">=</span> <span class="n">u0</span>                 <span class="c"># u joue le rôle de u_k</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-4"></a>    <span class="n">v</span> <span class="o">=</span> <span class="n">u1</span>                 <span class="c"># v joue le rôle de u_{k+1}</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-5"></a>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-6"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span> <span class="c"># pour avoir u_n, on fait n-1 calculs</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-7"></a>                           <span class="c"># successifs</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-8"></a>        <span class="n">w</span> <span class="o">=</span> <span class="o">-</span><span class="n">a</span><span class="o">*</span><span class="n">v</span> <span class="o">-</span> <span class="n">b</span><span class="o">*</span><span class="n">u</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-9"></a>        <span class="n">v</span><span class="p">,</span><span class="n">u</span> <span class="o">=</span> <span class="n">w</span><span class="p">,</span><span class="n">v</span>          <span class="c"># le nouveau v est le w calculé</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-10"></a>                           <span class="c"># le nouveau u est le v d'avant !</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-11"></a>    <span class="k">if</span> <span class="n">n</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-12"></a>        <span class="k">return</span> <span class="n">u</span>           <span class="c"># le programme doit renvoyer u0</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-13"></a>    <span class="k">else</span><span class="p">:</span>                  <span class="c"># si l'utilisateur rentre n = 0</span>
+<a name="rest_code_b1667259bce24ee8883c849cc10a0437-14"></a>        <span class="k">return</span> <span class="n">v</span>
+</pre>
+<pre class="code python"><a name="rest_code_8b71c71b65444a69a5bfda58d15d3a14-1"></a><span class="n">srl2</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="c"># C'est la suite de Fibonnaci</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+</div>
+<div class="section" id="les-tuples-ne-sont-pas-mutables">
+<h3><a class="toc-backref" href=".#id7">Les tuples ne sont pas mutables</a></h3>
+<p>Est-ce que je peux changer la valeur d'un item dans un tuple ? Je
+reprends <span class="math">\(\mathtt{t_1}\)</span> :</p>
+<pre class="code python"><a name="rest_code_e89552ea6754448f929ed7dedd23c935-1"></a><span class="n">t1</span>
+</pre>
+<pre class="literal-block">
+('toto', 25, (1, 2.5))
+</pre>
+<pre class="code python"><a name="rest_code_dcef7313c95c4b7cbdc7d42b29ab94c1-1"></a><span class="n">t1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span> <span class="c"># je veux remplacer le 25 par un 30</span>
+</pre>
+<pre class="literal-block">
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&lt;ipython-input-23-3383dce1d4f3&gt; in &lt;module&gt;()
+----&gt; 1 t1[1] = 30 # je veux remplacer le 25 par un 30
+
+
+TypeError: 'tuple' object does not support item assignment
+</pre>
+<p>En français : on ne peut pas faire d'affectation d'item dans un tuple.
+Morale : &gt; 1. ** Vous ne pouvez pas modifier un tuple : on dit que les
+tuples ne sont pas mutables. ** &gt; &gt; 2. ** De même, les chaînes de
+caractères ne sont pas mutables. **</p>
+</div>
+</div>
+<div class="section" id="un-autre-type-voisin-des-tuples-les-listes">
+<h2><a class="toc-backref" href=".#id8">Un autre type voisin des tuples : les listes.</a></h2>
+<p>Exactement la même chose que les tuples, mais elles ont la propriété
+d'être mutables. Du point de vue de la construction d'une liste, les
+listes sont délimitées par des crochets.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%">
+<col width="31%">
+<col width="31%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head"> </th>
+<th class="head">Tuples en Python</th>
+<th class="head">Listes en Python</th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>délimiteurs</td>
+<td>( )</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>séparateur des items</td>
+<td>,</td>
+<td>,</td>
+</tr>
+<tr>
+<td>mutable</td>
+<td>non</td>
+<td>oui</td>
+</tr>
+</tbody>
+</table>
+<p>Ces deux types d'objets peuvent servir* suivant les besoins* à
+représenter des <span class="math">\(p\)</span>-listes mathématiques.</p>
+<pre class="code python"><a name="rest_code_5b07ee985205459c91b10d3db2bfca30-1"></a><span class="n">t2</span> <span class="o">=</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">17</span><span class="p">)</span> <span class="c"># un tuple</span>
+</pre>
+<pre class="code python"><a name="rest_code_fc5f0fa8fa4b45bca0c4021cd4ddf62c-1"></a><span class="n">L2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">22</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">17</span><span class="p">]</span> <span class="c"># ce qui lui correspondrait en termes de listes</span>
+</pre>
+<pre class="code python"><a name="rest_code_03da335aa6b148aebbebef2421093db1-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">L2</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+list
+</pre>
+<pre class="code python"><a name="rest_code_b3d96ca9d38f4331941cfd878e29cb75-1"></a><span class="nb">len</span><span class="p">(</span><span class="n">L2</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+5
+</pre>
+<pre class="code python"><a name="rest_code_91f61d23feed4f11bdaa0bff167405b0-1"></a><span class="n">L2</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c"># Le deuxième élément de L2 en partant de la fin</span>
+</pre>
+<pre class="literal-block">
+34
+</pre>
+<pre class="code python"><a name="rest_code_e558efd03d434a88a8fd9533d184484b-1"></a><span class="n">L2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10000000</span> <span class="c"># Ma liste a muté !</span>
+</pre>
+<pre class="code python"><a name="rest_code_806b54b1c9fd4221b0223265eabc838c-1"></a><span class="n">L2</span>
+</pre>
+<pre class="literal-block">
+[10000000, 22, 11, 34, 17]
+</pre>
+<p>Vous voyez bien que <span class="math">\(\mathtt{L2}\)</span> est mutable, contrairement à
+<span class="math">\(\mathtt{t2}\)</span>.</p>
+<p>** Remarque ** On a déjà rencontré des listes :</p>
+<pre class="code python"><a name="rest_code_40869f5a4f464613b7cb25f185c23120-1"></a><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+</pre>
+<pre class="code python"><a name="rest_code_7d000f766d62488dab9ca17f529b61b9-1"></a><span class="nb">type</span><span class="p">(</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+</pre>
+<pre class="literal-block">
+list
+</pre>
+<p><strong>Remarque.</strong></p>
+<ol class="arabic simple">
+<li>En <strong>Python 3</strong>, <span class="math">\(\mathtt{range}\)</span> n'est plus de type <em>liste</em>,
+mais de type <em>range</em> (type à part entière).</li>
+<li>On verra plus tard le problème des clones et des siamois pour les
+listes.</li>
+</ol>
+<p>Un autre exemple de liste en lien avec le cours de combinatoire, pour
+vous rappeler qu'un mot n'est qu'une liste de lettres :</p>
+<pre class="code python"><a name="rest_code_c260711370ae4e47b6688e5faa5175d8-1"></a><span class="n">L3</span> <span class="o">=</span> <span class="p">[</span><span class="s">'a'</span><span class="p">,</span><span class="s">'t'</span><span class="p">,</span><span class="s">'t'</span><span class="p">,</span><span class="s">'e'</span><span class="p">,</span><span class="s">'n'</span><span class="p">,</span><span class="s">'t'</span><span class="p">,</span><span class="s">'i'</span><span class="p">,</span><span class="s">'o'</span><span class="p">,</span><span class="s">'n'</span><span class="p">]</span>
+<a name="rest_code_c260711370ae4e47b6688e5faa5175d8-2"></a><span class="n">L3</span>
+</pre>
+<pre class="literal-block">
+['a', 't', 't', 'e', 'n', 't', 'i', 'o', 'n']
+</pre>
+<p>Cela vous évoque sans difficultés le mot : <strong>attention</strong></p>
+<p><strong>Remarque.</strong></p>
+<ol class="arabic simple">
+<li>Vous pouvez générer la liste des mots appraissant dans une phrase
+avec <span class="math">\(\mathtt{split( )}\)</span>
+</li>
+<li>inversement, vous pouvez générer la chaîne de caractères avec la
+liste de ses lettres par <span class="math">\(\mathtt{join( )}\)</span>
+</li>
+</ol>
+<pre class="code python"><a name="rest_code_3987a299e5584ed8afe4a817e3c9ba9a-1"></a><span class="s">'a t t e n t i o n'</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</pre>
+<pre class="literal-block">
+['a', 't', 't', 'e', 'n', 't', 'i', 'o', 'n']
+</pre>
+<pre class="code python"><a name="rest_code_b76a045b0b924345a2b85cbee603ddf7-1"></a><span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">L3</span><span class="p">)</span> <span class="c"># je relie tous les caractères de la liste</span>
+<a name="rest_code_b76a045b0b924345a2b85cbee603ddf7-2"></a>            <span class="c"># par le caractère ''.</span>
+</pre>
+<pre class="literal-block">
+'attention'
+</pre>
+<pre class="code python"><a name="rest_code_435ba81e82ac4929a6b0f26760c12069-1"></a><span class="s">'a t t e n t i o n'</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</pre>
+<pre class="literal-block">
+['a', 't', 't', 'e', 'n', 't', 'i', 'o', 'n']
+</pre>
+</div>
+<div class="section" id="recherche-dans-les-chaines-de-caracteres">
+<h2><a class="toc-backref" href=".#id9">Recherche dans les chaînes de caractères</a></h2>
+<div class="section" id="formulation-du-probleme">
+<h3><a class="toc-backref" href=".#id10">Formulation du problème</a></h3>
+<p>Donnée : une chaîne de caractères.</p>
+<blockquote>
+<strong>Problème 1.</strong> je veux savoir si ma chaîne contient un caractère
+donné.</blockquote>
+<p>Ce dernier problème est un cas particulier du problème plus général
+suivant :</p>
+<blockquote>
+<strong>Problème 2.</strong> étant donné un tuple (resp. une liste), est-ce qu'un
+objet donné figure dans ce tuple (resp. cette liste) ?</blockquote>
+</div>
+<div class="section" id="differentes-approches-pour-repondre">
+<h3><a class="toc-backref" href=".#id11">Différentes approches pour répondre</a></h3>
+<p><strong>Réponse au problème 1.</strong> Il y a plusieurs approches à ce problème,
+donc on peut proposer différentes solutions. Mettons que le cherche le
+caractère <strong>k</strong> dans une chaîne :</p>
+<pre class="code python"><a name="rest_code_524274d96e7045d888ed943abb110376-1"></a><span class="n">magik</span> <span class="o">=</span> <span class="s">'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg'</span> <span class="c"># Définissons une chaîne</span>
+</pre>
+<p><strong>Approche 1.</strong> J'utilise une fonction prédéfinie de <strong>Python</strong> :</p>
+<pre class="code python"><a name="rest_code_1a6c597d56054268b220ed99ead77c3a-1"></a><span class="s">'k'</span> <span class="ow">in</span> <span class="n">magik</span>  <span class="c"># ne pas confondre nom de variable et contenu</span>
+</pre>
+<pre class="literal-block">
+False
+</pre>
+<p>** Approche 2. ** Je parcours systématiquement toutes les lettres du
+mot (j'ai donc une boucle <strong>for</strong>). J'initialise un compteur à
+<span class="math">\(\mathtt{0}\)</span> et je l'incrémente chaque fois que je rencontre le
+caractère cherché. Le caractère est dans la chaîne si et seulement si à
+la sortie de la boucle le compteur a une valeur non nulle.</p>
+<pre class="code python"><a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-4"></a><span class="sd">    k : un caractère (type str)</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-5"></a><span class="sd">    fonction qui retourne 1 si &lt;k&gt; est dans &lt;mot&gt;,</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-6"></a><span class="sd">    et 0 sinon.</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-7"></a><span class="sd">    """</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-8"></a>    <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-9"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span>                 <span class="c"># on peut faire des boucles sur</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-10"></a>                                  <span class="c"># les caractères d'une chaîne :</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-11"></a>            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>   <span class="c"># k prend successivement comme</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-12"></a>                                 <span class="c"># valeur chaque caractère se trouvant</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-13"></a>                <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>   <span class="c"># dans la chaîne &lt;mot&gt;</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-14"></a>    <span class="k">if</span> <span class="n">compteur</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-15"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-16"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_fa6e3892ea8a4d5baf1a386ccbf03569-17"></a>        <span class="k">return</span> <span class="mi">0</span>
+</pre>
+<pre class="code python"><a name="rest_code_9f2eca69fca547dba3328c3497ce1c07-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="n">magik</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span> <span class="c"># ne pas confondre nom de variable et contenu</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<pre class="code python"><a name="rest_code_3946edec18a24b77a7980125e0a10c7f-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'goldorak'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<pre class="code python"><a name="rest_code_452dc506bf964d0fb5d76c2d8abb3b47-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'tchoupi'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<pre class="code python"><a name="rest_code_40115aa534dd4dfdba9eb6c1960f185c-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'goldorakkkkkkkkkkkk'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<p>** Approche 3. ** Je parcours les lettres du mot et je m'arrête
+quand j'ai soit rencontré le caractère que je cherche soit quand j'ai
+parcouru toutes lettres. (j'ai donc une boucle <strong>while</strong>).</p>
+<pre class="code python"><a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine3</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-4"></a><span class="sd">    caractere : un caractère (type str)</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;, et 0 sinon,</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-6"></a><span class="sd">    en suivant l'approche 3.</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-7"></a><span class="sd">    """</span>
+<a name="rest_code_8a23434e8c4f486ca70d761128f9cf92-8"></a>    <span class="c"># Complétez !</span>
+</pre>
+</div>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../as-tu-remarque-cette-nouvelle-icone/" rel="prev" title="Avez-vous remarqué cette nouvelle icône ?">Article précédent</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/",
+        disqus_title="Informatique : Le\u00e7on 6. Tuples  - Listes",
+        disqus_identifier="cache/posts/Lecon6.Tuples.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2015  <a href="mailto:patel.bcpst@gmail.com">M. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/animathions"> <i class="icon-youtube-play"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

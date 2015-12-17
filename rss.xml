@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 15 Dec 2015 20:58:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Avez-vous remarqué cette nouvelle icône ?</title><link>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des &lt;em&gt;animathions&lt;/em&gt;. C'est quoi une
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Thu, 17 Dec 2015 21:52:06 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#tuples" id="id1"&gt;Tuples&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id2"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#premiers-exemples" id="id3"&gt;Premiers exemples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#nombre-d-items-d-un-tuple" id="id4"&gt;Nombre d'items d'un tuple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#acces-aux-items-d-un-tuple" id="id5"&gt;Accès aux items d'un tuple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#une-utilisation-interessante-des-tuples-echange-de-variables" id="id6"&gt;Une utilisation intéressante des tuples : échange de variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id7"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id8"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#recherche-dans-les-chaines-de-caracteres" id="id9"&gt;Recherche dans les chaînes de caractères&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#formulation-du-probleme" id="id10"&gt;Formulation du problème&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#differentes-approches-pour-repondre" id="id11"&gt;Différentes approches pour répondre&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="tuples"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#id1"&gt;Tuples&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="c-est-quoi-un-tuple"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#id2"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/h3&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;C'est un nouveau type d'objets. Il correspond en maths, aux
+&lt;span class="math"&gt;\(p\)&lt;/span&gt;-listes ou &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplets : suites ordonnées de &lt;span class="math"&gt;\(p\)&lt;/span&gt;
+objets.&lt;/li&gt;
+&lt;li&gt;En &lt;strong&gt;Python&lt;/strong&gt;, les tuples sont délimités, comme en maths, par des
+parenthèses.&lt;/li&gt;
+&lt;li&gt;En maths, les éléments d'un &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet s'appellent les
+&lt;em&gt;coordonnées&lt;/em&gt; ou les &lt;em&gt;composantes&lt;/em&gt; du &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet. En
+&lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
+tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Avez-vous remarqué cette nouvelle icône ?</title><link>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</link><dc:creator>M. Patel</dc:creator><description>&lt;p&gt;Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des &lt;em&gt;animathions&lt;/em&gt;. C'est quoi une
 &lt;em&gt;animathion&lt;/em&gt; ? Allez voir !&lt;/p&gt;</description><category>animathions</category><category>video</category><guid>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</guid><pubDate>Mon, 14 Dec 2015 11:59:21 GMT</pubDate></item><item><title>Des biomorphes dans le plan complexe</title><link>http://yaspat.github.io/blog/posts/biomorphes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
 &lt;em&gt;Sometimes I consider myself as a fisherman. Computer programs and
 ideas are my hooks, rods and reels. Computer pictures are the
@@ -334,11 +369,4 @@ de vue incroyables. Je vais prendre un exemple qui peut paraître blasant
 &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/eq2deg/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fractales</category><category>mandelbrot</category><category>suites</category><guid>http://yaspat.github.io/blog/posts/eq2deg/</guid><pubDate>Sun, 18 Oct 2015 11:39:19 GMT</pubDate></item><item><title>Méditations pythoniques pour typo-déficients</title><link>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/meditations-typo-deficient/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 2 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fonction</category><category>type</category><guid>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</guid><pubDate>Thu, 08 Oct 2015 21:59:34 GMT</pubDate></item><item><title>Notes de Darwin</title><link>http://yaspat.github.io/blog/posts/notes-de-darwin/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Voici une photo des notes de Darwin dans sa réflexion sur les pros et les cons sur le mariage (&lt;em&gt;cliquer pour agrandir&lt;/em&gt;) :&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/notes-de-darwin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>darwin</category><guid>http://yaspat.github.io/blog/posts/notes-de-darwin/</guid><pubDate>Sat, 03 Oct 2015 09:20:34 GMT</pubDate></item><item><title>Calcul de primitives en Python !</title><link>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Un des points forts de &lt;code&gt;Python&lt;/code&gt; est l'existence de nombreux modules qui permettent de faire à peu près ce qu'on veut. Ce qui veut dire en particulier qu'avant de chercher à programmer le bidule de vos rêves, regardez si quelqu'un ne l'a pas fait avant vous.&lt;/p&gt;
-&lt;p&gt;Par exemple, &lt;code&gt;Python&lt;/code&gt; possède un module permettant de faire du calcul symbolique (c'est-à-dire avec des variables, comme vous le faites à la main!), c'est le module &lt;code&gt;sympy&lt;/code&gt;. Et &lt;code&gt;sympy&lt;/code&gt;, c'est sympa. Vous voulez voir ?&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>analyse</category><category>primitives</category><category>python</category><guid>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</guid><pubDate>Tue, 29 Sep 2015 20:05:19 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/notes-de-darwin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>darwin</category><guid>http://yaspat.github.io/blog/posts/notes-de-darwin/</guid><pubDate>Sat, 03 Oct 2015 09:20:34 GMT</pubDate></item></channel></rss>
