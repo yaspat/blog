@@ -69,6 +69,11 @@ Sujets de DM
    a. `Sujet  du DM9 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM09/DM09.pdf>`_
    b. `Corrigé   du DM9 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM09/DM09-Corrige.pdf>`_
 
+#. DM 10 :   Combinatoire. Python  *À rendre le 18/12/15*
+
+   a. `Sujet  du DM10 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM10/DM10.pdf>`_
+   b. Corrigé   du DM10
+
 Sujets de DS
 ============
 
