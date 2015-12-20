@@ -64,6 +64,7 @@ Les programmes de colles de maths
 
 #.  `Programme de la quinzaine 6 (7déc  - 18 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/06-Systemes_Boucles.pdf>`_. Thème : Systèmes linéaires et boucles en Python.
 
+#.  `Programme de la quinzaine 7 (4jan  - 15jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/07-Combinatoire.pdf>`_. Thème : méthodes combinatoires, vocabulaire des applications, boucles, listes.
 
 Les salles de colles de mathématiques
 =====================================
