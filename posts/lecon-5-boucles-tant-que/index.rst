@@ -11,6 +11,11 @@ n'est pas connu à l'avance, ce qui fait que la sortie de boucle est
 soumise à un* **test booléen**. Cette condition constitue le *test
 d'arrêt* de la boucle.
 
+
+.. raw:: html    
+
+	 <!-- TEASER_END-->
+
 **Exemple 1.** Soit :math:`M` un réel donné, et :math:`(S_n)` une suite
 tendant vers :math:`+\infty`. Trouver le premier terme parmi
 :math:`S_0`, ..., :math:`S_{500}` qui est strictement plus grand que
