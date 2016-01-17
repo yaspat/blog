@@ -66,6 +66,8 @@ Les programmes de colles de maths
 
 #.  `Programme de la quinzaine 7 (4jan  - 15jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/07-Combinatoire.pdf>`_. Thème : méthodes combinatoires, vocabulaire des applications, boucles, listes.
 
+#.  `Programme de la quinzaine 8 (18jan  - 29jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/08-Matrices.pdf>`_. Thème : calcul matriciel.
+
 Les salles de colles de mathématiques
 =====================================
 
