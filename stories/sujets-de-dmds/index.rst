@@ -72,13 +72,27 @@ Sujets de DM
 #. DM 10 :   Combinatoire. Python  *À rendre le 18/12/15*
 
    a. `Sujet  du DM10 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM10/DM10.pdf>`_
-   b. Corrigé   du DM10
+   b. `Corrigé   du DM10 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM10/Corrige-DM10.pdf>`_
+
+#. DM 11 :   Matrices. Combinatoire.   *À rendre le 15/01/16*
+
+   a. `Sujet  du DM11 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM11/DM11.pdf>`_
+   b. Corrigé   du DM11
+
+#. DM 12 :   Matrices (facultatif)   *À rendre le 12/01/16*
+
+   a. `Sujet  du DM12 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM12/DM12.pdf>`_
+   b. Corrigé   du DM12
 
 Sujets de DS
 ============
 
 1. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
 2. `Sujet du DS2 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS02/DS02.pdf>`_
+
+2. `Sujet du DS3 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS03/DS03.pdf>`_
+
+
 
 Corrigés des DS
 ===============

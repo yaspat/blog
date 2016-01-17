@@ -15,7 +15,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/boucle.xml</loc>
-  <lastmod>2015-12-15T20:58:00Z</lastmod>
+  <lastmod>2015-12-23T11:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/boucles.xml</loc>
@@ -27,7 +27,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2015-12-17T21:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/champ-de-vecteurs.xml</loc>
@@ -83,7 +83,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/informatique.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2015-12-23T11:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/ipython-notebook.xml</loc>
@@ -95,7 +95,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/listes.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2015-12-17T21:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
@@ -111,7 +111,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2015-12-23T11:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -131,7 +131,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/syracuse.xml</loc>
-  <lastmod>2015-12-15T20:58:00Z</lastmod>
+  <lastmod>2015-12-23T11:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
@@ -139,7 +139,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/tuples.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2015-12-17T21:52:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/type.xml</loc>
@@ -155,26 +155,26 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/while.xml</loc>
-  <lastmod>2015-12-15T20:58:00Z</lastmod>
+  <lastmod>2015-12-23T11:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/rss.xml</loc>
-  <lastmod>2015-12-14T11:53:00Z</lastmod>
+  <lastmod>2016-01-08T10:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/demo/rss.xml</loc>
-  <lastmod>2015-12-14T11:53:00Z</lastmod>
+  <lastmod>2016-01-08T10:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/rss.xml</loc>
-  <lastmod>2015-12-14T11:53:00Z</lastmod>
+  <lastmod>2016-01-08T10:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2015-12-23T11:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2015-12-17T21:48:00Z</lastmod>
+  <lastmod>2016-01-08T10:47:00Z</lastmod>
  </sitemap>
 </sitemapindex>
