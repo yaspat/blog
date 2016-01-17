@@ -77,7 +77,7 @@ Sujets de DM
 #. DM 11 :   Matrices. Combinatoire.   *À rendre le 15/01/16*
 
    a. `Sujet  du DM11 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM11/DM11.pdf>`_
-   b. Corrigé   du DM11
+   b. `Corrigé  du DM11 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM11/Corrige_DM11.pdf>`_
 
 #. DM 12 :   Matrices (facultatif)   *À rendre le 12/01/16*
 
