@@ -89,8 +89,7 @@ Sujets de DS
 
 1. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
 2. `Sujet du DS2 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS02/DS02.pdf>`_
-
-2. `Sujet du DS3 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS03/DS03.pdf>`_
+3. `Sujet du DS3 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS03/DS03.pdf>`_
 
 
 
