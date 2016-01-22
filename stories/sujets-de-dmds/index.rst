@@ -79,10 +79,16 @@ Sujets de DM
    a. `Sujet  du DM11 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM11/DM11.pdf>`_
    b. `Corrigé  du DM11 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM11/Corrige_DM11.pdf>`_
 
-#. DM 12 :   Matrices (facultatif)   *À rendre le 12/01/16*
+#. DM 12 :   Matrices (facultatif)   *À rendre le 22/01/16*
 
    a. `Sujet  du DM12 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM12/DM12.pdf>`_
    b. Corrigé   du DM12
+
+#. DM 13 :   Polynômes - Python  (facultatif)   *À rendre le 29/01/16*
+
+   a. `Sujet  du DM13 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM13/DM13.pdf>`_
+   b. Corrigé   du DM13
+
 
 Sujets de DS
 ============
