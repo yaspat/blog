@@ -8,14 +8,14 @@
 .. type: text
 
 
-Voici une photo des notes de Darwin dans sa réflexion sur les pros et les cons sur le mariage (*cliquer pour agrandir*) :
+Voici une photo des notes de Darwin dans sa réflexion sur les pros et les cons sur le mariage  :
 
 
 .. raw:: html
 
 	  <!-- TEASER_END -->
 
-.. thumbnail:: ../../images/Carnet-Darwin.png
+.. image:: ../../images/Carnet-Darwin.png
    :align: center 
   
 

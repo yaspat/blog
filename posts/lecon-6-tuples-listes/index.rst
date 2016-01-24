@@ -5,16 +5,16 @@
 .. link: 
 .. description: 
 .. type: text
+.. category: informatique
 
 .. class:: alert alert-info pull-right
 
 .. contents::
 
-Tuples
-------
+
 
 C'est quoi un tuple ?
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 1. C'est un nouveau type d'objets. Il correspond en maths, aux
    :math:`p`-listes ou :math:`p`-upplets : suites ordonnées de :math:`p`
@@ -29,9 +29,10 @@ C'est quoi un tuple ?
    tuple. Ils sont séparés par des virgules, comme en maths.
 
 
-.. raw:: html
+.. raw:: html    
 
-   <!--TEASER_END -->
+	 <!-- TEASER_END-->
+
 
 +----------------------------------------------+------------------------------------------+
 | Maths                                        | Analogue **Python**                      |
@@ -94,8 +95,11 @@ caractères et flottants, ou même mettre un tuple dans un tuple.
 
 
 Le tuple :math:`\mathtt{t_1}` est un tuple constitué de trois items qui
-sont, une chaîne de caractères, un entier, et un tuple lui-même
-constitué d'un entier et d'un flottant.
+sont :
+
+1. une chaîne de caractères
+2. un entier.
+3. un tuple, lui-même constitué d'un entier et d'un flottant.
 
 Nombre d'items d'un tuple
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -342,13 +346,14 @@ Soit :math:`a,b` deux réels donnés et :math:`(u_n)` la suite définie par
 
 .. math::
 
-   \left\{ \begin{array}{rl}
+   (R) \qquad \left\{ \begin{array}{rl}
                u_0,u_1  &\text{donnés} \\
-              \forall n &\in \mathbf{N} \quad  u_{n+2}+au_{n+1}+bu_n=0.
+              \forall n\in \mathbf{N} &   u_{n+2}+au_{n+1}+bu_n=0.
                   \end{array}\right.
 
 1. Créez une fonction :math:`\texttt{def srl2(a,b,u0,u1,n):}` qui
-   retourne en sortie le terme :math:`u_n` de la suite précédente.
+   retourne en sortie le terme :math:`u_n` de la suite définie par la
+   relation :math:`(R)`.
 
 2. Pour vérifier que votre fonction est correctement programée, vérifiez
    que :math:`\texttt{ srl2(-1,-1,0,1,6)}` renvoie :math:`\texttt{8}`.
@@ -373,22 +378,23 @@ Soit :math:`a,b` deux réels donnés et :math:`(u_n)` la suite définie par
 .. code:: python
 
     
-    srl2(-1,-1,0,1,2) # C'est la suite de Fibonnaci
+    srl2(-1,-1,0,1,6) # C'est la suite de Fibonnaci: u0 = 0, u1 = 1, on demande u6
+
 
 
 
 
 .. parsed-literal::
 
-    1
+    8
 
 
 
 Les tuples ne sont pas mutables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Est-ce que je peux changer la valeur d'un item dans un tuple ? Je
-reprends :math:`\mathtt{t_1}` :
+**Question naturelle.** Est-ce que je peux changer la valeur d'un item
+dans un tuple ? Regaronds ! Je reprends le tuple :math:`\mathtt{t_1}` :
 
 .. code:: python
 
@@ -403,9 +409,12 @@ reprends :math:`\mathtt{t_1}` :
 
 
 
+Je vais par exemple essayer de remplacer le :math:`\texttt{25}` par un
+:math:`\texttt{30}` :
+
 .. code:: python
 
-    t1[1] = 30 # je veux remplacer le 25 par un 30
+    t1[1] = 30 # je  remplace le 25 par un 30
 
 
 ::
@@ -413,26 +422,27 @@ reprends :math:`\mathtt{t_1}` :
 
     ---------------------------------------------------------------------------
 
-    TypeError                                 Traceback (most recent call last)
+    NameError                                 Traceback (most recent call last)
 
-    <ipython-input-23-3383dce1d4f3> in <module>()
-    ----> 1 t1[1] = 30 # je veux remplacer le 25 par un 30
+    <ipython-input-1-3f7b83bf835b> in <module>()
+    ----> 1 t1[1] = 30 # je  remplace le 25 par un 30
     
 
-    TypeError: 'tuple' object does not support item assignment
+    NameError: name 't1' is not defined
 
 
-En français : on ne peut pas faire d'affectation d'item dans un tuple.
-Morale : > 1. \*\* Vous ne pouvez pas modifier un tuple : on dit que les
-tuples ne sont pas mutables. ** > > 2. ** De même, les chaînes de
-caractères ne sont pas mutables. \*\*
+Le message d'erreur me dit (si on traduit la fin en français) : on ne
+peut pas faire d'affectation d'item dans un tuple. Morale : > 1. \*\*
+Vous ne pouvez pas modifier un tuple : on dit que les tuples ne sont pas
+mutables. ** > > 2. ** De même, les chaînes de caractères ne sont pas
+mutables. \*\*
 
 Un autre type voisin des tuples : les listes.
 ---------------------------------------------
 
-Exactement la même chose que les tuples, mais elles ont la propriété
-d'être mutables. Du point de vue de la construction d'une liste, les
-listes sont délimitées par des crochets.
+C'est exactement la même chose que les tuples, mais les listes, ont le
+bon goût d'être mutables. Du point de vue de la construction d'une
+liste, les listes sont délimitées par des crochets.
 
 +------------------------+--------------------+--------------------+
 |                        | Tuples en Python   | Listes en Python   |
@@ -447,6 +457,9 @@ listes sont délimitées par des crochets.
 Ces deux types d'objets peuvent servir\* suivant les besoins\* à
 représenter des :math:`p`-listes mathématiques.
 
+Exemple
+~~~~~~~
+
 .. code:: python
 
     t2 = (7,22,11,34,17) # un tuple
@@ -454,6 +467,8 @@ représenter des :math:`p`-listes mathématiques.
 .. code:: python
 
     L2 = [7,22,11,34,17] # ce qui lui correspondrait en termes de listes
+
+Regardons le type :
 
 .. code:: python
 
@@ -466,7 +481,11 @@ représenter des :math:`p`-listes mathématiques.
 
     list
 
+Opérations
+~~~~~~~~~~
 
+La plupart des opérations vues sur les tuples ou chaînes de caractères
+s'appliquent :
 
 .. code:: python
 
@@ -493,10 +512,16 @@ représenter des :math:`p`-listes mathématiques.
     34
 
 
+Les listes sont mutables
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Mutons notre liste en modifiant un coefficient :
 
 .. code:: python
 
-    L2[0] = 10000000 # Ma liste a muté !
+    L2[0] = 10000000 #  Pas de message d'erreur : ma liste a muté !
+
+Vérifions :
 
 .. code:: python
 
@@ -549,12 +574,16 @@ Vous voyez bien que :math:`\mathtt{L2}` est mutable, contrairement à
 2. On verra plus tard le problème des clones et des siamois pour les
    listes.
 
+Petite digression sur les mots et les listes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Un autre exemple de liste en lien avec le cours de combinatoire, pour
-vous rappeler qu'un mot n'est qu'une liste de lettres :
+vous rappeler qu'un mot n'est qu'une liste de lettres, et pourquoi on
+les identifie dans les raisonnement combinatoires :
 
 .. code:: python
 
-    L3 = ['a','t','t','e','n','t','i','o','n']
+    L3 = ['a','t','t','e','n','t','i','o','n'] # je crée une liste de lettres
     L3
 
 
@@ -578,7 +607,8 @@ Cela vous évoque sans difficultés le mot : **attention**
 
 .. code:: python
 
-    'a t t e n t i o n'.split()
+    'a t t e n t i o n'.split() # toutes les séquences séparées par des espaces 
+                                # sont splittés et consignées dans une liste 
 
 
 
@@ -588,6 +618,9 @@ Cela vous évoque sans difficultés le mot : **attention**
     ['a', 't', 't', 'e', 'n', 't', 'i', 'o', 'n']
 
 
+
+Inversement, dans une liste de chaînes de caractères, je peux joindre
+les chaînes par la séquence que je veux.
 
 .. code:: python
 
@@ -605,151 +638,13 @@ Cela vous évoque sans difficultés le mot : **attention**
 
 .. code:: python
 
-    'a t t e n t i o n'.split()
+    '----'.join(L3)  # pourquoi pas ainsi
 
 
 
 
 .. parsed-literal::
 
-    ['a', 't', 't', 'e', 'n', 't', 'i', 'o', 'n']
+    'a----t----t----e----n----t----i----o----n'
 
 
-
-Recherche dans les chaînes de caractères
-----------------------------------------
-
-Formulation du problème
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Donnée : une chaîne de caractères.
-
-    **Problème 1.** je veux savoir si ma chaîne contient un caractère
-    donné.
-
-Ce dernier problème est un cas particulier du problème plus général
-suivant :
-
-    **Problème 2.** étant donné un tuple (resp. une liste), est-ce qu'un
-    objet donné figure dans ce tuple (resp. cette liste) ?
-
-Différentes approches pour répondre
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-**Réponse au problème 1.** Il y a plusieurs approches à ce problème,
-donc on peut proposer différentes solutions. Mettons que le cherche le
-caractère **k** dans une chaîne :
-
-.. code:: python
-
-    magik = 'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg' # Définissons une chaîne
-
-**Approche 1.** J'utilise une fonction prédéfinie de **Python** :
-
-.. code:: python
-
-    'k' in magik  # ne pas confondre nom de variable et contenu
-
-
-
-
-.. parsed-literal::
-
-    False
-
-
-
-\*\* Approche 2. \*\* Je parcours systématiquement toutes les lettres du
-mot (j'ai donc une boucle **for**). J'initialise un compteur à
-:math:`\mathtt{0}` et je l'incrémente chaque fois que je rencontre le
-caractère cherché. Le caractère est dans la chaîne si et seulement si à
-la sortie de la boucle le compteur a une valeur non nulle.
-
-.. code:: python
-
-    def est_dans_chaine(mot, caractere):
-        """ 
-        mot : une chaine de caractère (type str)
-        k : un caractère (type str)
-        fonction qui retourne 1 si <k> est dans <mot>,
-        et 0 sinon.     
-        """
-        compteur = 0
-        for k in mot:                 # on peut faire des boucles sur 
-                                      # les caractères d'une chaîne :
-                if k == caractere:   # k prend successivement comme
-                                     # valeur chaque caractère se trouvant
-                    compteur += 1   # dans la chaîne <mot>
-        if compteur > 0:
-            return 1
-        else:
-            return 0 
-
-.. code:: python
-
-    est_dans_chaine(magik, 'k') # ne pas confondre nom de variable et contenu
-
-
-
-
-.. parsed-literal::
-
-    0
-
-
-
-.. code:: python
-
-    est_dans_chaine('goldorak', 'k')
-
-
-
-
-.. parsed-literal::
-
-    1
-
-
-
-.. code:: python
-
-    est_dans_chaine('tchoupi', 'k')
-
-
-
-
-.. parsed-literal::
-
-    0
-
-
-
-.. code:: python
-
-    est_dans_chaine('goldorakkkkkkkkkkkk', 'k')
-
-
-
-
-.. parsed-literal::
-
-    1
-
-
-
-\*\* Approche 3. \*\* Je parcours les lettres du mot et je m'arrête
-quand j'ai soit rencontré le caractère que je cherche soit quand j'ai
-parcouru toutes lettres. (j'ai donc une boucle **while**).
-
-.. code:: python
-
-    def est_dans_chaine3(mot, caractere):
-        """ 
-        mot : une chaine de caractère (type str)
-        caractere : un caractère (type str)
-        fonction qui retourne 1 si <caractere> est dans <mot>, et 0 sinon,
-        en suivant l'approche 3.
-        """
-        # Complétez ! 
