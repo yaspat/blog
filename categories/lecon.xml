@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (leçon)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/lecon.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 16 Nov 2015 14:09:41 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes) (leçon)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/lecon.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 17:45:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#formulation-du-probleme" id="id1"&gt;Formulation du problème&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#des-solutions-differentes" id="id2"&gt;Des solutions différentes&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#approche-1" id="id3"&gt;Approche 1.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#approche-2" id="id4"&gt;Approche 2.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#approche-3" id="id5"&gt;Approche 3.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#quelques-mots-sur-l-interruption-de-boucle" id="id6"&gt;Quelques mots sur l'interruption de boucle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="formulation-du-probleme"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id1"&gt;Formulation du problème&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Donnée : une chaîne de caractères.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Problème 1.&lt;/strong&gt; je veux savoir si ma chaîne contient un caractère
+donné.&lt;/blockquote&gt;
+&lt;p&gt;Ce dernier problème est un cas particulier du problème plus général
+suivant :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;strong&gt;Problème 2.&lt;/strong&gt; étant donné un tuple (resp. une liste), est-ce qu'un
+objet donné figure dans ce tuple (resp. cette liste) ?&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#premiers-exemples" id="id2"&gt;Premiers exemples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#nombre-d-items-d-un-tuple" id="id3"&gt;Nombre d'items d'un tuple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#acces-aux-items-d-un-tuple" id="id4"&gt;Accès aux items d'un tuple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#une-utilisation-interessante-des-tuples-echange-de-variables" id="id5"&gt;Une utilisation intéressante des tuples : échange de variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes" id="id8"&gt;Petite digression sur les mots et les listes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="c-est-quoi-un-tuple"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;C'est un nouveau type d'objets. Il correspond en maths, aux
+&lt;span class="math"&gt;\(p\)&lt;/span&gt;-listes ou &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplets : suites ordonnées de &lt;span class="math"&gt;\(p\)&lt;/span&gt;
+objets.&lt;/li&gt;
+&lt;li&gt;En &lt;strong&gt;Python&lt;/strong&gt;, les tuples sont délimités, comme en maths, par des
+parenthèses.&lt;/li&gt;
+&lt;li&gt;En maths, les éléments d'un &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet s'appellent les
+&lt;em&gt;coordonnées&lt;/em&gt; ou les &lt;em&gt;composantes&lt;/em&gt; du &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet. En
+&lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
+tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 5. Boucles tant que</title><link>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#principe-de-la-boucle-tant-que" id="id1"&gt;Principe de la boucle tant que&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#trois-recommandations-pour-la-construction-d-une-boucle-tant-que" id="id2"&gt;Trois recommandations pour la construction d'une boucle tant que&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#premier-exercice-d-apres-poly-exemple-5-p-34" id="id3"&gt;Premier exercice (d'après poly exemple 5 p.34)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#la-fameuse-suite-de-syracuse" id="id4"&gt;La fameuse suite de Syracuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#combien-de-temps-dure-le-vol" id="id5"&gt;Combien de temps dure le vol ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#quel-est-le-premier-vol-dont-la-duree-est-111" id="id6"&gt;Quel est le premier vol dont la durée est 111 ?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="principe-de-la-boucle-tant-que"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#id1"&gt;Principe de la boucle tant que&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;les boucles &lt;strong&gt;tant que&lt;/strong&gt; réalisent aussi des processus itératifs.
+Tputefois, à la différence des boucles &lt;strong&gt;pour&lt;/strong&gt;, &lt;em&gt;le nombre d'itérations
+n'est pas connu à l'avance, ce qui fait que la sortie de boucle est
+soumise à un&lt;/em&gt; &lt;strong&gt;test booléen&lt;/strong&gt;. Cette condition constitue le &lt;em&gt;test
+d'arrêt&lt;/em&gt; de la boucle.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>boucle</category><category>informatique</category><category>leçon</category><category>python</category><category>syracuse</category><category>while</category><guid>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</guid><pubDate>Tue, 01 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemples-de-boucles-pour" id="id1"&gt;Exemples de boucles pour&lt;/a&gt;&lt;ul&gt;

@@ -1,7 +1,7 @@
 .. title: Informatique : Leçon 7. Recherche dans une chaîne de caractères  
 .. slug: lecon-7-recherche-dans-chaine
 .. date: 2016-01-24 12:36:59 UTC+01:00
-.. tags: python, informatique,  chaînes de caractères
+.. tags: python, informatique,  chaînes de caractères, leçon
 .. link: 
 .. description: 
 .. type: text
@@ -32,6 +32,13 @@ suivant :
     **Problème 2.** étant donné un tuple (resp. une liste), est-ce qu'un
     objet donné figure dans ce tuple (resp. cette liste) ?
 
+
+.. raw:: html
+
+       <!-- TEASER_END-->
+
+
+
 **Réponse au problème 1.** Il y a plusieurs approches à ce problème,
 donc on peut proposer différentes solutions. Mettons que je cherche le
 caractère **'k'** dans une chaîne :
@@ -39,6 +46,12 @@ caractère **'k'** dans une chaîne :
 .. code:: python
 
     magik = 'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg' # Définissons une chaîne
+
+
+
+
+
+
 
 Des solutions différentes
 -------------------------

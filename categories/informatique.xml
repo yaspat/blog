@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes ) (informatique)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/informatique.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 17:06:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes) (informatique)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/informatique.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 17:45:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#formulation-du-probleme" id="id1"&gt;Formulation du problème&lt;/a&gt;&lt;/li&gt;
@@ -23,202 +23,19 @@ suivant :&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;strong&gt;Problème 2.&lt;/strong&gt; étant donné un tuple (resp. une liste), est-ce qu'un
 objet donné figure dans ce tuple (resp. cette liste) ?&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Réponse au problème 1.&lt;/strong&gt; Il y a plusieurs approches à ce problème,
-donc on peut proposer différentes solutions. Mettons que je cherche le
-caractère &lt;strong&gt;'k'&lt;/strong&gt; dans une chaîne :&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_c9b622fa74f346e3ac4d6a0e2f2aabf5-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;magik&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg'&lt;/span&gt; &lt;span class="c"&gt;# Définissons une chaîne&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="des-solutions-differentes"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id2"&gt;Des solutions différentes&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="section" id="approche-1"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id3"&gt;Approche 1.&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;J'utilise une fonction prédéfinie de &lt;strong&gt;Python&lt;/strong&gt; :&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_7512599d367a4c58bb9c627946004a4a-1"&gt;&lt;/a&gt;&lt;span class="s"&gt;'k'&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;magik&lt;/span&gt;  &lt;span class="c"&gt;# ne pas confondre nom de variable et contenu&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-False
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="approche-2"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id4"&gt;Approche 2.&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Je parcours systématiquement toutes les lettres du mot (j'ai donc une
-boucle &lt;strong&gt;for&lt;/strong&gt;). J'initialise un compteur à &lt;span class="math"&gt;\(\mathtt{0}\)&lt;/span&gt; et je
-l'incrémente chaque fois que je rencontre le caractère cherché. Ainsi, le
-caractère cherché est bien dans la chaîne si et seulement si à la sortie de la boucle
-le compteur a une valeur non nulle.&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;est_dans_chaine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;"""&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    mot : une chaine de caractère (type str)&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-4"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    k : un caractère (type str)&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-5"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    fonction qui retourne 1 si &amp;lt;k&amp;gt; est dans &amp;lt;mot&amp;gt;,&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-6"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    et 0 sinon.&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-7"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    """&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-8"&gt;&lt;/a&gt;    &lt;span class="n"&gt;compteur&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-9"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;                   &lt;span class="c"&gt;# on peut faire des boucles sur&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-10"&gt;&lt;/a&gt;                                    &lt;span class="c"&gt;# les caractères d'une chaîne :&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-11"&gt;&lt;/a&gt;            &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;k&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;     &lt;span class="c"&gt;# k prend successivement comme&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-12"&gt;&lt;/a&gt;                                   &lt;span class="c"&gt;# valeur chaque caractère se trouvant&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-13"&gt;&lt;/a&gt;                &lt;span class="n"&gt;compteur&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;     &lt;span class="c"&gt;# dans la chaîne &amp;lt;mot&amp;gt;&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-14"&gt;&lt;/a&gt;    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;compteur&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-15"&gt;&lt;/a&gt;        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-16"&gt;&lt;/a&gt;    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_068b829ba99448f8bee188a6232dc6dc-17"&gt;&lt;/a&gt;        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_64f9022c4b754437b6a2eb3de110641e-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;magik&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'k'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# ne pas confondre nom de variable et contenu&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-0
-&lt;/pre&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_bdea2bd39c774c4d88229d65d8282203-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'goldorak'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'k'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-1
-&lt;/pre&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_550d335e77954eaebedb25e58df07bfe-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'tchoupi'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'k'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-0
-&lt;/pre&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_a0dc1d4aef0c46cb9bc66b97620ff31e-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'goldorakkkkkkkkkkkk'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'k'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-1
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div class="section" id="approche-3"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id5"&gt;Approche 3.&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Je parcours les lettres du mot et je m'arrête quand j'ai soit rencontré
-le caractère que je cherche soit quand j'ai parcouru toutes lettres.
-(j'ai donc une boucle &lt;strong&gt;while&lt;/strong&gt;).&lt;/p&gt;
-&lt;p&gt;Boucle &lt;strong&gt;while&lt;/strong&gt; : je dois examiner la condition de sortie. On arrête la
-boucle quand :&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;ou bien on a rencontré le caractère cherché.&lt;/li&gt;
-&lt;li&gt;ou bien on a examiné tous les caractères sans succès.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Puisque la condition d'arrêt contient un "ou", la condition &lt;strong&gt;while&lt;/strong&gt;
-contient un &lt;strong&gt;et&lt;/strong&gt;. Ce qui donne :&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;est_dans_chaine3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;"""&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    mot : une chaine de caractère (type str)&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-4"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    caractere : un caractère (type str)&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-5"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    fonction qui retourne 1 si &amp;lt;caractere&amp;gt; est dans &amp;lt;mot&amp;gt;, et 0 sinon,&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-6"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    en suivant l'approche 3.&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-7"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    """&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-8"&gt;&lt;/a&gt;    &lt;span class="n"&gt;reponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;  &lt;span class="c"&gt;# sera actualisée et retournée en sortie&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-9"&gt;&lt;/a&gt;    &lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;len&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# donne  le nb. de caractères dans &amp;lt;mot&amp;gt;&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-10"&gt;&lt;/a&gt;    &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;         &lt;span class="c"&gt;# je commence par examiner le 1er caractère&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-11"&gt;&lt;/a&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-12"&gt;&lt;/a&gt;    &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="ow"&gt;and&lt;/span&gt; &lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-13"&gt;&lt;/a&gt;        &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="c"&gt;# on passe au caractère suivant&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-14"&gt;&lt;/a&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-15"&gt;&lt;/a&gt;    &lt;span class="k"&gt;if&lt;/span&gt;  &lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c"&gt;# j'examine la lettre qui a&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-16"&gt;&lt;/a&gt;                           &lt;span class="c"&gt;# provoqué la sortie de boucle&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-17"&gt;&lt;/a&gt;        &lt;span class="n"&gt;reponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-18"&gt;&lt;/a&gt;    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-19"&gt;&lt;/a&gt;        &lt;span class="n"&gt;reponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;a name="rest_code_cfbc18072a2644abadb47471952d365a-20"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;reponse&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_3ee2133ad44c4f99b6386806117b8107-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine3&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'toti'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'i'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-1
-&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Remarque.&lt;/strong&gt; &lt;strong&gt;Python&lt;/strong&gt; fait de l'évaluation paresseuse : quand il
-calcule la valeur de l'assertion :&lt;span class="math"&gt;\([A\)&lt;/span&gt; &lt;strong&gt;et&lt;/strong&gt; &lt;span class="math"&gt;\(B]\)&lt;/span&gt;, dès lors
-que &lt;span class="math"&gt;\(A\)&lt;/span&gt; est faux, il retourne &lt;strong&gt;faux&lt;/strong&gt; sans chercher à savoir la
-valeur de &lt;span class="math"&gt;\(B\)&lt;/span&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="quelques-mots-sur-l-interruption-de-boucle"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id6"&gt;Quelques mots sur l'interruption de boucle&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;On pourrait parler de l'interruption du flot d'instructions en général.&lt;/p&gt;
-&lt;p&gt;Ces techniques d'interruptions dans les boucles servent typiquement dans
-le cas où on sait &lt;strong&gt;au plus&lt;/strong&gt; combien d'itérations faire dans la boucle.
-C'est particulièrement adpaté ici, puisque quand on cherche un caractère
-dans un mot, on sait qu'on aura au plus &lt;span class="math"&gt;\(n\)&lt;/span&gt; examens à faire, où
-&lt;span class="math"&gt;\(n=\)&lt;/span&gt; la longueur du mot.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Intérêt :&lt;/strong&gt; évite la programmation d'un &lt;strong&gt;while&lt;/strong&gt; si on sait qu'on ne
-dépassera pas un nombre d'itérations donné.&lt;/p&gt;
-&lt;p&gt;En pratique, on construit une boucle &lt;strong&gt;for&lt;/strong&gt; qu'on interrompt si la
-condition souhaitée est réalisée :&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_853be3845617496e98409aedf8691165-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;est_dans_chaine4&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-2"&gt;&lt;/a&gt;    &lt;span class="sd"&gt;"""&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-3"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    mot : une chaine de caractère (type str)&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-4"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    caractere : un caractère (type str)&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-5"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    fonction qui retourne 1 si &amp;lt;caractere&amp;gt; est dans &amp;lt;mot&amp;gt;,&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-6"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    0 sinon. Repose sur l' interruption d'une boucle for.&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-7"&gt;&lt;/a&gt;&lt;span class="sd"&gt;    """&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-8"&gt;&lt;/a&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-9"&gt;&lt;/a&gt;    &lt;span class="n"&gt;reponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-10"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;lettre&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c"&gt;# on peut itérer sur les caractères&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-11"&gt;&lt;/a&gt;                       &lt;span class="c"&gt;# d'une chaîne.&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-12"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;lettre&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-13"&gt;&lt;/a&gt;            &lt;span class="n"&gt;reponse&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-14"&gt;&lt;/a&gt;            &lt;span class="k"&gt;break&lt;/span&gt; &lt;span class="c"&gt;#si le if est réalisé,j'interromps la boucle&lt;/span&gt;
-&lt;a name="rest_code_853be3845617496e98409aedf8691165-15"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;reponse&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_34a88088ee4d4fcaaec5efadc93f5707-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine4&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'toti'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'o'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-1
-&lt;/pre&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_a451eee7b28d4b65a46cf441bb55dd45-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine4&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'toti'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'i'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-1
-&lt;/pre&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_ba198814646a41cabaa2a37776fa6ca7-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine4&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'toti'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'k'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-0
-&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Remarque.&lt;/strong&gt; On a vu aussi qu'un &lt;strong&gt;return&lt;/strong&gt; termine l'exécution d'une
-fonction. Dans ce contexte, on peut interrompre la boucle par un
-&lt;strong&gt;return&lt;/strong&gt; de la manière suivante :&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;est_dans_chaine5&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-2"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;lettre&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;mot&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="c"&gt;# on peut itérer sur les caractères d'une chaîne.&lt;/span&gt;
-&lt;a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-3"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;lettre&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;caractere&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-4"&gt;&lt;/a&gt;            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-5"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_4db34c58b3174eb9b46382119c65237f-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_chaine5&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'toti'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'i'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-1
-&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Exercice&lt;/strong&gt; (&lt;em&gt;répond au problème 2&lt;/em&gt;). Progammer une fonction
-&lt;strong&gt;est_dans_liste(ma_liste,objet)&lt;/strong&gt; qui prend en entrée une liste
-&lt;strong&gt;ma_liste&lt;/strong&gt;, un item &lt;strong&gt;objet&lt;/strong&gt; quelconque et qui retourne &lt;strong&gt;1&lt;/strong&gt; si
-&lt;strong&gt;objet&lt;/strong&gt; est dans &lt;strong&gt;ma_liste&lt;/strong&gt;, et &lt;strong&gt;0&lt;/strong&gt; sinon.&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;est_dans_liste&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ma_liste&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;objet&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-2"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;element&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;ma_liste&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-3"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;element&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;objet&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-4"&gt;&lt;/a&gt;            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-5"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_2a4093a62d9f42caaa20fbbe04f45d18-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;L&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;545&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;'toto'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;54&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s"&gt;'e'&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;a name="rest_code_2a4093a62d9f42caaa20fbbe04f45d18-2"&gt;&lt;/a&gt;&lt;span class="n"&gt;est_dans_liste&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;54&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;#54 ne figure pas en tant qu'item de L !&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-0
-&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Exercice&lt;/strong&gt; Améliorer le programme précédent pour que la fonction
-retourne (le cas échéant) le premier indice &lt;strong&gt;i&lt;/strong&gt; où se trouve &lt;strong&gt;objet&lt;/strong&gt;
-dans &lt;strong&gt;ma_liste&lt;/strong&gt;, sinon &lt;strong&gt;-1&lt;/strong&gt;.&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-1"&gt;&lt;/a&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;position_dans_liste&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ma_liste&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;objet&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-2"&gt;&lt;/a&gt;    &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;
-&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-3"&gt;&lt;/a&gt;    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;element&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="n"&gt;ma_liste&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-4"&gt;&lt;/a&gt;        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;element&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;objet&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-5"&gt;&lt;/a&gt;            &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;
-&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-6"&gt;&lt;/a&gt;        &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-7"&gt;&lt;/a&gt;    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="code python"&gt;&lt;a name="rest_code_bb1512927c834b06b1c17271086b6595-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;position_dans_liste&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;L&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="s"&gt;'toto'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;pre class="literal-block"&gt;
-2
-&lt;/pre&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#premiers-exemples" id="id2"&gt;Premiers exemples&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#nombre-d-items-d-un-tuple" id="id3"&gt;Nombre d'items d'un tuple&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#acces-aux-items-d-un-tuple" id="id4"&gt;Accès aux items d'un tuple&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#une-utilisation-interessante-des-tuples-echange-de-variables" id="id5"&gt;Une utilisation intéressante des tuples : échange de variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#exemple" id="id8"&gt;Exemple&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#operations" id="id9"&gt;Opérations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-listes-sont-mutables" id="id10"&gt;Les listes sont mutables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes" id="id11"&gt;Petite digression sur les mots et les listes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes" id="id8"&gt;Petite digression sur les mots et les listes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="c-est-quoi-un-tuple"&gt;
@@ -234,7 +51,7 @@ parenthèses.&lt;/li&gt;
 &lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
 tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 5. Boucles tant que</title><link>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 5. Boucles tant que</title><link>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/#principe-de-la-boucle-tant-que" id="id1"&gt;Principe de la boucle tant que&lt;/a&gt;&lt;/li&gt;
@@ -252,7 +69,7 @@ Tputefois, à la différence des boucles &lt;strong&gt;pour&lt;/strong&gt;, &lt;
 n'est pas connu à l'avance, ce qui fait que la sortie de boucle est
 soumise à un&lt;/em&gt; &lt;strong&gt;test booléen&lt;/strong&gt;. Cette condition constitue le &lt;em&gt;test
 d'arrêt&lt;/em&gt; de la boucle.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>boucle</category><category>informatique</category><category>python</category><category>syracuse</category><category>while</category><guid>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</guid><pubDate>Tue, 01 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Exercice 1.2 du Poly</title><link>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>boucle</category><category>informatique</category><category>leçon</category><category>python</category><category>syracuse</category><category>while</category><guid>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</guid><pubDate>Tue, 01 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Exercice 1.2 du Poly</title><link>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;

@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths-info en BCPST1-A Rennes (listes)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/listes.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 16:35:24 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes) (listes)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/listes.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 17:45:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#premiers-exemples" id="id2"&gt;Premiers exemples&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#nombre-d-items-d-un-tuple" id="id3"&gt;Nombre d'items d'un tuple&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#acces-aux-items-d-un-tuple" id="id4"&gt;Accès aux items d'un tuple&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#une-utilisation-interessante-des-tuples-echange-de-variables" id="id5"&gt;Une utilisation intéressante des tuples : échange de variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#exemple" id="id8"&gt;Exemple&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#operations" id="id9"&gt;Opérations&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-listes-sont-mutables" id="id10"&gt;Les listes sont mutables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes" id="id11"&gt;Petite digression sur les mots et les listes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes" id="id8"&gt;Petite digression sur les mots et les listes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="section" id="c-est-quoi-un-tuple"&gt;
@@ -32,4 +27,4 @@ parenthèses.&lt;/li&gt;
 &lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
 tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item></channel></rss>

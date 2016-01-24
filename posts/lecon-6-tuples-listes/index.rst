@@ -1,7 +1,7 @@
 .. title: Informatique : Leçon 6. Tuples  - Listes 
 .. slug: lecon-6-tuples-listes
 .. date: 2015-12-17 21:36:59 UTC+01:00
-.. tags: python, informatique, tuples, listes, chaînes de caractères
+.. tags: python, informatique, tuples, listes, chaînes de caractères, leçon
 .. link: 
 .. description: 
 .. type: text
@@ -14,7 +14,7 @@
 
 
 C'est quoi un tuple ?
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 1. C'est un nouveau type d'objets. Il correspond en maths, aux
    :math:`p`-listes ou :math:`p`-upplets : suites ordonnées de :math:`p`
@@ -32,6 +32,7 @@ C'est quoi un tuple ?
 .. raw:: html    
 
 	 <!-- TEASER_END-->
+
 
 
 +----------------------------------------------+------------------------------------------+
@@ -422,13 +423,13 @@ Je vais par exemple essayer de remplacer le :math:`\texttt{25}` par un
 
     ---------------------------------------------------------------------------
 
-    NameError                                 Traceback (most recent call last)
+    TypeError                                 Traceback (most recent call last)
 
-    <ipython-input-1-3f7b83bf835b> in <module>()
+    <ipython-input-42-3f7b83bf835b> in <module>()
     ----> 1 t1[1] = 30 # je  remplace le 25 par un 30
     
 
-    NameError: name 't1' is not defined
+    TypeError: 'tuple' object does not support item assignment
 
 
 Le message d'erreur me dit (si on traduit la fin en français) : on ne
@@ -457,9 +458,6 @@ liste, les listes sont délimitées par des crochets.
 Ces deux types d'objets peuvent servir\* suivant les besoins\* à
 représenter des :math:`p`-listes mathématiques.
 
-Exemple
-~~~~~~~
-
 .. code:: python
 
     t2 = (7,22,11,34,17) # un tuple
@@ -481,8 +479,7 @@ Regardons le type :
 
     list
 
-Opérations
-~~~~~~~~~~
+
 
 La plupart des opérations vues sur les tuples ou chaînes de caractères
 s'appliquent :
@@ -512,8 +509,6 @@ s'appliquent :
     34
 
 
-Les listes sont mutables
-~~~~~~~~~~~~~~~~~~~~~~~~
 
 Mutons notre liste en modifiant un coefficient :
 
@@ -646,5 +641,6 @@ les chaînes par la séquence que je veux.
 .. parsed-literal::
 
     'a----t----t----e----n----t----i----o----n'
+
 
 

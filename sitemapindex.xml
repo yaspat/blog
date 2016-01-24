@@ -14,20 +14,28 @@
   <lastmod>2015-12-15T20:45:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/biomorphes.xml</loc>
+  <lastmod>2016-01-24T22:00:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/boucle.xml</loc>
-  <lastmod>2015-12-23T11:49:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/boucles.xml</loc>
   <lastmod>2015-11-16T14:09:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/cat_images.xml</loc>
+  <lastmod>2016-01-24T22:00:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique.xml</loc>
-  <lastmod>2016-01-24T17:06:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres.xml</loc>
-  <lastmod>2016-01-24T17:06:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/champ-de-vecteurs.xml</loc>
@@ -79,11 +87,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/images.xml</loc>
-  <lastmod>2015-10-26T21:32:00Z</lastmod>
+  <lastmod>2016-01-24T22:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/informatique.xml</loc>
-  <lastmod>2016-01-24T17:06:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/ipython-notebook.xml</loc>
@@ -91,11 +99,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/lecon.xml</loc>
-  <lastmod>2015-11-16T14:09:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/listes.xml</loc>
-  <lastmod>2016-01-24T16:35:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
@@ -111,7 +119,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2016-01-24T17:06:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -126,12 +134,16 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/subplot.xml</loc>
+  <lastmod>2016-01-24T22:00:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/suites.xml</loc>
   <lastmod>2015-10-19T09:54:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/syracuse.xml</loc>
-  <lastmod>2015-12-23T11:49:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/translation.xml</loc>
@@ -139,7 +151,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/tuples.xml</loc>
-  <lastmod>2016-01-24T16:35:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/type.xml</loc>
@@ -155,7 +167,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/while.xml</loc>
-  <lastmod>2015-12-23T11:49:00Z</lastmod>
+  <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/rss.xml</loc>
@@ -171,10 +183,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2016-01-24T17:06:00Z</lastmod>
+  <lastmod>2016-01-24T22:00:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2016-01-24T17:08:00Z</lastmod>
+  <lastmod>2016-01-24T22:00:00Z</lastmod>
  </sitemap>
 </sitemapindex>
