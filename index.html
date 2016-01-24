@@ -7,7 +7,7 @@ article: http://ogp.me/ns/article#
 <meta charset="utf-8">
 <meta name="description" content="Cours de maths pour la classe de BCPST1-A de Rennes">
 <meta name="viewport" content="width=device-width">
-<title>Maths-info en BCPST1-A Rennes | Maths-info en BCPST1-A Rennes</title>
+<title>Maths info en Biwane (BCPST1-A Rennes) | Maths info en Biwane (BCPST1-A Rennes)</title>
 <link href="assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/">
@@ -49,6 +49,255 @@ article: http://ogp.me/ns/article#
             <li><a href="rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
 
         </ul></section><section class="page-content"><div class="content" rel="main">
+        <div class="post">
+            <h1 class="title"><a href="posts/lecon-7-recherche-dans-chaine/">Informatique : Leçon 7. Recherche dans une chaîne de caractères</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-24T12:36:59+01:00">2016-01-24 12:36</time>
+</div>
+                <div class="stats">
+                                <a href="posts/lecon-7-recherche-dans-chaine/#disqus_thread" data-disqus-identifier="cache/posts/Lecon7.Recherche-dans-une-chaine.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="categories/chaines-de-caracteres/" rel="tag">chaînes de caractères</a></li>
+           <li><a class="tag p-category" href="categories/informatique/" rel="tag">informatique</a></li>
+           <li><a class="tag p-category" href="categories/python/" rel="tag">python</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="posts/lecon-7-recherche-dans-chaine/#formulation-du-probleme" id="id1">Formulation du problème</a></li>
+<li>
+<a class="reference internal" href="posts/lecon-7-recherche-dans-chaine/#des-solutions-differentes" id="id2">Des solutions différentes</a><ul>
+<li><a class="reference internal" href="posts/lecon-7-recherche-dans-chaine/#approche-1" id="id3">Approche 1.</a></li>
+<li><a class="reference internal" href="posts/lecon-7-recherche-dans-chaine/#approche-2" id="id4">Approche 2.</a></li>
+<li><a class="reference internal" href="posts/lecon-7-recherche-dans-chaine/#approche-3" id="id5">Approche 3.</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="posts/lecon-7-recherche-dans-chaine/#quelques-mots-sur-l-interruption-de-boucle" id="id6">Quelques mots sur l'interruption de boucle</a></li>
+</ul>
+</div>
+<div class="section" id="formulation-du-probleme">
+<h2><a class="toc-backref" href="posts/lecon-7-recherche-dans-chaine/#id1">Formulation du problème</a></h2>
+<p>Donnée : une chaîne de caractères.</p>
+<blockquote>
+<strong>Problème 1.</strong> je veux savoir si ma chaîne contient un caractère
+donné.</blockquote>
+<p>Ce dernier problème est un cas particulier du problème plus général
+suivant :</p>
+<blockquote>
+<strong>Problème 2.</strong> étant donné un tuple (resp. une liste), est-ce qu'un
+objet donné figure dans ce tuple (resp. cette liste) ?</blockquote>
+<p><strong>Réponse au problème 1.</strong> Il y a plusieurs approches à ce problème,
+donc on peut proposer différentes solutions. Mettons que je cherche le
+caractère <strong>'k'</strong> dans une chaîne :</p>
+<pre class="code python"><a name="rest_code_c9b622fa74f346e3ac4d6a0e2f2aabf5-1"></a><span class="n">magik</span> <span class="o">=</span> <span class="s">'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg'</span> <span class="c"># Définissons une chaîne</span>
+</pre>
+</div>
+<div class="section" id="des-solutions-differentes">
+<h2><a class="toc-backref" href="posts/lecon-7-recherche-dans-chaine/#id2">Des solutions différentes</a></h2>
+<div class="section" id="approche-1">
+<h3><a class="toc-backref" href="posts/lecon-7-recherche-dans-chaine/#id3">Approche 1.</a></h3>
+<p>J'utilise une fonction prédéfinie de <strong>Python</strong> :</p>
+<pre class="code python"><a name="rest_code_7512599d367a4c58bb9c627946004a4a-1"></a><span class="s">'k'</span> <span class="ow">in</span> <span class="n">magik</span>  <span class="c"># ne pas confondre nom de variable et contenu</span>
+</pre>
+<pre class="literal-block">
+False
+</pre>
+</div>
+<div class="section" id="approche-2">
+<h3><a class="toc-backref" href="posts/lecon-7-recherche-dans-chaine/#id4">Approche 2.</a></h3>
+<p>Je parcours systématiquement toutes les lettres du mot (j'ai donc une
+boucle <strong>for</strong>). J'initialise un compteur à <span class="math">\(\mathtt{0}\)</span> et je
+l'incrémente chaque fois que je rencontre le caractère cherché. Ainsi, le
+caractère cherché est bien dans la chaîne si et seulement si à la sortie de la boucle
+le compteur a une valeur non nulle.</p>
+<pre class="code python"><a name="rest_code_068b829ba99448f8bee188a6232dc6dc-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-4"></a><span class="sd">    k : un caractère (type str)</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-5"></a><span class="sd">    fonction qui retourne 1 si &lt;k&gt; est dans &lt;mot&gt;,</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-6"></a><span class="sd">    et 0 sinon.</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-7"></a><span class="sd">    """</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-8"></a>    <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-9"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span>                   <span class="c"># on peut faire des boucles sur</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-10"></a>                                    <span class="c"># les caractères d'une chaîne :</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-11"></a>            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>     <span class="c"># k prend successivement comme</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-12"></a>                                   <span class="c"># valeur chaque caractère se trouvant</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-13"></a>                <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>     <span class="c"># dans la chaîne &lt;mot&gt;</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-14"></a>    <span class="k">if</span> <span class="n">compteur</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-15"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-16"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_068b829ba99448f8bee188a6232dc6dc-17"></a>        <span class="k">return</span> <span class="mi">0</span>
+</pre>
+<pre class="code python"><a name="rest_code_64f9022c4b754437b6a2eb3de110641e-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="n">magik</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span> <span class="c"># ne pas confondre nom de variable et contenu</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<pre class="code python"><a name="rest_code_bdea2bd39c774c4d88229d65d8282203-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'goldorak'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<pre class="code python"><a name="rest_code_550d335e77954eaebedb25e58df07bfe-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'tchoupi'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<pre class="code python"><a name="rest_code_a0dc1d4aef0c46cb9bc66b97620ff31e-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'goldorakkkkkkkkkkkk'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+</div>
+<div class="section" id="approche-3">
+<h3><a class="toc-backref" href="posts/lecon-7-recherche-dans-chaine/#id5">Approche 3.</a></h3>
+<p>Je parcours les lettres du mot et je m'arrête quand j'ai soit rencontré
+le caractère que je cherche soit quand j'ai parcouru toutes lettres.
+(j'ai donc une boucle <strong>while</strong>).</p>
+<p>Boucle <strong>while</strong> : je dois examiner la condition de sortie. On arrête la
+boucle quand :</p>
+<ol class="arabic simple">
+<li>ou bien on a rencontré le caractère cherché.</li>
+<li>ou bien on a examiné tous les caractères sans succès.</li>
+</ol>
+<p>Puisque la condition d'arrêt contient un "ou", la condition <strong>while</strong>
+contient un <strong>et</strong>. Ce qui donne :</p>
+<pre class="code python"><a name="rest_code_cfbc18072a2644abadb47471952d365a-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine3</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-4"></a><span class="sd">    caractere : un caractère (type str)</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;, et 0 sinon,</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-6"></a><span class="sd">    en suivant l'approche 3.</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-7"></a><span class="sd">    """</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-8"></a>    <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c"># sera actualisée et retournée en sortie</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-9"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="c"># donne  le nb. de caractères dans &lt;mot&gt;</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-10"></a>    <span class="n">i</span> <span class="o">=</span><span class="mi">0</span>         <span class="c"># je commence par examiner le 1er caractère</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-11"></a>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-12"></a>    <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">!=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">!=</span><span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-13"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span> <span class="c"># on passe au caractère suivant</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-14"></a>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-15"></a>    <span class="k">if</span>  <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">caractere</span><span class="p">:</span> <span class="c"># j'examine la lettre qui a</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-16"></a>                           <span class="c"># provoqué la sortie de boucle</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-17"></a>        <span class="n">reponse</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-18"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-19"></a>        <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_cfbc18072a2644abadb47471952d365a-20"></a>    <span class="k">return</span> <span class="n">reponse</span>
+</pre>
+<pre class="code python"><a name="rest_code_3ee2133ad44c4f99b6386806117b8107-1"></a><span class="n">est_dans_chaine3</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'i'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<p><strong>Remarque.</strong> <strong>Python</strong> fait de l'évaluation paresseuse : quand il
+calcule la valeur de l'assertion :<span class="math">\([A\)</span> <strong>et</strong> <span class="math">\(B]\)</span>, dès lors
+que <span class="math">\(A\)</span> est faux, il retourne <strong>faux</strong> sans chercher à savoir la
+valeur de <span class="math">\(B\)</span>.</p>
+</div>
+</div>
+<div class="section" id="quelques-mots-sur-l-interruption-de-boucle">
+<h2><a class="toc-backref" href="posts/lecon-7-recherche-dans-chaine/#id6">Quelques mots sur l'interruption de boucle</a></h2>
+<p>On pourrait parler de l'interruption du flot d'instructions en général.</p>
+<p>Ces techniques d'interruptions dans les boucles servent typiquement dans
+le cas où on sait <strong>au plus</strong> combien d'itérations faire dans la boucle.
+C'est particulièrement adpaté ici, puisque quand on cherche un caractère
+dans un mot, on sait qu'on aura au plus <span class="math">\(n\)</span> examens à faire, où
+<span class="math">\(n=\)</span> la longueur du mot.</p>
+<p><strong>Intérêt :</strong> évite la programmation d'un <strong>while</strong> si on sait qu'on ne
+dépassera pas un nombre d'itérations donné.</p>
+<p>En pratique, on construit une boucle <strong>for</strong> qu'on interrompt si la
+condition souhaitée est réalisée :</p>
+<pre class="code python"><a name="rest_code_853be3845617496e98409aedf8691165-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine4</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span><span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-4"></a><span class="sd">    caractere : un caractère (type str)</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;,</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-6"></a><span class="sd">    0 sinon. Repose sur l' interruption d'une boucle for.</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-7"></a><span class="sd">    """</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-8"></a>
+<a name="rest_code_853be3845617496e98409aedf8691165-9"></a>    <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-10"></a>    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span> <span class="c"># on peut itérer sur les caractères</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-11"></a>                       <span class="c"># d'une chaîne.</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-12"></a>        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-13"></a>            <span class="n">reponse</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-14"></a>            <span class="k">break</span> <span class="c">#si le if est réalisé,j'interromps la boucle</span>
+<a name="rest_code_853be3845617496e98409aedf8691165-15"></a>    <span class="k">return</span> <span class="n">reponse</span>
+</pre>
+<pre class="code python"><a name="rest_code_34a88088ee4d4fcaaec5efadc93f5707-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'o'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<pre class="code python"><a name="rest_code_a451eee7b28d4b65a46cf441bb55dd45-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'i'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<pre class="code python"><a name="rest_code_ba198814646a41cabaa2a37776fa6ca7-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'k'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<p><strong>Remarque.</strong> On a vu aussi qu'un <strong>return</strong> termine l'exécution d'une
+fonction. Dans ce contexte, on peut interrompre la boucle par un
+<strong>return</strong> de la manière suivante :</p>
+<pre class="code python"><a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine5</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span><span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-2"></a>    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span> <span class="c"># on peut itérer sur les caractères d'une chaîne.</span>
+<a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-3"></a>        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
+<a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-4"></a>            <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_83b7cf92c9fd4e11bd888892204e9478-5"></a>    <span class="k">return</span> <span class="mi">0</span>
+</pre>
+<pre class="code python"><a name="rest_code_4db34c58b3174eb9b46382119c65237f-1"></a><span class="n">est_dans_chaine5</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'i'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<p><strong>Exercice</strong> (<em>répond au problème 2</em>). Progammer une fonction
+<strong>est_dans_liste(ma_liste,objet)</strong> qui prend en entrée une liste
+<strong>ma_liste</strong>, un item <strong>objet</strong> quelconque et qui retourne <strong>1</strong> si
+<strong>objet</strong> est dans <strong>ma_liste</strong>, et <strong>0</strong> sinon.</p>
+<pre class="code python"><a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-1"></a><span class="k">def</span> <span class="nf">est_dans_liste</span><span class="p">(</span><span class="n">ma_liste</span><span class="p">,</span><span class="n">objet</span><span class="p">):</span>
+<a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-2"></a>    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ma_liste</span><span class="p">:</span>
+<a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-3"></a>        <span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">objet</span><span class="p">:</span>
+<a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-4"></a>            <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_325d70653fe34e84aec8e473ad1c3e7a-5"></a>    <span class="k">return</span> <span class="mi">0</span>
+</pre>
+<pre class="code python"><a name="rest_code_2a4093a62d9f42caaa20fbbe04f45d18-1"></a><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">545</span><span class="p">,</span> <span class="s">'toto'</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">54</span><span class="p">),</span> <span class="s">'e'</span><span class="p">]</span>
+<a name="rest_code_2a4093a62d9f42caaa20fbbe04f45d18-2"></a><span class="n">est_dans_liste</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="mi">54</span><span class="p">)</span> <span class="c">#54 ne figure pas en tant qu'item de L !</span>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+<p><strong>Exercice</strong> Améliorer le programme précédent pour que la fonction
+retourne (le cas échéant) le premier indice <strong>i</strong> où se trouve <strong>objet</strong>
+dans <strong>ma_liste</strong>, sinon <strong>-1</strong>.</p>
+<pre class="code python"><a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-1"></a><span class="k">def</span> <span class="nf">position_dans_liste</span><span class="p">(</span><span class="n">ma_liste</span><span class="p">,</span><span class="n">objet</span><span class="p">):</span>
+<a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-2"></a>    <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+<a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-3"></a>    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ma_liste</span><span class="p">:</span>
+<a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-4"></a>        <span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">objet</span><span class="p">:</span>
+<a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-5"></a>            <span class="k">return</span> <span class="n">i</span>
+<a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-6"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+<a name="rest_code_92bbdb6c90d54b21b6c232e5c7176cf1-7"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</pre>
+<pre class="code python"><a name="rest_code_bb1512927c834b06b1c17271086b6595-1"></a><span class="n">position_dans_liste</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="s">'toto'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+2
+</pre>
+</div>
+</div>
+            </div>
+        </div>
         <div class="post">
             <h1 class="title"><a href="posts/lecon-6-tuples-listes/">Informatique : Leçon 6. Tuples  - Listes</a></h1>
             <div class="meta">
@@ -425,32 +674,6 @@ de vue incroyables. Je vais prendre un exemple qui peut paraître blasant
 <p>L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en <strong>Python</strong>.</p>
 <p class="more"><a href="posts/meditations-typo-deficient/">Lire la suite…</a></p>
-</div>
-            </div>
-        </div>
-        <div class="post">
-            <h1 class="title"><a href="posts/notes-de-darwin/">Notes de Darwin</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2015-10-03T11:20:34+02:00">2015-10-03 11:20</time>
-</div>
-                <div class="stats">
-                                <a href="posts/notes-de-darwin/#disqus_thread" data-disqus-identifier="cache/posts/carnets-de-darwin.html">Comments</a>
-
-
-                </div>
-                        <div itemprop="keywords" class="tags">
-        <ul>
-        Étiquettes : 
-           <li><a class="tag p-category" href="categories/darwin/" rel="tag">darwin</a></li>
-        </ul>
-</div>
-
-            </div>
-            <div class="body">
-                <div>
-<p>Voici une photo des notes de Darwin dans sa réflexion sur les pros et les cons sur le mariage  :</p>
-<p class="more"><a href="posts/notes-de-darwin/">Lire la suite…</a></p>
 </div>
             </div>
         </div>

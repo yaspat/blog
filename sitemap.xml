@@ -7,15 +7,19 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2015-10-08T21:58:00Z</lastmod>
+  <lastmod>2016-01-24T17:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/2016/</loc>
+  <lastmod>2016-01-24T17:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2016-01-08T10:47:00Z</lastmod>
+  <lastmod>2016-01-24T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
@@ -187,7 +191,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2016-01-08T10:47:00Z</lastmod>
+  <lastmod>2016-01-24T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -195,7 +199,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2016-01-08T10:47:00Z</lastmod>
+  <lastmod>2016-01-24T17:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/Boucles Pour/</loc>
@@ -248,6 +252,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</loc>
   <lastmod>2015-12-17T21:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</loc>
+  <lastmod>2016-01-24T17:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</loc>
