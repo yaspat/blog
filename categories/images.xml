@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes) (images)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/images.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 22:05:43 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Biomorphes II : bestiaire</title><link>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes) (images)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/images.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 24 Jan 2016 22:11:05 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Biomorphes II : bestiaire</title><link>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#importation-des-modules" id="id1"&gt;Importation des modules&lt;/a&gt;&lt;/li&gt;
@@ -9,7 +9,7 @@
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#generation-de-la-gallerie" id="id5"&gt;Génération de la gallerie&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;C'est la suite du &lt;a class="reference external" href="/blog/posts/Biomorphes/"&gt;billet&lt;/a&gt; dans lequel j'avais promis des images.&lt;/p&gt;
+&lt;p&gt;C'est la suite du &lt;a class="reference external" href="/blog/posts/biomorphes/"&gt;billet&lt;/a&gt; dans lequel j'avais promis des images.&lt;/p&gt;
 &lt;p&gt;J'avais déjà écrit un billet du même genre &lt;a class="reference external" href="/blog/posts/photos-de-vacances/"&gt;ici&lt;/a&gt;. Mais, contrairement à ce
 que j'avais fait dans le billet sur l'ensemble de Mandelbrot, je vais
 générer la gallerie d'images en &lt;strong&gt;Python&lt;/strong&gt;, ce qui vous permettra de

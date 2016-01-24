@@ -12,7 +12,7 @@
 .. contents::
 
 
-C'est la suite du `billet  <link:///blog/posts/Biomorphes/>`_ dans lequel j'avais promis des images.
+C'est la suite du `billet  <link:///blog/posts/biomorphes/>`_ dans lequel j'avais promis des images.
 
 J'avais déjà écrit un billet du même genre `ici  <link:///blog/posts/photos-de-vacances/>`_. Mais, contrairement à ce
 que j'avais fait dans le billet sur l'ensemble de Mandelbrot, je vais
