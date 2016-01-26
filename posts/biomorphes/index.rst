@@ -57,7 +57,7 @@ J'introduis une terminologie un peu plus imagée :
 1. Le nombre :math:`u_0` s'appelle le *germe* de la suite.
 
 2. La suite :math:`(u_n)` obtenue avec ce :math:`u_0` s'appelle *chemin
-   de germe :math:`u_0`*.
+   de germe* :math:`u_0`.
 
 3. Chaque terme de la suite s'appelle une *étape* du chemin de germe
    :math:`u_0`.
@@ -139,7 +139,7 @@ plutôt petits.
 Germe tranquille ou explosif
 ----------------------------
 
-Encore un peu de vocabulaire :
+Encore un peu de vocabulaire en lien avec les comportements précédemment observés :
 
 Considérons un germe :math:`u_0`.
 
@@ -147,14 +147,14 @@ Considérons un germe :math:`u_0`.
 
    .. math::  \forall k\in\{0,\dots,10\} \left|\mathfrak{Re}\left(u_k\right)\right| \le 10 \quad \textbf{ ou } \quad  \left|\mathfrak{Im}\left(u_k\right)\right| \le 10
 
-   on dira que le germe :math:`u_0` est tranquille.
+   on dira que le germe :math:`u_0` est *tranquille*.
 
-2. Sinon, on dira que le germe :math:`u_0` est explosif. Dans ce cas, le
+2. Sinon, on dira que le germe :math:`u_0` est *explosif*. Dans ce cas, le
    plus petit rang :math:`k\in\{0,\dots 10\}` pour lequel
 
 .. math:: \left|\mathfrak{Re}\left(u_k\right)\right| > 10 \quad \textbf{ et } \quad \left|\mathfrak{Im}\left(u_k\right)\right| >  10
 
-s'appelle la durée de vie du germe :math:`u_0`.
+s'appelle la *durée de vie* du germe :math:`u_0`.
 
 Par exemple, avec les calculs et notations précédents , le germe ``u``
 est explosif et sa e durée de vie est ``8``, tandis que le germe ``v``
@@ -246,7 +246,7 @@ Je calcule par exemple la durée de vie des germes $ $ pour
 
 Je viens de calculer la durée de vie de 10 germes. Et si je les
 représentais dans le plan complexe et les coloriais en fonction de leur
-durée de vie ? cela me donne le dessin suivant :
+durée de vie ? J'obtiens le dessin suivant :
 
 
 .. image:: ../../images/Biomorphes/ReseauProtozozo.jpg
@@ -307,7 +307,7 @@ Je vais fabriquer une fonction qui prend en entrée :
 
 Et qui génère :
 
-1. Le tableau ``A``\ contenant les durées de vie de tous les points de
+1. Le tableau ``A``  contenant les durées de vie de tous les points de
    ce réseau, comme je l'avais fait à la main juste avant.
 2. L'affichage du coloriage correspondant
 
@@ -335,12 +335,12 @@ Enfin des images
 ----------------
 
 Voici ce que cela donne si on prend des germes dont la partie réelle est
-entre ``xmin= -10`` et ``xmax= 10``. D e même pour la partie imaginaire
+entre ``xmin= -10`` et ``xmax= 10``. De même pour la partie imaginaire
 : ``ymin = - 10``, et ``ymax =10``. Je vais prendre des subdivisions de
 ``nx = ny = 1000`` points, ce qui fait que mon réseau contient
 :math:`1000 \times 1000 =` 1 million de germes. Bien que mon programme
 ne soit pas du tout optimisé pour calculer rapidement, ce calcul de 1
-million de durée de vie est assez court (quelques secondes). Voici ce
+million de durées de vie est assez court (quelques secondes). Voici ce
 que cela donne :
 
 .. code:: python
@@ -371,5 +371,5 @@ coeur du radiolaire :
 .. image:: ../../images/Biomorphes/output_30_0.png
 
 
-Dans un autre billet,  je vous montrerai d'autres biomorphes.
+Dans un autre `billet  <link:///blog/posts/biomorphes-ii-bestiaire/>`_,  je vous montrerai d'autres biomorphes.
 
