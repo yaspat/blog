@@ -16,7 +16,7 @@ C'est la suite du `billet  <link:///blog/posts/biomorphes/>`_ dans lequel j'avai
 
 J'avais déjà écrit un billet du même genre `ici  <link:///blog/posts/photos-de-vacances/>`_. Mais, contrairement à ce
 que j'avais fait dans le billet sur l'ensemble de Mandelbrot, je vais
-générer la gallerie d'images en **Python**, ce qui vous permettra de
+générer la galerie d'images en **Python**, ce qui vous permettra de
 vous familiariser avec la commande **subplot**.
 
 
@@ -30,9 +30,8 @@ du plan complexe définie par :
 
 .. math::  D = \{ x+ iy \quad x\in  [\texttt{Xmin}, \texttt{Xmax}] \quad y \in [\texttt{Ymin};\texttt{Ymax}]\} 
 
-Je considère pour chacun de ces points la suite :math:`(u_n)` définie
-par :math:`u_{n+1} = F(u_n) ` et de premier terme :math:`u_0` égal au
-point considéré. Suivant la fonction :math:`F` que l'on choisit, on
+Je considère pour chacun de ces points :math:`z` la suite :math:`(u_n)` définie
+par :math:`u_{n+1} = F(u_n) ` et de premier terme :math:`u_0=z . Suivant la fonction :math:`F` que l'on choisit, on
 obtient des dessins assez variables, et assez fascinants :
 
 .. math::
