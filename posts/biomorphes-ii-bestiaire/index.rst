@@ -183,7 +183,7 @@ Fonction de coloriage
         
 
 
-Génération de la gallerie
+Génération de la galerie
 -------------------------
         
 Il n'y a plus qu'à faire la boucle sur les bestioles :
