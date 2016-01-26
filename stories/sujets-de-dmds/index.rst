@@ -84,7 +84,7 @@ Sujets de DM
    a. `Sujet  du DM12 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM12/DM12.pdf>`_
    b. Corrigé   du DM12
 
-#. DM 13 :   Polynômes - Python  (facultatif)   *À rendre le 29/01/16*
+#. DM 13 :   Polynômes - Python     *À rendre le 29/01/16*
 
    a. `Sujet  du DM13 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM13/DM13.pdf>`_
    b. Corrigé   du DM13
