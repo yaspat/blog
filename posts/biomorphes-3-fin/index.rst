@@ -108,4 +108,4 @@ Et si on regardait en introduisant une symétrie d'ordre :math:`k, k \ge 1` ? C'
 
 Vous voyez se dessiner à l'interface avec les "pétales" une espèce de
 dentelle qui évoque un polygone à :math:`k` côtés (pour :math:`k=5`,
-vous devinez bien le pentagone). Ça ferait des jolis sweats non ?
+on voit très  bien le pentagone). Ça ferait des jolis sweats non ?
