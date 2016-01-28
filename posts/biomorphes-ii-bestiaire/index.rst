@@ -2,7 +2,7 @@
 .. slug: biomorphes-ii-bestiaire
 .. date: 2016-01-24 22:36:59 UTC+01:00
 .. tags: subplot, images, biomorphes
-.. link: 
+.. link: biomorphes2
 .. description: 
 .. type: text
 .. category: images
