@@ -1,3 +1,11 @@
+.. title: Biomorphes III (fin)
+.. slug: biomorphes-3-fin
+.. date: 2016-01-28 22:37:50 UTC+01:00
+.. tags: biomorphes, symétries
+.. link: biomorphes3
+.. category: images
+.. description: 
+.. type: text
 
 
 
