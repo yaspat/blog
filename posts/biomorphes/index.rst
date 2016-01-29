@@ -1,7 +1,7 @@
 .. title: Des biomorphes dans le plan complexe
 .. slug: biomorphes
 .. date: 2015-12-8 13:39:19 UTC+02:00
-.. tags: python, complexes
+.. tags: python, complexes, biomorphes
 .. category: informatique
 .. link: 
 .. description: 
