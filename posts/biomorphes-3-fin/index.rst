@@ -117,4 +117,4 @@ Et si on regardait en introduisant une symétrie d'ordre :math:`k, k \ge 1` ? C'
 Vous voyez se dessiner à l'interface avec les "pétales" une espèce de
 dentelle qui évoque un polygone à :math:`k` côtés (pour :math:`k=5`,
 on voit très  bien le pentagone). Ça ferait des jolis sweats non ? 
-Si vous allez sur la page des `animathions <link://slug/animathions>`_, j'ai généré l'animation de  :math:`k=1` à :math: `k=9` par pas de :math:`1/10` pour voir l'évolution de la figure à mesure que $k$ augmente.
+Si vous allez sur la page des `animathions <link://slug/animathions>`_, j'ai généré l'animation de  :math:`k=1` à :math:`k=9` par pas de :math:`1/10` pour voir l'évolution de la figure à mesure que $k$ augmente.
