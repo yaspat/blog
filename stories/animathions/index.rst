@@ -31,10 +31,15 @@ Animathion #1 : Champ de vecteurs et équations différentielles
 
 
 
-.. Animathion #2 : Guide de survie en combinatoire
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+V-idée-o : Symétrie et dynamique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Les confusions à ne pas faire et les problèmes de base qu'il faut savoir traiter.
+   Les `biomorphes de Pickover <link://slug/biomorphes-3-fin>`_ en mouvement.
 
++-------------+--------------------------+
+|             | .. youtube:: iJnRFsCGkNA |
++-------------+--------------------------+ 
 
-   *patience !*
+  
+
+   
