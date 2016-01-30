@@ -31,14 +31,6 @@ Animathion #1 : Champ de vecteurs et équations différentielles
 
 
 
-V-idée-o : Symétrie et dynamique
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-   Les `biomorphes de Pickover <link://slug/biomorphes-3-fin>`_ en mouvement.
-
-+-------------+--------------------------+
-|             | .. youtube:: iJnRFsCGkNA |
-+-------------+--------------------------+ 
 
   
 

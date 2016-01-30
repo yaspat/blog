@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (images)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_images.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sat, 30 Jan 2016 13:50:55 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Biomorphes III : fin</title><link>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Dans le &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire"&gt;billet précédent&lt;/a&gt;, j'ai colorié un domaine du plan complexe en
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (images)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_images.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sat, 30 Jan 2016 19:01:47 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Tu sais que tu peux créer des animations en &lt;strong&gt;Python&lt;/strong&gt; Biwane ? Il y a
+un module pour cela. Voici le code utilisé pour générer la génèse du
+(coeur) du radiolaire d'ordre 3 à 12 branches, et sa dégénerescence vers
+un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
+? Aucune importance, voilà le résultat :&lt;/p&gt;
+&lt;table border="1" class="docutils"&gt;
+&lt;colgroup&gt;
+&lt;col width="33%"&gt;
+&lt;col width="67%"&gt;
+&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td&gt; &lt;/td&gt;
+&lt;td&gt;&lt;div class="first last"&gt;&lt;iframe width="425" height="344" src="//www.youtube.com/embed/2qpXhdseGOw?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Biomorphes III : fin</title><link>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Dans le &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire"&gt;billet précédent&lt;/a&gt;, j'ai colorié un domaine du plan complexe en
 partant de la fonction &lt;span class="math"&gt;\(p\)&lt;/span&gt; suivante :&lt;/p&gt;
 &lt;div class="math"&gt;
 \begin{equation*}
@@ -8,7 +24,7 @@ p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
 &lt;/div&gt;
 &lt;p&gt;Ce qui a donné la très belle image suivante :&lt;/p&gt;
 &lt;img alt="../../images/Biomorphes3/biomorphes3-1.png" class="align-center" src="http://yaspat.github.io/blog/images/Biomorphes3/biomorphes3-1.png"&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 2 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>symétries</category><guid>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</guid><pubDate>Thu, 28 Jan 2016 21:37:50 GMT</pubDate></item><item><title>Biomorphes II : bestiaire</title><link>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>symétries</category><guid>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</guid><pubDate>Thu, 28 Jan 2016 21:37:50 GMT</pubDate></item><item><title>Biomorphes II : bestiaire</title><link>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#importation-des-modules" id="id1"&gt;Importation des modules&lt;/a&gt;&lt;/li&gt;
