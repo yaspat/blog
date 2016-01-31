@@ -14,8 +14,7 @@
 .. contents::
 
 
-Tu sais que tu peux créer des animations en **Python** Biwane ? Il y a
-un module pour cela. Voici le code utilisé pour générer la génèse du
+Tu sais que tu peux créer des animations en **Python** Biwane ? Le module **matplotlib** contient ce qu'il faut. Par exemple,  voici un petit film pour générer la génèse du
 (coeur) du radiolaire d'ordre 3 à 12 branches, et sa dégénerescence vers
 un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 ? Aucune importance, voilà le résultat :
