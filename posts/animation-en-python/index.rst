@@ -9,6 +9,11 @@
 
 
 
+..  class:: alert alert-info pull-right
+
+.. contents::
+
+
 Tu sais que tu peux créer des animations en **Python** Biwane ? Il y a
 un module pour cela. Voici le code utilisé pour générer la génèse du
 (coeur) du radiolaire d'ordre 3 à 12 branches, et sa dégénerescence vers
@@ -28,18 +33,34 @@ Le radiolaire est le biomorphe de Pickover généré par la fonction
 
 .. math::  z\mapsto p_3(z) = z^2 +\dfrac{1}{2}.
 
-On l'appelle ainsi car la figure généré évoque *vraiment* un radiolaire. Voici une image du radiolaire 
+On l'appelle ainsi car la figure généré évoque  un radiolaire. Voici une image d'un radiolaire dans la vraie vie :
 
-.. thumbnail:: ../../images/Biomorphes/output_28_0.png
-   :align: center
 
- et un zoom sur  son coeur :
+.. thumbnail:: ../../images/Biomorphes3/radiolaire.jpeg
+    :align: center
+
+
+Le radiolaire généré par la fonction :math:`p_3`
+
+.. thumbnail:: ../../images/Biomorphes/radiolaire.png
+    :align: center
+
+
+
+et un zoom sur  son coeur :
 
 
 .. thumbnail:: ../../images/Biomorphes/output_30_0.png
-   :align: center
+    :align: center
 
-Le principe de l'animation est de créer une suite d'images et de les
+
+
+
+
+    
+     
+Voir `ce billet <link://slug/biomorphes>`_ pour voir comment générer ces images.
+Ensuite, le principe de l'animation est de créer  une suite d'images et de les
 faire défiler : c'est littéralement un *feuilleton* qu'on produit.
 
 Je crée mon feuilleton en faisant défiler les images correspondant aux
@@ -60,7 +81,7 @@ Importation des modules utiles
     # celui-là pour générer les feuilletons
     import matplotlib.animation as animation
 
-Pythonisation de la fonction :math:`P_t`
+Pythonisation de la fonction :math:`p_t`
 ========================================
 
 .. code:: python

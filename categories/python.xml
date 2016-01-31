@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (python)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sat, 30 Jan 2016 19:01:47 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Tu sais que tu peux créer des animations en &lt;strong&gt;Python&lt;/strong&gt; Biwane ? Il y a
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (python)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sat, 30 Jan 2016 21:16:23 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#importation-des-modules-utiles" id="id1"&gt;Importation des modules utiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#pythonisation-de-la-fonction-p-t" id="id2"&gt;Pythonisation de la fonction &lt;span class="math"&gt;\(p_t\)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#fonctions-utiles" id="id3"&gt;Fonctions utiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#construction-du-feuilleton" id="id4"&gt;Construction du feuilleton&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Tu sais que tu peux créer des animations en &lt;strong&gt;Python&lt;/strong&gt; Biwane ? Il y a
 un module pour cela. Voici le code utilisé pour générer la génèse du
 (coeur) du radiolaire d'ordre 3 à 12 branches, et sa dégénerescence vers
 un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
@@ -15,7 +24,7 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#formulation-du-probleme" id="id1"&gt;Formulation du problème&lt;/a&gt;&lt;/li&gt;
