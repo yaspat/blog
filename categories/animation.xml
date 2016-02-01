@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (animation)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/animation.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sun, 31 Jan 2016 21:33:15 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (animation)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/animation.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 01 Feb 2016 20:47:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#importation-des-modules-utiles" id="id1"&gt;Importation des modules utiles&lt;/a&gt;&lt;/li&gt;
@@ -8,8 +8,8 @@
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#construction-du-feuilleton" id="id4"&gt;Construction du feuilleton&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;Tu sais que tu peux créer des animations en &lt;strong&gt;Python&lt;/strong&gt; Biwane ? Le module &lt;strong&gt;matplotlib&lt;/strong&gt; contient ce qu'il faut. Par exemple,  voici un petit film pour générer la génèse du
-(coeur) du radiolaire d'ordre 3 à 12 branches, et sa dégénerescence vers
+&lt;p&gt;Tu sais que tu peux créer des animations en &lt;strong&gt;Python&lt;/strong&gt;, Biwane ? Le module &lt;strong&gt;matplotlib&lt;/strong&gt; contient ce qu'il faut. Par exemple,  voici un petit film pour générer la génèse du
+(coeur du) radiolaire d'ordre 3 à 12 branches, et sa "dégénerescence" vers
 un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 ? Aucune importance, voilà le résultat :&lt;/p&gt;
 &lt;table border="1" class="docutils"&gt;
