@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (BCPST1-A Rennes) (informatique)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_informatique.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 29 Jan 2016 21:07:41 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (informatique)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_informatique.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 03 Feb 2016 16:50:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comment-representer-les-matrices" id="id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#acceder-a-un-coefficient" id="id2"&gt;Accéder à un coefficient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#fonction-cousue-main-taille-d-une-matrice" id="id3"&gt;Fonction cousue main : taille d'une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#operations-matricielles-cousues-main" id="id4"&gt;Opérations matricielles cousues main&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#multiplication-par-une-constante" id="id5"&gt;Multiplication par une constante&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#version-amelioree-les-listes-en-comprehension-c-est-super" id="id6"&gt;Version améliorée : les listes en compréhension c'est super&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comme-en-maths" id="id7"&gt;Comme en maths !&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#et-en-cascade" id="id8"&gt;Et en cascade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#produit-matriciel-cousu-main" id="id9"&gt;Produit matriciel cousu main&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#pour-rigoler-se-bricoler-un-bel-affichage" id="id10"&gt;Pour rigoler : se bricoler un bel affichage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Rappel.&lt;/strong&gt; Une matrice est un tableau bi-dimensionnel de nombres. Il
+existe un module dédié au calcul matriciel, mais pour le moment on va
+construire artisanalement nos matrices. ça fera un bon exercice de
+programmation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemple.&lt;/strong&gt;
+&lt;span class="math"&gt;\(A =\begin{pmatrix} 1&amp;amp;1&amp;amp;1\\ 1&amp;amp;1&amp;amp;0\\ 1&amp;amp;0&amp;amp;1 \end{pmatrix}\)&lt;/span&gt; ou
+&lt;span class="math"&gt;\(M =\begin{pmatrix} 1&amp;amp;2&amp;amp;3\\ 4&amp;amp;5&amp;amp;6 \end{pmatrix}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
+chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
+définir des matrices comme des listes de listes.&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="c"&gt;# les séparateurs des items sont&lt;/span&gt;
+&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-2"&gt;&lt;/a&gt;                              &lt;span class="c"&gt;# des virgules&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-8-matrices/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>listes en compréhension</category><category>matrices</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-8-matrices/</guid><pubDate>Wed, 03 Feb 2016 16:41:55 GMT</pubDate></item><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#formulation-du-probleme" id="id1"&gt;Formulation du problème&lt;/a&gt;&lt;/li&gt;
@@ -23,7 +58,7 @@ suivant :&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;strong&gt;Problème 2.&lt;/strong&gt; étant donné un tuple (resp. une liste), est-ce qu'un
 objet donné figure dans ce tuple (resp. cette liste) ?&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
@@ -51,14 +86,14 @@ parenthèses.&lt;/li&gt;
 &lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
 tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Des biomorphes dans le plan complexe</title><link>http://yaspat.github.io/blog/posts/biomorphes/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>listes</category><category>python</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Des biomorphes dans le plan complexe</title><link>http://yaspat.github.io/blog/posts/biomorphes/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
 &lt;em&gt;Sometimes I consider myself as a fisherman. Computer programs and
 ideas are my hooks, rods and reels. Computer pictures are the
 trophies and delicious meals.&lt;/em&gt;&lt;/blockquote&gt;
 &lt;p&gt;Dans les années 80, par une erreur de programmation, Clifford Pickover,
 ingénieur chez IBM, a découvert accidentellement d'étranges organismes
 habitant le plan complexe.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>complexes</category><category>python</category><guid>http://yaspat.github.io/blog/posts/biomorphes/</guid><pubDate>Tue, 08 Dec 2015 11:39:19 GMT</pubDate></item><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>M. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 8 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>complexes</category><category>python</category><guid>http://yaspat.github.io/blog/posts/biomorphes/</guid><pubDate>Tue, 08 Dec 2015 11:39:19 GMT</pubDate></item><item><title>Informatique : Leçon 4</title><link>http://yaspat.github.io/blog/posts/Boucles Pour/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/Boucles%20Pour/#exemples-de-boucles-pour" id="id1"&gt;Exemples de boucles pour&lt;/a&gt;&lt;ul&gt;
@@ -87,7 +122,7 @@ d'itérations à effectuer : ce sont des boucles subordonnées à un
 premier terme d'une suite &lt;span class="math"&gt;\((u_n)\)&lt;/span&gt; donnée de limite
 &lt;span class="math"&gt;\(+\infty\)&lt;/span&gt; vérifiant &lt;span class="math"&gt;\(u_n &amp;gt; 10000\)&lt;/span&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/Boucles%20Pour/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>boucles</category><category>for</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/Boucles Pour/</guid><pubDate>Wed, 04 Nov 2015 11:39:19 GMT</pubDate></item><item><title>Exercice 1.2 du Poly</title><link>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</link><dc:creator>M. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/Boucles%20Pour/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>boucles</category><category>for</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/Boucles Pour/</guid><pubDate>Wed, 04 Nov 2015 11:39:19 GMT</pubDate></item><item><title>Exercice 1.2 du Poly</title><link>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;

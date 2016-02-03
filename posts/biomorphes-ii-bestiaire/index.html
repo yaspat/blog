@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Biomorphes II : bestiaire | Maths info en Biwane (prépa BCPST1-A, Rennes)</title>
+<title>Biomorphes 2/3 : bestiaire | Maths info en Biwane (prépa BCPST1-A, Rennes)</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/">
@@ -27,7 +27,7 @@ article: http://ogp.me/ns/article#
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info en Biwane (prépa BCPST1-A, Rennes)">
-<meta property="og:title" content="Biomorphes II : bestiaire">
+<meta property="og:title" content="Biomorphes 2/3 : bestiaire">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/">
 <meta property="og:description" content="Contents
 
@@ -63,7 +63,7 @@ C'est la suite du billet dans lequel ">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Biomorphes II : bestiaire</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Biomorphes 2/3 : bestiaire</h1>
 
         <div class="meta">
             <div class="authordate">
@@ -124,15 +124,15 @@ p(z) =  &amp; z^{-3} + \dfrac{1}{2}          &amp; -2   &amp; 2   &amp; -2   &am
 </div>
 <!--TEASER_END --><div class="section" id="importation-des-modules">
 <h2><a class="toc-backref" href=".#id1">Importation des modules</a></h2>
-<pre class="code python"><a name="rest_code_76553003e9854d32b2fbf8a682a6da92-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-2"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-3"></a><span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="kn">as</span> <span class="nn">mpimg</span>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-4"></a>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-5"></a><span class="c"># Dans Spyder, remplacez la  commande  qui suit par : plt.ion() mais,</span>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-6"></a><span class="c"># elle est inutile  pour ceux qui  ont une console interactive</span>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-7"></a><span class="c"># (c-à-d prompt qui ressemble à In [1]:  et pas à  &gt;&gt;&gt; )</span>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-8"></a>
-<a name="rest_code_76553003e9854d32b2fbf8a682a6da92-9"></a><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<pre class="code python"><a name="rest_code_e39d30b3a85d4372ac0466744297642c-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-2"></a><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-3"></a><span class="kn">import</span> <span class="nn">matplotlib.image</span> <span class="kn">as</span> <span class="nn">mpimg</span>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-4"></a>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-5"></a><span class="c"># Dans Spyder, remplacez la  commande  qui suit par : plt.ion() mais,</span>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-6"></a><span class="c"># elle est inutile  pour ceux qui  ont une console interactive</span>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-7"></a><span class="c"># (c-à-d prompt qui ressemble à In [1]:  et pas à  &gt;&gt;&gt; )</span>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-8"></a>
+<a name="rest_code_e39d30b3a85d4372ac0466744297642c-9"></a><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
 </pre>
 </div>
 <div class="section" id="les-differentes-bestioles-et-leur-habitat">
@@ -140,35 +140,35 @@ p(z) =  &amp; z^{-3} + \dfrac{1}{2}          &amp; -2   &amp; 2   &amp; -2   &am
 <p>Je crée les bestioles et les domaines de points
 <span class="math">\(\texttt{[Xmin,Xmax,Ymin,Ymax]}\)</span> associés à chaque bestiole
 (domaine : zone du plan complexe où se cache la bête) :</p>
-<pre class="code python"><a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-2"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="mi">3</span><span class="o">+</span><span class="mf">0.5</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-3"></a>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-4"></a><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-5"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="n">z</span><span class="o">+</span><span class="n">z</span><span class="o">**</span><span class="mi">6</span><span class="o">+</span> <span class="mf">0.5</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-6"></a>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-7"></a><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-8"></a>    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-9"></a>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-10"></a><span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-<a name="rest_code_426a87aaa4e9462fa5b83e6edfa28632-11"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span>
+<pre class="code python"><a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-2"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="mi">3</span><span class="o">+</span><span class="mf">0.5</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-3"></a>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-4"></a><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-5"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="n">z</span><span class="o">+</span><span class="n">z</span><span class="o">**</span><span class="mi">6</span><span class="o">+</span> <span class="mf">0.5</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-6"></a>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-7"></a><span class="k">def</span> <span class="nf">h</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-8"></a>    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">z</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-9"></a>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-10"></a><span class="k">def</span> <span class="nf">p</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<a name="rest_code_afd9192fdbad49a68bf0b3a550a6b11e-11"></a>    <span class="k">return</span> <span class="n">z</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span>
 </pre>
 <p>Comme j'ai en vue l'automatisation de la création des images, je vais
 consigner toutes mes fonctions dans une liste, puisque les listes sont
 itérables :</p>
-<pre class="code python"><a name="rest_code_452f9fab38e2484496b40c90af925c7e-1"></a><span class="n">fonctions</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">p</span><span class="p">]</span>
+<pre class="code python"><a name="rest_code_7bdbd9b888a546c8bae1321047c16a92-1"></a><span class="n">fonctions</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">p</span><span class="p">]</span>
 </pre>
 <p>De même, je crée les domaines relatifs à chaque fonction puis la liste
 de ces domaines :</p>
-<pre class="code python"><a name="rest_code_711ae96061cc4a4883eccd98633b67e1-1"></a><span class="n">dom_f</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
-<a name="rest_code_711ae96061cc4a4883eccd98633b67e1-2"></a><span class="n">dom_g</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">1.2</span><span class="p">,</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">1.2</span><span class="p">]</span>
-<a name="rest_code_711ae96061cc4a4883eccd98633b67e1-3"></a><span class="n">dom_h</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">]</span>
-<a name="rest_code_711ae96061cc4a4883eccd98633b67e1-4"></a><span class="n">dom_p</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
-<a name="rest_code_711ae96061cc4a4883eccd98633b67e1-5"></a>
-<a name="rest_code_711ae96061cc4a4883eccd98633b67e1-6"></a><span class="n">domaines</span> <span class="o">=</span> <span class="p">[</span><span class="n">dom_f</span><span class="p">,</span> <span class="n">dom_g</span><span class="p">,</span> <span class="n">dom_h</span><span class="p">,</span> <span class="n">dom_p</span><span class="p">]</span>
+<pre class="code python"><a name="rest_code_196e49351c114276a901ca5f959db6ce-1"></a><span class="n">dom_f</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<a name="rest_code_196e49351c114276a901ca5f959db6ce-2"></a><span class="n">dom_g</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">1.2</span><span class="p">,</span><span class="o">-</span><span class="mf">1.2</span><span class="p">,</span><span class="mf">1.2</span><span class="p">]</span>
+<a name="rest_code_196e49351c114276a901ca5f959db6ce-3"></a><span class="n">dom_h</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">1.7</span><span class="p">,</span> <span class="mf">3.3</span><span class="p">]</span>
+<a name="rest_code_196e49351c114276a901ca5f959db6ce-4"></a><span class="n">dom_p</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<a name="rest_code_196e49351c114276a901ca5f959db6ce-5"></a>
+<a name="rest_code_196e49351c114276a901ca5f959db6ce-6"></a><span class="n">domaines</span> <span class="o">=</span> <span class="p">[</span><span class="n">dom_f</span><span class="p">,</span> <span class="n">dom_g</span><span class="p">,</span> <span class="n">dom_h</span><span class="p">,</span> <span class="n">dom_p</span><span class="p">]</span>
 </pre>
 <p>Je crée enfin la liste des tuples (fonction,domaine) :</p>
-<pre class="code python"><a name="rest_code_66082e91e1b342f9bcc72d96ff5121ea-1"></a><span class="n">bestioles</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">fonctions</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">domaines</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
-<a name="rest_code_66082e91e1b342f9bcc72d96ff5121ea-2"></a><span class="n">bestioles</span> <span class="c"># pour que vous voyiez la structure de la liste</span>
+<pre class="code python"><a name="rest_code_9f547b2435ba43f38a7ef81af8ae0a9b-1"></a><span class="n">bestioles</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">fonctions</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">domaines</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)]</span>
+<a name="rest_code_9f547b2435ba43f38a7ef81af8ae0a9b-2"></a><span class="n">bestioles</span> <span class="c"># pour que vous voyiez la structure de la liste</span>
 </pre>
 <pre class="literal-block">
 [(&lt;function __main__.f&gt;, [-10, 10, -10, 10]),
@@ -178,73 +178,73 @@ de ces domaines :</p>
 </pre>
 <p>Et tant qu'à faire, la liste des noms des fonctions pour légender mes
 graphiques :</p>
-<pre class="code python"><a name="rest_code_88fad5ce9cf64832a6d9cee4e189a58a-1"></a><span class="n">noms</span><span class="o">=</span><span class="p">[</span><span class="s">r'$z^3 + \frac{1}{2}$'</span><span class="p">,</span> <span class="s">r'$z^z+z^6+\frac{1}{2}$'</span><span class="p">,</span> <span class="s">r'$\sin(z) + e^z + \frac{1}{2}$'</span><span class="p">,</span> <span class="s">r'$z^{-3}+\frac{1}{2}$'</span><span class="p">]</span>
+<pre class="code python"><a name="rest_code_1251e2b98ee844d18c9619b575129868-1"></a><span class="n">noms</span><span class="o">=</span><span class="p">[</span><span class="s">r'$z^3 + \frac{1}{2}$'</span><span class="p">,</span> <span class="s">r'$z^z+z^6+\frac{1}{2}$'</span><span class="p">,</span> <span class="s">r'$\sin(z) + e^z + \frac{1}{2}$'</span><span class="p">,</span> <span class="s">r'$z^{-3}+\frac{1}{2}$'</span><span class="p">]</span>
 </pre>
 </div>
 <div class="section" id="fonction-de-calcul-de-la-duree-de-vie">
 <h2><a class="toc-backref" href=".#id3">Fonction de calcul de la durée de vie</a></h2>
 <p>Ce qui est formidable, c'est que même les fonctions peuvent être prises
 comme variables d'entrée des fonctions :</p>
-<pre class="code python"><a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-1"></a><span class="k">def</span> <span class="nf">dureeDeVie</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">u</span><span class="p">):</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-2"></a>    <span class="sd">""" u : un complexe</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-3"></a><span class="sd">        f : une fonction</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-4"></a><span class="sd">        retourne le plus petit rang n inférieur ou égal à 10 pour</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-5"></a><span class="sd">        lequel la partie réelle et la partie imaginaire excèdent 10</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-6"></a><span class="sd">        strictement en valeur absolue pour la suite récurrente de premier</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-7"></a><span class="sd">        terme u et associée à la fonction f.</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-8"></a><span class="sd">        Si cet entier n'existe pas, on le pose égal à 0.</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-9"></a><span class="sd">    """</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-10"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">u</span> <span class="c"># on peut faire les deux d'un coup : z,k = u,0</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-11"></a>    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-12"></a>    <span class="k">while</span> <span class="n">k</span><span class="o">&lt;=</span> <span class="mi">10</span> <span class="ow">and</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">10</span> <span class="ow">or</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">10</span><span class="p">):</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-13"></a>        <span class="n">z</span><span class="o">=</span><span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-14"></a>        <span class="n">k</span><span class="o">+=</span><span class="mi">1</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-15"></a>    <span class="k">if</span> <span class="n">k</span><span class="o">==</span><span class="mi">11</span><span class="p">:</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-16"></a>        <span class="k">return</span> <span class="mi">0</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-17"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_9ee32090a1bd4b7f80d6c3ffcaa7f116-18"></a>        <span class="k">return</span> <span class="n">k</span>
+<pre class="code python"><a name="rest_code_a7107774b8f84580b9dc61776edac5f2-1"></a><span class="k">def</span> <span class="nf">dureeDeVie</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">u</span><span class="p">):</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-2"></a>    <span class="sd">""" u : un complexe</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-3"></a><span class="sd">        f : une fonction</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-4"></a><span class="sd">        retourne le plus petit rang n inférieur ou égal à 10 pour</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-5"></a><span class="sd">        lequel la partie réelle et la partie imaginaire excèdent 10</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-6"></a><span class="sd">        strictement en valeur absolue pour la suite récurrente de premier</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-7"></a><span class="sd">        terme u et associée à la fonction f.</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-8"></a><span class="sd">        Si cet entier n'existe pas, on le pose égal à 0.</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-9"></a><span class="sd">    """</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-10"></a>    <span class="n">z</span> <span class="o">=</span> <span class="n">u</span> <span class="c"># on peut faire les deux d'un coup : z,k = u,0</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-11"></a>    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-12"></a>    <span class="k">while</span> <span class="n">k</span><span class="o">&lt;=</span> <span class="mi">10</span> <span class="ow">and</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">10</span> <span class="ow">or</span> <span class="nb">abs</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">)</span><span class="o">&lt;=</span><span class="mi">10</span><span class="p">):</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-13"></a>        <span class="n">z</span><span class="o">=</span><span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-14"></a>        <span class="n">k</span><span class="o">+=</span><span class="mi">1</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-15"></a>    <span class="k">if</span> <span class="n">k</span><span class="o">==</span><span class="mi">11</span><span class="p">:</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-16"></a>        <span class="k">return</span> <span class="mi">0</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-17"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_a7107774b8f84580b9dc61776edac5f2-18"></a>        <span class="k">return</span> <span class="n">k</span>
 </pre>
 </div>
 <div class="section" id="fonction-de-coloriage">
 <h2><a class="toc-backref" href=".#id4">Fonction de coloriage</a></h2>
-<pre class="code python"><a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-1"></a><span class="k">def</span>  <span class="nf">coloriage</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ax</span><span class="p">):</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-2"></a>    <span class="sd">""" je n'explique pas pour le moment ... """</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-3"></a>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-4"></a>    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nx</span><span class="p">)</span>  <span class="c"># je crée les subdivisons le long des X</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-5"></a>    <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">ymax</span><span class="p">,</span><span class="n">ymin</span><span class="p">,</span><span class="n">ny</span><span class="p">)</span>  <span class="c"># idem le long des Y</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-6"></a>    <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">ny</span><span class="p">,</span><span class="n">nx</span><span class="p">))</span>          <span class="c"># J'initialise un tableau de taille ny x nx</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">ny</span><span class="p">):</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-8"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">nx</span><span class="p">):</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-9"></a>            <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">=</span> <span class="n">dureeDeVie</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1j</span><span class="o">*</span><span class="n">Y</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="c"># je place en position [i,j] du tableau la durée de vie du germe</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-10"></a>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-11"></a>    <span class="n">A</span><span class="o">=</span><span class="mi">12</span><span class="o">-</span><span class="n">A</span>                                   <span class="c"># Comme je veux colorier dans des teintes de bleu, je fais des</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-12"></a>    <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>                                 <span class="c"># petites transformations sur les coefficients de A</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-13"></a>    <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">30</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-14"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
-<a name="rest_code_a52503b9b82b4d8e909b24b43afdae1e-15"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-1"></a><span class="k">def</span>  <span class="nf">coloriage</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ax</span><span class="p">):</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-2"></a>    <span class="sd">""" je n'explique pas pour le moment ... """</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-3"></a>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-4"></a>    <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nx</span><span class="p">)</span>  <span class="c"># je crée les subdivisons le long des X</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-5"></a>    <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">ymax</span><span class="p">,</span><span class="n">ymin</span><span class="p">,</span><span class="n">ny</span><span class="p">)</span>  <span class="c"># idem le long des Y</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-6"></a>    <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">ny</span><span class="p">,</span><span class="n">nx</span><span class="p">))</span>          <span class="c"># J'initialise un tableau de taille ny x nx</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">ny</span><span class="p">):</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-8"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">nx</span><span class="p">):</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-9"></a>            <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span><span class="o">=</span> <span class="n">dureeDeVie</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="mi">1j</span><span class="o">*</span><span class="n">Y</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="c"># je place en position [i,j] du tableau la durée de vie du germe</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-10"></a>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-11"></a>    <span class="n">A</span><span class="o">=</span><span class="mi">12</span><span class="o">-</span><span class="n">A</span>                                   <span class="c"># Comme je veux colorier dans des teintes de bleu, je fais des</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-12"></a>    <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>                                 <span class="c"># petites transformations sur les coefficients de A</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-13"></a>    <span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">30</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-14"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'off'</span><span class="p">)</span>
+<a name="rest_code_9801d159c89c4dc5801c9cd2845051b6-15"></a>    <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre>
 </div>
 <div class="section" id="generation-de-la-galerie">
 <h2><a class="toc-backref" href=".#id5">Génération de la galerie</a></h2>
 <p>Il n'y a plus qu'à faire la boucle sur les bestioles :</p>
-<pre class="code python"><a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-1"></a><span class="c"># nombre de points dans le domaine</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-2"></a>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-3"></a><span class="n">nx</span> <span class="o">=</span> <span class="mi">500</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-4"></a><span class="n">ny</span> <span class="o">=</span> <span class="mi">500</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-5"></a>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-6"></a>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-7"></a>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-8"></a><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>     <span class="p">;</span>    <span class="c"># je dimensionne le dessin</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-9"></a><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-10"></a>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-11"></a><span class="k">for</span> <span class="n">bestiole</span>  <span class="ow">in</span> <span class="n">bestioles</span><span class="p">:</span> <span class="c"># je prends les bestioles une par une</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-12"></a>    <span class="n">fonction</span> <span class="o">=</span> <span class="n">bestiole</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-13"></a>    <span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">ymin</span><span class="p">,</span><span class="n">ymax</span><span class="p">)</span> <span class="o">=</span> <span class="n">bestiole</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-14"></a>    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">220</span><span class="o">+</span><span class="n">k</span><span class="p">)</span>    <span class="c"># je crée un sous-graphique</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-15"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">noms</span><span class="p">[</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>           <span class="c"># je lui mets un titre</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-16"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">)</span>               <span class="c"># repère orthonormé</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-17"></a>    <span class="n">coloriage</span><span class="p">(</span><span class="n">fonction</span><span class="p">,</span> <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ax</span><span class="p">)</span>
-<a name="rest_code_b6bee1082ee947e1b3fe8fe135d8aaff-18"></a>    <span class="n">k</span><span class="o">+=</span><span class="mi">1</span>
+<pre class="code python"><a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-1"></a><span class="c"># nombre de points dans le domaine</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-2"></a>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-3"></a><span class="n">nx</span> <span class="o">=</span> <span class="mi">500</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-4"></a><span class="n">ny</span> <span class="o">=</span> <span class="mi">500</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-5"></a>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-6"></a>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-7"></a>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-8"></a><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>     <span class="p">;</span>    <span class="c"># je dimensionne le dessin</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-9"></a><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-10"></a>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-11"></a><span class="k">for</span> <span class="n">bestiole</span>  <span class="ow">in</span> <span class="n">bestioles</span><span class="p">:</span> <span class="c"># je prends les bestioles une par une</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-12"></a>    <span class="n">fonction</span> <span class="o">=</span> <span class="n">bestiole</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-13"></a>    <span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">ymin</span><span class="p">,</span><span class="n">ymax</span><span class="p">)</span> <span class="o">=</span> <span class="n">bestiole</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-14"></a>    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">220</span><span class="o">+</span><span class="n">k</span><span class="p">)</span>    <span class="c"># je crée un sous-graphique</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-15"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">noms</span><span class="p">[</span><span class="n">k</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>           <span class="c"># je lui mets un titre</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-16"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">)</span>               <span class="c"># repère orthonormé</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-17"></a>    <span class="n">coloriage</span><span class="p">(</span><span class="n">fonction</span><span class="p">,</span> <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ax</span><span class="p">)</span>
+<a name="rest_code_5e7ad7ba900d4123abbcaae11620ffeb-18"></a>    <span class="n">k</span><span class="o">+=</span><span class="mi">1</span>
 </pre>
 <img alt="../../images/Biomorphes/gallerie_biomorphes.png" src="../../images/Biomorphes/gallerie_biomorphes.png">
 </div>
@@ -262,7 +262,7 @@ comme variables d'entrée des fonctions :</p>
         <script>
         var disqus_shortname ="yaspat",
             disqus_url="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/",
-        disqus_title="Biomorphes II : bestiaire",
+        disqus_title="Biomorphes 2/3 : bestiaire",
         disqus_identifier="cache/posts/biomorphes2-bestiaire.html",
         disqus_config = function () {
             this.language = "fr";

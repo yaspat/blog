@@ -1,4 +1,4 @@
-.. title: Biomorphes II : bestiaire 
+.. title: Biomorphes 2/3 : bestiaire 
 .. slug: biomorphes-ii-bestiaire
 .. date: 2016-01-24 22:36:59 UTC+01:00
 .. tags: subplot, images, biomorphes

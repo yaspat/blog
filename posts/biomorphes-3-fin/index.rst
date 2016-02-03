@@ -1,4 +1,4 @@
-.. title: Biomorphes III : fin
+.. title: Biomorphes 3/3 : fin
 .. slug: biomorphes-3-fin
 .. date: 2016-01-28 22:37:50 UTC+01:00
 .. tags: biomorphes, symétries

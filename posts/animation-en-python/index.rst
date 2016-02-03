@@ -1,4 +1,4 @@
-.. title: Animation en Python
+.. title: Créer une animation en Python
 .. slug: animation-en-python
 .. date: 2016-01-30 16:37:50 UTC+01:00
 .. tags: python, animation, video, biomorphes

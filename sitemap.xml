@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -56,6 +56,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/cat_lecons/</loc>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres/</loc>
@@ -126,12 +130,20 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/listes-en-comprehension/</loc>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/listes/</loc>
   <lastmod>2015-12-17T21:48:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot/</loc>
   <lastmod>2015-10-18T16:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/matrices/</loc>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/objets/</loc>
@@ -215,7 +227,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-03T16:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -292,6 +304,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</loc>
   <lastmod>2016-01-24T17:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/lecon-8-matrices/</loc>
+  <lastmod>2016-02-03T16:42:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</loc>

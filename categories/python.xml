@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (python)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 01 Feb 2016 20:47:22 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (python)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/python.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 03 Feb 2016 16:51:48 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comment-representer-les-matrices" id="id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#acceder-a-un-coefficient" id="id2"&gt;Accéder à un coefficient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#fonction-cousue-main-taille-d-une-matrice" id="id3"&gt;Fonction cousue main : taille d'une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#operations-matricielles-cousues-main" id="id4"&gt;Opérations matricielles cousues main&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#multiplication-par-une-constante" id="id5"&gt;Multiplication par une constante&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#version-amelioree-les-listes-en-comprehension-c-est-super" id="id6"&gt;Version améliorée : les listes en compréhension c'est super&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comme-en-maths" id="id7"&gt;Comme en maths !&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#et-en-cascade" id="id8"&gt;Et en cascade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#produit-matriciel-cousu-main" id="id9"&gt;Produit matriciel cousu main&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#pour-rigoler-se-bricoler-un-bel-affichage" id="id10"&gt;Pour rigoler : se bricoler un bel affichage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Rappel.&lt;/strong&gt; Une matrice est un tableau bi-dimensionnel de nombres. Il
+existe un module dédié au calcul matriciel, mais pour le moment on va
+construire artisanalement nos matrices. ça fera un bon exercice de
+programmation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemple.&lt;/strong&gt;
+&lt;span class="math"&gt;\(A =\begin{pmatrix} 1&amp;amp;1&amp;amp;1\\ 1&amp;amp;1&amp;amp;0\\ 1&amp;amp;0&amp;amp;1 \end{pmatrix}\)&lt;/span&gt; ou
+&lt;span class="math"&gt;\(M =\begin{pmatrix} 1&amp;amp;2&amp;amp;3\\ 4&amp;amp;5&amp;amp;6 \end{pmatrix}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
+chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
+définir des matrices comme des listes de listes.&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="c"&gt;# les séparateurs des items sont&lt;/span&gt;
+&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-2"&gt;&lt;/a&gt;                              &lt;span class="c"&gt;# des virgules&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-8-matrices/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>listes en compréhension</category><category>matrices</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-8-matrices/</guid><pubDate>Wed, 03 Feb 2016 16:41:55 GMT</pubDate></item><item><title>Créer une animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/animation-en-python/#importation-des-modules-utiles" id="id1"&gt;Importation des modules utiles&lt;/a&gt;&lt;/li&gt;
@@ -155,24 +190,4 @@ premier terme d'une suite &lt;span class="math"&gt;\((u_n)\)&lt;/span&gt; donné
 &lt;p&gt;3.  Montrer un exemple de schéma conditionnel en cascade : celui de la résolution
 de l'équation du second degré.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/schema-conditionnels/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>leçon</category><category>python</category><category>schémas conditionnels</category><guid>http://yaspat.github.io/blog/posts/schema-conditionnels/</guid><pubDate>Tue, 29 Sep 2015 11:39:19 GMT</pubDate></item><item><title>Fonction du DM2</title><link>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Voici un exemple de script de fonction (c'est celle du DM2, à savoir, celle définie par &lt;span class="math"&gt;\(f(x)= \ln\left(\frac{e^{x}}{x} -1\right)\)&lt;/span&gt;).&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/fonction-du-dm-2/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fonction</category><category>python</category><guid>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</guid><pubDate>Sun, 20 Sep 2015 17:20:34 GMT</pubDate></item><item><title>Informatique : Leçon 2</title><link>http://yaspat.github.io/blog/posts/entrees-sorties/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/entrees-sorties/#sorties" id="id1"&gt;Sorties&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/entrees-sorties/#entrees" id="id2"&gt;Entrées&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Objet de cette leçon :&lt;/p&gt;
-&lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p class="first"&gt;Connaître les actions d'échange utilisateur-machine.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol class="loweralpha simple"&gt;
-&lt;li&gt;Les sorties&lt;/li&gt;
-&lt;li&gt;Les entrées de caractères&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Utiliser les notions de la leçon 1.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/entrees-sorties/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>entrées</category><category>leçon</category><category>python</category><category>sorties</category><guid>http://yaspat.github.io/blog/posts/entrees-sorties/</guid><pubDate>Wed, 16 Sep 2015 11:39:19 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/fonction-du-dm-2/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>fonction</category><category>python</category><guid>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</guid><pubDate>Sun, 20 Sep 2015 17:20:34 GMT</pubDate></item></channel></rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (listes en compréhension)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/listes-en-comprehension.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 03 Feb 2016 16:50:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comment-representer-les-matrices" id="id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#acceder-a-un-coefficient" id="id2"&gt;Accéder à un coefficient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#fonction-cousue-main-taille-d-une-matrice" id="id3"&gt;Fonction cousue main : taille d'une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#operations-matricielles-cousues-main" id="id4"&gt;Opérations matricielles cousues main&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#multiplication-par-une-constante" id="id5"&gt;Multiplication par une constante&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#version-amelioree-les-listes-en-comprehension-c-est-super" id="id6"&gt;Version améliorée : les listes en compréhension c'est super&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comme-en-maths" id="id7"&gt;Comme en maths !&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#et-en-cascade" id="id8"&gt;Et en cascade&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#produit-matriciel-cousu-main" id="id9"&gt;Produit matriciel cousu main&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#pour-rigoler-se-bricoler-un-bel-affichage" id="id10"&gt;Pour rigoler : se bricoler un bel affichage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Rappel.&lt;/strong&gt; Une matrice est un tableau bi-dimensionnel de nombres. Il
+existe un module dédié au calcul matriciel, mais pour le moment on va
+construire artisanalement nos matrices. ça fera un bon exercice de
+programmation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemple.&lt;/strong&gt;
+&lt;span class="math"&gt;\(A =\begin{pmatrix} 1&amp;amp;1&amp;amp;1\\ 1&amp;amp;1&amp;amp;0\\ 1&amp;amp;0&amp;amp;1 \end{pmatrix}\)&lt;/span&gt; ou
+&lt;span class="math"&gt;\(M =\begin{pmatrix} 1&amp;amp;2&amp;amp;3\\ 4&amp;amp;5&amp;amp;6 \end{pmatrix}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
+chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
+définir des matrices comme des listes de listes.&lt;/p&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="c"&gt;# les séparateurs des items sont&lt;/span&gt;
+&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-2"&gt;&lt;/a&gt;                              &lt;span class="c"&gt;# des virgules&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-8-matrices/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>listes en compréhension</category><category>matrices</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-8-matrices/</guid><pubDate>Wed, 03 Feb 2016 16:41:55 GMT</pubDate></item></channel></rss>

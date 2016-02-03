@@ -11,15 +11,15 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/animathions.xml</loc>
-  <lastmod>2015-12-15T20:45:00Z</lastmod>
+  <lastmod>2016-01-30T21:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/animation.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-01T20:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/biomorphes.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-01T20:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/boucle.xml</loc>
@@ -31,11 +31,15 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/cat_images.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-01T20:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique.xml</loc>
   <lastmod>2016-01-29T21:07:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/cat_lecons.xml</loc>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres.xml</loc>
@@ -106,12 +110,20 @@
   <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/listes-en-comprehension.xml</loc>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/listes.xml</loc>
   <lastmod>2016-01-24T17:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
   <lastmod>2015-10-26T21:32:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/matrices.xml</loc>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/objets.xml</loc>
@@ -123,7 +135,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/python.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/reflexion.xml</loc>
@@ -147,7 +159,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/symetries.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-01-30T21:14:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/syracuse.xml</loc>
@@ -171,7 +183,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/video.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-01T20:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/while.xml</loc>
@@ -191,10 +203,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2016-01-30T18:50:00Z</lastmod>
+  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </sitemap>
 </sitemapindex>
