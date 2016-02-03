@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (split)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/split.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 03 Feb 2016 21:09:15 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Faire dans le Matshow, ça plaît aux filles</title><link>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/#les-prerequis" id="id1"&gt;Les prérequis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/#rencontre-avec-matshow" id="id2"&gt;Rencontre avec Matshow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/#pourquoi-le-matshow-plait-aux-filles" id="id3"&gt;Pourquoi le Matshow plaît aux filles ?&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/#quelles-sont-les-cartes-de-couleur" id="id4"&gt;Quelles sont les cartes de couleur ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/#un-bon-exercice-montrez-nous-toutes-ces-cartes" id="id5"&gt;Un bon exercice : montrez-nous toutes ces cartes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/#regardons-enfin-les-cartes" id="id6"&gt;Regardons enfin les cartes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Lors d'une séance de TP, j'ai montré comment représenter graphiquement
+une matrice comme un grille de pixels. En effet, une matrice est une
+grille de nombres. Si chaque nombre est représenté par une couleur, on
+obtient une belle grille de couleurs, c'est-à-dire une mosaïque. Ça a
+beaucoup plu aux filles du groupe du TP. Remarque de macho ? Ça tombe bien,
+la commande pour faire cela est aussi &lt;strong&gt;matshow&lt;/strong&gt;. Regradons :&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 54 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>matshow</category><category>split</category><guid>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</guid><pubDate>Wed, 03 Feb 2016 17:51:45 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#premiers-exemples" id="id2"&gt;Premiers exemples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#nombre-d-items-d-un-tuple" id="id3"&gt;Nombre d'items d'un tuple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#acces-aux-items-d-un-tuple" id="id4"&gt;Accès aux items d'un tuple&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#une-utilisation-interessante-des-tuples-echange-de-variables" id="id5"&gt;Une utilisation intéressante des tuples : échange de variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes-split-et-join" id="id8"&gt;Petite digression sur les mots et les listes. Split et join&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="c-est-quoi-un-tuple"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/h2&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;C'est un nouveau type d'objets. Il correspond en maths, aux
+&lt;span class="math"&gt;\(p\)&lt;/span&gt;-listes ou &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplets : suites ordonnées de &lt;span class="math"&gt;\(p\)&lt;/span&gt;
+objets.&lt;/li&gt;
+&lt;li&gt;En &lt;strong&gt;Python&lt;/strong&gt;, les tuples sont délimités, comme en maths, par des
+parenthèses.&lt;/li&gt;
+&lt;li&gt;En maths, les éléments d'un &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet s'appellent les
+&lt;em&gt;coordonnées&lt;/em&gt; ou les &lt;em&gt;composantes&lt;/em&gt; du &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet. En
+&lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
+tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>join</category><category>leçon</category><category>listes</category><category>python</category><category>split</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item></channel></rss>

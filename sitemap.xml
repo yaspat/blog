@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2016-02-03T16:47:00Z</lastmod>
+  <lastmod>2016-02-03T21:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -56,10 +56,6 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
- </url>
- <url>
-  <loc>http://yaspat.github.io/blog/categories/cat_lecons/</loc>
-  <lastmod>2016-02-03T16:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres/</loc>
@@ -126,6 +122,10 @@
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/join/</loc>
+  <lastmod>2016-02-03T21:08:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/lecon/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
  </url>
@@ -144,6 +144,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/matrices/</loc>
   <lastmod>2016-02-03T16:47:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/matshow/</loc>
+  <lastmod>2016-02-03T18:07:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/objets/</loc>
@@ -168,6 +172,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/sorties/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/split/</loc>
+  <lastmod>2016-02-03T21:07:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/subplot/</loc>
@@ -227,7 +235,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2016-02-03T16:42:00Z</lastmod>
+  <lastmod>2016-02-03T17:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -308,6 +316,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-8-matrices/</loc>
   <lastmod>2016-02-03T16:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</loc>
+  <lastmod>2016-02-03T17:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</loc>

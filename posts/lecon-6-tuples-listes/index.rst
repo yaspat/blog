@@ -1,7 +1,7 @@
 .. title: Informatique : Leçon 6. Tuples  - Listes 
 .. slug: lecon-6-tuples-listes
 .. date: 2015-12-17 21:36:59 UTC+01:00
-.. tags: python, informatique, tuples, listes, chaînes de caractères, leçon
+.. tags: python, informatique, tuples, listes, chaînes de caractères, leçon, split, join
 .. link: 
 .. description: 
 .. type: text
@@ -569,8 +569,8 @@ Vous voyez bien que :math:`\mathtt{L2}` est mutable, contrairement à
 2. On verra plus tard le problème des clones et des siamois pour les
    listes.
 
-Petite digression sur les mots et les listes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Petite digression sur les mots et les listes. Split et join
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Un autre exemple de liste en lien avec le cours de combinatoire, pour
 vous rappeler qu'un mot n'est qu'une liste de lettres, et pourquoi on
