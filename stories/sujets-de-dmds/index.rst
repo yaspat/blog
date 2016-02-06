@@ -92,7 +92,7 @@ Sujets de DM
 #. DM 14 :   Suites réelles - Python     *À rendre le 5/02/16*
 
    a. `Sujet  du DM14 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM14/DM14.pdf>`_
-   b. Corrigé   du DM14 
+   b. `Corrigé   du DM14 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM14/Corrige-DM14.pdf>`_
 
 Sujets de DS
 ============
