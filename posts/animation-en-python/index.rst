@@ -28,7 +28,7 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 
    <!--TEASER_END-->
 
-Le radiolaire est le biomorphe de Pickover généré par la fonction
+Le radiolaire est le biomorphe de Pickover généré par la fonction :math:`p_3` donnée par :
 
 .. math::  z\mapsto p_3(z) = z^3 +\dfrac{1}{2}.
 
@@ -48,26 +48,23 @@ Le radiolaire généré par la fonction :math:`p_3` :
 
 et enfin,  un zoom sur  son coeur :
 
-
 .. thumbnail:: ../../images/Biomorphes/output_30_0.png
     :align: center
 
 
-
-
-
-    
-     
- `Ce billet <link://slug/biomorphes>`_ permet de  savoir comment générer ces images.
+`Ce billet <link://slug/biomorphes>`_ permet de  savoir comment générer ces images.
 Ensuite, le principe de l'animation est de créer  une suite d'images et de les
 faire défiler : c'est littéralement un *feuilleton* qu'on produit.
 
 Je crée mon feuilleton en faisant défiler les images correspondant aux
 fonctions :
 
-.. math:: p_t(z) = z^t + \dfrac{1}{2} \quad t \in[1,4] 
+.. math:: z\mapsto  p_t(z) = z^t + \dfrac{1}{2} \quad t \in[1,4] 
 
-Passons à la pratique :
+Ainsi, je fais varier l'exposant de :math:`z`  [#]_ . Maintenant, passons donc à la pratique :
+
+
+
 
 Importation des modules utiles
 ==============================
@@ -93,11 +90,11 @@ Pythonisation de la fonction :math:`p_t`
 Fonctions utiles
 ================
 
-Voici deux fonctions. La première est celle qui permet de déterminer de quelle couleur
+Voici deux fonctions. La première, :math:`\texttt{dureeDeVie}`, est celle qui permet de déterminer de quelle couleur
 colorier un point :math:`u` du plan complexe en déterminant son
 caractère vis-à-vis de la fonction :math:`p_t`.
 
-La seconde réalise  le coloriage des points et génère donc
+La seconde, :math:`\texttt{coloriage}`, réalise  le coloriage des points et génère donc
 une image (qu'on va appeler une page, c'est-à-dire un feuillet du feuilleton). Il ne
 restera plus qu'à assembler les feuillets du feuilleton pour fabriquer l'animation.
 
@@ -176,3 +173,8 @@ Construction du feuilleton
     print('fin')
     
     
+
+
+
+
+.. [#] Tu te demandes peut-être (et à juste titre) ce que peut bien siginifier par exemple :math:`z^{\sqrt{2}}` quand :math:`z` n'est pas un nombre réel ? Tu as bien raison ! Sinon tu as encore des problèmes de typo-déficience. Néanmoins, pour l'objet de ce billet, c'est sans importance ! 
