@@ -18,16 +18,14 @@
 
 
 
-Ou comment l'intuition peut être difficile à exercer en probabillités.
-
-Les probabilités sont un domaine particulier des mathématiques : bien
-que la théorie est une théorie mathématique à part entière, l'honnête
+\.\.\. ou comment l'intuition peut être difficile à exercer en probabilités.
+Les probabilités sont en effet  un domaine particulier des mathématiques : bien
+que la théorie soit  une théorie mathématique à part entière, l'honnête
 homme a en vue son application à des problèmes de la vraie vie. Il faut
-donc pour cela interpréter des résultats théoriques à des situations de
-la vraie vie, et souvent, on comprend *a posteriori* la valeur d'une
-probabilité alors qu'il n'était pas évident de la deviner parr
+donc pour cela interpréter des résultats théoriques à des situations concrètes.   Souvent, on comprend *a posteriori* la valeur d'une
+probabilité calculée, alors qu'il n'était pas évident de la deviner par
 l'intuition. Intuition dont on n'a pas l'air tous dôtés de la même
-manière, qui plus est, pas liée de façon simple aux aptitudes
+manière, et  qui plus est, pas liée de façon simple aux aptitudes
 mathématiques. Voici une histoire célèbre pour illustrer ceci.
 
 .. raw:: html
@@ -124,7 +122,7 @@ Des mathématiciens bien sûrs d'eux
     trois, dans le cas où l'on modifiait son choix. Dans son article du
     2 décembre 1990, Marilyn vos Savant publia quelques-unes des lettres:* 
 
-        Étant mathématicien professionnel, je suis très inquiet du
+        *Étant mathématicien professionnel, je suis très inquiet du
         manque de compétences mathématiques du grand public. Je vous
         prie d'essayer d'y remédier en reconnaissant votre erreur ...*
 
