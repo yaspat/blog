@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Le jeu de Monthy Hall 1/2 | Maths info en Biwane (prépa BCPST1-A, Rennes)</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../favicon.ico" sizes="128x128">
+<link rel="icon" href="../../favicon.ico" sizes="256x256">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+<meta property="og:site_name" content="Maths info en Biwane (prépa BCPST1-A, Rennes)">
+<meta property="og:title" content="Le jeu de Monthy Hall 1/2">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/">
+<meta property="og:description" content="&quot;Mon unique conseil : si vous parvenez à obtenir de moi que je vous
+offre 5000 dollars pour ne pas ouvrir la porte : prenez l'argent et
+rentrez chez vous !&quot;                                      (Month">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-03-06T21:38:01+01:00">
+<meta property="article:tag" content="probabilités">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/animathions" title="Animathions"><i class="icon-youtube-play"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Le jeu de Monthy Hall 1/2</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-03-06T21:38:01+01:00">2016-03-06 21:38</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/probabilites/" rel="tag">probabilités</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<blockquote>
+<em>"Mon unique conseil : si vous parvenez à obtenir de moi que je vous
+offre 5000 dollars pour ne pas ouvrir la porte : prenez l'argent et
+rentrez chez vous !"</em>                                      (Monthy Hall)</blockquote>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#marilyn-vos-savant" id="id11">Marilyn vos Savant</a></li>
+<li><a class="reference internal" href=".#le-jeu-de-monthy-hall-et-le-conseil-de-marilyn" id="id12">Le jeu de Monthy Hall, et le conseil de Marilyn</a></li>
+<li><a class="reference internal" href=".#des-mathematiciens-bien-surs-d-eux" id="id13">Des mathématiciens bien sûrs d'eux</a></li>
+<li><a class="reference internal" href=".#la-reponse-de-marilyn" id="id14">La réponse de Marilyn</a></li>
+<li><a class="reference internal" href=".#un-troisieme-article-sur-la-question" id="id15">Un troisième article sur la question</a></li>
+<li><a class="reference internal" href=".#un-enseignement-de-marilyn-a-quiconque-veut-faire-de-la-science" id="id16">Un enseignement de Marilyn à quiconque veut faire de la science</a></li>
+</ul>
+</div>
+<p>Ou comment l'intuition peut être difficile à exercer en probabillités.</p>
+<p>Les probabilités sont un domaine particulier des mathématiques : bien
+que la théorie est une théorie mathématique à part entière, l'honnête
+homme a en vue son application à des problèmes de la vraie vie. Il faut
+donc pour cela interpréter des résultats théoriques à des situations de
+la vraie vie, et souvent, on comprend <em>a posteriori</em> la valeur d'une
+probabilité alors qu'il n'était pas évident de la deviner parr
+l'intuition. Intuition dont on n'a pas l'air tous dôtés de la même
+manière, qui plus est, pas liée de façon simple aux aptitudes
+mathématiques. Voici une histoire célèbre pour illustrer ceci.</p>
+<!--TEASER_END--><p>Je  vous retranscris ici  un passage du livre de P. Hoffman,
+<em>Erdös, l'homme qui n'aimait que les nombres</em> <a class="footnote-reference" href=".#id10" id="id1">[1]</a>. Les titres des paragraphes ne
+sont pas tirés du livre, mais je les introduis pour que suiviez
+l'anecdote.</p>
+<div class="section" id="marilyn-vos-savant">
+<h2><a class="toc-backref" href=".#id11">Marilyn vos Savant</a></h2>
+<blockquote>
+<em>Bien que les nombres fussent les amis intimes d'Erdös, il lui
+arrivait de se méprendre sur leur compte. Aussi doué fût-il, son
+intuition n'était pas toujours infaillible. En effet, la dernière
+fois qu'il rendit visite à Vázsonyi, dans sa résidence de retraite
+dans les vignobles de Californie, il trébucha contre un délicat
+casse-tête posé dans</em> Demandez à Marilyn, <em>une rubrique de
+Marilyn vos Savant dans le magazine</em>  Parade. <em>Clinquante et
+pleine d'assurance, Marilyn vos Savant fait partie de ces gens que
+les mathématiciens de métier aiment haïr. Elle s'affiche comme la
+personne ayant "le Q.I. le plus élevé" jamais enregistré : un énorme
+228, d'après</em>  le livre Guinness des records. <em>Elle arbore un
+anneau de mariage en carbone pyrolytique, matériau spécial utilisé
+dans le coeur artificiel de Jarvik, inventé par son mari Robert
+Jarvik. Sa réputation dans le milieu mathématique n'est sortie
+grandie avec son livre</em>  The world most famous math problem <a class="footnote-reference" href=".#id4" id="id2">[2]</a>,
+<em>où elle met en doute la démonstration par Wiles au théorème de Fermat, ainsi que la
+théorie de la relativité d'Einstein.</em> Demandez à Marilyn <em>a été
+décrit comme une sorte de</em>  Hints form Heloise <a class="footnote-reference" href=".#id5" id="id3">[3]</a>  pour l'esprit, avec
+beaucoup de mathématiques par-dessus le marché. Une part de
+l'antipathie qu'elle inspire tient à une certaine jalousie : sa
+rubrique dans* Parade, <em>tous les dimanches, est lue par des millions
+de personnes, et les livres et discours qui la complètent lui
+assurent une vie confortable. Beaucoup de mathématiciens
+professionnels, en revanche, n'ont pas touché un seul centime de la
+publication de leurs livres.</em>
+</blockquote>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href=".#id2">[2]</a></td>
+<td>Le problème de maths le plus célèbre au monde  (1993)</td>
+</tr></tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href=".#id3">[3]</a></td>
+<td>Les tuyaux d'Héloïse, rubrique bien connue de petits conseils
+domestiques qui paraît dans certains journaux américains. Elle est
+rédigée actuellement par une dénommée Héloïse, mais c'est sa mère
+qui en est à l'origine, en 1959. (N.d.T.)</td>
+</tr></tbody>
+</table>
+</div>
+<div class="section" id="le-jeu-de-monthy-hall-et-le-conseil-de-marilyn">
+<h2><a class="toc-backref" href=".#id12">Le jeu de Monthy Hall, et le conseil de Marilyn</a></h2>
+<blockquote>
+<em>Dans son article du 9 septembre 1990, Marilyn vos Savant répondit à
+l'un de ses lecteurs qui lui avait soumis une énigme bien connue.
+Vous participez à un jeu où l'on vous propose trois portes au choix.
+L'une des portes cache une voiture à gagner et chacune des deux
+autres une chèvre. Vous choisissez, disons, la porte 1 ;
+l'animateur, qui sait où est la voiture, ouvre une autre porte,
+derrière laquelle se trouve une chèvre. Il vous donne maintenant la
+possibilité de vous en tenir à votre choix initial (porte 1) ou de
+choisir l'autre porte. Qu'avez-vous intérêt à faire ?
+On appelle
+cela le dilemme de Monthy Hall, problème auquel étaient confrontés
+les invités du jeu télévisé</em>  Let's make a deal <em>de Monthy
+Hall</em> <a class="footnote-reference" href=".#id7" id="id6">[4]</a>  <em>sauf que les lots de consolation n'étaient pas des chèvres. Marilyn
+vos Savant recommanda à son correspondant de modifier son choix.
+S'en tenir au choix initial donnait une chance sur trois de gagner
+affirmait-elle, alors que choisir l'autre porte doublait les chances
+: deux sur trois. Pour convaincre ses lecteurs, elle leur demandait
+d'imaginer qu'il n'y ait non pas une, mais un million de portes.</em> "
+Vous choisissez la porte numéro 1" <em>expliquait-elle.</em>
+L'animateur, qui sait ce qui se trouve derrière chaque porte et
+évitera toujours celle qui cache le gros lot, ouvre toutes les
+portes sauf la numéro 777 777 [et la numéro 1 bien sûr]. Vous
+modifierez votre choix assez vite n'est-ce pas ?"</blockquote>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href=".#id6">[4]</a></td>
+<td>Animateur et producteur de télévision américaine (N.d.T.)</td>
+</tr></tbody>
+</table>
+</div>
+<div class="section" id="des-mathematiciens-bien-surs-d-eux">
+<h2><a class="toc-backref" href=".#id13">Des mathématiciens bien sûrs d'eux</a></h2>
+<blockquote>
+<p><em>Non, manifestement. Sitôt paru son article, vos Savant fut
+assaillie de lettres de lecteurs en désaccord. Ils maintenaient que
+les chances étaient de cinquante-cinquante, et non de deux sur
+trois, dans le cas où l'on modifiait son choix. Dans son article du
+2 décembre 1990, Marilyn vos Savant publia quelques-unes des lettres:</em></p>
+<blockquote>
+<p>Étant mathématicien professionnel, je suis très inquiet du
+manque de compétences mathématiques du grand public. Je vous
+prie d'essayer d'y remédier en reconnaissant votre erreur ...*</p>
+<blockquote>
+Robert Sachs, Ph. D., université George Mason</blockquote>
+<p><em>Vous avez faux, archi-faux ! Je m'explique : une fois aue
+l'animateur a dévoilé une chèvre, vous avez dès lors une chance
+sur deux d'avoir juste. Que vous modifiiez votre ou non votre
+réponse, les chances sont les mêmes. Il y a suffisamment
+d'analphabétisme mathéatique dans ce pays ; inutile que le Q.I.
+le plus élevé en sème davantage. C'est honteux !</em></p>
+<blockquote>
+Scott Smith, Ph. D., université  de Floride</blockquote>
+</blockquote>
+</blockquote>
+</div>
+<div class="section" id="la-reponse-de-marilyn">
+<h2><a class="toc-backref" href=".#id14">La réponse de Marilyn</a></h2>
+<blockquote>
+<em>Pour bien faire comprendre son analyse, Marilyn vos Savant dressa
+cette fois dans un tableau la liste exhaustive des six possibilités
+:</em>
+</blockquote>
+<p>Résultats  du jeu en en choisissant la porte 1 et en s'y tenant suivant les différentes configurations :</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="22%">
+<col width="27%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head"><strong>Porte 1</strong></th>
+<th class="head"><strong>Porte 2</strong></th>
+<th class="head"><strong>Porte</strong></th>
+<th class="head"><strong>Résultat</strong></th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>Voiture</td>
+<td>Chèvre</td>
+<td>Chèvre</td>
+<td><strong>Gagnant</strong></td>
+</tr>
+<tr>
+<td>Chèvre</td>
+<td>Voiture</td>
+<td>Chèvre</td>
+<td>Perdant</td>
+</tr>
+<tr>
+<td>Chèvre</td>
+<td>Chèvre</td>
+<td>Voiture</td>
+<td>Perdant</td>
+</tr>
+</tbody>
+</table>
+<p>Résultats  du jeu en choisissant la porte 1 et en modifiant son choix :</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%">
+<col width="25%">
+<col width="22%">
+<col width="27%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head"><strong>Porte 1</strong></th>
+<th class="head"><strong>Porte 2</strong></th>
+<th class="head"><strong>Porte</strong></th>
+<th class="head"><strong>Résultat</strong></th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>Voiture</td>
+<td>Chèvre</td>
+<td>Chèvre</td>
+<td>Perdant</td>
+</tr>
+<tr>
+<td>Chèvre</td>
+<td>Voiture</td>
+<td>Chèvre</td>
+<td><strong>Gagnant</strong></td>
+</tr>
+<tr>
+<td>Chèvre</td>
+<td>Chèvre</td>
+<td>Voiture</td>
+<td><strong>Gagnant</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<em>Le tableau démontre, écrivait-elle, que "lorsque vous modifiez
+votre choix vous gagnez deux fois sur trois, alors que si vous vous
+en tenez à votre choix initial, vous ne gagnez qu'une fois sur
+trois ".</em>
+</blockquote>
+</div>
+<div class="section" id="un-troisieme-article-sur-la-question">
+<h2><a class="toc-backref" href=".#id15">Un troisième article sur la question</a></h2>
+<blockquote>
+<em>Mais le tableau ne fit pas taire ses détracteurs. Dans un troisième
+article sur la question (le 17 février 1991), elle signala que dans
+les milliers de lettres reçues, neuf sur dix étaient contre elle, et
+qu'elle avait eu des reproches d'un statisticien aux National
+Institute of Health</em> <a class="footnote-reference" href=".#id9" id="id8">[5]</a>, <em>ainsi que du directeur adjoint du Centre
+des renseignements militaires. Les lettres avaient tourné au
+vinaigre, certaines la traitant de chèvre ou affirmant que les
+femmes ne voient pas les problèmes de mathématiques comme les
+hommes. "Vous vous trompez complètement à propoos de la question du
+jeu télévisé", écrivit E. Ray Bobo, un Ph. D. de Gerogetown, "et
+j'espère que cette controverse attirera un peu l'attention du
+public sur la grave crise nationale qui frappe l'enseignement
+supérieur des mathématiques. Si vous pouviez reconnaître votre
+erreur, vous contribueriez de façon constructive à la résolution
+d'une situation déplorable. Combien de mathématiciens furieux vous
+faut-il pour changer d'avis ?</em>"</blockquote>
+<table class="docutils footnote" frame="void" id="id9" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href=".#id8">[5]</a></td>
+<td>Instituts nationaux de la santé, l'organisme
+gouvernemental américain qui finance et mène les recherches
+biomédicales (N.d.T.)</td>
+</tr></tbody>
+</table>
+</div>
+<div class="section" id="un-enseignement-de-marilyn-a-quiconque-veut-faire-de-la-science">
+<h2><a class="toc-backref" href=".#id16">Un enseignement de Marilyn à quiconque veut faire de la science</a></h2>
+<blockquote>
+"<em>Lorsque la réalité heurte si violemment l'intuition</em>, répondit
+Marilyn vos Savant dans sa rubrique, <em>les gens sont ébranlés</em>". <em>Elle
+essaya autrement. Imaginez, dit-elle, que juste après que
+l'animateur a ouvert la porte dévoilant une chèvre, atterrisse sur
+la scène du jeu une soucoupe volante, et qu'en sorte une petite
+femme verte. Cettre dernière ne sachant pas quelle porte vous avez
+choisie au départ, on lui demande de choisir l'une des deux portes
+restées closes. La probabilité qu'elle tombe sur la voiture est de
+cinquante pour cent,</em> "Mais c'est qu'il lui manque l'avantage
+qu'avait le candidat d'origine - l'aide de l'animateur [...]. Si le
+gros lot se trouve derrière la numéro 2, l'animateur vous montre la
+numéro 3 ; et si le gros lot se trouve derrière la numéro 3, il vous
+montre la numéro 2. <em>Donc, quand vous modifiez votre choix, vous
+gagnez si le prix se trouve au numéro 2 ou au numéro 3</em>.  <strong>Vous ganez
+dans les deux cas !</strong>  <em>Mais si vous laissez votre choix inchangé,
+vous ne gagnez que si le prix se trouve derrière la porte numéro
+1.</em>"  <em>Marilyn vos Savant avait parfaitement raison, comme durent
+finalement l'admettre les mathématiciens, penauds (...).</em>
+</blockquote>
+<p>Une petite expérience pythonique au prochain article pourrait nous aider à nous faire notre opinion !</p>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup>
+<col class="label">
+<col>
+</colgroup>
+<tbody valign="top"><tr>
+<td class="label"><a class="fn-backref" href=".#id1">[1]</a></td>
+<td>Paul Erdös est l'un des plus grands mathématiciens de tous les temps, il est décédé en 1996, et ici il s'agit du début du chapitre 6 du livre.</td>
+</tr></tbody>
+</table>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../matshow-ca-plait-aux-filles/" rel="prev" title="Faire dans le Matshow, ça plaît aux filles">Article précédent</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/",
+        disqus_title="Le jeu de Monthy Hall 1/2",
+        disqus_identifier="cache/posts/itlele-jeu-de-monthy-hall-12.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/animathions"> <i class="icon-youtube-play"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
