@@ -13,10 +13,14 @@
     rentrez chez vous !"*                                      (Monthy Hall)
 
  
+                                                       
+
+.. image:: ../../images/Monthy/Erdos.jpeg
+   :align: right
+
+
 .. class:: alert alert-info pull-right
-.. contents::                                                       
-
-
+.. contents::
 
 \.\.\. ou comment l'intuition peut être difficile à exercer en probabilités.
 Les probabilités sont en effet  un domaine particulier des mathématiques : bien
@@ -41,6 +45,10 @@ sont pas tirés du livre, mais je les introduis pour que suiviez
 l'anecdote.
 
 
+.. image:: ../../images/Monthy/Vos-savant.jpeg
+   :align: left
+   
+
 
 Marilyn vos Savant
 ------------------
@@ -62,7 +70,7 @@ Marilyn vos Savant
     grandie avec son livre*  The world most famous math problem [2]_, 
     *où elle met en doute la démonstration par Wiles au théorème de Fermat, ainsi que la
     théorie de la relativité d'Einstein.* Demandez à Marilyn *a été
-    décrit comme une sorte de*  Hints form Heloise [3]_  pour l'esprit, avec
+    décrit comme une sorte de*  Hints form Heloise [3]_  *pour l'esprit, avec
     beaucoup de mathématiques par-dessus le marché. Une part de
     l'antipathie qu'elle inspire tient à une certaine jalousie : sa
     rubrique dans* Parade, *tous les dimanches, est lue par des millions
@@ -71,7 +79,9 @@ Marilyn vos Savant
     professionnels, en revanche, n'ont pas touché un seul centime de la
     publication de leurs livres.*
 
-
+.. image:: ../../images/Monthy/Monthy.jpeg
+   :align: left
+   
 
 .. [2]  Le problème de maths le plus célèbre au monde  (1993)
 
@@ -84,6 +94,11 @@ Marilyn vos Savant
 
 Le jeu de Monthy Hall, et le conseil de Marilyn
 -----------------------------------------------
+
+
+
+   
+
 
     *Dans son article du 9 septembre 1990, Marilyn vos Savant répondit à
     l'un de ses lecteurs qui lui avait soumis une énigme bien connue.
@@ -229,7 +244,7 @@ Un enseignement de Marilyn à quiconque veut faire de la science
     finalement l'admettre les mathématiciens, penauds (...).*
 
 
-Une petite expérience pythonique au prochain article pourrait nous aider à nous faire notre opinion !
+Une petite expérience pythonique au `prochain article <link://slug/le-jeu-de-monthy-hall-22>`_ pourrait nous aider à nous faire notre opinion !
 
 
 .. [#] Paul Erdös est l'un des plus grands mathématiciens de tous les temps, il est décédé en 1996, et ici il s'agit du début du chapitre 6 du livre.

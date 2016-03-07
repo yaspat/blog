@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Le jeu de Monthy Hall 2/2 | Maths info en Biwane (prépa BCPST1-A, Rennes)</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../favicon.ico" sizes="128x128">
+<link rel="icon" href="../../favicon.ico" sizes="256x256">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+<meta property="og:site_name" content="Maths info en Biwane (prépa BCPST1-A, Rennes)">
+<meta property="og:title" content="Le jeu de Monthy Hall 2/2">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/">
+<meta property="og:description" content="Contents
+
+Importation des fonctions utiles
+Simulation d'une partie du jeu de Let's make a deal
+L'heure de vérité : fréquence des victoires sur un grand nombre de parties
+
+
+Maintenant que vous connaiss">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-03-07T10:03:07+01:00">
+<meta property="article:tag" content="probabilités">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/animathions" title="Animathions"><i class="icon-youtube-play"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Le jeu de Monthy Hall 2/2</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-03-07T10:03:07+01:00">2016-03-07 10:03</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/probabilites/" rel="tag">probabilités</a></li>
+        </ul>
+</div>
+
+        </div>
+        <div class="body">
+            <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#importation-des-fonctions-utiles" id="id1">Importation des fonctions utiles</a></li>
+<li><a class="reference internal" href=".#simulation-d-une-partie-du-jeu-de-let-s-make-a-deal" id="id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></li>
+<li><a class="reference internal" href=".#l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties" id="id3">L'heure de vérité : fréquence des victoires sur un grand nombre de parties</a></li>
+</ul>
+</div>
+<p>Maintenant que vous connaissez <a class="reference external" href="../le-jeu-de-monthy-hall-12">le jeu de Monthy Hall</a>, on peut par
+exemple simuler 100 000 parties du jeu dans lesquelles le candidat
+choisit systématiquement la stratégie de changer son choix. Si Marylin a
+raison (mais vous en êtes convaincus maintenant), la fréquence des
+parties gagnées devrait être voisine de <span class="math">\(2/3\)</span>, et non pas de
+<span class="math">\(1/2\)</span> comme l'ont hurlé ses détracteurs.</p>
+<!--TEASER_END --><div class="section" id="importation-des-fonctions-utiles">
+<h2><a class="toc-backref" href=".#id1">Importation des fonctions utiles</a></h2>
+<p>le module <strong>random</strong> contient des fonctions permettant de simuler des
+tirages aléatoires. Ici, je n'importe qu'une seule de ses fonctions, la
+fonction <span class="math">\(\texttt{randrange}\)</span> :</p>
+<pre class="code python"><a name="rest_code_f20ccea45c8f4a4d8e7ae168e7cd647b-1"></a><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+</pre>
+<p>Si <strong>a</strong> et <strong>b</strong> sont deux entiers, la commande <strong>randrange(a,b)</strong>
+choisit au hasard un entier dans l'intervalle <span class="math">\([a,b[\)</span>.</p>
+</div>
+<div class="section" id="simulation-d-une-partie-du-jeu-de-let-s-make-a-deal">
+<h2><a class="toc-backref" href=".#id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></h2>
+<p>Je vais créer une fonction <span class="math">\(\texttt{makeDeal}\)</span> qui ne prend aucun
+argument en entrée mais retourne <span class="math">\(\texttt{1}\)</span> en sortie si le
+joueur gagne la partie, et <span class="math">\(\texttt{0}\)</span> sinon.</p>
+<p>Je suppose dans mon modèle :</p>
+<ol class="arabic simple">
+<li>Que la voiture est toujours derrière la porte 1 (cela ne nuit en rien
+à la généralité du problème, il suffit par exemple, une fois placée
+la voiture, de renommer les portes et d'appeler 1 celle qui cache le
+gros lot).</li>
+<li>Que le joueur change toujours son choix après que le présentateur lui
+a dévoilé une chèvre.</li>
+</ol>
+<p>Je veux donc vérifier que sur un grand nombre de parties, le joueur
+gagne environ 2 fois sur 3.</p>
+<p>Pour cela, il faut que je sache :</p>
+<ol class="arabic simple">
+<li>Choisir une porte au hasard (action du joueur). C'est simple avec
+<strong>randrange(a,b)</strong>, je réalise cela avec la fonction
+<span class="math">\(\texttt{choixJoueur}\)</span>.</li>
+<li>Choisir une porte a, utre que celle choisie par le joueur et derrière
+laquelle se trouve une chèvre (action du présentateur). Je réalise
+cela avec la fonction <span class="math">\(\texttt{montreChevre}\)</span>
+</li>
+</ol>
+<p>C'est tout !</p>
+<p>Pour le point 1., c'est facile :</p>
+<pre class="code python"><a name="rest_code_1724caa36c7144dea5c7ff24f3ea85d9-1"></a><span class="k">def</span> <span class="nf">choixJoueur</span><span class="p">():</span>
+<a name="rest_code_1724caa36c7144dea5c7ff24f3ea85d9-2"></a>    <span class="k">return</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c"># choisit un entier au hasard entre 1 et 3.</span>
+</pre>
+<p>Pour le point 2., il suffit de savoir choisir un entier autre que 1 (car
+la porte 1 recèle la voiture !), et que celui choisi par le joueur.</p>
+<pre class="code python"><a name="rest_code_dc3dfe82a2984791a36155c5b152d634-1"></a><span class="k">def</span> <span class="nf">montreChevre</span><span class="p">(</span><span class="n">porteJoueur</span><span class="p">):</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-2"></a>    <span class="sd">"""Entrée : porteJoueur, le numéro de la porte choisie par le joueur</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-3"></a><span class="sd">       Sortie : un entier entre 2,3 qui est le numéro de la porte ouverte</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-4"></a><span class="sd">       par le présentateur connaissant porteJoueur</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-5"></a><span class="sd">    """</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-6"></a>    <span class="k">if</span> <span class="n">porteJoueur</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>         <span class="c"># le joueur avait bien trouvé la voiture</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-7"></a>        <span class="k">return</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>    <span class="c"># le présentateur choisit au hasard une porte entre la 2 et la 3</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-9"></a>        <span class="k">return</span> <span class="mi">5</span><span class="o">-</span><span class="n">porteJoueur</span> <span class="c"># ce nombre vaut 2 si porteJoueur=3 et vice-versa !</span>
+</pre>
+<p>Il ne me reste plus qu'à constuire la fonction
+<span class="math">\(\texttt{makeDeal}\)</span>. Lisez le code, vous verrez, il est clair
+qu'en changeant de choix on gagne deux fois sur trois !</p>
+<pre class="code python"><a name="rest_code_cfdf42ab682842459212fe03cd909b21-1"></a><span class="k">def</span> <span class="nf">makeDeal</span><span class="p">():</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'*** Simulation d</span><span class="se">\'</span><span class="s">une partie du jeu Let</span><span class="se">\'</span><span class="s">s make a deal!***'</span><span class="p">)</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'la voiture est derrière la porte 1.'</span><span class="p">)</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-4"></a>    <span class="n">a</span> <span class="o">=</span> <span class="n">choixJoueur</span><span class="p">()</span> <span class="c"># Le joueur choisit une porte</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-5"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'     Le candidat a choisi la porte {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-6"></a>    <span class="n">b</span> <span class="o">=</span> <span class="n">montreChevre</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c"># Monthy ouvre une porte</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-7"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'     Monthy Hall lui dévole la porte {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-8"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'     Le candidat change son choix...'</span><span class="p">)</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-9"></a>    <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="mi">1</span><span class="p">:</span> <span class="c"># mettons a =2, dans ce cas Monthy ouvre la porte 3 (il ne peut ouvrir la 1!)</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-10"></a>             <span class="c"># donc en changeant choix, le candidat gagne si et seulement si a &lt;&gt; 1 !</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-11"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'*** le candidat a gagné !                          ***'</span><span class="p">)</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-12"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-13"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-14"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'*** le candidat a perdu !                          ***'</span><span class="p">)</span>
+<a name="rest_code_cfdf42ab682842459212fe03cd909b21-15"></a>        <span class="k">return</span> <span class="mi">0</span>
+</pre>
+<p>Maintenant, je peux suivre une partie de ce jeu comme à la télé, avec
+l'ambiance en moins toutefois ...</p>
+<pre class="code python"><a name="rest_code_a4f28ad974e642e8ba0f4c6a228c82fb-1"></a><span class="n">makeDeal</span><span class="p">()</span>
+</pre>
+<pre class="literal-block">
+<strong>* Simulation d'une partie du jeu Let's make a deal!*</strong>
+la voiture est derrière la porte 1.
+     Le candidat a choisi la porte 1.
+     Monthy Hall lui dévole la porte 3.
+     Le candidat change son choix...
+<strong>* le candidat a perdu !                          *</strong>
+</pre>
+<pre class="literal-block">
+0
+</pre>
+</div>
+<div class="section" id="l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties">
+<h2><a class="toc-backref" href=".#id3">L'heure de vérité : fréquence des victoires sur un grand nombre de parties</a></h2>
+<p>Une petite boucle pour finir. Mais j'allègel la fonction
+<span class="math">\(\texttt{makeDeal}\)</span> pour ne pas avoir tous les affichages dûs au
+<span class="math">\(\texttt{print}\)</span> :</p>
+<pre class="code python"><a name="rest_code_a962814cfb9e4b6db7800082a796afea-1"></a><span class="k">def</span> <span class="nf">makeDeal</span><span class="p">():</span>
+<a name="rest_code_a962814cfb9e4b6db7800082a796afea-2"></a>    <span class="n">a</span> <span class="o">=</span> <span class="n">choixJoueur</span><span class="p">()</span>
+<a name="rest_code_a962814cfb9e4b6db7800082a796afea-3"></a>    <span class="n">b</span> <span class="o">=</span> <span class="n">montreChevre</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c"># Monthy ouvre une porte</span>
+<a name="rest_code_a962814cfb9e4b6db7800082a796afea-4"></a>    <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="mi">1</span><span class="p">:</span>
+<a name="rest_code_a962814cfb9e4b6db7800082a796afea-5"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_a962814cfb9e4b6db7800082a796afea-6"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_a962814cfb9e4b6db7800082a796afea-7"></a>        <span class="k">return</span> <span class="mi">0</span>
+</pre>
+<pre class="code python"><a name="rest_code_bc39999aaccb49febe688c965df7bc80-1"></a><span class="n">Nombre_parties</span> <span class="o">=</span> <span class="mi">100000</span>
+<a name="rest_code_bc39999aaccb49febe688c965df7bc80-2"></a><span class="n">Nombre_victoires</span> <span class="o">=</span> <span class="mf">0.</span>
+<a name="rest_code_bc39999aaccb49febe688c965df7bc80-3"></a><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">Nombre_parties</span><span class="p">):</span>
+<a name="rest_code_bc39999aaccb49febe688c965df7bc80-4"></a>    <span class="n">Nombre_victoires</span> <span class="o">+=</span> <span class="n">makeDeal</span><span class="p">()</span>
+<a name="rest_code_bc39999aaccb49febe688c965df7bc80-5"></a><span class="k">print</span><span class="p">(</span><span class="s">'Fréquence des victoires en changeant son choix = {}%'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Nombre_victoires</span><span class="o">/</span><span class="n">Nombre_parties</span><span class="p">)</span> <span class="p">)</span>
+</pre>
+<pre class="literal-block">
+Fréquence des victoires en changeant son choix = 66.502%
+</pre>
+<p>Marylin a raison : ce n'est pas du 50-50 !</p>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../le-jeu-de-monthy-hall-12/" rel="prev" title="Le jeu de Monthy Hall 1/2">Article précédent</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/",
+        disqus_title="Le jeu de Monthy Hall 2/2",
+        disqus_identifier="cache/posts/le-jeu-de-monthy-hall-22.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/animathions"> <i class="icon-youtube-play"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
