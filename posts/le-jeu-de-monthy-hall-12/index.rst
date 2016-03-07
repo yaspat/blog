@@ -8,19 +8,27 @@
 .. type: text
 
 
-    *"Mon unique conseil : si vous parvenez à obtenir de moi que je vous
-    offre 5000 dollars pour ne pas ouvrir la porte : prenez l'argent et
-    rentrez chez vous !"*                                      (Monthy Hall)
+
+
+   
+
+   *"Mon unique conseil : si vous parvenez à obtenir de moi que je vous
+   offre 5000 dollars pour ne pas ouvrir la porte : prenez l'argent et
+   rentrez chez vous !"*                                      (Monthy Hall)
 
  
-                                                       
-
-.. image:: ../../images/Monthy/Erdos.jpeg
-   :align: right
+                                                      
 
 
-.. class:: alert alert-info pull-right
-.. contents::
+
+
+
+.. figure:: ../../images/Monthy/Erdos.jpeg   
+   :scale: 50 %	    
+   :align: right                          
+
+   Paul Erdös
+
 
 \.\.\. ou comment l'intuition peut être difficile à exercer en probabilités.
 Les probabilités sont en effet  un domaine particulier des mathématiques : bien
@@ -30,12 +38,23 @@ donc pour cela interpréter des résultats théoriques à des situations concrè
 probabilité calculée, alors qu'il n'était pas évident de la deviner par
 l'intuition. Intuition dont on n'a pas l'air tous dôtés de la même
 manière, et  qui plus est, pas liée de façon simple aux aptitudes
-mathématiques. Voici une histoire célèbre pour illustrer ceci.
+mathématiques.
+
+
+
+
+
+
+
+
+
+Voici une histoire célèbre pour illustrer ceci.
+
 
 .. raw:: html
 
-   <!--TEASER_END-->
-
+ <!--TEASER_END-->
+ 
 
 
 
@@ -44,14 +63,25 @@ Je  vous retranscris ici  un passage du livre de P. Hoffman,
 sont pas tirés du livre, mais je les introduis pour que suiviez
 l'anecdote.
 
+.. class:: alert alert-info pull-right
+.. contents::                                                       
+
+
+
 
 .. image:: ../../images/Monthy/Vos-savant.jpeg
-   :align: left
-   
+   :align: right
+  
+
+----------------------------------------------------------------------------------
 
 
-Marilyn vos Savant
-------------------
+
+Marilyn vos Savant répond à vos questions
+-----------------------------------------
+
+
+
 
     *Bien que les nombres fussent les amis intimes d'Erdös, il lui
     arrivait de se méprendre sur leur compte. Aussi doué fût-il, son
@@ -61,8 +91,7 @@ Marilyn vos Savant
     casse-tête posé dans* Demandez à Marilyn, *une rubrique de
     Marilyn vos Savant dans le magazine*  Parade. *Clinquante et
     pleine d'assurance, Marilyn vos Savant fait partie de ces gens que
-    les mathématiciens de métier aiment haïr. Elle s'affiche comme la
-    personne ayant "le Q.I. le plus élevé" jamais enregistré : un énorme
+    les mathématiciens de métier aiment haïr. Elle s'affiche comme la personne ayant "le Q.I. le plus élevé" jamais enregistré : un énorme
     228, d'après*  le livre Guinness des records. *Elle arbore un
     anneau de mariage en carbone pyrolytique, matériau spécial utilisé
     dans le coeur artificiel de Jarvik, inventé par son mari Robert
@@ -79,9 +108,10 @@ Marilyn vos Savant
     professionnels, en revanche, n'ont pas touché un seul centime de la
     publication de leurs livres.*
 
-.. image:: ../../images/Monthy/Monthy.jpeg
+.. figure:: ../../images/Monthy/Monthy.jpeg
    :align: left
    
+   Monthy Hall 	   
 
 .. [2]  Le problème de maths le plus célèbre au monde  (1993)
 
@@ -221,8 +251,8 @@ Un troisième article sur la question
     gouvernemental américain qui finance et mène les recherches
     biomédicales (N.d.T.)
 
-Un enseignement de Marilyn à quiconque veut faire de la science
----------------------------------------------------------------
+Point final de  Marilyn 
+-----------------------
 
     "*Lorsque la réalité heurte si violemment l'intuition*, répondit
     Marilyn vos Savant dans sa rubrique, *les gens sont ébranlés*". *Elle
