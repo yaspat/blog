@@ -175,11 +175,11 @@ Des mathématiciens bien sûrs d'eux
 
                                         Robert Sachs, Ph. D., université George Mason
 
-        *Vous avez faux, archi-faux ! Je m'explique : une fois aue
+        *Vous avez faux, archi-faux ! Je m'explique : une fois que
         l'animateur a dévoilé une chèvre, vous avez dès lors une chance
         sur deux d'avoir juste. Que vous modifiiez votre ou non votre
         réponse, les chances sont les mêmes. Il y a suffisamment
-        d'analphabétisme mathéatique dans ce pays ; inutile que le Q.I.
+        d'analphabétisme mathématique dans ce pays ; inutile que le Q.I.
         le plus élevé en sème davantage. C'est honteux !*
 
 
