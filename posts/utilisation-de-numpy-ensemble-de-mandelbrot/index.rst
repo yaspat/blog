@@ -1,7 +1,7 @@
 .. title: Une utilisation de numpy
 .. slug: utilisation-de-numpy-ensemble-de-mandelbrot
 .. date: 2016-03-11 16:25:07 UTC+01:00
-.. tags: 
+.. tags: mandelbrot, fractales, numpy
 .. category: 
 .. link: 
 .. description: 
@@ -17,10 +17,9 @@ Ensemble de Mandelbrot
 
 
 
-Voici ce qu'est l'ensemble de Mandelbrot. Vous pouvez l'explorer ici-même :
+Voici ce qu'est l'ensemble de Mandelbrot. Vous pouvez l'explorer ici-même.Entre deux diapos, n'hésitez pas à vous balader sur le slide (il est interactif)  ! Je vous conseille de  passer en plein écran.
 
-Entre deux diapos, n'hésitez pas à vous balader sur le slide (il est interactif)  ! Je vous conseille de 
-passer en plein écran pour vous déplacer sur l'ensemble.
+
 
 .. raw:: html
 

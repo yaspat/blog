@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (matrices)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/matrices.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Wed, 03 Feb 2016 16:50:57 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes) (matrices)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/matrices.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 11 Mar 2016 16:14:09 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique :Leçon 9. Le module numpy</title><link>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#importation-des-modules" id="id3"&gt;Importation des modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#premiers-pas-avec-numpy" id="id4"&gt;Premiers pas avec &lt;tt class="docutils literal"&gt;numpy&lt;/tt&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#taille-d-une-matrice" id="id5"&gt;Taille d'une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#acces-aux-coefficients" id="id6"&gt;Accès aux coefficients&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#extraction-d-une-ligne-ou-d-une-colonne" id="id7"&gt;Extraction d'une ligne ou d'une colonne&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#redimensionner-un-tableau-numpy" id="id8"&gt;Redimensionner un tableau numpy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#autres-operations" id="id9"&gt;Autres opérations&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrices-remarquables" id="id10"&gt;Matrices remarquables&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrices-de-1-s" id="id11"&gt;Matrices de 1's&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrices-de-0-s" id="id12"&gt;Matrices de 0's&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrice-unite-ou-identite" id="id13"&gt;Matrice unité ou identité&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#une-remarque-sur-le-produit-matriciel" id="id14"&gt;Une remarque sur le produit matriciel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#visualiser-une-matrice" id="id15"&gt;Visualiser une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Dans la leçon 8, on construit des matrices en les regardant comme des
+listes de listes, ce qui a demandé de définir toutes les opérations
+matricielles. Or, le module &lt;span class="math"&gt;\(\texttt{numpy}\)&lt;/span&gt; est destiné notamment
+au calcul matriciel et fait le travail. On s'en servira aussi en
+traitement de l'image.&lt;/p&gt;
+&lt;p&gt;Une subtilité (ou un point fort) du module : les tableaux peuvent être
+multidimensionnels. Les matrices sont donc un cas particulier de
+tableaux multidimensionels.&lt;/p&gt;
+&lt;div class="section" id="importation-des-modules"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#id3"&gt;Importation des modules&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_054276d81d6948b7b1ac8a797310cc91-1"&gt;&lt;/a&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt; &lt;span class="c"&gt;# importation prudente&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;Rappel : avec &lt;strong&gt;import&lt;/strong&gt; vous importez le module. Avec &lt;strong&gt;as&lt;/strong&gt; vous lui
+donnez un nom de préfixe pour vous rappeler les fonctions provenant du
+module. Autrement dit : chaque commande utilisée du module &lt;strong&gt;numpy&lt;/strong&gt; est
+préfixée par &lt;strong&gt;np&lt;/strong&gt;, ce qui permet d'identifier son origine.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>leçon</category><category>matrices</category><category>numpy</category><guid>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</guid><pubDate>Fri, 11 Mar 2016 15:09:43 GMT</pubDate></item><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;

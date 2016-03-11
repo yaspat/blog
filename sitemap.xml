@@ -23,7 +23,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2016-03-06T20:39:00Z</lastmod>
+  <lastmod>2016-03-11T16:09:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -148,6 +148,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/matshow/</loc>
   <lastmod>2016-02-03T18:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/numpy/</loc>
+  <lastmod>2016-03-11T16:09:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/objets/</loc>
