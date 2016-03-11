@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns#
+article: http://ogp.me/ns/article#
+" lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Leçon 9. Le module numpy | Maths info en Biwane (prépa BCPST1-A, Rennes)</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../favicon.ico" sizes="128x128">
+<link rel="icon" href="../../favicon.ico" sizes="256x256">
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+     tex2jax: {
+         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+         processEscapes: true
+     },
+     displayAlign: 'center', // Change this to 'left' to left equations.
+     "HTML-CSS": {
+         styles: {'.MathJax_Display': {"margin": 0}}
+     }
+ });
+ </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+<meta property="og:site_name" content="Maths info en Biwane (prépa BCPST1-A, Rennes)">
+<meta property="og:title" content="Leçon 9. Le module numpy">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/">
+<meta property="og:description" content="Contents
+
+Importation des modules
+Premiers pas avec numpy
+Taille d'une matrice
+Accès aux coefficients
+Extraction d'une ligne ou d'une colonne
+Redimensionner un tableau numpy
+
+
+Autres opérations
+Matric">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2016-03-11T16:09:43+01:00">
+</head>
+<body>
+    <section class="social"><ul>
+<li><a href="../../index.html" title="Les billets"><i class="icon-home"></i></a></li>
+            <li><a href="../../stories/about-me" title="Mathématiques pythoniques ?"><i class="icon-question-sign"></i></a></li>
+            <li><a href="../../stories/programmes-de-colles" title="Organisation/Colles"><i class="icon-calendar"></i></a></li>
+            <li><a href="../../stories/animathions" title="Animathions"><i class="icon-youtube-play"></i></a></li>
+            <li><a href="../../stories/exercices" title="Feuilles de TD/exercices"><i class="icon-gears"></i></a></li>
+            <li><a href="../../stories/sujets-de-dmds" title="DM/DS"><i class="icon-edit"></i></a></li>
+            <li><a href="../../stories/informatique" title="Informatique"><i class="icon-desktop"></i></a></li>
+            <li><a href="../../stories/livre-dor" title="Livre d'or"><i class="icon-book"></i></a></li>
+            <li><a href="../../archive.html" title="Archives"><i class="icon-archive"></i></a></li>
+            <li><a href="../../categories/index.html" title="Étiquettes"><i class="icon-tags"></i></a></li>
+            <li><a href="https://twitter.com/yaspatmat" title="Twitter"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://github.com/yaspat" title="Github"><i class="icon-github"></i></a></li>
+            <li><a href="../../rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
+
+        </ul></section><section class="page-content"><div class="content" rel="main">
+    <div class="post">
+        <h1 class="p-name entry-title" itemprop="headline name">Leçon 9. Le module numpy</h1>
+
+        <div class="meta">
+            <div class="authordate">
+                <time class="timeago" datetime="2016-03-11T16:09:43+01:00">2016-03-11 16:09</time>
+            
+                      |  
+        <a href="index.rst" id="sourcelink">Source</a>
+
+            </div>
+            
+        </div>
+        <div class="body">
+            <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#importation-des-modules" id="id3">Importation des modules</a></li>
+<li>
+<a class="reference internal" href=".#premiers-pas-avec-numpy" id="id4">Premiers pas avec <tt class="docutils literal">numpy</tt></a><ul>
+<li><a class="reference internal" href=".#taille-d-une-matrice" id="id5">Taille d'une matrice</a></li>
+<li><a class="reference internal" href=".#acces-aux-coefficients" id="id6">Accès aux coefficients</a></li>
+<li><a class="reference internal" href=".#extraction-d-une-ligne-ou-d-une-colonne" id="id7">Extraction d'une ligne ou d'une colonne</a></li>
+<li><a class="reference internal" href=".#redimensionner-un-tableau-numpy" id="id8">Redimensionner un tableau numpy</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#autres-operations" id="id9">Autres opérations</a><ul>
+<li>
+<a class="reference internal" href=".#matrices-remarquables" id="id10">Matrices remarquables</a><ul>
+<li><a class="reference internal" href=".#matrices-de-1-s" id="id11">Matrices de 1's</a></li>
+<li><a class="reference internal" href=".#matrices-de-0-s" id="id12">Matrices de 0's</a></li>
+<li><a class="reference internal" href=".#matrice-unite-ou-identite" id="id13">Matrice unité ou identité</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#une-remarque-sur-le-produit-matriciel" id="id14">Une remarque sur le produit matriciel</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#visualiser-une-matrice" id="id15">Visualiser une matrice</a></li>
+</ul>
+</div>
+<p>Dans la leçon 8, on construit des matrices en les regardant comme des
+listes de listes, ce qui a demandé de définir toutes les opérations
+matricielles. Or, le module <span class="math">\(\texttt{numpy}\)</span> est destiné notamment
+au calcul matriciel et fait le travail. On s'en servira aussi en
+traitement de l'image.</p>
+<p>Une subtilité (ou un point fort) du module : les tableaux peuvent être
+multidimensionnels. Les matrices sont donc un cas particulier de
+tableaux multidimensionels.</p>
+<div class="section" id="importation-des-modules">
+<h2><a class="toc-backref" href=".#id3">Importation des modules</a></h2>
+<pre class="code python"><a name="rest_code_ce8366fb40bc4377a0b6e1d39fa11c81-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> <span class="c"># importation prudente</span>
+</pre>
+<p>Rappel : avec <strong>import</strong> vous importez le module. Avec <strong>as</strong> vous lui
+donnez un nom de préfixe pour vous rappeler les fonctions provenant du
+module. Autrement dit : chaque commande utilisée du module <strong>numpy</strong> est
+préfixée par <strong>np</strong>, ce qui permet d'identifier son origine.</p>
+<!--TEASER_END-->
+</div>
+<div class="section" id="premiers-pas-avec-numpy">
+<h2><a class="toc-backref" href=".#id4">Premiers pas avec <tt class="docutils literal">numpy</tt></a></h2>
+<p>La plupart des commandes suivantes sont dans votre aide-mémoire. Les
+matrices sont des objets de type <strong>array</strong> . Si on tape simplement :</p>
+<pre class="code python"><a name="rest_code_0f3d736098084933b466f99e50e9478a-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">]]</span>
+</pre>
+<pre class="code python"><a name="rest_code_7958d839ea08486b936a301a716b6df0-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+list
+</pre>
+<p>alors on obtient, comme au TP précédent, une liste de listes. En
+revanche, si vous déclarez votre liste comme un tableau <strong>numpy</strong> (en
+anglais : array) vous obtenez :</p>
+<pre class="code python"><a name="rest_code_3832a6b536684cab88177f2aa75f3585-1"></a><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">]])</span> <span class="c"># Le préfixe np provient de l'importation</span>
+<a name="rest_code_3832a6b536684cab88177f2aa75f3585-2"></a><span class="k">print</span> <span class="n">A</span>                          <span class="c"># prudente du module</span>
+</pre>
+<pre class="literal-block">
+[[ 1  0  1]
+ [ 4  2 -8]]
+</pre>
+<pre class="code python"><a name="rest_code_28b586c607484bbebc05e1514b74e16a-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+numpy.ndarray
+</pre>
+<p>Autrement dit, dans le module <strong>numpy</strong>, c'est la commande <strong>np.array</strong>
+qui permet de définir des matrices. L'objet ainsi construitn'est lus un
+objet de type liste, mais un objet de type tableau multidimensionnel :
+<strong>nd-array</strong>. C'est ce genre d'objet qui va être considéré comme une
+matrice à partir de maintenant.</p>
+<div class="section" id="taille-d-une-matrice">
+<h3><a class="toc-backref" href=".#id5">Taille d'une matrice</a></h3>
+<p>Vous la récupérez avec la commande <strong>shape</strong> (c'est ce qu'on appelle une
+<em>méthode</em> au sens de la programmation orientée objet. Ce n'est pas
+vraiment une fonction, ni l'objet (ah ah!) de ce TP. Les méthodes se
+suffixent aux objets auxquelles elles appliquent, ou sur lesquelles
+elles opèrent) :</p>
+<pre class="code python"><a name="rest_code_b82e3c7f47fc4ec7a546d348800d01ed-1"></a><span class="n">A</span><span class="o">.</span><span class="n">shape</span> <span class="c"># C'est pourquoi on n'écrit pas shape(A) : shape est une méthode, pas une fonction</span>
+</pre>
+<pre class="literal-block">
+(2, 3)
+</pre>
+<p>Le résultat est un <strong>tuple</strong>. Ici, ce tuple contient 2 items : cela
+signifie que le tableau est 2-dimensionnel. Enfin, les valeurs des items
+nous disent que <span class="math">\(\mathtt{A}\)</span> est de taille <span class="math">\(2 \times 3\)</span>.</p>
+</div>
+<div class="section" id="acces-aux-coefficients">
+<h3><a class="toc-backref" href=".#id6">Accès aux coefficients</a></h3>
+<p>Les doubles indices sont d'usage. Restriction habituelle de <strong>Python</strong> :
+les indices commencent, on s'en doute, à <span class="math">\(0\)</span> :</p>
+<pre class="code python"><a name="rest_code_e19f81dfd69648d696b490dbd2bf42fc-1"></a><span class="k">print</span> <span class="n">A</span>
+</pre>
+<pre class="literal-block">
+[[ 1  0  1]
+ [ 4  2 -8]]
+</pre>
+<p>Par exemple, pour récupérer <span class="math">\(a_{2,3}=-8\)</span></p>
+<pre class="code python"><a name="rest_code_fce84f5c59404daf96777323f46bcce3-1"></a><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="c"># inutile d'utiliser A[1][2]</span>
+</pre>
+<pre class="literal-block">
+-8
+</pre>
+</div>
+<div class="section" id="extraction-d-une-ligne-ou-d-une-colonne">
+<h3><a class="toc-backref" href=".#id7">Extraction d'une ligne ou d'une colonne</a></h3>
+<p>De façon plus générale on peut extraire des sous-matrices par tranches :</p>
+<pre class="code python"><a name="rest_code_fb730c3c02b84af28559b65f8d475d5d-1"></a><span class="k">print</span> <span class="n">A</span>
+</pre>
+<pre class="literal-block">
+[[ 1  0  1]
+ [ 4  2 -8]]
+</pre>
+<p>Par exemple, si je veux
+<span class="math">\(\ell_1 =\begin{pmatrix} 1&amp;0&amp;1 \end{pmatrix}\)</span>, la première ligne
+de <span class="math">\(A\)</span> :</p>
+<pre class="code python"><a name="rest_code_89787c3246e147bba1ec6a090b8a56e8-1"></a><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="c"># les deux points ":" servent de "joker" si vous voulez.</span>
+<a name="rest_code_89787c3246e147bba1ec6a090b8a56e8-2"></a>       <span class="c"># C'est l'opérateur de spécification par tranche (de slicing).</span>
+</pre>
+<pre class="literal-block">
+array([1, 0, 1])
+</pre>
+<p><a href=".#id1"><span class="problematic" id="id2">**</span></a>Attention. ** Vous observez qu'il n'existe plus qu'une paire de
+crochets : les lignes sont des tableaux 1-dimensionnels, et donc, pas
+des matrices au sens de tableaux 2-dimensionnels :</p>
+<div class="system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 193); <em><a href=".#id2">backlink</a></em></p>
+Inline strong start-string without end-string.</div>
+<pre class="code python"><a name="rest_code_bb7940ec06634f5e9df96169683355d6-1"></a><span class="n">ligne</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<a name="rest_code_bb7940ec06634f5e9df96169683355d6-2"></a><span class="k">print</span> <span class="n">ligne</span>
+</pre>
+<pre class="literal-block">
+[1 0 1]
+</pre>
+<pre class="code python"><a name="rest_code_b10216b18f2246d898dd7b3fa4127337-1"></a><span class="n">ligne</span><span class="o">.</span><span class="n">shape</span> <span class="c"># La réponse ne sera pas (1,3)</span>
+<a name="rest_code_b10216b18f2246d898dd7b3fa4127337-2"></a>            <span class="c"># on devrait récupérer un tuple à</span>
+<a name="rest_code_b10216b18f2246d898dd7b3fa4127337-3"></a>            <span class="c"># un seul item</span>
+</pre>
+<pre class="literal-block">
+(3,)
+</pre>
+<p>On a un tuple ne contenant qu'un seul élément : on a donc un tableau
+<span class="math">\(\mathtt{1D}\)</span> (1-dimensionnel) de longueur <span class="math">\(\mathtt{3}\)</span>.</p>
+<p>Si je veux récupérer <span class="math">\(c_2=\begin{pmatrix} 0\\2\end{pmatrix}\)</span>, la
+deuxième colonne de <span class="math">\(\mathtt{A}\)</span> :</p>
+<pre class="code python"><a name="rest_code_2921165eab1548debb8b5f66a0191648-1"></a><span class="n">A</span>
+</pre>
+<pre class="literal-block">
+array([[ 1,  0,  1],
+       [ 4,  2, -8]])
+</pre>
+<pre class="code python"><a name="rest_code_821dc4b42c3e491191aeaaccac9d489c-1"></a><span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_821dc4b42c3e491191aeaaccac9d489c-2"></a><span class="k">print</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+</pre>
+<pre class="literal-block">
+[0 2]
+</pre>
+<p>Ma colonne n'est pas formatée en colonne : c'est encore un tableau
+<span class="math">\(\mathtt{1D}\)</span>. Dans la suite on remédie à ce problème (si on
+considère que cela est un problème) grâce à une méthode permettant de
+redimensionner un tableau.</p>
+</div>
+<div class="section" id="redimensionner-un-tableau-numpy">
+<h3><a class="toc-backref" href=".#id8">Redimensionner un tableau numpy</a></h3>
+<p>Si vous souhaitez vraiment récupérer une colonne non pas pas comme un
+tableau <span class="math">\(\mathtt{1D}\)</span>, mais une "vraie" colonne au sens des
+matrices, c'est-à-dire, pour l'exemple précédent, un tableau de format
+<span class="math">\((2,1)\)</span>, vous avez la méthode <span class="math">\(\mathtt{reshape}\)</span> pour cela :</p>
+<pre class="code python"><a name="rest_code_376fbd80d70243238327a1bc6e577374-1"></a><span class="n">colonne</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>               <span class="c"># j'extrais la deuxième colonne de A</span>
+<a name="rest_code_376fbd80d70243238327a1bc6e577374-2"></a><span class="n">colonne</span> <span class="o">=</span> <span class="n">colonne</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c"># avec reshape(2,1) j'en fais une matrice 2 X 1</span>
+<a name="rest_code_376fbd80d70243238327a1bc6e577374-3"></a><span class="k">print</span> <span class="n">colonne</span>
+</pre>
+<pre class="literal-block">
+[[0]
+ [2]]
+</pre>
+<p>** Exercice. ** La commande <span class="math">\(\mathtt{range}\)</span> a son analogue en
+tableau <span class="math">\(\mathtt{numpy}\)</span> : <span class="math">\(\mathtt{arange}\)</span> (pour
+array-range). Par exemple :</p>
+<pre class="code python"><a name="rest_code_86658142334344bf85916eade6f6976d-1"></a><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span> <span class="c"># tableau 1D des entiers de 1 à 9.</span>
+</pre>
+<pre class="literal-block">
+array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+</pre>
+<p>Construire la matrice suivante : $ B =</p>
+<p>$.</p>
+<p><strong>Solution.</strong></p>
+<pre class="code python"><a name="rest_code_b2a004635ae34f3bbfc72ca70cd814e5-1"></a><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_b2a004635ae34f3bbfc72ca70cd814e5-2"></a><span class="k">print</span> <span class="n">B</span>
+</pre>
+<pre class="literal-block">
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+</pre>
+</div>
+</div>
+<div class="section" id="autres-operations">
+<h2><a class="toc-backref" href=".#id9">Autres opérations</a></h2>
+<p>Reportez-vous à l'aide-mémoire : les opérations les plus utiles y sont
+consignées. Voici quelques matrices typiques :</p>
+<div class="section" id="matrices-remarquables">
+<h3><a class="toc-backref" href=".#id10">Matrices remarquables</a></h3>
+<div class="section" id="matrices-de-1-s">
+<h4><a class="toc-backref" href=".#id11">Matrices de 1's</a></h4>
+<pre class="code python"><a name="rest_code_c5baf5415fa54541aac2c9d43e78dcf5-1"></a><span class="n">atilla</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<a name="rest_code_c5baf5415fa54541aac2c9d43e78dcf5-2"></a><span class="k">print</span> <span class="n">atilla</span>
+</pre>
+<pre class="literal-block">
+[[ 1.  1.  1.]
+ [ 1.  1.  1.]
+ [ 1.  1.  1.]]
+</pre>
+</div>
+<div class="section" id="matrices-de-0-s">
+<h4><a class="toc-backref" href=".#id12">Matrices de 0's</a></h4>
+<pre class="code python"><a name="rest_code_a84b043090ce4351ba79697dd96de789-1"></a><span class="n">nulle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<a name="rest_code_a84b043090ce4351ba79697dd96de789-2"></a><span class="k">print</span> <span class="n">nulle</span>
+</pre>
+<pre class="literal-block">
+[[ 0.  0.  0.]
+ [ 0.  0.  0.]
+ [ 0.  0.  0.]]
+</pre>
+</div>
+<div class="section" id="matrice-unite-ou-identite">
+<h4><a class="toc-backref" href=".#id13">Matrice unité ou identité</a></h4>
+<pre class="code python"><a name="rest_code_9bfeadaaea71433e87c8114024aff6b0-1"></a><span class="n">identite</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c">#  Matrice I4 : identité d'ordre 4</span>
+<a name="rest_code_9bfeadaaea71433e87c8114024aff6b0-2"></a><span class="k">print</span> <span class="n">identite</span><span class="p">,</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span>  <span class="c"># rappel : "\n" est le saut de ligne</span>
+<a name="rest_code_9bfeadaaea71433e87c8114024aff6b0-3"></a><span class="k">print</span> <span class="mi">3</span><span class="o">*</span><span class="n">identite</span>     <span class="c"># une matrice scalaire</span>
+</pre>
+<pre class="literal-block">
+[[ 1.  0.  0.  0.]
+ [ 0.  1.  0.  0.]
+ [ 0.  0.  1.  0.]
+ [ 0.  0.  0.  1.]]
+
+[[ 3.  0.  0.  0.]
+ [ 0.  3.  0.  0.]
+ [ 0.  0.  3.  0.]
+ [ 0.  0.  0.  3.]]
+</pre>
+</div>
+</div>
+<div class="section" id="une-remarque-sur-le-produit-matriciel">
+<h3><a class="toc-backref" href=".#id14">Une remarque sur le produit matriciel</a></h3>
+<p>En <strong>Python</strong>, vous pouvez faire deux types de produit :</p>
+<ol class="arabic">
+<li>
+<p class="first">Le produit matriciel que vous connaissez avec les restrictions de
+format que cela implique. La commande est :</p>
+<div class="math">
+\begin{equation*}
+\texttt{np.dot(A,B)}\quad \text{, et ce n'est pas }\quad \texttt{A*B}
+\end{equation*}
+</div>
+</li>
+<li>
+<p class="first">Il y a un autre produit qui existe (mais qui ne correspond à rien en
+maths) : le produit élément par élément (broadcasting). Pour deux
+matrices <span class="math">\(A\)</span> et <span class="math">\(B\)</span> de même format :</p>
+</li>
+</ol>
+<div class="math">
+\begin{equation*}
+\texttt{A*B}
+\end{equation*}
+</div>
+<p>donne la matrice de même format que <span class="math">\(A\)</span> et <span class="math">\(B\)</span> de
+coefficient général <span class="math">\(a_{i,j} \times b_{i,j}\)</span>. Opération très utile
+pour le calcul en "parallèle" (évite le recours à une boucle).</p>
+<p><strong>Exercice</strong></p>
+<ol class="arabic simple">
+<li>Calculer <span class="math">\(A^2\)</span> où <span class="math">\(A\)</span> est la matrice Attila d'ordre 3.</li>
+<li>Construire en utilisant la matrice <span class="math">\(B\)</span> précédente la matrice
+<span class="math">\(C\)</span> suivante :</li>
+</ol>
+<p>$ C =</p>
+<p>$</p>
+<pre class="code python"><a name="rest_code_68fa514de78942ec8ce41c0505f372b1-1"></a><span class="c"># Réponse à 1.  :</span>
+<a name="rest_code_68fa514de78942ec8ce41c0505f372b1-2"></a><span class="c">#----------------</span>
+<a name="rest_code_68fa514de78942ec8ce41c0505f372b1-3"></a><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<a name="rest_code_68fa514de78942ec8ce41c0505f372b1-4"></a><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> <span class="c">#Produit matriciel de A avec A</span>
+</pre>
+<pre class="literal-block">
+array([[ 3.,  3.,  3.],
+       [ 3.,  3.,  3.],
+       [ 3.,  3.,  3.]])
+</pre>
+<pre class="code python"><a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-1"></a><span class="c"># Réponse à 2. :</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-2"></a><span class="c">#---------------</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-3"></a><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-4"></a><span class="k">print</span> <span class="s">'B ='</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-5"></a><span class="k">print</span> <span class="n">B</span>                         <span class="c"># la matrice B de tout à l'heure</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-6"></a><span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="o">**</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">B</span><span class="p">])</span> <span class="c"># construction en compréhension</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-7"></a><span class="k">print</span> <span class="s">'M = '</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-8"></a><span class="k">print</span> <span class="n">M</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-9"></a><span class="n">C</span> <span class="o">=</span> <span class="n">B</span><span class="o">*</span><span class="n">M</span>                         <span class="c"># la matrice  est le produit</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-10"></a><span class="k">print</span> <span class="s">'C = '</span>                    <span class="c"># élément par élement de B et M</span>
+<a name="rest_code_44dbd9e84f284a4a834f306a47f088fd-11"></a><span class="k">print</span> <span class="n">C</span>
+</pre>
+<pre class="literal-block">
+B =
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+M =
+[[  2   4   8]
+ [ 16  32  64]
+ [128 256 512]]
+C =
+[[   2    8   24]
+ [  64  160  384]
+ [ 896 2048 4608]]
+</pre>
+</div>
+</div>
+<div class="section" id="visualiser-une-matrice">
+<h2><a class="toc-backref" href=".#id15">Visualiser une matrice</a></h2>
+<p>Voir <a class="reference external" href="../matshow-ca-plait-aux-filles">ce billet</a>.</p>
+</div>
+</div>
+        </div>
+                <ul class="pager hidden-print">
+<li class="previous">
+                <a href="../le-jeu-de-monthy-hall-22/" rel="prev" title="Le jeu de Monthy Hall 2/2">Article précédent</a>
+            </li>
+            <li class="next">
+                <a href="../utilisation-de-numpy-ensemble-de-mandelbrot/" rel="next" title="Utilisation de numpy">Article suivant</a>
+            </li>
+        </ul>
+<div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="yaspat",
+            disqus_url="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/",
+        disqus_title="Le\u00e7on 9. Le module numpy",
+        disqus_identifier="cache/posts/lecon-9-le-module-numpy.html",
+        disqus_config = function () {
+            this.language = "fr";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    </div>
+                    <footer id="footer"><p> </p>
+<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
+<a href="../../index.html"> <i class="icon-home"></i></a>
+<a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
+<a href="../../stories/animathions"> <i class="icon-youtube-play"></i></a>
+<a href="../../stories/exercices"> <i class="icon-gears"></i></a>
+<a href="../../stories/sujets-de-dmds"> <i class="icon-edit"></i></a>
+<a href="../../stories/informatique"> <i class="icon-desktop"></i></a>
+<a href="../../stories/livre-dor"> <i class="icon-book"></i></a>
+<a href="../../archive.html"> <i class="icon-archive"></i></a>
+<a href="../../categories/index.html"> <i class="icon-tags"></i></a>
+<a href="../../stories/about-me"> <i class="icon-question-sign"></i></a>
+<a href="https://twitter.com/yaspatmat"> <i class="icon-twitter"></i></a>
+<a href="https://github.com/yaspat"> <i class="icon-github"></i></a>
+<a href="../../rss.xml"> <i class="icon-rss"></i></a>
+
+            
+        </footer>
+</div>
+    </section><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="../../assets/js/all-nocdn.js" type="text/javascript"></script><!-- Social buttons --><div id="addthisbox" class="addthis_toolbox addthis_peekaboo_style addthis_default_style addthis_label_style addthis_32x32_style">
+ <a class="addthis_button_more">Partager</a>
+ </div>
+ <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f7088a56bb93798"></script><!-- End of social buttons --><script type="text/javascript">
+            $(function(){
+                $('.timeago').timeago();
+            });
+        </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68807000-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

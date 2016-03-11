@@ -239,7 +239,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2016-03-07T09:05:00Z</lastmod>
+  <lastmod>2016-03-11T15:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -330,6 +330,10 @@
   <lastmod>2016-02-03T16:42:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</loc>
+  <lastmod>2016-03-11T15:10:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</loc>
   <lastmod>2016-02-03T17:55:00Z</lastmod>
  </url>
@@ -356,6 +360,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</loc>
+  <lastmod>2016-03-11T15:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/about-me/</loc>

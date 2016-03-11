@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Tue, 08 Mar 2016 19:38:54 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Le jeu de Monthy Hall 2/2</title><link>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 11 Mar 2016 16:08:07 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Une utilisation de numpy</title><link>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#ensemble-de-mandelbrot" id="id1"&gt;Ensemble de Mandelbrot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#systematiser-le-calcul-et-fabriquer-l-image" id="id2"&gt;Systématiser le calcul et fabriquer l'image&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#utiliser-les-possiblites-de-numpy" id="id3"&gt;Utiliser les possiblités de &lt;tt class="docutils literal"&gt;numpy&lt;/tt&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#des-nan" id="id4"&gt;Des Nan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#trace-de-l-image" id="id5"&gt;Tracé de l'image&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#le-script" id="id6"&gt;Le script&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#une-amelioration-specifier-quelle-region-de-l-ensemble-observer" id="id7"&gt;Une amélioration : spécifier quelle région de l'ensemble observer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#des-propositions-d-exploration" id="id8"&gt;Des propositions d'exploration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="ensemble-de-mandelbrot"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#id1"&gt;Ensemble de Mandelbrot&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Voici ce qu'est l'ensemble de Mandelbrot. Vous pouvez l'explorer ici-même :&lt;/p&gt;
+&lt;p&gt;Entre deux diapos, n'hésitez pas à vous balader sur le slide (il est interactif)  ! Je vous conseille de
+passer en plein écran pour vous déplacer sur l'ensemble.&lt;/p&gt;
+&lt;iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/wex-4h-h588p/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0U2g5dHRyTWVldXJ5R3F4bmNIRjZqN2RnPT0&amp;amp;landing_sign=W7OnDqGWzDCsDksLe3aEQ2Sb9dyiiBZ8tUzp2EfOk3s"&gt;&lt;/iframe&gt;&lt;p&gt;À la fin de ce TP, vous saurez fabriquer ces images !&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 61 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</guid><pubDate>Fri, 11 Mar 2016 15:25:07 GMT</pubDate></item><item><title>Leçon 9. Le module numpy</title><link>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#importation-des-modules" id="id3"&gt;Importation des modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#premiers-pas-avec-numpy" id="id4"&gt;Premiers pas avec &lt;tt class="docutils literal"&gt;numpy&lt;/tt&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#taille-d-une-matrice" id="id5"&gt;Taille d'une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#acces-aux-coefficients" id="id6"&gt;Accès aux coefficients&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#extraction-d-une-ligne-ou-d-une-colonne" id="id7"&gt;Extraction d'une ligne ou d'une colonne&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#redimensionner-un-tableau-numpy" id="id8"&gt;Redimensionner un tableau numpy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#autres-operations" id="id9"&gt;Autres opérations&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrices-remarquables" id="id10"&gt;Matrices remarquables&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrices-de-1-s" id="id11"&gt;Matrices de 1's&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrices-de-0-s" id="id12"&gt;Matrices de 0's&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#matrice-unite-ou-identite" id="id13"&gt;Matrice unité ou identité&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#une-remarque-sur-le-produit-matriciel" id="id14"&gt;Une remarque sur le produit matriciel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#visualiser-une-matrice" id="id15"&gt;Visualiser une matrice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Dans la leçon 8, on construit des matrices en les regardant comme des
+listes de listes, ce qui a demandé de définir toutes les opérations
+matricielles. Or, le module &lt;span class="math"&gt;\(\texttt{numpy}\)&lt;/span&gt; est destiné notamment
+au calcul matriciel et fait le travail. On s'en servira aussi en
+traitement de l'image.&lt;/p&gt;
+&lt;p&gt;Une subtilité (ou un point fort) du module : les tableaux peuvent être
+multidimensionnels. Les matrices sont donc un cas particulier de
+tableaux multidimensionels.&lt;/p&gt;
+&lt;div class="section" id="importation-des-modules"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#id3"&gt;Importation des modules&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_ce8366fb40bc4377a0b6e1d39fa11c81-1"&gt;&lt;/a&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt; &lt;span class="c"&gt;# importation prudente&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;Rappel : avec &lt;strong&gt;import&lt;/strong&gt; vous importez le module. Avec &lt;strong&gt;as&lt;/strong&gt; vous lui
+donnez un nom de préfixe pour vous rappeler les fonctions provenant du
+module. Autrement dit : chaque commande utilisée du module &lt;strong&gt;numpy&lt;/strong&gt; est
+préfixée par &lt;strong&gt;np&lt;/strong&gt;, ce qui permet d'identifier son origine.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</guid><pubDate>Fri, 11 Mar 2016 15:09:43 GMT</pubDate></item><item><title>Le jeu de Monthy Hall 2/2</title><link>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/#importation-des-fonctions-utiles" id="id1"&gt;Importation des fonctions utiles&lt;/a&gt;&lt;/li&gt;
@@ -157,33 +217,4 @@ suivant :&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;strong&gt;Problème 2.&lt;/strong&gt; étant donné un tuple (resp. une liste), est-ce qu'un
 objet donné figure dans ce tuple (resp. cette liste) ?&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 6. Tuples  - Listes</title><link>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#c-est-quoi-un-tuple" id="id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#premiers-exemples" id="id2"&gt;Premiers exemples&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#nombre-d-items-d-un-tuple" id="id3"&gt;Nombre d'items d'un tuple&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#acces-aux-items-d-un-tuple" id="id4"&gt;Accès aux items d'un tuple&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#une-utilisation-interessante-des-tuples-echange-de-variables" id="id5"&gt;Une utilisation intéressante des tuples : échange de variables&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#les-tuples-ne-sont-pas-mutables" id="id6"&gt;Les tuples ne sont pas mutables&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#un-autre-type-voisin-des-tuples-les-listes" id="id7"&gt;Un autre type voisin des tuples : les listes.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#petite-digression-sur-les-mots-et-les-listes-split-et-join" id="id8"&gt;Petite digression sur les mots et les listes. Split et join&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="c-est-quoi-un-tuple"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/#id1"&gt;C'est quoi un tuple ?&lt;/a&gt;&lt;/h2&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;C'est un nouveau type d'objets. Il correspond en maths, aux
-&lt;span class="math"&gt;\(p\)&lt;/span&gt;-listes ou &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplets : suites ordonnées de &lt;span class="math"&gt;\(p\)&lt;/span&gt;
-objets.&lt;/li&gt;
-&lt;li&gt;En &lt;strong&gt;Python&lt;/strong&gt;, les tuples sont délimités, comme en maths, par des
-parenthèses.&lt;/li&gt;
-&lt;li&gt;En maths, les éléments d'un &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet s'appellent les
-&lt;em&gt;coordonnées&lt;/em&gt; ou les &lt;em&gt;composantes&lt;/em&gt; du &lt;span class="math"&gt;\(p\)&lt;/span&gt;-upplet. En
-&lt;strong&gt;Python&lt;/strong&gt;, les éléments d'un tuple sont appelés les &lt;em&gt;items&lt;/em&gt; du
-tuple. Ils sont séparés par des virgules, comme en maths.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 6 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>join</category><category>leçon</category><category>listes</category><category>python</category><category>split</category><category>tuples</category><guid>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</guid><pubDate>Thu, 17 Dec 2015 20:36:59 GMT</pubDate></item><item><title>Avez-vous remarqué cette nouvelle icône ?</title><link>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</link><dc:creator>MY. Patel</dc:creator><description>&lt;p&gt;Si vous reagardez dans la barre latérale, vous verrez une icône de video  permettant  d' aller vers des &lt;em&gt;animathions&lt;/em&gt;. C'est quoi une
-&lt;em&gt;animathion&lt;/em&gt; ? &lt;a class="reference external" href="http://yaspat.github.io/blog/stories/animathions"&gt;Allez voir !&lt;/a&gt;&lt;/p&gt;</description><category>animathions</category><category>video</category><guid>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</guid><pubDate>Mon, 14 Dec 2015 11:59:21 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item></channel></rss>
