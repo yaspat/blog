@@ -1,4 +1,4 @@
-.. title: Informatique :Leçon 9. Le module numpy
+.. title: Informatique : Leçon 9. Le module numpy
 .. slug: lecon-9-le-module-numpy
 .. date: 2016-03-11 16:09:43 UTC+01:00
 .. tags: leçon, numpy, matrices
