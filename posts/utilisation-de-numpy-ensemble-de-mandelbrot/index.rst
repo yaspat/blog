@@ -34,6 +34,39 @@ Voici ce qu'est l'ensemble de Mandelbrot. Vous pouvez l'explorer ici-même.Entre
 
 
 
+Voici les coordonnées :math:`(x_c,y_c)` du centre de chaque diapo. La largeur de l'image est de l'odre de :math:`\delta=10^{-2}` en général : 
+
+
++-----------------------+--------------+---------------+
+| Région                | :math:`x_c=` |  :math:`y_c=` |
++-----------------------+--------------+---------------+
+| Hippocampes           | -0.75        |       0.1     |
++-----------------------+--------------+---------------+
+| Éléphants             |    0.275     |  0            |
++-----------------------+--------------+---------------+
+| Spirales triples      | -0.088       | 0.654 	       |
++-----------------------+--------------+---------------+
+| Spirales quadruples   | 0.274        | 0.482         |
++-----------------------+--------------+---------------+		
+| Sceptres              |   -1.36      | 0.005         |
++-----------------------+--------------+---------------+
+| Doubles sceptres      |   -0.1002    | 0.8383        |
++-----------------------+--------------+---------------+
+| Sceptres (variante)   | -1.108       |   0.230       |
++-----------------------+--------------+---------------+
+| Mini Mandelbrot       | -1.75        |   0           |
++-----------------------+--------------+---------------+	
+| Autre mini Mandelbrot |  -0.1592     |   -1.0317     |
++-----------------------+--------------+---------------+
+
+
+
+
+
+Le point de départ
+------------------
+
+
 Soit :math:`z_0` un complexe donné et soit la suite donnée par son
 premier terme égal à :math:`z_0` et :
 
@@ -655,11 +688,6 @@ Des propositions d'exploration
         plt.title('Avec la carte   [ {} ]   {}/{}'.format(carte,i,total))
         plt.imshow(mandel, cmap =carte)
 
-
-.. parsed-literal::
-
-    /opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/matplotlib/pyplot.py:516: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
-      max_open_warning, RuntimeWarning)
 
 
 
