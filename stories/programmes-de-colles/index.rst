@@ -68,9 +68,12 @@ Les programmes de colles de maths
 
 #.  `Programme de la quinzaine 8 (18jan  - 29jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/08-Matrices.pdf>`_. Thème : calcul matriciel.
 
- #.  `Programme de la quinzaine 9 (1fév  - 26fév) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/09-Suites.pdf>`_. Thème : Polynômes - suites réelles - Python
+#.  `Programme de la quinzaine 9 (1fév  - 26fév) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/09-Suites.pdf>`_. Thème : Polynômes - suites réelles - Python
 
-#.  Programme de la quinzaine 10 (28fév  - 11 mars).  Thème : révisions d'analyse : études de fonctions, manipulation des inégalités. Suites réelles - Python
+#.  Quinzaine 10 (28fév  - 11 mars). Thème : révisions d'analyse : études de fonctions, manipulation des inégalités. Suites réelles - Python
+
+#. `Programme de la quinzaine 11 (14mar - 15mar) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/10-Probas.pdf>`_.Thème : Probabilités. Théorie basique. Simulation en Python.
+
 
 Les salles de colles de mathématiques
 =====================================
