@@ -104,7 +104,7 @@ Sujets de DM
 #. DM 16 :  Probabilités  - Chaîne de Markov stationnaire à trois états    *À rendre le 22/03/16*
 
    a. `Sujet  du DM16 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM16/DM16.pdf>`_
-   b. `Corrigé   du DM16 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM16/Corrige-DM16.pdf>`_
+   b. `Corrigé   du DM16 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM16/CorrigeDM16.pdf>`_
 
 Sujets de DS
 ============
