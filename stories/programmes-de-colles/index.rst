@@ -74,6 +74,8 @@ Les programmes de colles de maths
 
 #. `Programme de la quinzaine 11 (14mar - 15mar) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/10-Probas.pdf>`_.Thème : Probabilités. Théorie basique. Simulation en Python.
 
+#. `Programme de la quinzaine 12 (19mar - 22avr) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/12-Kn.pdf>`_.Thème : Espace vectoriel :math:`K^n`.
+
 
 Les salles de colles de mathématiques
 =====================================
