@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Sat, 12 Mar 2016 11:01:48 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Une utilisation de numpy</title><link>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Thu, 12 May 2016 20:50:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique. Exercices sur les chaînes de caractères</title><link>http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#comparaison-de-mots" id="id3"&gt;Comparaison de mots&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#egalite-de-deux-mots" id="id4"&gt;Égalité de deux mots&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#recherche-d-une-sous-chaine-dans-une-chaine" id="id5"&gt;Recherche d'une sous-chaîne dans une chaîne&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#nombre-d-occurrences" id="id6"&gt;Nombre d'occurrences&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#combien-de-fois-tolstoi-a-ecrit-cheval-dans-guerre-et-paix" id="id7"&gt;Combien de fois Tolstoï a écrit "cheval" dans &lt;em&gt;Guerre et paix&lt;/em&gt; ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#nombre-d-occurrences-d-une-sous-chaine-dans-une-chaine" id="id8"&gt;Nombre d'occurrences d'une sous-chaîne dans une chaîne&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="section" id="comparaison-de-mots"&gt;
+&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#id3"&gt;Comparaison de mots&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="section" id="egalite-de-deux-mots"&gt;
+&lt;h3&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#id4"&gt;Égalité de deux mots&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Exercice.&lt;/strong&gt; Écrire une fonction &lt;span class="math"&gt;\(\texttt{sontEgaux(mot1,mot2)}\)&lt;/span&gt; qui prend
+en entrée deux chaînes de caractères &lt;span class="math"&gt;\(\texttt{mot1}\)&lt;/span&gt; et
+&lt;span class="math"&gt;\(\texttt{mot2}\)&lt;/span&gt; et qui retroune &lt;span class="math"&gt;\(\texttt{1}\)&lt;/span&gt; si ces deux
+chaînes sont égales et &lt;span class="math"&gt;\(\texttt{0}\)&lt;/span&gt; sinon.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Principe&lt;/strong&gt;&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Si les deux mots ne sont pas de même longueur, clairement, ils ne
+sont pas égaux.&lt;/li&gt;
+&lt;li&gt;Si les deux mots sont de même longueur : on implémente une boucle
+&lt;span class="math"&gt;\(\texttt{for}\)&lt;/span&gt; pour comparer les lettres une par une et on
+&lt;strong&gt;interrompt&lt;/strong&gt; la boucle dès que deux lettres en même position ne
+sont égales.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 818 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><guid>http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/</guid><pubDate>Thu, 12 May 2016 20:36:09 GMT</pubDate></item><item><title>Une utilisation de numpy</title><link>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#ensemble-de-mandelbrot" id="id1"&gt;Ensemble de Mandelbrot&lt;/a&gt;&lt;/li&gt;
@@ -192,28 +224,4 @@ p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
 que j'avais fait dans le billet sur l'ensemble de Mandelbrot, je vais
 générer la galerie d'images en &lt;strong&gt;Python&lt;/strong&gt;, ce qui vous permettra de
 vous familiariser avec la commande &lt;strong&gt;subplot&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>images</category><category>subplot</category><guid>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</guid><pubDate>Sun, 24 Jan 2016 21:36:59 GMT</pubDate></item><item><title>Informatique : Leçon 7. Recherche dans une chaîne de caractères</title><link>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#formulation-du-probleme" id="id1"&gt;Formulation du problème&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#des-solutions-differentes" id="id2"&gt;Des solutions différentes&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#approche-1" id="id3"&gt;Approche 1.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#approche-2" id="id4"&gt;Approche 2.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#approche-3" id="id5"&gt;Approche 3.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#quelques-mots-sur-l-interruption-de-boucle" id="id6"&gt;Quelques mots sur l'interruption de boucle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="section" id="formulation-du-probleme"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/#id1"&gt;Formulation du problème&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Donnée : une chaîne de caractères.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;strong&gt;Problème 1.&lt;/strong&gt; je veux savoir si ma chaîne contient un caractère
-donné.&lt;/blockquote&gt;
-&lt;p&gt;Ce dernier problème est un cas particulier du problème plus général
-suivant :&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;strong&gt;Problème 2.&lt;/strong&gt; étant donné un tuple (resp. une liste), est-ce qu'un
-objet donné figure dans ce tuple (resp. cette liste) ?&lt;/blockquote&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>chaînes de caractères</category><category>informatique</category><category>leçon</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</guid><pubDate>Sun, 24 Jan 2016 11:36:59 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>images</category><category>subplot</category><guid>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</guid><pubDate>Sun, 24 Jan 2016 21:36:59 GMT</pubDate></item></channel></rss>

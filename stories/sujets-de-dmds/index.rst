@@ -106,12 +106,29 @@ Sujets de DM
    a. `Sujet  du DM16 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM16/DM16.pdf>`_
    b. `Corrigé   du DM16 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM16/CorrigeDM16.pdf>`_
 
+
+#. DM 17 : Continuité sur un intervalle    *À rendre le 29/04/16*
+
+   a. `Sujet  du DM17 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM17/DM17.pdf>`_
+   b. `Corrigé   du DM17 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM17/CorrigeDM17.pdf>`_
+
+#. DM 18 : Variables aléatoires réelles   *À rendre le 20/05/16*
+
+   a. `Sujet  du DM18 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM18/DM18.pdf>`_
+   b. `Corrigé   du DM18 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM18/CorrigeDM18.pdf>`_
+
+
+
 Sujets de DS
 ============
 
 1. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
 2. `Sujet du DS2 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS02/DS02.pdf>`_
 3. `Sujet du DS3 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS03/DS03.pdf>`_
+4. `Sujet du DS4 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS04/DS04.pdf>`_
+5. `Sujet du DS5 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS05/DS05.pdf>`_
+6. `Sujet du DS6 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS06/DS06.pdf>`_
+7. `Sujet du DS7 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS07/DS07.pdf>`_
 
 
 

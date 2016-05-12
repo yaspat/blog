@@ -87,7 +87,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fractales.xml</loc>
-  <lastmod>2016-03-11T16:09:00Z</lastmod>
+  <lastmod>2016-03-12T09:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/images.xml</loc>
@@ -107,7 +107,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/lecon.xml</loc>
-  <lastmod>2016-02-03T21:08:00Z</lastmod>
+  <lastmod>2016-03-12T11:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/listes-en-comprehension.xml</loc>
@@ -119,11 +119,11 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot.xml</loc>
-  <lastmod>2016-03-11T16:09:00Z</lastmod>
+  <lastmod>2016-03-12T09:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/matrices.xml</loc>
-  <lastmod>2016-02-03T16:50:00Z</lastmod>
+  <lastmod>2016-03-12T11:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/matshow.xml</loc>
@@ -131,7 +131,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/numpy.xml</loc>
-  <lastmod>2016-03-11T16:09:00Z</lastmod>
+  <lastmod>2016-03-12T11:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/objets.xml</loc>
@@ -219,10 +219,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2016-03-11T16:09:00Z</lastmod>
+  <lastmod>2016-05-12T20:36:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2016-03-11T16:09:00Z</lastmod>
+  <lastmod>2016-05-12T20:36:00Z</lastmod>
  </sitemap>
 </sitemapindex>
