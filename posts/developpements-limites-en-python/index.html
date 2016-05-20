@@ -38,7 +38,7 @@ article: http://ogp.me/ns/article#
 
 
 
-In [1]:
+In [6]:
 
     
 from sympy import *
@@ -92,7 +92,7 @@ from sympy.interactive import printing # Pour avoir">
 
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In [1]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
@@ -111,7 +111,7 @@ from sympy.interactive import printing # Pour avoir">
 
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In [2]:</div>
+<div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">'x'</span><span class="p">)</span> <span class="c"># maintenant je peux utiliser la variable x pour mes calculs.</span>
@@ -141,7 +141,7 @@ $$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$<p>Il me suffit simplement de  taper ceci 
 
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In [3]:</div>
+<div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">series</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">x</span><span class="p">)),</span><span class="n">x</span><span class="p">)</span>
@@ -163,11 +163,11 @@ $$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$<p>Il me suffit simplement de  taper ceci 
 <div class="input_area">
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[3]:</div>
+<div class="prompt output_prompt">Out[14]:</div>
 
 
-<div class="output_latex output_subarea output_execute_result">
-$$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{384} + \frac{1609 x^{5}}{3840} + \mathcal{O}\left(x^{6}\right)$$
+<div class="output_text output_subarea output_execute_result">
+<pre>1 + x/2 - 3*x**2/8 + 17*x**3/48 - 143*x**4/384 + 1609*x**5/3840 + O(x**6)</pre>
 </div>
 
 </div>
@@ -218,7 +218,7 @@ $$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{3
 
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In [6]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
@@ -242,11 +242,11 @@ $$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{3
 <div class="input_area">
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[6]:</div>
+<div class="prompt output_prompt">Out[9]:</div>
 
 
-<div class="output_latex output_subarea output_execute_result">
-$$\sqrt{3} + \frac{\sqrt{3}}{6} \left(x - 3\right) - \frac{\sqrt{3}}{72} \left(x - 3\right)^{2} + \mathcal{O}\left(\left(x - 3\right)^{3}; x\rightarrow3\right)$$
+<div class="output_text output_subarea output_execute_result">
+<pre>sqrt(3) + sqrt(3)*(x - 3)/6 - sqrt(3)*(x - 3)**2/72 + O((x - 3)**3, (x, 3))</pre>
 </div>
 
 </div>
@@ -274,7 +274,7 @@ $$\sqrt{3} + \frac{\sqrt{3}}{6} \left(x - 3\right) - \frac{\sqrt{3}}{72} \left(x
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Remarquez bien que pour avoir un DL$_n$, on spécifie dans <code>series</code> l'ordre $n+1$</p>
+<p>Remarquez bien que pour avoir un DL$_n$, on spécifie dans <code>series</code> l'ordre $n+1$.</p>
 <p>À vous de jouer pour vérifer vos DL !</p>
 
 </div>
