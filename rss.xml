@@ -1,5 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Thu, 12 May 2016 20:50:40 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Informatique. Exercices sur les chaînes de caractères</title><link>http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 20 May 2016 09:51:33 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;De quoi vous aider à vérifier vos calculs. Comme d'habitude, on commence par importer les modules utiles :&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sympy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sympy.interactive&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;printing&lt;/span&gt; &lt;span class="c"&gt;# Pour avoir des belles sorties ...&lt;/span&gt;
+&lt;span class="n"&gt;printing&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;init_printing&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;use_latex&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# ... en LaTeX&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;symbols&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'x'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# maintenant je peux utiliser la variable x pour mes calculs.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;La fonction &lt;code&gt;series&lt;/code&gt; fournit la série de Taylor-Mac Laurin de la fonction 
+(rappel : c'est la partie principale du développement limité &lt;strong&gt;au voisinage de &lt;/strong&gt; $a=0$.)&lt;/p&gt;
+&lt;p&gt;Par exemple, si je prends la fonction de l'exemple 18 du cours :&lt;/p&gt;
+$$ f(x) = \sqrt{1+\ln(1+x)}$$&lt;p&gt;Je tape :&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [3]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)),&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_wrapper output_hidden"&gt;
+&lt;div class="output"&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[3]:&lt;/div&gt;
+
+
+&lt;div class="output_latex output_subarea output_execute_result"&gt;
+$$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{384} + \frac{1609 x^{5}}{3840} + \mathcal{O}\left(x^{6}\right)$$
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Des remarques :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Par défaut, comme dit plus haut, les développements limités sont donnés au voisiange de $a=0$.&lt;/li&gt;
+&lt;li&gt;Par défaut, la partie régulière du développemement limité est celle à d'ordre 5.&lt;/li&gt;
+&lt;li&gt;Le terme résiduel n'est pas noté $o(x^5)$ comme vous pouvez le constater, mais $\mathcal O(x^6)$. Cette notation (qui s'appelle, vous l'aurez deviné, &lt;em&gt;grand O&lt;/em&gt;) signifie : "il existe un coefficient d'ordre 6, mais je ne l'écris pas" (c'est donc plus précis que $o(x^5)$).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Si je veux un DL de la fonction $t\mapsto \sqrt t$ à l'ordre 2 en $a=3$ comme fait en cours, je tape :&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+
+&lt;div class="input_hidden"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [6]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;
+&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;
+&lt;span class="n"&gt;series&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="output_wrapper output_hidden"&gt;
+&lt;div class="output"&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="input_area"&gt;
+
+&lt;div class="output_area"&gt;&lt;div class="prompt output_prompt"&gt;Out[6]:&lt;/div&gt;
+
+
+&lt;div class="output_latex output_subarea output_execute_result"&gt;
+$$\sqrt{3} + \frac{\sqrt{3}}{6} \left(x - 3\right) - \frac{\sqrt{3}}{72} \left(x - 3\right)^{2} + \mathcal{O}\left(\left(x - 3\right)^{3}; x\rightarrow3\right)$$
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+ &lt;i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px"&gt;
+  /   &lt;i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px"&gt;     [code python] &lt;/i&gt;
+&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Remarquez bien que pour avoir un DL$_n$, on spécifie dans &lt;code&gt;series&lt;/code&gt; l'ordre $n+1$&lt;/p&gt;
+&lt;p&gt;À vous de jouer pour vérifer vos DL !&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</guid><pubDate>Fri, 20 May 2016 09:45:32 GMT</pubDate></item><item><title>Informatique. Exercices sur les chaînes de caractères</title><link>http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/#comparaison-de-mots" id="id3"&gt;Comparaison de mots&lt;/a&gt;&lt;ul&gt;
@@ -209,19 +409,4 @@ p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
 &lt;/div&gt;
 &lt;p&gt;Ce qui a donné la très belle image suivante :&lt;/p&gt;
 &lt;img alt="../../images/Biomorphes3/biomorphes3-1.png" class="align-center" src="http://yaspat.github.io/blog/images/Biomorphes3/biomorphes3-1.png"&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>symétries</category><guid>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</guid><pubDate>Thu, 28 Jan 2016 21:37:50 GMT</pubDate></item><item><title>Biomorphes 2/3 : bestiaire</title><link>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#importation-des-modules" id="id1"&gt;Importation des modules&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#les-differentes-bestioles-et-leur-habitat" id="id2"&gt;Les différentes bestioles et leur habitat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#fonction-de-calcul-de-la-duree-de-vie" id="id3"&gt;Fonction de calcul de la durée de vie&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#fonction-de-coloriage" id="id4"&gt;Fonction de coloriage&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/#generation-de-la-galerie" id="id5"&gt;Génération de la galerie&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;C'est la suite du &lt;a class="reference external" href="/blog/posts/biomorphes/"&gt;billet&lt;/a&gt; dans lequel j'avais promis des images.&lt;/p&gt;
-&lt;p&gt;J'avais déjà écrit un billet du même genre &lt;a class="reference external" href="/blog/posts/photos-de-vacances/"&gt;ici&lt;/a&gt;. Mais, contrairement à ce
-que j'avais fait dans le billet sur l'ensemble de Mandelbrot, je vais
-générer la galerie d'images en &lt;strong&gt;Python&lt;/strong&gt;, ce qui vous permettra de
-vous familiariser avec la commande &lt;strong&gt;subplot&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>images</category><category>subplot</category><guid>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</guid><pubDate>Sun, 24 Jan 2016 21:36:59 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>symétries</category><guid>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</guid><pubDate>Thu, 28 Jan 2016 21:37:50 GMT</pubDate></item></channel></rss>
