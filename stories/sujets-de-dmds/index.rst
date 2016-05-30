@@ -115,7 +115,7 @@ Sujets de DM
 #. DM 18 : Variables aléatoires réelles   *À rendre le 20/05/16*
 
    a. `Sujet  du DM18 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM18/DM18.pdf>`_
-   b. `Corrigé   du DM18 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM18/CorrigeDM18.pdf>`_
+   b. `Corrigé   du DM18 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM18/Corrige-DM18.pdf>`_
 
 
 
