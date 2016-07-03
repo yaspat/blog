@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Calcul de primitives en Python ! | Maths  BCPST1-A, Rennes, MY Patel</title>
+<title>Calcul de primitives en Python ! | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/">
@@ -26,7 +26,7 @@ article: http://ogp.me/ns/article#
      }
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
-<meta property="og:site_name" content="Maths  BCPST1-A, Rennes, MY Patel">
+<meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Calcul de primitives en Python !">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/">
 <meta property="og:description" content="Un des points forts de Python est l'existence de nombreux modules qui permettent de faire à peu près ce qu'on veut. Ce qui veut dire en particulier qu'avant de chercher à programmer le bidule de vos r">
@@ -86,7 +86,7 @@ article: http://ogp.me/ns/article#
 <!-- TEASER_END -->
 
 
-<h3 id="Imporation-des-modules-utiles">Imporation des modules utiles<a class="anchor-link" href=".#Imporation-des-modules-utiles">¶</a>
+<h3 id="Imporation-des-modules-utiles">Imporation des modules utiles<a class="anchor-link" href="#Imporation-des-modules-utiles">¶</a>
 </h3>
 </div>
 </div>
@@ -98,9 +98,9 @@ article: http://ogp.me/ns/article#
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">sympy.interactive</span> <span class="kn">import</span> <span class="n">printing</span> <span class="c"># Pour avoir des belles sorties ...</span>
-<span class="n">printing</span><span class="o">.</span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="c"># ... en LaTeX</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">sympy.interactive</span> <span class="kn">import</span> <span class="n">printing</span> <span class="c1"># Pour avoir des belles sorties ...</span>
+<span class="n">printing</span><span class="o">.</span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="c1"># ... en LaTeX</span>
 </pre></div>
 
 </div>
@@ -115,7 +115,7 @@ article: http://ogp.me/ns/article#
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="C'est-parti">C'est parti<a class="anchor-link" href=".#C'est-parti">¶</a>
+<h3 id="C'est-parti">C'est parti<a class="anchor-link" href="#C'est-parti">¶</a>
 </h3>
 </div>
 </div>
@@ -127,7 +127,7 @@ article: http://ogp.me/ns/article#
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">'x'</span><span class="p">)</span> <span class="c"># maintenant je peux utiliser la variable x pour mes calculs.</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span> <span class="c1"># maintenant je peux utiliser la variable x pour mes calculs.</span>
 </pre></div>
 
 </div>
@@ -154,7 +154,7 @@ article: http://ogp.me/ns/article#
 <div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">F</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">x</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">F</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="p">),</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -171,7 +171,7 @@ article: http://ogp.me/ns/article#
 <div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">print</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -197,10 +197,10 @@ article: http://ogp.me/ns/article#
 </div>
 </div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
  <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -242,7 +242,7 @@ article: http://ogp.me/ns/article#
 <div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
 <span class="n">display</span><span class="p">(</span><span class="n">F</span><span class="p">)</span>
 </pre></div>
 
@@ -271,10 +271,10 @@ $$\frac{2}{3} \left(x + 2\right)^{\frac{3}{2}}$$
 
 </div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
  <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -320,12 +320,12 @@ $$\frac{2}{3} \left(x + 2\right)^{\frac{3}{2}}$$
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
     </div>

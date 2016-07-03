@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info en Biwane (prépa BCPST1-A, Rennes)</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour la classe de BCPST1-A de Rennes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Fri, 20 May 2016 16:15:07 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link rel="self" type="application/rss+xml" href="http://yaspat.github.io/blog/rss.xml"></atom:link><language>fr</language><lastBuildDate>Sun, 03 Jul 2016 20:04:36 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -16,9 +16,9 @@
 &lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sympy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
-&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sympy.interactive&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;printing&lt;/span&gt; &lt;span class="c"&gt;# Pour avoir des belles sorties ...&lt;/span&gt;
-&lt;span class="n"&gt;printing&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;init_printing&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;use_latex&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# ... en LaTeX&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sympy&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;sympy.interactive&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;printing&lt;/span&gt; &lt;span class="c1"&gt;# Pour avoir des belles sorties ...&lt;/span&gt;
+&lt;span class="n"&gt;printing&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;init_printing&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;use_latex&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="bp"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# ... en LaTeX&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -35,7 +35,7 @@
 &lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;symbols&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;'x'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c"&gt;# maintenant je peux utiliser la variable x pour mes calculs.&lt;/span&gt;
+&lt;div class=" highlight hl-ipython2"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;symbols&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'x'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# maintenant je peux utiliser la variable x pour mes calculs.&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;/div&gt;
@@ -106,7 +106,7 @@ sont égales.&lt;/li&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/#id1"&gt;Ensemble de Mandelbrot&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Voici ce qu'est l'ensemble de Mandelbrot. Vous pouvez l'explorer ici-même.Entre deux diapos, n'hésitez pas à vous balader sur le slide (il est interactif)  ! Je vous conseille de  passer en plein écran.&lt;/p&gt;
 &lt;iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/wex-4h-h588p/?bgcolor=ffffff&amp;amp;lock_to_path=0&amp;amp;autoplay=0&amp;amp;autohide_ctrls=0&amp;amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0U2g5dHRyTWVldXJ5R3F4bmNIRjZqN2RnPT0&amp;amp;landing_sign=W7OnDqGWzDCsDksLe3aEQ2Sb9dyiiBZ8tUzp2EfOk3s"&gt;&lt;/iframe&gt;&lt;p&gt;À la fin de ce TP, vous saurez fabriquer ces images !&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 61 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>fractales</category><category>mandelbrot</category><category>numpy</category><guid>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</guid><pubDate>Fri, 11 Mar 2016 15:25:07 GMT</pubDate></item><item><title>Informatique : Leçon 9. Le module numpy</title><link>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 60 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;</description><category>fractales</category><category>mandelbrot</category><category>numpy</category><guid>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</guid><pubDate>Fri, 11 Mar 2016 15:25:07 GMT</pubDate></item><item><title>Informatique : Leçon 9. Le module numpy</title><link>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#importation-des-modules" id="id3"&gt;Importation des modules&lt;/a&gt;&lt;/li&gt;
@@ -140,7 +140,7 @@ multidimensionnels. Les matrices sont donc un cas particulier de
 tableaux multidimensionels.&lt;/p&gt;
 &lt;div class="section" id="importation-des-modules"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/#id3"&gt;Importation des modules&lt;/a&gt;&lt;/h2&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_f68528f7a4104a2691ed1c16d38fcbec-1"&gt;&lt;/a&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt; &lt;span class="c"&gt;# importation prudente&lt;/span&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_72171387aa3542e4af27930085616fee-1"&gt;&lt;/a&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt; &lt;span class="c1"&gt;# importation prudente&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;Rappel : avec &lt;strong&gt;import&lt;/strong&gt; vous importez le module. Avec &lt;strong&gt;as&lt;/strong&gt; vous lui
 donnez un nom de préfixe pour vous rappeler les fonctions provenant du
 module. Autrement dit : chaque commande utilisée du module &lt;strong&gt;numpy&lt;/strong&gt; est
@@ -196,7 +196,7 @@ grille de nombres. Si chaque nombre est représenté par une couleur, on
 obtient une belle grille de couleurs, c'est-à-dire une mosaïque. Ça a
 beaucoup plu aux filles du groupe du TP. Remarque de macho ? Ça tombe bien,
 la commande pour faire cela est aussi &lt;strong&gt;matshow&lt;/strong&gt;. Regradons :&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 54 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>matshow</category><category>split</category><guid>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</guid><pubDate>Wed, 03 Feb 2016 17:51:45 GMT</pubDate></item><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 53 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>matshow</category><category>split</category><guid>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</guid><pubDate>Wed, 03 Feb 2016 17:51:45 GMT</pubDate></item><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
 &lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
@@ -229,8 +229,8 @@ programmation.&lt;/p&gt;
 &lt;p&gt;Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
 chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
 définir des matrices comme des listes de listes.&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="c"&gt;# les séparateurs des items sont&lt;/span&gt;
-&lt;a name="rest_code_0aadd526d96d4307b35d5cfd1440c3cc-2"&gt;&lt;/a&gt;                              &lt;span class="c"&gt;# des virgules&lt;/span&gt;
+&lt;pre class="code python"&gt;&lt;a name="rest_code_230a9f506eb0445f9f67d8bc5e326baf-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="c1"&gt;# les séparateurs des items sont&lt;/span&gt;
+&lt;a name="rest_code_230a9f506eb0445f9f67d8bc5e326baf-2"&gt;&lt;/a&gt;                              &lt;span class="c1"&gt;# des virgules&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-8-matrices/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>listes en compréhension</category><category>matrices</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-8-matrices/</guid><pubDate>Wed, 03 Feb 2016 16:41:55 GMT</pubDate></item><item><title>Créer une animation en Python</title><link>http://yaspat.github.io/blog/posts/animation-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -251,11 +251,13 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 &lt;/colgroup&gt;
 &lt;tbody valign="top"&gt;
 &lt;tr&gt;&lt;td&gt; &lt;/td&gt;
-&lt;td&gt;&lt;div class="first last"&gt;&lt;iframe width="425" height="344" src="//www.youtube.com/embed/2qpXhdseGOw?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;&lt;div class="first last"&gt;&lt;div class="youtube-video"&gt;
+&lt;iframe width="425" height="344" src="https://www.youtube.com/embed/2qpXhdseGOw?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Biomorphes 3/3 : fin</title><link>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Dans le &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire"&gt;billet précédent&lt;/a&gt;, j'ai colorié un domaine du plan complexe en
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Biomorphes 3/3 : fin</title><link>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Dans le &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire"&gt;billet précédent&lt;/a&gt;, j'ai colorié un domaine du plan complexe en
 partant de la fonction &lt;span class="math"&gt;\(p\)&lt;/span&gt; suivante :&lt;/p&gt;
 &lt;div class="math"&gt;
 \begin{equation*}

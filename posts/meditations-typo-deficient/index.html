@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Méditations pythoniques pour typo-déficients | Maths  BCPST1-A, Rennes, MY Patel</title>
+<title>Méditations pythoniques pour typo-déficients | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
@@ -26,7 +26,7 @@ article: http://ogp.me/ns/article#
      }
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
-<meta property="og:site_name" content="Maths  BCPST1-A, Rennes, MY Patel">
+<meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Méditations pythoniques pour typo-déficients">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
 <meta property="og:description" content="L'image de machine qu'on a donné d'une fonction dans le cours de
@@ -82,10 +82,10 @@ def f(x1,x2,x3):
 <p>L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en <strong>Python</strong>.</p>
 <!-- TEASER_END --><p>En effet,  si ma fonction se présente comme :</p>
-<pre class="code python"><a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
-<a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-2"></a>    <span class="c">#bla bla</span>
-<a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-3"></a>    <span class="c">#bla bla</span>
-<a name="rest_code_cf20b4fcfbb146d0bc94db12d2785d98-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
+<pre class="code python"><a name="rest_code_67f761c286ca42b0bb611118517a1929-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
+<a name="rest_code_67f761c286ca42b0bb611118517a1929-2"></a>    <span class="c1">#bla bla</span>
+<a name="rest_code_67f761c286ca42b0bb611118517a1929-3"></a>    <span class="c1">#bla bla</span>
+<a name="rest_code_67f761c286ca42b0bb611118517a1929-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
 </pre>
 <p>On comprend que :</p>
 <ol class="arabic simple">
@@ -107,8 +107,8 @@ de sortie.</li>
 </ol>
 <p>On peut mettre autant d'arguments d'entrée et de sortie à partir de 0.
 Mais alors que se passe-til pour une fonction comme celle-ci :</p>
-<pre class="code python"><a name="rest_code_9191fb9b34e945f1a454068524bee667-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_9191fb9b34e945f1a454068524bee667-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_58d84ed039c34878adda359a1ef991d0-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_58d84ed039c34878adda359a1ef991d0-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <ol class="arabic simple">
 <li>Cette fonction ne produit aucun objet, puisqu'elle ne contient aucun
@@ -118,19 +118,19 @@ puisque la paire de parenthèses dans la première ligne ne contient
 rien.</li>
 </ol>
 <p>Cette fonction se contente de faire un simple affichage à l'écran :</p>
-<pre class="code python"><a name="rest_code_c87e0d380ae144328f0369582df68293-1"></a><span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_0510fcd869804105a2cf2e5e4f04891d-1"></a><span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
 <p>Mais alors, cette fonction ne produit pas une chaîne de caractères ?
 Regardons :</p>
-<pre class="code python"><a name="rest_code_f59a3e9a3a694ea4a3d8c0647f19579d-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_4ededb86dd4e409fba5f0b8b34e4e7a2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
-<pre class="code python"><a name="rest_code_82b40fa4476943ee907e4fa35ed32b4c-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_12f97ba226f7462c9ac1ce1e9cbd914b-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 NoneType
@@ -138,23 +138,23 @@ NoneType
 <p>L' objet <strong>a</strong> est un objet de type <strong>sans type</strong>. Ce n'est donc sûrment
 pas une chaîne de caractères.</p>
 <p>En revanche, regarde bien Biwane, si j'avais écrit :</p>
-<pre class="code python"><a name="rest_code_36a8f30f53bb4b8da2bcb222ed36a5b9-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_36a8f30f53bb4b8da2bcb222ed36a5b9-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_90c8334ff3544584a7811246a65b409d-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_90c8334ff3544584a7811246a65b409d-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s1">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <p>puis :</p>
-<pre class="code python"><a name="rest_code_dad0f9f8938a474b949298d550efaab8-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_7d82ccec3da248ee968b70a6bd16fe3c-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <p>et enfin :</p>
-<pre class="code python"><a name="rest_code_e855727000c3418fb8d9d205cd3bf740-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5e66d861647a44f997ade45b4995eea1-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
 </pre>
 <p>la variable <strong>a</strong> récupère le produit de la fonction : une chaîne de
 caractères. Là je fais encore plus mon curieux :</p>
-<pre class="code python"><a name="rest_code_7449b414cedf46c198f8682def74b2d7-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
+<pre class="code python"><a name="rest_code_768c789c710d46c38456f986545b89d3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
 </pre>
-<pre class="code python"><a name="rest_code_0ff68bc39d4b4d0287b2a316bc486a6c-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_bbd4bb86f5fb4776877a4fc5fa0d7c55-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 function
@@ -183,12 +183,12 @@ function
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
     </div>

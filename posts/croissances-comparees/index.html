@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Croissances comparées pour de vrai | Maths  BCPST1-A, Rennes, MY Patel</title>
+<title>Croissances comparées pour de vrai | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/croissances-comparees/">
@@ -26,7 +26,7 @@ article: http://ogp.me/ns/article#
      }
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
-<meta property="og:site_name" content="Maths  BCPST1-A, Rennes, MY Patel">
+<meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Croissances comparées pour de vrai">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/croissances-comparees/">
 <meta property="og:description" content="On a vu en cours à quoi servaient les croissances comparées, et dans quels cas utiliser ces fameuses échelles de croissance.
@@ -103,7 +103,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Préparatifs">Préparatifs<a class="anchor-link" href=".#Pr%C3%A9paratifs">¶</a>
+<h3 id="Préparatifs">Préparatifs<a class="anchor-link" href="#Pr%C3%A9paratifs">¶</a>
 </h3>
 <p>je charge quelques modules (pas de panique) :</p>
 
@@ -117,7 +117,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">StaticInteract</span><span class="p">,</span> <span class="n">RangeWidget</span>
@@ -137,7 +137,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Je-construis-une-fonction">Je construis une fonction<a class="anchor-link" href=".#Je-construis-une-fonction">¶</a>
+<h3 id="Je-construis-une-fonction">Je construis une fonction<a class="anchor-link" href="#Je-construis-une-fonction">¶</a>
 </h3>
 <p>Voici les 4 fonctions que je vais considérer pour tester mes croissances comparées :</p>
 <table>
@@ -177,11 +177,11 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 <div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">croissances_comp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">f1</span> <span class="o">=</span> <span class="s">"racine(x)"</span>
-    <span class="n">f2</span> <span class="o">=</span> <span class="s">"log(x)"</span>
-    <span class="n">f3</span> <span class="o">=</span> <span class="s">"x^3 "</span>
-    <span class="n">f4</span> <span class="o">=</span> <span class="s">"2^x "</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">croissances_comp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="s2">"racine(x)"</span>
+    <span class="n">f2</span> <span class="o">=</span> <span class="s2">"log(x)"</span>
+    <span class="n">f3</span> <span class="o">=</span> <span class="s2">"x^3 "</span>
+    <span class="n">f4</span> <span class="o">=</span> <span class="s2">"2^x "</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
         <span class="n">f1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">floor</span><span class="p">(</span><span class="n">log10</span><span class="p">(</span><span class="n">i</span><span class="p">)))</span>
         <span class="n">f2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">floor</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">i</span><span class="p">)))</span>
@@ -202,7 +202,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Plus-sympa-comme-ça-:-jouez-avec-les-croissances-comparées">Plus sympa comme ça : jouez avec les croissances comparées<a class="anchor-link" href=".#Plus-sympa-comme-%C3%A7a-:-jouez-avec-les-croissances-compar%C3%A9es">¶</a>
+<h3 id="Plus-sympa-comme-ça-:-jouez-avec-les-croissances-comparées">Plus sympa comme ça : jouez avec les croissances comparées<a class="anchor-link" href="#Plus-sympa-comme-%C3%A7a-:-jouez-avec-les-croissances-compar%C3%A9es">¶</a>
 </h3>
 <p>Le code ci-dessus construit l'animation : faites glisser le bouton et vous verrez, lorsque $x$ augmente (je me suis contenté de le faire aller de $1$ à $1000$), comment les valeurs des fonctions $f_1$, $f_2$, $f_3$, $f_4$ augmentent. C'est assez éloquent :</p>
 
@@ -216,7 +216,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">StaticInteract</span><span class="p">(</span><span class="n">croissances_comp</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">RangeWidget</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">StaticInteract</span><span class="p">(</span><span class="n">croissances_comp</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">RangeWidget</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -4280,10 +4280,10 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 
 </div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
  <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -4313,7 +4313,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Bonus-:-l'échelle-en-zéro">Bonus : l'échelle en zéro<a class="anchor-link" href=".#Bonus-:-l'%C3%A9chelle-en-z%C3%A9ro">¶</a>
+<h3 id="Bonus-:-l'échelle-en-zéro">Bonus : l'échelle en zéro<a class="anchor-link" href="#Bonus-:-l'%C3%A9chelle-en-z%C3%A9ro">¶</a>
 </h3>
 <p>Certains sont perturbés avec l'échelle en $0^+$. Je comprends, elle est bien moins intuitive que l'échelle en $+\infty$. Alors,je me suis livré au même jeu (puisque maintenant  j'ai ma maginifique fonction <code>croissances_comp</code>), mais cette fois  avec les quatre candidats suivants :</p>
 <table>
@@ -4352,11 +4352,11 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 <div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">croissances_comp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="n">f1</span> <span class="o">=</span> <span class="s">"f1(x)"</span>
-    <span class="n">f2</span> <span class="o">=</span> <span class="s">"f2(x)"</span>
-    <span class="n">f3</span> <span class="o">=</span> <span class="s">"f3(x) "</span>
-    <span class="n">f4</span> <span class="o">=</span> <span class="s">"f4(x) "</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">croissances_comp</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">f1</span> <span class="o">=</span> <span class="s2">"f1(x)"</span>
+    <span class="n">f2</span> <span class="o">=</span> <span class="s2">"f2(x)"</span>
+    <span class="n">f3</span> <span class="o">=</span> <span class="s2">"f3(x) "</span>
+    <span class="n">f4</span> <span class="o">=</span> <span class="s2">"f4(x) "</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
         <span class="n">f1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">floor</span><span class="p">(</span><span class="n">log10</span><span class="p">(</span><span class="n">k</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
@@ -4390,7 +4390,7 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 <div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">StaticInteract</span><span class="p">(</span><span class="n">croissances_comp</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">RangeWidget</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">))</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">StaticInteract</span><span class="p">(</span><span class="n">croissances_comp</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">RangeWidget</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1000</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -8458,10 +8458,10 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
 
 </div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-<div class=" highlight hl-ipython3"><pre> 
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
  <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
@@ -8507,12 +8507,12 @@ Je suppose, pour fixer les idées que je m'intéresse ici à  $x \to +\infty$,">
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
     </div>

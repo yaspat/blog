@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Informatique : Leçon 7. Recherche dans une chaîne de caractères | Maths  BCPST1-A, Rennes, MY Patel</title>
+<title>Informatique : Leçon 7. Recherche dans une chaîne de caractères | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/">
@@ -26,7 +26,7 @@ article: http://ogp.me/ns/article#
      }
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
-<meta property="og:site_name" content="Maths  BCPST1-A, Rennes, MY Patel">
+<meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Informatique : Leçon 7. Recherche dans une chaîne de caractères">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/">
 <meta property="og:description" content="Contents
@@ -95,19 +95,19 @@ Donnée : une chaîne de caractère">
 <div class="contents alert alert-info pull-right topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href=".#formulation-du-probleme" id="id1">Formulation du problème</a></li>
+<li><a class="reference internal" href="#formulation-du-probleme" id="id1">Formulation du problème</a></li>
 <li>
-<a class="reference internal" href=".#des-solutions-differentes" id="id2">Des solutions différentes</a><ul>
-<li><a class="reference internal" href=".#approche-1" id="id3">Approche 1.</a></li>
-<li><a class="reference internal" href=".#approche-2" id="id4">Approche 2.</a></li>
-<li><a class="reference internal" href=".#approche-3" id="id5">Approche 3.</a></li>
+<a class="reference internal" href="#des-solutions-differentes" id="id2">Des solutions différentes</a><ul>
+<li><a class="reference internal" href="#approche-1" id="id3">Approche 1.</a></li>
+<li><a class="reference internal" href="#approche-2" id="id4">Approche 2.</a></li>
+<li><a class="reference internal" href="#approche-3" id="id5">Approche 3.</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href=".#quelques-mots-sur-l-interruption-de-boucle" id="id6">Quelques mots sur l'interruption de boucle</a></li>
+<li><a class="reference internal" href="#quelques-mots-sur-l-interruption-de-boucle" id="id6">Quelques mots sur l'interruption de boucle</a></li>
 </ul>
 </div>
 <div class="section" id="formulation-du-probleme">
-<h2><a class="toc-backref" href=".#id1">Formulation du problème</a></h2>
+<h2><a class="toc-backref" href="#id1">Formulation du problème</a></h2>
 <p>Donnée : une chaîne de caractères.</p>
 <blockquote>
 <strong>Problème 1.</strong> je veux savoir si ma chaîne contient un caractère
@@ -120,68 +120,68 @@ objet donné figure dans ce tuple (resp. cette liste) ?</blockquote>
 <!-- TEASER_END--><p><strong>Réponse au problème 1.</strong> Il y a plusieurs approches à ce problème,
 donc on peut proposer différentes solutions. Mettons que je cherche le
 caractère <strong>'k'</strong> dans une chaîne :</p>
-<pre class="code python"><a name="rest_code_a2c78449370d4d13a032bf0a55e219b1-1"></a><span class="n">magik</span> <span class="o">=</span> <span class="s">'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg'</span> <span class="c"># Définissons une chaîne</span>
+<pre class="code python"><a name="rest_code_6cf2d366b7234bbbb79c5a9e9a9015b8-1"></a><span class="n">magik</span> <span class="o">=</span> <span class="s1">'iuhfguihguhgmuazhmurohgfzattzaijghaùzjg'</span> <span class="c1"># Définissons une chaîne</span>
 </pre>
 </div>
 <div class="section" id="des-solutions-differentes">
-<h2><a class="toc-backref" href=".#id2">Des solutions différentes</a></h2>
+<h2><a class="toc-backref" href="#id2">Des solutions différentes</a></h2>
 <div class="section" id="approche-1">
-<h3><a class="toc-backref" href=".#id3">Approche 1.</a></h3>
+<h3><a class="toc-backref" href="#id3">Approche 1.</a></h3>
 <p>J'utilise une fonction prédéfinie de <strong>Python</strong> :</p>
-<pre class="code python"><a name="rest_code_4592bb8bd2b34c78897ee2cdca74c24d-1"></a><span class="s">'k'</span> <span class="ow">in</span> <span class="n">magik</span>  <span class="c"># ne pas confondre nom de variable et contenu</span>
+<pre class="code python"><a name="rest_code_492d2d0bf88f4ff4baa7df0f4056fceb-1"></a><span class="s1">'k'</span> <span class="ow">in</span> <span class="n">magik</span>  <span class="c1"># ne pas confondre nom de variable et contenu</span>
 </pre>
 <pre class="literal-block">
 False
 </pre>
 </div>
 <div class="section" id="approche-2">
-<h3><a class="toc-backref" href=".#id4">Approche 2.</a></h3>
+<h3><a class="toc-backref" href="#id4">Approche 2.</a></h3>
 <p>Je parcours systématiquement toutes les lettres du mot (j'ai donc une
 boucle <strong>for</strong>). J'initialise un compteur à <span class="math">\(\mathtt{0}\)</span> et je
 l'incrémente chaque fois que je rencontre le caractère cherché. Ainsi, le
 caractère cherché est bien dans la chaîne si et seulement si à la sortie de la boucle
 le compteur a une valeur non nulle.</p>
-<pre class="code python"><a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-2"></a>    <span class="sd">"""</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-4"></a><span class="sd">    k : un caractère (type str)</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-5"></a><span class="sd">    fonction qui retourne 1 si &lt;k&gt; est dans &lt;mot&gt;,</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-6"></a><span class="sd">    et 0 sinon.</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-7"></a><span class="sd">    """</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-8"></a>    <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-9"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span>                   <span class="c"># on peut faire des boucles sur</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-10"></a>                                    <span class="c"># les caractères d'une chaîne :</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-11"></a>            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>     <span class="c"># k prend successivement comme</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-12"></a>                                   <span class="c"># valeur chaque caractère se trouvant</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-13"></a>                <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>     <span class="c"># dans la chaîne &lt;mot&gt;</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-14"></a>    <span class="k">if</span> <span class="n">compteur</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-15"></a>        <span class="k">return</span> <span class="mi">1</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-16"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_85204a6a03184b26aa86d2363f48c7b5-17"></a>        <span class="k">return</span> <span class="mi">0</span>
+<pre class="code python"><a name="rest_code_4450194720904be49450c27b641e30e5-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-4"></a><span class="sd">    k : un caractère (type str)</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-5"></a><span class="sd">    fonction qui retourne 1 si &lt;k&gt; est dans &lt;mot&gt;,</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-6"></a><span class="sd">    et 0 sinon.</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-7"></a><span class="sd">    """</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-8"></a>    <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-9"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span>                   <span class="c1"># on peut faire des boucles sur</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-10"></a>                                    <span class="c1"># les caractères d'une chaîne :</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-11"></a>            <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>     <span class="c1"># k prend successivement comme</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-12"></a>                                   <span class="c1"># valeur chaque caractère se trouvant</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-13"></a>                <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>     <span class="c1"># dans la chaîne &lt;mot&gt;</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-14"></a>    <span class="k">if</span> <span class="n">compteur</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-15"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-16"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_4450194720904be49450c27b641e30e5-17"></a>        <span class="k">return</span> <span class="mi">0</span>
 </pre>
-<pre class="code python"><a name="rest_code_116e307942354c648eb19a1a0997f030-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="n">magik</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span> <span class="c"># ne pas confondre nom de variable et contenu</span>
+<pre class="code python"><a name="rest_code_cec7fa7162c9471ca3f9b1902775f3fd-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="n">magik</span><span class="p">,</span> <span class="s1">'k'</span><span class="p">)</span> <span class="c1"># ne pas confondre nom de variable et contenu</span>
 </pre>
 <pre class="literal-block">
 0
 </pre>
-<pre class="code python"><a name="rest_code_d4602238a2ac49c4b10830bcf75317fe-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'goldorak'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_0910dc6324b04e828fe2b7796ba33a7a-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s1">'goldorak'</span><span class="p">,</span> <span class="s1">'k'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1
 </pre>
-<pre class="code python"><a name="rest_code_3324d69ba0104c75be8ea27d08eeaa8a-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'tchoupi'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_14d3a49e2c4647c88e7de075fbc0dc1a-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s1">'tchoupi'</span><span class="p">,</span> <span class="s1">'k'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 0
 </pre>
-<pre class="code python"><a name="rest_code_3108a529f0904f3db993d11d1a545afd-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s">'goldorakkkkkkkkkkkk'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_dfd6cb7d48ec48c89b8c9b56076a6b77-1"></a><span class="n">est_dans_chaine</span><span class="p">(</span><span class="s1">'goldorakkkkkkkkkkkk'</span><span class="p">,</span> <span class="s1">'k'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1
 </pre>
 </div>
 <div class="section" id="approche-3">
-<h3><a class="toc-backref" href=".#id5">Approche 3.</a></h3>
+<h3><a class="toc-backref" href="#id5">Approche 3.</a></h3>
 <p>Je parcours les lettres du mot et je m'arrête quand j'ai soit rencontré
 le caractère que je cherche soit quand j'ai parcouru toutes lettres.
 (j'ai donc une boucle <strong>while</strong>).</p>
@@ -193,28 +193,28 @@ boucle quand :</p>
 </ol>
 <p>Puisque la condition d'arrêt contient un "ou", la condition <strong>while</strong>
 contient un <strong>et</strong>. Ce qui donne :</p>
-<pre class="code python"><a name="rest_code_7f5059838f294622a582562c26b86cc2-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine3</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-2"></a>    <span class="sd">"""</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-4"></a><span class="sd">    caractere : un caractère (type str)</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;, et 0 sinon,</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-6"></a><span class="sd">    en suivant l'approche 3.</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-7"></a><span class="sd">    """</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-8"></a>    <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c"># sera actualisée et retournée en sortie</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-9"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="c"># donne  le nb. de caractères dans &lt;mot&gt;</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-10"></a>    <span class="n">i</span> <span class="o">=</span><span class="mi">0</span>         <span class="c"># je commence par examiner le 1er caractère</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-11"></a>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-12"></a>    <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">!=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">!=</span><span class="n">caractere</span><span class="p">):</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-13"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span> <span class="c"># on passe au caractère suivant</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-14"></a>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-15"></a>    <span class="k">if</span>  <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">caractere</span><span class="p">:</span> <span class="c"># j'examine la lettre qui a</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-16"></a>                           <span class="c"># provoqué la sortie de boucle</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-17"></a>        <span class="n">reponse</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-18"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-19"></a>        <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_7f5059838f294622a582562c26b86cc2-20"></a>    <span class="k">return</span> <span class="n">reponse</span>
+<pre class="code python"><a name="rest_code_431d2882753f44faa6bc27da9ec80084-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine3</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span> <span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-4"></a><span class="sd">    caractere : un caractère (type str)</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;, et 0 sinon,</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-6"></a><span class="sd">    en suivant l'approche 3.</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-7"></a><span class="sd">    """</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-8"></a>    <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># sera actualisée et retournée en sortie</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-9"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="c1"># donne  le nb. de caractères dans &lt;mot&gt;</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-10"></a>    <span class="n">i</span> <span class="o">=</span><span class="mi">0</span>         <span class="c1"># je commence par examiner le 1er caractère</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-11"></a>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-12"></a>    <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">!=</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">!=</span><span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-13"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span> <span class="c1"># on passe au caractère suivant</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-14"></a>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-15"></a>    <span class="k">if</span>  <span class="n">mot</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">==</span><span class="n">caractere</span><span class="p">:</span> <span class="c1"># j'examine la lettre qui a</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-16"></a>                           <span class="c1"># provoqué la sortie de boucle</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-17"></a>        <span class="n">reponse</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-18"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-19"></a>        <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_431d2882753f44faa6bc27da9ec80084-20"></a>    <span class="k">return</span> <span class="n">reponse</span>
 </pre>
-<pre class="code python"><a name="rest_code_8a984b2b660b43bb9f09629cec621953-1"></a><span class="n">est_dans_chaine3</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'i'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_052abbe2aeee4e76a74b795e46d0ed9b-1"></a><span class="n">est_dans_chaine3</span><span class="p">(</span><span class="s1">'toti'</span><span class="p">,</span><span class="s1">'i'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1
@@ -226,7 +226,7 @@ valeur de <span class="math">\(B\)</span>.</p>
 </div>
 </div>
 <div class="section" id="quelques-mots-sur-l-interruption-de-boucle">
-<h2><a class="toc-backref" href=".#id6">Quelques mots sur l'interruption de boucle</a></h2>
+<h2><a class="toc-backref" href="#id6">Quelques mots sur l'interruption de boucle</a></h2>
 <p>On pourrait parler de l'interruption du flot d'instructions en général.</p>
 <p>Ces techniques d'interruptions dans les boucles servent typiquement dans
 le cas où on sait <strong>au plus</strong> combien d'itérations faire dans la boucle.
@@ -237,33 +237,33 @@ dans un mot, on sait qu'on aura au plus <span class="math">\(n\)</span> examens 
 dépassera pas un nombre d'itérations donné.</p>
 <p>En pratique, on construit une boucle <strong>for</strong> qu'on interrompt si la
 condition souhaitée est réalisée :</p>
-<pre class="code python"><a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine4</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span><span class="n">caractere</span><span class="p">):</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-2"></a>    <span class="sd">"""</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-4"></a><span class="sd">    caractere : un caractère (type str)</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;,</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-6"></a><span class="sd">    0 sinon. Repose sur l' interruption d'une boucle for.</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-7"></a><span class="sd">    """</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-8"></a>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-9"></a>    <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-10"></a>    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span> <span class="c"># on peut itérer sur les caractères</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-11"></a>                       <span class="c"># d'une chaîne.</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-12"></a>        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-13"></a>            <span class="n">reponse</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-14"></a>            <span class="k">break</span> <span class="c">#si le if est réalisé,j'interromps la boucle</span>
-<a name="rest_code_6e45b1a9ca1f4fdc88e320351abddb53-15"></a>    <span class="k">return</span> <span class="n">reponse</span>
+<pre class="code python"><a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine4</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span><span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-2"></a>    <span class="sd">"""</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-3"></a><span class="sd">    mot : une chaine de caractère (type str)</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-4"></a><span class="sd">    caractere : un caractère (type str)</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-5"></a><span class="sd">    fonction qui retourne 1 si &lt;caractere&gt; est dans &lt;mot&gt;,</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-6"></a><span class="sd">    0 sinon. Repose sur l' interruption d'une boucle for.</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-7"></a><span class="sd">    """</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-8"></a>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-9"></a>    <span class="n">reponse</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-10"></a>    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span> <span class="c1"># on peut itérer sur les caractères</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-11"></a>                       <span class="c1"># d'une chaîne.</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-12"></a>        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-13"></a>            <span class="n">reponse</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-14"></a>            <span class="k">break</span> <span class="c1">#si le if est réalisé,j'interromps la boucle</span>
+<a name="rest_code_b7cc9ca5e8e0442a8de10a11e0960dfb-15"></a>    <span class="k">return</span> <span class="n">reponse</span>
 </pre>
-<pre class="code python"><a name="rest_code_a96a29b54f5949cd9180073253d90b08-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'o'</span><span class="p">)</span>
-</pre>
-<pre class="literal-block">
-1
-</pre>
-<pre class="code python"><a name="rest_code_219d50cf0b804d22997cc398246399e4-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'i'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_29b431eda732422784d7197fa8e51b9c-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s1">'toti'</span><span class="p">,</span><span class="s1">'o'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1
 </pre>
-<pre class="code python"><a name="rest_code_7ff2298559914692a5714b14257968d1-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'k'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_6b480ae22f304dae938e076e110f6254-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s1">'toti'</span><span class="p">,</span><span class="s1">'i'</span><span class="p">)</span>
+</pre>
+<pre class="literal-block">
+1
+</pre>
+<pre class="code python"><a name="rest_code_454bcb48fe3f4254b0ccb961c453f51b-1"></a><span class="n">est_dans_chaine4</span><span class="p">(</span><span class="s1">'toti'</span><span class="p">,</span><span class="s1">'k'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 0
@@ -271,13 +271,13 @@ condition souhaitée est réalisée :</p>
 <p><strong>Remarque.</strong> On a vu aussi qu'un <strong>return</strong> termine l'exécution d'une
 fonction. Dans ce contexte, on peut interrompre la boucle par un
 <strong>return</strong> de la manière suivante :</p>
-<pre class="code python"><a name="rest_code_2055b6040d8840ae997ca627cc5a0a8b-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine5</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span><span class="n">caractere</span><span class="p">):</span>
-<a name="rest_code_2055b6040d8840ae997ca627cc5a0a8b-2"></a>    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span> <span class="c"># on peut itérer sur les caractères d'une chaîne.</span>
-<a name="rest_code_2055b6040d8840ae997ca627cc5a0a8b-3"></a>        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
-<a name="rest_code_2055b6040d8840ae997ca627cc5a0a8b-4"></a>            <span class="k">return</span> <span class="mi">1</span>
-<a name="rest_code_2055b6040d8840ae997ca627cc5a0a8b-5"></a>    <span class="k">return</span> <span class="mi">0</span>
+<pre class="code python"><a name="rest_code_4dd4eb7ece5849769644b328f628d74f-1"></a><span class="k">def</span> <span class="nf">est_dans_chaine5</span><span class="p">(</span><span class="n">mot</span><span class="p">,</span><span class="n">caractere</span><span class="p">):</span>
+<a name="rest_code_4dd4eb7ece5849769644b328f628d74f-2"></a>    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">mot</span><span class="p">:</span> <span class="c1"># on peut itérer sur les caractères d'une chaîne.</span>
+<a name="rest_code_4dd4eb7ece5849769644b328f628d74f-3"></a>        <span class="k">if</span> <span class="n">lettre</span> <span class="o">==</span> <span class="n">caractere</span><span class="p">:</span>
+<a name="rest_code_4dd4eb7ece5849769644b328f628d74f-4"></a>            <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_4dd4eb7ece5849769644b328f628d74f-5"></a>    <span class="k">return</span> <span class="mi">0</span>
 </pre>
-<pre class="code python"><a name="rest_code_84121199c60d4624b8b806066e0b52e9-1"></a><span class="n">est_dans_chaine5</span><span class="p">(</span><span class="s">'toti'</span><span class="p">,</span><span class="s">'i'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_267c7f0c332d4aa4a48be91eea2ac6df-1"></a><span class="n">est_dans_chaine5</span><span class="p">(</span><span class="s1">'toti'</span><span class="p">,</span><span class="s1">'i'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1
@@ -286,14 +286,14 @@ fonction. Dans ce contexte, on peut interrompre la boucle par un
 <strong>est_dans_liste(ma_liste,objet)</strong> qui prend en entrée une liste
 <strong>ma_liste</strong>, un item <strong>objet</strong> quelconque et qui retourne <strong>1</strong> si
 <strong>objet</strong> est dans <strong>ma_liste</strong>, et <strong>0</strong> sinon.</p>
-<pre class="code python"><a name="rest_code_e019112c2eda4d5ab615bf25c9db0e1d-1"></a><span class="k">def</span> <span class="nf">est_dans_liste</span><span class="p">(</span><span class="n">ma_liste</span><span class="p">,</span><span class="n">objet</span><span class="p">):</span>
-<a name="rest_code_e019112c2eda4d5ab615bf25c9db0e1d-2"></a>    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ma_liste</span><span class="p">:</span>
-<a name="rest_code_e019112c2eda4d5ab615bf25c9db0e1d-3"></a>        <span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">objet</span><span class="p">:</span>
-<a name="rest_code_e019112c2eda4d5ab615bf25c9db0e1d-4"></a>            <span class="k">return</span> <span class="mi">1</span>
-<a name="rest_code_e019112c2eda4d5ab615bf25c9db0e1d-5"></a>    <span class="k">return</span> <span class="mi">0</span>
+<pre class="code python"><a name="rest_code_6cfe7c0120bc4c23bba05163cd5ffe7f-1"></a><span class="k">def</span> <span class="nf">est_dans_liste</span><span class="p">(</span><span class="n">ma_liste</span><span class="p">,</span><span class="n">objet</span><span class="p">):</span>
+<a name="rest_code_6cfe7c0120bc4c23bba05163cd5ffe7f-2"></a>    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ma_liste</span><span class="p">:</span>
+<a name="rest_code_6cfe7c0120bc4c23bba05163cd5ffe7f-3"></a>        <span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">objet</span><span class="p">:</span>
+<a name="rest_code_6cfe7c0120bc4c23bba05163cd5ffe7f-4"></a>            <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_6cfe7c0120bc4c23bba05163cd5ffe7f-5"></a>    <span class="k">return</span> <span class="mi">0</span>
 </pre>
-<pre class="code python"><a name="rest_code_e79e8fa9225c4d309454ecf69bde0bc4-1"></a><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">545</span><span class="p">,</span> <span class="s">'toto'</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">54</span><span class="p">),</span> <span class="s">'e'</span><span class="p">]</span>
-<a name="rest_code_e79e8fa9225c4d309454ecf69bde0bc4-2"></a><span class="n">est_dans_liste</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="mi">54</span><span class="p">)</span> <span class="c">#54 ne figure pas en tant qu'item de L !</span>
+<pre class="code python"><a name="rest_code_422f71d87f284df6a06eadf8bbd26144-1"></a><span class="n">L</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">545</span><span class="p">,</span> <span class="s1">'toto'</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">54</span><span class="p">),</span> <span class="s1">'e'</span><span class="p">]</span>
+<a name="rest_code_422f71d87f284df6a06eadf8bbd26144-2"></a><span class="n">est_dans_liste</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="mi">54</span><span class="p">)</span> <span class="c1">#54 ne figure pas en tant qu'item de L !</span>
 </pre>
 <pre class="literal-block">
 0
@@ -301,15 +301,15 @@ fonction. Dans ce contexte, on peut interrompre la boucle par un
 <p><strong>Exercice</strong> Améliorer le programme précédent pour que la fonction
 retourne (le cas échéant) le premier indice <strong>i</strong> où se trouve <strong>objet</strong>
 dans <strong>ma_liste</strong>, sinon <strong>-1</strong>.</p>
-<pre class="code python"><a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-1"></a><span class="k">def</span> <span class="nf">position_dans_liste</span><span class="p">(</span><span class="n">ma_liste</span><span class="p">,</span><span class="n">objet</span><span class="p">):</span>
-<a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-2"></a>    <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
-<a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-3"></a>    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ma_liste</span><span class="p">:</span>
-<a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-4"></a>        <span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">objet</span><span class="p">:</span>
-<a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-5"></a>            <span class="k">return</span> <span class="n">i</span>
-<a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-6"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
-<a name="rest_code_4b151f2a553f45b8a616e8d4bf464cef-7"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<pre class="code python"><a name="rest_code_d42c34474fb649b28bcb464319847764-1"></a><span class="k">def</span> <span class="nf">position_dans_liste</span><span class="p">(</span><span class="n">ma_liste</span><span class="p">,</span><span class="n">objet</span><span class="p">):</span>
+<a name="rest_code_d42c34474fb649b28bcb464319847764-2"></a>    <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+<a name="rest_code_d42c34474fb649b28bcb464319847764-3"></a>    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">ma_liste</span><span class="p">:</span>
+<a name="rest_code_d42c34474fb649b28bcb464319847764-4"></a>        <span class="k">if</span> <span class="n">element</span> <span class="o">==</span> <span class="n">objet</span><span class="p">:</span>
+<a name="rest_code_d42c34474fb649b28bcb464319847764-5"></a>            <span class="k">return</span> <span class="n">i</span>
+<a name="rest_code_d42c34474fb649b28bcb464319847764-6"></a>        <span class="n">i</span><span class="o">+=</span><span class="mi">1</span>
+<a name="rest_code_d42c34474fb649b28bcb464319847764-7"></a>    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
 </pre>
-<pre class="code python"><a name="rest_code_bd30650e21b042b3915ae15d4599cc9e-1"></a><span class="n">position_dans_liste</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="s">'toto'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_2d39fefccabd405cb1497cd2cd125b50-1"></a><span class="n">position_dans_liste</span><span class="p">(</span><span class="n">L</span><span class="p">,</span><span class="s1">'toto'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 2
@@ -336,12 +336,12 @@ dans <strong>ma_liste</strong>, sinon <strong>-1</strong>.</p>
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
     </div>

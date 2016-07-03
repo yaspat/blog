@@ -1,2 +1,4 @@
 Sitemap: http://yaspat.github.io/blog/sitemapindex.xml
 
+User-Agent: *
+Host: yaspat.github.io

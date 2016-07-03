@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Le jeu de Monthy Hall 2/2 | Maths  BCPST1-A, Rennes, MY Patel</title>
+<title>Le jeu de Monthy Hall 2/2 | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/">
@@ -26,7 +26,7 @@ article: http://ogp.me/ns/article#
      }
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
-<meta property="og:site_name" content="Maths  BCPST1-A, Rennes, MY Patel">
+<meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Le jeu de Monthy Hall 2/2">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/">
 <meta property="og:description" content="Contents
@@ -82,9 +82,9 @@ Maintenant que vous connaiss">
 <div class="contents alert alert-info pull-right topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href=".#importation-des-fonctions-utiles" id="id1">Importation des fonctions utiles</a></li>
-<li><a class="reference internal" href=".#simulation-d-une-partie-du-jeu-de-let-s-make-a-deal" id="id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></li>
-<li><a class="reference internal" href=".#l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties" id="id3">L'heure de vérité : fréquence des victoires sur un grand nombre de parties</a></li>
+<li><a class="reference internal" href="#importation-des-fonctions-utiles" id="id1">Importation des fonctions utiles</a></li>
+<li><a class="reference internal" href="#simulation-d-une-partie-du-jeu-de-let-s-make-a-deal" id="id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></li>
+<li><a class="reference internal" href="#l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties" id="id3">L'heure de vérité : fréquence des victoires sur un grand nombre de parties</a></li>
 </ul>
 </div>
 <p>Maintenant que vous connaissez <a class="reference external" href="../le-jeu-de-monthy-hall-12">le jeu de Monthy Hall</a>, on peut par
@@ -94,17 +94,17 @@ raison (mais vous en êtes convaincus maintenant), la fréquence des
 parties gagnées devrait être voisine de <span class="math">\(2/3\)</span>, et non pas de
 <span class="math">\(1/2\)</span> comme l'ont hurlé ses détracteurs.</p>
 <!--TEASER_END --><div class="section" id="importation-des-fonctions-utiles">
-<h2><a class="toc-backref" href=".#id1">Importation des fonctions utiles</a></h2>
+<h2><a class="toc-backref" href="#id1">Importation des fonctions utiles</a></h2>
 <p>le module <strong>random</strong> contient des fonctions permettant de simuler des
 tirages aléatoires. Ici, je n'importe qu'une seule de ses fonctions, la
 fonction <span class="math">\(\texttt{randrange}\)</span> :</p>
-<pre class="code python"><a name="rest_code_f20ccea45c8f4a4d8e7ae168e7cd647b-1"></a><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+<pre class="code python"><a name="rest_code_73787742eb464a079e8dca740561d105-1"></a><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
 </pre>
 <p>Si <strong>a</strong> et <strong>b</strong> sont deux entiers, la commande <strong>randrange(a,b)</strong>
 choisit au hasard un entier dans l'intervalle <span class="math">\([a,b[\)</span>.</p>
 </div>
 <div class="section" id="simulation-d-une-partie-du-jeu-de-let-s-make-a-deal">
-<h2><a class="toc-backref" href=".#id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></h2>
+<h2><a class="toc-backref" href="#id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></h2>
 <p>Je vais créer une fonction <span class="math">\(\texttt{makeDeal}\)</span> qui ne prend aucun
 argument en entrée mais retourne <span class="math">\(\texttt{1}\)</span> en sortie si le
 joueur gagne la partie, et <span class="math">\(\texttt{0}\)</span> sinon.</p>
@@ -131,43 +131,43 @@ cela avec la fonction <span class="math">\(\texttt{montreChevre}\)</span>
 </ol>
 <p>C'est tout !</p>
 <p>Pour le point 1., c'est facile :</p>
-<pre class="code python"><a name="rest_code_1724caa36c7144dea5c7ff24f3ea85d9-1"></a><span class="k">def</span> <span class="nf">choixJoueur</span><span class="p">():</span>
-<a name="rest_code_1724caa36c7144dea5c7ff24f3ea85d9-2"></a>    <span class="k">return</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c"># choisit un entier au hasard entre 1 et 3.</span>
+<pre class="code python"><a name="rest_code_dd21699490794e638c5b87a645e0130f-1"></a><span class="k">def</span> <span class="nf">choixJoueur</span><span class="p">():</span>
+<a name="rest_code_dd21699490794e638c5b87a645e0130f-2"></a>    <span class="k">return</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># choisit un entier au hasard entre 1 et 3.</span>
 </pre>
 <p>Pour le point 2., il suffit de savoir choisir un entier autre que 1 (car
 la porte 1 recèle la voiture !), et que celui choisi par le joueur.</p>
-<pre class="code python"><a name="rest_code_dc3dfe82a2984791a36155c5b152d634-1"></a><span class="k">def</span> <span class="nf">montreChevre</span><span class="p">(</span><span class="n">porteJoueur</span><span class="p">):</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-2"></a>    <span class="sd">"""Entrée : porteJoueur, le numéro de la porte choisie par le joueur</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-3"></a><span class="sd">       Sortie : un entier entre 2,3 qui est le numéro de la porte ouverte</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-4"></a><span class="sd">       par le présentateur connaissant porteJoueur</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-5"></a><span class="sd">    """</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-6"></a>    <span class="k">if</span> <span class="n">porteJoueur</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>         <span class="c"># le joueur avait bien trouvé la voiture</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-7"></a>        <span class="k">return</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>    <span class="c"># le présentateur choisit au hasard une porte entre la 2 et la 3</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-8"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_dc3dfe82a2984791a36155c5b152d634-9"></a>        <span class="k">return</span> <span class="mi">5</span><span class="o">-</span><span class="n">porteJoueur</span> <span class="c"># ce nombre vaut 2 si porteJoueur=3 et vice-versa !</span>
+<pre class="code python"><a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-1"></a><span class="k">def</span> <span class="nf">montreChevre</span><span class="p">(</span><span class="n">porteJoueur</span><span class="p">):</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-2"></a>    <span class="sd">"""Entrée : porteJoueur, le numéro de la porte choisie par le joueur</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-3"></a><span class="sd">       Sortie : un entier entre 2,3 qui est le numéro de la porte ouverte</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-4"></a><span class="sd">       par le présentateur connaissant porteJoueur</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-5"></a><span class="sd">    """</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-6"></a>    <span class="k">if</span> <span class="n">porteJoueur</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>         <span class="c1"># le joueur avait bien trouvé la voiture</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-7"></a>        <span class="k">return</span> <span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>    <span class="c1"># le présentateur choisit au hasard une porte entre la 2 et la 3</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_37fe2ec4ba7543f6b2b651c1e7139947-9"></a>        <span class="k">return</span> <span class="mi">5</span><span class="o">-</span><span class="n">porteJoueur</span> <span class="c1"># ce nombre vaut 2 si porteJoueur=3 et vice-versa !</span>
 </pre>
 <p>Il ne me reste plus qu'à constuire la fonction
 <span class="math">\(\texttt{makeDeal}\)</span>. Lisez le code, vous verrez, il est clair
 qu'en changeant de choix on gagne deux fois sur trois !</p>
-<pre class="code python"><a name="rest_code_cfdf42ab682842459212fe03cd909b21-1"></a><span class="k">def</span> <span class="nf">makeDeal</span><span class="p">():</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'*** Simulation d</span><span class="se">\'</span><span class="s">une partie du jeu Let</span><span class="se">\'</span><span class="s">s make a deal!***'</span><span class="p">)</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'la voiture est derrière la porte 1.'</span><span class="p">)</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-4"></a>    <span class="n">a</span> <span class="o">=</span> <span class="n">choixJoueur</span><span class="p">()</span> <span class="c"># Le joueur choisit une porte</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-5"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'     Le candidat a choisi la porte {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-6"></a>    <span class="n">b</span> <span class="o">=</span> <span class="n">montreChevre</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c"># Monthy ouvre une porte</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-7"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'     Monthy Hall lui dévole la porte {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-8"></a>    <span class="k">print</span><span class="p">(</span><span class="s">'     Le candidat change son choix...'</span><span class="p">)</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-9"></a>    <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="mi">1</span><span class="p">:</span> <span class="c"># mettons a =2, dans ce cas Monthy ouvre la porte 3 (il ne peut ouvrir la 1!)</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-10"></a>             <span class="c"># donc en changeant choix, le candidat gagne si et seulement si a &lt;&gt; 1 !</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-11"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'*** le candidat a gagné !                          ***'</span><span class="p">)</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-12"></a>        <span class="k">return</span> <span class="mi">1</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-13"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-14"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'*** le candidat a perdu !                          ***'</span><span class="p">)</span>
-<a name="rest_code_cfdf42ab682842459212fe03cd909b21-15"></a>        <span class="k">return</span> <span class="mi">0</span>
+<pre class="code python"><a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-1"></a><span class="k">def</span> <span class="nf">makeDeal</span><span class="p">():</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'*** Simulation d</span><span class="se">\'</span><span class="s1">une partie du jeu Let</span><span class="se">\'</span><span class="s1">s make a deal!***'</span><span class="p">)</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'la voiture est derrière la porte 1.'</span><span class="p">)</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-4"></a>    <span class="n">a</span> <span class="o">=</span> <span class="n">choixJoueur</span><span class="p">()</span> <span class="c1"># Le joueur choisit une porte</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-5"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'     Le candidat a choisi la porte {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-6"></a>    <span class="n">b</span> <span class="o">=</span> <span class="n">montreChevre</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># Monthy ouvre une porte</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-7"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'     Monthy Hall lui dévole la porte {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-8"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'     Le candidat change son choix...'</span><span class="p">)</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-9"></a>    <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="mi">1</span><span class="p">:</span> <span class="c1"># mettons a =2, dans ce cas Monthy ouvre la porte 3 (il ne peut ouvrir la 1!)</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-10"></a>             <span class="c1"># donc en changeant choix, le candidat gagne si et seulement si a &lt;&gt; 1 !</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-11"></a>        <span class="k">print</span><span class="p">(</span><span class="s1">'*** le candidat a gagné !                          ***'</span><span class="p">)</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-12"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-13"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-14"></a>        <span class="k">print</span><span class="p">(</span><span class="s1">'*** le candidat a perdu !                          ***'</span><span class="p">)</span>
+<a name="rest_code_7dec5bee8e1e4468b88ee4e9558a5a0b-15"></a>        <span class="k">return</span> <span class="mi">0</span>
 </pre>
 <p>Maintenant, je peux suivre une partie de ce jeu comme à la télé, avec
 l'ambiance en moins toutefois ...</p>
-<pre class="code python"><a name="rest_code_a4f28ad974e642e8ba0f4c6a228c82fb-1"></a><span class="n">makeDeal</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_0cc889ecb97e4eb6ae050617f3bebae0-1"></a><span class="n">makeDeal</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 <strong>* Simulation d'une partie du jeu Let's make a deal!*</strong>
@@ -182,23 +182,23 @@ la voiture est derrière la porte 1.
 </pre>
 </div>
 <div class="section" id="l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties">
-<h2><a class="toc-backref" href=".#id3">L'heure de vérité : fréquence des victoires sur un grand nombre de parties</a></h2>
+<h2><a class="toc-backref" href="#id3">L'heure de vérité : fréquence des victoires sur un grand nombre de parties</a></h2>
 <p>Une petite boucle pour finir. Mais j'allègel la fonction
 <span class="math">\(\texttt{makeDeal}\)</span> pour ne pas avoir tous les affichages dûs au
 <span class="math">\(\texttt{print}\)</span> :</p>
-<pre class="code python"><a name="rest_code_a962814cfb9e4b6db7800082a796afea-1"></a><span class="k">def</span> <span class="nf">makeDeal</span><span class="p">():</span>
-<a name="rest_code_a962814cfb9e4b6db7800082a796afea-2"></a>    <span class="n">a</span> <span class="o">=</span> <span class="n">choixJoueur</span><span class="p">()</span>
-<a name="rest_code_a962814cfb9e4b6db7800082a796afea-3"></a>    <span class="n">b</span> <span class="o">=</span> <span class="n">montreChevre</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c"># Monthy ouvre une porte</span>
-<a name="rest_code_a962814cfb9e4b6db7800082a796afea-4"></a>    <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="mi">1</span><span class="p">:</span>
-<a name="rest_code_a962814cfb9e4b6db7800082a796afea-5"></a>        <span class="k">return</span> <span class="mi">1</span>
-<a name="rest_code_a962814cfb9e4b6db7800082a796afea-6"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_a962814cfb9e4b6db7800082a796afea-7"></a>        <span class="k">return</span> <span class="mi">0</span>
+<pre class="code python"><a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-1"></a><span class="k">def</span> <span class="nf">makeDeal</span><span class="p">():</span>
+<a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-2"></a>    <span class="n">a</span> <span class="o">=</span> <span class="n">choixJoueur</span><span class="p">()</span>
+<a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-3"></a>    <span class="n">b</span> <span class="o">=</span> <span class="n">montreChevre</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># Monthy ouvre une porte</span>
+<a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-4"></a>    <span class="k">if</span> <span class="n">a</span><span class="o">&lt;&gt;</span><span class="mi">1</span><span class="p">:</span>
+<a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-5"></a>        <span class="k">return</span> <span class="mi">1</span>
+<a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-6"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_41b3dc6e51df4f68a27afadbdac11b96-7"></a>        <span class="k">return</span> <span class="mi">0</span>
 </pre>
-<pre class="code python"><a name="rest_code_bc39999aaccb49febe688c965df7bc80-1"></a><span class="n">Nombre_parties</span> <span class="o">=</span> <span class="mi">100000</span>
-<a name="rest_code_bc39999aaccb49febe688c965df7bc80-2"></a><span class="n">Nombre_victoires</span> <span class="o">=</span> <span class="mf">0.</span>
-<a name="rest_code_bc39999aaccb49febe688c965df7bc80-3"></a><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">Nombre_parties</span><span class="p">):</span>
-<a name="rest_code_bc39999aaccb49febe688c965df7bc80-4"></a>    <span class="n">Nombre_victoires</span> <span class="o">+=</span> <span class="n">makeDeal</span><span class="p">()</span>
-<a name="rest_code_bc39999aaccb49febe688c965df7bc80-5"></a><span class="k">print</span><span class="p">(</span><span class="s">'Fréquence des victoires en changeant son choix = {}%'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Nombre_victoires</span><span class="o">/</span><span class="n">Nombre_parties</span><span class="p">)</span> <span class="p">)</span>
+<pre class="code python"><a name="rest_code_72a2508a38724e4993d539bc30a2b653-1"></a><span class="n">Nombre_parties</span> <span class="o">=</span> <span class="mi">100000</span>
+<a name="rest_code_72a2508a38724e4993d539bc30a2b653-2"></a><span class="n">Nombre_victoires</span> <span class="o">=</span> <span class="mf">0.</span>
+<a name="rest_code_72a2508a38724e4993d539bc30a2b653-3"></a><span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">Nombre_parties</span><span class="p">):</span>
+<a name="rest_code_72a2508a38724e4993d539bc30a2b653-4"></a>    <span class="n">Nombre_victoires</span> <span class="o">+=</span> <span class="n">makeDeal</span><span class="p">()</span>
+<a name="rest_code_72a2508a38724e4993d539bc30a2b653-5"></a><span class="k">print</span><span class="p">(</span><span class="s1">'Fréquence des victoires en changeant son choix = {}%'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">Nombre_victoires</span><span class="o">/</span><span class="n">Nombre_parties</span><span class="p">)</span> <span class="p">)</span>
 </pre>
 <pre class="literal-block">
 Fréquence des victoires en changeant son choix = 66.502%
@@ -226,12 +226,12 @@ Fréquence des victoires en changeant son choix = 66.502%
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
     </div>

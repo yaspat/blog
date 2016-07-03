@@ -6,7 +6,7 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Biomorphes 3/3 : fin | Maths  BCPST1-A, Rennes, MY Patel</title>
+<title>Biomorphes 3/3 : fin | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/">
@@ -26,7 +26,7 @@ article: http://ogp.me/ns/article#
      }
  });
  </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
-<meta property="og:site_name" content="Maths  BCPST1-A, Rennes, MY Patel">
+<meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Biomorphes 3/3 : fin">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/biomorphes-3-fin/">
 <meta property="og:description" content="Dans le billet précédent, j'ai colorié un domaine du plan complexe en
@@ -111,21 +111,21 @@ z^3=e^{3i\theta}
 équilatéral puisqu'ils se déduisent les uns des autres par
 multiplication par <span class="math">\(z\)</span> qui code la rotation de centre <span class="math">\(O\)</span> et
 d'angle <span class="math">\(\dfrac{2\pi}{3}\)</span> :</p>
-<pre class="code python"><a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-1"></a><span class="n">title_font</span> <span class="o">=</span> <span class="p">{</span> <span class="s">'size'</span><span class="p">:</span><span class="s">'22'</span><span class="p">,</span> <span class="s">'color'</span><span class="p">:</span><span class="s">'black'</span><span class="p">}</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-2"></a>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-3"></a><span class="n">z</span>  <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="mi">2j</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-4"></a>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-5"></a><span class="n">X</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="n">k</span><span class="p">)</span><span class="o">.</span><span class="n">real</span> <span class="k">for</span>  <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-6"></a><span class="n">Y</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="n">k</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span> <span class="k">for</span>  <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-7"></a>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-8"></a><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s">'font.size'</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-9"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-10"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span><span class="n">Y</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="s">r'$z^{}$'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">),</span><span class="o">**</span><span class="n">title_font</span><span class="p">)</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-11"></a><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="s">r'$O$'</span><span class="p">,</span><span class="o">**</span><span class="n">title_font</span><span class="p">)</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-12"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="s">'o'</span><span class="p">)</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-13"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">'ro'</span><span class="p">)</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-14"></a><span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">)</span>
-<a name="rest_code_7f4339921b7d4ca0b09f3cf61877eb65-15"></a><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="s">'on'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-1"></a><span class="n">title_font</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'size'</span><span class="p">:</span><span class="s1">'22'</span><span class="p">,</span> <span class="s1">'color'</span><span class="p">:</span><span class="s1">'black'</span><span class="p">}</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-2"></a>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-3"></a><span class="n">z</span>  <span class="o">=</span> <span class="n">exp</span><span class="p">(</span><span class="mi">2j</span><span class="o">*</span><span class="n">pi</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-4"></a>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-5"></a><span class="n">X</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="n">k</span><span class="p">)</span><span class="o">.</span><span class="n">real</span> <span class="k">for</span>  <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-6"></a><span class="n">Y</span> <span class="o">=</span> <span class="p">[</span> <span class="p">(</span><span class="n">z</span><span class="o">**</span><span class="n">k</span><span class="p">)</span><span class="o">.</span><span class="n">imag</span> <span class="k">for</span>  <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-7"></a>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-8"></a><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">'font.size'</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-9"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-10"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span><span class="n">Y</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="s1">r'$z^{}$'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">),</span><span class="o">**</span><span class="n">title_font</span><span class="p">)</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-11"></a><span class="n">plt</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span> <span class="s1">r'$O$'</span><span class="p">,</span><span class="o">**</span><span class="n">title_font</span><span class="p">)</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-12"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">,</span><span class="s1">'o'</span><span class="p">)</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-13"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">'ro'</span><span class="p">)</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-14"></a><span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>
+<a name="rest_code_1baa0bb41b974fd9a23c6e8e1c1acd09-15"></a><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="s1">'on'</span><span class="p">)</span>
 </pre>
 <img alt="../../images/Biomorphes3/biomorphes3-2.png" class="align-center" src="../../images/Biomorphes3/biomorphes3-2.png"><p>On voit très bien qu'il y a une symétrie d'ordre 3, puisque si vous
 faites des tiers de tour autour du point rouge, l'ensemble des points
@@ -139,23 +139,23 @@ induit une symétrie d'ordre 3.</p>
 z\mapsto p_k(z) = z^{-k} + \dfrac{1}{2}
 \end{equation*}
 </div>
-<pre class="code python"><a name="rest_code_044ed13e26304224a88b3cdd463a47fd-1"></a><span class="c"># nombre de points dans le domaine</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-2"></a>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-3"></a><span class="n">nx</span> <span class="o">=</span> <span class="mi">300</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-4"></a><span class="n">ny</span> <span class="o">=</span> <span class="mi">300</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-5"></a>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-6"></a>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-7"></a>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-8"></a><span class="n">fig</span> <span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>     <span class="p">;</span>    <span class="c"># je dimensionne le dessin</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-9"></a><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-10"></a>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-11"></a>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-12"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-13"></a>    <span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">ymin</span><span class="p">,</span><span class="n">ymax</span><span class="p">)</span> <span class="o">=</span> <span class="n">domaine</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-14"></a>    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">430</span><span class="o">+</span><span class="n">k</span><span class="p">)</span>    <span class="c"># je crée un sous-graphique</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-15"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s">r'$k={}$'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">),</span><span class="o">**</span><span class="n">title_font</span><span class="p">)</span>           <span class="c"># je lui mets un titre</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-16"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s">'equal'</span><span class="p">)</span>               <span class="c"># repère orthonormé</span>
-<a name="rest_code_044ed13e26304224a88b3cdd463a47fd-17"></a>    <span class="n">coloriage</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ax</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_83e988714a97453caf02b2bd386360eb-1"></a><span class="c1"># nombre de points dans le domaine</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-2"></a>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-3"></a><span class="n">nx</span> <span class="o">=</span> <span class="mi">300</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-4"></a><span class="n">ny</span> <span class="o">=</span> <span class="mi">300</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-5"></a>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-6"></a>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-7"></a>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-8"></a><span class="n">fig</span> <span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>     <span class="p">;</span>    <span class="c1"># je dimensionne le dessin</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-9"></a><span class="n">k</span><span class="o">=</span><span class="mi">1</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-10"></a>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-11"></a>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-12"></a><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-13"></a>    <span class="p">(</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">ymin</span><span class="p">,</span><span class="n">ymax</span><span class="p">)</span> <span class="o">=</span> <span class="n">domaine</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-14"></a>    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">430</span><span class="o">+</span><span class="n">k</span><span class="p">)</span>    <span class="c1"># je crée un sous-graphique</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-15"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">r'$k={}$'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">),</span><span class="o">**</span><span class="n">title_font</span><span class="p">)</span>           <span class="c1"># je lui mets un titre</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-16"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'equal'</span><span class="p">)</span>               <span class="c1"># repère orthonormé</span>
+<a name="rest_code_83e988714a97453caf02b2bd386360eb-17"></a>    <span class="n">coloriage</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">,</span><span class="n">ax</span><span class="p">)</span>
 </pre>
 <img alt="../../images/Biomorphes3/biomorphes3-3.png" src="../../images/Biomorphes3/biomorphes3-3.png"><p>Vous voyez se dessiner à l'interface avec les "pétales" une espèce de
 dentelle qui évoque un polygone à <span class="math">\(k\)</span> côtés (pour <span class="math">\(k=5\)</span>,
@@ -168,7 +168,9 @@ J'ai enfin généré l'animation de  <span class="math">\(k=1\)</span> à <span 
 </colgroup>
 <tbody valign="top"><tr>
 <td> </td>
-<td><div class="first last"><iframe width="425" height="344" src="//www.youtube.com/embed/iJnRFsCGkNA?rel=0&amp;hd=1&amp;wmode=transparent"></iframe></div></td>
+<td><div class="first last"><div class="youtube-video">
+<iframe width="425" height="344" src="https://www.youtube.com/embed/iJnRFsCGkNA?rel=0&amp;hd=1&amp;wmode=transparent"></iframe>
+</div></div></td>
 </tr></tbody>
 </table>
 <p>Pour savoir comment la fabriquer en <em>Python</em> allez voir <a class="reference external" href="../animation-en-python">ici</a>.</p>
@@ -193,12 +195,12 @@ J'ai enfin généré l'animation de  <span class="math">\(k=1\)</span> à <span 
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
     </div>
