@@ -14,18 +14,28 @@ article: http://ogp.me/ns/article#
 <link rel="icon" href="../../favicon.ico" sizes="128x128">
 <link rel="icon" href="../../favicon.ico" sizes="256x256">
 <script type="text/x-mathjax-config">
- MathJax.Hub.Config({
-     tex2jax: {
-         inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-         processEscapes: true
-     },
-     displayAlign: 'center', // Change this to 'left' to left equations.
-     "HTML-CSS": {
-         styles: {'.MathJax_Display': {"margin": 0}}
-     }
- });
- </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\(','\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script><script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Informatique">
 <meta property="og:url" content="http://yaspat.github.io/blog/stories/informatique/">
@@ -92,35 +102,34 @@ Cela dépend du système d'exploitation s">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
 <li>
-<a class="reference internal" href="#installation-de-python-sur-vos-ordinateurs-personnels" id="id2">Installation de Python sur vos ordinateurs personnels</a><ul>
-<li><a class="reference internal" href="#sous-windows" id="id3">Sous Windows</a></li>
-<li><a class="reference internal" href="#sous-mac-os-x" id="id4">Sous Mac OS X</a></li>
-<li><a class="reference internal" href="#sous-linux" id="id5">Sous Linux</a></li>
+<a class="reference internal" href="#installation-de-python-sur-vos-ordinateurs-personnels" id="id1">Installation de Python sur vos ordinateurs personnels</a><ul>
+<li><a class="reference internal" href="#sous-windows" id="id2">Sous Windows</a></li>
+<li><a class="reference internal" href="#sous-mac-os-x" id="id3">Sous Mac OS X</a></li>
+<li><a class="reference internal" href="#sous-linux" id="id4">Sous Linux</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="installation-de-python-sur-vos-ordinateurs-personnels">
-<h2><a class="toc-backref" href="#id2">Installation de Python sur vos ordinateurs personnels</a></h2>
+<h2><a class="toc-backref" href="#id1">Installation de Python sur vos ordinateurs personnels</a></h2>
 <p>Cela dépend du système d'exploitation sur votre machine :</p>
 <div class="section" id="sous-windows">
-<h3><a class="toc-backref" href="#id3">Sous Windows</a></h3>
+<h3><a class="toc-backref" href="#id2">Sous Windows</a></h3>
 <p>1. Il ne faut pas installer <cite>Python</cite> tout seul, mais une distribution
 de <cite>Python</cite> : c'est-à-dire un ensemble d'applications et de services
-livrés avec <cite>Python</cite>. On travaillera avec la version <cite>2.7</cite> de <cite>Python</cite>.</p>
+livrés avec <cite>Python</cite>. On travaillera avec la version <cite>3.5</cite> de <cite>Python</cite>.</p>
 <ol class="arabic simple" start="2">
-<li>Vous pouvez au choix installer la distribution <cite>Python(x,y)-2.7.10.0</cite> ou la distribution <cite>Anaconda</cite> :<ol class="loweralpha">
+<li>Vous aurez deux choses à installer :<ol class="loweralpha">
 <li>
-<a class="reference external" href="http://python-xy.github.io/downloads.html">Python(x,y)</a>  (c'est celle qui est installée au lycée, prendre le fichier <cite>.exe</cite>). Le fichier est lourd, donc soyez patients.</li>
+<cite>Pyzo</cite> : c'est la distribution installée au lycée, et celle qui est utilisée au concours.</li>
 <li>
-<a class="reference external" href="http:///continuum.io/downloads">Anaconda</a> . Même remarque que pour Python(x,y) sur le temps de l'installation. Cliquez sur installer, le site reconnaît votre OS, donc le bon fichier sera téléchargé.</li>
+<cite>Anaconda</cite> : environnement qui permet une installation de packages plus facile et orientée calcul scientifique. Vous aurez</li>
 </ol>
 </li>
 </ol>
-<p>Avec ces distributions, vous aurez l'environnement de développment <cite>Syder</cite> disponible ainsi que <cite>Jupyter</cite>.</p>
 </div>
 <div class="section" id="sous-mac-os-x">
-<h3><a class="toc-backref" href="#id4">Sous Mac OS X</a></h3>
+<h3><a class="toc-backref" href="#id3">Sous Mac OS X</a></h3>
 <ol class="arabic simple">
 <li>Python est installé en natif, il vous  suffit d'installer <a class="reference external" href="https://bitbucket.org/spyder-ide/spyderlib/downloads">Spyder</a> . Veillez bien à choisir la version suffixée par <cite>py2.7.dmg</cite>. En l'état, vous n'aurez pas accés à <cite>Jupyter</cite>.</li>
 <li>Vous pouvez installer  <a class="reference external" href="http:///continuum.io/downloads">Anaconda</a> , je n'ai pas essayé, mais  apparemment cela marche très bien de ce que j'ai vu chez certains biwanes. En plus,  vous avez accès à <cite>Jupyter</cite> :  super !</li>
@@ -128,7 +137,7 @@ livrés avec <cite>Python</cite>. On travaillera avec la version <cite>2.7</cite
 </ol>
 </div>
 <div class="section" id="sous-linux">
-<h3><a class="toc-backref" href="#id5">Sous Linux</a></h3>
+<h3><a class="toc-backref" href="#id4">Sous Linux</a></h3>
 <p>Venez me voir.</p>
 </div>
 </div>

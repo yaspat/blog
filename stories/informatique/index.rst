@@ -23,16 +23,15 @@ Sous Windows
 
 1. Il ne faut pas installer `Python` tout seul, mais une distribution
 de `Python` : c'est-à-dire un ensemble d'applications et de services
-livrés avec `Python`. On travaillera avec la version `2.7` de `Python`.
+livrés avec `Python`. On travaillera avec la version `3.5` de `Python`.
 
-2. Vous pouvez au choix installer la distribution `Python(x,y)-2.7.10.0` ou la distribution `Anaconda` :
+2. Vous aurez deux choses à installer :
 
-   a. `Python(x,y) <http://python-xy.github.io/downloads.html>`_  (c'est celle qui est installée au lycée, prendre le fichier `.exe`). Le fichier est lourd, donc soyez patients.
+   a. `Pyzo` : c'est la distribution installée au lycée, et celle qui est utilisée au concours.
 
-   b. `Anaconda <http:///continuum.io/downloads>`_ . Même remarque que pour Python(x,y) sur le temps de l'installation. Cliquez sur installer, le site reconnaît votre OS, donc le bon fichier sera téléchargé.
+   b. `Anaconda` : environnement qui permet une installation de packages plus facile et orientée calcul scientifique. Vous aurez 
 
-Avec ces distributions, vous aurez l'environnement de développment `Syder` disponible ainsi que `Jupyter`.
-  
+
 Sous Mac OS X
 ~~~~~~~~~~~~~~
 

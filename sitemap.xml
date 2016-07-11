@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2016-07-03T20:12:00Z</lastmod>
+  <lastmod>2016-07-03T20:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2016-07-03T20:04:00Z</lastmod>
+  <lastmod>2016-07-11T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2016-05-20T09:52:00Z</lastmod>
+  <lastmod>2016-07-11T22:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -142,6 +142,10 @@
   <lastmod>2015-10-18T16:32:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/categories/mathjax/</loc>
+  <lastmod>2016-07-11T22:13:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/categories/matrices/</loc>
   <lastmod>2016-02-03T16:47:00Z</lastmod>
  </url>
@@ -239,15 +243,15 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2016-07-03T20:15:00Z</lastmod>
+  <lastmod>2016-07-11T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2016-07-03T20:04:00Z</lastmod>
+  <lastmod>2016-07-11T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2016-07-03T20:04:00Z</lastmod>
+  <lastmod>2016-07-11T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -255,7 +259,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2016-07-03T20:03:00Z</lastmod>
+  <lastmod>2016-07-11T22:18:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/Boucles%20Pour/</loc>
@@ -292,6 +296,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/croissances-comparees/</loc>
   <lastmod>2015-10-02T13:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/des-maths/</loc>
+  <lastmod>2016-07-11T22:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</loc>

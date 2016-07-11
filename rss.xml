@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link type="application/rss+xml" rel="self" href="http://yaspat.github.io/blog/rss.xml"></atom:link><language>fr</language><lastBuildDate>Sun, 03 Jul 2016 20:15:38 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link type="application/rss+xml" href="http://yaspat.github.io/blog/rss.xml" rel="self"></atom:link><language>fr</language><lastBuildDate>Mon, 11 Jul 2016 22:13:41 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>des maths ?</title><link>http://yaspat.github.io/blog/posts/des-maths/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Écrivez votre billet ici.
+Parfois je me demande si on peut facilement écrire des maths :&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\exp(i\pi)+1=0\)&lt;/span&gt; par exemple !&lt;/p&gt;&lt;/div&gt;</description><category>mathjax</category><guid>http://yaspat.github.io/blog/posts/des-maths/</guid><pubDate>Mon, 11 Jul 2016 22:07:56 GMT</pubDate></item><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
 &lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
@@ -257,13 +259,4 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Biomorphes 3/3 : fin</title><link>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Dans le &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire"&gt;billet précédent&lt;/a&gt;, j'ai colorié un domaine du plan complexe en
-partant de la fonction &lt;span class="math"&gt;\(p\)&lt;/span&gt; suivante :&lt;/p&gt;
-&lt;div class="math"&gt;
-\begin{equation*}
-p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
-\end{equation*}
-&lt;/div&gt;
-&lt;p&gt;Ce qui a donné la très belle image suivante :&lt;/p&gt;
-&lt;img alt="../../images/Biomorphes3/biomorphes3-1.png" class="align-center" src="http://yaspat.github.io/blog/images/Biomorphes3/biomorphes3-1.png"&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>symétries</category><guid>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</guid><pubDate>Thu, 28 Jan 2016 21:37:50 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item></channel></rss>
