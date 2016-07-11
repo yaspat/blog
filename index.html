@@ -14,26 +14,17 @@ article: http://ogp.me/ns/article#
 <link rel="icon" href="favicon.ico" sizes="16x16">
 <link rel="icon" href="favicon.ico" sizes="128x128">
 <link rel="icon" href="favicon.ico" sizes="256x256">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\(','\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script><script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    // Fix <code> tags after MathJax finishes running. This is a
-    // hack to overcome a shortcoming of Markdown. Discussion at
-    // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+    },
+    displayAlign: 'center', // Change this to 'left' if you want.
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>
@@ -59,33 +50,6 @@ MathJax.Hub.Config({
             <li><a href="rss.xml" title="RSS"><i class="icon-rss"></i></a></li>
 
         </ul></section><section class="page-content"><div class="content" rel="main">
-        <div class="post">
-            <h1 class="title"><a href="posts/des-maths/">des maths ?</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2016-07-12T00:07:56+02:00">2016-07-12 00:07</time>
-</div>
-                <div class="stats">
-                                <a href="posts/des-maths/#disqus_thread" data-disqus-identifier="cache/posts/des-maths.html">Comments</a>
-
-
-                </div>
-                        <div itemprop="keywords" class="tags">
-        <ul>
-        Étiquettes : 
-           <li><a class="tag p-category" href="categories/mathjax/" rel="tag">mathjax</a></li>
-        </ul>
-</div>
-
-            </div>
-            <div class="body">
-                <div>
-<p>Écrivez votre billet ici.
-Parfois je me demande si on peut facilement écrire des maths :</p>
-<p><span class="math">\(\exp(i\pi)+1=0\)</span> par exemple !</p>
-</div>
-            </div>
-        </div>
         <div class="post">
             <h1 class="title"><a href="posts/developpements-limites-en-python/">Développements limités en Python</a></h1>
             <div class="meta">
@@ -587,6 +551,40 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 </tr></tbody>
 </table>
 <p class="more"><a href="posts/animation-en-python/">Lire la suite…</a></p>
+</div>
+            </div>
+        </div>
+        <div class="post">
+            <h1 class="title"><a href="posts/biomorphes-3-fin/">Biomorphes 3/3 : fin</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-28T22:37:50+01:00">2016-01-28 22:37</time>
+</div>
+                <div class="stats">
+                                <a href="posts/biomorphes-3-fin/#disqus_thread" data-disqus-identifier="cache/posts/biomorphes3-fin.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="categories/biomorphes/" rel="tag">biomorphes</a></li>
+           <li><a class="tag p-category" href="categories/symetries/" rel="tag">symétries</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>Dans le <a class="reference external" href="posts/biomorphes-ii-bestiaire">billet précédent</a>, j'ai colorié un domaine du plan complexe en
+partant de la fonction <span class="math">\(p\)</span> suivante :</p>
+<div class="math">
+\begin{equation*}
+p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
+\end{equation*}
+</div>
+<p>Ce qui a donné la très belle image suivante :</p>
+<img alt="../../images/Biomorphes3/biomorphes3-1.png" class="align-center" src="images/Biomorphes3/biomorphes3-1.png"><p class="more"><a href="posts/biomorphes-3-fin/">Lire la suite…</a></p>
 </div>
             </div>
         </div>

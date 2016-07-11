@@ -122,10 +122,6 @@
   <lastmod>2016-07-03T20:04:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://yaspat.github.io/blog/categories/mathjax.xml</loc>
-  <lastmod>2016-07-11T22:13:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://yaspat.github.io/blog/categories/matrices.xml</loc>
   <lastmod>2016-07-03T20:04:00Z</lastmod>
  </sitemap>
@@ -211,22 +207,22 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/rss.xml</loc>
-  <lastmod>2016-07-11T22:18:00Z</lastmod>
+  <lastmod>2016-07-11T23:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/demo/rss.xml</loc>
-  <lastmod>2016-07-11T22:18:00Z</lastmod>
+  <lastmod>2016-07-11T23:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/galleries/rss.xml</loc>
-  <lastmod>2016-07-11T22:18:00Z</lastmod>
+  <lastmod>2016-07-11T23:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2016-07-11T22:13:00Z</lastmod>
+  <lastmod>2016-07-11T23:41:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2016-07-11T22:18:00Z</lastmod>
+  <lastmod>2016-07-11T23:42:00Z</lastmod>
  </sitemap>
 </sitemapindex>
