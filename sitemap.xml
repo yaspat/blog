@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2016-07-27T12:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
@@ -239,15 +239,15 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2016-07-12T00:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2016-07-12T00:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2016-07-27T12:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -255,7 +255,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2016-07-12T00:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/Boucles%20Pour/</loc>
@@ -304,6 +304,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/eq2deg/</loc>
   <lastmod>2015-10-18T16:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/essai/</loc>
+  <lastmod>2016-07-27T12:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/euler1/</loc>
