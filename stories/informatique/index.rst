@@ -10,37 +10,26 @@
 
 .. class:: alert alert-info pull-right
 
-.. contents::
+
 
 Installation de Python sur vos ordinateurs personnels
 =====================================================
 
-Cela dépend du système d'exploitation sur votre machine :
+La procédure est la même, que vous soyez sur Windows ou Mac OS X.
 
 
-Sous Windows
-~~~~~~~~~~~~~
+
 
 1. Il ne faut pas installer `Python` tout seul, mais une distribution
 de `Python` : c'est-à-dire un ensemble d'applications et de services
 livrés avec `Python`. On travaillera avec la version `3.5` de `Python`.
 
 2. Vous aurez deux choses à installer :
+ 
+a. **Pyzo** : c'est l'environnement de développement disponible au lycée, et celle qui est utilisée au concours. C'est lui qui vous permet de dialoguer avec Python.  Rendez-vous `ici <http://www.pyzo.org/start.html>`_ puis dans l'étape 1 (*step 1: install the Pyzo IDE*) choisissez le lien qui correspond à votre système. Puis, au  lieu de suivre l'étape 2 (les liens ne sont pas toujours à jour),  installez Anaconda comme indiqué au point suivant. C'est lui qui vous permet de
+  
+b. **Anaconda** :  il  permet une installation facile de Python,  des packages  et est  orienté  calcul scientifique. Rendez-vous `là <https://www.continuum.io/downloads>`_ et cliquez sur le logo correspondant à votre système (win, mac, ou linux). Choisissez l'installeur graphique de **Python 3.5** (en vert, *graphical installer*). Lancez ensuite l'installation. Anaconda vous demandera si vous souhaitez recevoir leur anti-sèche (*cheatsheet*), vous pouvez décliner la proposition.
 
-   a. `Pyzo` : c'est la distribution installée au lycée, et celle qui est utilisée au concours.
+c. Vous pouvez ensuite lancer Pyzo et commencer à pythoniser...
 
-   b. `Anaconda` : environnement qui permet une installation de packages plus facile et orientée calcul scientifique. Vous aurez 
-
-
-Sous Mac OS X
-~~~~~~~~~~~~~~
-
-#. Python est installé en natif, il vous  suffit d'installer `Spyder <https://bitbucket.org/spyder-ide/spyderlib/downloads>`_ . Veillez bien à choisir la version suffixée par `py2.7.dmg`. En l'état, vous n'aurez pas accés à `Jupyter`.
-#. Vous pouvez installer  `Anaconda <http:///continuum.io/downloads>`_ , je n'ai pas essayé, mais  apparemment cela marche très bien de ce que j'ai vu chez certains biwanes. En plus,  vous avez accès à `Jupyter` :  super !
-#. Si vous souhaitez passer par `Macports`, venez me voir, mais ce n'est pas la solution la plus simple, à moins que vous vous sentiez geek au fond de vous et rêvez de la ligne de commandes.
-
-Sous Linux
-~~~~~~~~~~~
-
-Venez me voir.
 
