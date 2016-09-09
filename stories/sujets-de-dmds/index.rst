@@ -11,13 +11,23 @@
 
 .. contents::
 
-Sujets de DM
-==============
+Sujets de DM de 2016
+====================
+
+#. DM 1 :  Étude d'une fonction périodique. *À rendre le 8/09/16*
+
+   a. `Sujet du DM1 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM1.pdf>`_
+   b.  Corrigé du DM1
+
+
+
+Sujets de DM de 2015
+====================
 
 
 #. DM 1 :  Étude d'une fonction périodique. *À rendre le 11/09/15*
 
-   a. `Sujet du DM1 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1.pdf>`_
+   a. `Sujet du DM1 (2015) <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1.pdf>`_
    b. `Corrigé du DM1  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
 
 
@@ -119,8 +129,8 @@ Sujets de DM
 
 
 
-Sujets de DS
-============
+Sujets de DS de 2015
+====================
 
 1. `Sujet du DS1 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS01bis/DS01.pdf>`_
 2. `Sujet du DS2 <https://github.com/yaspat/Biwane15-16/raw/master/DS/DS02/DS02.pdf>`_
@@ -132,8 +142,7 @@ Sujets de DS
 
 
 
-Corrigés des DS
-===============
+
 
 
 

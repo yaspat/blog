@@ -26,7 +26,7 @@ Colloscope : mode d'emploi
 
 
 3. Passé cette étape, regardons dans le tableau **(T1)**  ce qui vous attend la première semaine de colle : c'est la semaine 1 sur le colloscope. 
-Celle du 14 septembre.    À l'intersection de la ligne de la semaine qui vous intéresse (la semaine 1 pour l'exemple) et la colonne de votre trinôme, 
+Celle du 12 septembre.    À l'intersection de la ligne de la semaine qui vous intéresse (la semaine 1 pour l'exemple) et la colonne de votre trinôme, 
 vous découvrez quelles colles vous attendent.
 
 
@@ -39,10 +39,10 @@ vous découvrez quelles colles vous attendent.
 
 4. Cette configuration détermine également suivant la parité de la semaine :
   
-   a. Vos heures de TD (de maths, physique-chimie) :  voir le tableau **(T2)**.
+   a. Vos heures de TD de maths :  voir le tableau **(T2)**.
    b. Vos heures de TP (de SVT, physique-chimie) :  voir  le tableau **(T2)**  aussi.
-   c. Vos heures de TP d'informatique dans : voir  le  tableau **(T3)**.
- 
+   c. Vos heures de TP d'informatique sur l'année : voir  le  tableau **(T3)**.
+   d. Vos heures de TD de physique : voir le tableau **(T3)** pour les semaines 1 à 11.
      
    Notez que vous avez TP d'informatique seulement une semaine sur deux.
 
