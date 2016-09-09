@@ -15,7 +15,7 @@
 Colloscope : mode d'emploi
 ==========================
 
-#. Vous pouvez télécharger le colloscope `ici <https://github.com/yaspat/Biwane15-16/raw/master/Organisation/Colloscope/colloscopeB1A-2015-2016.pdf>`_ .
+#. Vous pouvez télécharger le colloscope `ici <https://github.com/yaspat/Biwane16-17/blob/master/Colloscope/colloscopeB1-16-17V1.pdf>`_ .
 
 #.  Commencez par trouver votre nom dans la liste des groupes. Cela détermine :
     
