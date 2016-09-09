@@ -52,40 +52,43 @@ vous découvrez quelles colles vous attendent.
 Les programmes de colles de maths
 ==================================
 
-#. `Programme de la quinzaine 1 (14-25 sept) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_. Thème : notions élémentaires sur les fonctions. Premiers pas avec Python.
+ #. `Programme de la quinzaine 1 (12-23 sept) <https://github.com/yaspat/Biwane16-17/raw/master/Programme_Colles/01-Fonctions.pdf>`_. Thème : notions élémentaires sur les fonctions.
 
-#. `Programme de la quinzaine 2 (28 sept - 9 oct) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/02-Derivees-Primitives.pdf>`_. Thème : dérivation, primitivation.
 
-#.  `Programme de la quinzaine 3 (12 oct - 6 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/03-Complexes-Recurrence.pdf>`_. Thème : récurrence - nombres complexes.
+.. #. `Programme de la quinzaine 1 (14-25 sept) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_. Thème : notions élémentaires sur les fonctions. Premiers pas avec Python.
 
-#.  `Programme de la quinzaine 4 (9 nov  - 20 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/04-Sommes.pdf>`_. Thème : Sommes - Suites classiques - Boucles **for**.
+.. #. `Programme de la quinzaine 2 (28 sept - 9 oct) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/02-Derivees-Primitives.pdf>`_. Thème : dérivation, primitivation.
 
-#.  `Programme de la quinzaine 5 (23 nov  - 4 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/05-Equadiffs.pdf>`_. Thème : Équations différentielles linéaires à coefficients constants.
+.. #.  `Programme de la quinzaine 3 (12 oct - 6 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/03-Complexes-Recurrence.pdf>`_. Thème : récurrence - nombres complexes.
 
-#.  `Programme de la quinzaine 6 (7déc  - 18 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/06-Systemes_Boucles.pdf>`_. Thème : Systèmes linéaires et boucles en Python.
+.. #.  `Programme de la quinzaine 4 (9 nov  - 20 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/04-Sommes.pdf>`_. Thème : Sommes - Suites classiques - Boucles **for**.
 
-#.  `Programme de la quinzaine 7 (4jan  - 15jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/07-Combinatoire.pdf>`_. Thème : méthodes combinatoires, vocabulaire des applications, boucles, listes.
+.. #.  `Programme de la quinzaine 5 (23 nov  - 4 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/05-Equadiffs.pdf>`_. Thème : Équations différentielles linéaires à coefficients constants.
 
-#.  `Programme de la quinzaine 8 (18jan  - 29jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/08-Matrices.pdf>`_. Thème : calcul matriciel.
+.. #.  `Programme de la quinzaine 6 (7déc  - 18 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/06-Systemes_Boucles.pdf>`_. Thème : Systèmes linéaires et boucles en Python.
 
-#.  `Programme de la quinzaine 9 (1fév  - 26fév) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/09-Suites.pdf>`_. Thème : Polynômes - suites réelles - Python
+.. #.  `Programme de la quinzaine 7 (4jan  - 15jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/07-Combinatoire.pdf>`_. Thème : méthodes combinatoires, vocabulaire des applications, boucles, listes.
 
-#.  Quinzaine 10 (28fév  - 11 mars). Thème : révisions d'analyse : études de fonctions, manipulation des inégalités. Suites réelles - Python
+.. #.  `Programme de la quinzaine 8 (18jan  - 29jan) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/08-Matrices.pdf>`_. Thème : calcul matriciel.
 
-#. `Programme de la quinzaine 11 (14mar - 15mar) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/10-Probas.pdf>`_.Thème : Probabilités. Théorie basique. Simulation en Python.
+.. #.  `Programme de la quinzaine 9 (1fév  - 26fév) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/09-Suites.pdf>`_. Thème : Polynômes - suites réelles - Python
 
-#. `Programme de la quinzaine 12 (19mar - 22avr) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/12-Kn.pdf>`_.Thème : espace vectoriel :math:`K^n`.
+.. #.  Quinzaine 10 (28fév  - 11 mars). Thème : révisions d'analyse : études de fonctions, manipulation des inégalités. Suites réelles - Python
 
-#. `Programme de la quinzaine 13 (25-29avr et 9-13mai) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/13-Continuite.pdf>`_.Thème : continuité, propriétés locales et globales.
+.. #. `Programme de la quinzaine 11 (14mar - 15mar) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/10-Probas.pdf>`_.Thème : Probabilités. Théorie basique. Simulation en Python.
 
-#. `Programme de la quinzaine 14 (16mai - 28mai) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/14-VAR.pdf>`_.Thème : variables aléatoires réelles sur un espace probabilisé fini.
+.. #. `Programme de la quinzaine 12 (19mar - 22avr) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/12-Kn.pdf>`_.Thème : espace vectoriel :math:`K^n`.
+
+.. #. `Programme de la quinzaine 13 (25-29avr et 9-13mai) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/13-Continuite.pdf>`_.Thème : continuité, propriétés locales et globales.
+
+.. #. `Programme de la quinzaine 14 (16mai - 28mai) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/14-VAR.pdf>`_.Thème : variables aléatoires réelles sur un espace probabilisé fini.
 
 Les salles de colles de mathématiques
 =====================================
 
-#. M. Alaoui : UM14
-#. M. Duchene : B217
-#. M. Essaifi : UM15
-#. M. Faure : B005
-#. M. Patel : UM16
-#. M. Riou : UM12
+.. #. M. Alaoui : UM14
+.. #. M. Duchene : B217
+.. #. M. Essaifi : UM15
+.. #. M. Faure : B005
+.. #. M. Patel : UM16
+.. #. M. Riou : UM12
