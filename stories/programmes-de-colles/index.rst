@@ -89,6 +89,3 @@ Les salles de colles de mathématiques
 #. Lundi 17h30 : B223
 #. Mercredi dès 12h : B227
 #. Jeudi 11h30 : B225
-.. #. M. Faure : B005
-.. #. M. Patel : UM16
-.. #. M. Riou : UM12

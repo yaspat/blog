@@ -14,10 +14,10 @@
 Sujets de DM de 2016
 ====================
 
-#. DM 1 :  Étude d'une fonction périodique. *À rendre le 8/09/16*
+#. DM 1 :  Étude d'une fonction. Opérations élémentaires. *À rendre le 8/09/16*
 
    a. `Sujet du DM1 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM1.pdf>`_
-   b.  Corrigé du DM1
+   b. `Corrigé du DM1 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM1_corrige.pdf>`_
 
 
 
@@ -28,7 +28,7 @@ Sujets de DM de 2015
 #. DM 1 :  Étude d'une fonction périodique. *À rendre le 11/09/15*
 
    a. `Sujet du DM1 (2015) <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1.pdf>`_
-   b. `Corrigé du DM1  <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
+   b. `Corrigé du DM1 (2015) <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM01/DM1-Correc.pdf>`_
 
 
 #. DM 2 : Étude de fonction. Implémentation d'une fonction en Python *À rendre le 18/09/15*
