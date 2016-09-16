@@ -19,11 +19,11 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2016-09-09T20:38:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -112,6 +112,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/images/</loc>
   <lastmod>2016-07-11T23:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/inequations/</loc>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/informatique/</loc>
@@ -247,7 +251,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2016-09-09T20:38:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -296,6 +300,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</loc>
   <lastmod>2016-07-11T23:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/domaine-de-definition-des-fonctions/</loc>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/entrees-sorties/</loc>

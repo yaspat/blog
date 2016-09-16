@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/analyse.xml</loc>
-  <lastmod>2016-07-03T20:15:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/animathions.xml</loc>
@@ -79,7 +79,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/fonctions.xml</loc>
-  <lastmod>2016-07-03T20:04:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/for.xml</loc>
@@ -92,6 +92,10 @@
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/images.xml</loc>
   <lastmod>2016-07-03T20:04:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/inequations.xml</loc>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/informatique.xml</loc>
@@ -219,10 +223,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2016-07-27T12:45:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2016-09-09T20:38:00Z</lastmod>
+  <lastmod>2016-09-11T10:34:00Z</lastmod>
  </sitemap>
 </sitemapindex>

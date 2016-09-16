@@ -19,6 +19,11 @@ Sujets de DM de 2016
    a. `Sujet du DM1 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM1.pdf>`_
    b. `Corrigé du DM1 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM1_corrige.pdf>`_
 
+#. DM 2 :  Étude d'une fonction. Primitivation. *À rendre le 23/09/16*
+
+   a. `Sujet du DM2 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM02.pdf>`_
+   b. Corrigé du DM1
+
 
 
 Sujets de DM de 2015
@@ -33,8 +38,8 @@ Sujets de DM de 2015
 
 #. DM 2 : Étude de fonction. Implémentation d'une fonction en Python *À rendre le 18/09/15*
 
-   a. `Sujet  du DM2 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM2.pdf>`_
-   b. `Corrigé du DM2 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM02-Correction.pdf>`_
+   a. `Sujet  du DM2  (2015) )<https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM2.pdf>`_
+   b. `Corrigé du DM2 (2015) <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/DM02-Correction.pdf>`_
 
 #. DM 3 : Étude de fonction.  Entrées-sorties, fonction en Python *À rendre le 18/09/15*
 

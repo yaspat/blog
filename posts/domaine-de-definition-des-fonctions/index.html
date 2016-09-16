@@ -6,10 +6,10 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Développements limités en Python | Maths info  BCPST 1A Rennes</title>
+<title>Domaine de définition des fonctions | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://yaspat.github.io/blog/posts/developpements-limites-en-python/">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/domaine-de-definition-des-fonctions/">
 <link rel="icon" href="../../favicon.ico" sizes="16x16">
 <link rel="icon" href="../../favicon.ico" sizes="128x128">
 <link rel="icon" href="../../favicon.ico" sizes="256x256">
@@ -28,9 +28,9 @@ MathJax.Hub.Config({
 });
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
-<meta property="og:title" content="Développements limités en Python">
-<meta property="og:url" content="http://yaspat.github.io/blog/posts/developpements-limites-en-python/">
-<meta property="og:description" content="De quoi vous aider à vérifier vos calculs. Comme d'habitude, on commence par importer les modules utiles :
+<meta property="og:title" content="Domaine de définition des fonctions">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/domaine-de-definition-des-fonctions/">
+<meta property="og:description" content="Un exercice qui semble assez peu pratiqué est celui de la recherche du domaine de définition d'une fonction. Je rappelle la méthode.
 
 
 
@@ -39,13 +39,22 @@ MathJax.Hub.Config({
 
 
 
-In [1]:
 
-    
-from sympy import *
-from sympy.interactive import printing # Pour avoir">
+Le point de départ¶
+
+
+
+
+
+
+
+
+Soit $f$ une fonction donnée. ">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2016-05-20T11:45:32+02:00">
+<meta property="article:published_time" content="2016-09-11T12:18:48+02:00">
+<meta property="article:tag" content="analyse">
+<meta property="article:tag" content="fonctions">
+<meta property="article:tag" content="inéquations">
 </head>
 <body>
     <section class="social"><ul>
@@ -65,17 +74,25 @@ from sympy.interactive import printing # Pour avoir">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Développements limités en Python</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Domaine de définition des fonctions</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2016-05-20T11:45:32+02:00">2016-05-20 11:45</time>
+                <time class="timeago" datetime="2016-09-11T12:18:48+02:00">2016-09-11 12:18</time>
             
                       |  
         <a href="index.ipynb" id="sourcelink">Source</a>
 
             </div>
-            
+                    <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="../../categories/analyse/" rel="tag">analyse</a></li>
+           <li><a class="tag p-category" href="../../categories/fonctions/" rel="tag">fonctions</a></li>
+           <li><a class="tag p-category" href="../../categories/inequations/" rel="tag">inéquations</a></li>
+        </ul>
+</div>
+
         </div>
         <div class="body">
             <div>
@@ -84,57 +101,63 @@ from sympy.interactive import printing # Pour avoir">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De quoi vous aider à vérifier vos calculs. Comme d'habitude, on commence par importer les modules utiles :</p>
+<p>Un exercice qui semble assez peu pratiqué est celui de la recherche du domaine de définition d'une fonction. Je rappelle la méthode.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [1]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">sympy.interactive</span> <span class="kn">import</span> <span class="n">printing</span> <span class="c1"># Pour avoir des belles sorties ...</span>
-<span class="n">printing</span><span class="o">.</span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span> <span class="c1"># ... en LaTeX</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span> <span class="c1"># maintenant je peux utiliser la variable x pour mes calculs.</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La fonction <code>series</code> fournit la série de Taylor-Mac Laurin de la fonction 
-(rappel : c'est la partie principale du développement limité <strong>au voisinage de </strong> $a=0$.)</p>
-<p>Par exemple, si je prends la fonction de l'exemple 18 du cours :</p>
-$$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$<p>Il me suffit simplement de  taper ceci :</p>
-<!--TEASER_END-->
+<h2 id="Le-point-de-départ">Le point de départ<a class="anchor-link" href="#Le-point-de-d%C3%A9part">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Soit $f$ une fonction donnée. La realtion de base est la suivante :</p>
+<blockquote>
+<p><em>un réel $x$ est dans le domaine $\mathscr{D}_f$ de la fonction $\iff$ Le réel $f(x)$ existe.</em></p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Un-exemple">Un exemple<a class="anchor-link" href="#Un-exemple">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote>
+<p>Trouver le domaine de définition de la fonction $f$ définie par $f(x)= \ln|\ln x| $.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>D'après le <strong>1.</strong>,</p>
+
 </div>
 </div>
 </div>
@@ -142,10 +165,33 @@ $$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$<p>Il me suffit simplement de  taper ceci 
 
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In [3]:</div>
+<div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">series</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">x</span><span class="p">)),</span><span class="n">x</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">init_printing</span>
+<span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">solve_univariate_inequality</span><span class="p">,</span><span class="n">ln</span><span class="p">,</span><span class="n">Abs</span><span class="p">,</span><span class="n">latex</span>
+<span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span>
+<span class="n">var</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">init_printing</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="input_hidden">
+<div class="input">
+<div class="prompt input_prompt">In [33]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">I</span>  <span class="o">=</span><span class="n">solve_univariate_inequality</span><span class="p">(</span><span class="n">ln</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">,</span><span class="n">x</span><span class="p">,</span> <span class="n">relational</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">rep</span> <span class="o">=</span> <span class="s1">'$'</span><span class="o">+</span><span class="n">latex</span><span class="p">(</span><span class="n">I</span><span class="p">)</span><span class="o">+</span><span class="s1">'$'</span>
+<span class="n">I</span>
 </pre></div>
 
 </div>
@@ -164,11 +210,11 @@ $$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$<p>Il me suffit simplement de  taper ceci 
 <div class="input_area">
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[3]:</div>
+<div class="prompt output_prompt">Out[33]:</div>
 
 
 <div class="output_latex output_subarea output_execute_result">
-$$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{384} + \frac{1609 x^{5}}{3840} + \mathcal{O}\left(x^{6}\right)$$
+$$\left(1, \infty\right)$$
 </div>
 
 </div>
@@ -196,21 +242,6 @@ $$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{3
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Des remarques :</p>
-<ol>
-<li>Par défaut, comme dit plus haut, les développements limités sont donnés au voisiange de $a=0$.</li>
-<li>Par défaut, la partie régulière du développemement limité est celle à d'ordre 5.</li>
-<li>Le terme résiduel n'est pas noté $o(x^5)$ comme vous pouvez le constater, mais $\mathcal O(x^6)$. Cette notation (qui s'appelle, vous l'aurez deviné, <em>grand O</em>) signifie : "il existe un coefficient d'ordre 6, mais je ne l'écris pas" (c'est donc plus précis que $o(x^5)$).</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Si je veux un DL de la fonction $t\mapsto \sqrt t$ à l'ordre 2 en $a=3$ comme fait en cours, je tape :</p>
 
 </div>
 </div>
@@ -219,84 +250,32 @@ $$1 + \frac{x}{2} - \frac{3 x^{2}}{8} + \frac{17 x^{3}}{48} - \frac{143 x^{4}}{3
 
 <div class="input_hidden">
 <div class="input">
-<div class="prompt input_prompt">In [4]:</div>
+<div class="prompt input_prompt">In [ ]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">n</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">series</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="n">x</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper output_hidden">
-<div class="output">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="input_area">
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[4]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$\sqrt{3} + \frac{\sqrt{3}}{6} \left(x - 3\right) - \frac{\sqrt{3}}{72} \left(x - 3\right)^{2} + \mathcal{O}\left(\left(x - 3\right)^{3}; x\rightarrow3\right)$$
-</div>
-
-</div>
-
 <div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
- <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
-  /   <i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px">     [code python] </i>
-</i>
 </div>
 </div>
 </div>
 
 </div>
-</div>
 
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Remarquez bien que pour avoir un DL$_n$, on spécifie dans <code>series</code> l'ordre $n+1$.</p>
-<p>À vous de jouer pour vérifer vos DL !</p>
-
-</div>
-</div>
 </div>
 </div>
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../exercices-sur-les-chaines-de-caracteres/" rel="prev" title="Informatique. Exercices sur les chaînes de caractères">Article précédent</a>
-            </li>
-            <li class="next">
-                <a href="../domaine-de-definition-des-fonctions/" rel="next" title="Domaine de définition des fonctions">Article suivant</a>
+                <a href="../developpements-limites-en-python/" rel="prev" title="Développements limités en Python">Article précédent</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="yaspat",
-            disqus_url="http://yaspat.github.io/blog/posts/developpements-limites-en-python/",
-        disqus_title="D\u00e9veloppements limit\u00e9s en Python",
-        disqus_identifier="cache/posts/developpements-limites-en-python.html",
+            disqus_url="http://yaspat.github.io/blog/posts/domaine-de-definition-des-fonctions/",
+        disqus_title="Domaine de d\u00e9finition des fonctions",
+        disqus_identifier="cache/posts/domaine-de-definition-des-fonctions.html",
         disqus_config = function () {
             this.language = "fr";
         };
