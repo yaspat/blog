@@ -51,199 +51,6 @@ MathJax.Hub.Config({
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
-            <h1 class="title"><a href="posts/domaine-de-definition-des-fonctions/">Domaine de définition des fonctions</a></h1>
-            <div class="meta">
-                <div class="authordate">
-                    <time class="timeago" datetime="2016-09-11T12:18:48+02:00">2016-09-11 12:18</time>
-</div>
-                <div class="stats">
-                                <a href="posts/domaine-de-definition-des-fonctions/#disqus_thread" data-disqus-identifier="cache/posts/domaine-de-definition-des-fonctions.html">Comments</a>
-
-
-                </div>
-                        <div itemprop="keywords" class="tags">
-        <ul>
-        Étiquettes : 
-           <li><a class="tag p-category" href="categories/analyse/" rel="tag">analyse</a></li>
-           <li><a class="tag p-category" href="categories/fonctions/" rel="tag">fonctions</a></li>
-           <li><a class="tag p-category" href="categories/inequations/" rel="tag">inéquations</a></li>
-        </ul>
-</div>
-
-            </div>
-            <div class="body">
-                <div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Un exercice qui semble assez peu pratiqué est celui de la recherche du domaine de définition d'une fonction. Je rappelle la méthode.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Le-point-de-départ">Le point de départ<a class="anchor-link" href="posts/domaine-de-definition-des-fonctions/#Le-point-de-d%C3%A9part">¶</a>
-</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Soit $f$ une fonction donnée. La realtion de base est la suivante :</p>
-<blockquote>
-<p><em>un réel $x$ est dans le domaine $\mathscr{D}_f$ de la fonction $\iff$ Le réel $f(x)$ existe.</em></p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Un-exemple">Un exemple<a class="anchor-link" href="posts/domaine-de-definition-des-fonctions/#Un-exemple">¶</a>
-</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote>
-<p>Trouver le domaine de définition de la fonction $f$ définie par $f(x)= \ln|\ln x| $.</p>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>D'après le <strong>1.</strong>,</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">init_printing</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">solve_univariate_inequality</span><span class="p">,</span><span class="n">ln</span><span class="p">,</span><span class="n">Abs</span><span class="p">,</span><span class="n">latex</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="k">import</span> <span class="n">var</span>
-<span class="n">var</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">init_printing</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [33]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">I</span>  <span class="o">=</span><span class="n">solve_univariate_inequality</span><span class="p">(</span><span class="n">ln</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">,</span><span class="n">x</span><span class="p">,</span> <span class="n">relational</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">rep</span> <span class="o">=</span> <span class="s1">'$'</span><span class="o">+</span><span class="n">latex</span><span class="p">(</span><span class="n">I</span><span class="p">)</span><span class="o">+</span><span class="s1">'$'</span>
-<span class="n">I</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-<div class="output_wrapper output_hidden">
-<div class="output">
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="input_area">
-
-<div class="output_area">
-<div class="prompt output_prompt">Out[33]:</div>
-
-
-<div class="output_latex output_subarea output_execute_result">
-$$\left(1, \infty\right)$$
-</div>
-
-</div>
-
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
- <i class="icon-eye-close" style="float:right; margin-bottom:8px; margin-right:10px">
-  /   <i class="icon-eye-open" style="float:right; margin-bottom:8px; margin-right:10px">     [code python] </i>
-</i>
-</div>
-</div>
-</div>
-
-</div>
-</div>
-
-
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="input_hidden">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-            </div>
-        </div>
-        <div class="post">
             <h1 class="title"><a href="posts/developpements-limites-en-python/">Développements limités en Python</a></h1>
             <div class="meta">
                 <div class="authordate">
@@ -744,6 +551,40 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 </tr></tbody>
 </table>
 <p class="more"><a href="posts/animation-en-python/">Lire la suite…</a></p>
+</div>
+            </div>
+        </div>
+        <div class="post">
+            <h1 class="title"><a href="posts/biomorphes-3-fin/">Biomorphes 3/3 : fin</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-01-28T22:37:50+01:00">2016-01-28 22:37</time>
+</div>
+                <div class="stats">
+                                <a href="posts/biomorphes-3-fin/#disqus_thread" data-disqus-identifier="cache/posts/biomorphes3-fin.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="categories/biomorphes/" rel="tag">biomorphes</a></li>
+           <li><a class="tag p-category" href="categories/symetries/" rel="tag">symétries</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div>
+<p>Dans le <a class="reference external" href="posts/biomorphes-ii-bestiaire">billet précédent</a>, j'ai colorié un domaine du plan complexe en
+partant de la fonction <span class="math">\(p\)</span> suivante :</p>
+<div class="math">
+\begin{equation*}
+p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
+\end{equation*}
+</div>
+<p>Ce qui a donné la très belle image suivante :</p>
+<img alt="../../images/Biomorphes3/biomorphes3-1.png" class="align-center" src="images/Biomorphes3/biomorphes3-1.png"><p class="more"><a href="posts/biomorphes-3-fin/">Lire la suite…</a></p>
 </div>
             </div>
         </div>
