@@ -55,9 +55,8 @@ Les programmes de colles de maths
  #. `Programme de la quinzaine 1 (12-23 sept) <https://github.com/yaspat/Biwane16-17/raw/master/Programme_Colles/01-Fonctions.pdf>`_. Thème : notions élémentaires sur les fonctions.
 
 
-.. #. `Programme de la quinzaine 1 (14-25 sept) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/01-Fonctions.pdf>`_. Thème : notions élémentaires sur les fonctions. Premiers pas avec Python.
-
-.. #. `Programme de la quinzaine 2 (28 sept - 9 oct) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/02-Derivees-Primitives.pdf>`_. Thème : dérivation, primitivation.
+ 
+ #. `Programme de la quinzaine 2 (26 sept - 7 oct) <https://github.com/yaspat/Biwane16-17/raw/master/Programme_Colles/02-Primitives-inequations.pdf>`_. Thème :  primitivation, inéquations, débuts en Python.
 
 .. #.  `Programme de la quinzaine 3 (12 oct - 6 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/03-Complexes-Recurrence.pdf>`_. Thème : récurrence - nombres complexes.
 
