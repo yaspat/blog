@@ -24,6 +24,10 @@ Sujets de DM de 2016
    a. `Sujet du DM2 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM02.pdf>`_
    b. Corrigé du DM2
 
+#. DM 3 :  Primitivation et nombres complexes. Débuts en Python. *À rendre le 30/09/16*
+
+   a. `Sujet du DM3 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM03.pdf>`_
+   b. Corrigé du DM2
 
 
 Sujets de DM de 2015
