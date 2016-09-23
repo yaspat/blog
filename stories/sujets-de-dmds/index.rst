@@ -47,7 +47,7 @@ Sujets de DM de 2015
 
 #. DM 3 : Étude de fonction.  Entrées-sorties, fonction en Python *À rendre le 18/09/15*
 
-   a. `Sujet  du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03.pdf>`_
+   a. `Sujet  du DM3 de 2015 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03.pdf>`_
    b. `Corrigé du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03-Corrige.pdf>`_
 
 #. DM 4 : Alphabétisation mathématique. *À rendre le 09/10/15*
