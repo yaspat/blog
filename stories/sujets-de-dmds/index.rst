@@ -22,12 +22,12 @@ Sujets de DM de 2016
 #. DM 2 :  Étude d'une fonction. Primitivation. *À rendre le 23/09/16*
 
    a. `Sujet du DM2 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM02.pdf>`_
-   b. Corrigé du DM2
+   b. `Corrigé du DM2 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM02_corrige.pdf>`_
 
 #. DM 3 :  Primitivation et nombres complexes. Débuts en Python. *À rendre le 30/09/16*
 
    a. `Sujet du DM3 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM03.pdf>`_
-   b. Corrigé du DM3
+   b. `Corrigé du DM3 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM03_corrige.pdf>`_
 
 
 Sujets de DM de 2015
@@ -48,7 +48,7 @@ Sujets de DM de 2015
 #. DM 3 : Étude de fonction.  Entrées-sorties, fonction en Python *À rendre le 18/09/15*
 
    a. `Sujet  du DM3 de 2015 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03.pdf>`_
-   b. `Corrigé du DM3 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03-Corrige.pdf>`_
+   b. `Corrigé du DM3 de 2015 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM03/DM03-Corrige.pdf>`_
 
 #. DM 4 : Alphabétisation mathématique. *À rendre le 09/10/15*
 
