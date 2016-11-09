@@ -58,9 +58,9 @@ Les programmes de colles de maths
  
  #. `Programme de la quinzaine 2 (26 sept - 7 oct) <https://github.com/yaspat/Biwane16-17/raw/master/Programme_Colles/02-Primitives-inequations.pdf>`_. Thème :  primitivation, inéquations, débuts en Python.
 
-.. #.  `Programme de la quinzaine 3 (12 oct - 6 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/03-Complexes-Recurrence.pdf>`_. Thème : récurrence - nombres complexes.
+ #.  `Programme de la quinzaine 3 (10 oct - 5 nov) <https://github.com/yaspat/Biwane16-17/raw/master/Programme_Colles/03-Entiers-sommes-recurrence.pdf>`_. Thème : entiers - récurrence - sommes
 
-.. #.  `Programme de la quinzaine 4 (9 nov  - 20 nov) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/04-Sommes.pdf>`_. Thème : Sommes - Suites classiques - Boucles **for**.
+ #.  `Programme de la quinzaine 4 (7 nov  - 18 nov) <https://github.com/yaspat/Biwane16-17/raw/master/Programme_Colles/04-Complexes-suites.pdf>`_. Thème : Complexes -  Suites classiques 
 
 .. #.  `Programme de la quinzaine 5 (23 nov  - 4 déc) <https://github.com/yaspat/Biwane15-16/raw/master/Programme_Colles/05-Equadiffs.pdf>`_. Thème : Équations différentielles linéaires à coefficients constants.
 

@@ -29,6 +29,16 @@ Sujets de DM de 2016
    a. `Sujet du DM3 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM03.pdf>`_
    b. `Corrigé du DM3 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM03_corrige.pdf>`_
 
+#. DM 4 :  Produits et récurrences.   Python. *À rendre le 14/10/16*
+
+   a. `Sujet du DM4 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM04.pdf>`_
+   b. `Corrigé du DM4 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM04_Corrige.pdf>`_
+
+
+#. DM 5 :  Primitivation et nombres complexes. Débuts en Python. *À rendre le 30/09/16*
+
+   a. `Sujet du DM5 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM05.pdf>`_
+   b. `Corrigé du DM5 <https://github.com/yaspat/Biwane16-17/raw/master/DM/DM05_corrige.pdf>`_
 
 Sujets de DM de 2015
 ====================
@@ -54,14 +64,14 @@ Sujets de DM de 2015
 
 
 
-   a. `Sujet  du DM4 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
+   a. `Sujet  du DM4 de 2015 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM04/DM04.pdf>`_
 
 #. DM 5 : Récurrence. Nombres complexes. *À rendre le 16/10/15*
 
 
-   a. `Sujet  du DM5 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/DM05.pdf>`_
+   a. `Sujet  du DM5  de 2015 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/DM05.pdf>`_
 
-   b. `Corrigé  du DM5 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/Corrige-DM05.pdf>`_
+   b. `Corrigé  du DM5  de 2015 <https://github.com/yaspat/Biwane15-16/raw/master/DM/DM05/Corrige-DM05.pdf>`_
 
 
 #. DM 6 : Produits et intégrales de Wallis. Python.  *À rendre le 13/11/15*
