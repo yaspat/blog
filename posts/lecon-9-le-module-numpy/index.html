@@ -26,11 +26,12 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
+<meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Informatique : Leçon 9. Le module numpy">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Sommaire
 
 Importation des modules
 Premiers pas avec numpy
@@ -88,8 +89,8 @@ Matric">
         </div>
         <div class="body">
             <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="#importation-des-modules" id="id3">Importation des modules</a></li>
 <li>
@@ -125,7 +126,7 @@ multidimensionnels. Les matrices sont donc un cas particulier de
 tableaux multidimensionels.</p>
 <div class="section" id="importation-des-modules">
 <h2><a class="toc-backref" href="#id3">Importation des modules</a></h2>
-<pre class="code python"><a name="rest_code_72171387aa3542e4af27930085616fee-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> <span class="c1"># importation prudente</span>
+<pre class="code python"><a name="rest_code_4f618ddd37504fd6a7f05d68724c1fa5-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> <span class="c1"># importation prudente</span>
 </pre>
 <p>Rappel : avec <strong>import</strong> vous importez le module. Avec <strong>as</strong> vous lui
 donnez un nom de préfixe pour vous rappeler les fonctions provenant du
@@ -137,9 +138,9 @@ préfixée par <strong>np</strong>, ce qui permet d'identifier son origine.</p>
 <h2><a class="toc-backref" href="#id4">Premiers pas avec <tt class="docutils literal">numpy</tt></a></h2>
 <p>La plupart des commandes suivantes sont dans votre aide-mémoire. Les
 matrices sont des objets de type <strong>array</strong> . Si on tape simplement :</p>
-<pre class="code python"><a name="rest_code_e0633acf421349849b615a67bfc6a3de-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">]]</span>
+<pre class="code python"><a name="rest_code_73578dec9e294f11bf243ffbf3cc41c8-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">]]</span>
 </pre>
-<pre class="code python"><a name="rest_code_4fcd88e72e5a48a8a77a16de4a78035d-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_320a1de0bcc3494d9b98304ba1594cf4-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 list
@@ -147,14 +148,14 @@ list
 <p>alors on obtient, comme au TP précédent, une liste de listes. En
 revanche, si vous déclarez votre liste comme un tableau <strong>numpy</strong> (en
 anglais : array) vous obtenez :</p>
-<pre class="code python"><a name="rest_code_d6fe96cfb3cf4ed99eec96be3fbfcd10-1"></a><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">]])</span> <span class="c1"># Le préfixe np provient de l'importation</span>
-<a name="rest_code_d6fe96cfb3cf4ed99eec96be3fbfcd10-2"></a><span class="k">print</span> <span class="n">A</span>                          <span class="c1"># prudente du module</span>
+<pre class="code python"><a name="rest_code_ac994ceab82b45158e07ea7a90d44113-1"></a><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">8</span><span class="p">]])</span> <span class="c1"># Le préfixe np provient de l'importation</span>
+<a name="rest_code_ac994ceab82b45158e07ea7a90d44113-2"></a><span class="k">print</span> <span class="n">A</span>                          <span class="c1"># prudente du module</span>
 </pre>
 <pre class="literal-block">
 [[ 1  0  1]
  [ 4  2 -8]]
 </pre>
-<pre class="code python"><a name="rest_code_117cd04a950144fb8f066fbdb16399bf-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_7117f02027c042aeba2fe0abf0725748-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 numpy.ndarray
@@ -171,7 +172,7 @@ matrice à partir de maintenant.</p>
 vraiment une fonction, ni l'objet (ah ah!) de ce TP. Les méthodes se
 suffixent aux objets auxquelles elles appliquent, ou sur lesquelles
 elles opèrent) :</p>
-<pre class="code python"><a name="rest_code_4cb62778437b4acea0f81d0441ca0490-1"></a><span class="n">A</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># C'est pourquoi on n'écrit pas shape(A) : shape est une méthode, pas une fonction</span>
+<pre class="code python"><a name="rest_code_48c98b2c478047b18d70896132ecf6c7-1"></a><span class="n">A</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># C'est pourquoi on n'écrit pas shape(A) : shape est une méthode, pas une fonction</span>
 </pre>
 <pre class="literal-block">
 (2, 3)
@@ -184,14 +185,14 @@ nous disent que <span class="math">\(\mathtt{A}\)</span> est de taille <span cla
 <h3><a class="toc-backref" href="#id6">Accès aux coefficients</a></h3>
 <p>Les doubles indices sont d'usage. Restriction habituelle de <strong>Python</strong> :
 les indices commencent, on s'en doute, à <span class="math">\(0\)</span> :</p>
-<pre class="code python"><a name="rest_code_0868d5a2ac90473b8beac6235c15ed77-1"></a><span class="k">print</span> <span class="n">A</span>
+<pre class="code python"><a name="rest_code_e654f1d08da7435c9fcb875c570cb393-1"></a><span class="k">print</span> <span class="n">A</span>
 </pre>
 <pre class="literal-block">
 [[ 1  0  1]
  [ 4  2 -8]]
 </pre>
 <p>Par exemple, pour récupérer <span class="math">\(a_{2,3}=-8\)</span></p>
-<pre class="code python"><a name="rest_code_03649fda8ac8455089e4b117bea9320d-1"></a><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># inutile d'utiliser A[1][2]</span>
+<pre class="code python"><a name="rest_code_f5d551aa5feb42b9844cd2915950943b-1"></a><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># inutile d'utiliser A[1][2]</span>
 </pre>
 <pre class="literal-block">
 -8
@@ -200,7 +201,7 @@ les indices commencent, on s'en doute, à <span class="math">\(0\)</span> :</p>
 <div class="section" id="extraction-d-une-ligne-ou-d-une-colonne">
 <h3><a class="toc-backref" href="#id7">Extraction d'une ligne ou d'une colonne</a></h3>
 <p>De façon plus générale on peut extraire des sous-matrices par tranches :</p>
-<pre class="code python"><a name="rest_code_8b853ac2007e4d1b86709b70c7b079cf-1"></a><span class="k">print</span> <span class="n">A</span>
+<pre class="code python"><a name="rest_code_90254e3e6c184143b9e563512f3bc2f3-1"></a><span class="k">print</span> <span class="n">A</span>
 </pre>
 <pre class="literal-block">
 [[ 1  0  1]
@@ -209,8 +210,8 @@ les indices commencent, on s'en doute, à <span class="math">\(0\)</span> :</p>
 <p>Par exemple, si je veux
 <span class="math">\(\ell_1 =\begin{pmatrix} 1&amp;0&amp;1 \end{pmatrix}\)</span>, la première ligne
 de <span class="math">\(A\)</span> :</p>
-<pre class="code python"><a name="rest_code_5fa2b9ea51364a26b3ab750309dcb5c2-1"></a><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="c1"># les deux points ":" servent de "joker" si vous voulez.</span>
-<a name="rest_code_5fa2b9ea51364a26b3ab750309dcb5c2-2"></a>       <span class="c1"># C'est l'opérateur de spécification par tranche (de slicing).</span>
+<pre class="code python"><a name="rest_code_5f845c60f5df4a82b9e1f24cd615c9d2-1"></a><span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span> <span class="c1"># les deux points ":" servent de "joker" si vous voulez.</span>
+<a name="rest_code_5f845c60f5df4a82b9e1f24cd615c9d2-2"></a>       <span class="c1"># C'est l'opérateur de spécification par tranche (de slicing).</span>
 </pre>
 <pre class="literal-block">
 array([1, 0, 1])
@@ -221,15 +222,15 @@ des matrices au sens de tableaux 2-dimensionnels :</p>
 <div class="system-message" id="id1">
 <p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">&lt;string&gt;</tt>, line 193); <em><a href="#id2">backlink</a></em></p>
 Inline strong start-string without end-string.</div>
-<pre class="code python"><a name="rest_code_46fe8507195e481e8fa728081f585ce7-1"></a><span class="n">ligne</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
-<a name="rest_code_46fe8507195e481e8fa728081f585ce7-2"></a><span class="k">print</span> <span class="n">ligne</span>
+<pre class="code python"><a name="rest_code_b040cebd8566495ba3c8f0570312eaa2-1"></a><span class="n">ligne</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<a name="rest_code_b040cebd8566495ba3c8f0570312eaa2-2"></a><span class="k">print</span> <span class="n">ligne</span>
 </pre>
 <pre class="literal-block">
 [1 0 1]
 </pre>
-<pre class="code python"><a name="rest_code_d18dd14bb555440887518355dcc74fe8-1"></a><span class="n">ligne</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># La réponse ne sera pas (1,3)</span>
-<a name="rest_code_d18dd14bb555440887518355dcc74fe8-2"></a>            <span class="c1"># on devrait récupérer un tuple à</span>
-<a name="rest_code_d18dd14bb555440887518355dcc74fe8-3"></a>            <span class="c1"># un seul item</span>
+<pre class="code python"><a name="rest_code_93c5931476ec405a939b7df15030130a-1"></a><span class="n">ligne</span><span class="o">.</span><span class="n">shape</span> <span class="c1"># La réponse ne sera pas (1,3)</span>
+<a name="rest_code_93c5931476ec405a939b7df15030130a-2"></a>            <span class="c1"># on devrait récupérer un tuple à</span>
+<a name="rest_code_93c5931476ec405a939b7df15030130a-3"></a>            <span class="c1"># un seul item</span>
 </pre>
 <pre class="literal-block">
 (3,)
@@ -238,14 +239,14 @@ Inline strong start-string without end-string.</div>
 <span class="math">\(\mathtt{1D}\)</span> (1-dimensionnel) de longueur <span class="math">\(\mathtt{3}\)</span>.</p>
 <p>Si je veux récupérer <span class="math">\(c_2=\begin{pmatrix} 0\\2\end{pmatrix}\)</span>, la
 deuxième colonne de <span class="math">\(\mathtt{A}\)</span> :</p>
-<pre class="code python"><a name="rest_code_0b4da4ed1ecd48069747f594082956e4-1"></a><span class="n">A</span>
+<pre class="code python"><a name="rest_code_2151f8ded1d2445a8994edf1e0bffdea-1"></a><span class="n">A</span>
 </pre>
 <pre class="literal-block">
 array([[ 1,  0,  1],
        [ 4,  2, -8]])
 </pre>
-<pre class="code python"><a name="rest_code_64c48555c9a943109ba24f2ce0d8c2fe-1"></a><span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-<a name="rest_code_64c48555c9a943109ba24f2ce0d8c2fe-2"></a><span class="k">print</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<pre class="code python"><a name="rest_code_55c517e30f7b4a7b8f2aafc5b6b46123-1"></a><span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_55c517e30f7b4a7b8f2aafc5b6b46123-2"></a><span class="k">print</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
 </pre>
 <pre class="literal-block">
 [0 2]
@@ -261,9 +262,9 @@ redimensionner un tableau.</p>
 tableau <span class="math">\(\mathtt{1D}\)</span>, mais une "vraie" colonne au sens des
 matrices, c'est-à-dire, pour l'exemple précédent, un tableau de format
 <span class="math">\((2,1)\)</span>, vous avez la méthode <span class="math">\(\mathtt{reshape}\)</span> pour cela :</p>
-<pre class="code python"><a name="rest_code_a6d7a85ec66d4fe4b46d05bc8fb5ec7a-1"></a><span class="n">colonne</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>               <span class="c1"># j'extrais la deuxième colonne de A</span>
-<a name="rest_code_a6d7a85ec66d4fe4b46d05bc8fb5ec7a-2"></a><span class="n">colonne</span> <span class="o">=</span> <span class="n">colonne</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># avec reshape(2,1) j'en fais une matrice 2 X 1</span>
-<a name="rest_code_a6d7a85ec66d4fe4b46d05bc8fb5ec7a-3"></a><span class="k">print</span> <span class="n">colonne</span>
+<pre class="code python"><a name="rest_code_1cb2c47760854b5c97ab11d897a6e492-1"></a><span class="n">colonne</span> <span class="o">=</span> <span class="n">A</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>               <span class="c1"># j'extrais la deuxième colonne de A</span>
+<a name="rest_code_1cb2c47760854b5c97ab11d897a6e492-2"></a><span class="n">colonne</span> <span class="o">=</span> <span class="n">colonne</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># avec reshape(2,1) j'en fais une matrice 2 X 1</span>
+<a name="rest_code_1cb2c47760854b5c97ab11d897a6e492-3"></a><span class="k">print</span> <span class="n">colonne</span>
 </pre>
 <pre class="literal-block">
 [[0]
@@ -272,7 +273,7 @@ matrices, c'est-à-dire, pour l'exemple précédent, un tableau de format
 <p>** Exercice. ** La commande <span class="math">\(\mathtt{range}\)</span> a son analogue en
 tableau <span class="math">\(\mathtt{numpy}\)</span> : <span class="math">\(\mathtt{arange}\)</span> (pour
 array-range). Par exemple :</p>
-<pre class="code python"><a name="rest_code_2787957ef2c441a98c142f8e1b049686-1"></a><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># tableau 1D des entiers de 1 à 9.</span>
+<pre class="code python"><a name="rest_code_41fa24c959524242bd9aec7a379d38d5-1"></a><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># tableau 1D des entiers de 1 à 9.</span>
 </pre>
 <pre class="literal-block">
 array([1, 2, 3, 4, 5, 6, 7, 8, 9])
@@ -280,8 +281,8 @@ array([1, 2, 3, 4, 5, 6, 7, 8, 9])
 <p>Construire la matrice suivante : $ B =</p>
 <p>$.</p>
 <p><strong>Solution.</strong></p>
-<pre class="code python"><a name="rest_code_07f0aa4f05094f6da5b3196ded240c5f-1"></a><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<a name="rest_code_07f0aa4f05094f6da5b3196ded240c5f-2"></a><span class="k">print</span> <span class="n">B</span>
+<pre class="code python"><a name="rest_code_93b9df7cbcce438ab26de4135c2f7eae-1"></a><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_93b9df7cbcce438ab26de4135c2f7eae-2"></a><span class="k">print</span> <span class="n">B</span>
 </pre>
 <pre class="literal-block">
 [[1 2 3]
@@ -298,8 +299,8 @@ consignées. Voici quelques matrices typiques :</p>
 <h3><a class="toc-backref" href="#id10">Matrices remarquables</a></h3>
 <div class="section" id="matrices-de-1-s">
 <h4><a class="toc-backref" href="#id11">Matrices de 1's</a></h4>
-<pre class="code python"><a name="rest_code_0aefd3e121464b52a9b52a2eb41e974a-1"></a><span class="n">atilla</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<a name="rest_code_0aefd3e121464b52a9b52a2eb41e974a-2"></a><span class="k">print</span> <span class="n">atilla</span>
+<pre class="code python"><a name="rest_code_5ec415d9fdfc4d289aa419584c0dba0e-1"></a><span class="n">atilla</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<a name="rest_code_5ec415d9fdfc4d289aa419584c0dba0e-2"></a><span class="k">print</span> <span class="n">atilla</span>
 </pre>
 <pre class="literal-block">
 [[ 1.  1.  1.]
@@ -309,8 +310,8 @@ consignées. Voici quelques matrices typiques :</p>
 </div>
 <div class="section" id="matrices-de-0-s">
 <h4><a class="toc-backref" href="#id12">Matrices de 0's</a></h4>
-<pre class="code python"><a name="rest_code_3df7aa31288341648e5f37a433132e74-1"></a><span class="n">nulle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<a name="rest_code_3df7aa31288341648e5f37a433132e74-2"></a><span class="k">print</span> <span class="n">nulle</span>
+<pre class="code python"><a name="rest_code_d845669761c04d108556838f22d92531-1"></a><span class="n">nulle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<a name="rest_code_d845669761c04d108556838f22d92531-2"></a><span class="k">print</span> <span class="n">nulle</span>
 </pre>
 <pre class="literal-block">
 [[ 0.  0.  0.]
@@ -320,9 +321,9 @@ consignées. Voici quelques matrices typiques :</p>
 </div>
 <div class="section" id="matrice-unite-ou-identite">
 <h4><a class="toc-backref" href="#id13">Matrice unité ou identité</a></h4>
-<pre class="code python"><a name="rest_code_a9185244599649ada35835b3b51fe6f5-1"></a><span class="n">identite</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1">#  Matrice I4 : identité d'ordre 4</span>
-<a name="rest_code_a9185244599649ada35835b3b51fe6f5-2"></a><span class="k">print</span> <span class="n">identite</span><span class="p">,</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>  <span class="c1"># rappel : "\n" est le saut de ligne</span>
-<a name="rest_code_a9185244599649ada35835b3b51fe6f5-3"></a><span class="k">print</span> <span class="mi">3</span><span class="o">*</span><span class="n">identite</span>     <span class="c1"># une matrice scalaire</span>
+<pre class="code python"><a name="rest_code_17ed976b4a6045de927289435be81834-1"></a><span class="n">identite</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1">#  Matrice I4 : identité d'ordre 4</span>
+<a name="rest_code_17ed976b4a6045de927289435be81834-2"></a><span class="k">print</span> <span class="n">identite</span><span class="p">,</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>  <span class="c1"># rappel : "\n" est le saut de ligne</span>
+<a name="rest_code_17ed976b4a6045de927289435be81834-3"></a><span class="k">print</span> <span class="mi">3</span><span class="o">*</span><span class="n">identite</span>     <span class="c1"># une matrice scalaire</span>
 </pre>
 <pre class="literal-block">
 [[ 1.  0.  0.  0.]
@@ -372,27 +373,27 @@ pour le calcul en "parallèle" (évite le recours à une boucle).</p>
 </ol>
 <p>$ C =</p>
 <p>$</p>
-<pre class="code python"><a name="rest_code_cb07edee5a454f3fa27e8f9bdfc6c032-1"></a><span class="c1"># Réponse à 1.  :</span>
-<a name="rest_code_cb07edee5a454f3fa27e8f9bdfc6c032-2"></a><span class="c1">#----------------</span>
-<a name="rest_code_cb07edee5a454f3fa27e8f9bdfc6c032-3"></a><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<a name="rest_code_cb07edee5a454f3fa27e8f9bdfc6c032-4"></a><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> <span class="c1">#Produit matriciel de A avec A</span>
+<pre class="code python"><a name="rest_code_0c6b25f829a3466884ffb5510f265669-1"></a><span class="c1"># Réponse à 1.  :</span>
+<a name="rest_code_0c6b25f829a3466884ffb5510f265669-2"></a><span class="c1">#----------------</span>
+<a name="rest_code_0c6b25f829a3466884ffb5510f265669-3"></a><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<a name="rest_code_0c6b25f829a3466884ffb5510f265669-4"></a><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">)</span> <span class="c1">#Produit matriciel de A avec A</span>
 </pre>
 <pre class="literal-block">
 array([[ 3.,  3.,  3.],
        [ 3.,  3.,  3.],
        [ 3.,  3.,  3.]])
 </pre>
-<pre class="code python"><a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-1"></a><span class="c1"># Réponse à 2. :</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-2"></a><span class="c1">#---------------</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-3"></a><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-4"></a><span class="k">print</span> <span class="s1">'B ='</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-5"></a><span class="k">print</span> <span class="n">B</span>                         <span class="c1"># la matrice B de tout à l'heure</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-6"></a><span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="o">**</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">B</span><span class="p">])</span> <span class="c1"># construction en compréhension</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-7"></a><span class="k">print</span> <span class="s1">'M = '</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-8"></a><span class="k">print</span> <span class="n">M</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-9"></a><span class="n">C</span> <span class="o">=</span> <span class="n">B</span><span class="o">*</span><span class="n">M</span>                         <span class="c1"># la matrice  est le produit</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-10"></a><span class="k">print</span> <span class="s1">'C = '</span>                    <span class="c1"># élément par élement de B et M</span>
-<a name="rest_code_f8915bc220b5473c84cc970cf3ee10e9-11"></a><span class="k">print</span> <span class="n">C</span>
+<pre class="code python"><a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-1"></a><span class="c1"># Réponse à 2. :</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-2"></a><span class="c1">#---------------</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-3"></a><span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-4"></a><span class="k">print</span> <span class="s1">'B ='</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-5"></a><span class="k">print</span> <span class="n">B</span>                         <span class="c1"># la matrice B de tout à l'heure</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-6"></a><span class="n">M</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="o">**</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">B</span><span class="p">])</span> <span class="c1"># construction en compréhension</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-7"></a><span class="k">print</span> <span class="s1">'M = '</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-8"></a><span class="k">print</span> <span class="n">M</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-9"></a><span class="n">C</span> <span class="o">=</span> <span class="n">B</span><span class="o">*</span><span class="n">M</span>                         <span class="c1"># la matrice  est le produit</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-10"></a><span class="k">print</span> <span class="s1">'C = '</span>                    <span class="c1"># élément par élement de B et M</span>
+<a name="rest_code_40e8b34127be4a7dbf1c8d6afae057e5-11"></a><span class="k">print</span> <span class="n">C</span>
 </pre>
 <pre class="literal-block">
 B =
@@ -445,7 +446,7 @@ C =
 
     </div>
                     <footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="../../index.html"> <i class="icon-home"></i></a>
 <a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>

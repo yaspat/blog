@@ -26,11 +26,12 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
+<meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Informatique : Leçon 1">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/objets-et-variables/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Sommaire
 
 Les nombres
 Les entiers
@@ -90,8 +91,8 @@ Concaténation">
         </div>
         <div class="body">
             <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li>
 <a class="reference internal" href="#les-nombres" id="id1">Les nombres</a><ul>
@@ -140,24 +141,24 @@ b. Les chaînes de caractères<ol class="arabic simple" start="2">
 <p>Ce sont les éléments de l'ensemble <span class="math">\(\mathbf{N}\)</span> que vous
 connaissez. Les opérations arithmétiques de base sont disponibles.
 Faites simplement attention au fait que la puissance se code avec deux étoiles : <tt class="docutils literal">**</tt></p>
-<pre class="code python"><a name="rest_code_d0dba7a1ab0340d292707f98783113f8-1"></a><span class="mi">1</span>
+<pre class="code python"><a name="rest_code_327b138d608f4a21bf7ccedbb67ddeaf-1"></a><span class="mi">1</span>
 </pre>
 <pre class="literal-block">
 1
 </pre>
-<pre class="code python"><a name="rest_code_92ead6efc9814ea493ec2fd9d8f07a5f-1"></a><span class="mi">1</span><span class="o">+</span><span class="mi">2</span>
+<pre class="code python"><a name="rest_code_40c1375723ee4cd98f37db88349b0f1e-1"></a><span class="mi">1</span><span class="o">+</span><span class="mi">2</span>
 </pre>
 <pre class="literal-block">
 3
 </pre>
-<pre class="code python"><a name="rest_code_7008928f42674df996239502dc497bad-1"></a><span class="mi">2</span><span class="o">**</span><span class="mi">5</span> <span class="c1"># 2 puissance 5. Rem : On peut saisir des commentaires dans la console en les précédant d'un dièse #.</span>
+<pre class="code python"><a name="rest_code_31a0651ac5ed4d7496d404887b82a869-1"></a><span class="mi">2</span><span class="o">**</span><span class="mi">5</span> <span class="c1"># 2 puissance 5. Rem : On peut saisir des commentaires dans la console en les précédant d'un dièse #.</span>
 </pre>
 <pre class="literal-block">
 32
 </pre>
 <p>La commande <tt class="docutils literal">type</tt> permet de connaître le type d'un objet dans la
 machine</p>
-<pre class="code python"><a name="rest_code_3f7660ecd83f4b169cf044d5ae4bd7f6-1"></a><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_4406e6f99e5842a98ff6ca4cfdac8e51-1"></a><span class="nb">type</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 int
@@ -165,7 +166,7 @@ int
 <p>Python répond <tt class="docutils literal">int</tt> : entier</p>
 <p>Vous pouvez effectuer les opérations arithmétiques usuelles sur les
 entiers. Attention, la division se fait alors en nombres entiers :</p>
-<pre class="code python"><a name="rest_code_9a3aadb060ed411c9e9660c206220746-1"></a><span class="mi">2</span><span class="o">/</span><span class="mi">3</span> <span class="c1"># je calcule.</span>
+<pre class="code python"><a name="rest_code_ab4fa6b3e2b5472e82a3fa09ea6c4a62-1"></a><span class="mi">2</span><span class="o">/</span><span class="mi">3</span> <span class="c1"># je calcule.</span>
 </pre>
 <pre class="literal-block">
 0
@@ -180,10 +181,10 @@ entiers. Attention, la division se fait alors en nombres entiers :</p>
 Il est donc impossible de stocker toutes ces décimales dans la mémoire
 de la machine, qui elle, est limitée. Ce qui pose intrinsèquement le
 problème de la précision des calculs.</p>
-<pre class="code python"><a name="rest_code_122d0675f7e149e5bdf1ea9157428eca-1"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span> <span class="c1"># Je demande à Python de charger la fonction sinus</span>
-<a name="rest_code_122d0675f7e149e5bdf1ea9157428eca-2"></a>                          <span class="c1"># et la constante pi</span>
+<pre class="code python"><a name="rest_code_ea76028d60564d05aa3148381bc46e26-1"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span> <span class="c1"># Je demande à Python de charger la fonction sinus</span>
+<a name="rest_code_ea76028d60564d05aa3148381bc46e26-2"></a>                          <span class="c1"># et la constante pi</span>
 </pre>
-<pre class="code python"><a name="rest_code_d8415b14113e4afb95c9d42b07d02bc6-1"></a><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5cde60dd18da4520be5c799ede6d3668-1"></a><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 0.7071067811865475
@@ -191,7 +192,7 @@ problème de la précision des calculs.</p>
 <p>Le développement décimal de <span class="math">\(\sqrt{2}\)</span> est illimité alors que le
 résultat affiché est donné avec troncature. Le calcul qui suit est
 instructif, puisqu'il nous dit que <span class="math">\(\sin(\pi)\)</span> n'est pas nul (!) :</p>
-<pre class="code python"><a name="rest_code_2aeebad8b85840a0bd6c3b93e6c74954-1"></a><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_07dd723409194fad90ed51758a987916-1"></a><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1.2246467991473532e-16
@@ -199,7 +200,7 @@ instructif, puisqu'il nous dit que <span class="math">\(\sin(\pi)\)</span> n'est
 <p><strong>Morale.</strong> soyez critiques sur les résultats numériques que vous
 obtenez. La précision par défaut de <tt class="docutils literal">Python</tt> est de l'orde de
 <span class="math">\(10^{-16}\)</span>. En <tt class="docutils literal">Python</tt>, <tt class="docutils literal"><span class="pre">e-16</span></tt> siginifie : <span class="math">\(10^{-16}\)</span></p>
-<pre class="code python"><a name="rest_code_84e0da3764a549cca727869be99271f6-1"></a><span class="mi">2</span> <span class="o">+</span> <span class="mf">1e-16</span> <span class="c1"># Combien ça fait pour Python ?</span>
+<pre class="code python"><a name="rest_code_db3324503acb43b397e9ab0ec7eca2bd-1"></a><span class="mi">2</span> <span class="o">+</span> <span class="mf">1e-16</span> <span class="c1"># Combien ça fait pour Python ?</span>
 </pre>
 <pre class="literal-block">
 2.0
@@ -208,7 +209,7 @@ obtenez. La précision par défaut de <tt class="docutils literal">Python</tt> e
 différence.</p>
 <p><strong>Question :</strong>  On sait que le nombre <span class="math">\(2\)</span> est un entier :
 Utilisons la commande <tt class="docutils literal">type</tt></p>
-<pre class="code python"><a name="rest_code_2663efa62c8241b2b4d2b2dea28b0aae-1"></a><span class="nb">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_6b5533ca58d24772bcae12b4a3cc1a77-1"></a><span class="nb">type</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 int
@@ -218,14 +219,14 @@ int
 anglo-saxons, le séparateur décimal est le point <tt class="docutils literal">.</tt>, et non pas la
 virgue <tt class="docutils literal">,</tt> . <tt class="docutils literal">Python</tt> comprendra que le nombre <span class="math">\(2\)</span> est vu
 comme un flottant.</p>
-<pre class="code python"><a name="rest_code_5ddd11a13d7e470182b6b509ec56233e-1"></a><span class="nb">type</span><span class="p">(</span><span class="mf">2.</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_2ec6a25b2dcb4297a5d17b1180fbc09c-1"></a><span class="nb">type</span><span class="p">(</span><span class="mf">2.</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 float
 </pre>
 <p><tt class="docutils literal">float</tt> signifie : flottant. Voyons ce que donne la division entre
 flottants :</p>
-<pre class="code python"><a name="rest_code_acb37661f70d4b268e55633b206c2637-1"></a><span class="mf">2.</span><span class="o">/</span><span class="mf">3.</span>
+<pre class="code python"><a name="rest_code_528b04c343c84015ae2b2871912935c2-1"></a><span class="mf">2.</span><span class="o">/</span><span class="mf">3.</span>
 </pre>
 <pre class="literal-block">
 0.6666666666666666
@@ -252,7 +253,7 @@ entoure d'un délimiteur, qui est au besoin l'apostrophe <tt class="docutils lit
 guillemets <tt class="docutils literal">"</tt> .</li>
 </ol>
 <p><strong>Exemple.</strong></p>
-<pre class="code python"><a name="rest_code_196a09c0c3ad4a76ba30cb1c87219fef-1"></a><span class="n">bonjour</span> <span class="c1"># Ce n'est pas une chaîne de caractères : pas de délimiteurs.</span>
+<pre class="code python"><a name="rest_code_b7a9cfa976e644f5b107a85a448a8109-1"></a><span class="n">bonjour</span> <span class="c1"># Ce n'est pas une chaîne de caractères : pas de délimiteurs.</span>
 </pre>
 <pre class="literal-block">
 ---------------------------------------------------------------------------
@@ -268,14 +269,14 @@ NameError: name 'bonjour' is not defined
 <p>On obtient un message d'erreur. En effet, <tt class="docutils literal">Python</tt> interprète ce mot
 comme un nom de variable, on n'a pas créé de variable. d'où l'erreur.
 Ajoutons alors les délimiteurs comme dit précédemment :</p>
-<pre class="code python"><a name="rest_code_0614bdf1bed04b7cb0b9df7f96b49a23-1"></a><span class="s1">'bonjour'</span>
+<pre class="code python"><a name="rest_code_14903b647b694913a80211d651addeb4-1"></a><span class="s1">'bonjour'</span>
 </pre>
 <pre class="literal-block">
 'bonjour'
 </pre>
 <p>Cette fois, pas d'erreur. Je vais vérifier que c'est bien une chaîne de
 caractères :</p>
-<pre class="code python"><a name="rest_code_5f659a3462e048f28301d04f694660c8-1"></a><span class="nb">type</span><span class="p">(</span><span class="s1">'bonjour'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_84a7f015323b4d80a3df4fc235b8f187-1"></a><span class="nb">type</span><span class="p">(</span><span class="s1">'bonjour'</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
@@ -284,7 +285,7 @@ str
 généré une chaîne de caractères.</p>
 <p><strong>Question :</strong> Comment je fais si je veux des apostrophes dans ma chaîne
 ? Si je tape par exemple :</p>
-<pre class="code python"><a name="rest_code_9a95724831874e9cbd612fff37b8ee58-1"></a><span class="s1">'l'</span><span class="n">arbre</span><span class="s1">'</span>
+<pre class="code python"><a name="rest_code_4cef9bf5d3c84f22aa1d99a6ca9fa595-1"></a><span class="s1">'l'</span><span class="n">arbre</span><span class="s1">'</span>
 </pre>
 <pre class="literal-block">
   File "&lt;ipython-input-4-b647b3b75403&gt;", line 1
@@ -295,7 +296,7 @@ SyntaxError: invalid syntax
 <p>Il y a un problème de <em>syntaxe</em> : <tt class="docutils literal">Python comprend</tt> : la chaîne <cite>'l'</cite>,
 puis des caractères. Il ne sait pas quoi faire de ces derniers. Le mieux
 dans ce cas est d'utiliser des guillemets :</p>
-<pre class="code python"><a name="rest_code_108457af0ae540c9afce9bd38f379559-1"></a><span class="s2">"l'arbre"</span>
+<pre class="code python"><a name="rest_code_2300ab6ef29d45a7b085d04724b5f2d1-1"></a><span class="s2">"l'arbre"</span>
 </pre>
 <pre class="literal-block">
 "l'arbre"
@@ -309,9 +310,9 @@ rôle naturel. Pour cela, on introduit une <em>séquence d'échappement</em> : l
 caractère s'échappe ainsi de son rôle de délimiteur. En <tt class="docutils literal">Python</tt>, on
 échappe un caractère en le faisant précéder d'un <tt class="docutils literal">backslash</tt> : <tt class="docutils literal">\</tt>
 (touches <tt class="docutils literal">alt Gr</tt> + <tt class="docutils literal">8</tt> sur les claviers français).</p>
-<pre class="code python"><a name="rest_code_744042b7ec8a495e935a4af30ac5cfd0-1"></a><span class="k">print</span><span class="p">(</span><span class="s1">'il a dit : "je t</span><span class="se">\'</span><span class="s1">aime"'</span><span class="p">)</span> <span class="c1"># Pas besoin d'échapper les guillemets :</span>
-<a name="rest_code_744042b7ec8a495e935a4af30ac5cfd0-2"></a>                                 <span class="c1"># le délimiteur est l'apostrophe ici.</span>
-<a name="rest_code_744042b7ec8a495e935a4af30ac5cfd0-3"></a>                                 <span class="c1"># la fonction print sert à l'affichage.</span>
+<pre class="code python"><a name="rest_code_f493cc982efd4d8b8520eac38a11ec7f-1"></a><span class="k">print</span><span class="p">(</span><span class="s1">'il a dit : "je t</span><span class="se">\'</span><span class="s1">aime"'</span><span class="p">)</span> <span class="c1"># Pas besoin d'échapper les guillemets :</span>
+<a name="rest_code_f493cc982efd4d8b8520eac38a11ec7f-2"></a>                                 <span class="c1"># le délimiteur est l'apostrophe ici.</span>
+<a name="rest_code_f493cc982efd4d8b8520eac38a11ec7f-3"></a>                                 <span class="c1"># la fonction print sert à l'affichage.</span>
 </pre>
 <pre class="literal-block">
 il a dit : "je t'aime"
@@ -323,8 +324,8 @@ il a dit : "je t'aime"
 <li>La chaîne de caractères vide est : ""</li>
 </ol>
 </blockquote>
-<pre class="code python"><a name="rest_code_2984ae5e58d440f9be538cf2545b55d1-1"></a><span class="c1">#je demande à Python si les chaînes '' et ' ' sont égales</span>
-<a name="rest_code_2984ae5e58d440f9be538cf2545b55d1-2"></a><span class="s1">''</span> <span class="o">==</span> <span class="s1">' '</span> <span class="c1"># le test d'égalité est codé par ==</span>
+<pre class="code python"><a name="rest_code_518058006e0f4305b6fc46e88c18dca6-1"></a><span class="c1">#je demande à Python si les chaînes '' et ' ' sont égales</span>
+<a name="rest_code_518058006e0f4305b6fc46e88c18dca6-2"></a><span class="s1">''</span> <span class="o">==</span> <span class="s1">' '</span> <span class="c1"># le test d'égalité est codé par ==</span>
 </pre>
 <pre class="literal-block">
 False
@@ -334,7 +335,7 @@ False
 <div class="section" id="operations-sur-les-chaines-de-caracteres">
 <h3><a class="toc-backref" href="#id6">Opérations sur les chaînes de caractères</a></h3>
 <p>Je vais considérer la chaîne de caractères suivante :</p>
-<pre class="code python"><a name="rest_code_71b25d340a3145739cdb670b41ffdce0-1"></a><span class="s1">'anticonstitutionnellement'</span>
+<pre class="code python"><a name="rest_code_2bfb833c7a0f4505a9ec9c4893b17932-1"></a><span class="s1">'anticonstitutionnellement'</span>
 </pre>
 <pre class="literal-block">
 'anticonstitutionnellement'
@@ -342,14 +343,14 @@ False
 <p>Comme cette chaîne est longue à saisir, je vais la manipuler en la
 stockant dans une variable que j'appelle <tt class="docutils literal">mot</tt> (voir <a class="reference internal" href="#plus-tard">plus tard</a>  pour
 les variables):</p>
-<pre class="code python"><a name="rest_code_c4d817a054d34a7581bbc4d6877c7136-1"></a><span class="n">mot</span> <span class="o">=</span> <span class="s1">'anticonstitutionnellement'</span>
+<pre class="code python"><a name="rest_code_538b8f991bee418ab504cdccbd4010af-1"></a><span class="n">mot</span> <span class="o">=</span> <span class="s1">'anticonstitutionnellement'</span>
 </pre>
-<pre class="code python"><a name="rest_code_c562323f8bbb4c609ca2c7b82dc8a5c3-1"></a><span class="k">print</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_d995fe0009b54655b361b46602b1e831-1"></a><span class="k">print</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 anticonstitutionnellement
 </pre>
-<pre class="code python"><a name="rest_code_b932898bd86b410eb945750d28073218-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_338fe3e2550845ffbae664a90dc6f6be-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
@@ -357,51 +358,51 @@ str
 <div class="section" id="accession-a-un-caractere-ou-une-sous-chaine">
 <h4><a class="toc-backref" href="#id7">Accession à un caractère ou une sous-chaîne</a></h4>
 <p>Les caractères dans une chaîne sont numérotés à partir de <tt class="docutils literal">0</tt></p>
-<pre class="code python"><a name="rest_code_38093af1e31f4a82ab35c9f32ca08584-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Python le premier caractère de la chaîne</span>
+<pre class="code python"><a name="rest_code_b5bb0f49a330470fa6c399b63992fa50-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Python le premier caractère de la chaîne</span>
 </pre>
 <pre class="literal-block">
 'a'
 </pre>
-<pre class="code python"><a name="rest_code_fc951e58a6c04ac4b8adc3910aa31ed4-1"></a><span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Le dernier caractère</span>
+<pre class="code python"><a name="rest_code_ede17951284642c6909741b8f179bc67-1"></a><span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># Le dernier caractère</span>
 </pre>
 <pre class="literal-block">
 't'
 </pre>
-<pre class="code python"><a name="rest_code_6c3ad947f5f34bb4b8b1134023983cdf-1"></a><span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># Le deuxième caractère en partant de la fin</span>
+<pre class="code python"><a name="rest_code_b96ea01b58b14d27a995e2e2db08a999-1"></a><span class="n">mot</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># Le deuxième caractère en partant de la fin</span>
 </pre>
 <pre class="literal-block">
 'n'
 </pre>
-<pre class="code python"><a name="rest_code_48085a1f12164239b47c1dc5326ed7be-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># les cinq premiers caractères</span>
+<pre class="code python"><a name="rest_code_c39ee5dd64684a43aef6e05bcb3fcd6a-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># les cinq premiers caractères</span>
 </pre>
 <pre class="literal-block">
 'antic'
 </pre>
-<pre class="code python"><a name="rest_code_b9ab3f9bd7e04fd4b78a58f9c7fb5022-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span> <span class="c1"># Je veux la sous-chaîne des caractères numéro 3,4,5,6 et 7</span>
+<pre class="code python"><a name="rest_code_11cdcf4dfcac40659f2f9025864b6cbb-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">8</span><span class="p">]</span> <span class="c1"># Je veux la sous-chaîne des caractères numéro 3,4,5,6 et 7</span>
 </pre>
 <pre class="literal-block">
 'icons'
 </pre>
 <p><strong>Règle.</strong> Dans <tt class="docutils literal">mot[a:b]</tt>, il y a <tt class="docutils literal"><span class="pre">b-a</span></tt> caractères.</p>
 <p>Combien y a-t-il de lettres dans <tt class="docutils literal">anticonstitutionnellement</tt> ?</p>
-<pre class="code python"><a name="rest_code_18400e38330846e89ff4ffbcad94411d-1"></a><span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="c1"># len est l'abréviation de length (longueur)</span>
+<pre class="code python"><a name="rest_code_1c320f3970214d6bb4431540f2312a1d-1"></a><span class="nb">len</span><span class="p">(</span><span class="n">mot</span><span class="p">)</span> <span class="c1"># len est l'abréviation de length (longueur)</span>
 </pre>
 <pre class="literal-block">
 25
 </pre>
 <p>J'extrais de ce mot le mot 'constitution'</p>
-<pre class="code python"><a name="rest_code_d260094e1160460c9d5a43b92e7b6c6f-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span>
+<pre class="code python"><a name="rest_code_f148af6823a94be5ab8c69caf4d30fe7-1"></a><span class="n">mot</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span>
 </pre>
 <pre class="literal-block">
 'constitution'
 </pre>
 <p>Je demande si deux <tt class="docutils literal">l</tt> se suivent :</p>
-<pre class="code python"><a name="rest_code_cc77f0a416a14a92895ca8da2e3cda58-1"></a><span class="s1">'ll'</span> <span class="ow">in</span> <span class="n">mot</span>  <span class="c1"># Est-ce que la chaîne `ll` se trouve dans le mot ?</span>
+<pre class="code python"><a name="rest_code_16a9d86f3d1d430eb0f8fe2dea067da5-1"></a><span class="s1">'ll'</span> <span class="ow">in</span> <span class="n">mot</span>  <span class="c1"># Est-ce que la chaîne `ll` se trouve dans le mot ?</span>
 </pre>
 <pre class="literal-block">
 True
 </pre>
-<pre class="code python"><a name="rest_code_9f101d0a2fac4fa8a06642c742b0ece9-1"></a><span class="s1">'oui'</span> <span class="ow">in</span> <span class="n">mot</span> <span class="c1"># on ne trouve pas 'oui' dans le mot.</span>
+<pre class="code python"><a name="rest_code_3c5b3b653d574edea8834d9f7a52fb3d-1"></a><span class="s1">'oui'</span> <span class="ow">in</span> <span class="n">mot</span> <span class="c1"># on ne trouve pas 'oui' dans le mot.</span>
 </pre>
 <pre class="literal-block">
 False
@@ -410,12 +411,12 @@ False
 <div class="section" id="concatenation-de-chaines">
 <h4><a class="toc-backref" href="#id8">Concaténation de chaînes</a></h4>
 <p>On utilise pour cela le <tt class="docutils literal">+</tt></p>
-<pre class="code python"><a name="rest_code_5c09ac84a4134d0287cc4486f50bfe7e-1"></a><span class="s1">'bonjour'</span><span class="o">+</span><span class="s1">' Monsieur'</span> <span class="c1"># Noter l'espace avant le M de Monsieur</span>
+<pre class="code python"><a name="rest_code_bacc15c8d7714b93b5aabbc2a60f3451-1"></a><span class="s1">'bonjour'</span><span class="o">+</span><span class="s1">' Monsieur'</span> <span class="c1"># Noter l'espace avant le M de Monsieur</span>
 </pre>
 <pre class="literal-block">
 'bonjour Monsieur'
 </pre>
-<pre class="code python"><a name="rest_code_52680c21c85844bc95ecf8dc9192c9c5-1"></a><span class="s1">'bonjour'</span><span class="o">+</span><span class="s1">'Monsieur'</span>
+<pre class="code python"><a name="rest_code_be17184fb4b74f838c147e01eaaa3693-1"></a><span class="s1">'bonjour'</span><span class="o">+</span><span class="s1">'Monsieur'</span>
 </pre>
 <pre class="literal-block">
 'bonjourMonsieur'
@@ -423,7 +424,7 @@ False
 <p>On peut aussi utiliser le <tt class="docutils literal">*&lt;n&gt;</tt> pour répliquer <tt class="docutils literal">&lt;n&gt;</tt> fois la
 chaîne, <tt class="docutils literal">&lt;n&gt;</tt> étant un entier. Par exemple, si je veux écrire 60 fois
 <tt class="docutils literal">tictac</tt> :</p>
-<pre class="code python"><a name="rest_code_3d40bbb8d1e54d16aff56b69170c7552-1"></a><span class="s1">'tictac '</span><span class="o">*</span><span class="mi">60</span>
+<pre class="code python"><a name="rest_code_c43c2fd65cc34c7aaa29582525eb8a4b-1"></a><span class="s1">'tictac '</span><span class="o">*</span><span class="mi">60</span>
 </pre>
 <pre class="literal-block">
 'tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac tictac '
@@ -462,7 +463,7 @@ pour des raisons évidentes.</p>
 </div>
 <div class="section" id="creation-de-variable">
 <h3><a class="toc-backref" href="#id11">Création de variable</a></h3>
-<pre class="code python"><a name="rest_code_d9a9d0483db34067ae17838137d5f0ba-1"></a><span class="n">toto</span> <span class="c1"># Pour l'instant, la variable appelée toto n'existe pas. Pour preuve :</span>
+<pre class="code python"><a name="rest_code_d30b147a35ec4e3281421d0691189ef9-1"></a><span class="n">toto</span> <span class="c1"># Pour l'instant, la variable appelée toto n'existe pas. Pour preuve :</span>
 </pre>
 <pre class="literal-block">
 ---------------------------------------------------------------------------
@@ -475,9 +476,9 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'toto' is not defined
 </pre>
-<pre class="code python"><a name="rest_code_250a08c970264c4183b296b643e26f2e-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="s1">' bonjour '</span> <span class="c1"># la valeur courante est la chaîne de caractères ' bonjour '</span>
+<pre class="code python"><a name="rest_code_f6a470ca396b41ff9521ae14a0bfe2b4-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="s1">' bonjour '</span> <span class="c1"># la valeur courante est la chaîne de caractères ' bonjour '</span>
 </pre>
-<pre class="code python"><a name="rest_code_6763f523f8b74d7ebd90ee13eb740a67-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_cff79291ab0b4a1da83b29c1b5b9b0f6-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
@@ -487,11 +488,11 @@ str
 <h3><a class="toc-backref" href="#id12">affectation</a></h3>
 <p>Pour stocker l'entier <span class="math">\(2\)</span> dans une variable qu'on appelle
 <tt class="docutils literal">toto</tt>, on tape :</p>
-<pre class="code python"><a name="rest_code_0cff07b054c94a07b16f25889a5e069f-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="mi">2</span>
+<pre class="code python"><a name="rest_code_3ed298b9749a4e8da02ca79dd802eb6d-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="mi">2</span>
 </pre>
 <p>** Attention : ** Le nom de la variable est à gauche du symbole
 <tt class="docutils literal">=</tt> et à droite, l'objet.</p>
-<pre class="code python"><a name="rest_code_3eb2f14230c646b7bbfd6df69d013953-1"></a><span class="k">print</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_9d77a489d8ce4fd097ac67c3c589bb15-1"></a><span class="k">print</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 2
@@ -501,12 +502,12 @@ str
 <div class="section" id="appel">
 <h3><a class="toc-backref" href="#id13">Appel</a></h3>
 <p>On récupère le contenu d'une variable en l'appelant par son nom.</p>
-<pre class="code python"><a name="rest_code_2fb21ab3154c4ac4bf8e5ecf028c2d2d-1"></a><span class="mi">3</span> <span class="o">+</span> <span class="n">toto</span> <span class="c1"># Qu'y avait-il dans toto ? L'appel se fait simplement en utilisant le nom de la variable</span>
+<pre class="code python"><a name="rest_code_b251dc0972544e239c5181f4efd5db77-1"></a><span class="mi">3</span> <span class="o">+</span> <span class="n">toto</span> <span class="c1"># Qu'y avait-il dans toto ? L'appel se fait simplement en utilisant le nom de la variable</span>
 </pre>
 <pre class="literal-block">
 5
 </pre>
-<pre class="code python"><a name="rest_code_35f215d8b7a7445bb415979ccd89176a-1"></a><span class="s1">'3'</span> <span class="o">+</span> <span class="n">toto</span> <span class="c1"># Soyez rigoureux et analysez la syntaxe</span>
+<pre class="code python"><a name="rest_code_8b47338950fc4d80bebaf4d99f077ec2-1"></a><span class="s1">'3'</span> <span class="o">+</span> <span class="n">toto</span> <span class="c1"># Soyez rigoureux et analysez la syntaxe</span>
 </pre>
 <pre class="literal-block">
 ---------------------------------------------------------------------------
@@ -536,19 +537,19 @@ concaténer.</li>
 <p>Le message d'erreur dit bien : tu ne peux pas concaténer chaîne et
 entier. Il faut donc convertir l'entier <tt class="docutils literal">toto</tt> en chaîne. La commande
 <tt class="docutils literal">str(objet)</tt> converit l'objet <tt class="docutils literal">objet</tt> en chaîne de caractères.</p>
-<pre class="code python"><a name="rest_code_677942e5e1ec40bc93f18fd2ea01470f-1"></a><span class="s1">'3'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_61f29434b7c94912997015b281f16117-1"></a><span class="s1">'3'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 '32'
 </pre>
-<pre class="code python"><a name="rest_code_40ab40c321db4d3cb5477f575b1c849a-1"></a><span class="s1">'3'</span> <span class="o">+</span> <span class="s1">'toto'</span> <span class="c1"># Ce n'est pas la même chose que ce qui précède</span>
+<pre class="code python"><a name="rest_code_ee98fb7c02a44b5fb7446fd1a0d8e925-1"></a><span class="s1">'3'</span> <span class="o">+</span> <span class="s1">'toto'</span> <span class="c1"># Ce n'est pas la même chose que ce qui précède</span>
 </pre>
 <pre class="literal-block">
 '3toto'
 </pre>
 <p><strong>Ce qui suit est à bien comprendre aussi.</strong></p>
-<pre class="code python"><a name="rest_code_166b58984a544ff6b85d9c5e53881729-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1">#1</span>
-<a name="rest_code_166b58984a544ff6b85d9c5e53881729-2"></a><span class="n">toto</span> <span class="o">=</span> <span class="n">toto</span> <span class="o">+</span> <span class="mi">8</span> <span class="c1">#1</span>
+<pre class="code python"><a name="rest_code_ab2272d598614e42ac165a967454947c-1"></a><span class="n">toto</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1">#1</span>
+<a name="rest_code_ab2272d598614e42ac165a967454947c-2"></a><span class="n">toto</span> <span class="o">=</span> <span class="n">toto</span> <span class="o">+</span> <span class="mi">8</span> <span class="c1">#1</span>
 </pre>
 <p><strong>Explication.</strong></p>
 <ol class="arabic">
@@ -576,7 +577,7 @@ puisque l'instruction commence par <tt class="docutils literal">toto =</tt></p>
 <span class="math">\(10\)</span>. Vérifions :</p>
 </li>
 </ol>
-<pre class="code python"><a name="rest_code_806028b4f0c64ecb8382d6cb41a81941-1"></a><span class="k">print</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_4a46137cf2c74767b08580acdfa9ecc2-1"></a><span class="k">print</span><span class="p">(</span><span class="n">toto</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 10
@@ -611,7 +612,7 @@ puisque l'instruction commence par <tt class="docutils literal">toto =</tt></p>
 
     </div>
                     <footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="../../index.html"> <i class="icon-home"></i></a>
 <a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>

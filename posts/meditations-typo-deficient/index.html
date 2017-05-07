@@ -26,7 +26,8 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
+<meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Méditations pythoniques pour typo-déficients">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/meditations-typo-deficient/">
@@ -83,10 +84,10 @@ def f(x1,x2,x3):
 <p>L'image de machine qu'on a donné d'une fonction dans le cours de
 mathématiques se prête aux fonctions en <strong>Python</strong>.</p>
 <!-- TEASER_END --><p>En effet,  si ma fonction se présente comme :</p>
-<pre class="code python"><a name="rest_code_67f761c286ca42b0bb611118517a1929-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
-<a name="rest_code_67f761c286ca42b0bb611118517a1929-2"></a>    <span class="c1">#bla bla</span>
-<a name="rest_code_67f761c286ca42b0bb611118517a1929-3"></a>    <span class="c1">#bla bla</span>
-<a name="rest_code_67f761c286ca42b0bb611118517a1929-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
+<pre class="code python"><a name="rest_code_5bc55ae1cb6246e69bd377cc764b24fd-1"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">x3</span><span class="p">):</span>
+<a name="rest_code_5bc55ae1cb6246e69bd377cc764b24fd-2"></a>    <span class="c1">#bla bla</span>
+<a name="rest_code_5bc55ae1cb6246e69bd377cc764b24fd-3"></a>    <span class="c1">#bla bla</span>
+<a name="rest_code_5bc55ae1cb6246e69bd377cc764b24fd-4"></a>    <span class="k">return</span> <span class="n">z1</span><span class="p">,</span><span class="n">z2</span>
 </pre>
 <p>On comprend que :</p>
 <ol class="arabic simple">
@@ -108,8 +109,8 @@ de sortie.</li>
 </ol>
 <p>On peut mettre autant d'arguments d'entrée et de sortie à partir de 0.
 Mais alors que se passe-til pour une fonction comme celle-ci :</p>
-<pre class="code python"><a name="rest_code_58d84ed039c34878adda359a1ef991d0-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_58d84ed039c34878adda359a1ef991d0-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_8aeb22a45f3f45a9aebb21852c37ab93-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_8aeb22a45f3f45a9aebb21852c37ab93-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s1">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <ol class="arabic simple">
 <li>Cette fonction ne produit aucun objet, puisqu'elle ne contient aucun
@@ -119,19 +120,19 @@ puisque la paire de parenthèses dans la première ligne ne contient
 rien.</li>
 </ol>
 <p>Cette fonction se contente de faire un simple affichage à l'écran :</p>
-<pre class="code python"><a name="rest_code_0510fcd869804105a2cf2e5e4f04891d-1"></a><span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_f67a02ddb59148fb947d3876efb10f2b-1"></a><span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
 <p>Mais alors, cette fonction ne produit pas une chaîne de caractères ?
 Regardons :</p>
-<pre class="code python"><a name="rest_code_4ededb86dd4e409fba5f0b8b34e4e7a2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_ce2bbf71ef3048db8f726f04c0e37f80-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <pre class="literal-block">
 Biwane, tu te trompes !
 </pre>
-<pre class="code python"><a name="rest_code_12f97ba226f7462c9ac1ce1e9cbd914b-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_cb202e72fa8e4e8ab15f48a5a29b7c64-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 NoneType
@@ -139,23 +140,23 @@ NoneType
 <p>L' objet <strong>a</strong> est un objet de type <strong>sans type</strong>. Ce n'est donc sûrment
 pas une chaîne de caractères.</p>
 <p>En revanche, regarde bien Biwane, si j'avais écrit :</p>
-<pre class="code python"><a name="rest_code_90c8334ff3544584a7811246a65b409d-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
-<a name="rest_code_90c8334ff3544584a7811246a65b409d-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s1">'Biwane, tu te trompes !'</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_a7c3b6d30b074abda827602185a4c39b-1"></a><span class="k">def</span> <span class="nf">erreur</span><span class="p">():</span>
+<a name="rest_code_a7c3b6d30b074abda827602185a4c39b-2"></a>    <span class="k">return</span><span class="p">(</span><span class="s1">'Biwane, tu te trompes !'</span><span class="p">)</span>
 </pre>
 <p>puis :</p>
-<pre class="code python"><a name="rest_code_7d82ccec3da248ee968b70a6bd16fe3c-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
+<pre class="code python"><a name="rest_code_df1fe8c448e242a3b8756129c954ade1-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span><span class="p">()</span>
 </pre>
 <p>et enfin :</p>
-<pre class="code python"><a name="rest_code_5e66d861647a44f997ade45b4995eea1-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_1d14b6bd91eb4e0c8095c50a725be2be-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 str
 </pre>
 <p>la variable <strong>a</strong> récupère le produit de la fonction : une chaîne de
 caractères. Là je fais encore plus mon curieux :</p>
-<pre class="code python"><a name="rest_code_768c789c710d46c38456f986545b89d3-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
+<pre class="code python"><a name="rest_code_eb4daf0e6cc747c2bf4525939e29350f-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">erreur</span>
 </pre>
-<pre class="code python"><a name="rest_code_bbd4bb86f5fb4776877a4fc5fa0d7c55-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_ff0f8ce862a641399c2adc46ec933a86-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 function
@@ -194,7 +195,7 @@ function
 
     </div>
                     <footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="../../index.html"> <i class="icon-home"></i></a>
 <a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>

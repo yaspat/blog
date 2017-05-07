@@ -26,11 +26,12 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
+<meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Informatique : Leçon 5. Boucles tant que">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Sommaire
 
 Principe de la boucle tant que
 Trois recommandations pour la construction d'une boucle tant que
@@ -89,8 +90,8 @@ Combien de temps d">
         </div>
         <div class="body">
             <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="#principe-de-la-boucle-tant-que" id="id1">Principe de la boucle tant que</a></li>
 <li><a class="reference internal" href="#trois-recommandations-pour-la-construction-d-une-boucle-tant-que" id="id2">Trois recommandations pour la construction d'une boucle tant que</a></li>
@@ -154,22 +155,22 @@ phrase <tt class="docutils literal">'aucun des 500 premiers termes ne dépasse M
 <li>Vérifier avec ce qui a été fait en classe que <tt class="docutils literal">premier_rang(2.15)</tt>
 vaut <tt class="docutils literal">5</tt>.</li>
 </ol>
-<pre class="code python"><a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-1"></a><span class="k">def</span> <span class="nf">premier_rang</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-2"></a>    <span class="sd">"""M : flottant.</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-3"></a><span class="sd">        calcule le plus petit entier n tel que 1 + 1/2 +...+ 1/n &gt; M</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-4"></a><span class="sd">        si &lt;n&gt; n'existe pas, la fonction retourne une phrase.</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-5"></a><span class="sd">    """</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-6"></a>    <span class="n">S</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-7"></a>    <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-8"></a>    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span><span class="mi">500</span> <span class="ow">and</span> <span class="n">S</span><span class="o">&lt;=</span><span class="n">M</span><span class="p">:</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-9"></a>        <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># je passe à l'entier suivant  (n+=1 signifie : n = n+1)</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-10"></a>        <span class="n">S</span> <span class="o">+=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">n</span> <span class="c1"># je n'ai pas envie d'importer la division</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-11"></a>    <span class="k">if</span> <span class="n">S</span><span class="o">&gt;</span><span class="n">M</span><span class="p">:</span>       <span class="c1"># A ce stade, on est sorti de la boucle ...</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-12"></a>        <span class="k">return</span> <span class="n">n</span>  <span class="c1"># ... pour une des deux raisons.</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-13"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_a3412ba6ac1f4c439edb3438313cb4b7-14"></a>        <span class="k">return</span> <span class="s1">'les  500 premiers termes sont plus petits que '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-1"></a><span class="k">def</span> <span class="nf">premier_rang</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-2"></a>    <span class="sd">"""M : flottant.</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-3"></a><span class="sd">        calcule le plus petit entier n tel que 1 + 1/2 +...+ 1/n &gt; M</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-4"></a><span class="sd">        si &lt;n&gt; n'existe pas, la fonction retourne une phrase.</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-5"></a><span class="sd">    """</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-6"></a>    <span class="n">S</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-7"></a>    <span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-8"></a>    <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span><span class="mi">500</span> <span class="ow">and</span> <span class="n">S</span><span class="o">&lt;=</span><span class="n">M</span><span class="p">:</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-9"></a>        <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># je passe à l'entier suivant  (n+=1 signifie : n = n+1)</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-10"></a>        <span class="n">S</span> <span class="o">+=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">n</span> <span class="c1"># je n'ai pas envie d'importer la division</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-11"></a>    <span class="k">if</span> <span class="n">S</span><span class="o">&gt;</span><span class="n">M</span><span class="p">:</span>       <span class="c1"># A ce stade, on est sorti de la boucle ...</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-12"></a>        <span class="k">return</span> <span class="n">n</span>  <span class="c1"># ... pour une des deux raisons.</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-13"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_64a8e369cd81458eb729d93f3dd1709f-14"></a>        <span class="k">return</span> <span class="s1">'les  500 premiers termes sont plus petits que '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
 </pre>
-<pre class="code python"><a name="rest_code_d3d6faef7f064317946ba161a786484e-1"></a><span class="n">premier_rang</span><span class="p">(</span><span class="mf">2.15</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_ce3ac20ca99949d1ac392c765778083b-1"></a><span class="n">premier_rang</span><span class="p">(</span><span class="mf">2.15</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 5
@@ -204,19 +205,19 @@ pas d'objet généré en sortie (donc pas de <strong>return</strong> dans la
 fonction).</li>
 <li>Ici, le nombre d'itérations est connu : il n'y aura pas de tant que !</li>
 </ol>
-<pre class="code python"><a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-1"></a><span class="k">def</span> <span class="nf">syracuse</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-2"></a>    <span class="sd">""" calcule et affiche les n premières escales du vol numéro x.</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-3"></a><span class="sd">    Attention : pas d'objet en sortie """</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-4"></a>    <span class="n">u</span> <span class="o">=</span> <span class="n">x</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-5"></a>    <span class="k">print</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-6"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1">#Pas de boucle tant que ici !</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-7"></a>        <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">u</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># on teste la parité de l'entier x_k</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-8"></a>            <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">/</span><span class="mi">2</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-9"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-10"></a>            <span class="n">u</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span>
-<a name="rest_code_dc6c2adb9a004bc7b22f1dcd2bdd0af3-11"></a>        <span class="k">print</span> <span class="n">u</span>
+<pre class="code python"><a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-1"></a><span class="k">def</span> <span class="nf">syracuse</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-2"></a>    <span class="sd">""" calcule et affiche les n premières escales du vol numéro x.</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-3"></a><span class="sd">    Attention : pas d'objet en sortie """</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-4"></a>    <span class="n">u</span> <span class="o">=</span> <span class="n">x</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-5"></a>    <span class="k">print</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-6"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1">#Pas de boucle tant que ici !</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-7"></a>        <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">u</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># on teste la parité de l'entier x_k</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-8"></a>            <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">/</span><span class="mi">2</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-9"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-10"></a>            <span class="n">u</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span>
+<a name="rest_code_610ecc38156b4b31a57f4601ca487ff6-11"></a>        <span class="k">print</span> <span class="n">u</span>
 </pre>
-<pre class="code python"><a name="rest_code_f44d28f6ff7845fda58d8d4214eb1295-1"></a><span class="n">syracuse</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5dda7d4886a84b7d825d16998a038b05-1"></a><span class="n">syracuse</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 7
@@ -229,22 +230,22 @@ fonction).</li>
 <p>Modifier la fonction <tt class="docutils literal">syracuse</tt> en une fonction <tt class="docutils literal">syracuse2</tt> de sorte
 que cette nouvelle fonction retourne en sortie une chaîne de caractères
 contenant les valeurs de <span class="math">\(u_0,\dots,u_n\)</span></p>
-<pre class="code python"><a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-1"></a><span class="k">def</span> <span class="nf">syracuse2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-2"></a>    <span class="sd">""" donne la chaine de caractères contenant  les</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-3"></a><span class="sd">        n premières escales du vol numéro x.</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-4"></a><span class="sd">    """</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-5"></a>    <span class="n">u</span> <span class="o">=</span> <span class="n">x</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-6"></a>    <span class="n">chaine</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>        <span class="c1"># au début, la chaine contient u_0.</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-7"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>  <span class="c1">#Pas de boucle tant que ici !</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-8"></a>        <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">u</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># On teste la parité de l'entier u_k.</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-9"></a>            <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">/</span><span class="mi">2</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-10"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-11"></a>            <span class="n">u</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-12"></a>        <span class="n">chaine</span> <span class="o">+=</span><span class="s1">' '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>  <span class="c1"># je concatène dans ma chaine ...</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-13"></a>                             <span class="c1"># ... le dernier terme calculé.</span>
-<a name="rest_code_73dc5a7c68064748b77e4e29f649e32c-14"></a>    <span class="k">return</span> <span class="n">chaine</span>           <span class="c1"># Ne pas oubler de retourner la chaine</span>
+<pre class="code python"><a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-1"></a><span class="k">def</span> <span class="nf">syracuse2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-2"></a>    <span class="sd">""" donne la chaine de caractères contenant  les</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-3"></a><span class="sd">        n premières escales du vol numéro x.</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-4"></a><span class="sd">    """</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-5"></a>    <span class="n">u</span> <span class="o">=</span> <span class="n">x</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-6"></a>    <span class="n">chaine</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>        <span class="c1"># au début, la chaine contient u_0.</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-7"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>  <span class="c1">#Pas de boucle tant que ici !</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-8"></a>        <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">u</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>  <span class="c1"># On teste la parité de l'entier u_k.</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-9"></a>            <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">/</span><span class="mi">2</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-10"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-11"></a>            <span class="n">u</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-12"></a>        <span class="n">chaine</span> <span class="o">+=</span><span class="s1">' '</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>  <span class="c1"># je concatène dans ma chaine ...</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-13"></a>                             <span class="c1"># ... le dernier terme calculé.</span>
+<a name="rest_code_4b728b6fc1b141b188704509fdfc39b4-14"></a>    <span class="k">return</span> <span class="n">chaine</span>           <span class="c1"># Ne pas oubler de retourner la chaine</span>
 </pre>
-<pre class="code python"><a name="rest_code_19cf81967afa49da8bca69acd13c1c12-1"></a><span class="n">syracuse2</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_1b47447d9b254a46bce6710ca639a142-1"></a><span class="n">syracuse2</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 '7 22 11 34 17 52'
@@ -252,12 +253,12 @@ contenant les valeurs de <span class="math">\(u_0,\dots,u_n\)</span></p>
 <p><strong>Exercice.</strong> Faire une fonction <tt class="docutils literal">affiche_escales(N,k)</tt> qui affiche
 les <span class="math">\(k\)</span> premières escales des vols 1,2,...,<tt class="docutils literal">N</tt>, où <tt class="docutils literal">N</tt> est
 un entier rentré par l'utilisateur</p>
-<pre class="code python"><a name="rest_code_b80e9753882647b095ce29feb79a4b71-1"></a><span class="k">def</span> <span class="nf">affiche_escales</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
-<a name="rest_code_b80e9753882647b095ce29feb79a4b71-2"></a>    <span class="sd">""" affiche les k premières escales des vols 1 à N"""</span>
-<a name="rest_code_b80e9753882647b095ce29feb79a4b71-3"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_b80e9753882647b095ce29feb79a4b71-4"></a>        <span class="k">print</span><span class="p">(</span><span class="n">syracuse2</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_d42741e87d8a44a2abafd8e415272085-1"></a><span class="k">def</span> <span class="nf">affiche_escales</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+<a name="rest_code_d42741e87d8a44a2abafd8e415272085-2"></a>    <span class="sd">""" affiche les k premières escales des vols 1 à N"""</span>
+<a name="rest_code_d42741e87d8a44a2abafd8e415272085-3"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_d42741e87d8a44a2abafd8e415272085-4"></a>        <span class="k">print</span><span class="p">(</span><span class="n">syracuse2</span><span class="p">(</span><span class="n">j</span><span class="p">,</span><span class="n">k</span><span class="p">))</span>
 </pre>
-<pre class="code python"><a name="rest_code_8a1dc0ca86c44dd8ad3e27c9372df91e-1"></a><span class="n">affiche_escales</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_4f3b34f5fc354d8a8fc1469d8edc411e-1"></a><span class="n">affiche_escales</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2 1 4 2
@@ -281,42 +282,42 @@ mais on ne sait pas le prouver.</p>
 retourne le premier rang <tt class="docutils literal">n</tt> pour lequel <span class="math">\(u_n=1\)</span>. Par exemple,
 <tt class="docutils literal">duree_du_vol(7)</tt> devrait valoir <tt class="docutils literal">16</tt>.</p>
 <table class="codetable"><tr>
-<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-1"> 1</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-2"> 2</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-3"> 3</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-4"> 4</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-5"> 5</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-6"> 6</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-7"> 7</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-8"> 8</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-9"> 9</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-10">10</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-11">11</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-12">12</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-13">13</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-14">14</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-15">15</a>
-<a href="#rest_code_7970e2f1a2e344fe91ab3465a54fdc51-16">16</a></pre></div></td>
-<td class="code"><pre class="code python"><a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-1"></a>  <span class="k">def</span> <span class="nf">duree_du_vol</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-2"></a>      <span class="sd">""" on considère la suite la suite de Syracuse de premier</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-3"></a><span class="sd">          terme x. Cette fonction calcule le premier rang n au bout</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-4"></a><span class="sd">          duquel un terme de la suite vaut 1.</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-5"></a><span class="sd">          Par exemple  : duree_du_vol(1) vaut 0,</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-6"></a><span class="sd">                         duree_du_vol(7) vaut 16.</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-7"></a><span class="sd">      """</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-8"></a>      <span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-9"></a>      <span class="n">u</span><span class="o">=</span><span class="n">x</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-10"></a>      <span class="k">while</span> <span class="n">u</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-11"></a>          <span class="n">duree</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-12"></a>          <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">u</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># on teste la parité de l'entier x_k</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-13"></a>              <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">/</span><span class="mi">2</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-14"></a>          <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-15"></a>              <span class="n">u</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span>
-<a name="rest_code_7970e2f1a2e344fe91ab3465a54fdc51-16"></a>      <span class="k">return</span> <span class="n">duree</span>
+<td class="linenos"><div class="linenodiv"><pre><a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-1"> 1</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-2"> 2</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-3"> 3</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-4"> 4</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-5"> 5</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-6"> 6</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-7"> 7</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-8"> 8</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-9"> 9</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-10">10</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-11">11</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-12">12</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-13">13</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-14">14</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-15">15</a>
+<a href="#rest_code_b5f946aac53547c38d0a5c42c35b7c5e-16">16</a></pre></div></td>
+<td class="code"><pre class="code python"><a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-1"></a>  <span class="k">def</span> <span class="nf">duree_du_vol</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-2"></a>      <span class="sd">""" on considère la suite la suite de Syracuse de premier</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-3"></a><span class="sd">          terme x. Cette fonction calcule le premier rang n au bout</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-4"></a><span class="sd">          duquel un terme de la suite vaut 1.</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-5"></a><span class="sd">          Par exemple  : duree_du_vol(1) vaut 0,</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-6"></a><span class="sd">                         duree_du_vol(7) vaut 16.</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-7"></a><span class="sd">      """</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-8"></a>      <span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-9"></a>      <span class="n">u</span><span class="o">=</span><span class="n">x</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-10"></a>      <span class="k">while</span> <span class="n">u</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-11"></a>          <span class="n">duree</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-12"></a>          <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">u</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># on teste la parité de l'entier x_k</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-13"></a>              <span class="n">u</span> <span class="o">=</span> <span class="n">u</span><span class="o">/</span><span class="mi">2</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-14"></a>          <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-15"></a>              <span class="n">u</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="o">+</span><span class="mi">1</span>
+<a name="rest_code_b5f946aac53547c38d0a5c42c35b7c5e-16"></a>      <span class="k">return</span> <span class="n">duree</span>
 </pre></td>
 </tr></table>
 <p>Quelle est la durée du vol 714 ?</p>
-<pre class="code python"><a name="rest_code_c147081475c8453c964426652624ddb7-1"></a><span class="n">duree_du_vol</span><span class="p">(</span><span class="mi">714</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_6b9ebfddb8cc40d18da2ee8b7a1d945b-1"></a><span class="n">duree_du_vol</span><span class="p">(</span><span class="mi">714</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 33
@@ -324,23 +325,23 @@ retourne le premier rang <tt class="docutils literal">n</tt> pour lequel <span c
 <p><strong>Remarque.</strong> On peut créer une fonction pour éviter de remettre les
 lignes 12-15 qu'on a tapé bien plus d'une fois (et c'est tout l'intérêt
 des fonctions).</p>
-<pre class="code python"><a name="rest_code_99a88aea361546058561beb58388b964-1"></a><span class="k">def</span> <span class="nf">transfo</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
-<a name="rest_code_99a88aea361546058561beb58388b964-2"></a>    <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">z</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># on teste la parité de l'entier x_k</span>
-<a name="rest_code_99a88aea361546058561beb58388b964-3"></a>        <span class="k">return</span>   <span class="n">z</span><span class="o">/</span><span class="mi">2</span>
-<a name="rest_code_99a88aea361546058561beb58388b964-4"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_99a88aea361546058561beb58388b964-5"></a>        <span class="k">return</span>  <span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span>
+<pre class="code python"><a name="rest_code_8b147d81006e406dbb7aa24399178ce1-1"></a><span class="k">def</span> <span class="nf">transfo</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+<a name="rest_code_8b147d81006e406dbb7aa24399178ce1-2"></a>    <span class="k">if</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">z</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># on teste la parité de l'entier x_k</span>
+<a name="rest_code_8b147d81006e406dbb7aa24399178ce1-3"></a>        <span class="k">return</span>   <span class="n">z</span><span class="o">/</span><span class="mi">2</span>
+<a name="rest_code_8b147d81006e406dbb7aa24399178ce1-4"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_8b147d81006e406dbb7aa24399178ce1-5"></a>        <span class="k">return</span>  <span class="mi">3</span><span class="o">*</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span>
 </pre>
 <p>La fonction <tt class="docutils literal">duree_du_vol</tt> prend alors la forme suivante</p>
-<pre class="code python"><a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-1"></a><span class="k">def</span> <span class="nf">duree_du_vol</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-2"></a>    <span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-3"></a>    <span class="n">u</span><span class="o">=</span><span class="n">x</span>
-<a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-4"></a>    <span class="k">while</span> <span class="n">u</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-<a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-5"></a>        <span class="n">duree</span> <span class="o">+=</span> <span class="mi">1</span>
-<a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-6"></a>        <span class="n">u</span> <span class="o">=</span> <span class="n">transfo</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
-<a name="rest_code_aa4d67914f1649fab7cb85949d4f71cf-7"></a>    <span class="k">return</span> <span class="n">duree</span>
+<pre class="code python"><a name="rest_code_b234c07680f44a69ac0f0343ed64a726-1"></a><span class="k">def</span> <span class="nf">duree_du_vol</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a name="rest_code_b234c07680f44a69ac0f0343ed64a726-2"></a>    <span class="n">duree</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_b234c07680f44a69ac0f0343ed64a726-3"></a>    <span class="n">u</span><span class="o">=</span><span class="n">x</span>
+<a name="rest_code_b234c07680f44a69ac0f0343ed64a726-4"></a>    <span class="k">while</span> <span class="n">u</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+<a name="rest_code_b234c07680f44a69ac0f0343ed64a726-5"></a>        <span class="n">duree</span> <span class="o">+=</span> <span class="mi">1</span>
+<a name="rest_code_b234c07680f44a69ac0f0343ed64a726-6"></a>        <span class="n">u</span> <span class="o">=</span> <span class="n">transfo</span><span class="p">(</span><span class="n">u</span><span class="p">)</span>
+<a name="rest_code_b234c07680f44a69ac0f0343ed64a726-7"></a>    <span class="k">return</span> <span class="n">duree</span>
 </pre>
 <p>On peut toujours tester cette variante :</p>
-<pre class="code python"><a name="rest_code_90b1acd419ae4aad9e2e1531a157ce2b-1"></a><span class="n">duree_du_vol</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_fb08ac21688147909f226561a0899a3e-1"></a><span class="n">duree_du_vol</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 16
@@ -350,15 +351,15 @@ des fonctions).</p>
 <h2><a class="toc-backref" href="#id6">Quel est le premier vol dont la durée est 111 ?</a></h2>
 <p><strong>Exercice.</strong> Créer une fonction <tt class="docutils literal">premier_vol(t)</tt> qui détermine le
 premier vol dont la durée est <tt class="docutils literal">t</tt>.</p>
-<pre class="code python"><a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-1"></a><span class="k">def</span> <span class="nf">premier_vol</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
-<a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-2"></a>    <span class="n">vol</span> <span class="o">=</span> <span class="mi">1</span>                    <span class="c1"># je considère le vol  1</span>
-<a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-3"></a>    <span class="n">duree</span> <span class="o">=</span> <span class="n">duree_du_vol</span><span class="p">(</span><span class="n">vol</span><span class="p">)</span>  <span class="c1"># je calcule sa durée</span>
-<a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-4"></a>    <span class="k">while</span> <span class="n">duree</span> <span class="o">!=</span><span class="n">t</span><span class="p">:</span>          <span class="c1"># Si elle ne vaut pas t</span>
-<a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-5"></a>        <span class="n">vol</span><span class="o">+=</span><span class="mi">1</span>                 <span class="c1"># je passe au vol suivant</span>
-<a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-6"></a>        <span class="n">duree</span> <span class="o">=</span> <span class="n">duree_du_vol</span><span class="p">(</span><span class="n">vol</span><span class="p">)</span>
-<a name="rest_code_cd0fdd111e4e4636ade05ae65e12412a-7"></a>    <span class="k">return</span> <span class="n">vol</span>
+<pre class="code python"><a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-1"></a><span class="k">def</span> <span class="nf">premier_vol</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+<a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-2"></a>    <span class="n">vol</span> <span class="o">=</span> <span class="mi">1</span>                    <span class="c1"># je considère le vol  1</span>
+<a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-3"></a>    <span class="n">duree</span> <span class="o">=</span> <span class="n">duree_du_vol</span><span class="p">(</span><span class="n">vol</span><span class="p">)</span>  <span class="c1"># je calcule sa durée</span>
+<a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-4"></a>    <span class="k">while</span> <span class="n">duree</span> <span class="o">!=</span><span class="n">t</span><span class="p">:</span>          <span class="c1"># Si elle ne vaut pas t</span>
+<a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-5"></a>        <span class="n">vol</span><span class="o">+=</span><span class="mi">1</span>                 <span class="c1"># je passe au vol suivant</span>
+<a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-6"></a>        <span class="n">duree</span> <span class="o">=</span> <span class="n">duree_du_vol</span><span class="p">(</span><span class="n">vol</span><span class="p">)</span>
+<a name="rest_code_5e7960c73ff347f0907f0754ead38ae8-7"></a>    <span class="k">return</span> <span class="n">vol</span>
 </pre>
-<pre class="code python"><a name="rest_code_de92e85c890c4cc788e338ef9fad52fc-1"></a><span class="n">premier_vol</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_7ac0e4069d8a469e8742d1f53d04ef81-1"></a><span class="n">premier_vol</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 27
@@ -397,7 +398,7 @@ durée autre.</p>
 
     </div>
                     <footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="../../index.html"> <i class="icon-home"></i></a>
 <a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>

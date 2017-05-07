@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2016-09-09T13:59:00Z</lastmod>
+  <lastmod>2017-05-06T13:09:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2016-09-16T13:29:00Z</lastmod>
+  <lastmod>2017-05-06T13:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
@@ -239,15 +239,15 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2016-09-09T20:38:00Z</lastmod>
+  <lastmod>2017-05-06T13:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2016-09-09T20:38:00Z</lastmod>
+  <lastmod>2017-05-06T13:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2016-09-16T13:29:00Z</lastmod>
+  <lastmod>2017-05-06T13:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -255,7 +255,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2016-09-09T20:38:00Z</lastmod>
+  <lastmod>2017-05-06T13:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/Boucles%20Pour/</loc>
@@ -412,5 +412,9 @@
  <url>
   <loc>http://yaspat.github.io/blog/stories/sujets-de-dmds/</loc>
   <lastmod>2016-07-11T23:42:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/tipue_search.html</loc>
+  <lastmod>2017-05-06T13:06:00Z</lastmod>
  </url>
 </urlset>

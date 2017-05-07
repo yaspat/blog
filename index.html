@@ -27,7 +27,8 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><style>
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="assets/css/tipuesearch.css">
+<style>
     div.input_prompt {
       display: none;
     }
@@ -149,8 +150,8 @@ $$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$<p>Il me suffit simplement de  taper ceci 
             </div>
             <div class="body">
                 <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li>
 <a class="reference internal" href="posts/exercices-sur-les-chaines-de-caracteres/#comparaison-de-mots" id="id3">Comparaison de mots</a><ul>
@@ -212,8 +213,8 @@ sont égales.</li>
             </div>
             <div class="body">
                 <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="posts/utilisation-de-numpy-ensemble-de-mandelbrot/#ensemble-de-mandelbrot" id="id1">Ensemble de Mandelbrot</a></li>
 <li><a class="reference internal" href="posts/utilisation-de-numpy-ensemble-de-mandelbrot/#le-point-de-depart" id="id2">Le point de départ</a></li>
@@ -261,8 +262,8 @@ sont égales.</li>
             </div>
             <div class="body">
                 <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="posts/lecon-9-le-module-numpy/#importation-des-modules" id="id3">Importation des modules</a></li>
 <li>
@@ -298,7 +299,7 @@ multidimensionnels. Les matrices sont donc un cas particulier de
 tableaux multidimensionels.</p>
 <div class="section" id="importation-des-modules">
 <h2><a class="toc-backref" href="posts/lecon-9-le-module-numpy/#id3">Importation des modules</a></h2>
-<pre class="code python"><a name="rest_code_72171387aa3542e4af27930085616fee-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> <span class="c1"># importation prudente</span>
+<pre class="code python"><a name="rest_code_4f618ddd37504fd6a7f05d68724c1fa5-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span> <span class="c1"># importation prudente</span>
 </pre>
 <p>Rappel : avec <strong>import</strong> vous importez le module. Avec <strong>as</strong> vous lui
 donnez un nom de préfixe pour vous rappeler les fonctions provenant du
@@ -330,8 +331,8 @@ préfixée par <strong>np</strong>, ce qui permet d'identifier son origine.</p>
             </div>
             <div class="body">
                 <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="posts/le-jeu-de-monthy-hall-22/#importation-des-fonctions-utiles" id="id1">Importation des fonctions utiles</a></li>
 <li><a class="reference internal" href="posts/le-jeu-de-monthy-hall-22/#simulation-d-une-partie-du-jeu-de-let-s-make-a-deal" id="id2">Simulation d'une partie du jeu de <em>Let's make a deal</em></a></li>
@@ -412,8 +413,8 @@ mathématiques.</p>
             </div>
             <div class="body">
                 <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="posts/matshow-ca-plait-aux-filles/#les-prerequis" id="id1">Les prérequis</a></li>
 <li><a class="reference internal" href="posts/matshow-ca-plait-aux-filles/#rencontre-avec-matshow" id="id2">Rencontre avec Matshow</a></li>
@@ -460,8 +461,8 @@ la commande pour faire cela est aussi <strong>matshow</strong>. Regradons :</p>
             <div class="body">
                 <div class="section" id="comment-representer-les-matrices">
 <h2><a class="toc-backref" href="posts/lecon-8-matrices/#id1">Comment représenter les matrices ?</a></h2>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li>
 <a class="reference internal" href="posts/lecon-8-matrices/#comment-representer-les-matrices" id="id1">Comment représenter les matrices ?</a><ul>
@@ -494,8 +495,8 @@ programmation.</p>
 <p>Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
 chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
 définir des matrices comme des listes de listes.</p>
-<pre class="code python"><a name="rest_code_230a9f506eb0445f9f67d8bc5e326baf-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># les séparateurs des items sont</span>
-<a name="rest_code_230a9f506eb0445f9f67d8bc5e326baf-2"></a>                              <span class="c1"># des virgules</span>
+<pre class="code python"><a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># les séparateurs des items sont</span>
+<a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-2"></a>                              <span class="c1"># des virgules</span>
 </pre>
 <p class="more"><a href="posts/lecon-8-matrices/">Lire la suite…</a></p>
 </div>
@@ -525,8 +526,8 @@ définir des matrices comme des listes de listes.</p>
             </div>
             <div class="body">
                 <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li><a class="reference internal" href="posts/animation-en-python/#importation-des-modules-utiles" id="id3">Importation des modules utiles</a></li>
 <li><a class="reference internal" href="posts/animation-en-python/#pythonisation-de-la-fonction-p-t" id="id4">Pythonisation de la fonction <span class="math">\(p_t\)</span></a></li>
@@ -593,7 +594,7 @@ p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
                 <a href="index-3.html" rel="next">Anciens articles</a>
             </li>
         </ul></nav><script>var disqus_shortname="yaspat";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="#"> <i class="icon-home"></i></a>
 <a href="stories/programmes-de-colles"> <i class="icon-calendar"></i></a>

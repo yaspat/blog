@@ -26,7 +26,8 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
+<meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Fonction du DM2">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/fonction-du-dm-2/">
@@ -79,26 +80,26 @@ Vous pouvez télécharger le script de la fonction ici.
             <div>
 <p>Voici un exemple de script de fonction (c'est celle du DM2, à savoir, celle définie par <span class="math">\(f(x)= \ln\left(\frac{e^{x}}{x} -1\right)\)</span>).</p>
 <!-- TEASER_END --><p>Vous pouvez télécharger le script de la fonction <a class="reference external" href="https://github.com/yaspat/Biwane15-16/raw/master/DM/DM02/Scripts_Python/scriptExo2.py">ici</a>.</p>
-<pre class="code python"><a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-1"></a><span class="c1"># -*- coding: utf-8 -*-</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-2"></a><span class="sd">"""</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-3"></a><span class="sd">Created on Sat Sep 12 07:40:45 2015</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-4"></a>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-5"></a><span class="sd">@author: Yas</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-6"></a><span class="sd">"""</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-7"></a><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-8"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span><span class="n">exp</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-9"></a>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-10"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-11"></a>    <span class="sd">"""fonction f de l'exercice 1 du DM2"""</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-12"></a>    <span class="n">y</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">x</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-<a name="rest_code_09e0b6465d0e4cb19df535a2fd888c6d-13"></a>    <span class="k">return</span> <span class="n">y</span>
+<pre class="code python"><a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-1"></a><span class="c1"># -*- coding: utf-8 -*-</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-2"></a><span class="sd">"""</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-3"></a><span class="sd">Created on Sat Sep 12 07:40:45 2015</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-4"></a>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-5"></a><span class="sd">@author: Yas</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-6"></a><span class="sd">"""</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-7"></a><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-8"></a><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span><span class="n">exp</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-9"></a>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-10"></a><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-11"></a>    <span class="sd">"""fonction f de l'exercice 1 du DM2"""</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-12"></a>    <span class="n">y</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">x</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<a name="rest_code_9b5f867573f0423bb65d9f333070b6a3-13"></a>    <span class="k">return</span> <span class="n">y</span>
 </pre>
 <p>Et pour voir le code en action : depuis l'éditeur : appuyez sur la touche F5 (après avoir sauvegardé votre script). Les Mac users, vous penserez à appuyer simultanément sur la touche fn en bas à gauche de votre clavier pour échapper ladite touche F5.  Vous verrez alors dans la console :</p>
-<pre class="code python"><a name="rest_code_2b45eb885ee24b65921666a54223e774-1"></a><span class="n">runfile</span><span class="p">(</span><span class="s2">r"le chemin d'accès jusqu' à votre fichier"</span><span class="p">,</span> <span class="n">wdir</span><span class="o">=</span><span class="s2">r"le chemin d'accès à votre répertoire de travail"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_a0772ef805fc4f02a9a23a6e78f2287a-1"></a><span class="n">runfile</span><span class="p">(</span><span class="s2">r"le chemin d'accès jusqu' à votre fichier"</span><span class="p">,</span> <span class="n">wdir</span><span class="o">=</span><span class="s2">r"le chemin d'accès à votre répertoire de travail"</span><span class="p">)</span>
 </pre>
 <p>Ce qui signifie : votre fichier a été exécuté (sans avoir trouvé d'erreurs normalement !). Enfin, dans la console, tapez :</p>
-<pre class="code python"><a name="rest_code_da9ae36ea78e4a72bafd1b6cccbc2e41-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="rest_code_da9ae36ea78e4a72bafd1b6cccbc2e41-2"></a><span class="mf">0.8317965657511863</span>
+<pre class="code python"><a name="rest_code_cf1b3704a2294934a04657c212e55cba-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_cf1b3704a2294934a04657c212e55cba-2"></a><span class="mf">0.8317965657511863</span>
 </pre>
 <p>C'est tout.</p>
 </div>
@@ -132,7 +133,7 @@ Vous pouvez télécharger le script de la fonction ici.
 
     </div>
                     <footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="../../index.html"> <i class="icon-home"></i></a>
 <a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>

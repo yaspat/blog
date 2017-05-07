@@ -26,13 +26,14 @@ MathJax.Hub.Config({
         styles: {'.MathJax_Display': {"margin": 0}}
     }
 });
-</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><meta name="author" content="MY. Patel">
+</script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
+<meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
 <meta property="og:title" content="Informatique : Leçon 8. Matrices">
 <meta property="og:url" content="http://yaspat.github.io/blog/posts/lecon-8-matrices/">
 <meta property="og:description" content="Comment représenter les matrices ?
 
-Contents
+Sommaire
 
 Comment représenter les matrices ?
 Accéder à un coefficient
@@ -89,8 +90,8 @@ Multiplicat">
             <div>
 <div class="section" id="comment-representer-les-matrices">
 <h2><a class="toc-backref" href="#id1">Comment représenter les matrices ?</a></h2>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
 <ul class="simple">
 <li>
 <a class="reference internal" href="#comment-representer-les-matrices" id="id1">Comment représenter les matrices ?</a><ul>
@@ -123,16 +124,16 @@ programmation.</p>
 <p>Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
 chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
 définir des matrices comme des listes de listes.</p>
-<pre class="code python"><a name="rest_code_230a9f506eb0445f9f67d8bc5e326baf-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># les séparateurs des items sont</span>
-<a name="rest_code_230a9f506eb0445f9f67d8bc5e326baf-2"></a>                              <span class="c1"># des virgules</span>
+<pre class="code python"><a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># les séparateurs des items sont</span>
+<a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-2"></a>                              <span class="c1"># des virgules</span>
 </pre>
-<!--TEASER_END--><pre class="code python"><a name="rest_code_72154b5b59644c028b0f35ba3abb19ef-1"></a><span class="n">M</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+<!--TEASER_END--><pre class="code python"><a name="rest_code_ba7e35fc86184ae790c413ac9e8600d8-1"></a><span class="n">M</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
 </pre>
 <div class="section" id="acceder-a-un-coefficient">
 <h3><a class="toc-backref" href="#id2">Accéder à un coefficient</a></h3>
 <p>Si vous vous voulez récupérer le coefficient <span class="math">\(m_{i,j}\)</span> dans
 <span class="math">\(M\)</span>, par exemple <span class="math">\(m_{2,3} = 6\)</span>, vous taperez :</p>
-<pre class="code python"><a name="rest_code_d97e7e0d9b6c443d976d4d6db166ca36-1"></a><span class="n">M</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># En Python, la numération commence à  0 ...</span>
+<pre class="code python"><a name="rest_code_8a3553fb11094f00ae34a778b98ffd8f-1"></a><span class="n">M</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># En Python, la numération commence à  0 ...</span>
 </pre>
 <pre class="literal-block">
 6
@@ -155,22 +156,22 @@ précédentes.</li>
 </li>
 </ol>
 <p><strong>Réponse à la question 1.</strong></p>
-<pre class="code python"><a name="rest_code_c90d457c95794242938a1079d2263a73-1"></a><span class="k">def</span> <span class="nf">taille</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-2"></a>    <span class="sd">""" fonction qui prend en entrée une matrice vue comme</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-3"></a><span class="sd">        une liste de listes, et qui retourne en sortie son format.</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-4"></a><span class="sd">        Exemple : M = 1 2 3</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-5"></a><span class="sd">                      4 5 6</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-6"></a><span class="sd">        taille(M) vaut (2,3)</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-7"></a><span class="sd">    """</span>
-<a name="rest_code_c90d457c95794242938a1079d2263a73-8"></a>    <span class="k">return</span>  <span class="nb">len</span><span class="p">(</span><span class="n">M</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># C'est bien un tuple !</span>
+<pre class="code python"><a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-1"></a><span class="k">def</span> <span class="nf">taille</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-2"></a>    <span class="sd">""" fonction qui prend en entrée une matrice vue comme</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-3"></a><span class="sd">        une liste de listes, et qui retourne en sortie son format.</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-4"></a><span class="sd">        Exemple : M = 1 2 3</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-5"></a><span class="sd">                      4 5 6</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-6"></a><span class="sd">        taille(M) vaut (2,3)</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-7"></a><span class="sd">    """</span>
+<a name="rest_code_aea7f1d7ab5442109159fb93f03677a3-8"></a>    <span class="k">return</span>  <span class="nb">len</span><span class="p">(</span><span class="n">M</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># C'est bien un tuple !</span>
 </pre>
 <p><strong>Réponse à la question 2.</strong></p>
-<pre class="code python"><a name="rest_code_ef1a42a8852a4ce2bd687bef741500fa-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_ead8897b80f34e18a16f65d53197c723-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">M</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 (2, 3)
 </pre>
-<pre class="code python"><a name="rest_code_509fa1427d5c451e8eab51c7291b60dc-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_2fe4b96a36ba457680b8ad275a5522e7-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 (3, 3)
@@ -179,16 +180,16 @@ précédentes.</li>
 une liste d'entiers et pas uen liste de listes : en tant que telle, ce
 n'est pas une matrice.</p>
 <p><strong>Réponse à la question 4.</strong></p>
-<pre class="code python"><a name="rest_code_3ae502df793048798e860e04b15d03aa-1"></a><span class="n">L</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>       <span class="c1"># Ne pas oublier que chaque ligne de</span>
-<a name="rest_code_3ae502df793048798e860e04b15d03aa-2"></a><span class="n">C</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># toute matrice est une liste !</span>
-<a name="rest_code_3ae502df793048798e860e04b15d03aa-3"></a>                         <span class="c1"># D'où les (nombreux) crochets</span>
+<pre class="code python"><a name="rest_code_8e8782e6982d4f26ad91057bd8d17668-1"></a><span class="n">L</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>       <span class="c1"># Ne pas oublier que chaque ligne de</span>
+<a name="rest_code_8e8782e6982d4f26ad91057bd8d17668-2"></a><span class="n">C</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">2</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">]]</span> <span class="c1"># toute matrice est une liste !</span>
+<a name="rest_code_8e8782e6982d4f26ad91057bd8d17668-3"></a>                         <span class="c1"># D'où les (nombreux) crochets</span>
 </pre>
-<pre class="code python"><a name="rest_code_f006f602a5fb4ab185b4035dd14c30dc-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_646941c3d1f646daa0c0886398f022d7-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 (1, 4)
 </pre>
-<pre class="code python"><a name="rest_code_88787aec16d84687857f70b30351d6a4-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_0f0db5953ef94439a434b7cb92c37201-1"></a><span class="n">taille</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 (4, 1)
@@ -215,21 +216,21 @@ colonne : boucle sur les colonnes.</li>
 <p>Vous aurez besoin de regarder dans l'aide-mémoire comment ajouter un
 élément à une liste pour remplir vos lignes et votre matrice.</p>
 <p>Votre fonction contient donc une double boucle.</p>
-<pre class="code python"><a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-1"></a><span class="k">def</span> <span class="nf">mult</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-2"></a>    <span class="sd">""" Fonction qui calcule le produit mu X A où mu est un scalaire</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-3"></a><span class="sd">    et A une matrice.</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-4"></a><span class="sd">    """</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-5"></a>    <span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">taille</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-6"></a>    <span class="n">resultat</span> <span class="o">=</span> <span class="p">[]</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>     <span class="c1"># je prends les lignes de A une par une</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-8"></a>                           <span class="c1"># range(k) signifie range(0,k)</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-9"></a>        <span class="n">ligne</span><span class="o">=</span><span class="p">[]</span>           <span class="c1"># je remplis la ligne qui est vide</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-10"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-11"></a>            <span class="n">ligne</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mu</span><span class="o">*</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="c1"># j'ajoute à la ligne le coeff mu a_ij</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-12"></a>        <span class="n">resultat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>      <span class="c1"># j'ajoute la ligne calculée à la matrice</span>
-<a name="rest_code_2aba20a9a441497a8d6e9cb3a1a97e5b-13"></a>    <span class="k">return</span> <span class="n">resultat</span>
+<pre class="code python"><a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-1"></a><span class="k">def</span> <span class="nf">mult</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-2"></a>    <span class="sd">""" Fonction qui calcule le produit mu X A où mu est un scalaire</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-3"></a><span class="sd">    et A une matrice.</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-4"></a><span class="sd">    """</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-5"></a>    <span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">taille</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-6"></a>    <span class="n">resultat</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>     <span class="c1"># je prends les lignes de A une par une</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-8"></a>                           <span class="c1"># range(k) signifie range(0,k)</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-9"></a>        <span class="n">ligne</span><span class="o">=</span><span class="p">[]</span>           <span class="c1"># je remplis la ligne qui est vide</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-10"></a>        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">p</span><span class="p">):</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-11"></a>            <span class="n">ligne</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mu</span><span class="o">*</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span><span class="c1"># j'ajoute à la ligne le coeff mu a_ij</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-12"></a>        <span class="n">resultat</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>      <span class="c1"># j'ajoute la ligne calculée à la matrice</span>
+<a name="rest_code_6c153d8a887f403c9ad6e31feef56b75-13"></a>    <span class="k">return</span> <span class="n">resultat</span>
 </pre>
-<pre class="code python"><a name="rest_code_308ef39fb3e94e70b878761781bba980-1"></a><span class="n">mult</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_d42a138e036d48b1a4d94521a035eafd-1"></a><span class="n">mult</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 [[-1, -1, -1], [-1, -1, 0], [-1, 0, -1]]
@@ -239,15 +240,15 @@ colonne : boucle sur les colonnes.</li>
 <h3><a class="toc-backref" href="#id6">Version améliorée : les listes en compréhension c'est super</a></h3>
 <p><strong>Remarque.</strong> Il y a une façon plus pythonique de faire cela. Je pars de
 la liste suivante :</p>
-<pre class="code python"><a name="rest_code_50731d5fdb8b46c587737d824ffb6b9c-1"></a><span class="n">liste1</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">9</span> <span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<pre class="code python"><a name="rest_code_397792713eab4d9dbe51fa586c942eb4-1"></a><span class="n">liste1</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">9</span> <span class="p">,</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 </pre>
 <div class="section" id="comme-en-maths">
 <h4><a class="toc-backref" href="#id7">Comme en maths !</a></h4>
 <p>Je créé la liste qui s'écrirait ainsi en maths :
 <span class="math">\(\texttt{liste2} = [ 3x, \quad  x \in  \texttt{liste1}]\)</span>. En
 <strong>Python</strong>, cela s'écrit de la même façon :</p>
-<pre class="code python"><a name="rest_code_bb42da0d567546dda0a6b630f3c71914-1"></a><span class="n">liste2</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">liste1</span><span class="p">]</span>
-<a name="rest_code_bb42da0d567546dda0a6b630f3c71914-2"></a><span class="k">print</span> <span class="n">liste2</span>
+<pre class="code python"><a name="rest_code_06dcdb9266a141649554af09cd64ffb8-1"></a><span class="n">liste2</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">liste1</span><span class="p">]</span>
+<a name="rest_code_06dcdb9266a141649554af09cd64ffb8-2"></a><span class="k">print</span> <span class="n">liste2</span>
 </pre>
 <pre class="literal-block">
 [3, -27, 15, 12]
@@ -258,17 +259,17 @@ la liste suivante :</p>
 <p>Si je veux construire de la même façon la matrice <span class="math">\(3A\)</span> où
 <span class="math">\(A\)</span> est la matrice précédemment définie :
 <span class="math">\(A =\begin{pmatrix} 1&amp;1&amp;1\\ 1&amp;1&amp;0\\ 1&amp;0&amp;1 \end{pmatrix}\)</span></p>
-<pre class="code python"><a name="rest_code_4276120730874930a8f66739bc8f5777-1"></a><span class="p">[</span> <span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ligne</span><span class="p">]</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">A</span> <span class="p">]</span>
+<pre class="code python"><a name="rest_code_e3be122bf01d48e78896dfc0ff56d01e-1"></a><span class="p">[</span> <span class="p">[</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ligne</span><span class="p">]</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">A</span> <span class="p">]</span>
 </pre>
 <pre class="literal-block">
 [[3, 3, 3], [3, 3, 0], [3, 0, 3]]
 </pre>
 <p>Ce qui donne une façon plus simple de programmer <span class="math">\(\texttt{mult}\)</span> :</p>
-<pre class="code python"><a name="rest_code_36ea911b3da84b19997cc47c8aacd8b6-1"></a><span class="k">def</span> <span class="nf">mult2</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
-<a name="rest_code_36ea911b3da84b19997cc47c8aacd8b6-2"></a>    <span class="sd">"""version améliorée de mult"""</span>
-<a name="rest_code_36ea911b3da84b19997cc47c8aacd8b6-3"></a>    <span class="k">return</span> <span class="p">[</span> <span class="p">[</span><span class="n">mu</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">toto</span><span class="p">]</span> <span class="k">for</span> <span class="n">toto</span> <span class="ow">in</span> <span class="n">A</span> <span class="p">]</span>
+<pre class="code python"><a name="rest_code_022ac8aa745d4c56b9bc4ed4e55c9b94-1"></a><span class="k">def</span> <span class="nf">mult2</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span><span class="n">A</span><span class="p">):</span>
+<a name="rest_code_022ac8aa745d4c56b9bc4ed4e55c9b94-2"></a>    <span class="sd">"""version améliorée de mult"""</span>
+<a name="rest_code_022ac8aa745d4c56b9bc4ed4e55c9b94-3"></a>    <span class="k">return</span> <span class="p">[</span> <span class="p">[</span><span class="n">mu</span><span class="o">*</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">toto</span><span class="p">]</span> <span class="k">for</span> <span class="n">toto</span> <span class="ow">in</span> <span class="n">A</span> <span class="p">]</span>
 </pre>
-<pre class="code python"><a name="rest_code_71e5e4bc9d0445d6933187ab3e36a362-1"></a><span class="n">mult2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_b3d9698cf7344f8e86ec5e9fe86c9eb1-1"></a><span class="n">mult2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 [[5, 5, 5], [5, 5, 0], [5, 0, 5]]
@@ -288,39 +289,39 @@ défini.</li>
 <p><em>Indication.</em> Construire la matrice <span class="math">\(\texttt{AB}\)</span> ligne par ligne
 (boucle !) et regarder dans l'aide-mémoire comment ajouter un élément à
 une liste.</p>
-<pre class="code python"><a name="rest_code_879895cf96a14642b893362431034b10-1"></a><span class="k">def</span> <span class="nf">fois</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">):</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-2"></a>    <span class="sd">""" Calcule le produit matriciel A x B si il existe, sinon</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-3"></a><span class="sd">        affiche un message d'erreur.</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-4"></a><span class="sd">    """</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-5"></a>    <span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">taille</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>        <span class="c1"># j'utilise ma fonction taille !</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-6"></a>    <span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="n">taille</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-7"></a>    <span class="k">if</span> <span class="n">p</span> <span class="o">!=</span> <span class="n">q</span> <span class="p">:</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-8"></a>        <span class="k">print</span> <span class="s1">'Matrices incompatibles'</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-9"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-10"></a>        <span class="n">produit</span> <span class="o">=</span> <span class="p">[]</span>         <span class="c1"># j'intialise AB à une matrice vide</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-11"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1"># je calcule la ligne i</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-12"></a>            <span class="n">ligne</span> <span class="o">=</span> <span class="p">[]</span>       <span class="c1"># j'intialiste la ligne à une ligne vide</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-13"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="p">):</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-14"></a>                <span class="n">coeff</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-15"></a>                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">p</span><span class="p">):</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-16"></a>                    <span class="n">coeff</span> <span class="o">+=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-17"></a>                <span class="n">ligne</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">coeff</span><span class="p">)</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-18"></a>            <span class="n">produit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
-<a name="rest_code_879895cf96a14642b893362431034b10-19"></a>    <span class="k">return</span> <span class="n">produit</span>
+<pre class="code python"><a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-1"></a><span class="k">def</span> <span class="nf">fois</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">):</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-2"></a>    <span class="sd">""" Calcule le produit matriciel A x B si il existe, sinon</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-3"></a><span class="sd">        affiche un message d'erreur.</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-4"></a><span class="sd">    """</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-5"></a>    <span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">taille</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>        <span class="c1"># j'utilise ma fonction taille !</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-6"></a>    <span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="n">taille</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-7"></a>    <span class="k">if</span> <span class="n">p</span> <span class="o">!=</span> <span class="n">q</span> <span class="p">:</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-8"></a>        <span class="k">print</span> <span class="s1">'Matrices incompatibles'</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-9"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-10"></a>        <span class="n">produit</span> <span class="o">=</span> <span class="p">[]</span>         <span class="c1"># j'intialise AB à une matrice vide</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-11"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1"># je calcule la ligne i</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-12"></a>            <span class="n">ligne</span> <span class="o">=</span> <span class="p">[]</span>       <span class="c1"># j'intialiste la ligne à une ligne vide</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-13"></a>            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">r</span><span class="p">):</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-14"></a>                <span class="n">coeff</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-15"></a>                <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">p</span><span class="p">):</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-16"></a>                    <span class="n">coeff</span> <span class="o">+=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span><span class="o">*</span><span class="n">B</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-17"></a>                <span class="n">ligne</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">coeff</span><span class="p">)</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-18"></a>            <span class="n">produit</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ligne</span><span class="p">)</span>
+<a name="rest_code_5d798ba08c1d479db62077cdd3d5674d-19"></a>    <span class="k">return</span> <span class="n">produit</span>
 </pre>
-<pre class="code python"><a name="rest_code_5d1ab43b745241cd9f543fa94979e552-1"></a><span class="n">atilla</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
+<pre class="code python"><a name="rest_code_914b7944b6ed48cf8c33080dc0843466-1"></a><span class="n">atilla</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
 </pre>
-<pre class="code python"><a name="rest_code_73a9cb036a484c0598cca82112c9acf4-1"></a><span class="n">fois</span><span class="p">(</span><span class="n">atilla</span><span class="p">,</span><span class="n">atilla</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_5597f1c0929b45fa8984d6dc0c03e4ca-1"></a><span class="n">fois</span><span class="p">(</span><span class="n">atilla</span><span class="p">,</span><span class="n">atilla</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 [[3, 3, 3], [3, 3, 3], [3, 3, 3]]
 </pre>
-<pre class="code python"><a name="rest_code_e4a205e0565546c7b180c4caf8053d7c-1"></a><span class="n">fois</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_2b3766772c9f47df8895d3f83ec5585c-1"></a><span class="n">fois</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 [[3, 2, 2], [2, 2, 1], [2, 1, 2]]
 </pre>
-<pre class="code python"><a name="rest_code_ed5e8e9c2b0e41e8b62ccbe1a15a2939-1"></a><span class="k">print</span> <span class="n">A</span>
+<pre class="code python"><a name="rest_code_1d266a6a67464ad6901a8394008c99bd-1"></a><span class="k">print</span> <span class="n">A</span>
 </pre>
 <pre class="literal-block">
 [[1, 1, 1], [1, 1, 0], [1, 0, 1]]
@@ -330,7 +331,7 @@ une liste.</p>
 <div class="section" id="pour-rigoler-se-bricoler-un-bel-affichage">
 <h2><a class="toc-backref" href="#id10">Pour rigoler : se bricoler un bel affichage</a></h2>
 <p>On commence à faire du tuning là. On aimerait bien que :</p>
-<pre class="code python"><a name="rest_code_732e7826d48e41daaf0812a66ace4766-1"></a><span class="k">print</span> <span class="n">A</span>
+<pre class="code python"><a name="rest_code_297595daabd544e9b71acc84606bcce9-1"></a><span class="k">print</span> <span class="n">A</span>
 </pre>
 <pre class="literal-block">
 [[1, 1, 1], [1, 1, 0], [1, 0, 1]]
@@ -345,11 +346,11 @@ prend le plus de place dans la matrice.</li>
 <p>Pour 1., je vais faire ça avec la puissance des listes en compréhension.
 Accrochez-vous, quand on a compris, c'est facile, mais à lire dans
 l'autre sens c'est plus dur :</p>
-<pre class="code python"><a name="rest_code_82c078eb0752443cab361af50b6f0d56-1"></a><span class="k">def</span> <span class="nf">longueur_max</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
-<a name="rest_code_82c078eb0752443cab361af50b6f0d56-2"></a>    <span class="sd">""" cherche la chaine de caractères la plus longue parmi les chaînes</span>
-<a name="rest_code_82c078eb0752443cab361af50b6f0d56-3"></a><span class="sd">        représentant les coeffs de la matrice A</span>
-<a name="rest_code_82c078eb0752443cab361af50b6f0d56-4"></a><span class="sd">    """</span>
-<a name="rest_code_82c078eb0752443cab361af50b6f0d56-5"></a>    <span class="k">return</span>  <span class="nb">max</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">coeff</span><span class="p">))</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">A</span> <span class="k">for</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">ligne</span><span class="p">])</span>
+<pre class="code python"><a name="rest_code_0929054d77ea464ea1e37acddc15de55-1"></a><span class="k">def</span> <span class="nf">longueur_max</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+<a name="rest_code_0929054d77ea464ea1e37acddc15de55-2"></a>    <span class="sd">""" cherche la chaine de caractères la plus longue parmi les chaînes</span>
+<a name="rest_code_0929054d77ea464ea1e37acddc15de55-3"></a><span class="sd">        représentant les coeffs de la matrice A</span>
+<a name="rest_code_0929054d77ea464ea1e37acddc15de55-4"></a><span class="sd">    """</span>
+<a name="rest_code_0929054d77ea464ea1e37acddc15de55-5"></a>    <span class="k">return</span>  <span class="nb">max</span><span class="p">([</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">coeff</span><span class="p">))</span> <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">A</span> <span class="k">for</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">ligne</span><span class="p">])</span>
 </pre>
 <p>Par exemple : je prends la matrice</p>
 <div class="math">
@@ -360,8 +361,8 @@ l'autre sens c'est plus dur :</p>
 \end{pmatrix}
 \end{equation*}
 </div>
-<pre class="code python"><a name="rest_code_7c081af8d0d043669269904ea1c2877b-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4324</span><span class="p">],</span> <span class="p">[</span><span class="mi">333333</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
-<a name="rest_code_7c081af8d0d043669269904ea1c2877b-2"></a><span class="n">longueur_max</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># la chaine '333333' est la plus longue, de longueur 6</span>
+<pre class="code python"><a name="rest_code_fca990b1b0a74173a45f1010e020ac63-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4324</span><span class="p">],</span> <span class="p">[</span><span class="mi">333333</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+<a name="rest_code_fca990b1b0a74173a45f1010e020ac63-2"></a><span class="n">longueur_max</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>  <span class="c1"># la chaine '333333' est la plus longue, de longueur 6</span>
 </pre>
 <pre class="literal-block">
 6
@@ -373,21 +374,21 @@ pythoniques.</p>
 <p>Pour 2., je crée une fonction qui étant donné une chaîne de caractères,
 la complète avec des espaces pour qu'elle atteigne une longueur
 <span class="math">\(\mathtt{r}\)</span> donnée :</p>
-<pre class="code python"><a name="rest_code_fc571f8623bc49be86d32dbd0e4f5833-1"></a><span class="k">def</span> <span class="nf">ajoute_blancs</span><span class="p">(</span><span class="n">chaine</span><span class="p">,</span><span class="n">r</span><span class="p">):</span>
-<a name="rest_code_fc571f8623bc49be86d32dbd0e4f5833-2"></a>    <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">chaine</span><span class="p">))</span> <span class="c1"># je mets un str en plus au cas où on</span>
-<a name="rest_code_fc571f8623bc49be86d32dbd0e4f5833-3"></a>                         <span class="c1"># veut rentrer un flottant.</span>
-<a name="rest_code_fc571f8623bc49be86d32dbd0e4f5833-4"></a>    <span class="k">return</span>   <span class="s1">' '</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">chaine</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_d630e20bde9e49a09990f1af5fcbf0cb-1"></a><span class="k">def</span> <span class="nf">ajoute_blancs</span><span class="p">(</span><span class="n">chaine</span><span class="p">,</span><span class="n">r</span><span class="p">):</span>
+<a name="rest_code_d630e20bde9e49a09990f1af5fcbf0cb-2"></a>    <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">chaine</span><span class="p">))</span> <span class="c1"># je mets un str en plus au cas où on</span>
+<a name="rest_code_d630e20bde9e49a09990f1af5fcbf0cb-3"></a>                         <span class="c1"># veut rentrer un flottant.</span>
+<a name="rest_code_d630e20bde9e49a09990f1af5fcbf0cb-4"></a>    <span class="k">return</span>   <span class="s1">' '</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">-</span><span class="n">l</span><span class="p">)</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">chaine</span><span class="p">)</span>
 </pre>
-<pre class="code python"><a name="rest_code_1247d1100d634378b657811f71e3e77d-1"></a><span class="n">ajoute_blancs</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_7f3c75ce3a454c32bb4277c318371643-1"></a><span class="n">ajoute_blancs</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
 '  12'
 </pre>
 <p>Avec ça, je peux faire ma fonction d'affichage</p>
-<pre class="code python"><a name="rest_code_c4d444fb68c049b4909283fd72389c04-1"></a><span class="k">def</span> <span class="nf">affiche</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
-<a name="rest_code_c4d444fb68c049b4909283fd72389c04-2"></a>    <span class="n">p</span> <span class="o">=</span> <span class="n">longueur_max</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<a name="rest_code_c4d444fb68c049b4909283fd72389c04-3"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">A</span><span class="p">:</span>
-<a name="rest_code_c4d444fb68c049b4909283fd72389c04-4"></a>        <span class="k">print</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">ajoute_blancs</span><span class="p">(</span><span class="n">coeff</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">ligne</span><span class="p">])</span>
+<pre class="code python"><a name="rest_code_ab885c9e95e342e1966b5b1091698e35-1"></a><span class="k">def</span> <span class="nf">affiche</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+<a name="rest_code_ab885c9e95e342e1966b5b1091698e35-2"></a>    <span class="n">p</span> <span class="o">=</span> <span class="n">longueur_max</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<a name="rest_code_ab885c9e95e342e1966b5b1091698e35-3"></a>    <span class="k">for</span> <span class="n">ligne</span> <span class="ow">in</span> <span class="n">A</span><span class="p">:</span>
+<a name="rest_code_ab885c9e95e342e1966b5b1091698e35-4"></a>        <span class="k">print</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">ajoute_blancs</span><span class="p">(</span><span class="n">coeff</span><span class="p">,</span><span class="n">p</span><span class="p">)</span> <span class="k">for</span> <span class="n">coeff</span> <span class="ow">in</span> <span class="n">ligne</span><span class="p">])</span>
 </pre>
 <p>Si je reprends ma matrice :</p>
 <div class="math">
@@ -398,7 +399,7 @@ la complète avec des espaces pour qu'elle atteigne une longueur
 \end{pmatrix}
 \end{equation*}
 </div>
-<pre class="code python"><a name="rest_code_a6ab2bde3c06472fba9f5c8c0b311dda-1"></a><span class="n">affiche</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_f90ae78af63f459e999b7135ba1d5ce8-1"></a><span class="n">affiche</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre>
 <pre class="literal-block">
      1      2   4324
@@ -436,7 +437,7 @@ la complète avec des espaces pour qu'elle atteigne une longueur
 
     </div>
                     <footer id="footer"><p> </p>
-<hr> Contenu © 2016  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
+<hr> Contenu © 2017  <a href="mailto:patel.bcpst@gmail.com">MY. Patel <i class="icon-envelope"></i></a> -  Blog généré par  <a href="https://getnikola.com" rel="nofollow">Nikola</a>  -   Thème  : d'après <a href="https://github.com/getnikola/nikola-themes/tree/master/v7/zen-ipython">zen-ipython</a> de <a href="http://www.damian.oquanta.info/index.html"> Damián Avila</a><br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.fr">
 <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a> 
 <a href="../../index.html"> <i class="icon-home"></i></a>
 <a href="../../stories/programmes-de-colles"> <i class="icon-calendar"></i></a>
