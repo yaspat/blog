@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link type="application/rss+xml" rel="self" href="http://yaspat.github.io/blog/rss.xml"></atom:link><language>fr</language><lastBuildDate>Sat, 06 May 2017 13:09:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><lastBuildDate>Thu, 05 Jul 2018 08:48:32 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Que faire en maths cet été ?</title><link>http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Si tu es en train de lire ce billet, c'est que tu as probablement l'intention de faire une spé à la rentrée. Alors avant tout, félicitations pour ton passage en spé, c'était quand même pas si facile que ça, d'autant qu'il faut travailler les SVT, la géologie, mais aussi la chimie, la physique et enfin les maths et l'info. Et autant dire que pour ces deux dernières matières, on a du mal à se dire qu'on en ferait autant en BCPST.
+Alors je vais essayer de mettre en ligne sur ce blog tout au long de l'été des choses à faire pour bien commencer l'année de spé, d'autant qu'il faut savoir que :&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><category>conseils</category><category>révisions</category><guid>http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/</guid><pubDate>Wed, 04 Jul 2018 15:30:35 GMT</pubDate></item><item><title>Développements limités en Python</title><link>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
@@ -45,15 +50,15 @@
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;
-&lt;div class="prompt input_prompt"&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;La fonction &lt;code&gt;series&lt;/code&gt; fournit la série de Taylor-Mac Laurin de la fonction 
 (rappel : c'est la partie principale du développement limité &lt;strong&gt;au voisinage de &lt;/strong&gt; $a=0$.)&lt;/p&gt;
 &lt;p&gt;Par exemple, si je prends la fonction de l'exemple 18 du cours :&lt;/p&gt;
-$$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$&lt;p&gt;Il me suffit simplement de  taper ceci :&lt;/p&gt;
+&lt;p&gt;$$ x\mapsto f(x) = \sqrt{1+\ln(1+x)}$$&lt;/p&gt;
+&lt;p&gt;Il me suffit simplement de  taper ceci :&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/developpements-limites-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</guid><pubDate>Fri, 20 May 2016 09:45:32 GMT</pubDate></item><item><title>Informatique. Exercices sur les chaînes de caractères</title><link>http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="sommaire"&gt;
 &lt;p class="topic-title first"&gt;Sommaire&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -257,13 +262,4 @@ un coeur de radiolaire d'ordre 4. Tu ne sais pas ce qu'est un radiolaire
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item><item><title>Biomorphes 3/3 : fin</title><link>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;p&gt;Dans le &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire"&gt;billet précédent&lt;/a&gt;, j'ai colorié un domaine du plan complexe en
-partant de la fonction &lt;span class="math"&gt;\(p\)&lt;/span&gt; suivante :&lt;/p&gt;
-&lt;div class="math"&gt;
-\begin{equation*}
-p(z) = \dfrac{1}{z^3} +\dfrac{1}{2}
-\end{equation*}
-&lt;/div&gt;
-&lt;p&gt;Ce qui a donné la très belle image suivante :&lt;/p&gt;
-&lt;img alt="../../images/Biomorphes3/biomorphes3-1.png" class="align-center" src="http://yaspat.github.io/blog/images/Biomorphes3/biomorphes3-1.png"&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/biomorphes-3-fin/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>biomorphes</category><category>symétries</category><guid>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</guid><pubDate>Thu, 28 Jan 2016 21:37:50 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/animation-en-python/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 4 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>animation</category><category>biomorphes</category><category>python</category><category>video</category><guid>http://yaspat.github.io/blog/posts/animation-en-python/</guid><pubDate>Sat, 30 Jan 2016 15:37:50 GMT</pubDate></item></channel></rss>

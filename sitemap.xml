@@ -7,411 +7,427 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2017-05-06T13:09:00Z</lastmod>
+  <lastmod>2018-07-04T15:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2016/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/2018/</loc>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2017-05-06T13:08:00Z</lastmod>
+  <lastmod>2018-07-04T15:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2016-09-16T13:29:00Z</lastmod>
+  <lastmod>2018-07-04T15:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/animathions/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/animation/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/biomorphes/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/boucle/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/boucles/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_images/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/champ-de-vecteurs/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/complexes/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/conseils/</loc>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/croissances-comparees/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/darwin/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/dephasage/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/entrees/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/equations-differentielles/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/exercices/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/fonction/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/fonctions/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/for/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/fractales/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/images/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/informatique/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/ipython-notebook/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/join/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/lecon/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/listes-en-comprehension/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/listes/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/mandelbrot/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/matrices/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/matshow/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/numpy/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/objets/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/primitives/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/probabilites/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/python/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/reflexion/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/revisions/</loc>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/schemas-conditionnels/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/sorties/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/split/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/subplot/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/suites/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/symetries/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/syracuse/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/translation/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/tuples/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/type/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/variables/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/video/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/while/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/</loc>
-  <lastmod>2016-09-09T13:59:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/Mandelbrot/</loc>
-  <lastmod>2016-09-09T13:59:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/galleries/demo/</loc>
-  <lastmod>2016-09-09T13:59:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2017-05-06T13:08:00Z</lastmod>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2017-05-06T13:08:00Z</lastmod>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2017-05-06T13:08:00Z</lastmod>
+  <lastmod>2018-07-04T15:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2017-05-06T13:08:00Z</lastmod>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/Boucles%20Pour/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/animation-en-python/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/as-tu-remarque-cette-nouvelle-icone/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/au-sujet-des-posts/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/biomorphes-3-fin/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/biomorphes-ii-bestiaire/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/biomorphes/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/croissances-comparees/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/developpements-limites-en-python/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/entrees-sorties/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/eq2deg/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/euler1/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/ex1-2-du-poly/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/exercices-sur-les-chaines-de-caracteres/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/fonction-du-dm-2/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-5-boucles-tant-que/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-6-tuples-listes/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-7-recherche-dans-chaine/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-8-matrices/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/lecon-9-le-module-numpy/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/meditations-typo-deficient/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/notes-de-darwin/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/objets-et-variables/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/photos-de-vacances/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/</loc>
+  <lastmod>2018-07-04T15:41:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/schema-conditionnels/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/transfo-elem-fonctions/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/utilisation-de-numpy-ensemble-de-mandelbrot/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/about-me/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/animathions/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/documents-de-travail/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/exercices/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/informatique/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/livre-dor/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:39:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/programmes-de-colles/</loc>
-  <lastmod>2016-09-09T14:31:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/stories/sujets-de-dmds/</loc>
-  <lastmod>2016-07-11T23:42:00Z</lastmod>
+  <lastmod>2017-05-18T08:44:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/tipue_search.html</loc>
