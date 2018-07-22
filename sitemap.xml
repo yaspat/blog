@@ -23,11 +23,11 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2018-07-04T15:46:00Z</lastmod>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2018-07-04T15:47:00Z</lastmod>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -60,6 +60,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/cat_informatique/</loc>
   <lastmod>2017-05-18T08:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/cat_revisions/</loc>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres/</loc>
@@ -259,7 +263,7 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2018-07-04T15:46:00Z</lastmod>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -300,6 +304,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/posts/calcul-de-primitives-en-python/</loc>
   <lastmod>2017-05-18T08:44:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/</loc>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/croissances-comparees/</loc>

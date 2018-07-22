@@ -38,6 +38,10 @@
   <lastmod>2018-07-04T15:41:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://yaspat.github.io/blog/categories/cat_revisions.xml</loc>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://yaspat.github.io/blog/categories/chaines-de-caracteres.xml</loc>
   <lastmod>2018-07-04T15:41:00Z</lastmod>
  </sitemap>
@@ -51,7 +55,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/conseils.xml</loc>
-  <lastmod>2018-07-04T15:44:00Z</lastmod>
+  <lastmod>2018-07-05T08:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/croissances-comparees.xml</loc>
@@ -159,7 +163,7 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/revisions.xml</loc>
-  <lastmod>2018-07-04T15:44:00Z</lastmod>
+  <lastmod>2018-07-05T08:48:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/categories/schemas-conditionnels.xml</loc>
@@ -227,10 +231,10 @@
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/rss.xml</loc>
-  <lastmod>2018-07-04T15:46:00Z</lastmod>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://yaspat.github.io/blog/sitemap.xml</loc>
-  <lastmod>2018-07-04T15:47:00Z</lastmod>
+  <lastmod>2018-07-22T16:51:00Z</lastmod>
  </sitemap>
 </sitemapindex>

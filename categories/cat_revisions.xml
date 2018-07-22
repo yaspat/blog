@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes (Articles sur Révisions)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/cat_revisions.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><lastBuildDate>Sun, 22 Jul 2018 16:51:48 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Changement de variables dans les intégrales</title><link>http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Un thème des plus récurrents en analyse, à l'écrit comme à l'oral, est celui du calcul intégral.
+En effet, il intervient notamment :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dans la résolutions d'équations différentielles.&lt;/li&gt;
+&lt;li&gt;Dans le calcul des probabilités.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Il est donc important de maîtriser ce thème, à commencer par savoir effectuer un changement de variables.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/</guid><pubDate>Sun, 22 Jul 2018 16:10:52 GMT</pubDate></item></channel></rss>

@@ -6,10 +6,10 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Que faire en maths cet été ? | Maths info  BCPST 1A Rennes</title>
+<title>Changement de variables dans les intégrales | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/">
 <link rel="icon" href="../../favicon.ico" sizes="16x16">
 <link rel="icon" href="../../favicon.ico" sizes="128x128">
 <link rel="icon" href="../../favicon.ico" sizes="256x256">
@@ -29,13 +29,15 @@ MathJax.Hub.Config({
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
 <meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
-<meta property="og:title" content="Que faire en maths cet été ?">
-<meta property="og:url" content="http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/">
-<meta property="og:description" content="Si tu es en train de lire ce billet, c'est que tu as probablement l'intention de faire une spé à la rentrée. Alors avant tout, félicitations pour ton passage en spé, c'était quand même pas si facile q">
+<meta property="og:title" content="Changement de variables dans les intégrales">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/">
+<meta property="og:description" content="Un thème des plus récurrents en analyse, à l'écrit comme à l'oral, est celui du calcul intégral.
+En effet, il intervient notamment :
+
+Dans la résolutions d'équations différentielles.
+Dans le calcul de">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-07-04T17:30:35+02:00">
-<meta property="article:tag" content="conseils">
-<meta property="article:tag" content="révisions">
+<meta property="article:published_time" content="2018-07-22T18:10:52+02:00">
 </head>
 <body>
     <section class="social"><ul>
@@ -55,24 +57,17 @@ MathJax.Hub.Config({
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Que faire en maths cet été ?</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Changement de variables dans les intégrales</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2018-07-04T17:30:35+02:00">2018-07-04 17:30</time>
+                <time class="timeago" datetime="2018-07-22T18:10:52+02:00">2018-07-22 18:10</time>
             
                       |  
         <a href="index.ipynb" id="sourcelink">Source</a>
 
             </div>
-                    <div itemprop="keywords" class="tags">
-        <ul>
-        Étiquettes : 
-           <li><a class="tag p-category" href="../../categories/conseils/" rel="tag">conseils</a></li>
-           <li><a class="tag p-category" href="../../categories/revisions/" rel="tag">révisions</a></li>
-        </ul>
-</div>
-
+            
         </div>
         <div class="body">
             <div>
@@ -81,14 +76,40 @@ MathJax.Hub.Config({
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Si tu es en train de lire ce billet, c'est que tu as probablement l'intention de faire une spé à la rentrée. Alors avant tout, félicitations pour ton passage en spé, c'était quand même pas si facile que ça, d'autant qu'il faut travailler les SVT, la géologie, mais aussi la chimie, la physique et enfin les maths et l'info. Et autant dire que pour ces deux dernières matières, on a du mal à se dire qu'on en ferait autant en BCPST.
-Alors je vais essayer de mettre en ligne sur ce blog tout au long de l'été des choses à faire pour bien commencer l'année de spé, d'autant qu'il faut savoir que :</p>
-<!-- TEASER_END -->
-
+<p>Un thème des plus récurrents en analyse, à l'écrit comme à l'oral, est celui du calcul intégral.
+En effet, il intervient notamment :</p>
 <ol>
-<li>L'année de spé va <strong>beaucoup plus vite</strong> que celle de sup (je vous jure que c'est possible !) : seulement 22 semaines de cours.</li>
-<li>Les épreuves de concours peuvent porter sur un thème de la sup. Par exemple, l'épreuve de physique-chimie (analyse de documents) portait sur le programme de première année.</li>
-<li>Les contenus de spé en maths reposent sur une bonne connaissance des notions de première année et d'une bonne méthode de travail.</li>
+<li>Dans la résolutions d'équations différentielles.</li>
+<li>Dans le calcul des probabilités.</li>
+</ol>
+<p>Il est donc important de maîtriser ce thème, à commencer par savoir effectuer un changement de variables.</p>
+<!--teaser_end-->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="La-méthode-avec-un-exemple">La méthode avec un exemple<a class="anchor-link" href="#La-m%C3%A9thode-avec-un-exemple">¶</a>
+</h2>
+<p><a href="../images/Cookbook-IntegralesEDO.png">voir la méthode</a></p>
+<h2 id="S'entraîner">S'entraîner<a class="anchor-link" href="#S'entra%C3%AEner">¶</a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Transformer par changement de variables :</p>
+<ol>
+<li>$I_1 = \displaystyle \int_{0}^{1}  \ln\left(3+5t\right)\text{d}t$.</li>
+<li>$I_2 = \displaystyle \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}  \dfrac{1}{\tan{t}}\text{d}t$  (On se ramènera à une intégrale sur le segment $[0,1]$).</li>
+<li>$I_3  = \displaystyle \int_{\ln \frac{\pi}{4}} ^{\ln \frac{\pi}{3}} \dfrac{2}{e^t+e^{-t}}\text{d}t$.  On posera $u = e^{t}$. (<em>Réponse  : $2\sqrt{3}-1$</em>)</li>
 </ol>
 </div>
 </div>
@@ -98,9 +119,7 @@ Alors je vais essayer de mettre en ligne sur ce blog tout au long de l'été des
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Alors, sans vouloir passer tout l'été à refaire l'année de sup, je vais essayer de mettre le minimum du minimum vital
-qu'<strong>on n'a pas le droit d'ignorer</strong> pour mener une année de spé convenable en maths.</p>
-<p>Bon courage à tous, et à suivre !</p>
+<p>Bon courage !</p>
 
 </div>
 </div>
@@ -109,18 +128,15 @@ qu'<strong>on n'a pas le droit d'ignorer</strong> pour mener une année de spé 
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../developpements-limites-en-python/" rel="prev" title="Développements limités en Python">Article précédent</a>
-            </li>
-            <li class="next">
-                <a href="../changement-de-variables-dans-les-integrales/" rel="next" title="Changement de variables dans les intégrales">Article suivant</a>
+                <a href="../que-faire-en-maths-cet-ete/" rel="prev" title="Que faire en maths cet été ?">Article précédent</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="yaspat",
-            disqus_url="http://yaspat.github.io/blog/posts/que-faire-en-maths-cet-ete/",
-        disqus_title="Que faire en maths cet \u00e9t\u00e9 ?",
-        disqus_identifier="cache/posts/que-faire-en-maths-cet-ete.html",
+            disqus_url="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/",
+        disqus_title="Changement de variables dans les int\u00e9grales",
+        disqus_identifier="cache/posts/changement-de-variables-dans-les-integrales.html",
         disqus_config = function () {
             this.language = "fr";
         };
