@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><lastBuildDate>Mon, 23 Jul 2018 13:33:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Changement de variables dans les intégrales</title><link>http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 1A Rennes</title><link>http://yaspat.github.io/blog/</link><description>Cours de maths pour les Biwanes</description><atom:link href="http://yaspat.github.io/blog/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><lastBuildDate>Mon, 13 Aug 2018 20:47:11 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Équations différentielles linéaires : variation de la constante</title><link>http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div tabindex="-1" id="notebook" class="border-box-sizing"&gt;
+    &lt;div class="container" id="notebook-container"&gt;
+
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;La méthode de la variation de la constante sert à &lt;strong&gt;trouver une solution particulière&lt;/strong&gt; à une équation différentielle &lt;strong&gt;linéaire du premier ordre&lt;/strong&gt;  après avoir calculé les solutions de l'équation homogène associée. Elle se termine &lt;strong&gt;toujours&lt;/strong&gt; par un calcul de primitives.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 1 min. de lecture)&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description><guid>http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/</guid><pubDate>Mon, 13 Aug 2018 20:23:50 GMT</pubDate></item><item><title>Changement de variables dans les intégrales</title><link>http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;
 &lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
@@ -212,39 +220,4 @@ grille de nombres. Si chaque nombre est représenté par une couleur, on
 obtient une belle grille de couleurs, c'est-à-dire une mosaïque. Ça a
 beaucoup plu aux filles du groupe du TP. Remarque de macho ? Ça tombe bien,
 la commande pour faire cela est aussi &lt;strong&gt;matshow&lt;/strong&gt;. Regradons :&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 53 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>matshow</category><category>split</category><guid>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</guid><pubDate>Wed, 03 Feb 2016 17:51:45 GMT</pubDate></item><item><title>Informatique : Leçon 8. Matrices</title><link>http://yaspat.github.io/blog/posts/lecon-8-matrices/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div class="section" id="comment-representer-les-matrices"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="contents alert alert-info pull-right topic" id="sommaire"&gt;
-&lt;p class="topic-title first"&gt;Sommaire&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comment-representer-les-matrices" id="id1"&gt;Comment représenter les matrices ?&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#acceder-a-un-coefficient" id="id2"&gt;Accéder à un coefficient&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#fonction-cousue-main-taille-d-une-matrice" id="id3"&gt;Fonction cousue main : taille d'une matrice&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#operations-matricielles-cousues-main" id="id4"&gt;Opérations matricielles cousues main&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#multiplication-par-une-constante" id="id5"&gt;Multiplication par une constante&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#version-amelioree-les-listes-en-comprehension-c-est-super" id="id6"&gt;Version améliorée : les listes en compréhension c'est super&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#comme-en-maths" id="id7"&gt;Comme en maths !&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#et-en-cascade" id="id8"&gt;Et en cascade&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#produit-matriciel-cousu-main" id="id9"&gt;Produit matriciel cousu main&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/lecon-8-matrices/#pour-rigoler-se-bricoler-un-bel-affichage" id="id10"&gt;Pour rigoler : se bricoler un bel affichage&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Rappel.&lt;/strong&gt; Une matrice est un tableau bi-dimensionnel de nombres. Il
-existe un module dédié au calcul matriciel, mais pour le moment on va
-construire artisanalement nos matrices. ça fera un bon exercice de
-programmation.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Exemple.&lt;/strong&gt;
-&lt;span class="math"&gt;\(A =\begin{pmatrix} 1&amp;amp;1&amp;amp;1\\ 1&amp;amp;1&amp;amp;0\\ 1&amp;amp;0&amp;amp;1 \end{pmatrix}\)&lt;/span&gt; ou
-&lt;span class="math"&gt;\(M =\begin{pmatrix} 1&amp;amp;2&amp;amp;3\\ 4&amp;amp;5&amp;amp;6 \end{pmatrix}\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
-chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
-définir des matrices comme des listes de listes.&lt;/p&gt;
-&lt;pre class="code python"&gt;&lt;a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-1"&gt;&lt;/a&gt;&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt; &lt;span class="c1"&gt;# les séparateurs des items sont&lt;/span&gt;
-&lt;a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-2"&gt;&lt;/a&gt;                              &lt;span class="c1"&gt;# des virgules&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/lecon-8-matrices/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 5 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>listes en compréhension</category><category>matrices</category><category>python</category><guid>http://yaspat.github.io/blog/posts/lecon-8-matrices/</guid><pubDate>Wed, 03 Feb 2016 16:41:55 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 53 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>matshow</category><category>split</category><guid>http://yaspat.github.io/blog/posts/matshow-ca-plait-aux-filles/</guid><pubDate>Wed, 03 Feb 2016 17:51:45 GMT</pubDate></item></channel></rss>

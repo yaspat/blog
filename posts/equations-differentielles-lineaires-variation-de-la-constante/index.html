@@ -6,10 +6,10 @@ article: http://ogp.me/ns/article#
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Changement de variables dans les intégrales | Maths info  BCPST 1A Rennes</title>
+<title>Équations différentielles linéaires : variation de la constante | Maths info  BCPST 1A Rennes</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/">
+<link rel="canonical" href="http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/">
 <link rel="icon" href="../../favicon.ico" sizes="16x16">
 <link rel="icon" href="../../favicon.ico" sizes="128x128">
 <link rel="icon" href="../../favicon.ico" sizes="256x256">
@@ -29,15 +29,11 @@ MathJax.Hub.Config({
 </script><!--[if lt IE 9]><script src="/assets/js/html5.js"></script><![endif]--><link rel="stylesheet" type="text/css" href="../../assets/css/tipuesearch.css">
 <meta name="author" content="MY. Patel">
 <meta property="og:site_name" content="Maths info  BCPST 1A Rennes">
-<meta property="og:title" content="Changement de variables dans les intégrales">
-<meta property="og:url" content="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/">
-<meta property="og:description" content="Un thème des plus récurrents en analyse, à l'écrit comme à l'oral, est celui du calcul intégral.
-En effet, il intervient notamment :
-
-Dans la résolutions d'équations différentielles.
-Dans le calcul de">
+<meta property="og:title" content="Équations différentielles linéaires : variation de la constante">
+<meta property="og:url" content="http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/">
+<meta property="og:description" content="La méthode de la variation de la constante sert à trouver une solution particulière à une équation différentielle linéaire du premier ordre  après avoir calculé les solutions de l'équation homogène as">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2018-07-22T18:10:52+02:00">
+<meta property="article:published_time" content="2018-08-13T22:23:50+02:00">
 </head>
 <body>
     <section class="social"><ul>
@@ -57,11 +53,11 @@ Dans le calcul de">
 
         </ul></section><section class="page-content"><div class="content" rel="main">
     <div class="post">
-        <h1 class="p-name entry-title" itemprop="headline name">Changement de variables dans les intégrales</h1>
+        <h1 class="p-name entry-title" itemprop="headline name">Équations différentielles linéaires : variation de la constante</h1>
 
         <div class="meta">
             <div class="authordate">
-                <time class="timeago" datetime="2018-07-22T18:10:52+02:00">2018-07-22 18:10</time>
+                <time class="timeago" datetime="2018-08-13T22:23:50+02:00">2018-08-13 22:23</time>
             
                       |  
         <a href="index.ipynb" id="sourcelink">Source</a>
@@ -70,20 +66,16 @@ Dans le calcul de">
             
         </div>
         <div class="body">
-            <div>
+            <div tabindex="-1" id="notebook" class="border-box-sizing">
+    <div class="container" id="notebook-container">
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Un thème des plus récurrents en analyse, à l'écrit comme à l'oral, est celui du calcul intégral.
-En effet, il intervient notamment :</p>
-<ol>
-<li>Dans la résolutions d'équations différentielles.</li>
-<li>Dans le calcul des probabilités.</li>
-</ol>
-<p>Il est donc important de maîtriser ce thème, à commencer par savoir effectuer un changement de variables.</p>
-<!--teaser_end-->
+<p>La méthode de la variation de la constante sert à <strong>trouver une solution particulière</strong> à une équation différentielle <strong>linéaire du premier ordre</strong>  après avoir calculé les solutions de l'équation homogène associée. Elle se termine <strong>toujours</strong> par un calcul de primitives.</p>
+<!--TEASER_END-->
 </div>
 </div>
 </div>
@@ -94,7 +86,7 @@ En effet, il intervient notamment :</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="La-méthode-avec-un-exemple">La méthode avec un exemple<a class="anchor-link" href="#La-m%C3%A9thode-avec-un-exemple">¶</a>
 </h2>
-<p><img src="http://yaspat.github.io/blog/galleries/Cookbook/1.png" alt=""></p>
+<p><img src="http://yaspat.github.io/blog/galleries/Cookbook/EDO.png" alt=""><img src="http://yaspat.github.io/blog/galleries/Cookbook/EDO2.png" alt=""></p>
 
 </div>
 </div>
@@ -104,7 +96,7 @@ En effet, il intervient notamment :</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="À-vous-de-jouer-!">À vous de jouer !<a class="anchor-link" href="#%C3%80-vous-de-jouer-!">¶</a>
+<h2 id="À-vous-de-jouer">À vous de jouer<a class="anchor-link" href="#%C3%80-vous-de-jouer">¶</a>
 </h2>
 </div>
 </div>
@@ -114,42 +106,30 @@ En effet, il intervient notamment :</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Transformer par changement de variables :</p>
+<p>Résoudre les équations différentielles suivantes sur l'intervalle $I$ donné :</p>
 <ol>
-<li>$I_1 = \displaystyle \int_{0}^{1}  \ln\left(3+5t\right)\text{d}t$.</li>
-<li>$I_2 = \displaystyle \int_{\frac{\pi}{4}}^{\frac{\pi}{2}}  \dfrac{1}{\tan{t}}\text{d}t$  (On se ramènera à une intégrale sur le segment $[0,1]$ par un changement de variables affine).</li>
-<li>(<em>cas général du calcul précédent</em>) Soit $f$ une fonction continue sur un segment $[a,b].$ Transformer $J =\displaystyle \int_{a}^{b} f(t)\text d t $ en se ramenant une intégrale sur le segment $[0,1]$.</li>
-<li>$I_3  = \displaystyle \int_{\ln \frac{\pi}{4}} ^{\ln \frac{\pi}{3}} \dfrac{2}{e^t+e^{-t}}\text{d}t$.  On posera $u = e^{t}$. (<em>Réponse  : $2\left(\sqrt{3}-1\right)$</em>)</li>
+<li>$I = \mathbf{R} \quad y'-2xy = x$</li>
+<li>$I= ]-1;+\infty[ \quad y'+\dfrac{x}{x+1} y = x+1$</li>
+<li>$I= \mathbf{R}  \quad y'-y = x^{k}e^{x}$, où $k$ est un entier naturel fixé.</li>
 </ol>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Bon courage ! Vous pouvez toujours poser une question dans les commentaires du billet.</p>
+    </div>
+  </div>
 
-</div>
-</div>
-</div>
-</div>
         </div>
                 <ul class="pager hidden-print">
 <li class="previous">
-                <a href="../que-faire-en-maths-cet-ete/" rel="prev" title="Que faire en maths cet été ?">Article précédent</a>
-            </li>
-            <li class="next">
-                <a href="../equations-differentielles-lineaires-variation-de-la-constante/" rel="next" title="Équations différentielles linéaires : variation de la constante">Article suivant</a>
+                <a href="../changement-de-variables-dans-les-integrales/" rel="prev" title="Changement de variables dans les intégrales">Article précédent</a>
             </li>
         </ul>
 <div id="disqus_thread"></div>
         <script>
         var disqus_shortname ="yaspat",
-            disqus_url="http://yaspat.github.io/blog/posts/changement-de-variables-dans-les-integrales/",
-        disqus_title="Changement de variables dans les int\u00e9grales",
-        disqus_identifier="cache/posts/changement-de-variables-dans-les-integrales.html",
+            disqus_url="http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/",
+        disqus_title="\u00c9quations diff\u00e9rentielles lin\u00e9aires : variation de la constante",
+        disqus_identifier="cache/posts/equations-differentielles-lineaires-variation-de-la-constante.html",
         disqus_config = function () {
             this.language = "fr";
         };

@@ -1,6 +1,12 @@
 {
   "pages": [
     {
+      "title": "\u00c9quations diff\u00e9rentielles lin\u00e9aires : variation de la constante",
+      "text": "La m\u00e9thode de la variation de la constante sert \u00e0 trouver une solution particuli\u00e8re \u00e0 une \u00e9quation diff\u00e9rentielle lin\u00e9aire du premier ordre  apr\u00e8s avoir calcul\u00e9 les solutions de l'\u00e9quation homog\u00e8ne associ\u00e9e. Elle se termine toujours par un calcul de primitives.\n\n\n\n\n\n\n\n\nLa m\u00e9thode avec un exemple\u00b6\n\n\n\n\n\n\n\n\n\n\u00c0 vous de jouer\u00b6\n\n\n\n\n\n\n\nR\u00e9soudre les \u00e9quations diff\u00e9rentielles suivantes sur l'intervalle $I$ donn\u00e9 :\n\n$I = \\mathbf{R} \\quad y'-2xy = x$\n$I= ]-1;+\\infty[ \\quad y'+\\dfrac{x}{x+1} y = x+1$\n$I= \\mathbf{R}  \\quad y'-y = x{k}e{x}$, o\u00f9 $k$ est un entier naturel fix\u00e9.",
+      "tags": "",
+      "url": "http://yaspat.github.io/blog/posts/equations-differentielles-lineaires-variation-de-la-constante/"
+    },
+    {
       "title": "Changement de variables dans les int\u00e9grales",
       "text": "Un th\u00e8me des plus r\u00e9currents en analyse, \u00e0 l'\u00e9crit comme \u00e0 l'oral, est celui du calcul int\u00e9gral.\nEn effet, il intervient notamment :\n\nDans la r\u00e9solutions d'\u00e9quations diff\u00e9rentielles.\nDans le calcul des probabilit\u00e9s.\n\nIl est donc important de ma\u00eetriser ce th\u00e8me, \u00e0 commencer par savoir effectuer un changement de variables.\n\n\n\n\n\n\n\n\nLa m\u00e9thode avec un exemple\u00b6\n\n\n\n\n\n\n\n\n\u00c0 vous de jouer !\u00b6\n\n\n\n\n\n\n\nTransformer par changement de variables :\n\n$I_1 = \\displaystyle \\int_{0}{1}  \\ln\\left(3+5t\\right)\\text{d}t$.\n$I_2 = \\displaystyle \\int_{\\frac{\\pi}{4}}{\\frac{\\pi}{2}}  \\dfrac{1}{\\tan{t}}\\text{d}t$  (On se ram\u00e8nera \u00e0 une int\u00e9grale sur le segment $[0,1]$ par un changement de variables affine).\n(cas g\u00e9n\u00e9ral du calcul pr\u00e9c\u00e9dent) Soit $f$ une fonction continue sur un segment $[a,b].$ Transformer $J =\\displaystyle \\int_{a}{b} f(t)\\text d t $ en se ramenant une int\u00e9grale sur le segment $[0,1]$.\n$I_3  = \\displaystyle \\int_{\\ln \\frac{\\pi}{4}} {\\ln \\frac{\\pi}{3}} \\dfrac{2}{et+e{-t}}\\text{d}t$.  On posera $u = e{t}$. (R\u00e9ponse  : $2\\left(\\sqrt{3}-1\\right)$)\n\n\n\n\n\n\n\n\n\nBon courage ! Vous pouvez toujours poser une question dans les commentaires du billet.",
       "tags": "",

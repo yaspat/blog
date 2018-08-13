@@ -52,6 +52,71 @@ MathJax.Hub.Config({
 
         </ul></section><section class="page-content"><div class="content" rel="main">
         <div class="post">
+            <h1 class="title"><a href="posts/lecon-8-matrices/">Informatique : Leçon 8. Matrices</a></h1>
+            <div class="meta">
+                <div class="authordate">
+                    <time class="timeago" datetime="2016-02-03T17:41:55+01:00">2016-02-03 17:41</time>
+</div>
+                <div class="stats">
+                                <a href="posts/lecon-8-matrices/#disqus_thread" data-disqus-identifier="cache/posts/lecon-8-matrices.html">Comments</a>
+
+
+                </div>
+                        <div itemprop="keywords" class="tags">
+        <ul>
+        Étiquettes : 
+           <li><a class="tag p-category" href="categories/listes-en-comprehension/" rel="tag">listes en compréhension</a></li>
+           <li><a class="tag p-category" href="categories/matrices/" rel="tag">matrices</a></li>
+           <li><a class="tag p-category" href="categories/python/" rel="tag">python</a></li>
+        </ul>
+</div>
+
+            </div>
+            <div class="body">
+                <div class="section" id="comment-representer-les-matrices">
+<h2><a class="toc-backref" href="posts/lecon-8-matrices/#id1">Comment représenter les matrices ?</a></h2>
+<div class="contents alert alert-info pull-right topic" id="sommaire">
+<p class="topic-title first">Sommaire</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href="posts/lecon-8-matrices/#comment-representer-les-matrices" id="id1">Comment représenter les matrices ?</a><ul>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#acceder-a-un-coefficient" id="id2">Accéder à un coefficient</a></li>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#fonction-cousue-main-taille-d-une-matrice" id="id3">Fonction cousue main : taille d'une matrice</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href="posts/lecon-8-matrices/#operations-matricielles-cousues-main" id="id4">Opérations matricielles cousues main</a><ul>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#multiplication-par-une-constante" id="id5">Multiplication par une constante</a></li>
+<li>
+<a class="reference internal" href="posts/lecon-8-matrices/#version-amelioree-les-listes-en-comprehension-c-est-super" id="id6">Version améliorée : les listes en compréhension c'est super</a><ul>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#comme-en-maths" id="id7">Comme en maths !</a></li>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#et-en-cascade" id="id8">Et en cascade</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#produit-matriciel-cousu-main" id="id9">Produit matriciel cousu main</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="posts/lecon-8-matrices/#pour-rigoler-se-bricoler-un-bel-affichage" id="id10">Pour rigoler : se bricoler un bel affichage</a></li>
+</ul>
+</div>
+<p><strong>Rappel.</strong> Une matrice est un tableau bi-dimensionnel de nombres. Il
+existe un module dédié au calcul matriciel, mais pour le moment on va
+construire artisanalement nos matrices. ça fera un bon exercice de
+programmation.</p>
+<p><strong>Exemple.</strong>
+<span class="math">\(A =\begin{pmatrix} 1&amp;1&amp;1\\ 1&amp;1&amp;0\\ 1&amp;0&amp;1 \end{pmatrix}\)</span> ou
+<span class="math">\(M =\begin{pmatrix} 1&amp;2&amp;3\\ 4&amp;5&amp;6 \end{pmatrix}\)</span></p>
+<p>Vous pouvez considérer ainsi qu'une matrice est une liste de lignes,
+chaque ligne étant elle-même une liste de flottants. Ainsi, on peut
+définir des matrices comme des listes de listes.</p>
+<pre class="code python"><a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span> <span class="c1"># les séparateurs des items sont</span>
+<a name="rest_code_5b7fc86debe347afb20f2dc7fd9a94d1-2"></a>                              <span class="c1"># des virgules</span>
+</pre>
+<p class="more"><a href="posts/lecon-8-matrices/">Lire la suite…</a></p>
+</div>
+            </div>
+        </div>
+        <div class="post">
             <h1 class="title"><a href="posts/animation-en-python/">Créer une animation en Python</a></h1>
             <div class="meta">
                 <div class="authordate">
