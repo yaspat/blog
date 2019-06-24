@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 2B Rennes (Articles sur probabilités)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/probabilites.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><lastBuildDate>Mon, 10 Sep 2018 09:48:54 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Le jeu de Monthy Hall 2/2</title><link>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="sommaire"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths info  BCPST 2B Rennes (Articles sur probabilités)</title><link>http://yaspat.github.io/blog/</link><description></description><atom:link href="http://yaspat.github.io/blog/categories/probabilites.xml" rel="self" type="application/rss+xml"></atom:link><language>fr</language><lastBuildDate>Mon, 24 Jun 2019 10:04:06 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Le jeu de Monty Hall 2/2</title><link>http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-22/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="sommaire"&gt;
 &lt;p class="topic-title first"&gt;Sommaire&lt;/p&gt;
 &lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/#importation-des-fonctions-utiles" id="id1"&gt;Importation des fonctions utiles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/#simulation-d-une-partie-du-jeu-de-let-s-make-a-deal" id="id2"&gt;Simulation d'une partie du jeu de &lt;em&gt;Let's make a deal&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/#l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties" id="id3"&gt;L'heure de vérité : fréquence des victoires sur un grand nombre de parties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-22/#importation-des-fonctions-utiles" id="id1"&gt;Importation des fonctions utiles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-22/#simulation-d-une-partie-du-jeu-de-let-s-make-a-deal" id="id2"&gt;Simulation d'une partie du jeu de &lt;em&gt;Let's make a deal&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-22/#l-heure-de-verite-frequence-des-victoires-sur-un-grand-nombre-de-parties" id="id3"&gt;L'heure de vérité : fréquence des victoires sur un grand nombre de parties&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;Maintenant que vous connaissez &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12"&gt;le jeu de Monthy Hall&lt;/a&gt;, on peut par
+&lt;p&gt;Maintenant que vous connaissez &lt;a class="reference external" href="http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-12"&gt;le jeu de Monty Hall&lt;/a&gt;, on peut par
 exemple simuler 100 000 parties du jeu dans lesquelles le candidat
 choisit systématiquement la stratégie de changer son choix. Si Marylin a
 raison (mais vous en êtes convaincus maintenant), la fréquence des
 parties gagnées devrait être voisine de &lt;span class="math"&gt;\(2/3\)&lt;/span&gt;, et non pas de
 &lt;span class="math"&gt;\(1/2\)&lt;/span&gt; comme l'ont hurlé ses détracteurs.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>probabilités</category><guid>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-22/</guid><pubDate>Mon, 07 Mar 2016 09:03:07 GMT</pubDate></item><item><title>Le jeu de Monthy Hall 1/2</title><link>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-22/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 3 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>probabilités</category><guid>http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-22/</guid><pubDate>Mon, 07 Mar 2016 09:03:07 GMT</pubDate></item><item><title>Le jeu de Monty Hall 1/2</title><link>http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-12/</link><dc:creator>MY. Patel</dc:creator><description>&lt;div&gt;&lt;blockquote&gt;
 &lt;em&gt;"Mon unique conseil : si vous parvenez à obtenir de moi que je vous
 offre 5000 dollars pour ne pas ouvrir la porte : prenez l'argent et
-rentrez chez vous !"&lt;/em&gt;                                      (Monthy Hall)&lt;/blockquote&gt;
+rentrez chez vous !"&lt;/em&gt;                                      (Monty Hall)&lt;/blockquote&gt;
 &lt;div class="figure align-right"&gt;
 &lt;img alt="../../images/Monthy/Erdos.jpeg" src="http://yaspat.github.io/blog/images/Monthy/Erdos.jpeg"&gt;
 &lt;p class="caption"&gt;Paul Erdös&lt;/p&gt;
@@ -26,9 +26,9 @@ Les probabilités sont en effet  un domaine particulier des mathématiques : bie
 que la théorie soit  une théorie mathématique à part entière, l'honnête
 homme a en vue son application à des problèmes de la vraie vie. Il faut
 donc pour cela interpréter des résultats théoriques à des situations concrètes.   Souvent, on comprend &lt;em&gt;a posteriori&lt;/em&gt; la valeur d'une
-probabilité calculée, alors qu'il n'était pas évident de la deviner par
+probabilité obtenue par la théorie,  alors qu'il n'était pas du tout évident de la deviner par
 l'intuition. Intuition dont on n'a pas l'air tous dôtés de la même
-manière, et  qui plus est, pas liée de façon simple aux aptitudes
-mathématiques.&lt;/p&gt;
+manière, et  qui n'est pas liée de façon simple aux aptitudes
+mathématiques : d'excellents mathématiciens peuvent ainsi avoir une intuition en probabilités peu en rapport avec leur niveau mathématique.&lt;/p&gt;
 &lt;p&gt;Voici une histoire célèbre pour illustrer ceci.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>probabilités</category><guid>http://yaspat.github.io/blog/posts/le-jeu-de-monthy-hall-12/</guid><pubDate>Sun, 06 Mar 2016 20:38:01 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-12/"&gt;Lire la suite…&lt;/a&gt; (Il reste encore 7 min. de lecture)&lt;/p&gt;&lt;/div&gt;</description><category>probabilités</category><guid>http://yaspat.github.io/blog/posts/le-jeu-de-monty-hall-12/</guid><pubDate>Sun, 06 Mar 2016 20:38:01 GMT</pubDate></item></channel></rss>

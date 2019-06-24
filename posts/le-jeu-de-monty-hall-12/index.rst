@@ -1,5 +1,5 @@
-.. title: Le jeu de Monthy Hall 1/2
-.. slug: le-jeu-de-monthy-hall-12
+.. title: Le jeu de Monty Hall 1/2
+.. slug: le-jeu-de-monty-hall-12
 .. date: 2016-03-06 21:38:01 UTC+01:00
 .. tags: probabilités
 .. category: 
@@ -14,7 +14,7 @@
 
    *"Mon unique conseil : si vous parvenez à obtenir de moi que je vous
    offre 5000 dollars pour ne pas ouvrir la porte : prenez l'argent et
-   rentrez chez vous !"*                                      (Monthy Hall)
+   rentrez chez vous !"*                                      (Monty Hall)
 
  
                                                       
@@ -35,10 +35,10 @@ Les probabilités sont en effet  un domaine particulier des mathématiques : bie
 que la théorie soit  une théorie mathématique à part entière, l'honnête
 homme a en vue son application à des problèmes de la vraie vie. Il faut
 donc pour cela interpréter des résultats théoriques à des situations concrètes.   Souvent, on comprend *a posteriori* la valeur d'une
-probabilité calculée, alors qu'il n'était pas évident de la deviner par
+probabilité obtenue par la théorie,  alors qu'il n'était pas du tout évident de la deviner par
 l'intuition. Intuition dont on n'a pas l'air tous dôtés de la même
-manière, et  qui plus est, pas liée de façon simple aux aptitudes
-mathématiques.
+manière, et  qui n'est pas liée de façon simple aux aptitudes
+mathématiques : d'excellents mathématiciens peuvent ainsi avoir une intuition en probabilités peu en rapport avec leur niveau mathématique.
 
 
 
@@ -111,7 +111,7 @@ Marilyn vos Savant répond à vos questions
 .. figure:: ../../images/Monthy/Monthy.jpeg
    :align: left
    
-   Monthy Hall 	   
+   Monty Hall 	   
 
 .. [2]  Le problème de maths le plus célèbre au monde  (1993)
 
@@ -122,7 +122,7 @@ Marilyn vos Savant répond à vos questions
 
 
 
-Le jeu de Monthy Hall, et le conseil de Marilyn
+Le jeu de Monty Hall, et le conseil de Marilyn
 -----------------------------------------------
 
 
@@ -140,8 +140,8 @@ Le jeu de Monthy Hall, et le conseil de Marilyn
     possibilité de vous en tenir à votre choix initial (porte 1) ou de
     choisir l'autre porte. Qu'avez-vous intérêt à faire ?
     On appelle
-    cela le dilemme de Monthy Hall, problème auquel étaient confrontés
-    les invités du jeu télévisé*  Let's make a deal *de Monthy
+    cela le dilemme de Monty Hall, problème auquel étaient confrontés
+    les invités du jeu télévisé*  Let's make a deal *de Monty
     Hall* [4]_  *sauf que les lots de consolation n'étaient pas des chèvres. Marilyn
     vos Savant recommanda à son correspondant de modifier son choix.
     S'en tenir au choix initial donnait une chance sur trois de gagner

@@ -1,5 +1,5 @@
-.. title: Le jeu de Monthy Hall 2/2
-.. slug: le-jeu-de-monthy-hall-22
+.. title: Le jeu de Monty Hall 2/2
+.. slug: le-jeu-de-monty-hall-22
 .. date: 2016-03-07 10:03:07 UTC+01:00
 .. tags: probabilités
 .. category: 
@@ -12,7 +12,7 @@
 .. contents::                                                       
 
 
-Maintenant que vous connaissez `le jeu de Monthy Hall <link://slug/le-jeu-de-monthy-hall-12>`_, on peut par
+Maintenant que vous connaissez `le jeu de Monty Hall <link://slug/le-jeu-de-monty-hall-12>`_, on peut par
 exemple simuler 100 000 parties du jeu dans lesquelles le candidat
 choisit systématiquement la stratégie de changer son choix. Si Marylin a
 raison (mais vous en êtes convaincus maintenant), la fréquence des
@@ -102,10 +102,10 @@ qu'en changeant de choix on gagne deux fois sur trois !
         print('la voiture est derrière la porte 1.')
         a = choixJoueur() # Le joueur choisit une porte
         print('     Le candidat a choisi la porte {}.'.format(a))
-        b = montreChevre(a) # Monthy ouvre une porte
-        print('     Monthy Hall lui dévole la porte {}.'.format(b))
+        b = montreChevre(a) # Monty ouvre une porte
+        print('     Monty Hall lui dévole la porte {}.'.format(b))
         print('     Le candidat change son choix...')
-        if a<>1: # mettons a =2, dans ce cas Monthy ouvre la porte 3 (il ne peut ouvrir la 1!)
+        if a<>1: # mettons a =2, dans ce cas Monty ouvre la porte 3 (il ne peut ouvrir la 1!)
                  # donc en changeant choix, le candidat gagne si et seulement si a <> 1 !
             print('*** le candidat a gagné !                          ***')
             return 1
@@ -126,7 +126,7 @@ l'ambiance en moins toutefois ...
     *** Simulation d'une partie du jeu Let's make a deal!***
     la voiture est derrière la porte 1.
          Le candidat a choisi la porte 1.
-         Monthy Hall lui dévole la porte 3.
+         Monty Hall lui dévole la porte 3.
          Le candidat change son choix...
     *** le candidat a perdu !                          ***
 
@@ -150,7 +150,7 @@ Une petite boucle pour finir. Mais j'allègel la fonction
 
     def makeDeal():
         a = choixJoueur() 
-        b = montreChevre(a) # Monthy ouvre une porte
+        b = montreChevre(a) # Monty ouvre une porte
         if a<>1: 
             return 1
         else:
