@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://yaspat.github.io/blog/</loc>
-  <lastmod>2018-09-14T12:00:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/2015/</loc>
@@ -22,12 +22,16 @@
   <lastmod>2018-09-14T12:00:00Z</lastmod>
  </url>
  <url>
+  <loc>http://yaspat.github.io/blog/2020/</loc>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://yaspat.github.io/blog/archive.html</loc>
-  <lastmod>2019-06-24T09:59:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/</loc>
-  <lastmod>2019-06-24T10:04:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/analyse/</loc>
@@ -140,6 +144,10 @@
  <url>
   <loc>http://yaspat.github.io/blog/categories/lecon/</loc>
   <lastmod>2018-09-14T12:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/categories/lecture/</loc>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/categories/listes-en-comprehension/</loc>
@@ -259,15 +267,15 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-1.html</loc>
-  <lastmod>2019-06-24T10:00:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-2.html</loc>
-  <lastmod>2019-06-24T09:59:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/index-3.html</loc>
-  <lastmod>2019-06-24T09:59:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/</loc>
@@ -275,11 +283,15 @@
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/listings/hello.py.html</loc>
-  <lastmod>2019-06-24T09:59:00Z</lastmod>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/Boucles%20Pour/</loc>
   <lastmod>2018-09-14T12:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://yaspat.github.io/blog/posts/a-lire-avant-de-venir-en-bcpst/</loc>
+  <lastmod>2020-07-14T13:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://yaspat.github.io/blog/posts/animation-en-python/</loc>
