@@ -10,7 +10,8 @@
 
 En ces temps tourmentés et en face de toutes les interrogations que l'on peut avoir sur notre avenir, je recommande à tout futur élève de BCPST, et même à tout futur élève de classe prépa de lire l'excellent livre d'Albert Jacquard intitulé `l'équation du nénuphar  <https://www.livredepoche.com/livre/lequation-du-nenuphar-9782253148111>`_.
 
-
+ <!-- TEASER_END-->
+ 
 .. figure:: ../../images/Divers/eq-nenuphar.jpg  
    :scale: 30 %	    
    :align: center
